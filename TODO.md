@@ -1,2 +1,0 @@
-- [ ] Kupi quality whoosh sounds (Epidemic Sound / Envato / Motion Array) za camera transitions
-- [ ] Restrukturiraj remotion-motion skill - podeli na više skilova (animacije, sounds, naracija/kako pričati)
