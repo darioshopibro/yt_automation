@@ -3,6 +3,7 @@
   "subtitle": "Real-time Communication Protocol",
   "fps": 30,
   "totalFrames": 725,
+  "showStepPrefix": false,
 
   "stickies": [
     {

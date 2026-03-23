@@ -91,3 +91,19 @@ Imam spremne MD fajlove za pojedinačne klijente - dodaću ih posebno.
 
 **When you notice the user doing the same type of task 3+ times, suggest:**
 > "I notice we keep doing [X]. Want me to create a skill for this so it's faster next time?"
+
+---
+
+## YT Automation Terminologija
+
+**Visual template hijerarhija:**
+```
+StickyNote (glavni layer container, "Step 1", "Step 2"...)
+  └── SectionBox (grupacija unutar sticky-a)
+        └── NodeItem (box sa ikonom + label)
+```
+
+**Kad kažem:**
+- **"sticky notes"** = StickyNote komponente (glavni kontejneri po koracima)
+- **"nodes"** = NodeItem boxovi UNUTAR sticky-a (mali boxovi sa ikonama)
+- **"sections"** = SectionBox (srednji nivo grupacije)

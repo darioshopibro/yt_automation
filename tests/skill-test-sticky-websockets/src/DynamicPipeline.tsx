@@ -53,6 +53,7 @@ interface Config {
   subtitle: string;
   fps: number;
   totalFrames: number;
+  showStepPrefix?: boolean; // true = "Step 1: Title", false = just "Title"
   stickies: StickyConfig[];
 }
 
@@ -161,19 +162,38 @@ const getColorScheme = (key: string): ColorScheme => {
 
 // === GLASS STYLE ===
 
-const glassStyle = (borderColor: string, glowColor: string): React.CSSProperties => ({
-  backdropFilter: "blur(16px) saturate(180%)",
-  WebkitBackdropFilter: "blur(16px) saturate(180%)",
-  border: `1.5px solid ${borderColor}40`,
-  boxShadow: `
-    0 0 60px ${glowColor},
-    0 0 100px ${glowColor}50,
-    0 8px 40px rgba(0, 0, 0, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2)
-  `,
-  borderRadius: 20,
-});
+// activeIntensity: 0 = not visible, 0.35 = dimmed (past), 1 = fully active (current topic)
+// GLOW ONLY ON ACTIVE - dimmed sections get NO colored glow
+const glassStyle = (borderColor: string, glowColor: string, activeIntensity: number = 1): React.CSSProperties => {
+  // Only apply colored glow when intensity > 0.5 (active state)
+  const isActive = activeIntensity > 0.5;
+  const glowStrength = isActive ? (activeIntensity - 0.5) * 2 : 0; // 0-1 only when active
+
+  const borderWidth = 1.5;
+  const borderHex = Math.round((0.25 + (isActive ? 0.35 : 0)) * 255).toString(16).padStart(2, '0');
+
+  // Parse glow color base
+  const glowBase = glowColor.replace(/[\d.]+\)$/, ''); // "rgba(59, 130, 246, "
+
+  // Build box-shadow: colored glow ONLY when active, always keep base shadow
+  const coloredGlow = isActive
+    ? `0 0 ${Math.round(40 + glowStrength * 40)}px ${glowBase}${(0.3 + glowStrength * 0.2).toFixed(2)}),
+       0 0 ${Math.round(60 + glowStrength * 60)}px ${glowBase}${(0.15 + glowStrength * 0.15).toFixed(2)}),`
+    : ''; // No colored glow when dimmed
+
+  return {
+    backdropFilter: "blur(16px) saturate(180%)",
+    WebkitBackdropFilter: "blur(16px) saturate(180%)",
+    border: `${borderWidth}px solid ${borderColor}${borderHex}`,
+    boxShadow: `
+      ${coloredGlow}
+      0 8px 40px rgba(0, 0, 0, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2)
+    `,
+    borderRadius: 20,
+  };
+};
 
 // === DYNAMIC SIZING ===
 
@@ -215,15 +235,16 @@ const getStickyDimensions = (sections: SectionConfig[]) => {
   const cols = sectionCount <= 2 ? sectionCount : sectionCount <= 4 ? 2 : 3;
   const rows = Math.ceil(sectionCount / cols);
   const gap = 24;
-  const padding = 48;
+  const paddingX = 48; // left + right
+  const paddingY = 24; // top + bottom (symmetric)
 
   // Calculate max box dimensions per row
   const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length));
   const maxBoxW = Math.max(...boxSizes.map(s => s.width));
   const maxBoxH = Math.max(...boxSizes.map(s => s.height));
 
-  const width = padding + (cols * maxBoxW) + ((cols - 1) * gap);
-  const height = 40 + padding + (rows * maxBoxH) + ((rows - 1) * gap);
+  const width = paddingX + (cols * maxBoxW) + ((cols - 1) * gap);
+  const height = (paddingY * 2) + (rows * maxBoxH) + ((rows - 1) * gap); // symmetric top/bottom
 
   return { width, height, cols, rows, boxW: maxBoxW, boxH: maxBoxH };
 };
@@ -291,7 +312,8 @@ const getSectionPositions = (
   const gridH = (rows * maxBoxH) + ((rows - 1) * gap);
 
   const startX = padding + (contentW - gridW) / 2;
-  const startY = padding + (centerVertically ? (contentH - gridH) / 2 : 0);
+  // Always center vertically for symmetric top/bottom spacing
+  const startY = padding + (contentH - gridH) / 2;
 
   const positions: { x: number; y: number; cx: number; cy: number; right: number; bottom: number; w: number; h: number }[] = [];
 
@@ -431,8 +453,9 @@ const StickyNote: React.FC<{
   width: number;
   height: number;
   centerVertically?: boolean;
+  showStepPrefix?: boolean; // true = "Step 1: Title", false = just "Title"
   children: React.ReactNode;
-}> = ({ step, title, color, opacity, scale, x, y, width, height, centerVertically = false, children }) => (
+}> = ({ step, title, color, opacity, scale, x, y, width, height, centerVertically = false, showStepPrefix = true, children }) => (
   <div
     style={{
       position: "absolute",
@@ -461,7 +484,7 @@ const StickyNote: React.FC<{
       boxShadow: `0 -4px 30px ${color}60`,
       fontFamily: "'SF Mono', 'Fira Code', monospace",
     }}>
-      Step {step}: {title}
+      {showStepPrefix ? `Step ${step}: ${title}` : title}
     </div>
 
     {/* Content area */}
@@ -487,7 +510,8 @@ const SectionBox: React.FC<{
   children: React.ReactNode;
   opacity: number;
   scale: number;
-}> = ({ title, subtitle, colorScheme, children, opacity, scale }) => {
+  activeIntensity?: number; // 0-1, how "active" this section is (for highlight)
+}> = ({ title, subtitle, colorScheme, children, opacity, scale, activeIntensity = 1 }) => {
   const childCount = React.Children.count(children);
   const autoSize = getContainerSize(childCount);
 
@@ -497,7 +521,7 @@ const SectionBox: React.FC<{
         width: autoSize.width,
         height: autoSize.height,
         background: colorScheme.bg,
-        ...glassStyle(colorScheme.border, colorScheme.glow),
+        ...glassStyle(colorScheme.border, colorScheme.glow, activeIntensity),
         padding: "24px 24px 12px 24px",
         opacity,
         display: "flex",
@@ -506,31 +530,9 @@ const SectionBox: React.FC<{
         transformOrigin: "center center",
         flexShrink: 0,
         position: "relative",
+        transition: "box-shadow 0.3s ease-out",
       }}
     >
-      {/* Corner accents */}
-      <div style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: 40,
-        height: 40,
-        borderTop: `2px solid ${colorScheme.accent}`,
-        borderLeft: `2px solid ${colorScheme.accent}`,
-        borderTopLeftRadius: 20,
-        opacity: 0.6,
-      }}/>
-      <div style={{
-        position: "absolute",
-        bottom: 0,
-        right: 0,
-        width: 40,
-        height: 40,
-        borderBottom: `2px solid ${colorScheme.accent}`,
-        borderRight: `2px solid ${colorScheme.accent}`,
-        borderBottomRightRadius: 20,
-        opacity: 0.6,
-      }}/>
 
       {/* Header */}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: subtitle ? 8 : 20 }}>
@@ -897,6 +899,68 @@ export const DynamicPipeline: React.FC = () => {
       easing: Easing.out(Easing.cubic),
     });
 
+  // === ACTIVE INTENSITY (Highlight while voiceover discusses section) ===
+  // Collect ALL sections across all stickies into flat array with their startFrames
+  const allSections: { startFrame: number; stickyIndex: number; sectionIndex: number }[] = [];
+  cfg.stickies.forEach((sticky, stickyIdx) => {
+    sticky.sections.forEach((section, sectionIdx) => {
+      allSections.push({ startFrame: section.startFrame, stickyIndex: stickyIdx, sectionIndex: sectionIdx });
+    });
+  });
+  // Sort by startFrame
+  allSections.sort((a, b) => a.startFrame - b.startFrame);
+
+  // Get active intensity for a section
+  // Returns: 0 = not visible, 0-1 = fading in, 1 = fully active, 1-0.3 = fading out, 0.3 = dimmed (past)
+  const getActiveIntensity = (sectionStartFrame: number): number => {
+    const MIN_ACTIVE_FRAMES = 30; // Minimum 1 second active (30fps)
+    const FADE_IN_FRAMES = 10;    // 10 frame fade in
+    const FADE_OUT_FRAMES = 10;   // 10 frame fade out
+    const DIMMED_INTENSITY = 0.35; // Dimmed state for past sections
+
+    // Find this section's index in sorted array
+    const idx = allSections.findIndex(s => s.startFrame === sectionStartFrame);
+    if (idx === -1) return DIMMED_INTENSITY;
+
+    // Calculate when this section's "active" period ends
+    const nextSection = allSections[idx + 1];
+    const rawActiveUntil = nextSection ? nextSection.startFrame : cfg.totalFrames;
+    const activeUntilFrame = Math.max(rawActiveUntil, sectionStartFrame + MIN_ACTIVE_FRAMES);
+
+    // Not visible yet
+    if (frame < sectionStartFrame) {
+      return 0;
+    }
+
+    // Fade in period (first 10 frames after appear)
+    if (frame < sectionStartFrame + FADE_IN_FRAMES) {
+      return interpolate(
+        frame,
+        [sectionStartFrame, sectionStartFrame + FADE_IN_FRAMES],
+        [DIMMED_INTENSITY, 1],
+        { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }
+      );
+    }
+
+    // Fully active period
+    if (frame < activeUntilFrame - FADE_OUT_FRAMES) {
+      return 1;
+    }
+
+    // Fade out period (last 10 frames before next section)
+    if (frame < activeUntilFrame) {
+      return interpolate(
+        frame,
+        [activeUntilFrame - FADE_OUT_FRAMES, activeUntilFrame],
+        [1, DIMMED_INTENSITY],
+        { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }
+      );
+    }
+
+    // Past active period - dimmed
+    return DIMMED_INTENSITY;
+  };
+
   // Sound effects - max 10
   const soundEvents: { frame: number; type: "soft" | "medium" }[] = [];
 
@@ -997,6 +1061,7 @@ export const DynamicPipeline: React.FC = () => {
               width={layout.width}
               height={layout.height}
               centerVertically={centerVertically}
+              showStepPrefix={cfg.showStepPrefix !== false} // default true
             >
               {/* Internal lines between sections */}
               <svg
@@ -1073,6 +1138,17 @@ export const DynamicPipeline: React.FC = () => {
                 const sectionAppearFrame = section.startFrame - 5;
                 const pos = sectionPositions[sectionIndex];
 
+                // Calculate highlight intensity for this section
+                const intensity = getActiveIntensity(section.startFrame);
+
+                // Base scale from appear animation + subtle "active" scale boost
+                const baseScale = getScale(sectionAppearFrame);
+                const activeScaleBoost = interpolate(intensity, [0.35, 1], [0, 0.02], {
+                  extrapolateLeft: "clamp",
+                  extrapolateRight: "clamp",
+                }); // Active sections get 2% larger
+                const finalScale = baseScale * (1 + activeScaleBoost);
+
                 return (
                   <div
                     key={`section-wrapper-${stickyIndex}-${sectionIndex}`}
@@ -1088,7 +1164,8 @@ export const DynamicPipeline: React.FC = () => {
                     subtitle={section.subtitle}
                     colorScheme={colorScheme}
                     opacity={getOpacity(sectionAppearFrame)}
-                    scale={getScale(sectionAppearFrame)}
+                    scale={finalScale}
+                    activeIntensity={intensity}
                   >
                     {section.nodes.map((node, nodeIndex) => {
                       const nodeDelay = section.startFrame + (nodeIndex * 10);

@@ -53,6 +53,7 @@ interface Config {
   subtitle: string;
   fps: number;
   totalFrames: number;
+  showStepPrefix?: boolean; // true = "Step 1: Title", false = just "Title"
   stickies: StickyConfig[];
 }
 
@@ -114,25 +115,85 @@ type ColorScheme = {
   accent: string;
 };
 
+// Icon to color mapping - determines section color based on first icon
+const iconToColorKey: Record<string, string> = {
+  // Blue family
+  user: "userQuery",
+  search: "userQuery",
+  terminal: "userQuery",
+
+  // Green/Teal family
+  database: "embedding",
+  layers: "embedding",
+  vector: "embedding",
+
+  // Orange/Yellow family
+  file: "vectorSearch",
+  cube: "vectorSearch",
+
+  // Purple family
+  merge: "retrieve",
+  sparkle: "retrieve",
+
+  // Orange family
+  cpu: "augment",
+
+  // Green family
+  zap: "generate",
+};
+
+// Color rotation palette for auto-assignment
+const colorRotation = ["userQuery", "embedding", "vectorSearch", "retrieve", "augment", "generate"];
+
+// Get color scheme - uses icon-based color if available, otherwise rotates
+const getColorSchemeForSection = (sectionIndex: number, firstIcon?: string): ColorScheme => {
+  // If icon has a mapped color, use it
+  if (firstIcon && iconToColorKey[firstIcon]) {
+    return (colors as any)[iconToColorKey[firstIcon]];
+  }
+  // Otherwise rotate through palette
+  const colorKey = colorRotation[sectionIndex % colorRotation.length];
+  return (colors as any)[colorKey];
+};
+
 const getColorScheme = (key: string): ColorScheme => {
   return (colors as any)[key] || colors.userQuery;
 };
 
 // === GLASS STYLE ===
 
-const glassStyle = (borderColor: string, glowColor: string): React.CSSProperties => ({
-  backdropFilter: "blur(16px) saturate(180%)",
-  WebkitBackdropFilter: "blur(16px) saturate(180%)",
-  border: `1.5px solid ${borderColor}40`,
-  boxShadow: `
-    0 0 60px ${glowColor},
-    0 0 100px ${glowColor}50,
-    0 8px 40px rgba(0, 0, 0, 0.6),
-    inset 0 1px 0 rgba(255, 255, 255, 0.08),
-    inset 0 -1px 0 rgba(0, 0, 0, 0.2)
-  `,
-  borderRadius: 20,
-});
+// activeIntensity: 0 = not visible, 0.35 = dimmed (past), 1 = fully active (current topic)
+// GLOW ONLY ON ACTIVE - dimmed sections get NO colored glow
+const glassStyle = (borderColor: string, glowColor: string, activeIntensity: number = 1): React.CSSProperties => {
+  // Only apply colored glow when intensity > 0.5 (active state)
+  const isActive = activeIntensity > 0.5;
+  const glowStrength = isActive ? (activeIntensity - 0.5) * 2 : 0; // 0-1 only when active
+
+  const borderWidth = 1.5;
+  const borderHex = Math.round((0.25 + (isActive ? 0.35 : 0)) * 255).toString(16).padStart(2, '0');
+
+  // Parse glow color base
+  const glowBase = glowColor.replace(/[\d.]+\)$/, ''); // "rgba(59, 130, 246, "
+
+  // Build box-shadow: colored glow ONLY when active, always keep base shadow
+  const coloredGlow = isActive
+    ? `0 0 ${Math.round(40 + glowStrength * 40)}px ${glowBase}${(0.3 + glowStrength * 0.2).toFixed(2)}),
+       0 0 ${Math.round(60 + glowStrength * 60)}px ${glowBase}${(0.15 + glowStrength * 0.15).toFixed(2)}),`
+    : ''; // No colored glow when dimmed
+
+  return {
+    backdropFilter: "blur(16px) saturate(180%)",
+    WebkitBackdropFilter: "blur(16px) saturate(180%)",
+    border: `${borderWidth}px solid ${borderColor}${borderHex}`,
+    boxShadow: `
+      ${coloredGlow}
+      0 8px 40px rgba(0, 0, 0, 0.6),
+      inset 0 1px 0 rgba(255, 255, 255, 0.08),
+      inset 0 -1px 0 rgba(0, 0, 0, 0.2)
+    `,
+    borderRadius: 20,
+  };
+};
 
 // === DYNAMIC SIZING ===
 
@@ -174,22 +235,59 @@ const getStickyDimensions = (sections: SectionConfig[]) => {
   const cols = sectionCount <= 2 ? sectionCount : sectionCount <= 4 ? 2 : 3;
   const rows = Math.ceil(sectionCount / cols);
   const gap = 24;
-  const padding = 48;
+  const paddingX = 48; // left + right
+  const paddingY = 24; // top + bottom (symmetric)
 
   // Calculate max box dimensions per row
   const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length));
   const maxBoxW = Math.max(...boxSizes.map(s => s.width));
   const maxBoxH = Math.max(...boxSizes.map(s => s.height));
 
-  const width = padding + (cols * maxBoxW) + ((cols - 1) * gap);
-  const height = 40 + padding + (rows * maxBoxH) + ((rows - 1) * gap);
+  const width = paddingX + (cols * maxBoxW) + ((cols - 1) * gap);
+  const height = (paddingY * 2) + (rows * maxBoxH) + ((rows - 1) * gap); // symmetric top/bottom
 
   return { width, height, cols, rows, boxW: maxBoxW, boxH: maxBoxH };
 };
 
+// Get clockwise grid position for section index
+// For 4 sections: 0=top-left, 1=top-right, 2=bottom-right, 3=bottom-left
+// For 3 sections: 0=top-left, 1=top-right, 2=bottom-right
+const getClockwiseGridPos = (index: number, total: number, cols: number): { row: number; col: number } => {
+  if (total <= 2) {
+    return { row: 0, col: index };
+  }
+
+  if (total === 3) {
+    // 0 -- 1
+    //      |
+    //      2
+    const positions = [
+      { row: 0, col: 0 },
+      { row: 0, col: 1 },
+      { row: 1, col: 1 },
+    ];
+    return positions[index];
+  }
+
+  if (total === 4) {
+    // 0 -- 1
+    // |    |
+    // 3 -- 2
+    const positions = [
+      { row: 0, col: 0 },
+      { row: 0, col: 1 },
+      { row: 1, col: 1 },
+      { row: 1, col: 0 },
+    ];
+    return positions[index];
+  }
+
+  // Fallback for 5+
+  return { row: Math.floor(index / cols), col: index % cols };
+};
+
 // Calculate section box positions within a sticky
-// Row-major order like flexbox - positions match where boxes visually appear
-// Lines follow Z-pattern: [1]→[2]↘[3]→[4]
+// CLOCKWISE order: [0]→[1]→[2]→[3] visually goes around the square
 const getSectionPositions = (
   sections: SectionConfig[],
   stickyWidth: number,
@@ -197,7 +295,7 @@ const getSectionPositions = (
   centerVertically: boolean
 ) => {
   const sectionCount = sections.length;
-  const cols = sectionCount <= 2 ? sectionCount : sectionCount <= 4 ? 2 : 3;
+  const cols = sectionCount <= 2 ? sectionCount : 2; // Always 2 cols for 3-4 sections
   const rows = Math.ceil(sectionCount / cols);
   const gap = 24;
   const padding = 24;
@@ -214,13 +312,14 @@ const getSectionPositions = (
   const gridH = (rows * maxBoxH) + ((rows - 1) * gap);
 
   const startX = padding + (contentW - gridW) / 2;
-  const startY = padding + (centerVertically ? (contentH - gridH) / 2 : 0);
+  // Always center vertically for symmetric top/bottom spacing
+  const startY = padding + (contentH - gridH) / 2;
 
   const positions: { x: number; y: number; cx: number; cy: number; right: number; bottom: number; w: number; h: number }[] = [];
 
   for (let i = 0; i < sectionCount; i++) {
-    const row = Math.floor(i / cols);
-    const col = i % cols; // Row-major order (NOT snake)
+    // Use CLOCKWISE position instead of row-major
+    const { row, col } = getClockwiseGridPos(i, sectionCount, cols);
 
     // Use actual box size for this section
     const boxW = boxSizes[i].width;
@@ -354,8 +453,9 @@ const StickyNote: React.FC<{
   width: number;
   height: number;
   centerVertically?: boolean;
+  showStepPrefix?: boolean; // true = "Step 1: Title", false = just "Title"
   children: React.ReactNode;
-}> = ({ step, title, color, opacity, scale, x, y, width, height, centerVertically = false, children }) => (
+}> = ({ step, title, color, opacity, scale, x, y, width, height, centerVertically = false, showStepPrefix = true, children }) => (
   <div
     style={{
       position: "absolute",
@@ -384,7 +484,7 @@ const StickyNote: React.FC<{
       boxShadow: `0 -4px 30px ${color}60`,
       fontFamily: "'SF Mono', 'Fira Code', monospace",
     }}>
-      Step {step}: {title}
+      {showStepPrefix ? `Step ${step}: ${title}` : title}
     </div>
 
     {/* Content area */}
@@ -410,7 +510,8 @@ const SectionBox: React.FC<{
   children: React.ReactNode;
   opacity: number;
   scale: number;
-}> = ({ title, subtitle, colorScheme, children, opacity, scale }) => {
+  activeIntensity?: number; // 0-1, how "active" this section is (for highlight)
+}> = ({ title, subtitle, colorScheme, children, opacity, scale, activeIntensity = 1 }) => {
   const childCount = React.Children.count(children);
   const autoSize = getContainerSize(childCount);
 
@@ -420,7 +521,7 @@ const SectionBox: React.FC<{
         width: autoSize.width,
         height: autoSize.height,
         background: colorScheme.bg,
-        ...glassStyle(colorScheme.border, colorScheme.glow),
+        ...glassStyle(colorScheme.border, colorScheme.glow, activeIntensity),
         padding: "24px 24px 12px 24px",
         opacity,
         display: "flex",
@@ -429,31 +530,9 @@ const SectionBox: React.FC<{
         transformOrigin: "center center",
         flexShrink: 0,
         position: "relative",
+        transition: "box-shadow 0.3s ease-out",
       }}
     >
-      {/* Corner accents */}
-      <div style={{
-        position: "absolute",
-        top: 0,
-        left: 0,
-        width: 40,
-        height: 40,
-        borderTop: `2px solid ${colorScheme.accent}`,
-        borderLeft: `2px solid ${colorScheme.accent}`,
-        borderTopLeftRadius: 20,
-        opacity: 0.6,
-      }}/>
-      <div style={{
-        position: "absolute",
-        bottom: 0,
-        right: 0,
-        width: 40,
-        height: 40,
-        borderBottom: `2px solid ${colorScheme.accent}`,
-        borderRight: `2px solid ${colorScheme.accent}`,
-        borderBottomRightRadius: 20,
-        opacity: 0.6,
-      }}/>
 
       {/* Header */}
       <div style={{ display: "flex", alignItems: "center", gap: 10, marginBottom: subtitle ? 8 : 20 }}>
@@ -621,6 +700,71 @@ const AnimatedLine: React.FC<{
   );
 };
 
+// === GRADIENT ANIMATED LINE ===
+
+const GradientLine: React.FC<{
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  progress: number;
+  colorStart: string;
+  colorEnd: string;
+  frame: number;
+  id: string;
+}> = ({ x1, y1, x2, y2, progress, colorStart, colorEnd, frame, id }) => {
+  const endX = x1 + (x2 - x1) * progress;
+  const endY = y1 + (y2 - y1) * progress;
+  const pulseOffset = (frame % 60) / 60;
+  const gradientId = `gradient-${id}`;
+
+  // Calculate gradient direction based on line direction
+  const isHorizontal = Math.abs(x2 - x1) > Math.abs(y2 - y1);
+
+  return (
+    <g>
+      <defs>
+        <linearGradient
+          id={gradientId}
+          x1={isHorizontal ? "0%" : "50%"}
+          y1={isHorizontal ? "50%" : "0%"}
+          x2={isHorizontal ? "100%" : "50%"}
+          y2={isHorizontal ? "50%" : "100%"}
+        >
+          <stop offset="0%" stopColor={colorStart} />
+          <stop offset="100%" stopColor={colorEnd} />
+        </linearGradient>
+      </defs>
+      <line
+        x1={x1} y1={y1} x2={endX} y2={endY}
+        stroke={`url(#${gradientId})`} strokeWidth={8} strokeOpacity={0.2}
+        strokeLinecap="round" filter="blur(6px)"
+      />
+      <line
+        x1={x1} y1={y1} x2={endX} y2={endY}
+        stroke={`url(#${gradientId})`} strokeWidth={4} strokeOpacity={0.4}
+        strokeLinecap="round" filter="blur(2px)"
+      />
+      <line
+        x1={x1} y1={y1} x2={endX} y2={endY}
+        stroke={`url(#${gradientId})`} strokeWidth={2} strokeLinecap="round"
+      />
+      {progress > 0.1 && (
+        <circle
+          cx={x1 + (endX - x1) * pulseOffset}
+          cy={y1 + (endY - y1) * pulseOffset}
+          r={3}
+          fill={pulseOffset < 0.5 ? colorStart : colorEnd}
+          opacity={0.8}
+        />
+      )}
+      {progress > 0.95 && (
+        <circle cx={endX} cy={endY} r={5} fill={colorEnd} filter="url(#glow)" />
+      )}
+    </g>
+  );
+};
+
 // === BACKGROUNDS ===
 
 const MeshGradient: React.FC = () => (
@@ -755,6 +899,68 @@ export const DynamicPipeline: React.FC = () => {
       easing: Easing.out(Easing.cubic),
     });
 
+  // === ACTIVE INTENSITY (Highlight while voiceover discusses section) ===
+  // Collect ALL sections across all stickies into flat array with their startFrames
+  const allSections: { startFrame: number; stickyIndex: number; sectionIndex: number }[] = [];
+  cfg.stickies.forEach((sticky, stickyIdx) => {
+    sticky.sections.forEach((section, sectionIdx) => {
+      allSections.push({ startFrame: section.startFrame, stickyIndex: stickyIdx, sectionIndex: sectionIdx });
+    });
+  });
+  // Sort by startFrame
+  allSections.sort((a, b) => a.startFrame - b.startFrame);
+
+  // Get active intensity for a section
+  // Returns: 0 = not visible, 0-1 = fading in, 1 = fully active, 1-0.3 = fading out, 0.3 = dimmed (past)
+  const getActiveIntensity = (sectionStartFrame: number): number => {
+    const MIN_ACTIVE_FRAMES = 30; // Minimum 1 second active (30fps)
+    const FADE_IN_FRAMES = 10;    // 10 frame fade in
+    const FADE_OUT_FRAMES = 10;   // 10 frame fade out
+    const DIMMED_INTENSITY = 0.35; // Dimmed state for past sections
+
+    // Find this section's index in sorted array
+    const idx = allSections.findIndex(s => s.startFrame === sectionStartFrame);
+    if (idx === -1) return DIMMED_INTENSITY;
+
+    // Calculate when this section's "active" period ends
+    const nextSection = allSections[idx + 1];
+    const rawActiveUntil = nextSection ? nextSection.startFrame : cfg.totalFrames;
+    const activeUntilFrame = Math.max(rawActiveUntil, sectionStartFrame + MIN_ACTIVE_FRAMES);
+
+    // Not visible yet
+    if (frame < sectionStartFrame) {
+      return 0;
+    }
+
+    // Fade in period (first 10 frames after appear)
+    if (frame < sectionStartFrame + FADE_IN_FRAMES) {
+      return interpolate(
+        frame,
+        [sectionStartFrame, sectionStartFrame + FADE_IN_FRAMES],
+        [DIMMED_INTENSITY, 1],
+        { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }
+      );
+    }
+
+    // Fully active period
+    if (frame < activeUntilFrame - FADE_OUT_FRAMES) {
+      return 1;
+    }
+
+    // Fade out period (last 10 frames before next section)
+    if (frame < activeUntilFrame) {
+      return interpolate(
+        frame,
+        [activeUntilFrame - FADE_OUT_FRAMES, activeUntilFrame],
+        [1, DIMMED_INTENSITY],
+        { extrapolateLeft: "clamp", extrapolateRight: "clamp", easing: Easing.out(Easing.cubic) }
+      );
+    }
+
+    // Past active period - dimmed
+    return DIMMED_INTENSITY;
+  };
+
   // Sound effects - max 10
   const soundEvents: { frame: number; type: "soft" | "medium" }[] = [];
 
@@ -855,6 +1061,7 @@ export const DynamicPipeline: React.FC = () => {
               width={layout.width}
               height={layout.height}
               centerVertically={centerVertically}
+              showStepPrefix={cfg.showStepPrefix !== false} // default true
             >
               {/* Internal lines between sections */}
               <svg
@@ -873,32 +1080,40 @@ export const DynamicPipeline: React.FC = () => {
                   const pos2 = sectionPositions[i + 1];
                   const nextSection = sticky.sections[i + 1];
                   const lineStartFrame = nextSection.startFrame - 10;
-                  const colorScheme = getColorScheme(section.colorKey);
+                  const sectionCount = sticky.sections.length;
 
-                  // Row-major: section i is at row=floor(i/cols), col=i%cols
-                  const row1 = Math.floor(i / cols);
-                  const col1 = i % cols;
-                  const row2 = Math.floor((i + 1) / cols);
-                  const col2 = (i + 1) % cols;
+                  // Get colors from both sections (icon-based)
+                  const color1 = getColorSchemeForSection(i, section.nodes[0]?.icon);
+                  const color2 = getColorSchemeForSection(i + 1, nextSection.nodes[0]?.icon);
+
+                  // Get CLOCKWISE grid positions
+                  const gridPos1 = getClockwiseGridPos(i, sectionCount, cols);
+                  const gridPos2 = getClockwiseGridPos(i + 1, sectionCount, cols);
 
                   let x1: number, y1: number, x2: number, y2: number;
 
-                  if (row1 === row2) {
-                    // Same row - horizontal line (edge to edge)
-                    if (col2 > col1) {
-                      // Going right
+                  if (gridPos1.row === gridPos2.row) {
+                    // Same row - horizontal line
+                    if (gridPos2.col > gridPos1.col) {
+                      // Going right: 0→1
                       x1 = pos1.right; y1 = pos1.cy;
                       x2 = pos2.x; y2 = pos2.cy;
                     } else {
-                      // Going left
+                      // Going left: 2→3
                       x1 = pos1.x; y1 = pos1.cy;
                       x2 = pos2.right; y2 = pos2.cy;
                     }
                   } else {
-                    // Different rows - diagonal Z line (center-bottom to center-top)
-                    // This is the Z-pattern: from right side of row 0 to left side of row 1
-                    x1 = pos1.cx; y1 = pos1.bottom;
-                    x2 = pos2.cx; y2 = pos2.y;
+                    // Different rows - vertical line (90° angle, NOT diagonal!)
+                    if (gridPos2.row > gridPos1.row) {
+                      // Going down: 1→2
+                      x1 = pos1.cx; y1 = pos1.bottom;
+                      x2 = pos2.cx; y2 = pos2.y;
+                    } else {
+                      // Going up: 3→0 (if looping)
+                      x1 = pos1.cx; y1 = pos1.y;
+                      x2 = pos2.cx; y2 = pos2.bottom;
+                    }
                   }
 
                   return (
@@ -909,7 +1124,7 @@ export const DynamicPipeline: React.FC = () => {
                       x2={x2}
                       y2={y2}
                       progress={getLineProgress(lineStartFrame)}
-                      color={colorScheme.accent}
+                      color={color2.accent}
                       frame={frame}
                     />
                   );
@@ -917,9 +1132,22 @@ export const DynamicPipeline: React.FC = () => {
               </svg>
 
               {sticky.sections.map((section, sectionIndex) => {
-                const colorScheme = getColorScheme(section.colorKey);
+                // Use icon-based color instead of colorKey from config
+                const firstIcon = section.nodes[0]?.icon;
+                const colorScheme = getColorSchemeForSection(sectionIndex, firstIcon);
                 const sectionAppearFrame = section.startFrame - 5;
                 const pos = sectionPositions[sectionIndex];
+
+                // Calculate highlight intensity for this section
+                const intensity = getActiveIntensity(section.startFrame);
+
+                // Base scale from appear animation + subtle "active" scale boost
+                const baseScale = getScale(sectionAppearFrame);
+                const activeScaleBoost = interpolate(intensity, [0.35, 1], [0, 0.02], {
+                  extrapolateLeft: "clamp",
+                  extrapolateRight: "clamp",
+                }); // Active sections get 2% larger
+                const finalScale = baseScale * (1 + activeScaleBoost);
 
                 return (
                   <div
@@ -936,7 +1164,8 @@ export const DynamicPipeline: React.FC = () => {
                     subtitle={section.subtitle}
                     colorScheme={colorScheme}
                     opacity={getOpacity(sectionAppearFrame)}
-                    scale={getScale(sectionAppearFrame)}
+                    scale={finalScale}
+                    activeIntensity={intensity}
                   >
                     {section.nodes.map((node, nodeIndex) => {
                       const nodeDelay = section.startFrame + (nodeIndex * 10);

@@ -764,6 +764,7 @@ cp -r "/Users/dario61/Desktop/YT automation/templates/test-sticky-1" ./my-new-pr
   "subtitle": "Retrieval Augmented Generation",
   "fps": 30,
   "totalFrames": 1153,
+  "showStepPrefix": true,
   "stickies": [
     {
       "step": 1,
@@ -786,6 +787,9 @@ cp -r "/Users/dario61/Desktop/YT automation/templates/test-sticky-1" ./my-new-pr
   ]
 }
 ```
+
+**Config Options:**
+- `showStepPrefix`: `true` = badge shows "Step 1: Title", `false` = just "Title" (use false for non-sequential topics)
 
 **Color Keys:** `userQuery`, `embedding`, `vectorSearch`, `retrieve`, `augment`, `generate`
 **Icons:** `user`, `search`, `terminal`, `cube`, `vector`, `database`, `zap`, `file`, `layers`, `merge`, `sparkle`, `cpu`

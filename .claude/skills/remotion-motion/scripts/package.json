@@ -1,16 +1,20 @@
 {
-  "name": "scripts",
+  "name": "remotion-motion-scripts",
   "version": "1.0.0",
   "main": "index.js",
   "scripts": {
+    "analyze": "npx ts-node analyze-transcript.ts",
+    "generate-images": "npx ts-node generate-illustrations.ts",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "keywords": [],
   "author": "",
   "license": "ISC",
-  "description": "",
+  "description": "Scripts for Remotion Motion video generation",
   "dependencies": {
     "@anthropic-ai/sdk": "^0.80.0",
+    "@google/generative-ai": "^0.24.1",
+    "dotenv": "^16.6.1",
     "ts-node": "^10.9.2",
     "typescript": "^5.9.3"
   }

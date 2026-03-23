@@ -17,11 +17,19 @@ import fs from "fs";
 const ANTHROPIC_API_KEY = process.env.ANTHROPIC_API_KEY;
 
 // Output types
+interface IllustrationPrompt {
+  concept: string;           // Technical explanation of what this is
+  visualDescription: string; // What should be drawn/illustrated
+  educationalGoal: string;   // What the viewer should understand from the visual
+}
+
 interface NodeItem {
   label: string;
   icon: string;
   wordIndexStart?: number;
   wordIndexEnd?: number;
+  illustrationPrompt?: IllustrationPrompt;
+  imageUrl?: string;  // Will be populated by generate-illustrations.ts
 }
 
 interface SectionBox {
@@ -100,8 +108,16 @@ Return ONLY valid JSON matching this schema:
 ### NodeItem
 - Atomic visual element
 - Label: 1-2 words max
-- Icon: suggest from this list:
+- Icon: suggest from this list (fallback if illustration fails):
   terminal, search, user, cube, vector, database, zap, file, layers, merge, sparkle, cpu, check, settings, cloud, lock, key, globe, mail, calendar, chart, code, folder, image, video, music, link, star, heart, flag, bell, clock, filter, grid, list, map, mic, phone, play, power, refresh, save, send, share, shield, trash, upload, download, wifi, zoom
+
+### IllustrationPrompt (REQUIRED for each NodeItem)
+Each node MUST include an illustrationPrompt object with:
+- concept: 1 sentence explaining what this technically is
+- visualDescription: Specific visual elements to draw (shapes, arrows, icons, metaphors)
+- educationalGoal: What the viewer should understand from seeing this illustration
+
+The illustrationPrompt should help an AI image generator create an illustration that EXPLAINS the concept, not just decorates it. Think: "What visual would help someone understand this?"
 
 ## Analysis Process
 
@@ -140,8 +156,24 @@ Output:
           "title": "Query Processing",
           "type": "sectionBox",
           "nodes": [
-            { "label": "User Query", "icon": "terminal" },
-            { "label": "Embedding", "icon": "cube" }
+            {
+              "label": "User Query",
+              "icon": "terminal",
+              "illustrationPrompt": {
+                "concept": "A user's question or search input that initiates the RAG process",
+                "visualDescription": "A speech bubble or text input box with a question mark, arrow pointing right toward processing",
+                "educationalGoal": "Viewer understands this is the starting point - a question that needs answering"
+              }
+            },
+            {
+              "label": "Embedding",
+              "icon": "cube",
+              "illustrationPrompt": {
+                "concept": "Converting text into numerical vectors that capture semantic meaning",
+                "visualDescription": "Text/words transforming into a grid of numbers or a 3D cube made of floating numbers",
+                "educationalGoal": "Viewer understands that text becomes numbers that AI can process"
+              }
+            }
           ],
           "wordIndexStart": 0,
           "wordIndexEnd": 15
