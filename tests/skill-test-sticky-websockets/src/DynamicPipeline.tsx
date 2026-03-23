@@ -114,6 +114,47 @@ type ColorScheme = {
   accent: string;
 };
 
+// Icon to color mapping - determines section color based on first icon
+const iconToColorKey: Record<string, string> = {
+  // Blue family
+  user: "userQuery",
+  search: "userQuery",
+  terminal: "userQuery",
+
+  // Green/Teal family
+  database: "embedding",
+  layers: "embedding",
+  vector: "embedding",
+
+  // Orange/Yellow family
+  file: "vectorSearch",
+  cube: "vectorSearch",
+
+  // Purple family
+  merge: "retrieve",
+  sparkle: "retrieve",
+
+  // Orange family
+  cpu: "augment",
+
+  // Green family
+  zap: "generate",
+};
+
+// Color rotation palette for auto-assignment
+const colorRotation = ["userQuery", "embedding", "vectorSearch", "retrieve", "augment", "generate"];
+
+// Get color scheme - uses icon-based color if available, otherwise rotates
+const getColorSchemeForSection = (sectionIndex: number, firstIcon?: string): ColorScheme => {
+  // If icon has a mapped color, use it
+  if (firstIcon && iconToColorKey[firstIcon]) {
+    return (colors as any)[iconToColorKey[firstIcon]];
+  }
+  // Otherwise rotate through palette
+  const colorKey = colorRotation[sectionIndex % colorRotation.length];
+  return (colors as any)[colorKey];
+};
+
 const getColorScheme = (key: string): ColorScheme => {
   return (colors as any)[key] || colors.userQuery;
 };
@@ -657,6 +698,71 @@ const AnimatedLine: React.FC<{
   );
 };
 
+// === GRADIENT ANIMATED LINE ===
+
+const GradientLine: React.FC<{
+  x1: number;
+  y1: number;
+  x2: number;
+  y2: number;
+  progress: number;
+  colorStart: string;
+  colorEnd: string;
+  frame: number;
+  id: string;
+}> = ({ x1, y1, x2, y2, progress, colorStart, colorEnd, frame, id }) => {
+  const endX = x1 + (x2 - x1) * progress;
+  const endY = y1 + (y2 - y1) * progress;
+  const pulseOffset = (frame % 60) / 60;
+  const gradientId = `gradient-${id}`;
+
+  // Calculate gradient direction based on line direction
+  const isHorizontal = Math.abs(x2 - x1) > Math.abs(y2 - y1);
+
+  return (
+    <g>
+      <defs>
+        <linearGradient
+          id={gradientId}
+          x1={isHorizontal ? "0%" : "50%"}
+          y1={isHorizontal ? "50%" : "0%"}
+          x2={isHorizontal ? "100%" : "50%"}
+          y2={isHorizontal ? "50%" : "100%"}
+        >
+          <stop offset="0%" stopColor={colorStart} />
+          <stop offset="100%" stopColor={colorEnd} />
+        </linearGradient>
+      </defs>
+      <line
+        x1={x1} y1={y1} x2={endX} y2={endY}
+        stroke={`url(#${gradientId})`} strokeWidth={8} strokeOpacity={0.2}
+        strokeLinecap="round" filter="blur(6px)"
+      />
+      <line
+        x1={x1} y1={y1} x2={endX} y2={endY}
+        stroke={`url(#${gradientId})`} strokeWidth={4} strokeOpacity={0.4}
+        strokeLinecap="round" filter="blur(2px)"
+      />
+      <line
+        x1={x1} y1={y1} x2={endX} y2={endY}
+        stroke={`url(#${gradientId})`} strokeWidth={2} strokeLinecap="round"
+      />
+      {progress > 0.1 && (
+        <circle
+          cx={x1 + (endX - x1) * pulseOffset}
+          cy={y1 + (endY - y1) * pulseOffset}
+          r={3}
+          fill={pulseOffset < 0.5 ? colorStart : colorEnd}
+          opacity={0.8}
+        />
+      )}
+      {progress > 0.95 && (
+        <circle cx={endX} cy={endY} r={5} fill={colorEnd} filter="url(#glow)" />
+      )}
+    </g>
+  );
+};
+
 // === BACKGROUNDS ===
 
 const MeshGradient: React.FC = () => (
@@ -909,8 +1015,11 @@ export const DynamicPipeline: React.FC = () => {
                   const pos2 = sectionPositions[i + 1];
                   const nextSection = sticky.sections[i + 1];
                   const lineStartFrame = nextSection.startFrame - 10;
-                  const colorScheme = getColorScheme(section.colorKey);
                   const sectionCount = sticky.sections.length;
+
+                  // Get colors from both sections (icon-based)
+                  const color1 = getColorSchemeForSection(i, section.nodes[0]?.icon);
+                  const color2 = getColorSchemeForSection(i + 1, nextSection.nodes[0]?.icon);
 
                   // Get CLOCKWISE grid positions
                   const gridPos1 = getClockwiseGridPos(i, sectionCount, cols);
@@ -950,7 +1059,7 @@ export const DynamicPipeline: React.FC = () => {
                       x2={x2}
                       y2={y2}
                       progress={getLineProgress(lineStartFrame)}
-                      color={colorScheme.accent}
+                      color={color2.accent}
                       frame={frame}
                     />
                   );
@@ -958,7 +1067,9 @@ export const DynamicPipeline: React.FC = () => {
               </svg>
 
               {sticky.sections.map((section, sectionIndex) => {
-                const colorScheme = getColorScheme(section.colorKey);
+                // Use icon-based color instead of colorKey from config
+                const firstIcon = section.nodes[0]?.icon;
+                const colorScheme = getColorSchemeForSection(sectionIndex, firstIcon);
                 const sectionAppearFrame = section.startFrame - 5;
                 const pos = sectionPositions[sectionIndex];
 
