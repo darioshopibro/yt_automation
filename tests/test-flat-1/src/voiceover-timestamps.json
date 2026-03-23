@@ -1,0 +1,691 @@
+{
+  "words": [
+    {
+      "word": "out",
+      "start": 0,
+      "end": 0.197,
+      "startFrame": 0,
+      "endFrame": 6
+    },
+    {
+      "word": "of",
+      "start": 0.232,
+      "end": 0.29,
+      "startFrame": 7,
+      "endFrame": 9
+    },
+    {
+      "word": "the",
+      "start": 0.337,
+      "end": 0.406,
+      "startFrame": 10,
+      "endFrame": 12
+    },
+    {
+      "word": "box",
+      "start": 0.453,
+      "end": 0.836,
+      "startFrame": 14,
+      "endFrame": 25
+    },
+    {
+      "word": "postgress",
+      "start": 0.987,
+      "end": 1.591,
+      "startFrame": 30,
+      "endFrame": 48
+    },
+    {
+      "word": "provides",
+      "start": 1.637,
+      "end": 2.125,
+      "startFrame": 49,
+      "endFrame": 64
+    },
+    {
+      "word": "Advanced",
+      "start": 2.183,
+      "end": 2.67,
+      "startFrame": 65,
+      "endFrame": 80
+    },
+    {
+      "word": "Data",
+      "start": 2.728,
+      "end": 2.961,
+      "startFrame": 82,
+      "endFrame": 89
+    },
+    {
+      "word": "types",
+      "start": 3.019,
+      "end": 3.332,
+      "startFrame": 91,
+      "endFrame": 100
+    },
+    {
+      "word": "like",
+      "start": 3.402,
+      "end": 3.611,
+      "startFrame": 102,
+      "endFrame": 108
+    },
+    {
+      "word": "binary",
+      "start": 3.669,
+      "end": 4.145,
+      "startFrame": 110,
+      "endFrame": 124
+    },
+    {
+      "word": "Json",
+      "start": 4.238,
+      "end": 4.714,
+      "startFrame": 127,
+      "endFrame": 141
+    },
+    {
+      "word": "arrays",
+      "start": 4.865,
+      "end": 5.503,
+      "startFrame": 146,
+      "endFrame": 165
+    },
+    {
+      "word": "key",
+      "start": 5.677,
+      "end": 5.909,
+      "startFrame": 170,
+      "endFrame": 177
+    },
+    {
+      "word": "value",
+      "start": 5.968,
+      "end": 6.339,
+      "startFrame": 179,
+      "endFrame": 190
+    },
+    {
+      "word": "stores",
+      "start": 6.374,
+      "end": 6.827,
+      "startFrame": 191,
+      "endFrame": 205
+    },
+    {
+      "word": "and",
+      "start": 6.873,
+      "end": 7.012,
+      "startFrame": 206,
+      "endFrame": 210
+    },
+    {
+      "word": "even",
+      "start": 7.082,
+      "end": 7.303,
+      "startFrame": 212,
+      "endFrame": 219
+    },
+    {
+      "word": "geometric",
+      "start": 7.384,
+      "end": 7.988,
+      "startFrame": 222,
+      "endFrame": 240
+    },
+    {
+      "word": "types",
+      "start": 8.034,
+      "end": 8.348,
+      "startFrame": 241,
+      "endFrame": 250
+    },
+    {
+      "word": "to",
+      "start": 8.406,
+      "end": 8.487,
+      "startFrame": 252,
+      "endFrame": 255
+    },
+    {
+      "word": "Define",
+      "start": 8.545,
+      "end": 8.963,
+      "startFrame": 256,
+      "endFrame": 269
+    },
+    {
+      "word": "shapes",
+      "start": 9.021,
+      "end": 9.462,
+      "startFrame": 271,
+      "endFrame": 284
+    },
+    {
+      "word": "but",
+      "start": 9.636,
+      "end": 9.799,
+      "startFrame": 289,
+      "endFrame": 294
+    },
+    {
+      "word": "more",
+      "start": 9.857,
+      "end": 10.031,
+      "startFrame": 296,
+      "endFrame": 301
+    },
+    {
+      "word": "importantly",
+      "start": 10.066,
+      "end": 10.739,
+      "startFrame": 302,
+      "endFrame": 322
+    },
+    {
+      "word": "it's",
+      "start": 10.913,
+      "end": 11.099,
+      "startFrame": 327,
+      "endFrame": 333
+    },
+    {
+      "word": "extensible",
+      "start": 11.146,
+      "end": 11.947,
+      "startFrame": 334,
+      "endFrame": 358
+    },
+    {
+      "word": "and",
+      "start": 12.19,
+      "end": 12.33,
+      "startFrame": 366,
+      "endFrame": 370
+    },
+    {
+      "word": "you",
+      "start": 12.399,
+      "end": 12.469,
+      "startFrame": 372,
+      "endFrame": 374
+    },
+    {
+      "word": "can",
+      "start": 12.516,
+      "end": 12.62,
+      "startFrame": 375,
+      "endFrame": 379
+    },
+    {
+      "word": "even",
+      "start": 12.666,
+      "end": 12.841,
+      "startFrame": 380,
+      "endFrame": 385
+    },
+    {
+      "word": "create",
+      "start": 12.887,
+      "end": 13.293,
+      "startFrame": 387,
+      "endFrame": 399
+    },
+    {
+      "word": "your",
+      "start": 13.328,
+      "end": 13.468,
+      "startFrame": 400,
+      "endFrame": 404
+    },
+    {
+      "word": "own",
+      "start": 13.526,
+      "end": 13.7,
+      "startFrame": 406,
+      "endFrame": 411
+    },
+    {
+      "word": "custom",
+      "start": 13.781,
+      "end": 14.199,
+      "startFrame": 413,
+      "endFrame": 426
+    },
+    {
+      "word": "data",
+      "start": 14.269,
+      "end": 14.501,
+      "startFrame": 428,
+      "endFrame": 435
+    },
+    {
+      "word": "types",
+      "start": 14.559,
+      "end": 14.872,
+      "startFrame": 437,
+      "endFrame": 446
+    },
+    {
+      "word": "over",
+      "start": 14.93,
+      "end": 15.07,
+      "startFrame": 448,
+      "endFrame": 452
+    },
+    {
+      "word": "the",
+      "start": 15.116,
+      "end": 15.186,
+      "startFrame": 453,
+      "endFrame": 456
+    },
+    {
+      "word": "years",
+      "start": 15.244,
+      "end": 15.673,
+      "startFrame": 457,
+      "endFrame": 470
+    },
+    {
+      "word": "this",
+      "start": 16.277,
+      "end": 16.475,
+      "startFrame": 488,
+      "endFrame": 494
+    },
+    {
+      "word": "has",
+      "start": 16.521,
+      "end": 16.637,
+      "startFrame": 496,
+      "endFrame": 499
+    },
+    {
+      "word": "led",
+      "start": 16.718,
+      "end": 16.916,
+      "startFrame": 502,
+      "endFrame": 507
+    },
+    {
+      "word": "to",
+      "start": 16.962,
+      "end": 17.032,
+      "startFrame": 509,
+      "endFrame": 511
+    },
+    {
+      "word": "a",
+      "start": 17.113,
+      "end": 17.148,
+      "startFrame": 513,
+      "endFrame": 514
+    },
+    {
+      "word": "massive",
+      "start": 17.264,
+      "end": 17.752,
+      "startFrame": 518,
+      "endFrame": 533
+    },
+    {
+      "word": "ecosystem",
+      "start": 17.833,
+      "end": 18.506,
+      "startFrame": 535,
+      "endFrame": 555
+    },
+    {
+      "word": "of",
+      "start": 18.564,
+      "end": 18.611,
+      "startFrame": 557,
+      "endFrame": 558
+    },
+    {
+      "word": "extensions",
+      "start": 18.669,
+      "end": 19.69,
+      "startFrame": 560,
+      "endFrame": 591
+    }
+  ],
+  "sections": [
+    {
+      "section": "BINARY_JSON",
+      "start": 3.669,
+      "end": 4.714,
+      "startFrame": 110,
+      "endFrame": 141,
+      "words": [
+        {
+          "word": "binary",
+          "start": 3.669,
+          "end": 4.145,
+          "startFrame": 110,
+          "endFrame": 124
+        },
+        {
+          "word": "Json",
+          "start": 4.238,
+          "end": 4.714,
+          "startFrame": 127,
+          "endFrame": 141
+        }
+      ]
+    },
+    {
+      "section": "ARRAYS",
+      "start": 4.865,
+      "end": 7.303,
+      "startFrame": 146,
+      "endFrame": 219,
+      "words": [
+        {
+          "word": "arrays",
+          "start": 4.865,
+          "end": 5.503,
+          "startFrame": 146,
+          "endFrame": 165
+        },
+        {
+          "word": "key",
+          "start": 5.677,
+          "end": 5.909,
+          "startFrame": 170,
+          "endFrame": 177
+        },
+        {
+          "word": "value",
+          "start": 5.968,
+          "end": 6.339,
+          "startFrame": 179,
+          "endFrame": 190
+        },
+        {
+          "word": "stores",
+          "start": 6.374,
+          "end": 6.827,
+          "startFrame": 191,
+          "endFrame": 205
+        },
+        {
+          "word": "and",
+          "start": 6.873,
+          "end": 7.012,
+          "startFrame": 206,
+          "endFrame": 210
+        },
+        {
+          "word": "even",
+          "start": 7.082,
+          "end": 7.303,
+          "startFrame": 212,
+          "endFrame": 219
+        }
+      ]
+    },
+    {
+      "section": "GEOMETRIC",
+      "start": 7.384,
+      "end": 11.099,
+      "startFrame": 222,
+      "endFrame": 333,
+      "words": [
+        {
+          "word": "geometric",
+          "start": 7.384,
+          "end": 7.988,
+          "startFrame": 222,
+          "endFrame": 240
+        },
+        {
+          "word": "types",
+          "start": 8.034,
+          "end": 8.348,
+          "startFrame": 241,
+          "endFrame": 250
+        },
+        {
+          "word": "to",
+          "start": 8.406,
+          "end": 8.487,
+          "startFrame": 252,
+          "endFrame": 255
+        },
+        {
+          "word": "Define",
+          "start": 8.545,
+          "end": 8.963,
+          "startFrame": 256,
+          "endFrame": 269
+        },
+        {
+          "word": "shapes",
+          "start": 9.021,
+          "end": 9.462,
+          "startFrame": 271,
+          "endFrame": 284
+        },
+        {
+          "word": "but",
+          "start": 9.636,
+          "end": 9.799,
+          "startFrame": 289,
+          "endFrame": 294
+        },
+        {
+          "word": "more",
+          "start": 9.857,
+          "end": 10.031,
+          "startFrame": 296,
+          "endFrame": 301
+        },
+        {
+          "word": "importantly",
+          "start": 10.066,
+          "end": 10.739,
+          "startFrame": 302,
+          "endFrame": 322
+        },
+        {
+          "word": "it's",
+          "start": 10.913,
+          "end": 11.099,
+          "startFrame": 327,
+          "endFrame": 333
+        }
+      ]
+    },
+    {
+      "section": "EXTENSIBLE",
+      "start": 11.146,
+      "end": 13.7,
+      "startFrame": 334,
+      "endFrame": 411,
+      "words": [
+        {
+          "word": "extensible",
+          "start": 11.146,
+          "end": 11.947,
+          "startFrame": 334,
+          "endFrame": 358
+        },
+        {
+          "word": "and",
+          "start": 12.19,
+          "end": 12.33,
+          "startFrame": 366,
+          "endFrame": 370
+        },
+        {
+          "word": "you",
+          "start": 12.399,
+          "end": 12.469,
+          "startFrame": 372,
+          "endFrame": 374
+        },
+        {
+          "word": "can",
+          "start": 12.516,
+          "end": 12.62,
+          "startFrame": 375,
+          "endFrame": 379
+        },
+        {
+          "word": "even",
+          "start": 12.666,
+          "end": 12.841,
+          "startFrame": 380,
+          "endFrame": 385
+        },
+        {
+          "word": "create",
+          "start": 12.887,
+          "end": 13.293,
+          "startFrame": 387,
+          "endFrame": 399
+        },
+        {
+          "word": "your",
+          "start": 13.328,
+          "end": 13.468,
+          "startFrame": 400,
+          "endFrame": 404
+        },
+        {
+          "word": "own",
+          "start": 13.526,
+          "end": 13.7,
+          "startFrame": 406,
+          "endFrame": 411
+        }
+      ]
+    },
+    {
+      "section": "CUSTOM_TYPES",
+      "start": 13.781,
+      "end": 18.611,
+      "startFrame": 413,
+      "endFrame": 558,
+      "words": [
+        {
+          "word": "custom",
+          "start": 13.781,
+          "end": 14.199,
+          "startFrame": 413,
+          "endFrame": 426
+        },
+        {
+          "word": "data",
+          "start": 14.269,
+          "end": 14.501,
+          "startFrame": 428,
+          "endFrame": 435
+        },
+        {
+          "word": "types",
+          "start": 14.559,
+          "end": 14.872,
+          "startFrame": 437,
+          "endFrame": 446
+        },
+        {
+          "word": "over",
+          "start": 14.93,
+          "end": 15.07,
+          "startFrame": 448,
+          "endFrame": 452
+        },
+        {
+          "word": "the",
+          "start": 15.116,
+          "end": 15.186,
+          "startFrame": 453,
+          "endFrame": 456
+        },
+        {
+          "word": "years",
+          "start": 15.244,
+          "end": 15.673,
+          "startFrame": 457,
+          "endFrame": 470
+        },
+        {
+          "word": "this",
+          "start": 16.277,
+          "end": 16.475,
+          "startFrame": 488,
+          "endFrame": 494
+        },
+        {
+          "word": "has",
+          "start": 16.521,
+          "end": 16.637,
+          "startFrame": 496,
+          "endFrame": 499
+        },
+        {
+          "word": "led",
+          "start": 16.718,
+          "end": 16.916,
+          "startFrame": 502,
+          "endFrame": 507
+        },
+        {
+          "word": "to",
+          "start": 16.962,
+          "end": 17.032,
+          "startFrame": 509,
+          "endFrame": 511
+        },
+        {
+          "word": "a",
+          "start": 17.113,
+          "end": 17.148,
+          "startFrame": 513,
+          "endFrame": 514
+        },
+        {
+          "word": "massive",
+          "start": 17.264,
+          "end": 17.752,
+          "startFrame": 518,
+          "endFrame": 533
+        },
+        {
+          "word": "ecosystem",
+          "start": 17.833,
+          "end": 18.506,
+          "startFrame": 535,
+          "endFrame": 555
+        },
+        {
+          "word": "of",
+          "start": 18.564,
+          "end": 18.611,
+          "startFrame": 557,
+          "endFrame": 558
+        }
+      ]
+    },
+    {
+      "section": "EXTENSIONS",
+      "start": 18.669,
+      "end": 19.69,
+      "startFrame": 560,
+      "endFrame": 591,
+      "words": [
+        {
+          "word": "extensions",
+          "start": 18.669,
+          "end": 19.69,
+          "startFrame": 560,
+          "endFrame": 591
+        }
+      ]
+    }
+  ],
+  "fps": 30
+}

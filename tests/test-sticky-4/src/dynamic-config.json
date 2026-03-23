@@ -1,0 +1,129 @@
+{
+  "title": "DNS Resolution",
+  "subtitle": "How DNS Lookup Works",
+  "fps": 30,
+  "totalFrames": 1738,
+
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Query",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "BROWSER_QUERY",
+          "title": "Browser Query",
+          "subtitle": "Type URL into browser",
+          "colorKey": "userQuery",
+          "startFrame": 55,
+          "nodes": [
+            { "label": "URL", "icon": "terminal" },
+            { "label": "Browser", "icon": "cube" }
+          ]
+        },
+        {
+          "id": "DNS_QUERY",
+          "title": "DNS Query",
+          "subtitle": "Make DNS query",
+          "colorKey": "embedding",
+          "startFrame": 119,
+          "nodes": [
+            { "label": "DNS", "icon": "search" },
+            { "label": "Query", "icon": "zap" }
+          ]
+        },
+        {
+          "id": "CACHE_CHECK",
+          "title": "Cache Check",
+          "subtitle": "Check browser/OS cache",
+          "colorKey": "vectorSearch",
+          "startFrame": 406,
+          "nodes": [
+            { "label": "Cache", "icon": "layers" },
+            { "label": "Local", "icon": "database" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Resolver",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "RECURSIVE_RESOLVER",
+          "title": "DNS Resolver",
+          "subtitle": "Contact recursive resolver",
+          "colorKey": "augment",
+          "startFrame": 696,
+          "nodes": [
+            { "label": "Resolver", "icon": "cube" },
+            { "label": "Recursive", "icon": "zap" }
+          ]
+        },
+        {
+          "id": "ROOT_SERVER",
+          "title": "Root Server",
+          "subtitle": "Query root name server",
+          "colorKey": "augment",
+          "startFrame": 893,
+          "nodes": [
+            { "label": "Root", "icon": "database" },
+            { "label": "Server", "icon": "terminal" }
+          ]
+        },
+        {
+          "id": "TLD_SERVER",
+          "title": "TLD Server",
+          "subtitle": "Query top level domain server",
+          "colorKey": "augment",
+          "startFrame": 1009,
+          "nodes": [
+            { "label": ".com", "icon": "cube" },
+            { "label": ".io", "icon": "cube" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Response",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "AUTH_SERVER",
+          "title": "Authoritative",
+          "subtitle": "Get from authoritative server",
+          "colorKey": "generate",
+          "startFrame": 1425,
+          "nodes": [
+            { "label": "Auth", "icon": "database" },
+            { "label": "Server", "icon": "sparkle" }
+          ]
+        },
+        {
+          "id": "FINAL_IP",
+          "title": "Final IP",
+          "subtitle": "Source of truth IP address",
+          "colorKey": "generate",
+          "startFrame": 1496,
+          "nodes": [
+            { "label": "IP", "icon": "zap" },
+            { "label": "Address", "icon": "file" }
+          ]
+        },
+        {
+          "id": "CACHE_RESULT",
+          "title": "Cache Result",
+          "subtitle": "Cache for future use",
+          "colorKey": "generate",
+          "startFrame": 1717,
+          "nodes": [
+            { "label": "Cache", "icon": "layers" },
+            { "label": "Store", "icon": "database" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,129 @@
+{
+  "title": "OAuth Code Flow",
+  "subtitle": "Authorization Code Flow with Google",
+  "fps": 30,
+  "totalFrames": 1115,
+
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Request",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "USER_VISIT",
+          "title": "User Visit",
+          "subtitle": "User visits application",
+          "colorKey": "userQuery",
+          "startFrame": 34,
+          "nodes": [
+            { "label": "User", "icon": "user" },
+            { "label": "App", "icon": "terminal" }
+          ]
+        },
+        {
+          "id": "CLICK_LOGIN",
+          "title": "Click Login",
+          "subtitle": "Click login with Google",
+          "colorKey": "embedding",
+          "startFrame": 95,
+          "nodes": [
+            { "label": "Button", "icon": "zap" },
+            { "label": "Google", "icon": "cube" }
+          ]
+        },
+        {
+          "id": "REDIRECT_AUTH",
+          "title": "Redirect",
+          "subtitle": "Redirect to auth server",
+          "colorKey": "vectorSearch",
+          "startFrame": 232,
+          "nodes": [
+            { "label": "Redirect", "icon": "zap" },
+            { "label": "Auth Server", "icon": "database" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Authenticate",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "GOOGLE_LOGIN",
+          "title": "Google Login",
+          "subtitle": "Google asks user to login",
+          "colorKey": "augment",
+          "startFrame": 409,
+          "nodes": [
+            { "label": "Login Form", "icon": "terminal" },
+            { "label": "Google", "icon": "cube" }
+          ]
+        },
+        {
+          "id": "ENTER_CREDS",
+          "title": "Enter Credentials",
+          "subtitle": "User enters username/password",
+          "colorKey": "augment",
+          "startFrame": 499,
+          "nodes": [
+            { "label": "Username", "icon": "user" },
+            { "label": "Password", "icon": "file" }
+          ]
+        },
+        {
+          "id": "CLICK_ALLOW",
+          "title": "Click Allow",
+          "subtitle": "User clicks allow button",
+          "colorKey": "augment",
+          "startFrame": 568,
+          "nodes": [
+            { "label": "Allow", "icon": "sparkle" },
+            { "label": "Consent", "icon": "zap" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Token",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "GENERATE_TOKEN",
+          "title": "Generate Token",
+          "subtitle": "Google generates access token",
+          "colorKey": "generate",
+          "startFrame": 696,
+          "nodes": [
+            { "label": "Token", "icon": "file" },
+            { "label": "Generate", "icon": "sparkle" }
+          ]
+        },
+        {
+          "id": "RECEIVE_TOKEN",
+          "title": "Receive Token",
+          "subtitle": "App receives and stores token",
+          "colorKey": "generate",
+          "startFrame": 882,
+          "nodes": [
+            { "label": "Store", "icon": "database" },
+            { "label": "Token", "icon": "file" }
+          ]
+        },
+        {
+          "id": "API_REQUESTS",
+          "title": "API Requests",
+          "subtitle": "App uses token for API calls",
+          "colorKey": "generate",
+          "startFrame": 1018,
+          "nodes": [
+            { "label": "API", "icon": "terminal" },
+            { "label": "Google", "icon": "cube" }
+          ]
+        }
+      ]
+    }
+  ]
+}

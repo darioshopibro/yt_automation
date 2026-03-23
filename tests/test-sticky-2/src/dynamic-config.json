@@ -1,0 +1,107 @@
+{
+  "title": "RAG Pipeline",
+  "subtitle": "Retrieval Augmented Generation",
+  "fps": 30,
+  "totalFrames": 1153,
+
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Retrieve",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "INTRO",
+          "title": "Three Steps",
+          "subtitle": "Break down into steps",
+          "colorKey": "userQuery",
+          "startFrame": 129,
+          "nodes": [
+            { "label": "RAG", "icon": "layers" },
+            { "label": "Steps", "icon": "zap" }
+          ]
+        },
+        {
+          "id": "RETRIEVAL",
+          "title": "Retrieval",
+          "subtitle": "Convert documents",
+          "colorKey": "embedding",
+          "startFrame": 254,
+          "nodes": [
+            { "label": "Docs", "icon": "file" },
+            { "label": "Convert", "icon": "zap" }
+          ]
+        },
+        {
+          "id": "VECTOR_EMBEDDING",
+          "title": "Vector DB",
+          "subtitle": "Store embeddings",
+          "colorKey": "vectorSearch",
+          "startFrame": 342,
+          "nodes": [
+            { "label": "Vectors", "icon": "cube" },
+            { "label": "Database", "icon": "database" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Augment",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "AUGMENTATION",
+          "title": "Augmentation",
+          "subtitle": "Process retrieved data",
+          "colorKey": "augment",
+          "startFrame": 581,
+          "nodes": [
+            { "label": "Data", "icon": "layers" },
+            { "label": "Process", "icon": "merge" }
+          ]
+        },
+        {
+          "id": "PROMPT_INJECTION",
+          "title": "Prompt",
+          "subtitle": "Inject into prompt",
+          "colorKey": "augment",
+          "startFrame": 792,
+          "nodes": [
+            { "label": "Inject", "icon": "zap" },
+            { "label": "Prompt", "icon": "terminal" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Generate",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "GENERATION",
+          "title": "Generation",
+          "subtitle": "AI generates response",
+          "colorKey": "generate",
+          "startFrame": 893,
+          "nodes": [
+            { "label": "AI", "icon": "cpu" },
+            { "label": "Generate", "icon": "sparkle" }
+          ]
+        },
+        {
+          "id": "RESPONSE",
+          "title": "Response",
+          "subtitle": "Return semantic data",
+          "colorKey": "generate",
+          "startFrame": 1018,
+          "nodes": [
+            { "label": "Result", "icon": "file" },
+            { "label": "Response", "icon": "sparkle" }
+          ]
+        }
+      ]
+    }
+  ]
+}
