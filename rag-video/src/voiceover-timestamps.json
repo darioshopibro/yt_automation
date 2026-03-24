@@ -1,6 +1,6 @@
 {
-  "duration": 42.26,
-  "totalFrames": 1297,
+  "duration": 44.21,
+  "totalFrames": 1356,
   "words": [
     {
       "word": "Let",
@@ -18,696 +18,696 @@
     },
     {
       "word": "quickly",
-      "start": 0.36,
-      "end": 0.662,
+      "start": 0.348,
+      "end": 0.639,
       "startFrame": 10,
       "endFrame": 19
     },
     {
       "word": "walk",
-      "start": 0.72,
-      "end": 0.917,
-      "startFrame": 21,
-      "endFrame": 27
+      "start": 0.685,
+      "end": 0.859,
+      "startFrame": 20,
+      "endFrame": 25
     },
     {
       "word": "you",
-      "start": 0.987,
-      "end": 1.068,
-      "startFrame": 29,
-      "endFrame": 32
+      "start": 0.929,
+      "end": 1.01,
+      "startFrame": 27,
+      "endFrame": 30
     },
     {
       "word": "through",
-      "start": 1.126,
-      "end": 1.393,
-      "startFrame": 33,
-      "endFrame": 41
+      "start": 1.057,
+      "end": 1.324,
+      "startFrame": 31,
+      "endFrame": 39
     },
     {
       "word": "how",
-      "start": 1.463,
-      "end": 1.614,
-      "startFrame": 43,
-      "endFrame": 48
+      "start": 1.393,
+      "end": 1.533,
+      "startFrame": 41,
+      "endFrame": 45
     },
     {
       "word": "basic",
-      "start": 1.707,
-      "end": 2.183,
-      "startFrame": 51,
-      "endFrame": 65
+      "start": 1.602,
+      "end": 1.962,
+      "startFrame": 48,
+      "endFrame": 58
     },
     {
       "word": "rag",
-      "start": 2.357,
-      "end": 2.728,
-      "startFrame": 70,
-      "endFrame": 81
+      "start": 2.032,
+      "end": 2.276,
+      "startFrame": 60,
+      "endFrame": 68
     },
     {
       "word": "works",
-      "start": 2.798,
-      "end": 3.448,
-      "startFrame": 83,
-      "endFrame": 103
+      "start": 2.334,
+      "end": 2.914,
+      "startFrame": 70,
+      "endFrame": 87
     },
     {
       "word": "A",
-      "start": 4.052,
-      "end": 4.145,
-      "startFrame": 121,
-      "endFrame": 124
+      "start": 3.425,
+      "end": 3.518,
+      "startFrame": 102,
+      "endFrame": 105
     },
     {
       "word": "user",
-      "start": 4.272,
-      "end": 4.679,
-      "startFrame": 128,
-      "endFrame": 140
+      "start": 3.646,
+      "end": 4.029,
+      "startFrame": 109,
+      "endFrame": 120
     },
     {
       "word": "sends",
-      "start": 4.795,
-      "end": 5.074,
-      "startFrame": 143,
-      "endFrame": 152
+      "start": 4.203,
+      "end": 4.481,
+      "startFrame": 126,
+      "endFrame": 134
     },
     {
       "word": "a",
-      "start": 5.108,
-      "end": 5.143,
-      "startFrame": 153,
-      "endFrame": 154
+      "start": 4.516,
+      "end": 4.54,
+      "startFrame": 135,
+      "endFrame": 136
     },
     {
       "word": "query",
-      "start": 5.19,
-      "end": 5.805,
-      "startFrame": 155,
-      "endFrame": 174
+      "start": 4.598,
+      "end": 5.201,
+      "startFrame": 137,
+      "endFrame": 156
     },
     {
       "word": "That",
-      "start": 6.246,
-      "end": 6.455,
-      "startFrame": 187,
-      "endFrame": 193
+      "start": 5.642,
+      "end": 5.851,
+      "startFrame": 169,
+      "endFrame": 175
     },
     {
       "word": "query",
-      "start": 6.525,
-      "end": 6.838,
-      "startFrame": 195,
-      "endFrame": 205
+      "start": 5.921,
+      "end": 6.246,
+      "startFrame": 177,
+      "endFrame": 187
     },
     {
       "word": "gets",
-      "start": 6.896,
-      "end": 7.07,
-      "startFrame": 206,
-      "endFrame": 212
+      "start": 6.304,
+      "end": 6.478,
+      "startFrame": 189,
+      "endFrame": 194
     },
     {
       "word": "converted",
-      "start": 7.117,
-      "end": 7.639,
-      "startFrame": 213,
-      "endFrame": 229
+      "start": 6.525,
+      "end": 7.036,
+      "startFrame": 195,
+      "endFrame": 211
     },
     {
       "word": "into",
-      "start": 7.721,
-      "end": 7.964,
-      "startFrame": 231,
-      "endFrame": 238
+      "start": 7.105,
+      "end": 7.326,
+      "startFrame": 213,
+      "endFrame": 219
     },
     {
       "word": "an",
-      "start": 8.046,
-      "end": 8.104,
-      "startFrame": 241,
-      "endFrame": 243
+      "start": 7.407,
+      "end": 7.465,
+      "startFrame": 222,
+      "endFrame": 223
     },
     {
       "word": "embedding",
-      "start": 8.139,
-      "end": 8.742,
-      "startFrame": 244,
-      "endFrame": 262
+      "start": 7.5,
+      "end": 8.092,
+      "startFrame": 225,
+      "endFrame": 242
     },
     {
       "word": "which",
-      "start": 8.951,
-      "end": 9.137,
-      "startFrame": 268,
-      "endFrame": 274
+      "start": 8.15,
+      "end": 8.348,
+      "startFrame": 244,
+      "endFrame": 250
     },
     {
       "word": "is",
-      "start": 9.195,
-      "end": 9.265,
-      "startFrame": 275,
-      "endFrame": 277
+      "start": 8.394,
+      "end": 8.475,
+      "startFrame": 251,
+      "endFrame": 254
     },
     {
       "word": "just",
-      "start": 9.334,
-      "end": 9.59,
-      "startFrame": 280,
-      "endFrame": 287
+      "start": 8.533,
+      "end": 8.766,
+      "startFrame": 255,
+      "endFrame": 262
     },
     {
       "word": "a",
-      "start": 9.636,
-      "end": 9.66,
-      "startFrame": 289,
-      "endFrame": 289
+      "start": 8.812,
+      "end": 8.835,
+      "startFrame": 264,
+      "endFrame": 265
     },
     {
       "word": "numerical",
-      "start": 9.718,
-      "end": 10.274,
-      "startFrame": 291,
-      "endFrame": 308
+      "start": 8.882,
+      "end": 9.427,
+      "startFrame": 266,
+      "endFrame": 282
     },
     {
       "word": "representation",
-      "start": 10.356,
-      "end": 11.215,
-      "startFrame": 310,
-      "endFrame": 336
+      "start": 9.497,
+      "end": 10.298,
+      "startFrame": 284,
+      "endFrame": 308
     },
     {
       "word": "of",
-      "start": 11.366,
-      "end": 11.493,
-      "startFrame": 340,
-      "endFrame": 344
+      "start": 10.367,
+      "end": 10.449,
+      "startFrame": 311,
+      "endFrame": 313
     },
     {
       "word": "the",
-      "start": 11.552,
-      "end": 11.621,
-      "startFrame": 346,
-      "endFrame": 348
+      "start": 10.495,
+      "end": 10.565,
+      "startFrame": 314,
+      "endFrame": 316
     },
     {
       "word": "text",
-      "start": 11.668,
-      "end": 12.295,
-      "startFrame": 350,
-      "endFrame": 368
+      "start": 10.611,
+      "end": 11.25,
+      "startFrame": 318,
+      "endFrame": 337
     },
     {
       "word": "You",
-      "start": 12.991,
-      "end": 13.119,
-      "startFrame": 389,
-      "endFrame": 393
+      "start": 11.946,
+      "end": 12.074,
+      "startFrame": 358,
+      "endFrame": 362
     },
     {
       "word": "then",
-      "start": 13.177,
-      "end": 13.316,
-      "startFrame": 395,
-      "endFrame": 399
+      "start": 12.144,
+      "end": 12.295,
+      "startFrame": 364,
+      "endFrame": 368
     },
     {
       "word": "search",
-      "start": 13.398,
-      "end": 13.63,
-      "startFrame": 401,
-      "endFrame": 408
+      "start": 12.376,
+      "end": 12.655,
+      "startFrame": 371,
+      "endFrame": 379
     },
     {
       "word": "your",
-      "start": 13.665,
-      "end": 13.769,
-      "startFrame": 409,
-      "endFrame": 413
+      "start": 12.713,
+      "end": 12.829,
+      "startFrame": 381,
+      "endFrame": 384
     },
     {
       "word": "vector",
-      "start": 13.815,
-      "end": 14.094,
-      "startFrame": 414,
-      "endFrame": 422
+      "start": 12.898,
+      "end": 13.212,
+      "startFrame": 386,
+      "endFrame": 396
     },
     {
       "word": "database",
-      "start": 14.141,
-      "end": 14.628,
-      "startFrame": 424,
-      "endFrame": 438
+      "start": 13.27,
+      "end": 13.758,
+      "startFrame": 398,
+      "endFrame": 412
     },
     {
       "word": "for",
-      "start": 14.675,
-      "end": 14.791,
-      "startFrame": 440,
-      "endFrame": 443
+      "start": 13.804,
+      "end": 13.92,
+      "startFrame": 414,
+      "endFrame": 417
     },
     {
       "word": "chunks",
-      "start": 14.849,
-      "end": 15.139,
-      "startFrame": 445,
-      "endFrame": 454
+      "start": 13.99,
+      "end": 14.338,
+      "startFrame": 419,
+      "endFrame": 430
     },
     {
       "word": "that",
-      "start": 15.185,
-      "end": 15.302,
-      "startFrame": 455,
-      "endFrame": 459
+      "start": 14.396,
+      "end": 14.535,
+      "startFrame": 431,
+      "endFrame": 436
     },
     {
       "word": "are",
-      "start": 15.336,
-      "end": 15.441,
-      "startFrame": 460,
-      "endFrame": 463
+      "start": 14.57,
+      "end": 14.675,
+      "startFrame": 437,
+      "endFrame": 440
     },
     {
       "word": "similar",
-      "start": 15.487,
-      "end": 15.859,
-      "startFrame": 464,
-      "endFrame": 475
+      "start": 14.721,
+      "end": 15.104,
+      "startFrame": 441,
+      "endFrame": 453
     },
     {
       "word": "to",
-      "start": 15.94,
-      "end": 16.01,
-      "startFrame": 478,
-      "endFrame": 480
+      "start": 15.186,
+      "end": 15.255,
+      "startFrame": 455,
+      "endFrame": 457
     },
     {
       "word": "this",
-      "start": 16.079,
-      "end": 16.23,
-      "startFrame": 482,
-      "endFrame": 486
+      "start": 15.325,
+      "end": 15.464,
+      "startFrame": 459,
+      "endFrame": 463
     },
     {
       "word": "embedding",
-      "start": 16.288,
-      "end": 16.892,
-      "startFrame": 488,
-      "endFrame": 506
+      "start": 15.522,
+      "end": 16.184,
+      "startFrame": 465,
+      "endFrame": 485
     },
     {
       "word": "That's",
-      "start": 17.496,
-      "end": 17.763,
-      "startFrame": 524,
-      "endFrame": 532
+      "start": 16.881,
+      "end": 17.159,
+      "startFrame": 506,
+      "endFrame": 514
     },
     {
       "word": "step",
-      "start": 17.821,
-      "end": 18.123,
-      "startFrame": 534,
-      "endFrame": 543
+      "start": 17.206,
+      "end": 17.508,
+      "startFrame": 516,
+      "endFrame": 525
     },
     {
       "word": "one",
-      "start": 18.239,
-      "end": 18.703,
-      "startFrame": 547,
-      "endFrame": 561
+      "start": 17.624,
+      "end": 18.169,
+      "startFrame": 528,
+      "endFrame": 545
     },
     {
       "word": "retrieve",
-      "start": 19.028,
-      "end": 19.783,
-      "startFrame": 570,
-      "endFrame": 593
+      "start": 18.61,
+      "end": 19.435,
+      "startFrame": 558,
+      "endFrame": 583
     },
     {
       "word": "The",
-      "start": 20.387,
-      "end": 20.503,
-      "startFrame": 611,
-      "endFrame": 615
+      "start": 20.039,
+      "end": 20.166,
+      "startFrame": 601,
+      "endFrame": 604
     },
     {
       "word": "chunks",
-      "start": 20.561,
-      "end": 20.828,
-      "startFrame": 616,
-      "endFrame": 624
+      "start": 20.236,
+      "end": 20.526,
+      "startFrame": 607,
+      "endFrame": 615
     },
     {
       "word": "you",
-      "start": 20.874,
-      "end": 20.944,
-      "startFrame": 626,
-      "endFrame": 628
+      "start": 20.584,
+      "end": 20.665,
+      "startFrame": 617,
+      "endFrame": 619
     },
     {
       "word": "get",
-      "start": 21.014,
-      "end": 21.141,
-      "startFrame": 630,
-      "endFrame": 634
+      "start": 20.724,
+      "end": 20.863,
+      "startFrame": 621,
+      "endFrame": 625
     },
     {
       "word": "back",
-      "start": 21.188,
-      "end": 21.513,
-      "startFrame": 635,
-      "endFrame": 645
+      "start": 20.921,
+      "end": 21.223,
+      "startFrame": 627,
+      "endFrame": 636
     },
     {
       "word": "become",
-      "start": 21.629,
-      "end": 21.931,
-      "startFrame": 648,
-      "endFrame": 657
+      "start": 21.339,
+      "end": 21.664,
+      "startFrame": 640,
+      "endFrame": 649
     },
     {
       "word": "your",
-      "start": 21.966,
-      "end": 22.07,
-      "startFrame": 658,
-      "endFrame": 662
+      "start": 21.699,
+      "end": 21.815,
+      "startFrame": 650,
+      "endFrame": 654
     },
     {
       "word": "context",
-      "start": 22.117,
-      "end": 22.999,
-      "startFrame": 663,
-      "endFrame": 689
+      "start": 21.873,
+      "end": 22.767,
+      "startFrame": 656,
+      "endFrame": 683
     },
     {
       "word": "In",
-      "start": 23.603,
-      "end": 23.754,
-      "startFrame": 708,
-      "endFrame": 712
+      "start": 23.463,
+      "end": 23.614,
+      "startFrame": 703,
+      "endFrame": 708
     },
     {
       "word": "step",
-      "start": 23.823,
-      "end": 24.079,
-      "startFrame": 714,
-      "endFrame": 722
+      "start": 23.684,
+      "end": 23.939,
+      "startFrame": 710,
+      "endFrame": 718
     },
     {
       "word": "two",
-      "start": 24.148,
-      "end": 24.717,
-      "startFrame": 724,
-      "endFrame": 741
+      "start": 24.009,
+      "end": 24.543,
+      "startFrame": 720,
+      "endFrame": 736
     },
     {
       "word": "argument",
-      "start": 25.1,
-      "end": 25.855,
-      "startFrame": 753,
-      "endFrame": 775
+      "start": 24.694,
+      "end": 25.46,
+      "startFrame": 740,
+      "endFrame": 763
     },
     {
       "word": "You",
-      "start": 26.459,
-      "end": 26.586,
-      "startFrame": 793,
-      "endFrame": 797
+      "start": 26.157,
+      "end": 26.285,
+      "startFrame": 784,
+      "endFrame": 788
     },
     {
       "word": "take",
-      "start": 26.656,
-      "end": 26.865,
-      "startFrame": 799,
-      "endFrame": 805
+      "start": 26.366,
+      "end": 26.587,
+      "startFrame": 790,
+      "endFrame": 797
     },
     {
       "word": "that",
-      "start": 26.9,
-      "end": 27.051,
-      "startFrame": 807,
-      "endFrame": 811
+      "start": 26.621,
+      "end": 26.772,
+      "startFrame": 798,
+      "endFrame": 803
     },
     {
       "word": "context",
-      "start": 27.121,
-      "end": 27.805,
-      "startFrame": 813,
-      "endFrame": 834
+      "start": 26.842,
+      "end": 27.55,
+      "startFrame": 805,
+      "endFrame": 826
     },
     {
       "word": "and",
-      "start": 27.864,
-      "end": 28.003,
-      "startFrame": 835,
-      "endFrame": 840
+      "start": 27.724,
+      "end": 27.887,
+      "startFrame": 831,
+      "endFrame": 836
     },
     {
       "word": "combine",
-      "start": 28.073,
-      "end": 28.479,
-      "startFrame": 842,
-      "endFrame": 854
+      "start": 27.945,
+      "end": 28.398,
+      "startFrame": 838,
+      "endFrame": 851
     },
     {
       "word": "it",
-      "start": 28.514,
-      "end": 28.583,
-      "startFrame": 855,
-      "endFrame": 857
+      "start": 28.421,
+      "end": 28.502,
+      "startFrame": 852,
+      "endFrame": 855
     },
     {
       "word": "with",
-      "start": 28.618,
-      "end": 28.746,
-      "startFrame": 858,
-      "endFrame": 862
+      "start": 28.549,
+      "end": 28.688,
+      "startFrame": 856,
+      "endFrame": 860
     },
     {
       "word": "the",
-      "start": 28.792,
-      "end": 28.862,
-      "startFrame": 863,
-      "endFrame": 865
+      "start": 28.723,
+      "end": 28.792,
+      "startFrame": 861,
+      "endFrame": 863
     },
     {
       "word": "original",
-      "start": 28.932,
-      "end": 29.326,
-      "startFrame": 867,
-      "endFrame": 879
+      "start": 28.862,
+      "end": 29.268,
+      "startFrame": 865,
+      "endFrame": 878
     },
     {
       "word": "query",
-      "start": 29.396,
-      "end": 29.826,
-      "startFrame": 881,
+      "start": 29.35,
+      "end": 29.814,
+      "startFrame": 880,
       "endFrame": 894
     },
     {
       "word": "into",
-      "start": 30.0,
+      "start": 29.988,
       "end": 30.22,
-      "startFrame": 900,
+      "startFrame": 899,
       "endFrame": 906
     },
     {
       "word": "a",
-      "start": 30.29,
+      "start": 30.302,
       "end": 30.325,
-      "startFrame": 908,
+      "startFrame": 909,
       "endFrame": 909
     },
     {
       "word": "prompt",
-      "start": 30.371,
-      "end": 30.905,
+      "start": 30.383,
+      "end": 30.975,
       "startFrame": 911,
-      "endFrame": 927
+      "endFrame": 929
     },
     {
       "word": "Finally",
-      "start": 31.416,
-      "end": 31.927,
-      "startFrame": 942,
-      "endFrame": 957
+      "start": 31.579,
+      "end": 32.182,
+      "startFrame": 947,
+      "endFrame": 965
     },
     {
       "word": "in",
-      "start": 31.95,
-      "end": 32.032,
-      "startFrame": 958,
-      "endFrame": 960
+      "start": 32.275,
+      "end": 32.403,
+      "startFrame": 968,
+      "endFrame": 972
     },
     {
       "word": "step",
-      "start": 32.09,
-      "end": 32.322,
-      "startFrame": 962,
-      "endFrame": 969
+      "start": 32.461,
+      "end": 32.716,
+      "startFrame": 973,
+      "endFrame": 981
     },
     {
       "word": "three",
-      "start": 32.38,
-      "end": 32.856,
-      "startFrame": 971,
-      "endFrame": 985
+      "start": 32.786,
+      "end": 33.297,
+      "startFrame": 983,
+      "endFrame": 998
     },
     {
       "word": "generate",
-      "start": 33.1,
-      "end": 33.808,
-      "startFrame": 993,
-      "endFrame": 1014
-    },
-    {
-      "word": "You",
-      "start": 34.191,
-      "end": 34.296,
-      "startFrame": 1025,
+      "start": 33.622,
+      "end": 34.295,
+      "startFrame": 1008,
       "endFrame": 1028
     },
     {
+      "word": "You",
+      "start": 34.737,
+      "end": 34.853,
+      "startFrame": 1042,
+      "endFrame": 1045
+    },
+    {
       "word": "pass",
-      "start": 34.365,
-      "end": 34.621,
-      "startFrame": 1030,
-      "endFrame": 1038
+      "start": 34.922,
+      "end": 35.189,
+      "startFrame": 1047,
+      "endFrame": 1055
     },
     {
       "word": "that",
-      "start": 34.667,
-      "end": 34.806,
-      "startFrame": 1040,
-      "endFrame": 1044
+      "start": 35.247,
+      "end": 35.398,
+      "startFrame": 1057,
+      "endFrame": 1061
     },
     {
       "word": "prompt",
-      "start": 34.853,
-      "end": 35.143,
-      "startFrame": 1045,
-      "endFrame": 1054
+      "start": 35.456,
+      "end": 35.782,
+      "startFrame": 1063,
+      "endFrame": 1073
     },
     {
       "word": "to",
-      "start": 35.166,
-      "end": 35.213,
-      "startFrame": 1054,
-      "endFrame": 1056
+      "start": 35.84,
+      "end": 35.909,
+      "startFrame": 1075,
+      "endFrame": 1077
     },
     {
       "word": "the",
-      "start": 35.271,
-      "end": 35.352,
-      "startFrame": 1058,
-      "endFrame": 1060
+      "start": 35.967,
+      "end": 36.049,
+      "startFrame": 1079,
+      "endFrame": 1081
     },
     {
       "word": "LLM",
-      "start": 35.422,
-      "end": 35.956,
-      "startFrame": 1062,
-      "endFrame": 1078
+      "start": 36.13,
+      "end": 36.745,
+      "startFrame": 1083,
+      "endFrame": 1102
     },
     {
       "word": "and",
-      "start": 36.072,
-      "end": 36.188,
-      "startFrame": 1082,
-      "endFrame": 1085
+      "start": 37.07,
+      "end": 37.221,
+      "startFrame": 1112,
+      "endFrame": 1116
     },
     {
       "word": "it",
-      "start": 36.246,
-      "end": 36.304,
-      "startFrame": 1087,
-      "endFrame": 1089
+      "start": 37.279,
+      "end": 37.337,
+      "startFrame": 1118,
+      "endFrame": 1120
     },
     {
       "word": "generates",
-      "start": 36.351,
-      "end": 36.803,
-      "startFrame": 1090,
-      "endFrame": 1104
+      "start": 37.384,
+      "end": 37.836,
+      "startFrame": 1121,
+      "endFrame": 1135
     },
     {
       "word": "a",
-      "start": 36.838,
-      "end": 36.861,
-      "startFrame": 1105,
-      "endFrame": 1105
+      "start": 37.871,
+      "end": 37.895,
+      "startFrame": 1136,
+      "endFrame": 1136
     },
     {
       "word": "response",
-      "start": 36.919,
-      "end": 37.477,
-      "startFrame": 1107,
-      "endFrame": 1124
+      "start": 37.953,
+      "end": 38.638,
+      "startFrame": 1138,
+      "endFrame": 1159
     },
     {
       "word": "based",
-      "start": 37.523,
-      "end": 37.813,
-      "startFrame": 1125,
-      "endFrame": 1134
+      "start": 38.754,
+      "end": 39.067,
+      "startFrame": 1162,
+      "endFrame": 1172
     },
     {
       "word": "on",
-      "start": 37.848,
-      "end": 37.918,
-      "startFrame": 1135,
-      "endFrame": 1137
+      "start": 39.102,
+      "end": 39.172,
+      "startFrame": 1173,
+      "endFrame": 1175
     },
     {
       "word": "the",
-      "start": 37.953,
-      "end": 38.022,
-      "startFrame": 1138,
-      "endFrame": 1140
+      "start": 39.206,
+      "end": 39.276,
+      "startFrame": 1176,
+      "endFrame": 1178
     },
     {
       "word": "context",
-      "start": 38.069,
-      "end": 38.626,
-      "startFrame": 1142,
-      "endFrame": 1158
+      "start": 39.323,
+      "end": 40.019,
+      "startFrame": 1179,
+      "endFrame": 1200
     },
     {
       "word": "you",
-      "start": 38.673,
-      "end": 38.765,
-      "startFrame": 1160,
-      "endFrame": 1162
+      "start": 40.228,
+      "end": 40.356,
+      "startFrame": 1206,
+      "endFrame": 1210
     },
     {
       "word": "gave",
-      "start": 38.823,
-      "end": 39.323,
-      "startFrame": 1164,
-      "endFrame": 1179
+      "start": 40.426,
+      "end": 40.948,
+      "startFrame": 1212,
+      "endFrame": 1228
     },
     {
       "word": "Retrieve",
-      "start": 40.019,
-      "end": 40.577,
-      "startFrame": 1200,
-      "endFrame": 1217
+      "start": 41.459,
+      "end": 42.179,
+      "startFrame": 1243,
+      "endFrame": 1265
     },
     {
       "word": "argument",
-      "start": 40.623,
-      "end": 41.192,
-      "startFrame": 1218,
-      "endFrame": 1235
+      "start": 42.504,
+      "end": 43.107,
+      "startFrame": 1275,
+      "endFrame": 1293
     },
     {
       "word": "generate",
-      "start": 41.366,
-      "end": 42.26,
-      "startFrame": 1240,
-      "endFrame": 1267
+      "start": 43.316,
+      "end": 44.21,
+      "startFrame": 1299,
+      "endFrame": 1326
     }
   ]
 }

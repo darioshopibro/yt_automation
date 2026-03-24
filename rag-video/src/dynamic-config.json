@@ -2,7 +2,7 @@
   "title": "How Basic RAG Works",
   "subtitle": "Retrieve, Augment, Generate",
   "fps": 30,
-  "totalFrames": 1300,
+  "totalFrames": 1350,
   "showStepPrefix": true,
   "stickies": [
     {
@@ -13,9 +13,9 @@
         {
           "id": "section_1_1",
           "title": "Query Input",
-          "colorKey": "userQuery",
           "layout": "flow",
-          "startFrame": 125,
+          "colorKey": "userQuery",
+          "startFrame": 105,
           "nodes": [
             { "label": "User", "icon": "user" },
             { "label": "Query", "icon": "search" }
@@ -24,9 +24,9 @@
         {
           "id": "section_1_2",
           "title": "Embedding",
-          "colorKey": "embedding",
           "layout": "arrow",
-          "startFrame": 240,
+          "colorKey": "embedding",
+          "startFrame": 220,
           "nodes": [
             { "label": "Text", "icon": "terminal" },
             { "label": "Vector", "icon": "cube" }
@@ -35,9 +35,9 @@
         {
           "id": "section_1_3",
           "title": "Vector Search",
-          "colorKey": "vectorSearch",
           "layout": "flow",
-          "startFrame": 410,
+          "colorKey": "vectorSearch",
+          "startFrame": 380,
           "nodes": [
             { "label": "Database", "icon": "database" },
             { "label": "Chunks", "icon": "layers" }
@@ -53,9 +53,9 @@
         {
           "id": "section_2_1",
           "title": "Context",
-          "colorKey": "augment",
           "layout": "arrow",
-          "startFrame": 610,
+          "colorKey": "augment",
+          "startFrame": 600,
           "nodes": [
             { "label": "Chunks", "icon": "layers" },
             { "label": "Context", "icon": "file" }
@@ -64,9 +64,9 @@
         {
           "id": "section_2_2",
           "title": "Combine",
-          "colorKey": "augment",
           "layout": "combine",
-          "startFrame": 805,
+          "colorKey": "augment",
+          "startFrame": 800,
           "nodes": [
             { "label": "Context", "icon": "file" },
             { "label": "Query", "icon": "search" },
@@ -83,8 +83,8 @@
         {
           "id": "section_3_1",
           "title": "LLM Processing",
-          "colorKey": "generate",
           "layout": "flow",
+          "colorKey": "generate",
           "startFrame": 940,
           "nodes": [
             { "label": "Prompt", "icon": "terminal" },
@@ -94,9 +94,9 @@
         {
           "id": "section_3_2",
           "title": "Output",
-          "colorKey": "generate",
           "layout": "arrow",
-          "startFrame": 1090,
+          "colorKey": "generate",
+          "startFrame": 1110,
           "nodes": [
             { "label": "Generate", "icon": "sparkle" },
             { "label": "Response", "icon": "messageSquare" }

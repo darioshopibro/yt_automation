@@ -51,55 +51,12 @@ cp -r "/Users/dario61/Desktop/YT automation/templates/ai-video-gen-pipeline" ./m
 
 ---
 
-## DOSTUPNE IKONICE (35)
+## IKONICE & LAYOUT-I
 
-```
-user, search, terminal, cube, vector, database, zap, file, layers,
-merge, sparkle, cpu, check, server, cloud, gitBranch, gitMerge,
-settings, play, lock, shield, monitor, refreshCw, code, globe,
-api, webhook, queue, network, brain, alert, x, arrowRight,
-container, package, messageSquare
-```
-
-**AKO IKONICA NE POSTOJI → PRAZNO POLJE! Koristi samo ove.**
-
----
-
-## DOSTUPNI LAYOUT-I (9)
-
-Sekcije mogu koristiti `layout` property za vizualne veze između nodova:
-
-| Layout | Opis | Primer |
-|--------|------|--------|
-| `flow` | A → B → C | sekvenca, pipeline |
-| `arrow` | A → B | jednostavna veza |
-| `vs` | A vs B | poređenje |
-| `combine` | A + B = C | kombinacija |
-| `negation` | ✗A → B | loše → dobro |
-| `bidirectional` | A ↔ B | dvosmerna veza |
-| `filter` | A ▷ B | filtriranje |
-| `if-else` | A → [B, C] | split/branch |
-| `merge` | [A, B] → C | spajanje |
-
-**Primer config-a sa layout-om:**
-```json
-{
-  "sections": [
-    {
-      "id": "query_processing",
-      "title": "Query Processing",
-      "layout": "flow",
-      "nodes": [
-        { "label": "User", "icon": "user" },
-        { "label": "API", "icon": "api" },
-        { "label": "DB", "icon": "database" }
-      ]
-    }
-  ]
-}
-```
-
-**Komponenta:** `ExplainerLayout.tsx` renderuje layout
+- Ikonice (35): vidi `remotion-motion/reference/icons.md`
+- Layout-i (9): vidi `remotion-motion/reference/layouts.md`
+- Template `dynamic-config.json` pokazuje ispravnu upotrebu
+- Komponenta: `ExplainerLayout.tsx`
 
 ---
 

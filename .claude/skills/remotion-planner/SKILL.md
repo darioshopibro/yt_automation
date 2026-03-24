@@ -93,43 +93,10 @@ Komponente                  Step-by-step
 ✅ ISPRAVNO: 3-5 sticky-ja, svaki sa 2-4 sekcije
 ```
 
-**DOSTUPNE IKONICE (35):**
-```
-user, search, terminal, cube, vector, database, zap, file, layers,
-merge, sparkle, cpu, check, server, cloud, gitBranch, gitMerge,
-settings, play, lock, shield, monitor, refreshCw, code, globe,
-api, webhook, queue, network, brain, alert, x, arrowRight,
-container, package, messageSquare
-```
-
-**DOSTUPNI LAYOUT-I (9):**
-Svaka sekcija MORA imati `layout` za vizualne veze između nodova:
-```
-flow         A → B → C        sekvenca, pipeline (DEFAULT!)
-arrow        A → B            jednostavna veza
-vs           A vs B           poređenje
-combine      A + B = C        kombinacija
-negation     ✗A → B           loše → dobro
-bidirectional A ↔ B           dvosmerna veza
-filter       A ▷ B            filtriranje
-if-else      A → [B, C]       split/branch
-merge        [A, B] → C       spajanje
-```
-
-**⚠️ UVEK DODAJ `layout` NA SVAKU SEKCIJU!**
-```json
-{
-  "sections": [
-    {
-      "id": "query",
-      "title": "Query Processing",
-      "layout": "flow",  // ← OBAVEZNO! Bez ovoga nema strelica!
-      "nodes": [...]
-    }
-  ]
-}
-```
-Ako ne znaš koji layout → koristi `"flow"` (default)
+**IKONICE & LAYOUT-I:**
+- Ikonice (35): vidi `remotion-motion/reference/icons.md`
+- Layout-i (9): vidi `remotion-motion/reference/layouts.md`
+- Svaka sekcija MORA imati `layout` property (default: `"flow"`)
 
 ---
 
