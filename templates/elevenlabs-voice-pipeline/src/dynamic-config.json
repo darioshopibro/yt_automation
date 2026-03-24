@@ -1,0 +1,138 @@
+{
+  "title": "ElevenLabs Voice Pipeline",
+  "subtitle": "From Text to Natural AI Voice",
+  "fps": 30,
+  "totalFrames": 1250,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Input",
+      "color": "#3b82f6",
+      "sections": [
+        {
+          "id": "TEXT_INPUT",
+          "title": "Text Input",
+          "subtitle": "Your script to convert",
+          "colorKey": "userQuery",
+          "startFrame": 35,
+          "nodes": [
+            { "label": "Text", "icon": "file" },
+            { "label": "Script", "icon": "terminal" }
+          ]
+        },
+        {
+          "id": "SCRIPT_CONTENT",
+          "title": "Content",
+          "subtitle": "Speech conversion",
+          "colorKey": "embedding",
+          "startFrame": 130,
+          "nodes": [
+            { "label": "Words", "icon": "layers" },
+            { "label": "Speech", "icon": "zap" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Voice Selection",
+      "color": "#8b5cf6",
+      "sections": [
+        {
+          "id": "VOICE_LIBRARY",
+          "title": "Voice Library",
+          "subtitle": "Hundreds of voices",
+          "colorKey": "vectorSearch",
+          "startFrame": 181,
+          "nodes": [
+            { "label": "Library", "icon": "database" },
+            { "label": "Voices", "icon": "user" },
+            { "label": "Realistic", "icon": "sparkle" }
+          ]
+        },
+        {
+          "id": "VOICE_CLONE",
+          "title": "Voice Clone",
+          "subtitle": "Clone your own",
+          "colorKey": "retrieve",
+          "startFrame": 375,
+          "nodes": [
+            { "label": "Sample", "icon": "file" },
+            { "label": "Clone", "icon": "cube" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Voice Settings",
+      "color": "#f59e0b",
+      "sections": [
+        {
+          "id": "STABILITY",
+          "title": "Stability",
+          "subtitle": "Voice consistency",
+          "colorKey": "augment",
+          "startFrame": 498,
+          "nodes": [
+            { "label": "Stable", "icon": "settings" },
+            { "label": "Consistent", "icon": "layers" }
+          ]
+        },
+        {
+          "id": "SIMILARITY",
+          "title": "Similarity Boost",
+          "subtitle": "Match original voice",
+          "colorKey": "embedding",
+          "startFrame": 609,
+          "nodes": [
+            { "label": "Match", "icon": "merge" },
+            { "label": "Original", "icon": "user" }
+          ]
+        },
+        {
+          "id": "STYLE",
+          "title": "Style",
+          "subtitle": "Expressiveness & emotion",
+          "colorKey": "vectorSearch",
+          "startFrame": 750,
+          "nodes": [
+            { "label": "Emotion", "icon": "sparkle" },
+            { "label": "Express", "icon": "zap" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Generate",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "MODEL_PROCESS",
+          "title": "Model Processing",
+          "subtitle": "AI synthesis",
+          "colorKey": "generate",
+          "startFrame": 872,
+          "nodes": [
+            { "label": "Model", "icon": "cpu" },
+            { "label": "Process", "icon": "cube" }
+          ]
+        },
+        {
+          "id": "AUDIO_OUTPUT",
+          "title": "Audio Output",
+          "subtitle": "Natural voice ready",
+          "colorKey": "generate",
+          "startFrame": 961,
+          "nodes": [
+            { "label": "Audio", "icon": "file" },
+            { "label": "MP3", "icon": "zap" },
+            { "label": "Ready", "icon": "sparkle" }
+          ]
+        }
+      ]
+    }
+  ]
+}

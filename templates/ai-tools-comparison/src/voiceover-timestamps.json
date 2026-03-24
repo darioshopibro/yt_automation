@@ -1,0 +1,1729 @@
+{
+  "words": [
+    {
+      "word": "AI",
+      "start": 0,
+      "end": 0.372,
+      "startFrame": 0,
+      "endFrame": 11
+    },
+    {
+      "word": "tools",
+      "start": 0.453,
+      "end": 0.813,
+      "startFrame": 14,
+      "endFrame": 24
+    },
+    {
+      "word": "for",
+      "start": 0.871,
+      "end": 0.975,
+      "startFrame": 26,
+      "endFrame": 29
+    },
+    {
+      "word": "content",
+      "start": 1.033,
+      "end": 1.463,
+      "startFrame": 31,
+      "endFrame": 44
+    },
+    {
+      "word": "creation.",
+      "start": 1.509,
+      "end": 2.322,
+      "startFrame": 45,
+      "endFrame": 70
+    },
+    {
+      "word": "Three",
+      "start": 2.926,
+      "end": 3.228,
+      "startFrame": 88,
+      "endFrame": 97
+    },
+    {
+      "word": "categories.",
+      "start": 3.274,
+      "end": 4.214,
+      "startFrame": 98,
+      "endFrame": 126
+    },
+    {
+      "word": "Video",
+      "start": 4.656,
+      "end": 5.039,
+      "startFrame": 140,
+      "endFrame": 151
+    },
+    {
+      "word": "generation.",
+      "start": 5.108,
+      "end": 5.944,
+      "startFrame": 153,
+      "endFrame": 178
+    },
+    {
+      "word": "Voice",
+      "start": 6.385,
+      "end": 6.722,
+      "startFrame": 192,
+      "endFrame": 202
+    },
+    {
+      "word": "synthesis.",
+      "start": 6.745,
+      "end": 7.581,
+      "startFrame": 202,
+      "endFrame": 227
+    },
+    {
+      "word": "And",
+      "start": 7.906,
+      "end": 8.081,
+      "startFrame": 237,
+      "endFrame": 242
+    },
+    {
+      "word": "thumbnail",
+      "start": 8.15,
+      "end": 8.615,
+      "startFrame": 245,
+      "endFrame": 258
+    },
+    {
+      "word": "design.",
+      "start": 8.684,
+      "end": 9.381,
+      "startFrame": 261,
+      "endFrame": 281
+    },
+    {
+      "word": "Video",
+      "start": 9.822,
+      "end": 10.205,
+      "startFrame": 295,
+      "endFrame": 306
+    },
+    {
+      "word": "tools",
+      "start": 10.275,
+      "end": 10.612,
+      "startFrame": 308,
+      "endFrame": 318
+    },
+    {
+      "word": "first.",
+      "start": 10.693,
+      "end": 11.32,
+      "startFrame": 321,
+      "endFrame": 340
+    },
+    {
+      "word": "Kling",
+      "start": 11.761,
+      "end": 12.121,
+      "startFrame": 353,
+      "endFrame": 364
+    },
+    {
+      "word": "AI",
+      "start": 12.202,
+      "end": 12.585,
+      "startFrame": 366,
+      "endFrame": 378
+    },
+    {
+      "word": "creates",
+      "start": 12.666,
+      "end": 13.085,
+      "startFrame": 380,
+      "endFrame": 393
+    },
+    {
+      "word": "cinematic",
+      "start": 13.131,
+      "end": 13.642,
+      "startFrame": 394,
+      "endFrame": 409
+    },
+    {
+      "word": "shots",
+      "start": 13.7,
+      "end": 14.037,
+      "startFrame": 411,
+      "endFrame": 421
+    },
+    {
+      "word": "from",
+      "start": 14.083,
+      "end": 14.234,
+      "startFrame": 422,
+      "endFrame": 427
+    },
+    {
+      "word": "text.",
+      "start": 14.304,
+      "end": 14.954,
+      "startFrame": 429,
+      "endFrame": 449
+    },
+    {
+      "word": "Runway",
+      "start": 15.395,
+      "end": 15.802,
+      "startFrame": 462,
+      "endFrame": 474
+    },
+    {
+      "word": "generates",
+      "start": 15.871,
+      "end": 16.359,
+      "startFrame": 476,
+      "endFrame": 491
+    },
+    {
+      "word": "smooth",
+      "start": 16.429,
+      "end": 16.846,
+      "startFrame": 493,
+      "endFrame": 505
+    },
+    {
+      "word": "transitions.",
+      "start": 16.905,
+      "end": 17.903,
+      "startFrame": 507,
+      "endFrame": 537
+    },
+    {
+      "word": "Pika",
+      "start": 18.228,
+      "end": 18.565,
+      "startFrame": 547,
+      "endFrame": 557
+    },
+    {
+      "word": "adds",
+      "start": 18.646,
+      "end": 18.878,
+      "startFrame": 559,
+      "endFrame": 566
+    },
+    {
+      "word": "motion",
+      "start": 18.948,
+      "end": 19.319,
+      "startFrame": 568,
+      "endFrame": 580
+    },
+    {
+      "word": "to",
+      "start": 19.401,
+      "end": 19.47,
+      "startFrame": 582,
+      "endFrame": 584
+    },
+    {
+      "word": "still",
+      "start": 19.54,
+      "end": 19.83,
+      "startFrame": 586,
+      "endFrame": 595
+    },
+    {
+      "word": "images.",
+      "start": 19.923,
+      "end": 20.678,
+      "startFrame": 598,
+      "endFrame": 620
+    },
+    {
+      "word": "All",
+      "start": 21.003,
+      "end": 21.27,
+      "startFrame": 630,
+      "endFrame": 638
+    },
+    {
+      "word": "three",
+      "start": 21.351,
+      "end": 21.653,
+      "startFrame": 641,
+      "endFrame": 650
+    },
+    {
+      "word": "turn",
+      "start": 21.711,
+      "end": 21.955,
+      "startFrame": 651,
+      "endFrame": 659
+    },
+    {
+      "word": "ideas",
+      "start": 22.025,
+      "end": 22.489,
+      "startFrame": 661,
+      "endFrame": 675
+    },
+    {
+      "word": "into",
+      "start": 22.559,
+      "end": 22.733,
+      "startFrame": 677,
+      "endFrame": 682
+    },
+    {
+      "word": "footage",
+      "start": 22.814,
+      "end": 23.22,
+      "startFrame": 684,
+      "endFrame": 697
+    },
+    {
+      "word": "in",
+      "start": 23.278,
+      "end": 23.394,
+      "startFrame": 698,
+      "endFrame": 702
+    },
+    {
+      "word": "seconds.",
+      "start": 23.476,
+      "end": 24.219,
+      "startFrame": 704,
+      "endFrame": 727
+    },
+    {
+      "word": "Voice",
+      "start": 24.602,
+      "end": 24.973,
+      "startFrame": 738,
+      "endFrame": 749
+    },
+    {
+      "word": "synthesis",
+      "start": 25.031,
+      "end": 25.577,
+      "startFrame": 751,
+      "endFrame": 767
+    },
+    {
+      "word": "next.",
+      "start": 25.658,
+      "end": 26.309,
+      "startFrame": 770,
+      "endFrame": 789
+    },
+    {
+      "word": "ElevenLabs",
+      "start": 26.692,
+      "end": 27.528,
+      "startFrame": 801,
+      "endFrame": 826
+    },
+    {
+      "word": "leads",
+      "start": 27.644,
+      "end": 27.876,
+      "startFrame": 829,
+      "endFrame": 836
+    },
+    {
+      "word": "with",
+      "start": 27.922,
+      "end": 28.062,
+      "startFrame": 838,
+      "endFrame": 842
+    },
+    {
+      "word": "realistic",
+      "start": 28.131,
+      "end": 28.665,
+      "startFrame": 844,
+      "endFrame": 860
+    },
+    {
+      "word": "voices",
+      "start": 28.735,
+      "end": 29.153,
+      "startFrame": 862,
+      "endFrame": 875
+    },
+    {
+      "word": "and",
+      "start": 29.211,
+      "end": 29.304,
+      "startFrame": 876,
+      "endFrame": 879
+    },
+    {
+      "word": "emotion",
+      "start": 29.35,
+      "end": 29.745,
+      "startFrame": 881,
+      "endFrame": 892
+    },
+    {
+      "word": "control.",
+      "start": 29.815,
+      "end": 30.535,
+      "startFrame": 894,
+      "endFrame": 916
+    },
+    {
+      "word": "Play",
+      "start": 30.918,
+      "end": 31.243,
+      "startFrame": 928,
+      "endFrame": 937
+    },
+    {
+      "word": "HT",
+      "start": 31.324,
+      "end": 31.777,
+      "startFrame": 940,
+      "endFrame": 953
+    },
+    {
+      "word": "offers",
+      "start": 31.951,
+      "end": 32.276,
+      "startFrame": 959,
+      "endFrame": 968
+    },
+    {
+      "word": "voice",
+      "start": 32.357,
+      "end": 32.659,
+      "startFrame": 971,
+      "endFrame": 980
+    },
+    {
+      "word": "cloning",
+      "start": 32.706,
+      "end": 33.077,
+      "startFrame": 981,
+      "endFrame": 992
+    },
+    {
+      "word": "in",
+      "start": 33.124,
+      "end": 33.182,
+      "startFrame": 994,
+      "endFrame": 995
+    },
+    {
+      "word": "minutes.",
+      "start": 33.24,
+      "end": 33.878,
+      "startFrame": 997,
+      "endFrame": 1016
+    },
+    {
+      "word": "Murf",
+      "start": 34.262,
+      "end": 34.622,
+      "startFrame": 1028,
+      "endFrame": 1039
+    },
+    {
+      "word": "provides",
+      "start": 34.772,
+      "end": 35.225,
+      "startFrame": 1043,
+      "endFrame": 1057
+    },
+    {
+      "word": "studio",
+      "start": 35.272,
+      "end": 35.69,
+      "startFrame": 1058,
+      "endFrame": 1071
+    },
+    {
+      "word": "quality",
+      "start": 35.771,
+      "end": 36.177,
+      "startFrame": 1073,
+      "endFrame": 1085
+    },
+    {
+      "word": "without",
+      "start": 36.235,
+      "end": 36.502,
+      "startFrame": 1087,
+      "endFrame": 1095
+    },
+    {
+      "word": "recording.",
+      "start": 36.549,
+      "end": 37.176,
+      "startFrame": 1096,
+      "endFrame": 1115
+    },
+    {
+      "word": "Each",
+      "start": 37.617,
+      "end": 37.861,
+      "startFrame": 1129,
+      "endFrame": 1136
+    },
+    {
+      "word": "tool",
+      "start": 37.93,
+      "end": 38.302,
+      "startFrame": 1138,
+      "endFrame": 1149
+    },
+    {
+      "word": "replaces",
+      "start": 38.418,
+      "end": 38.871,
+      "startFrame": 1153,
+      "endFrame": 1166
+    },
+    {
+      "word": "hours",
+      "start": 38.952,
+      "end": 39.44,
+      "startFrame": 1169,
+      "endFrame": 1183
+    },
+    {
+      "word": "of",
+      "start": 39.521,
+      "end": 39.614,
+      "startFrame": 1186,
+      "endFrame": 1188
+    },
+    {
+      "word": "voice",
+      "start": 39.683,
+      "end": 39.974,
+      "startFrame": 1190,
+      "endFrame": 1199
+    },
+    {
+      "word": "work.",
+      "start": 40.02,
+      "end": 40.508,
+      "startFrame": 1201,
+      "endFrame": 1215
+    },
+    {
+      "word": "Thumbnail",
+      "start": 40.949,
+      "end": 41.437,
+      "startFrame": 1228,
+      "endFrame": 1243
+    },
+    {
+      "word": "design",
+      "start": 41.495,
+      "end": 41.901,
+      "startFrame": 1245,
+      "endFrame": 1257
+    },
+    {
+      "word": "last.",
+      "start": 41.994,
+      "end": 42.667,
+      "startFrame": 1260,
+      "endFrame": 1280
+    },
+    {
+      "word": "Ideogram",
+      "start": 43.108,
+      "end": 43.689,
+      "startFrame": 1293,
+      "endFrame": 1311
+    },
+    {
+      "word": "handles",
+      "start": 43.759,
+      "end": 44.142,
+      "startFrame": 1313,
+      "endFrame": 1324
+    },
+    {
+      "word": "text",
+      "start": 44.211,
+      "end": 44.536,
+      "startFrame": 1326,
+      "endFrame": 1336
+    },
+    {
+      "word": "rendering",
+      "start": 44.618,
+      "end": 45.012,
+      "startFrame": 1339,
+      "endFrame": 1350
+    },
+    {
+      "word": "perfectly.",
+      "start": 45.082,
+      "end": 45.848,
+      "startFrame": 1352,
+      "endFrame": 1375
+    },
+    {
+      "word": "Midjourney",
+      "start": 46.29,
+      "end": 46.882,
+      "startFrame": 1389,
+      "endFrame": 1406
+    },
+    {
+      "word": "creates",
+      "start": 46.951,
+      "end": 47.369,
+      "startFrame": 1409,
+      "endFrame": 1421
+    },
+    {
+      "word": "stunning",
+      "start": 47.451,
+      "end": 47.868,
+      "startFrame": 1424,
+      "endFrame": 1436
+    },
+    {
+      "word": "visuals.",
+      "start": 47.927,
+      "end": 48.681,
+      "startFrame": 1438,
+      "endFrame": 1460
+    },
+    {
+      "word": "Leonardo",
+      "start": 49.122,
+      "end": 49.645,
+      "startFrame": 1474,
+      "endFrame": 1489
+    },
+    {
+      "word": "offers",
+      "start": 49.738,
+      "end": 50.063,
+      "startFrame": 1492,
+      "endFrame": 1502
+    },
+    {
+      "word": "precise",
+      "start": 50.132,
+      "end": 50.62,
+      "startFrame": 1504,
+      "endFrame": 1519
+    },
+    {
+      "word": "control",
+      "start": 50.666,
+      "end": 51.201,
+      "startFrame": 1520,
+      "endFrame": 1536
+    },
+    {
+      "word": "and",
+      "start": 51.317,
+      "end": 51.468,
+      "startFrame": 1540,
+      "endFrame": 1544
+    },
+    {
+      "word": "styles.",
+      "start": 51.549,
+      "end": 52.315,
+      "startFrame": 1546,
+      "endFrame": 1569
+    },
+    {
+      "word": "Combined",
+      "start": 52.64,
+      "end": 53.256,
+      "startFrame": 1579,
+      "endFrame": 1598
+    },
+    {
+      "word": "they",
+      "start": 53.372,
+      "end": 53.534,
+      "startFrame": 1601,
+      "endFrame": 1606
+    },
+    {
+      "word": "make",
+      "start": 53.581,
+      "end": 53.743,
+      "startFrame": 1607,
+      "endFrame": 1612
+    },
+    {
+      "word": "thumbnails",
+      "start": 53.79,
+      "end": 54.289,
+      "startFrame": 1614,
+      "endFrame": 1629
+    },
+    {
+      "word": "that",
+      "start": 54.335,
+      "end": 54.451,
+      "startFrame": 1630,
+      "endFrame": 1634
+    },
+    {
+      "word": "actually",
+      "start": 54.509,
+      "end": 54.951,
+      "startFrame": 1635,
+      "endFrame": 1649
+    },
+    {
+      "word": "get",
+      "start": 54.997,
+      "end": 55.136,
+      "startFrame": 1650,
+      "endFrame": 1654
+    },
+    {
+      "word": "clicks.",
+      "start": 55.194,
+      "end": 55.868,
+      "startFrame": 1656,
+      "endFrame": 1676
+    },
+    {
+      "word": "The",
+      "start": 56.251,
+      "end": 56.379,
+      "startFrame": 1688,
+      "endFrame": 1691
+    },
+    {
+      "word": "winning",
+      "start": 56.437,
+      "end": 56.704,
+      "startFrame": 1693,
+      "endFrame": 1701
+    },
+    {
+      "word": "stack.",
+      "start": 56.773,
+      "end": 57.4,
+      "startFrame": 1703,
+      "endFrame": 1722
+    },
+    {
+      "word": "Kling",
+      "start": 57.725,
+      "end": 58.109,
+      "startFrame": 1732,
+      "endFrame": 1743
+    },
+    {
+      "word": "for",
+      "start": 58.19,
+      "end": 58.306,
+      "startFrame": 1746,
+      "endFrame": 1749
+    },
+    {
+      "word": "video.",
+      "start": 58.352,
+      "end": 58.991,
+      "startFrame": 1751,
+      "endFrame": 1770
+    },
+    {
+      "word": "ElevenLabs",
+      "start": 59.374,
+      "end": 60.256,
+      "startFrame": 1781,
+      "endFrame": 1808
+    },
+    {
+      "word": "for",
+      "start": 60.431,
+      "end": 60.593,
+      "startFrame": 1813,
+      "endFrame": 1818
+    },
+    {
+      "word": "voice.",
+      "start": 60.663,
+      "end": 61.267,
+      "startFrame": 1820,
+      "endFrame": 1838
+    },
+    {
+      "word": "Ideogram",
+      "start": 61.708,
+      "end": 62.288,
+      "startFrame": 1851,
+      "endFrame": 1869
+    },
+    {
+      "word": "for",
+      "start": 62.346,
+      "end": 62.451,
+      "startFrame": 1870,
+      "endFrame": 1874
+    },
+    {
+      "word": "thumbnails.",
+      "start": 62.497,
+      "end": 63.298,
+      "startFrame": 1875,
+      "endFrame": 1899
+    },
+    {
+      "word": "Three",
+      "start": 63.681,
+      "end": 63.96,
+      "startFrame": 1910,
+      "endFrame": 1919
+    },
+    {
+      "word": "tools.",
+      "start": 64.006,
+      "end": 64.668,
+      "startFrame": 1920,
+      "endFrame": 1940
+    },
+    {
+      "word": "Complete",
+      "start": 65.109,
+      "end": 65.574,
+      "startFrame": 1953,
+      "endFrame": 1967
+    },
+    {
+      "word": "content",
+      "start": 65.62,
+      "end": 66.096,
+      "startFrame": 1969,
+      "endFrame": 1983
+    },
+    {
+      "word": "pipeline.",
+      "start": 66.143,
+      "end": 67.06,
+      "startFrame": 1984,
+      "endFrame": 2012
+    }
+  ],
+  "sections": [
+    {
+      "section": "INTRO",
+      "start": 1.509,
+      "end": 10.612,
+      "startFrame": 45,
+      "endFrame": 318,
+      "words": [
+        {
+          "word": "creation.",
+          "start": 1.509,
+          "end": 2.322,
+          "startFrame": 45,
+          "endFrame": 70
+        },
+        {
+          "word": "Three",
+          "start": 2.926,
+          "end": 3.228,
+          "startFrame": 88,
+          "endFrame": 97
+        },
+        {
+          "word": "categories.",
+          "start": 3.274,
+          "end": 4.214,
+          "startFrame": 98,
+          "endFrame": 126
+        },
+        {
+          "word": "Video",
+          "start": 4.656,
+          "end": 5.039,
+          "startFrame": 140,
+          "endFrame": 151
+        },
+        {
+          "word": "generation.",
+          "start": 5.108,
+          "end": 5.944,
+          "startFrame": 153,
+          "endFrame": 178
+        },
+        {
+          "word": "Voice",
+          "start": 6.385,
+          "end": 6.722,
+          "startFrame": 192,
+          "endFrame": 202
+        },
+        {
+          "word": "synthesis.",
+          "start": 6.745,
+          "end": 7.581,
+          "startFrame": 202,
+          "endFrame": 227
+        },
+        {
+          "word": "And",
+          "start": 7.906,
+          "end": 8.081,
+          "startFrame": 237,
+          "endFrame": 242
+        },
+        {
+          "word": "thumbnail",
+          "start": 8.15,
+          "end": 8.615,
+          "startFrame": 245,
+          "endFrame": 258
+        },
+        {
+          "word": "design.",
+          "start": 8.684,
+          "end": 9.381,
+          "startFrame": 261,
+          "endFrame": 281
+        },
+        {
+          "word": "Video",
+          "start": 9.822,
+          "end": 10.205,
+          "startFrame": 295,
+          "endFrame": 306
+        },
+        {
+          "word": "tools",
+          "start": 10.275,
+          "end": 10.612,
+          "startFrame": 308,
+          "endFrame": 318
+        }
+      ]
+    },
+    {
+      "section": "VIDEO_TOOLS",
+      "start": 10.693,
+      "end": 12.585,
+      "startFrame": 321,
+      "endFrame": 378,
+      "words": [
+        {
+          "word": "first.",
+          "start": 10.693,
+          "end": 11.32,
+          "startFrame": 321,
+          "endFrame": 340
+        },
+        {
+          "word": "Kling",
+          "start": 11.761,
+          "end": 12.121,
+          "startFrame": 353,
+          "endFrame": 364
+        },
+        {
+          "word": "AI",
+          "start": 12.202,
+          "end": 12.585,
+          "startFrame": 366,
+          "endFrame": 378
+        }
+      ]
+    },
+    {
+      "section": "KLING",
+      "start": 12.666,
+      "end": 15.802,
+      "startFrame": 380,
+      "endFrame": 474,
+      "words": [
+        {
+          "word": "creates",
+          "start": 12.666,
+          "end": 13.085,
+          "startFrame": 380,
+          "endFrame": 393
+        },
+        {
+          "word": "cinematic",
+          "start": 13.131,
+          "end": 13.642,
+          "startFrame": 394,
+          "endFrame": 409
+        },
+        {
+          "word": "shots",
+          "start": 13.7,
+          "end": 14.037,
+          "startFrame": 411,
+          "endFrame": 421
+        },
+        {
+          "word": "from",
+          "start": 14.083,
+          "end": 14.234,
+          "startFrame": 422,
+          "endFrame": 427
+        },
+        {
+          "word": "text.",
+          "start": 14.304,
+          "end": 14.954,
+          "startFrame": 429,
+          "endFrame": 449
+        },
+        {
+          "word": "Runway",
+          "start": 15.395,
+          "end": 15.802,
+          "startFrame": 462,
+          "endFrame": 474
+        }
+      ]
+    },
+    {
+      "section": "RUNWAY",
+      "start": 15.871,
+      "end": 18.878,
+      "startFrame": 476,
+      "endFrame": 566,
+      "words": [
+        {
+          "word": "generates",
+          "start": 15.871,
+          "end": 16.359,
+          "startFrame": 476,
+          "endFrame": 491
+        },
+        {
+          "word": "smooth",
+          "start": 16.429,
+          "end": 16.846,
+          "startFrame": 493,
+          "endFrame": 505
+        },
+        {
+          "word": "transitions.",
+          "start": 16.905,
+          "end": 17.903,
+          "startFrame": 507,
+          "endFrame": 537
+        },
+        {
+          "word": "Pika",
+          "start": 18.228,
+          "end": 18.565,
+          "startFrame": 547,
+          "endFrame": 557
+        },
+        {
+          "word": "adds",
+          "start": 18.646,
+          "end": 18.878,
+          "startFrame": 559,
+          "endFrame": 566
+        }
+      ]
+    },
+    {
+      "section": "PIKA",
+      "start": 18.948,
+      "end": 25.577,
+      "startFrame": 568,
+      "endFrame": 767,
+      "words": [
+        {
+          "word": "motion",
+          "start": 18.948,
+          "end": 19.319,
+          "startFrame": 568,
+          "endFrame": 580
+        },
+        {
+          "word": "to",
+          "start": 19.401,
+          "end": 19.47,
+          "startFrame": 582,
+          "endFrame": 584
+        },
+        {
+          "word": "still",
+          "start": 19.54,
+          "end": 19.83,
+          "startFrame": 586,
+          "endFrame": 595
+        },
+        {
+          "word": "images.",
+          "start": 19.923,
+          "end": 20.678,
+          "startFrame": 598,
+          "endFrame": 620
+        },
+        {
+          "word": "All",
+          "start": 21.003,
+          "end": 21.27,
+          "startFrame": 630,
+          "endFrame": 638
+        },
+        {
+          "word": "three",
+          "start": 21.351,
+          "end": 21.653,
+          "startFrame": 641,
+          "endFrame": 650
+        },
+        {
+          "word": "turn",
+          "start": 21.711,
+          "end": 21.955,
+          "startFrame": 651,
+          "endFrame": 659
+        },
+        {
+          "word": "ideas",
+          "start": 22.025,
+          "end": 22.489,
+          "startFrame": 661,
+          "endFrame": 675
+        },
+        {
+          "word": "into",
+          "start": 22.559,
+          "end": 22.733,
+          "startFrame": 677,
+          "endFrame": 682
+        },
+        {
+          "word": "footage",
+          "start": 22.814,
+          "end": 23.22,
+          "startFrame": 684,
+          "endFrame": 697
+        },
+        {
+          "word": "in",
+          "start": 23.278,
+          "end": 23.394,
+          "startFrame": 698,
+          "endFrame": 702
+        },
+        {
+          "word": "seconds.",
+          "start": 23.476,
+          "end": 24.219,
+          "startFrame": 704,
+          "endFrame": 727
+        },
+        {
+          "word": "Voice",
+          "start": 24.602,
+          "end": 24.973,
+          "startFrame": 738,
+          "endFrame": 749
+        },
+        {
+          "word": "synthesis",
+          "start": 25.031,
+          "end": 25.577,
+          "startFrame": 751,
+          "endFrame": 767
+        }
+      ]
+    },
+    {
+      "section": "VOICE_TOOLS",
+      "start": 25.658,
+      "end": 27.528,
+      "startFrame": 770,
+      "endFrame": 826,
+      "words": [
+        {
+          "word": "next.",
+          "start": 25.658,
+          "end": 26.309,
+          "startFrame": 770,
+          "endFrame": 789
+        },
+        {
+          "word": "ElevenLabs",
+          "start": 26.692,
+          "end": 27.528,
+          "startFrame": 801,
+          "endFrame": 826
+        }
+      ]
+    },
+    {
+      "section": "ELEVENLABS",
+      "start": 27.644,
+      "end": 31.777,
+      "startFrame": 829,
+      "endFrame": 953,
+      "words": [
+        {
+          "word": "leads",
+          "start": 27.644,
+          "end": 27.876,
+          "startFrame": 829,
+          "endFrame": 836
+        },
+        {
+          "word": "with",
+          "start": 27.922,
+          "end": 28.062,
+          "startFrame": 838,
+          "endFrame": 842
+        },
+        {
+          "word": "realistic",
+          "start": 28.131,
+          "end": 28.665,
+          "startFrame": 844,
+          "endFrame": 860
+        },
+        {
+          "word": "voices",
+          "start": 28.735,
+          "end": 29.153,
+          "startFrame": 862,
+          "endFrame": 875
+        },
+        {
+          "word": "and",
+          "start": 29.211,
+          "end": 29.304,
+          "startFrame": 876,
+          "endFrame": 879
+        },
+        {
+          "word": "emotion",
+          "start": 29.35,
+          "end": 29.745,
+          "startFrame": 881,
+          "endFrame": 892
+        },
+        {
+          "word": "control.",
+          "start": 29.815,
+          "end": 30.535,
+          "startFrame": 894,
+          "endFrame": 916
+        },
+        {
+          "word": "Play",
+          "start": 30.918,
+          "end": 31.243,
+          "startFrame": 928,
+          "endFrame": 937
+        },
+        {
+          "word": "HT",
+          "start": 31.324,
+          "end": 31.777,
+          "startFrame": 940,
+          "endFrame": 953
+        }
+      ]
+    },
+    {
+      "section": "PLAYHT",
+      "start": 31.951,
+      "end": 34.622,
+      "startFrame": 959,
+      "endFrame": 1039,
+      "words": [
+        {
+          "word": "offers",
+          "start": 31.951,
+          "end": 32.276,
+          "startFrame": 959,
+          "endFrame": 968
+        },
+        {
+          "word": "voice",
+          "start": 32.357,
+          "end": 32.659,
+          "startFrame": 971,
+          "endFrame": 980
+        },
+        {
+          "word": "cloning",
+          "start": 32.706,
+          "end": 33.077,
+          "startFrame": 981,
+          "endFrame": 992
+        },
+        {
+          "word": "in",
+          "start": 33.124,
+          "end": 33.182,
+          "startFrame": 994,
+          "endFrame": 995
+        },
+        {
+          "word": "minutes.",
+          "start": 33.24,
+          "end": 33.878,
+          "startFrame": 997,
+          "endFrame": 1016
+        },
+        {
+          "word": "Murf",
+          "start": 34.262,
+          "end": 34.622,
+          "startFrame": 1028,
+          "endFrame": 1039
+        }
+      ]
+    },
+    {
+      "section": "MURF",
+      "start": 34.772,
+      "end": 41.901,
+      "startFrame": 1043,
+      "endFrame": 1257,
+      "words": [
+        {
+          "word": "provides",
+          "start": 34.772,
+          "end": 35.225,
+          "startFrame": 1043,
+          "endFrame": 1057
+        },
+        {
+          "word": "studio",
+          "start": 35.272,
+          "end": 35.69,
+          "startFrame": 1058,
+          "endFrame": 1071
+        },
+        {
+          "word": "quality",
+          "start": 35.771,
+          "end": 36.177,
+          "startFrame": 1073,
+          "endFrame": 1085
+        },
+        {
+          "word": "without",
+          "start": 36.235,
+          "end": 36.502,
+          "startFrame": 1087,
+          "endFrame": 1095
+        },
+        {
+          "word": "recording.",
+          "start": 36.549,
+          "end": 37.176,
+          "startFrame": 1096,
+          "endFrame": 1115
+        },
+        {
+          "word": "Each",
+          "start": 37.617,
+          "end": 37.861,
+          "startFrame": 1129,
+          "endFrame": 1136
+        },
+        {
+          "word": "tool",
+          "start": 37.93,
+          "end": 38.302,
+          "startFrame": 1138,
+          "endFrame": 1149
+        },
+        {
+          "word": "replaces",
+          "start": 38.418,
+          "end": 38.871,
+          "startFrame": 1153,
+          "endFrame": 1166
+        },
+        {
+          "word": "hours",
+          "start": 38.952,
+          "end": 39.44,
+          "startFrame": 1169,
+          "endFrame": 1183
+        },
+        {
+          "word": "of",
+          "start": 39.521,
+          "end": 39.614,
+          "startFrame": 1186,
+          "endFrame": 1188
+        },
+        {
+          "word": "voice",
+          "start": 39.683,
+          "end": 39.974,
+          "startFrame": 1190,
+          "endFrame": 1199
+        },
+        {
+          "word": "work.",
+          "start": 40.02,
+          "end": 40.508,
+          "startFrame": 1201,
+          "endFrame": 1215
+        },
+        {
+          "word": "Thumbnail",
+          "start": 40.949,
+          "end": 41.437,
+          "startFrame": 1228,
+          "endFrame": 1243
+        },
+        {
+          "word": "design",
+          "start": 41.495,
+          "end": 41.901,
+          "startFrame": 1245,
+          "endFrame": 1257
+        }
+      ]
+    },
+    {
+      "section": "THUMBNAIL_TOOLS",
+      "start": 41.994,
+      "end": 43.689,
+      "startFrame": 1260,
+      "endFrame": 1311,
+      "words": [
+        {
+          "word": "last.",
+          "start": 41.994,
+          "end": 42.667,
+          "startFrame": 1260,
+          "endFrame": 1280
+        },
+        {
+          "word": "Ideogram",
+          "start": 43.108,
+          "end": 43.689,
+          "startFrame": 1293,
+          "endFrame": 1311
+        }
+      ]
+    },
+    {
+      "section": "IDEOGRAM",
+      "start": 43.759,
+      "end": 46.882,
+      "startFrame": 1313,
+      "endFrame": 1406,
+      "words": [
+        {
+          "word": "handles",
+          "start": 43.759,
+          "end": 44.142,
+          "startFrame": 1313,
+          "endFrame": 1324
+        },
+        {
+          "word": "text",
+          "start": 44.211,
+          "end": 44.536,
+          "startFrame": 1326,
+          "endFrame": 1336
+        },
+        {
+          "word": "rendering",
+          "start": 44.618,
+          "end": 45.012,
+          "startFrame": 1339,
+          "endFrame": 1350
+        },
+        {
+          "word": "perfectly.",
+          "start": 45.082,
+          "end": 45.848,
+          "startFrame": 1352,
+          "endFrame": 1375
+        },
+        {
+          "word": "Midjourney",
+          "start": 46.29,
+          "end": 46.882,
+          "startFrame": 1389,
+          "endFrame": 1406
+        }
+      ]
+    },
+    {
+      "section": "MIDJOURNEY",
+      "start": 46.951,
+      "end": 49.645,
+      "startFrame": 1409,
+      "endFrame": 1489,
+      "words": [
+        {
+          "word": "creates",
+          "start": 46.951,
+          "end": 47.369,
+          "startFrame": 1409,
+          "endFrame": 1421
+        },
+        {
+          "word": "stunning",
+          "start": 47.451,
+          "end": 47.868,
+          "startFrame": 1424,
+          "endFrame": 1436
+        },
+        {
+          "word": "visuals.",
+          "start": 47.927,
+          "end": 48.681,
+          "startFrame": 1438,
+          "endFrame": 1460
+        },
+        {
+          "word": "Leonardo",
+          "start": 49.122,
+          "end": 49.645,
+          "startFrame": 1474,
+          "endFrame": 1489
+        }
+      ]
+    },
+    {
+      "section": "LEONARDO",
+      "start": 49.738,
+      "end": 56.704,
+      "startFrame": 1492,
+      "endFrame": 1701,
+      "words": [
+        {
+          "word": "offers",
+          "start": 49.738,
+          "end": 50.063,
+          "startFrame": 1492,
+          "endFrame": 1502
+        },
+        {
+          "word": "precise",
+          "start": 50.132,
+          "end": 50.62,
+          "startFrame": 1504,
+          "endFrame": 1519
+        },
+        {
+          "word": "control",
+          "start": 50.666,
+          "end": 51.201,
+          "startFrame": 1520,
+          "endFrame": 1536
+        },
+        {
+          "word": "and",
+          "start": 51.317,
+          "end": 51.468,
+          "startFrame": 1540,
+          "endFrame": 1544
+        },
+        {
+          "word": "styles.",
+          "start": 51.549,
+          "end": 52.315,
+          "startFrame": 1546,
+          "endFrame": 1569
+        },
+        {
+          "word": "Combined",
+          "start": 52.64,
+          "end": 53.256,
+          "startFrame": 1579,
+          "endFrame": 1598
+        },
+        {
+          "word": "they",
+          "start": 53.372,
+          "end": 53.534,
+          "startFrame": 1601,
+          "endFrame": 1606
+        },
+        {
+          "word": "make",
+          "start": 53.581,
+          "end": 53.743,
+          "startFrame": 1607,
+          "endFrame": 1612
+        },
+        {
+          "word": "thumbnails",
+          "start": 53.79,
+          "end": 54.289,
+          "startFrame": 1614,
+          "endFrame": 1629
+        },
+        {
+          "word": "that",
+          "start": 54.335,
+          "end": 54.451,
+          "startFrame": 1630,
+          "endFrame": 1634
+        },
+        {
+          "word": "actually",
+          "start": 54.509,
+          "end": 54.951,
+          "startFrame": 1635,
+          "endFrame": 1649
+        },
+        {
+          "word": "get",
+          "start": 54.997,
+          "end": 55.136,
+          "startFrame": 1650,
+          "endFrame": 1654
+        },
+        {
+          "word": "clicks.",
+          "start": 55.194,
+          "end": 55.868,
+          "startFrame": 1656,
+          "endFrame": 1676
+        },
+        {
+          "word": "The",
+          "start": 56.251,
+          "end": 56.379,
+          "startFrame": 1688,
+          "endFrame": 1691
+        },
+        {
+          "word": "winning",
+          "start": 56.437,
+          "end": 56.704,
+          "startFrame": 1693,
+          "endFrame": 1701
+        }
+      ]
+    },
+    {
+      "section": "WINNING_STACK",
+      "start": 56.773,
+      "end": 67.06,
+      "startFrame": 1703,
+      "endFrame": 2012,
+      "words": [
+        {
+          "word": "stack.",
+          "start": 56.773,
+          "end": 57.4,
+          "startFrame": 1703,
+          "endFrame": 1722
+        },
+        {
+          "word": "Kling",
+          "start": 57.725,
+          "end": 58.109,
+          "startFrame": 1732,
+          "endFrame": 1743
+        },
+        {
+          "word": "for",
+          "start": 58.19,
+          "end": 58.306,
+          "startFrame": 1746,
+          "endFrame": 1749
+        },
+        {
+          "word": "video.",
+          "start": 58.352,
+          "end": 58.991,
+          "startFrame": 1751,
+          "endFrame": 1770
+        },
+        {
+          "word": "ElevenLabs",
+          "start": 59.374,
+          "end": 60.256,
+          "startFrame": 1781,
+          "endFrame": 1808
+        },
+        {
+          "word": "for",
+          "start": 60.431,
+          "end": 60.593,
+          "startFrame": 1813,
+          "endFrame": 1818
+        },
+        {
+          "word": "voice.",
+          "start": 60.663,
+          "end": 61.267,
+          "startFrame": 1820,
+          "endFrame": 1838
+        },
+        {
+          "word": "Ideogram",
+          "start": 61.708,
+          "end": 62.288,
+          "startFrame": 1851,
+          "endFrame": 1869
+        },
+        {
+          "word": "for",
+          "start": 62.346,
+          "end": 62.451,
+          "startFrame": 1870,
+          "endFrame": 1874
+        },
+        {
+          "word": "thumbnails.",
+          "start": 62.497,
+          "end": 63.298,
+          "startFrame": 1875,
+          "endFrame": 1899
+        },
+        {
+          "word": "Three",
+          "start": 63.681,
+          "end": 63.96,
+          "startFrame": 1910,
+          "endFrame": 1919
+        },
+        {
+          "word": "tools.",
+          "start": 64.006,
+          "end": 64.668,
+          "startFrame": 1920,
+          "endFrame": 1940
+        },
+        {
+          "word": "Complete",
+          "start": 65.109,
+          "end": 65.574,
+          "startFrame": 1953,
+          "endFrame": 1967
+        },
+        {
+          "word": "content",
+          "start": 65.62,
+          "end": 66.096,
+          "startFrame": 1969,
+          "endFrame": 1983
+        },
+        {
+          "word": "pipeline.",
+          "start": 66.143,
+          "end": 67.06,
+          "startFrame": 1984,
+          "endFrame": 2012
+        }
+      ]
+    }
+  ],
+  "fps": 30
+}

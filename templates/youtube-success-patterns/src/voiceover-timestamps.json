@@ -1,0 +1,1430 @@
+{
+  "words": [
+    {
+      "word": "YouTube",
+      "start": 0,
+      "end": 0.546,
+      "startFrame": 0,
+      "endFrame": 16
+    },
+    {
+      "word": "success",
+      "start": 0.58,
+      "end": 1.057,
+      "startFrame": 17,
+      "endFrame": 32
+    },
+    {
+      "word": "comes",
+      "start": 1.115,
+      "end": 1.347,
+      "startFrame": 33,
+      "endFrame": 40
+    },
+    {
+      "word": "down",
+      "start": 1.405,
+      "end": 1.614,
+      "startFrame": 42,
+      "endFrame": 48
+    },
+    {
+      "word": "to",
+      "start": 1.66,
+      "end": 1.73,
+      "startFrame": 50,
+      "endFrame": 52
+    },
+    {
+      "word": "three",
+      "start": 1.811,
+      "end": 2.136,
+      "startFrame": 54,
+      "endFrame": 64
+    },
+    {
+      "word": "pillars.",
+      "start": 2.183,
+      "end": 2.868,
+      "startFrame": 65,
+      "endFrame": 86
+    },
+    {
+      "word": "First",
+      "start": 3.309,
+      "end": 3.727,
+      "startFrame": 99,
+      "endFrame": 112
+    },
+    {
+      "word": "is",
+      "start": 3.901,
+      "end": 4.052,
+      "startFrame": 117,
+      "endFrame": 122
+    },
+    {
+      "word": "branding.",
+      "start": 4.11,
+      "end": 4.783,
+      "startFrame": 123,
+      "endFrame": 143
+    },
+    {
+      "word": "Your",
+      "start": 5.224,
+      "end": 5.387,
+      "startFrame": 157,
+      "endFrame": 162
+    },
+    {
+      "word": "channel",
+      "start": 5.433,
+      "end": 5.77,
+      "startFrame": 163,
+      "endFrame": 173
+    },
+    {
+      "word": "needs",
+      "start": 5.828,
+      "end": 6.037,
+      "startFrame": 175,
+      "endFrame": 181
+    },
+    {
+      "word": "a",
+      "start": 6.072,
+      "end": 6.095,
+      "startFrame": 182,
+      "endFrame": 183
+    },
+    {
+      "word": "memorable",
+      "start": 6.211,
+      "end": 6.687,
+      "startFrame": 186,
+      "endFrame": 201
+    },
+    {
+      "word": "name.",
+      "start": 6.734,
+      "end": 7.256,
+      "startFrame": 202,
+      "endFrame": 218
+    },
+    {
+      "word": "A",
+      "start": 7.581,
+      "end": 7.663,
+      "startFrame": 227,
+      "endFrame": 230
+    },
+    {
+      "word": "logo",
+      "start": 7.779,
+      "end": 8.197,
+      "startFrame": 233,
+      "endFrame": 246
+    },
+    {
+      "word": "that",
+      "start": 8.255,
+      "end": 8.382,
+      "startFrame": 248,
+      "endFrame": 251
+    },
+    {
+      "word": "works",
+      "start": 8.417,
+      "end": 8.673,
+      "startFrame": 253,
+      "endFrame": 260
+    },
+    {
+      "word": "at",
+      "start": 8.707,
+      "end": 8.789,
+      "startFrame": 261,
+      "endFrame": 264
+    },
+    {
+      "word": "thumbnail",
+      "start": 8.835,
+      "end": 9.288,
+      "startFrame": 265,
+      "endFrame": 279
+    },
+    {
+      "word": "size.",
+      "start": 9.358,
+      "end": 9.95,
+      "startFrame": 281,
+      "endFrame": 299
+    },
+    {
+      "word": "And",
+      "start": 10.275,
+      "end": 10.437,
+      "startFrame": 308,
+      "endFrame": 313
+    },
+    {
+      "word": "a",
+      "start": 10.484,
+      "end": 10.507,
+      "startFrame": 315,
+      "endFrame": 315
+    },
+    {
+      "word": "consistent",
+      "start": 10.554,
+      "end": 11.099,
+      "startFrame": 317,
+      "endFrame": 333
+    },
+    {
+      "word": "color",
+      "start": 11.157,
+      "end": 11.448,
+      "startFrame": 335,
+      "endFrame": 343
+    },
+    {
+      "word": "palette",
+      "start": 11.494,
+      "end": 11.935,
+      "startFrame": 345,
+      "endFrame": 358
+    },
+    {
+      "word": "across",
+      "start": 12.005,
+      "end": 12.423,
+      "startFrame": 360,
+      "endFrame": 373
+    },
+    {
+      "word": "all",
+      "start": 12.493,
+      "end": 12.748,
+      "startFrame": 375,
+      "endFrame": 382
+    },
+    {
+      "word": "visuals.",
+      "start": 12.829,
+      "end": 13.561,
+      "startFrame": 385,
+      "endFrame": 407
+    },
+    {
+      "word": "Second",
+      "start": 14.164,
+      "end": 14.501,
+      "startFrame": 425,
+      "endFrame": 435
+    },
+    {
+      "word": "pillar",
+      "start": 14.547,
+      "end": 14.873,
+      "startFrame": 436,
+      "endFrame": 446
+    },
+    {
+      "word": "is",
+      "start": 15.024,
+      "end": 15.186,
+      "startFrame": 451,
+      "endFrame": 456
+    },
+    {
+      "word": "content",
+      "start": 15.256,
+      "end": 15.732,
+      "startFrame": 458,
+      "endFrame": 472
+    },
+    {
+      "word": "strategy.",
+      "start": 15.778,
+      "end": 16.556,
+      "startFrame": 473,
+      "endFrame": 497
+    },
+    {
+      "word": "You",
+      "start": 16.765,
+      "end": 16.881,
+      "startFrame": 503,
+      "endFrame": 506
+    },
+    {
+      "word": "need",
+      "start": 16.939,
+      "end": 17.09,
+      "startFrame": 508,
+      "endFrame": 513
+    },
+    {
+      "word": "a",
+      "start": 17.125,
+      "end": 17.148,
+      "startFrame": 514,
+      "endFrame": 514
+    },
+    {
+      "word": "content",
+      "start": 17.206,
+      "end": 17.682,
+      "startFrame": 516,
+      "endFrame": 530
+    },
+    {
+      "word": "calendar",
+      "start": 17.729,
+      "end": 18.228,
+      "startFrame": 532,
+      "endFrame": 547
+    },
+    {
+      "word": "to",
+      "start": 18.344,
+      "end": 18.46,
+      "startFrame": 550,
+      "endFrame": 554
+    },
+    {
+      "word": "stay",
+      "start": 18.53,
+      "end": 18.739,
+      "startFrame": 556,
+      "endFrame": 562
+    },
+    {
+      "word": "consistent.",
+      "start": 18.797,
+      "end": 19.586,
+      "startFrame": 564,
+      "endFrame": 588
+    },
+    {
+      "word": "Strong",
+      "start": 20.027,
+      "end": 20.422,
+      "startFrame": 601,
+      "endFrame": 613
+    },
+    {
+      "word": "hooks",
+      "start": 20.492,
+      "end": 20.77,
+      "startFrame": 615,
+      "endFrame": 623
+    },
+    {
+      "word": "in",
+      "start": 20.805,
+      "end": 20.875,
+      "startFrame": 624,
+      "endFrame": 626
+    },
+    {
+      "word": "the",
+      "start": 20.91,
+      "end": 20.979,
+      "startFrame": 627,
+      "endFrame": 629
+    },
+    {
+      "word": "first",
+      "start": 21.026,
+      "end": 21.293,
+      "startFrame": 631,
+      "endFrame": 639
+    },
+    {
+      "word": "five",
+      "start": 21.363,
+      "end": 21.653,
+      "startFrame": 641,
+      "endFrame": 650
+    },
+    {
+      "word": "seconds.",
+      "start": 21.699,
+      "end": 22.373,
+      "startFrame": 651,
+      "endFrame": 671
+    },
+    {
+      "word": "And",
+      "start": 22.616,
+      "end": 22.791,
+      "startFrame": 678,
+      "endFrame": 684
+    },
+    {
+      "word": "clear",
+      "start": 22.872,
+      "end": 23.162,
+      "startFrame": 686,
+      "endFrame": 695
+    },
+    {
+      "word": "calls",
+      "start": 23.232,
+      "end": 23.568,
+      "startFrame": 697,
+      "endFrame": 707
+    },
+    {
+      "word": "to",
+      "start": 23.626,
+      "end": 23.685,
+      "startFrame": 709,
+      "endFrame": 711
+    },
+    {
+      "word": "action",
+      "start": 23.766,
+      "end": 24.172,
+      "startFrame": 713,
+      "endFrame": 725
+    },
+    {
+      "word": "at",
+      "start": 24.323,
+      "end": 24.474,
+      "startFrame": 730,
+      "endFrame": 734
+    },
+    {
+      "word": "the",
+      "start": 24.52,
+      "end": 24.602,
+      "startFrame": 736,
+      "endFrame": 738
+    },
+    {
+      "word": "end.",
+      "start": 24.671,
+      "end": 25.147,
+      "startFrame": 740,
+      "endFrame": 754
+    },
+    {
+      "word": "Third",
+      "start": 25.751,
+      "end": 26.053,
+      "startFrame": 773,
+      "endFrame": 782
+    },
+    {
+      "word": "pillar",
+      "start": 26.099,
+      "end": 26.413,
+      "startFrame": 783,
+      "endFrame": 792
+    },
+    {
+      "word": "is",
+      "start": 26.587,
+      "end": 26.75,
+      "startFrame": 798,
+      "endFrame": 803
+    },
+    {
+      "word": "production",
+      "start": 26.808,
+      "end": 27.307,
+      "startFrame": 804,
+      "endFrame": 819
+    },
+    {
+      "word": "quality.",
+      "start": 27.377,
+      "end": 28.061,
+      "startFrame": 821,
+      "endFrame": 842
+    },
+    {
+      "word": "Good",
+      "start": 28.445,
+      "end": 28.688,
+      "startFrame": 853,
+      "endFrame": 861
+    },
+    {
+      "word": "audio",
+      "start": 28.746,
+      "end": 29.257,
+      "startFrame": 862,
+      "endFrame": 878
+    },
+    {
+      "word": "is",
+      "start": 29.373,
+      "end": 29.536,
+      "startFrame": 881,
+      "endFrame": 886
+    },
+    {
+      "word": "more",
+      "start": 29.652,
+      "end": 29.954,
+      "startFrame": 890,
+      "endFrame": 899
+    },
+    {
+      "word": "important",
+      "start": 30.012,
+      "end": 30.604,
+      "startFrame": 900,
+      "endFrame": 918
+    },
+    {
+      "word": "than",
+      "start": 30.778,
+      "end": 30.975,
+      "startFrame": 923,
+      "endFrame": 929
+    },
+    {
+      "word": "video.",
+      "start": 31.045,
+      "end": 31.672,
+      "startFrame": 931,
+      "endFrame": 950
+    },
+    {
+      "word": "Use",
+      "start": 32.276,
+      "end": 32.543,
+      "startFrame": 968,
+      "endFrame": 976
+    },
+    {
+      "word": "proper",
+      "start": 32.601,
+      "end": 32.961,
+      "startFrame": 978,
+      "endFrame": 989
+    },
+    {
+      "word": "lighting",
+      "start": 33.042,
+      "end": 33.367,
+      "startFrame": 991,
+      "endFrame": 1001
+    },
+    {
+      "word": "to",
+      "start": 33.437,
+      "end": 33.506,
+      "startFrame": 1003,
+      "endFrame": 1005
+    },
+    {
+      "word": "look",
+      "start": 33.576,
+      "end": 33.738,
+      "startFrame": 1007,
+      "endFrame": 1012
+    },
+    {
+      "word": "professional.",
+      "start": 33.796,
+      "end": 34.528,
+      "startFrame": 1014,
+      "endFrame": 1036
+    },
+    {
+      "word": "And",
+      "start": 34.853,
+      "end": 35.039,
+      "startFrame": 1046,
+      "endFrame": 1051
+    },
+    {
+      "word": "edit",
+      "start": 35.155,
+      "end": 35.445,
+      "startFrame": 1055,
+      "endFrame": 1063
+    },
+    {
+      "word": "with",
+      "start": 35.491,
+      "end": 35.631,
+      "startFrame": 1065,
+      "endFrame": 1069
+    },
+    {
+      "word": "a",
+      "start": 35.666,
+      "end": 35.7,
+      "startFrame": 1070,
+      "endFrame": 1071
+    },
+    {
+      "word": "fast",
+      "start": 35.77,
+      "end": 36.13,
+      "startFrame": 1073,
+      "endFrame": 1084
+    },
+    {
+      "word": "pace",
+      "start": 36.211,
+      "end": 36.757,
+      "startFrame": 1086,
+      "endFrame": 1103
+    },
+    {
+      "word": "to",
+      "start": 36.827,
+      "end": 36.943,
+      "startFrame": 1105,
+      "endFrame": 1108
+    },
+    {
+      "word": "maintain",
+      "start": 37.036,
+      "end": 37.488,
+      "startFrame": 1111,
+      "endFrame": 1125
+    },
+    {
+      "word": "attention.",
+      "start": 37.546,
+      "end": 38.243,
+      "startFrame": 1126,
+      "endFrame": 1147
+    },
+    {
+      "word": "Master",
+      "start": 38.684,
+      "end": 39.195,
+      "startFrame": 1161,
+      "endFrame": 1176
+    },
+    {
+      "word": "these",
+      "start": 39.276,
+      "end": 39.474,
+      "startFrame": 1178,
+      "endFrame": 1184
+    },
+    {
+      "word": "three",
+      "start": 39.52,
+      "end": 39.752,
+      "startFrame": 1186,
+      "endFrame": 1193
+    },
+    {
+      "word": "pillars",
+      "start": 39.799,
+      "end": 40.263,
+      "startFrame": 1194,
+      "endFrame": 1208
+    },
+    {
+      "word": "and",
+      "start": 40.437,
+      "end": 40.6,
+      "startFrame": 1213,
+      "endFrame": 1218
+    },
+    {
+      "word": "your",
+      "start": 40.67,
+      "end": 40.809,
+      "startFrame": 1220,
+      "endFrame": 1224
+    },
+    {
+      "word": "channel",
+      "start": 40.855,
+      "end": 41.238,
+      "startFrame": 1226,
+      "endFrame": 1237
+    },
+    {
+      "word": "will",
+      "start": 41.413,
+      "end": 41.622,
+      "startFrame": 1242,
+      "endFrame": 1249
+    },
+    {
+      "word": "grow.",
+      "start": 41.668,
+      "end": 42.307,
+      "startFrame": 1250,
+      "endFrame": 1269
+    }
+  ],
+  "sections": [
+    {
+      "section": "INTRO",
+      "start": 2.183,
+      "end": 4.052,
+      "startFrame": 65,
+      "endFrame": 122,
+      "words": [
+        {
+          "word": "pillars.",
+          "start": 2.183,
+          "end": 2.868,
+          "startFrame": 65,
+          "endFrame": 86
+        },
+        {
+          "word": "First",
+          "start": 3.309,
+          "end": 3.727,
+          "startFrame": 99,
+          "endFrame": 112
+        },
+        {
+          "word": "is",
+          "start": 3.901,
+          "end": 4.052,
+          "startFrame": 117,
+          "endFrame": 122
+        }
+      ]
+    },
+    {
+      "section": "BRANDING",
+      "start": 4.11,
+      "end": 6.687,
+      "startFrame": 123,
+      "endFrame": 201,
+      "words": [
+        {
+          "word": "branding.",
+          "start": 4.11,
+          "end": 4.783,
+          "startFrame": 123,
+          "endFrame": 143
+        },
+        {
+          "word": "Your",
+          "start": 5.224,
+          "end": 5.387,
+          "startFrame": 157,
+          "endFrame": 162
+        },
+        {
+          "word": "channel",
+          "start": 5.433,
+          "end": 5.77,
+          "startFrame": 163,
+          "endFrame": 173
+        },
+        {
+          "word": "needs",
+          "start": 5.828,
+          "end": 6.037,
+          "startFrame": 175,
+          "endFrame": 181
+        },
+        {
+          "word": "a",
+          "start": 6.072,
+          "end": 6.095,
+          "startFrame": 182,
+          "endFrame": 183
+        },
+        {
+          "word": "memorable",
+          "start": 6.211,
+          "end": 6.687,
+          "startFrame": 186,
+          "endFrame": 201
+        }
+      ]
+    },
+    {
+      "section": "BRANDING_NAME",
+      "start": 6.734,
+      "end": 9.288,
+      "startFrame": 202,
+      "endFrame": 279,
+      "words": [
+        {
+          "word": "name.",
+          "start": 6.734,
+          "end": 7.256,
+          "startFrame": 202,
+          "endFrame": 218
+        },
+        {
+          "word": "A",
+          "start": 7.581,
+          "end": 7.663,
+          "startFrame": 227,
+          "endFrame": 230
+        },
+        {
+          "word": "logo",
+          "start": 7.779,
+          "end": 8.197,
+          "startFrame": 233,
+          "endFrame": 246
+        },
+        {
+          "word": "that",
+          "start": 8.255,
+          "end": 8.382,
+          "startFrame": 248,
+          "endFrame": 251
+        },
+        {
+          "word": "works",
+          "start": 8.417,
+          "end": 8.673,
+          "startFrame": 253,
+          "endFrame": 260
+        },
+        {
+          "word": "at",
+          "start": 8.707,
+          "end": 8.789,
+          "startFrame": 261,
+          "endFrame": 264
+        },
+        {
+          "word": "thumbnail",
+          "start": 8.835,
+          "end": 9.288,
+          "startFrame": 265,
+          "endFrame": 279
+        }
+      ]
+    },
+    {
+      "section": "BRANDING_LOGO",
+      "start": 9.358,
+      "end": 11.448,
+      "startFrame": 281,
+      "endFrame": 343,
+      "words": [
+        {
+          "word": "size.",
+          "start": 9.358,
+          "end": 9.95,
+          "startFrame": 281,
+          "endFrame": 299
+        },
+        {
+          "word": "And",
+          "start": 10.275,
+          "end": 10.437,
+          "startFrame": 308,
+          "endFrame": 313
+        },
+        {
+          "word": "a",
+          "start": 10.484,
+          "end": 10.507,
+          "startFrame": 315,
+          "endFrame": 315
+        },
+        {
+          "word": "consistent",
+          "start": 10.554,
+          "end": 11.099,
+          "startFrame": 317,
+          "endFrame": 333
+        },
+        {
+          "word": "color",
+          "start": 11.157,
+          "end": 11.448,
+          "startFrame": 335,
+          "endFrame": 343
+        }
+      ]
+    },
+    {
+      "section": "BRANDING_COLORS",
+      "start": 11.494,
+      "end": 15.186,
+      "startFrame": 345,
+      "endFrame": 456,
+      "words": [
+        {
+          "word": "palette",
+          "start": 11.494,
+          "end": 11.935,
+          "startFrame": 345,
+          "endFrame": 358
+        },
+        {
+          "word": "across",
+          "start": 12.005,
+          "end": 12.423,
+          "startFrame": 360,
+          "endFrame": 373
+        },
+        {
+          "word": "all",
+          "start": 12.493,
+          "end": 12.748,
+          "startFrame": 375,
+          "endFrame": 382
+        },
+        {
+          "word": "visuals.",
+          "start": 12.829,
+          "end": 13.561,
+          "startFrame": 385,
+          "endFrame": 407
+        },
+        {
+          "word": "Second",
+          "start": 14.164,
+          "end": 14.501,
+          "startFrame": 425,
+          "endFrame": 435
+        },
+        {
+          "word": "pillar",
+          "start": 14.547,
+          "end": 14.873,
+          "startFrame": 436,
+          "endFrame": 446
+        },
+        {
+          "word": "is",
+          "start": 15.024,
+          "end": 15.186,
+          "startFrame": 451,
+          "endFrame": 456
+        }
+      ]
+    },
+    {
+      "section": "CONTENT",
+      "start": 15.256,
+      "end": 17.682,
+      "startFrame": 458,
+      "endFrame": 530,
+      "words": [
+        {
+          "word": "content",
+          "start": 15.256,
+          "end": 15.732,
+          "startFrame": 458,
+          "endFrame": 472
+        },
+        {
+          "word": "strategy.",
+          "start": 15.778,
+          "end": 16.556,
+          "startFrame": 473,
+          "endFrame": 497
+        },
+        {
+          "word": "You",
+          "start": 16.765,
+          "end": 16.881,
+          "startFrame": 503,
+          "endFrame": 506
+        },
+        {
+          "word": "need",
+          "start": 16.939,
+          "end": 17.09,
+          "startFrame": 508,
+          "endFrame": 513
+        },
+        {
+          "word": "a",
+          "start": 17.125,
+          "end": 17.148,
+          "startFrame": 514,
+          "endFrame": 514
+        },
+        {
+          "word": "content",
+          "start": 17.206,
+          "end": 17.682,
+          "startFrame": 516,
+          "endFrame": 530
+        }
+      ]
+    },
+    {
+      "section": "CONTENT_CALENDAR",
+      "start": 17.729,
+      "end": 20.422,
+      "startFrame": 532,
+      "endFrame": 613,
+      "words": [
+        {
+          "word": "calendar",
+          "start": 17.729,
+          "end": 18.228,
+          "startFrame": 532,
+          "endFrame": 547
+        },
+        {
+          "word": "to",
+          "start": 18.344,
+          "end": 18.46,
+          "startFrame": 550,
+          "endFrame": 554
+        },
+        {
+          "word": "stay",
+          "start": 18.53,
+          "end": 18.739,
+          "startFrame": 556,
+          "endFrame": 562
+        },
+        {
+          "word": "consistent.",
+          "start": 18.797,
+          "end": 19.586,
+          "startFrame": 564,
+          "endFrame": 588
+        },
+        {
+          "word": "Strong",
+          "start": 20.027,
+          "end": 20.422,
+          "startFrame": 601,
+          "endFrame": 613
+        }
+      ]
+    },
+    {
+      "section": "CONTENT_HOOKS",
+      "start": 20.492,
+      "end": 23.685,
+      "startFrame": 615,
+      "endFrame": 711,
+      "words": [
+        {
+          "word": "hooks",
+          "start": 20.492,
+          "end": 20.77,
+          "startFrame": 615,
+          "endFrame": 623
+        },
+        {
+          "word": "in",
+          "start": 20.805,
+          "end": 20.875,
+          "startFrame": 624,
+          "endFrame": 626
+        },
+        {
+          "word": "the",
+          "start": 20.91,
+          "end": 20.979,
+          "startFrame": 627,
+          "endFrame": 629
+        },
+        {
+          "word": "first",
+          "start": 21.026,
+          "end": 21.293,
+          "startFrame": 631,
+          "endFrame": 639
+        },
+        {
+          "word": "five",
+          "start": 21.363,
+          "end": 21.653,
+          "startFrame": 641,
+          "endFrame": 650
+        },
+        {
+          "word": "seconds.",
+          "start": 21.699,
+          "end": 22.373,
+          "startFrame": 651,
+          "endFrame": 671
+        },
+        {
+          "word": "And",
+          "start": 22.616,
+          "end": 22.791,
+          "startFrame": 678,
+          "endFrame": 684
+        },
+        {
+          "word": "clear",
+          "start": 22.872,
+          "end": 23.162,
+          "startFrame": 686,
+          "endFrame": 695
+        },
+        {
+          "word": "calls",
+          "start": 23.232,
+          "end": 23.568,
+          "startFrame": 697,
+          "endFrame": 707
+        },
+        {
+          "word": "to",
+          "start": 23.626,
+          "end": 23.685,
+          "startFrame": 709,
+          "endFrame": 711
+        }
+      ]
+    },
+    {
+      "section": "CONTENT_CTA",
+      "start": 23.766,
+      "end": 26.75,
+      "startFrame": 713,
+      "endFrame": 803,
+      "words": [
+        {
+          "word": "action",
+          "start": 23.766,
+          "end": 24.172,
+          "startFrame": 713,
+          "endFrame": 725
+        },
+        {
+          "word": "at",
+          "start": 24.323,
+          "end": 24.474,
+          "startFrame": 730,
+          "endFrame": 734
+        },
+        {
+          "word": "the",
+          "start": 24.52,
+          "end": 24.602,
+          "startFrame": 736,
+          "endFrame": 738
+        },
+        {
+          "word": "end.",
+          "start": 24.671,
+          "end": 25.147,
+          "startFrame": 740,
+          "endFrame": 754
+        },
+        {
+          "word": "Third",
+          "start": 25.751,
+          "end": 26.053,
+          "startFrame": 773,
+          "endFrame": 782
+        },
+        {
+          "word": "pillar",
+          "start": 26.099,
+          "end": 26.413,
+          "startFrame": 783,
+          "endFrame": 792
+        },
+        {
+          "word": "is",
+          "start": 26.587,
+          "end": 26.75,
+          "startFrame": 798,
+          "endFrame": 803
+        }
+      ]
+    },
+    {
+      "section": "PRODUCTION",
+      "start": 26.808,
+      "end": 28.688,
+      "startFrame": 804,
+      "endFrame": 861,
+      "words": [
+        {
+          "word": "production",
+          "start": 26.808,
+          "end": 27.307,
+          "startFrame": 804,
+          "endFrame": 819
+        },
+        {
+          "word": "quality.",
+          "start": 27.377,
+          "end": 28.061,
+          "startFrame": 821,
+          "endFrame": 842
+        },
+        {
+          "word": "Good",
+          "start": 28.445,
+          "end": 28.688,
+          "startFrame": 853,
+          "endFrame": 861
+        }
+      ]
+    },
+    {
+      "section": "PRODUCTION_AUDIO",
+      "start": 28.746,
+      "end": 32.961,
+      "startFrame": 862,
+      "endFrame": 989,
+      "words": [
+        {
+          "word": "audio",
+          "start": 28.746,
+          "end": 29.257,
+          "startFrame": 862,
+          "endFrame": 878
+        },
+        {
+          "word": "is",
+          "start": 29.373,
+          "end": 29.536,
+          "startFrame": 881,
+          "endFrame": 886
+        },
+        {
+          "word": "more",
+          "start": 29.652,
+          "end": 29.954,
+          "startFrame": 890,
+          "endFrame": 899
+        },
+        {
+          "word": "important",
+          "start": 30.012,
+          "end": 30.604,
+          "startFrame": 900,
+          "endFrame": 918
+        },
+        {
+          "word": "than",
+          "start": 30.778,
+          "end": 30.975,
+          "startFrame": 923,
+          "endFrame": 929
+        },
+        {
+          "word": "video.",
+          "start": 31.045,
+          "end": 31.672,
+          "startFrame": 931,
+          "endFrame": 950
+        },
+        {
+          "word": "Use",
+          "start": 32.276,
+          "end": 32.543,
+          "startFrame": 968,
+          "endFrame": 976
+        },
+        {
+          "word": "proper",
+          "start": 32.601,
+          "end": 32.961,
+          "startFrame": 978,
+          "endFrame": 989
+        }
+      ]
+    },
+    {
+      "section": "PRODUCTION_LIGHTING",
+      "start": 33.042,
+      "end": 36.13,
+      "startFrame": 991,
+      "endFrame": 1084,
+      "words": [
+        {
+          "word": "lighting",
+          "start": 33.042,
+          "end": 33.367,
+          "startFrame": 991,
+          "endFrame": 1001
+        },
+        {
+          "word": "to",
+          "start": 33.437,
+          "end": 33.506,
+          "startFrame": 1003,
+          "endFrame": 1005
+        },
+        {
+          "word": "look",
+          "start": 33.576,
+          "end": 33.738,
+          "startFrame": 1007,
+          "endFrame": 1012
+        },
+        {
+          "word": "professional.",
+          "start": 33.796,
+          "end": 34.528,
+          "startFrame": 1014,
+          "endFrame": 1036
+        },
+        {
+          "word": "And",
+          "start": 34.853,
+          "end": 35.039,
+          "startFrame": 1046,
+          "endFrame": 1051
+        },
+        {
+          "word": "edit",
+          "start": 35.155,
+          "end": 35.445,
+          "startFrame": 1055,
+          "endFrame": 1063
+        },
+        {
+          "word": "with",
+          "start": 35.491,
+          "end": 35.631,
+          "startFrame": 1065,
+          "endFrame": 1069
+        },
+        {
+          "word": "a",
+          "start": 35.666,
+          "end": 35.7,
+          "startFrame": 1070,
+          "endFrame": 1071
+        },
+        {
+          "word": "fast",
+          "start": 35.77,
+          "end": 36.13,
+          "startFrame": 1073,
+          "endFrame": 1084
+        }
+      ]
+    },
+    {
+      "section": "PRODUCTION_EDITING",
+      "start": 36.211,
+      "end": 39.752,
+      "startFrame": 1086,
+      "endFrame": 1193,
+      "words": [
+        {
+          "word": "pace",
+          "start": 36.211,
+          "end": 36.757,
+          "startFrame": 1086,
+          "endFrame": 1103
+        },
+        {
+          "word": "to",
+          "start": 36.827,
+          "end": 36.943,
+          "startFrame": 1105,
+          "endFrame": 1108
+        },
+        {
+          "word": "maintain",
+          "start": 37.036,
+          "end": 37.488,
+          "startFrame": 1111,
+          "endFrame": 1125
+        },
+        {
+          "word": "attention.",
+          "start": 37.546,
+          "end": 38.243,
+          "startFrame": 1126,
+          "endFrame": 1147
+        },
+        {
+          "word": "Master",
+          "start": 38.684,
+          "end": 39.195,
+          "startFrame": 1161,
+          "endFrame": 1176
+        },
+        {
+          "word": "these",
+          "start": 39.276,
+          "end": 39.474,
+          "startFrame": 1178,
+          "endFrame": 1184
+        },
+        {
+          "word": "three",
+          "start": 39.52,
+          "end": 39.752,
+          "startFrame": 1186,
+          "endFrame": 1193
+        }
+      ]
+    },
+    {
+      "section": "INTRO",
+      "start": 39.799,
+      "end": 41.622,
+      "startFrame": 1194,
+      "endFrame": 1249,
+      "words": [
+        {
+          "word": "pillars",
+          "start": 39.799,
+          "end": 40.263,
+          "startFrame": 1194,
+          "endFrame": 1208
+        },
+        {
+          "word": "and",
+          "start": 40.437,
+          "end": 40.6,
+          "startFrame": 1213,
+          "endFrame": 1218
+        },
+        {
+          "word": "your",
+          "start": 40.67,
+          "end": 40.809,
+          "startFrame": 1220,
+          "endFrame": 1224
+        },
+        {
+          "word": "channel",
+          "start": 40.855,
+          "end": 41.238,
+          "startFrame": 1226,
+          "endFrame": 1237
+        },
+        {
+          "word": "will",
+          "start": 41.413,
+          "end": 41.622,
+          "startFrame": 1242,
+          "endFrame": 1249
+        }
+      ]
+    },
+    {
+      "section": "OUTRO",
+      "start": 41.668,
+      "end": 42.307,
+      "startFrame": 1250,
+      "endFrame": 1269,
+      "words": [
+        {
+          "word": "grow.",
+          "start": 41.668,
+          "end": 42.307,
+          "startFrame": 1250,
+          "endFrame": 1269
+        }
+      ]
+    }
+  ],
+  "fps": 30
+}

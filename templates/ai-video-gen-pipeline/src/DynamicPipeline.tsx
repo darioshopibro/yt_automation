@@ -134,6 +134,8 @@ const iconToColorKey: Record<string, string> = {
   // Orange/Yellow family
   file: "vectorSearch",
   cube: "vectorSearch",
+  video: "vectorSearch",
+  image: "vectorSearch",
 
   // Purple family
   merge: "retrieve",
@@ -450,6 +452,19 @@ const Icon: React.FC<{ type: string; size?: number; color?: string }> = ({ type,
         <rect x="4" y="4" width="16" height="16" rx="2"/>
         <rect x="9" y="9" width="6" height="6"/>
         <path d="M9 1v3M15 1v3M9 20v3M15 20v3M20 9h3M20 14h3M1 9h3M1 14h3"/>
+      </svg>
+    ),
+    video: (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" style={iconStyle}>
+        <rect x="2" y="4" width="20" height="16" rx="2"/>
+        <path d="M10 9l5 3-5 3z" fill={color}/>
+      </svg>
+    ),
+    image: (
+      <svg width={size} height={size} viewBox="0 0 24 24" fill="none" stroke={color} strokeWidth="1.5" style={iconStyle}>
+        <rect x="3" y="3" width="18" height="18" rx="2"/>
+        <circle cx="8.5" cy="8.5" r="1.5"/>
+        <path d="M21 15l-5-5L5 21"/>
       </svg>
     ),
   };

@@ -4,7 +4,146 @@
 
 ---
 
-## 1. Node/Flow Diagram (EXISTING)
+## 1. Table (BASIC)
+**Svrha:** Structured data, feature lists, comparisons, specs
+
+**Vizualni elementi:**
+- Rows and columns
+- Header row (bold/colored)
+- Alternating row colors (optional)
+- Cell highlighting
+- Icons in cells
+
+**Primer upotrebe:**
+- Feature comparison tables
+- Pricing tiers
+- Specs/requirements
+- Any structured data
+
+**Animation style:** Row-by-row reveal, cell highlight
+
+**Status:** HIGH PRIORITY - najčešći vizual
+
+---
+
+## 2. VS Layout (META-WRAPPER)
+**Svrha:** Side-by-side comparison of ANY two visuals
+
+**Vizualni elementi:**
+- Split screen (50/50 or custom ratio)
+- "VS" badge in middle
+- Left panel: any visual component
+- Right panel: any visual component
+- Labels per side
+
+**Primer upotrebe:**
+- Table vs Table
+- Chart vs Chart
+- Node diagram vs Node diagram
+- Timeline vs Timeline
+- Bilo šta vs Bilo šta
+
+**Animation style:** Split reveal, alternating focus, winner highlight
+
+**Status:** HIGH PRIORITY - reusable wrapper
+
+---
+
+## 3. Code Block / Snippet (BASIC)
+**Svrha:** Display code with syntax highlighting
+
+**Vizualni elementi:**
+- Dark background (terminal style)
+- Syntax highlighting (colors per language)
+- Line numbers (optional)
+- File name header
+- Typing animation
+- Highlight specific lines
+
+**Primer upotrebe:**
+- Code examples
+- "Here's how you do it" moments
+- API calls
+- Config files
+- Any code demonstration
+
+**Animation style:** Typing animation, line-by-line reveal, highlight flash
+
+**Status:** HIGH PRIORITY - essential za tech content
+
+---
+
+## 4. Terminal / Console (BASIC)
+**Svrha:** Command line interface display
+
+**Vizualni elementi:**
+- Black/dark background
+- Green/white text
+- Command prompt ($, >, etc.)
+- Typing animation for commands
+- Output appearing after command
+- Cursor blinking
+
+**Primer upotrebe:**
+- "Run this command"
+- Installation steps
+- CLI tool demos
+- Build/compile output
+- Error messages
+
+**Animation style:** Command typing, output reveal, cursor blink
+
+**Status:** HIGH PRIORITY - svaki tutorial ima ovo
+
+---
+
+## 5. List / Bullet Points (BASIC)
+**Svrha:** Simple lists, key points, features
+
+**Vizualni elementi:**
+- Bullet points or numbers
+- Icons per item (optional)
+- Checkmarks
+- Indentation for sub-items
+- Highlight current item
+
+**Primer upotrebe:**
+- "3 reasons why..."
+- Feature lists
+- Requirements
+- Key takeaways
+- Any enumeration
+
+**Animation style:** Item-by-item reveal, checkmark animation
+
+**Status:** HIGH PRIORITY - super basic, koristi se stalno
+
+---
+
+## 6. Logo Grid / Tech Stack (BASIC)
+**Svrha:** Display multiple logos/technologies
+
+**Vizualni elementi:**
+- Grid layout (2x2, 3x3, etc.)
+- Logo images
+- Labels under logos
+- Category grouping
+- Connection lines (optional)
+
+**Primer upotrebe:**
+- "Built with..." sections
+- Tech stack overview
+- Integrations
+- Supported platforms
+- Tool comparisons
+
+**Animation style:** Logo pop-in, grid fill, glow on hover/focus
+
+**Status:** HIGH PRIORITY - "tech stack" u svakom drugom videu
+
+---
+
+## 7. Node/Flow Diagram (EXISTING)
 **Svrha:** Architecture, connections, tech stack, data flow
 
 **Vizualni elementi:**
@@ -23,7 +162,7 @@
 
 ---
 
-## 2. Timeline
+## 8. Timeline
 **Svrha:** Chronological progression, history, evolution
 
 **Vizualni elementi:**
@@ -43,7 +182,7 @@
 
 ---
 
-## 3. Data Visualization / Charts
+## 9. Data Visualization / Charts
 **Svrha:** Statistics, trends, comparisons, metrics
 
 **Vizualni elementi:**
@@ -63,7 +202,7 @@
 
 ---
 
-## 4. Comparison / Versus
+## 10. Comparison / Versus
 **Svrha:** Side-by-side comparison, pros/cons, A vs B
 
 **Vizualni elementi:**
@@ -83,7 +222,7 @@
 
 ---
 
-## 5. Process Steps / How-To
+## 11. Process Steps / How-To
 **Svrha:** Step-by-step instructions, workflow, sequences
 
 **Vizualni elementi:**
@@ -103,7 +242,7 @@
 
 ---
 
-## 6. Map Animation
+## 12. Map Animation
 **Svrha:** Geographic context, regional data, location-based info
 
 **Vizualni elementi:**
@@ -123,7 +262,7 @@
 
 ---
 
-## 7. Statistics / Metrics Display
+## 13. Statistics / Metrics Display
 **Svrha:** Key numbers, KPIs, impressive stats
 
 **Vizualni elementi:**
@@ -143,7 +282,7 @@
 
 ---
 
-## 8. Hierarchy / Tree Structure
+## 14. Hierarchy / Tree Structure
 **Svrha:** Organization, nested relationships, categorization
 
 **Vizualni elementi:**
@@ -163,7 +302,7 @@
 
 ---
 
-## 9. Isometric / 2.5D
+## 15. Isometric / 2.5D
 **Svrha:** Spatial relationships, product visualization, depth
 
 **Vizualni elementi:**
@@ -183,7 +322,7 @@
 
 ---
 
-## 10. Educational Diagram / Labeled Illustration
+## 16. Educational Diagram / Labeled Illustration
 **Svrha:** Technical concepts, anatomy, component breakdown
 
 **Vizualni elementi:**
@@ -203,7 +342,7 @@
 
 ---
 
-## 11. Kinetic Typography
+## 17. Kinetic Typography
 **Svrha:** Text emphasis, quotes, key messages
 
 **Vizualni elementi:**
@@ -223,7 +362,7 @@
 
 ---
 
-## 12. Icon Grid / Feature Matrix
+## 18. Icon Grid / Feature Matrix
 **Svrha:** Feature lists, capabilities, multi-point overview
 
 **Vizualni elementi:**
@@ -243,7 +382,7 @@
 
 ---
 
-## 13. Split Screen / Dual Panel
+## 19. Split Screen / Dual Panel
 **Svrha:** Before/after, cause/effect, dual narratives
 
 **Vizualni elementi:**
@@ -263,7 +402,7 @@
 
 ---
 
-## 14. Animated Counter / Ticker
+## 20. Animated Counter / Ticker
 **Svrha:** Real-time feel, dynamic stats, urgency
 
 **Vizualni elementi:**
@@ -286,16 +425,22 @@
 
 | Priority | Type | Use Case |
 |----------|------|----------|
-| HIGH | Node/Flow Diagram | Architecture, how things connect |
-| HIGH | Timeline | History, evolution, progression |
-| HIGH | Data Visualization | Stats, benchmarks, comparisons |
-| HIGH | Comparison | A vs B, pros/cons |
-| MEDIUM | Process Steps | How-to, tutorials |
-| MEDIUM | Statistics Display | Key metrics, impressive numbers |
-| MEDIUM | Hierarchy | System structure, organization |
-| LOW | Map Animation | Geographic context (niche) |
-| LOW | Isometric | Product viz (more design-heavy) |
-| LOW | Kinetic Typography | Emphasis moments |
+| **HIGH** | **1. Table** | Structured data, specs, feature lists |
+| **HIGH** | **2. VS Layout** | Any visual vs any visual (wrapper) |
+| **HIGH** | **3. Code Block** | Code examples, syntax highlight |
+| **HIGH** | **4. Terminal** | Commands, CLI demos |
+| **HIGH** | **5. List/Bullets** | Key points, features, enumeration |
+| **HIGH** | **6. Logo Grid** | Tech stack, integrations |
+| **HIGH** | 7. Node/Flow Diagram | Architecture, how things connect |
+| **HIGH** | 8. Timeline | History, evolution, progression |
+| **HIGH** | 9. Data Visualization | Stats, benchmarks, comparisons |
+| **HIGH** | 10. Comparison | A vs B, pros/cons |
+| MEDIUM | 11. Process Steps | How-to, tutorials |
+| MEDIUM | 13. Statistics Display | Key metrics, impressive numbers |
+| MEDIUM | 14. Hierarchy | System structure, organization |
+| LOW | 12. Map Animation | Geographic context (niche) |
+| LOW | 15. Isometric | Product viz (more design-heavy) |
+| LOW | 17. Kinetic Typography | Emphasis moments |
 
 ---
 

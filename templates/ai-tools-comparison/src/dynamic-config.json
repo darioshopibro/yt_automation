@@ -1,0 +1,197 @@
+{
+  "title": "AI Tools Battle",
+  "subtitle": "Video vs Voice vs Thumbnails",
+  "fps": 30,
+  "totalFrames": 2100,
+  "showStepPrefix": false,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Video Generation",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "VIDEO_INTRO",
+          "title": "Video Tools",
+          "subtitle": "Text to video AI",
+          "colorKey": "userQuery",
+          "startFrame": 295,
+          "layout": "row",
+          "nodes": [
+            { "label": "Kling", "icon": "zap", "color": "purple" },
+            { "label": "Runway", "icon": "play", "color": "blue" },
+            { "label": "Pika", "icon": "sparkle", "color": "green" }
+          ]
+        },
+        {
+          "id": "KLING",
+          "title": "Kling AI",
+          "subtitle": "Cinematic shots from text",
+          "colorKey": "embedding",
+          "startFrame": 365,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Text", "icon": "terminal", "color": "blue" },
+            { "label": "Cinematic", "icon": "monitor", "color": "purple" }
+          ]
+        },
+        {
+          "id": "RUNWAY",
+          "title": "Runway",
+          "subtitle": "Smooth transitions",
+          "colorKey": "vectorSearch",
+          "startFrame": 461,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Input", "icon": "file", "color": "blue" },
+            { "label": "Transitions", "icon": "layers", "color": "green" }
+          ]
+        },
+        {
+          "id": "PIKA",
+          "title": "Pika",
+          "subtitle": "Motion from stills",
+          "colorKey": "retrieve",
+          "startFrame": 553,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Image", "icon": "file", "color": "orange" },
+            { "label": "Motion", "icon": "zap", "color": "purple" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Voice Synthesis",
+      "color": "#3b82f6",
+      "sections": [
+        {
+          "id": "VOICE_INTRO",
+          "title": "Voice Tools",
+          "subtitle": "AI voice generation",
+          "colorKey": "retrieve",
+          "startFrame": 755,
+          "layout": "row",
+          "nodes": [
+            { "label": "ElevenLabs", "icon": "user", "color": "purple" },
+            { "label": "Play HT", "icon": "user", "color": "blue" },
+            { "label": "Murf", "icon": "user", "color": "green" }
+          ]
+        },
+        {
+          "id": "ELEVENLABS",
+          "title": "ElevenLabs",
+          "subtitle": "Realistic voices + emotion",
+          "colorKey": "augment",
+          "startFrame": 814,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Text", "icon": "terminal", "color": "blue" },
+            { "label": "Voice", "icon": "user", "color": "purple" }
+          ]
+        },
+        {
+          "id": "PLAYHT",
+          "title": "Play HT",
+          "subtitle": "Voice cloning in minutes",
+          "colorKey": "generate",
+          "startFrame": 944,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Sample", "icon": "file", "color": "orange" },
+            { "label": "Clone", "icon": "user", "color": "green" }
+          ]
+        },
+        {
+          "id": "MURF",
+          "title": "Murf",
+          "subtitle": "Studio quality, no recording",
+          "colorKey": "vectorSearch",
+          "startFrame": 1028,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Script", "icon": "terminal", "color": "blue" },
+            { "label": "Studio", "icon": "monitor", "color": "purple" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Thumbnail Design",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "THUMB_INTRO",
+          "title": "Thumbnail Tools",
+          "subtitle": "AI image generation",
+          "colorKey": "generate",
+          "startFrame": 1245,
+          "layout": "row",
+          "nodes": [
+            { "label": "Ideogram", "icon": "sparkle", "color": "green" },
+            { "label": "Midjourney", "icon": "sparkle", "color": "purple" },
+            { "label": "Leonardo", "icon": "sparkle", "color": "blue" }
+          ]
+        },
+        {
+          "id": "IDEOGRAM",
+          "title": "Ideogram",
+          "subtitle": "Perfect text rendering",
+          "colorKey": "userQuery",
+          "startFrame": 1298,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Prompt", "icon": "terminal", "color": "blue" },
+            { "label": "Text Art", "icon": "sparkle", "color": "green" }
+          ]
+        },
+        {
+          "id": "MIDJOURNEY",
+          "title": "Midjourney",
+          "subtitle": "Stunning visuals",
+          "colorKey": "embedding",
+          "startFrame": 1394,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Prompt", "icon": "terminal", "color": "blue" },
+            { "label": "Visuals", "icon": "sparkle", "color": "purple" }
+          ]
+        },
+        {
+          "id": "LEONARDO",
+          "title": "Leonardo",
+          "subtitle": "Precise control + styles",
+          "colorKey": "vectorSearch",
+          "startFrame": 1477,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Control", "icon": "layers", "color": "orange" },
+            { "label": "Styled", "icon": "sparkle", "color": "blue" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Winning Stack",
+      "color": "#f59e0b",
+      "sections": [
+        {
+          "id": "WINNERS",
+          "title": "Complete Pipeline",
+          "subtitle": "3 tools for content creation",
+          "colorKey": "generate",
+          "startFrame": 1688,
+          "layout": "row",
+          "nodes": [
+            { "label": "Kling", "icon": "monitor", "color": "purple" },
+            { "label": "ElevenLabs", "icon": "user", "color": "blue" },
+            { "label": "Ideogram", "icon": "sparkle", "color": "green" }
+          ]
+        }
+      ]
+    }
+  ]
+}

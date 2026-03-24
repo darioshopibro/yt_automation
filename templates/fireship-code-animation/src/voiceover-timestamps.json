@@ -1,0 +1,1887 @@
+{
+  "words": [
+    {
+      "word": "imagine",
+      "start": 0,
+      "end": 1.509,
+      "startFrame": 0,
+      "endFrame": 45
+    },
+    {
+      "word": "a",
+      "start": 1.533,
+      "end": 1.567,
+      "startFrame": 46,
+      "endFrame": 47
+    },
+    {
+      "word": "user",
+      "start": 1.683,
+      "end": 1.997,
+      "startFrame": 50,
+      "endFrame": 60
+    },
+    {
+      "word": "sends",
+      "start": 2.078,
+      "end": 2.322,
+      "startFrame": 62,
+      "endFrame": 70
+    },
+    {
+      "word": "a",
+      "start": 2.357,
+      "end": 2.392,
+      "startFrame": 71,
+      "endFrame": 72
+    },
+    {
+      "word": "request",
+      "start": 2.45,
+      "end": 2.879,
+      "startFrame": 74,
+      "endFrame": 86
+    },
+    {
+      "word": "to",
+      "start": 2.926,
+      "end": 3.007,
+      "startFrame": 88,
+      "endFrame": 90
+    },
+    {
+      "word": "a",
+      "start": 3.088,
+      "end": 3.123,
+      "startFrame": 93,
+      "endFrame": 94
+    },
+    {
+      "word": "server",
+      "start": 3.204,
+      "end": 3.669,
+      "startFrame": 96,
+      "endFrame": 110
+    },
+    {
+      "word": "to",
+      "start": 3.785,
+      "end": 3.889,
+      "startFrame": 114,
+      "endFrame": 117
+    },
+    {
+      "word": "get",
+      "start": 3.959,
+      "end": 4.087,
+      "startFrame": 119,
+      "endFrame": 123
+    },
+    {
+      "word": "a",
+      "start": 4.122,
+      "end": 4.156,
+      "startFrame": 124,
+      "endFrame": 125
+    },
+    {
+      "word": "list",
+      "start": 4.214,
+      "end": 4.447,
+      "startFrame": 126,
+      "endFrame": 133
+    },
+    {
+      "word": "of",
+      "start": 4.493,
+      "end": 4.551,
+      "startFrame": 135,
+      "endFrame": 137
+    },
+    {
+      "word": "cats",
+      "start": 4.621,
+      "end": 5.12,
+      "startFrame": 139,
+      "endFrame": 154
+    },
+    {
+      "word": "the",
+      "start": 5.724,
+      "end": 5.851,
+      "startFrame": 172,
+      "endFrame": 176
+    },
+    {
+      "word": "server",
+      "start": 5.933,
+      "end": 6.258,
+      "startFrame": 178,
+      "endFrame": 188
+    },
+    {
+      "word": "would",
+      "start": 6.304,
+      "end": 6.455,
+      "startFrame": 189,
+      "endFrame": 194
+    },
+    {
+      "word": "send",
+      "start": 6.502,
+      "end": 6.699,
+      "startFrame": 195,
+      "endFrame": 201
+    },
+    {
+      "word": "that",
+      "start": 6.745,
+      "end": 6.885,
+      "startFrame": 202,
+      "endFrame": 207
+    },
+    {
+      "word": "request",
+      "start": 6.943,
+      "end": 7.361,
+      "startFrame": 208,
+      "endFrame": 221
+    },
+    {
+      "word": "to",
+      "start": 7.407,
+      "end": 7.477,
+      "startFrame": 222,
+      "endFrame": 224
+    },
+    {
+      "word": "the",
+      "start": 7.546,
+      "end": 7.616,
+      "startFrame": 226,
+      "endFrame": 228
+    },
+    {
+      "word": "controller",
+      "start": 7.651,
+      "end": 8.231,
+      "startFrame": 230,
+      "endFrame": 247
+    },
+    {
+      "word": "that",
+      "start": 8.278,
+      "end": 8.406,
+      "startFrame": 248,
+      "endFrame": 252
+    },
+    {
+      "word": "handles",
+      "start": 8.464,
+      "end": 8.87,
+      "startFrame": 254,
+      "endFrame": 266
+    },
+    {
+      "word": "cats",
+      "start": 8.94,
+      "end": 9.439,
+      "startFrame": 268,
+      "endFrame": 283
+    },
+    {
+      "word": "that",
+      "start": 10.136,
+      "end": 10.356,
+      "startFrame": 304,
+      "endFrame": 311
+    },
+    {
+      "word": "controller",
+      "start": 10.414,
+      "end": 10.925,
+      "startFrame": 312,
+      "endFrame": 328
+    },
+    {
+      "word": "would",
+      "start": 10.971,
+      "end": 11.122,
+      "startFrame": 329,
+      "endFrame": 334
+    },
+    {
+      "word": "then",
+      "start": 11.157,
+      "end": 11.308,
+      "startFrame": 335,
+      "endFrame": 339
+    },
+    {
+      "word": "ask",
+      "start": 11.389,
+      "end": 11.668,
+      "startFrame": 342,
+      "endFrame": 350
+    },
+    {
+      "word": "the",
+      "start": 11.726,
+      "end": 11.796,
+      "startFrame": 352,
+      "endFrame": 354
+    },
+    {
+      "word": "model",
+      "start": 11.842,
+      "end": 12.121,
+      "startFrame": 355,
+      "endFrame": 364
+    },
+    {
+      "word": "that",
+      "start": 12.179,
+      "end": 12.306,
+      "startFrame": 365,
+      "endFrame": 369
+    },
+    {
+      "word": "handles",
+      "start": 12.365,
+      "end": 12.736,
+      "startFrame": 371,
+      "endFrame": 382
+    },
+    {
+      "word": "cats",
+      "start": 12.806,
+      "end": 13.247,
+      "startFrame": 384,
+      "endFrame": 397
+    },
+    {
+      "word": "to",
+      "start": 13.63,
+      "end": 13.746,
+      "startFrame": 409,
+      "endFrame": 412
+    },
+    {
+      "word": "return",
+      "start": 13.839,
+      "end": 14.176,
+      "startFrame": 415,
+      "endFrame": 425
+    },
+    {
+      "word": "a",
+      "start": 14.222,
+      "end": 14.245,
+      "startFrame": 427,
+      "endFrame": 427
+    },
+    {
+      "word": "list",
+      "start": 14.361,
+      "end": 14.826,
+      "startFrame": 431,
+      "endFrame": 445
+    },
+    {
+      "word": "of",
+      "start": 15.209,
+      "end": 15.348,
+      "startFrame": 456,
+      "endFrame": 460
+    },
+    {
+      "word": "all",
+      "start": 15.464,
+      "end": 15.697,
+      "startFrame": 464,
+      "endFrame": 471
+    },
+    {
+      "word": "cats",
+      "start": 15.778,
+      "end": 16.219,
+      "startFrame": 473,
+      "endFrame": 487
+    },
+    {
+      "word": "the",
+      "start": 16.823,
+      "end": 16.939,
+      "startFrame": 505,
+      "endFrame": 508
+    },
+    {
+      "word": "model",
+      "start": 16.997,
+      "end": 17.299,
+      "startFrame": 510,
+      "endFrame": 519
+    },
+    {
+      "word": "would",
+      "start": 17.357,
+      "end": 17.508,
+      "startFrame": 521,
+      "endFrame": 525
+    },
+    {
+      "word": "query",
+      "start": 17.554,
+      "end": 17.879,
+      "startFrame": 527,
+      "endFrame": 536
+    },
+    {
+      "word": "the",
+      "start": 17.937,
+      "end": 18.007,
+      "startFrame": 538,
+      "endFrame": 540
+    },
+    {
+      "word": "database",
+      "start": 18.053,
+      "end": 18.646,
+      "startFrame": 542,
+      "endFrame": 559
+    },
+    {
+      "word": "for",
+      "start": 18.692,
+      "end": 18.831,
+      "startFrame": 561,
+      "endFrame": 565
+    },
+    {
+      "word": "a",
+      "start": 18.889,
+      "end": 18.913,
+      "startFrame": 567,
+      "endFrame": 567
+    },
+    {
+      "word": "list",
+      "start": 18.982,
+      "end": 19.203,
+      "startFrame": 569,
+      "endFrame": 576
+    },
+    {
+      "word": "of",
+      "start": 19.249,
+      "end": 19.307,
+      "startFrame": 577,
+      "endFrame": 579
+    },
+    {
+      "word": "all",
+      "start": 19.365,
+      "end": 19.493,
+      "startFrame": 581,
+      "endFrame": 585
+    },
+    {
+      "word": "cats",
+      "start": 19.563,
+      "end": 19.969,
+      "startFrame": 587,
+      "endFrame": 599
+    },
+    {
+      "word": "and",
+      "start": 20.027,
+      "end": 20.166,
+      "startFrame": 601,
+      "endFrame": 605
+    },
+    {
+      "word": "then",
+      "start": 20.213,
+      "end": 20.341,
+      "startFrame": 606,
+      "endFrame": 610
+    },
+    {
+      "word": "return",
+      "start": 20.41,
+      "end": 20.805,
+      "startFrame": 612,
+      "endFrame": 624
+    },
+    {
+      "word": "that",
+      "start": 20.875,
+      "end": 21.037,
+      "startFrame": 626,
+      "endFrame": 631
+    },
+    {
+      "word": "list",
+      "start": 21.107,
+      "end": 21.362,
+      "startFrame": 633,
+      "endFrame": 641
+    },
+    {
+      "word": "back",
+      "start": 21.444,
+      "end": 21.676,
+      "startFrame": 643,
+      "endFrame": 650
+    },
+    {
+      "word": "to",
+      "start": 21.734,
+      "end": 21.792,
+      "startFrame": 652,
+      "endFrame": 654
+    },
+    {
+      "word": "the",
+      "start": 21.85,
+      "end": 21.92,
+      "startFrame": 656,
+      "endFrame": 658
+    },
+    {
+      "word": "controller",
+      "start": 21.954,
+      "end": 22.488,
+      "startFrame": 659,
+      "endFrame": 675
+    },
+    {
+      "word": "if",
+      "start": 23.092,
+      "end": 23.243,
+      "startFrame": 693,
+      "endFrame": 697
+    },
+    {
+      "word": "the",
+      "start": 23.301,
+      "end": 23.371,
+      "startFrame": 699,
+      "endFrame": 701
+    },
+    {
+      "word": "response",
+      "start": 23.44,
+      "end": 24.021,
+      "startFrame": 703,
+      "endFrame": 721
+    },
+    {
+      "word": "back",
+      "start": 24.079,
+      "end": 24.3,
+      "startFrame": 722,
+      "endFrame": 729
+    },
+    {
+      "word": "from",
+      "start": 24.358,
+      "end": 24.497,
+      "startFrame": 731,
+      "endFrame": 735
+    },
+    {
+      "word": "the",
+      "start": 24.532,
+      "end": 24.601,
+      "startFrame": 736,
+      "endFrame": 738
+    },
+    {
+      "word": "model",
+      "start": 24.648,
+      "end": 24.915,
+      "startFrame": 739,
+      "endFrame": 747
+    },
+    {
+      "word": "was",
+      "start": 24.973,
+      "end": 25.089,
+      "startFrame": 749,
+      "endFrame": 753
+    },
+    {
+      "word": "successful",
+      "start": 25.135,
+      "end": 25.786,
+      "startFrame": 754,
+      "endFrame": 774
+    },
+    {
+      "word": "then",
+      "start": 25.96,
+      "end": 26.134,
+      "startFrame": 779,
+      "endFrame": 784
+    },
+    {
+      "word": "the",
+      "start": 26.18,
+      "end": 26.25,
+      "startFrame": 785,
+      "endFrame": 788
+    },
+    {
+      "word": "controller",
+      "start": 26.296,
+      "end": 26.784,
+      "startFrame": 789,
+      "endFrame": 804
+    },
+    {
+      "word": "would",
+      "start": 26.83,
+      "end": 26.981,
+      "startFrame": 805,
+      "endFrame": 809
+    },
+    {
+      "word": "ask",
+      "start": 27.039,
+      "end": 27.248,
+      "startFrame": 811,
+      "endFrame": 817
+    },
+    {
+      "word": "the",
+      "start": 27.306,
+      "end": 27.376,
+      "startFrame": 819,
+      "endFrame": 821
+    },
+    {
+      "word": "view",
+      "start": 27.423,
+      "end": 27.597,
+      "startFrame": 823,
+      "endFrame": 828
+    },
+    {
+      "word": "associated",
+      "start": 27.655,
+      "end": 28.317,
+      "startFrame": 830,
+      "endFrame": 850
+    },
+    {
+      "word": "with",
+      "start": 28.351,
+      "end": 28.479,
+      "startFrame": 851,
+      "endFrame": 854
+    },
+    {
+      "word": "cats",
+      "start": 28.525,
+      "end": 28.955,
+      "startFrame": 856,
+      "endFrame": 869
+    },
+    {
+      "word": "to",
+      "start": 29.338,
+      "end": 29.454,
+      "startFrame": 880,
+      "endFrame": 884
+    },
+    {
+      "word": "return",
+      "start": 29.536,
+      "end": 29.861,
+      "startFrame": 886,
+      "endFrame": 896
+    },
+    {
+      "word": "a",
+      "start": 29.895,
+      "end": 29.919,
+      "startFrame": 897,
+      "endFrame": 898
+    },
+    {
+      "word": "presentation",
+      "start": 29.977,
+      "end": 30.72,
+      "startFrame": 899,
+      "endFrame": 922
+    },
+    {
+      "word": "of",
+      "start": 30.836,
+      "end": 30.952,
+      "startFrame": 925,
+      "endFrame": 929
+    },
+    {
+      "word": "the",
+      "start": 31.01,
+      "end": 31.08,
+      "startFrame": 930,
+      "endFrame": 932
+    },
+    {
+      "word": "list",
+      "start": 31.138,
+      "end": 31.358,
+      "startFrame": 934,
+      "endFrame": 941
+    },
+    {
+      "word": "of",
+      "start": 31.405,
+      "end": 31.463,
+      "startFrame": 942,
+      "endFrame": 944
+    },
+    {
+      "word": "cats",
+      "start": 31.532,
+      "end": 31.974,
+      "startFrame": 946,
+      "endFrame": 959
+    },
+    {
+      "word": "this",
+      "start": 32.577,
+      "end": 32.798,
+      "startFrame": 977,
+      "endFrame": 984
+    },
+    {
+      "word": "view",
+      "start": 32.879,
+      "end": 33.088,
+      "startFrame": 986,
+      "endFrame": 993
+    },
+    {
+      "word": "would",
+      "start": 33.146,
+      "end": 33.297,
+      "startFrame": 994,
+      "endFrame": 999
+    },
+    {
+      "word": "take",
+      "start": 33.332,
+      "end": 33.529,
+      "startFrame": 1000,
+      "endFrame": 1006
+    },
+    {
+      "word": "the",
+      "start": 33.564,
+      "end": 33.634,
+      "startFrame": 1007,
+      "endFrame": 1009
+    },
+    {
+      "word": "list",
+      "start": 33.692,
+      "end": 33.901,
+      "startFrame": 1011,
+      "endFrame": 1017
+    },
+    {
+      "word": "of",
+      "start": 33.947,
+      "end": 34.005,
+      "startFrame": 1018,
+      "endFrame": 1020
+    },
+    {
+      "word": "cats",
+      "start": 34.075,
+      "end": 34.481,
+      "startFrame": 1022,
+      "endFrame": 1034
+    },
+    {
+      "word": "from",
+      "start": 34.656,
+      "end": 34.876,
+      "startFrame": 1040,
+      "endFrame": 1046
+    },
+    {
+      "word": "the",
+      "start": 34.923,
+      "end": 34.992,
+      "startFrame": 1048,
+      "endFrame": 1050
+    },
+    {
+      "word": "controller",
+      "start": 35.027,
+      "end": 35.596,
+      "startFrame": 1051,
+      "endFrame": 1068
+    },
+    {
+      "word": "and",
+      "start": 35.979,
+      "end": 36.153,
+      "startFrame": 1079,
+      "endFrame": 1085
+    },
+    {
+      "word": "render",
+      "start": 36.269,
+      "end": 36.571,
+      "startFrame": 1088,
+      "endFrame": 1097
+    },
+    {
+      "word": "the",
+      "start": 36.629,
+      "end": 36.699,
+      "startFrame": 1099,
+      "endFrame": 1101
+    },
+    {
+      "word": "list",
+      "start": 36.757,
+      "end": 37.001,
+      "startFrame": 1103,
+      "endFrame": 1110
+    },
+    {
+      "word": "into",
+      "start": 37.059,
+      "end": 37.221,
+      "startFrame": 1112,
+      "endFrame": 1117
+    },
+    {
+      "word": "HTML",
+      "start": 37.337,
+      "end": 38.324,
+      "startFrame": 1120,
+      "endFrame": 1150
+    },
+    {
+      "word": "that",
+      "start": 38.406,
+      "end": 38.522,
+      "startFrame": 1152,
+      "endFrame": 1156
+    },
+    {
+      "word": "can",
+      "start": 38.556,
+      "end": 38.673,
+      "startFrame": 1157,
+      "endFrame": 1160
+    },
+    {
+      "word": "be",
+      "start": 38.719,
+      "end": 38.812,
+      "startFrame": 1162,
+      "endFrame": 1164
+    },
+    {
+      "word": "used",
+      "start": 38.905,
+      "end": 39.207,
+      "startFrame": 1167,
+      "endFrame": 1176
+    },
+    {
+      "word": "by",
+      "start": 39.253,
+      "end": 39.358,
+      "startFrame": 1178,
+      "endFrame": 1181
+    },
+    {
+      "word": "the",
+      "start": 39.404,
+      "end": 39.474,
+      "startFrame": 1182,
+      "endFrame": 1184
+    },
+    {
+      "word": "browser",
+      "start": 39.509,
+      "end": 39.985,
+      "startFrame": 1185,
+      "endFrame": 1200
+    },
+    {
+      "word": "the",
+      "start": 40.588,
+      "end": 40.704,
+      "startFrame": 1218,
+      "endFrame": 1221
+    },
+    {
+      "word": "controller",
+      "start": 40.762,
+      "end": 41.25,
+      "startFrame": 1223,
+      "endFrame": 1238
+    },
+    {
+      "word": "would",
+      "start": 41.296,
+      "end": 41.436,
+      "startFrame": 1239,
+      "endFrame": 1243
+    },
+    {
+      "word": "then",
+      "start": 41.471,
+      "end": 41.622,
+      "startFrame": 1244,
+      "endFrame": 1249
+    },
+    {
+      "word": "take",
+      "start": 41.691,
+      "end": 41.935,
+      "startFrame": 1251,
+      "endFrame": 1258
+    },
+    {
+      "word": "that",
+      "start": 41.97,
+      "end": 42.121,
+      "startFrame": 1259,
+      "endFrame": 1264
+    },
+    {
+      "word": "presentation",
+      "start": 42.179,
+      "end": 42.933,
+      "startFrame": 1265,
+      "endFrame": 1288
+    },
+    {
+      "word": "and",
+      "start": 43.05,
+      "end": 43.2,
+      "startFrame": 1292,
+      "endFrame": 1296
+    },
+    {
+      "word": "return",
+      "start": 43.282,
+      "end": 43.595,
+      "startFrame": 1298,
+      "endFrame": 1308
+    },
+    {
+      "word": "it",
+      "start": 43.642,
+      "end": 43.711,
+      "startFrame": 1309,
+      "endFrame": 1311
+    },
+    {
+      "word": "back",
+      "start": 43.769,
+      "end": 43.967,
+      "startFrame": 1313,
+      "endFrame": 1319
+    },
+    {
+      "word": "to",
+      "start": 44.036,
+      "end": 44.094,
+      "startFrame": 1321,
+      "endFrame": 1323
+    },
+    {
+      "word": "the",
+      "start": 44.164,
+      "end": 44.234,
+      "startFrame": 1325,
+      "endFrame": 1327
+    },
+    {
+      "word": "user",
+      "start": 44.315,
+      "end": 45.046,
+      "startFrame": 1329,
+      "endFrame": 1351
+    }
+  ],
+  "sections": [
+    {
+      "section": "USER_REQUEST",
+      "start": 2.45,
+      "end": 7.616,
+      "startFrame": 74,
+      "endFrame": 228,
+      "words": [
+        {
+          "word": "request",
+          "start": 2.45,
+          "end": 2.879,
+          "startFrame": 74,
+          "endFrame": 86
+        },
+        {
+          "word": "to",
+          "start": 2.926,
+          "end": 3.007,
+          "startFrame": 88,
+          "endFrame": 90
+        },
+        {
+          "word": "a",
+          "start": 3.088,
+          "end": 3.123,
+          "startFrame": 93,
+          "endFrame": 94
+        },
+        {
+          "word": "server",
+          "start": 3.204,
+          "end": 3.669,
+          "startFrame": 96,
+          "endFrame": 110
+        },
+        {
+          "word": "to",
+          "start": 3.785,
+          "end": 3.889,
+          "startFrame": 114,
+          "endFrame": 117
+        },
+        {
+          "word": "get",
+          "start": 3.959,
+          "end": 4.087,
+          "startFrame": 119,
+          "endFrame": 123
+        },
+        {
+          "word": "a",
+          "start": 4.122,
+          "end": 4.156,
+          "startFrame": 124,
+          "endFrame": 125
+        },
+        {
+          "word": "list",
+          "start": 4.214,
+          "end": 4.447,
+          "startFrame": 126,
+          "endFrame": 133
+        },
+        {
+          "word": "of",
+          "start": 4.493,
+          "end": 4.551,
+          "startFrame": 135,
+          "endFrame": 137
+        },
+        {
+          "word": "cats",
+          "start": 4.621,
+          "end": 5.12,
+          "startFrame": 139,
+          "endFrame": 154
+        },
+        {
+          "word": "the",
+          "start": 5.724,
+          "end": 5.851,
+          "startFrame": 172,
+          "endFrame": 176
+        },
+        {
+          "word": "server",
+          "start": 5.933,
+          "end": 6.258,
+          "startFrame": 178,
+          "endFrame": 188
+        },
+        {
+          "word": "would",
+          "start": 6.304,
+          "end": 6.455,
+          "startFrame": 189,
+          "endFrame": 194
+        },
+        {
+          "word": "send",
+          "start": 6.502,
+          "end": 6.699,
+          "startFrame": 195,
+          "endFrame": 201
+        },
+        {
+          "word": "that",
+          "start": 6.745,
+          "end": 6.885,
+          "startFrame": 202,
+          "endFrame": 207
+        },
+        {
+          "word": "request",
+          "start": 6.943,
+          "end": 7.361,
+          "startFrame": 208,
+          "endFrame": 221
+        },
+        {
+          "word": "to",
+          "start": 7.407,
+          "end": 7.477,
+          "startFrame": 222,
+          "endFrame": 224
+        },
+        {
+          "word": "the",
+          "start": 7.546,
+          "end": 7.616,
+          "startFrame": 226,
+          "endFrame": 228
+        }
+      ]
+    },
+    {
+      "section": "CONTROLLER_RECEIVES",
+      "start": 7.651,
+      "end": 11.796,
+      "startFrame": 230,
+      "endFrame": 354,
+      "words": [
+        {
+          "word": "controller",
+          "start": 7.651,
+          "end": 8.231,
+          "startFrame": 230,
+          "endFrame": 247
+        },
+        {
+          "word": "that",
+          "start": 8.278,
+          "end": 8.406,
+          "startFrame": 248,
+          "endFrame": 252
+        },
+        {
+          "word": "handles",
+          "start": 8.464,
+          "end": 8.87,
+          "startFrame": 254,
+          "endFrame": 266
+        },
+        {
+          "word": "cats",
+          "start": 8.94,
+          "end": 9.439,
+          "startFrame": 268,
+          "endFrame": 283
+        },
+        {
+          "word": "that",
+          "start": 10.136,
+          "end": 10.356,
+          "startFrame": 304,
+          "endFrame": 311
+        },
+        {
+          "word": "controller",
+          "start": 10.414,
+          "end": 10.925,
+          "startFrame": 312,
+          "endFrame": 328
+        },
+        {
+          "word": "would",
+          "start": 10.971,
+          "end": 11.122,
+          "startFrame": 329,
+          "endFrame": 334
+        },
+        {
+          "word": "then",
+          "start": 11.157,
+          "end": 11.308,
+          "startFrame": 335,
+          "endFrame": 339
+        },
+        {
+          "word": "ask",
+          "start": 11.389,
+          "end": 11.668,
+          "startFrame": 342,
+          "endFrame": 350
+        },
+        {
+          "word": "the",
+          "start": 11.726,
+          "end": 11.796,
+          "startFrame": 352,
+          "endFrame": 354
+        }
+      ]
+    },
+    {
+      "section": "MODEL_REQUEST",
+      "start": 11.842,
+      "end": 18.007,
+      "startFrame": 355,
+      "endFrame": 540,
+      "words": [
+        {
+          "word": "model",
+          "start": 11.842,
+          "end": 12.121,
+          "startFrame": 355,
+          "endFrame": 364
+        },
+        {
+          "word": "that",
+          "start": 12.179,
+          "end": 12.306,
+          "startFrame": 365,
+          "endFrame": 369
+        },
+        {
+          "word": "handles",
+          "start": 12.365,
+          "end": 12.736,
+          "startFrame": 371,
+          "endFrame": 382
+        },
+        {
+          "word": "cats",
+          "start": 12.806,
+          "end": 13.247,
+          "startFrame": 384,
+          "endFrame": 397
+        },
+        {
+          "word": "to",
+          "start": 13.63,
+          "end": 13.746,
+          "startFrame": 409,
+          "endFrame": 412
+        },
+        {
+          "word": "return",
+          "start": 13.839,
+          "end": 14.176,
+          "startFrame": 415,
+          "endFrame": 425
+        },
+        {
+          "word": "a",
+          "start": 14.222,
+          "end": 14.245,
+          "startFrame": 427,
+          "endFrame": 427
+        },
+        {
+          "word": "list",
+          "start": 14.361,
+          "end": 14.826,
+          "startFrame": 431,
+          "endFrame": 445
+        },
+        {
+          "word": "of",
+          "start": 15.209,
+          "end": 15.348,
+          "startFrame": 456,
+          "endFrame": 460
+        },
+        {
+          "word": "all",
+          "start": 15.464,
+          "end": 15.697,
+          "startFrame": 464,
+          "endFrame": 471
+        },
+        {
+          "word": "cats",
+          "start": 15.778,
+          "end": 16.219,
+          "startFrame": 473,
+          "endFrame": 487
+        },
+        {
+          "word": "the",
+          "start": 16.823,
+          "end": 16.939,
+          "startFrame": 505,
+          "endFrame": 508
+        },
+        {
+          "word": "model",
+          "start": 16.997,
+          "end": 17.299,
+          "startFrame": 510,
+          "endFrame": 519
+        },
+        {
+          "word": "would",
+          "start": 17.357,
+          "end": 17.508,
+          "startFrame": 521,
+          "endFrame": 525
+        },
+        {
+          "word": "query",
+          "start": 17.554,
+          "end": 17.879,
+          "startFrame": 527,
+          "endFrame": 536
+        },
+        {
+          "word": "the",
+          "start": 17.937,
+          "end": 18.007,
+          "startFrame": 538,
+          "endFrame": 540
+        }
+      ]
+    },
+    {
+      "section": "DATABASE_QUERY",
+      "start": 18.053,
+      "end": 21.362,
+      "startFrame": 542,
+      "endFrame": 641,
+      "words": [
+        {
+          "word": "database",
+          "start": 18.053,
+          "end": 18.646,
+          "startFrame": 542,
+          "endFrame": 559
+        },
+        {
+          "word": "for",
+          "start": 18.692,
+          "end": 18.831,
+          "startFrame": 561,
+          "endFrame": 565
+        },
+        {
+          "word": "a",
+          "start": 18.889,
+          "end": 18.913,
+          "startFrame": 567,
+          "endFrame": 567
+        },
+        {
+          "word": "list",
+          "start": 18.982,
+          "end": 19.203,
+          "startFrame": 569,
+          "endFrame": 576
+        },
+        {
+          "word": "of",
+          "start": 19.249,
+          "end": 19.307,
+          "startFrame": 577,
+          "endFrame": 579
+        },
+        {
+          "word": "all",
+          "start": 19.365,
+          "end": 19.493,
+          "startFrame": 581,
+          "endFrame": 585
+        },
+        {
+          "word": "cats",
+          "start": 19.563,
+          "end": 19.969,
+          "startFrame": 587,
+          "endFrame": 599
+        },
+        {
+          "word": "and",
+          "start": 20.027,
+          "end": 20.166,
+          "startFrame": 601,
+          "endFrame": 605
+        },
+        {
+          "word": "then",
+          "start": 20.213,
+          "end": 20.341,
+          "startFrame": 606,
+          "endFrame": 610
+        },
+        {
+          "word": "return",
+          "start": 20.41,
+          "end": 20.805,
+          "startFrame": 612,
+          "endFrame": 624
+        },
+        {
+          "word": "that",
+          "start": 20.875,
+          "end": 21.037,
+          "startFrame": 626,
+          "endFrame": 631
+        },
+        {
+          "word": "list",
+          "start": 21.107,
+          "end": 21.362,
+          "startFrame": 633,
+          "endFrame": 641
+        }
+      ]
+    },
+    {
+      "section": "MODEL_RESPONSE",
+      "start": 21.444,
+      "end": 21.92,
+      "startFrame": 643,
+      "endFrame": 658,
+      "words": [
+        {
+          "word": "back",
+          "start": 21.444,
+          "end": 21.676,
+          "startFrame": 643,
+          "endFrame": 650
+        },
+        {
+          "word": "to",
+          "start": 21.734,
+          "end": 21.792,
+          "startFrame": 652,
+          "endFrame": 654
+        },
+        {
+          "word": "the",
+          "start": 21.85,
+          "end": 21.92,
+          "startFrame": 656,
+          "endFrame": 658
+        }
+      ]
+    },
+    {
+      "section": "CONTROLLER_RECEIVES",
+      "start": 21.954,
+      "end": 27.376,
+      "startFrame": 659,
+      "endFrame": 821,
+      "words": [
+        {
+          "word": "controller",
+          "start": 21.954,
+          "end": 22.488,
+          "startFrame": 659,
+          "endFrame": 675
+        },
+        {
+          "word": "if",
+          "start": 23.092,
+          "end": 23.243,
+          "startFrame": 693,
+          "endFrame": 697
+        },
+        {
+          "word": "the",
+          "start": 23.301,
+          "end": 23.371,
+          "startFrame": 699,
+          "endFrame": 701
+        },
+        {
+          "word": "response",
+          "start": 23.44,
+          "end": 24.021,
+          "startFrame": 703,
+          "endFrame": 721
+        },
+        {
+          "word": "back",
+          "start": 24.079,
+          "end": 24.3,
+          "startFrame": 722,
+          "endFrame": 729
+        },
+        {
+          "word": "from",
+          "start": 24.358,
+          "end": 24.497,
+          "startFrame": 731,
+          "endFrame": 735
+        },
+        {
+          "word": "the",
+          "start": 24.532,
+          "end": 24.601,
+          "startFrame": 736,
+          "endFrame": 738
+        },
+        {
+          "word": "model",
+          "start": 24.648,
+          "end": 24.915,
+          "startFrame": 739,
+          "endFrame": 747
+        },
+        {
+          "word": "was",
+          "start": 24.973,
+          "end": 25.089,
+          "startFrame": 749,
+          "endFrame": 753
+        },
+        {
+          "word": "successful",
+          "start": 25.135,
+          "end": 25.786,
+          "startFrame": 754,
+          "endFrame": 774
+        },
+        {
+          "word": "then",
+          "start": 25.96,
+          "end": 26.134,
+          "startFrame": 779,
+          "endFrame": 784
+        },
+        {
+          "word": "the",
+          "start": 26.18,
+          "end": 26.25,
+          "startFrame": 785,
+          "endFrame": 788
+        },
+        {
+          "word": "controller",
+          "start": 26.296,
+          "end": 26.784,
+          "startFrame": 789,
+          "endFrame": 804
+        },
+        {
+          "word": "would",
+          "start": 26.83,
+          "end": 26.981,
+          "startFrame": 805,
+          "endFrame": 809
+        },
+        {
+          "word": "ask",
+          "start": 27.039,
+          "end": 27.248,
+          "startFrame": 811,
+          "endFrame": 817
+        },
+        {
+          "word": "the",
+          "start": 27.306,
+          "end": 27.376,
+          "startFrame": 819,
+          "endFrame": 821
+        }
+      ]
+    },
+    {
+      "section": "VIEW_REQUEST",
+      "start": 27.423,
+      "end": 37.221,
+      "startFrame": 823,
+      "endFrame": 1117,
+      "words": [
+        {
+          "word": "view",
+          "start": 27.423,
+          "end": 27.597,
+          "startFrame": 823,
+          "endFrame": 828
+        },
+        {
+          "word": "associated",
+          "start": 27.655,
+          "end": 28.317,
+          "startFrame": 830,
+          "endFrame": 850
+        },
+        {
+          "word": "with",
+          "start": 28.351,
+          "end": 28.479,
+          "startFrame": 851,
+          "endFrame": 854
+        },
+        {
+          "word": "cats",
+          "start": 28.525,
+          "end": 28.955,
+          "startFrame": 856,
+          "endFrame": 869
+        },
+        {
+          "word": "to",
+          "start": 29.338,
+          "end": 29.454,
+          "startFrame": 880,
+          "endFrame": 884
+        },
+        {
+          "word": "return",
+          "start": 29.536,
+          "end": 29.861,
+          "startFrame": 886,
+          "endFrame": 896
+        },
+        {
+          "word": "a",
+          "start": 29.895,
+          "end": 29.919,
+          "startFrame": 897,
+          "endFrame": 898
+        },
+        {
+          "word": "presentation",
+          "start": 29.977,
+          "end": 30.72,
+          "startFrame": 899,
+          "endFrame": 922
+        },
+        {
+          "word": "of",
+          "start": 30.836,
+          "end": 30.952,
+          "startFrame": 925,
+          "endFrame": 929
+        },
+        {
+          "word": "the",
+          "start": 31.01,
+          "end": 31.08,
+          "startFrame": 930,
+          "endFrame": 932
+        },
+        {
+          "word": "list",
+          "start": 31.138,
+          "end": 31.358,
+          "startFrame": 934,
+          "endFrame": 941
+        },
+        {
+          "word": "of",
+          "start": 31.405,
+          "end": 31.463,
+          "startFrame": 942,
+          "endFrame": 944
+        },
+        {
+          "word": "cats",
+          "start": 31.532,
+          "end": 31.974,
+          "startFrame": 946,
+          "endFrame": 959
+        },
+        {
+          "word": "this",
+          "start": 32.577,
+          "end": 32.798,
+          "startFrame": 977,
+          "endFrame": 984
+        },
+        {
+          "word": "view",
+          "start": 32.879,
+          "end": 33.088,
+          "startFrame": 986,
+          "endFrame": 993
+        },
+        {
+          "word": "would",
+          "start": 33.146,
+          "end": 33.297,
+          "startFrame": 994,
+          "endFrame": 999
+        },
+        {
+          "word": "take",
+          "start": 33.332,
+          "end": 33.529,
+          "startFrame": 1000,
+          "endFrame": 1006
+        },
+        {
+          "word": "the",
+          "start": 33.564,
+          "end": 33.634,
+          "startFrame": 1007,
+          "endFrame": 1009
+        },
+        {
+          "word": "list",
+          "start": 33.692,
+          "end": 33.901,
+          "startFrame": 1011,
+          "endFrame": 1017
+        },
+        {
+          "word": "of",
+          "start": 33.947,
+          "end": 34.005,
+          "startFrame": 1018,
+          "endFrame": 1020
+        },
+        {
+          "word": "cats",
+          "start": 34.075,
+          "end": 34.481,
+          "startFrame": 1022,
+          "endFrame": 1034
+        },
+        {
+          "word": "from",
+          "start": 34.656,
+          "end": 34.876,
+          "startFrame": 1040,
+          "endFrame": 1046
+        },
+        {
+          "word": "the",
+          "start": 34.923,
+          "end": 34.992,
+          "startFrame": 1048,
+          "endFrame": 1050
+        },
+        {
+          "word": "controller",
+          "start": 35.027,
+          "end": 35.596,
+          "startFrame": 1051,
+          "endFrame": 1068
+        },
+        {
+          "word": "and",
+          "start": 35.979,
+          "end": 36.153,
+          "startFrame": 1079,
+          "endFrame": 1085
+        },
+        {
+          "word": "render",
+          "start": 36.269,
+          "end": 36.571,
+          "startFrame": 1088,
+          "endFrame": 1097
+        },
+        {
+          "word": "the",
+          "start": 36.629,
+          "end": 36.699,
+          "startFrame": 1099,
+          "endFrame": 1101
+        },
+        {
+          "word": "list",
+          "start": 36.757,
+          "end": 37.001,
+          "startFrame": 1103,
+          "endFrame": 1110
+        },
+        {
+          "word": "into",
+          "start": 37.059,
+          "end": 37.221,
+          "startFrame": 1112,
+          "endFrame": 1117
+        }
+      ]
+    },
+    {
+      "section": "HTML_RENDER",
+      "start": 37.337,
+      "end": 44.234,
+      "startFrame": 1120,
+      "endFrame": 1327,
+      "words": [
+        {
+          "word": "HTML",
+          "start": 37.337,
+          "end": 38.324,
+          "startFrame": 1120,
+          "endFrame": 1150
+        },
+        {
+          "word": "that",
+          "start": 38.406,
+          "end": 38.522,
+          "startFrame": 1152,
+          "endFrame": 1156
+        },
+        {
+          "word": "can",
+          "start": 38.556,
+          "end": 38.673,
+          "startFrame": 1157,
+          "endFrame": 1160
+        },
+        {
+          "word": "be",
+          "start": 38.719,
+          "end": 38.812,
+          "startFrame": 1162,
+          "endFrame": 1164
+        },
+        {
+          "word": "used",
+          "start": 38.905,
+          "end": 39.207,
+          "startFrame": 1167,
+          "endFrame": 1176
+        },
+        {
+          "word": "by",
+          "start": 39.253,
+          "end": 39.358,
+          "startFrame": 1178,
+          "endFrame": 1181
+        },
+        {
+          "word": "the",
+          "start": 39.404,
+          "end": 39.474,
+          "startFrame": 1182,
+          "endFrame": 1184
+        },
+        {
+          "word": "browser",
+          "start": 39.509,
+          "end": 39.985,
+          "startFrame": 1185,
+          "endFrame": 1200
+        },
+        {
+          "word": "the",
+          "start": 40.588,
+          "end": 40.704,
+          "startFrame": 1218,
+          "endFrame": 1221
+        },
+        {
+          "word": "controller",
+          "start": 40.762,
+          "end": 41.25,
+          "startFrame": 1223,
+          "endFrame": 1238
+        },
+        {
+          "word": "would",
+          "start": 41.296,
+          "end": 41.436,
+          "startFrame": 1239,
+          "endFrame": 1243
+        },
+        {
+          "word": "then",
+          "start": 41.471,
+          "end": 41.622,
+          "startFrame": 1244,
+          "endFrame": 1249
+        },
+        {
+          "word": "take",
+          "start": 41.691,
+          "end": 41.935,
+          "startFrame": 1251,
+          "endFrame": 1258
+        },
+        {
+          "word": "that",
+          "start": 41.97,
+          "end": 42.121,
+          "startFrame": 1259,
+          "endFrame": 1264
+        },
+        {
+          "word": "presentation",
+          "start": 42.179,
+          "end": 42.933,
+          "startFrame": 1265,
+          "endFrame": 1288
+        },
+        {
+          "word": "and",
+          "start": 43.05,
+          "end": 43.2,
+          "startFrame": 1292,
+          "endFrame": 1296
+        },
+        {
+          "word": "return",
+          "start": 43.282,
+          "end": 43.595,
+          "startFrame": 1298,
+          "endFrame": 1308
+        },
+        {
+          "word": "it",
+          "start": 43.642,
+          "end": 43.711,
+          "startFrame": 1309,
+          "endFrame": 1311
+        },
+        {
+          "word": "back",
+          "start": 43.769,
+          "end": 43.967,
+          "startFrame": 1313,
+          "endFrame": 1319
+        },
+        {
+          "word": "to",
+          "start": 44.036,
+          "end": 44.094,
+          "startFrame": 1321,
+          "endFrame": 1323
+        },
+        {
+          "word": "the",
+          "start": 44.164,
+          "end": 44.234,
+          "startFrame": 1325,
+          "endFrame": 1327
+        }
+      ]
+    },
+    {
+      "section": "USER_RESPONSE",
+      "start": 44.315,
+      "end": 45.046,
+      "startFrame": 1329,
+      "endFrame": 1351,
+      "words": [
+        {
+          "word": "user",
+          "start": 44.315,
+          "end": 45.046,
+          "startFrame": 1329,
+          "endFrame": 1351
+        }
+      ]
+    }
+  ],
+  "fps": 30
+}

@@ -1,0 +1,1675 @@
+{
+  "words": [
+    {
+      "word": "let",
+      "start": 0,
+      "end": 0.186,
+      "startFrame": 0,
+      "endFrame": 6
+    },
+    {
+      "word": "me",
+      "start": 0.232,
+      "end": 0.313,
+      "startFrame": 7,
+      "endFrame": 9
+    },
+    {
+      "word": "show",
+      "start": 0.36,
+      "end": 0.546,
+      "startFrame": 11,
+      "endFrame": 16
+    },
+    {
+      "word": "you",
+      "start": 0.615,
+      "end": 0.697,
+      "startFrame": 18,
+      "endFrame": 21
+    },
+    {
+      "word": "the",
+      "start": 0.766,
+      "end": 0.836,
+      "startFrame": 23,
+      "endFrame": 25
+    },
+    {
+      "word": "three",
+      "start": 0.882,
+      "end": 1.115,
+      "startFrame": 26,
+      "endFrame": 33
+    },
+    {
+      "word": "tiers",
+      "start": 1.161,
+      "end": 1.521,
+      "startFrame": 35,
+      "endFrame": 46
+    },
+    {
+      "word": "of",
+      "start": 1.567,
+      "end": 1.625,
+      "startFrame": 47,
+      "endFrame": 49
+    },
+    {
+      "word": "youtube",
+      "start": 1.707,
+      "end": 2.125,
+      "startFrame": 51,
+      "endFrame": 64
+    },
+    {
+      "word": "automation.",
+      "start": 2.159,
+      "end": 2.984,
+      "startFrame": 65,
+      "endFrame": 90
+    },
+    {
+      "word": "the",
+      "start": 3.587,
+      "end": 3.68,
+      "startFrame": 108,
+      "endFrame": 110
+    },
+    {
+      "word": "budget",
+      "start": 3.727,
+      "end": 4.04,
+      "startFrame": 112,
+      "endFrame": 121
+    },
+    {
+      "word": "tier",
+      "start": 4.075,
+      "end": 4.272,
+      "startFrame": 122,
+      "endFrame": 128
+    },
+    {
+      "word": "costs",
+      "start": 4.354,
+      "end": 4.725,
+      "startFrame": 131,
+      "endFrame": 142
+    },
+    {
+      "word": "around",
+      "start": 4.76,
+      "end": 5.016,
+      "startFrame": 143,
+      "endFrame": 150
+    },
+    {
+      "word": "fifty",
+      "start": 5.085,
+      "end": 5.352,
+      "startFrame": 153,
+      "endFrame": 161
+    },
+    {
+      "word": "dollars",
+      "start": 5.399,
+      "end": 5.724,
+      "startFrame": 162,
+      "endFrame": 172
+    },
+    {
+      "word": "per",
+      "start": 5.782,
+      "end": 5.909,
+      "startFrame": 173,
+      "endFrame": 177
+    },
+    {
+      "word": "month.",
+      "start": 5.944,
+      "end": 6.397,
+      "startFrame": 178,
+      "endFrame": 192
+    },
+    {
+      "word": "you",
+      "start": 7.001,
+      "end": 7.094,
+      "startFrame": 210,
+      "endFrame": 213
+    },
+    {
+      "word": "start",
+      "start": 7.163,
+      "end": 7.396,
+      "startFrame": 215,
+      "endFrame": 222
+    },
+    {
+      "word": "with",
+      "start": 7.43,
+      "end": 7.558,
+      "startFrame": 223,
+      "endFrame": 227
+    },
+    {
+      "word": "ChatGPT",
+      "start": 7.605,
+      "end": 8.44,
+      "startFrame": 228,
+      "endFrame": 253
+    },
+    {
+      "word": "for",
+      "start": 8.591,
+      "end": 8.696,
+      "startFrame": 258,
+      "endFrame": 261
+    },
+    {
+      "word": "writing",
+      "start": 8.742,
+      "end": 9.021,
+      "startFrame": 262,
+      "endFrame": 271
+    },
+    {
+      "word": "scripts,",
+      "start": 9.068,
+      "end": 9.637,
+      "startFrame": 272,
+      "endFrame": 289
+    },
+    {
+      "word": "then",
+      "start": 9.846,
+      "end": 10.031,
+      "startFrame": 295,
+      "endFrame": 301
+    },
+    {
+      "word": "use",
+      "start": 10.147,
+      "end": 10.368,
+      "startFrame": 304,
+      "endFrame": 311
+    },
+    {
+      "word": "ElevenLabs",
+      "start": 10.426,
+      "end": 11.157,
+      "startFrame": 313,
+      "endFrame": 335
+    },
+    {
+      "word": "for",
+      "start": 11.216,
+      "end": 11.332,
+      "startFrame": 336,
+      "endFrame": 340
+    },
+    {
+      "word": "voice",
+      "start": 11.39,
+      "end": 11.657,
+      "startFrame": 342,
+      "endFrame": 350
+    },
+    {
+      "word": "generation,",
+      "start": 11.692,
+      "end": 12.411,
+      "startFrame": 351,
+      "endFrame": 372
+    },
+    {
+      "word": "and",
+      "start": 12.585,
+      "end": 12.736,
+      "startFrame": 378,
+      "endFrame": 382
+    },
+    {
+      "word": "finally",
+      "start": 12.806,
+      "end": 13.259,
+      "startFrame": 384,
+      "endFrame": 398
+    },
+    {
+      "word": "InVideo",
+      "start": 13.34,
+      "end": 13.897,
+      "startFrame": 400,
+      "endFrame": 417
+    },
+    {
+      "word": "AI",
+      "start": 13.99,
+      "end": 14.49,
+      "startFrame": 420,
+      "endFrame": 435
+    },
+    {
+      "word": "to",
+      "start": 14.606,
+      "end": 14.722,
+      "startFrame": 438,
+      "endFrame": 442
+    },
+    {
+      "word": "put",
+      "start": 14.791,
+      "end": 14.942,
+      "startFrame": 444,
+      "endFrame": 448
+    },
+    {
+      "word": "it",
+      "start": 14.989,
+      "end": 15.047,
+      "startFrame": 450,
+      "endFrame": 451
+    },
+    {
+      "word": "all",
+      "start": 15.082,
+      "end": 15.198,
+      "startFrame": 452,
+      "endFrame": 456
+    },
+    {
+      "word": "together.",
+      "start": 15.267,
+      "end": 15.883,
+      "startFrame": 458,
+      "endFrame": 476
+    },
+    {
+      "word": "simple",
+      "start": 16.324,
+      "end": 16.823,
+      "startFrame": 490,
+      "endFrame": 505
+    },
+    {
+      "word": "and",
+      "start": 16.881,
+      "end": 17.044,
+      "startFrame": 506,
+      "endFrame": 511
+    },
+    {
+      "word": "effective.",
+      "start": 17.09,
+      "end": 17.798,
+      "startFrame": 513,
+      "endFrame": 534
+    },
+    {
+      "word": "the",
+      "start": 18.24,
+      "end": 18.344,
+      "startFrame": 547,
+      "endFrame": 550
+    },
+    {
+      "word": "standard",
+      "start": 18.402,
+      "end": 18.878,
+      "startFrame": 552,
+      "endFrame": 566
+    },
+    {
+      "word": "tier",
+      "start": 18.913,
+      "end": 19.238,
+      "startFrame": 567,
+      "endFrame": 577
+    },
+    {
+      "word": "runs",
+      "start": 19.389,
+      "end": 19.633,
+      "startFrame": 582,
+      "endFrame": 589
+    },
+    {
+      "word": "about",
+      "start": 19.668,
+      "end": 19.9,
+      "startFrame": 590,
+      "endFrame": 597
+    },
+    {
+      "word": "ninety",
+      "start": 19.981,
+      "end": 20.329,
+      "startFrame": 599,
+      "endFrame": 610
+    },
+    {
+      "word": "dollars",
+      "start": 20.387,
+      "end": 20.736,
+      "startFrame": 612,
+      "endFrame": 622
+    },
+    {
+      "word": "monthly.",
+      "start": 20.805,
+      "end": 21.409,
+      "startFrame": 624,
+      "endFrame": 642
+    },
+    {
+      "word": "you",
+      "start": 21.792,
+      "end": 21.885,
+      "startFrame": 654,
+      "endFrame": 657
+    },
+    {
+      "word": "get",
+      "start": 21.943,
+      "end": 22.082,
+      "startFrame": 658,
+      "endFrame": 662
+    },
+    {
+      "word": "all",
+      "start": 22.14,
+      "end": 22.315,
+      "startFrame": 664,
+      "endFrame": 669
+    },
+    {
+      "word": "the",
+      "start": 22.373,
+      "end": 22.442,
+      "startFrame": 671,
+      "endFrame": 673
+    },
+    {
+      "word": "budget",
+      "start": 22.477,
+      "end": 22.791,
+      "startFrame": 674,
+      "endFrame": 684
+    },
+    {
+      "word": "tools",
+      "start": 22.825,
+      "end": 23.301,
+      "startFrame": 685,
+      "endFrame": 699
+    },
+    {
+      "word": "plus",
+      "start": 23.476,
+      "end": 23.754,
+      "startFrame": 704,
+      "endFrame": 713
+    },
+    {
+      "word": "Canva",
+      "start": 23.824,
+      "end": 24.172,
+      "startFrame": 715,
+      "endFrame": 725
+    },
+    {
+      "word": "Pro",
+      "start": 24.219,
+      "end": 24.486,
+      "startFrame": 727,
+      "endFrame": 735
+    },
+    {
+      "word": "for",
+      "start": 24.567,
+      "end": 24.695,
+      "startFrame": 737,
+      "endFrame": 741
+    },
+    {
+      "word": "thumbnails",
+      "start": 24.753,
+      "end": 25.356,
+      "startFrame": 743,
+      "endFrame": 761
+    },
+    {
+      "word": "and",
+      "start": 25.414,
+      "end": 25.565,
+      "startFrame": 762,
+      "endFrame": 767
+    },
+    {
+      "word": "TubeBuddy",
+      "start": 25.635,
+      "end": 26.25,
+      "startFrame": 769,
+      "endFrame": 788
+    },
+    {
+      "word": "for",
+      "start": 26.366,
+      "end": 26.529,
+      "startFrame": 791,
+      "endFrame": 796
+    },
+    {
+      "word": "SEO",
+      "start": 26.61,
+      "end": 27.202,
+      "startFrame": 798,
+      "endFrame": 816
+    },
+    {
+      "word": "optimization.",
+      "start": 27.283,
+      "end": 28.259,
+      "startFrame": 818,
+      "endFrame": 848
+    },
+    {
+      "word": "this",
+      "start": 28.862,
+      "end": 29.048,
+      "startFrame": 866,
+      "endFrame": 871
+    },
+    {
+      "word": "combo",
+      "start": 29.118,
+      "end": 29.478,
+      "startFrame": 874,
+      "endFrame": 884
+    },
+    {
+      "word": "gives",
+      "start": 29.547,
+      "end": 29.721,
+      "startFrame": 886,
+      "endFrame": 892
+    },
+    {
+      "word": "you",
+      "start": 29.768,
+      "end": 29.838,
+      "startFrame": 893,
+      "endFrame": 895
+    },
+    {
+      "word": "professional",
+      "start": 29.907,
+      "end": 30.43,
+      "startFrame": 897,
+      "endFrame": 913
+    },
+    {
+      "word": "looking",
+      "start": 30.476,
+      "end": 30.732,
+      "startFrame": 914,
+      "endFrame": 922
+    },
+    {
+      "word": "content",
+      "start": 30.801,
+      "end": 31.335,
+      "startFrame": 924,
+      "endFrame": 940
+    },
+    {
+      "word": "with",
+      "start": 31.393,
+      "end": 31.567,
+      "startFrame": 942,
+      "endFrame": 947
+    },
+    {
+      "word": "better",
+      "start": 31.626,
+      "end": 31.858,
+      "startFrame": 949,
+      "endFrame": 956
+    },
+    {
+      "word": "discoverability.",
+      "start": 31.904,
+      "end": 32.984,
+      "startFrame": 957,
+      "endFrame": 990
+    },
+    {
+      "word": "the",
+      "start": 33.425,
+      "end": 33.518,
+      "startFrame": 1003,
+      "endFrame": 1006
+    },
+    {
+      "word": "pro",
+      "start": 33.576,
+      "end": 33.797,
+      "startFrame": 1007,
+      "endFrame": 1014
+    },
+    {
+      "word": "tier",
+      "start": 33.866,
+      "end": 34.133,
+      "startFrame": 1016,
+      "endFrame": 1024
+    },
+    {
+      "word": "starts",
+      "start": 34.215,
+      "end": 34.516,
+      "startFrame": 1026,
+      "endFrame": 1035
+    },
+    {
+      "word": "at",
+      "start": 34.551,
+      "end": 34.621,
+      "startFrame": 1037,
+      "endFrame": 1039
+    },
+    {
+      "word": "one",
+      "start": 34.679,
+      "end": 34.818,
+      "startFrame": 1040,
+      "endFrame": 1045
+    },
+    {
+      "word": "hundred",
+      "start": 34.853,
+      "end": 35.085,
+      "startFrame": 1046,
+      "endFrame": 1053
+    },
+    {
+      "word": "fifty",
+      "start": 35.132,
+      "end": 35.364,
+      "startFrame": 1054,
+      "endFrame": 1061
+    },
+    {
+      "word": "dollars",
+      "start": 35.41,
+      "end": 35.84,
+      "startFrame": 1062,
+      "endFrame": 1075
+    },
+    {
+      "word": "and",
+      "start": 35.898,
+      "end": 36.061,
+      "startFrame": 1077,
+      "endFrame": 1082
+    },
+    {
+      "word": "up.",
+      "start": 36.177,
+      "end": 36.595,
+      "startFrame": 1085,
+      "endFrame": 1098
+    },
+    {
+      "word": "this",
+      "start": 37.198,
+      "end": 37.361,
+      "startFrame": 1116,
+      "endFrame": 1121
+    },
+    {
+      "word": "is",
+      "start": 37.419,
+      "end": 37.489,
+      "startFrame": 1123,
+      "endFrame": 1125
+    },
+    {
+      "word": "where",
+      "start": 37.535,
+      "end": 37.721,
+      "startFrame": 1126,
+      "endFrame": 1132
+    },
+    {
+      "word": "HeyGen",
+      "start": 37.767,
+      "end": 38.197,
+      "startFrame": 1133,
+      "endFrame": 1146
+    },
+    {
+      "word": "comes",
+      "start": 38.266,
+      "end": 38.487,
+      "startFrame": 1148,
+      "endFrame": 1155
+    },
+    {
+      "word": "in",
+      "start": 38.557,
+      "end": 38.661,
+      "startFrame": 1157,
+      "endFrame": 1160
+    },
+    {
+      "word": "for",
+      "start": 38.731,
+      "end": 38.847,
+      "startFrame": 1162,
+      "endFrame": 1165
+    },
+    {
+      "word": "AI",
+      "start": 38.917,
+      "end": 39.323,
+      "startFrame": 1168,
+      "endFrame": 1180
+    },
+    {
+      "word": "avatars.",
+      "start": 39.404,
+      "end": 40.287,
+      "startFrame": 1182,
+      "endFrame": 1209
+    },
+    {
+      "word": "then",
+      "start": 40.728,
+      "end": 40.89,
+      "startFrame": 1222,
+      "endFrame": 1227
+    },
+    {
+      "word": "you",
+      "start": 40.948,
+      "end": 41.03,
+      "startFrame": 1228,
+      "endFrame": 1231
+    },
+    {
+      "word": "add",
+      "start": 41.146,
+      "end": 41.378,
+      "startFrame": 1234,
+      "endFrame": 1241
+    },
+    {
+      "word": "n8n",
+      "start": 41.552,
+      "end": 42.481,
+      "startFrame": 1247,
+      "endFrame": 1274
+    },
+    {
+      "word": "workflows",
+      "start": 42.562,
+      "end": 43.189,
+      "startFrame": 1277,
+      "endFrame": 1296
+    },
+    {
+      "word": "to",
+      "start": 43.433,
+      "end": 43.549,
+      "startFrame": 1303,
+      "endFrame": 1306
+    },
+    {
+      "word": "automate",
+      "start": 43.665,
+      "end": 44.118,
+      "startFrame": 1310,
+      "endFrame": 1324
+    },
+    {
+      "word": "the",
+      "start": 44.153,
+      "end": 44.222,
+      "startFrame": 1325,
+      "endFrame": 1327
+    },
+    {
+      "word": "entire",
+      "start": 44.28,
+      "end": 44.745,
+      "startFrame": 1328,
+      "endFrame": 1342
+    },
+    {
+      "word": "process.",
+      "start": 44.791,
+      "end": 45.592,
+      "startFrame": 1344,
+      "endFrame": 1368
+    },
+    {
+      "word": "schedule",
+      "start": 46.196,
+      "end": 46.672,
+      "startFrame": 1386,
+      "endFrame": 1400
+    },
+    {
+      "word": "everything,",
+      "start": 46.73,
+      "end": 47.45,
+      "startFrame": 1402,
+      "endFrame": 1424
+    },
+    {
+      "word": "auto",
+      "start": 47.601,
+      "end": 47.891,
+      "startFrame": 1428,
+      "endFrame": 1437
+    },
+    {
+      "word": "publish,",
+      "start": 47.972,
+      "end": 48.599,
+      "startFrame": 1439,
+      "endFrame": 1458
+    },
+    {
+      "word": "and",
+      "start": 48.773,
+      "end": 48.924,
+      "startFrame": 1463,
+      "endFrame": 1468
+    },
+    {
+      "word": "scale",
+      "start": 49.006,
+      "end": 49.354,
+      "startFrame": 1470,
+      "endFrame": 1481
+    },
+    {
+      "word": "your",
+      "start": 49.4,
+      "end": 49.516,
+      "startFrame": 1482,
+      "endFrame": 1485
+    },
+    {
+      "word": "channel",
+      "start": 49.551,
+      "end": 49.888,
+      "startFrame": 1487,
+      "endFrame": 1497
+    },
+    {
+      "word": "hands",
+      "start": 49.958,
+      "end": 50.271,
+      "startFrame": 1499,
+      "endFrame": 1508
+    },
+    {
+      "word": "free.",
+      "start": 50.341,
+      "end": 51.037,
+      "startFrame": 1510,
+      "endFrame": 1531
+    }
+  ],
+  "sections": [
+    {
+      "section": "BUDGET_INTRO",
+      "start": 4.075,
+      "end": 4.272,
+      "startFrame": 122,
+      "endFrame": 128,
+      "words": [
+        {
+          "word": "tier",
+          "start": 4.075,
+          "end": 4.272,
+          "startFrame": 122,
+          "endFrame": 128
+        }
+      ]
+    },
+    {
+      "section": "BUDGET_INTRO",
+      "start": 4.354,
+      "end": 18.878,
+      "startFrame": 131,
+      "endFrame": 566,
+      "words": [
+        {
+          "word": "costs",
+          "start": 4.354,
+          "end": 4.725,
+          "startFrame": 131,
+          "endFrame": 142
+        },
+        {
+          "word": "costs",
+          "start": 4.354,
+          "end": 4.725,
+          "startFrame": 131,
+          "endFrame": 142
+        },
+        {
+          "word": "around",
+          "start": 4.76,
+          "end": 5.016,
+          "startFrame": 143,
+          "endFrame": 150
+        },
+        {
+          "word": "fifty",
+          "start": 5.085,
+          "end": 5.352,
+          "startFrame": 153,
+          "endFrame": 161
+        },
+        {
+          "word": "dollars",
+          "start": 5.399,
+          "end": 5.724,
+          "startFrame": 162,
+          "endFrame": 172
+        },
+        {
+          "word": "per",
+          "start": 5.782,
+          "end": 5.909,
+          "startFrame": 173,
+          "endFrame": 177
+        },
+        {
+          "word": "month.",
+          "start": 5.944,
+          "end": 6.397,
+          "startFrame": 178,
+          "endFrame": 192
+        },
+        {
+          "word": "you",
+          "start": 7.001,
+          "end": 7.094,
+          "startFrame": 210,
+          "endFrame": 213
+        },
+        {
+          "word": "start",
+          "start": 7.163,
+          "end": 7.396,
+          "startFrame": 215,
+          "endFrame": 222
+        },
+        {
+          "word": "with",
+          "start": 7.43,
+          "end": 7.558,
+          "startFrame": 223,
+          "endFrame": 227
+        },
+        {
+          "word": "ChatGPT",
+          "start": 7.605,
+          "end": 8.44,
+          "startFrame": 228,
+          "endFrame": 253
+        },
+        {
+          "word": "for",
+          "start": 8.591,
+          "end": 8.696,
+          "startFrame": 258,
+          "endFrame": 261
+        },
+        {
+          "word": "writing",
+          "start": 8.742,
+          "end": 9.021,
+          "startFrame": 262,
+          "endFrame": 271
+        },
+        {
+          "word": "scripts,",
+          "start": 9.068,
+          "end": 9.637,
+          "startFrame": 272,
+          "endFrame": 289
+        },
+        {
+          "word": "then",
+          "start": 9.846,
+          "end": 10.031,
+          "startFrame": 295,
+          "endFrame": 301
+        },
+        {
+          "word": "use",
+          "start": 10.147,
+          "end": 10.368,
+          "startFrame": 304,
+          "endFrame": 311
+        },
+        {
+          "word": "ElevenLabs",
+          "start": 10.426,
+          "end": 11.157,
+          "startFrame": 313,
+          "endFrame": 335
+        },
+        {
+          "word": "for",
+          "start": 11.216,
+          "end": 11.332,
+          "startFrame": 336,
+          "endFrame": 340
+        },
+        {
+          "word": "voice",
+          "start": 11.39,
+          "end": 11.657,
+          "startFrame": 342,
+          "endFrame": 350
+        },
+        {
+          "word": "generation,",
+          "start": 11.692,
+          "end": 12.411,
+          "startFrame": 351,
+          "endFrame": 372
+        },
+        {
+          "word": "and",
+          "start": 12.585,
+          "end": 12.736,
+          "startFrame": 378,
+          "endFrame": 382
+        },
+        {
+          "word": "finally",
+          "start": 12.806,
+          "end": 13.259,
+          "startFrame": 384,
+          "endFrame": 398
+        },
+        {
+          "word": "InVideo",
+          "start": 13.34,
+          "end": 13.897,
+          "startFrame": 400,
+          "endFrame": 417
+        },
+        {
+          "word": "AI",
+          "start": 13.99,
+          "end": 14.49,
+          "startFrame": 420,
+          "endFrame": 435
+        },
+        {
+          "word": "to",
+          "start": 14.606,
+          "end": 14.722,
+          "startFrame": 438,
+          "endFrame": 442
+        },
+        {
+          "word": "put",
+          "start": 14.791,
+          "end": 14.942,
+          "startFrame": 444,
+          "endFrame": 448
+        },
+        {
+          "word": "it",
+          "start": 14.989,
+          "end": 15.047,
+          "startFrame": 450,
+          "endFrame": 451
+        },
+        {
+          "word": "all",
+          "start": 15.082,
+          "end": 15.198,
+          "startFrame": 452,
+          "endFrame": 456
+        },
+        {
+          "word": "together.",
+          "start": 15.267,
+          "end": 15.883,
+          "startFrame": 458,
+          "endFrame": 476
+        },
+        {
+          "word": "simple",
+          "start": 16.324,
+          "end": 16.823,
+          "startFrame": 490,
+          "endFrame": 505
+        },
+        {
+          "word": "and",
+          "start": 16.881,
+          "end": 17.044,
+          "startFrame": 506,
+          "endFrame": 511
+        },
+        {
+          "word": "effective.",
+          "start": 17.09,
+          "end": 17.798,
+          "startFrame": 513,
+          "endFrame": 534
+        },
+        {
+          "word": "the",
+          "start": 18.24,
+          "end": 18.344,
+          "startFrame": 547,
+          "endFrame": 550
+        },
+        {
+          "word": "standard",
+          "start": 18.402,
+          "end": 18.878,
+          "startFrame": 552,
+          "endFrame": 566
+        }
+      ]
+    },
+    {
+      "section": "STANDARD_INTRO",
+      "start": 18.913,
+      "end": 19.238,
+      "startFrame": 567,
+      "endFrame": 577,
+      "words": [
+        {
+          "word": "tier",
+          "start": 18.913,
+          "end": 19.238,
+          "startFrame": 567,
+          "endFrame": 577
+        }
+      ]
+    },
+    {
+      "section": "STANDARD_INTRO",
+      "start": 19.389,
+      "end": 33.797,
+      "startFrame": 582,
+      "endFrame": 1014,
+      "words": [
+        {
+          "word": "runs",
+          "start": 19.389,
+          "end": 19.633,
+          "startFrame": 582,
+          "endFrame": 589
+        },
+        {
+          "word": "runs",
+          "start": 19.389,
+          "end": 19.633,
+          "startFrame": 582,
+          "endFrame": 589
+        },
+        {
+          "word": "about",
+          "start": 19.668,
+          "end": 19.9,
+          "startFrame": 590,
+          "endFrame": 597
+        },
+        {
+          "word": "ninety",
+          "start": 19.981,
+          "end": 20.329,
+          "startFrame": 599,
+          "endFrame": 610
+        },
+        {
+          "word": "dollars",
+          "start": 20.387,
+          "end": 20.736,
+          "startFrame": 612,
+          "endFrame": 622
+        },
+        {
+          "word": "monthly.",
+          "start": 20.805,
+          "end": 21.409,
+          "startFrame": 624,
+          "endFrame": 642
+        },
+        {
+          "word": "you",
+          "start": 21.792,
+          "end": 21.885,
+          "startFrame": 654,
+          "endFrame": 657
+        },
+        {
+          "word": "get",
+          "start": 21.943,
+          "end": 22.082,
+          "startFrame": 658,
+          "endFrame": 662
+        },
+        {
+          "word": "all",
+          "start": 22.14,
+          "end": 22.315,
+          "startFrame": 664,
+          "endFrame": 669
+        },
+        {
+          "word": "the",
+          "start": 22.373,
+          "end": 22.442,
+          "startFrame": 671,
+          "endFrame": 673
+        },
+        {
+          "word": "budget",
+          "start": 22.477,
+          "end": 22.791,
+          "startFrame": 674,
+          "endFrame": 684
+        },
+        {
+          "word": "tools",
+          "start": 22.825,
+          "end": 23.301,
+          "startFrame": 685,
+          "endFrame": 699
+        },
+        {
+          "word": "plus",
+          "start": 23.476,
+          "end": 23.754,
+          "startFrame": 704,
+          "endFrame": 713
+        },
+        {
+          "word": "Canva",
+          "start": 23.824,
+          "end": 24.172,
+          "startFrame": 715,
+          "endFrame": 725
+        },
+        {
+          "word": "Pro",
+          "start": 24.219,
+          "end": 24.486,
+          "startFrame": 727,
+          "endFrame": 735
+        },
+        {
+          "word": "for",
+          "start": 24.567,
+          "end": 24.695,
+          "startFrame": 737,
+          "endFrame": 741
+        },
+        {
+          "word": "thumbnails",
+          "start": 24.753,
+          "end": 25.356,
+          "startFrame": 743,
+          "endFrame": 761
+        },
+        {
+          "word": "and",
+          "start": 25.414,
+          "end": 25.565,
+          "startFrame": 762,
+          "endFrame": 767
+        },
+        {
+          "word": "TubeBuddy",
+          "start": 25.635,
+          "end": 26.25,
+          "startFrame": 769,
+          "endFrame": 788
+        },
+        {
+          "word": "for",
+          "start": 26.366,
+          "end": 26.529,
+          "startFrame": 791,
+          "endFrame": 796
+        },
+        {
+          "word": "SEO",
+          "start": 26.61,
+          "end": 27.202,
+          "startFrame": 798,
+          "endFrame": 816
+        },
+        {
+          "word": "optimization.",
+          "start": 27.283,
+          "end": 28.259,
+          "startFrame": 818,
+          "endFrame": 848
+        },
+        {
+          "word": "this",
+          "start": 28.862,
+          "end": 29.048,
+          "startFrame": 866,
+          "endFrame": 871
+        },
+        {
+          "word": "combo",
+          "start": 29.118,
+          "end": 29.478,
+          "startFrame": 874,
+          "endFrame": 884
+        },
+        {
+          "word": "gives",
+          "start": 29.547,
+          "end": 29.721,
+          "startFrame": 886,
+          "endFrame": 892
+        },
+        {
+          "word": "you",
+          "start": 29.768,
+          "end": 29.838,
+          "startFrame": 893,
+          "endFrame": 895
+        },
+        {
+          "word": "professional",
+          "start": 29.907,
+          "end": 30.43,
+          "startFrame": 897,
+          "endFrame": 913
+        },
+        {
+          "word": "looking",
+          "start": 30.476,
+          "end": 30.732,
+          "startFrame": 914,
+          "endFrame": 922
+        },
+        {
+          "word": "content",
+          "start": 30.801,
+          "end": 31.335,
+          "startFrame": 924,
+          "endFrame": 940
+        },
+        {
+          "word": "with",
+          "start": 31.393,
+          "end": 31.567,
+          "startFrame": 942,
+          "endFrame": 947
+        },
+        {
+          "word": "better",
+          "start": 31.626,
+          "end": 31.858,
+          "startFrame": 949,
+          "endFrame": 956
+        },
+        {
+          "word": "discoverability.",
+          "start": 31.904,
+          "end": 32.984,
+          "startFrame": 957,
+          "endFrame": 990
+        },
+        {
+          "word": "the",
+          "start": 33.425,
+          "end": 33.518,
+          "startFrame": 1003,
+          "endFrame": 1006
+        },
+        {
+          "word": "pro",
+          "start": 33.576,
+          "end": 33.797,
+          "startFrame": 1007,
+          "endFrame": 1014
+        }
+      ]
+    },
+    {
+      "section": "PRO_INTRO",
+      "start": 33.866,
+      "end": 34.133,
+      "startFrame": 1016,
+      "endFrame": 1024,
+      "words": [
+        {
+          "word": "tier",
+          "start": 33.866,
+          "end": 34.133,
+          "startFrame": 1016,
+          "endFrame": 1024
+        }
+      ]
+    },
+    {
+      "section": "PRO_INTRO",
+      "start": 34.215,
+      "end": 42.481,
+      "startFrame": 1026,
+      "endFrame": 1274,
+      "words": [
+        {
+          "word": "starts",
+          "start": 34.215,
+          "end": 34.516,
+          "startFrame": 1026,
+          "endFrame": 1035
+        },
+        {
+          "word": "starts",
+          "start": 34.215,
+          "end": 34.516,
+          "startFrame": 1026,
+          "endFrame": 1035
+        },
+        {
+          "word": "at",
+          "start": 34.551,
+          "end": 34.621,
+          "startFrame": 1037,
+          "endFrame": 1039
+        },
+        {
+          "word": "one",
+          "start": 34.679,
+          "end": 34.818,
+          "startFrame": 1040,
+          "endFrame": 1045
+        },
+        {
+          "word": "hundred",
+          "start": 34.853,
+          "end": 35.085,
+          "startFrame": 1046,
+          "endFrame": 1053
+        },
+        {
+          "word": "fifty",
+          "start": 35.132,
+          "end": 35.364,
+          "startFrame": 1054,
+          "endFrame": 1061
+        },
+        {
+          "word": "dollars",
+          "start": 35.41,
+          "end": 35.84,
+          "startFrame": 1062,
+          "endFrame": 1075
+        },
+        {
+          "word": "and",
+          "start": 35.898,
+          "end": 36.061,
+          "startFrame": 1077,
+          "endFrame": 1082
+        },
+        {
+          "word": "up.",
+          "start": 36.177,
+          "end": 36.595,
+          "startFrame": 1085,
+          "endFrame": 1098
+        },
+        {
+          "word": "this",
+          "start": 37.198,
+          "end": 37.361,
+          "startFrame": 1116,
+          "endFrame": 1121
+        },
+        {
+          "word": "is",
+          "start": 37.419,
+          "end": 37.489,
+          "startFrame": 1123,
+          "endFrame": 1125
+        },
+        {
+          "word": "where",
+          "start": 37.535,
+          "end": 37.721,
+          "startFrame": 1126,
+          "endFrame": 1132
+        },
+        {
+          "word": "HeyGen",
+          "start": 37.767,
+          "end": 38.197,
+          "startFrame": 1133,
+          "endFrame": 1146
+        },
+        {
+          "word": "comes",
+          "start": 38.266,
+          "end": 38.487,
+          "startFrame": 1148,
+          "endFrame": 1155
+        },
+        {
+          "word": "in",
+          "start": 38.557,
+          "end": 38.661,
+          "startFrame": 1157,
+          "endFrame": 1160
+        },
+        {
+          "word": "for",
+          "start": 38.731,
+          "end": 38.847,
+          "startFrame": 1162,
+          "endFrame": 1165
+        },
+        {
+          "word": "AI",
+          "start": 38.917,
+          "end": 39.323,
+          "startFrame": 1168,
+          "endFrame": 1180
+        },
+        {
+          "word": "avatars.",
+          "start": 39.404,
+          "end": 40.287,
+          "startFrame": 1182,
+          "endFrame": 1209
+        },
+        {
+          "word": "then",
+          "start": 40.728,
+          "end": 40.89,
+          "startFrame": 1222,
+          "endFrame": 1227
+        },
+        {
+          "word": "you",
+          "start": 40.948,
+          "end": 41.03,
+          "startFrame": 1228,
+          "endFrame": 1231
+        },
+        {
+          "word": "add",
+          "start": 41.146,
+          "end": 41.378,
+          "startFrame": 1234,
+          "endFrame": 1241
+        },
+        {
+          "word": "n8n",
+          "start": 41.552,
+          "end": 42.481,
+          "startFrame": 1247,
+          "endFrame": 1274
+        }
+      ]
+    },
+    {
+      "section": "PRO_AUTOMATION",
+      "start": 42.562,
+      "end": 43.189,
+      "startFrame": 1277,
+      "endFrame": 1296,
+      "words": [
+        {
+          "word": "workflows",
+          "start": 42.562,
+          "end": 43.189,
+          "startFrame": 1277,
+          "endFrame": 1296
+        }
+      ]
+    },
+    {
+      "section": "PRO_AUTOMATION",
+      "start": 43.433,
+      "end": 51.037,
+      "startFrame": 1303,
+      "endFrame": 1531,
+      "words": [
+        {
+          "word": "to",
+          "start": 43.433,
+          "end": 43.549,
+          "startFrame": 1303,
+          "endFrame": 1306
+        },
+        {
+          "word": "to",
+          "start": 43.433,
+          "end": 43.549,
+          "startFrame": 1303,
+          "endFrame": 1306
+        },
+        {
+          "word": "automate",
+          "start": 43.665,
+          "end": 44.118,
+          "startFrame": 1310,
+          "endFrame": 1324
+        },
+        {
+          "word": "the",
+          "start": 44.153,
+          "end": 44.222,
+          "startFrame": 1325,
+          "endFrame": 1327
+        },
+        {
+          "word": "entire",
+          "start": 44.28,
+          "end": 44.745,
+          "startFrame": 1328,
+          "endFrame": 1342
+        },
+        {
+          "word": "process.",
+          "start": 44.791,
+          "end": 45.592,
+          "startFrame": 1344,
+          "endFrame": 1368
+        },
+        {
+          "word": "schedule",
+          "start": 46.196,
+          "end": 46.672,
+          "startFrame": 1386,
+          "endFrame": 1400
+        },
+        {
+          "word": "everything,",
+          "start": 46.73,
+          "end": 47.45,
+          "startFrame": 1402,
+          "endFrame": 1424
+        },
+        {
+          "word": "auto",
+          "start": 47.601,
+          "end": 47.891,
+          "startFrame": 1428,
+          "endFrame": 1437
+        },
+        {
+          "word": "publish,",
+          "start": 47.972,
+          "end": 48.599,
+          "startFrame": 1439,
+          "endFrame": 1458
+        },
+        {
+          "word": "and",
+          "start": 48.773,
+          "end": 48.924,
+          "startFrame": 1463,
+          "endFrame": 1468
+        },
+        {
+          "word": "scale",
+          "start": 49.006,
+          "end": 49.354,
+          "startFrame": 1470,
+          "endFrame": 1481
+        },
+        {
+          "word": "your",
+          "start": 49.4,
+          "end": 49.516,
+          "startFrame": 1482,
+          "endFrame": 1485
+        },
+        {
+          "word": "channel",
+          "start": 49.551,
+          "end": 49.888,
+          "startFrame": 1487,
+          "endFrame": 1497
+        },
+        {
+          "word": "hands",
+          "start": 49.958,
+          "end": 50.271,
+          "startFrame": 1499,
+          "endFrame": 1508
+        },
+        {
+          "word": "free.",
+          "start": 50.341,
+          "end": 51.037,
+          "startFrame": 1510,
+          "endFrame": 1531
+        }
+      ]
+    }
+  ],
+  "fps": 30
+}

@@ -1,0 +1,117 @@
+{
+  "title": "YouTube Stack",
+  "subtitle": "Budget to Pro Automation",
+  "fps": 30,
+  "totalFrames": 1550,
+  "showStepPrefix": false,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Budget $50",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "BUDGET_SCRIPT",
+          "title": "Scripts",
+          "subtitle": "ChatGPT Plus $20/mo",
+          "colorKey": "userQuery",
+          "startFrame": 223,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "ChatGPT", "icon": "brain", "color": "green" },
+            { "label": "Script", "icon": "file", "color": "blue" }
+          ]
+        },
+        {
+          "id": "BUDGET_VOICE",
+          "title": "Voice",
+          "subtitle": "ElevenLabs $5/mo",
+          "colorKey": "embedding",
+          "startFrame": 308,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "ElevenLabs", "icon": "user", "color": "purple" },
+            { "label": "Audio", "icon": "play", "color": "green" }
+          ]
+        },
+        {
+          "id": "BUDGET_VIDEO",
+          "title": "Video",
+          "subtitle": "InVideo AI $25/mo",
+          "colorKey": "vectorSearch",
+          "startFrame": 395,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "InVideo", "icon": "monitor", "color": "orange" },
+            { "label": "Export", "icon": "file", "color": "green" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Standard $90",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "STD_TOOLS",
+          "title": "Full Stack",
+          "subtitle": "All essential tools",
+          "colorKey": "retrieve",
+          "startFrame": 650,
+          "layout": "flow",
+          "nodes": [
+            { "label": "GPT", "icon": "brain", "color": "green" },
+            { "label": "Voice", "icon": "user", "color": "purple" },
+            { "label": "Video", "icon": "monitor", "color": "orange" }
+          ]
+        },
+        {
+          "id": "STD_EXTRAS",
+          "title": "Extras",
+          "subtitle": "SEO and thumbnails",
+          "colorKey": "augment",
+          "startFrame": 710,
+          "layout": "combine",
+          "nodes": [
+            { "label": "Canva", "icon": "sparkle", "color": "blue" },
+            { "label": "TubeBuddy", "icon": "search", "color": "orange" },
+            { "label": "Optimized", "icon": "check", "color": "green" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Pro $150+",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "PRO_AVATAR",
+          "title": "Avatar",
+          "subtitle": "HeyGen integration",
+          "colorKey": "generate",
+          "startFrame": 1128,
+          "layout": "bidirectional",
+          "nodes": [
+            { "label": "HeyGen", "icon": "user", "color": "purple" },
+            { "label": "Avatar", "icon": "sparkle", "color": "blue" }
+          ]
+        },
+        {
+          "id": "PRO_AUTOMATION",
+          "title": "Full Auto",
+          "subtitle": "n8n workflow",
+          "colorKey": "generate",
+          "startFrame": 1242,
+          "layout": "flow",
+          "nodes": [
+            { "label": "n8n", "icon": "zap", "color": "orange" },
+            { "label": "Schedule", "icon": "settings", "color": "blue" },
+            { "label": "Publish", "icon": "globe", "color": "green" }
+          ]
+        }
+      ]
+    }
+  ]
+}

@@ -13,28 +13,36 @@ bo**Vreme po videu:** 30-60 min
 
 ## TODO
 
-### FAZA 1: Research & Validacija ✅
-- [x] Istražiti koliko je AI niša saturirana
-- [x] Naći kanale koji uspevaju - analizirati ZAŠTO
-- [x] Naći ByteMonk stil primere (infografike, motion graphics)
-- [x] Dokumentovati workflow opcije
+### FAZA 0: Struktura & Organizacija
+- [ ] **Audit projekta** - da li sve ima smisla kako je organizovano?
+  - [ ] Da li trebaju skills? (remotion-motion, research, itd.) ili pojednostaviti?
+  - [ ] Da li podeliti na više sub-agenata? (voiceover agent, animation agent, itd.)
+  - [ ] Restruktuiranje foldera/fajlova ako treba
+  - [ ] Proveriti kvalitet strukture - ima dosta stvari i dodavaćemo još
+  - [ ] Definisati jasnu hijerarhiju: templates/, tests/, research/, skills/
+  - [ ] Očistiti nepotrebne/zastarele fajlove
+  - [ ] Dokumentovati arhitekturu sistema
 
-### FAZA 2: Setup Tools
-- [ ] Instaliraj VS Code (FREE)
-- [ ] Kupi Claude Pro ($20/mo)
-- [ ] Instaliraj Claude Code extension
-- [ ] Run: `npx @remotion/create@latest remotion-skill --install-skill`
-- [ ] Sign up ElevenLabs (free tier za test)
-- [ ] Probaj Hera AI free tier (motion graphics)
+### FAZA 1: Testiranje (IN PROGRESS)
+- [x] test-flat-1 - PASS
+- [x] test-flat-2 - PASS
+- [x] test-sticky-1 - PASS
+- [x] test-sticky-2 - PASS
+- [ ] test-sticky-3 - TESTING
+- [ ] test-sticky-4 - TESTING
 
-### FAZA 3: Test Video
-- [ ] Napisati prvi script (AI tema, 2-3 min)
-- [ ] Generisati voice u ElevenLabs
-- [ ] Kreiraj video sa Claude Code + Remotion
-- [ ] Iteracije: "Make intro bigger", "Add transition"
-- [ ] Export i review
-- [ ] Napraviti thumbnail
-- [ ] Evaluirati kvalitet
+### FAZA 2: Novi vizuali (HIGH PRIORITY)
+- [ ] Table vizual
+- [ ] Code Block vizual
+- [ ] Terminal vizual
+- [ ] List/Bullets vizual
+- [ ] Logo Grid vizual
+- [ ] VS Layout (wrapper)
+
+### FAZA 3: Timeline & Charts
+- [ ] Timeline vizual
+- [ ] Bar/Line charts
+- [ ] Pie/Donut charts
 
 ### FAZA 4: Iterate
 - [ ] Poboljšati workflow based on learnings
@@ -42,11 +50,6 @@ bo**Vreme po videu:** 30-60 min
 - [ ] Definisati finalni stil
 - [ ] Uporedi Remotion vs Hera AI
 
-### FAZA 5: Launch
-- [ ] Kreirati YouTube kanal
-- [ ] Upload prvih videa
-- [ ] Pratiti analytics
-- [ ] Iterirati
 
 ---
 

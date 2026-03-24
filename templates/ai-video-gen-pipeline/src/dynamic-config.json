@@ -1,0 +1,164 @@
+{
+  "title": "AI Video Generation",
+  "subtitle": "Kling vs Runway vs Sora",
+  "fps": 30,
+  "totalFrames": 2700,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Kling",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "kling_encoder",
+          "title": "Text Encoder",
+          "subtitle": "Prompt Processing",
+          "colorKey": "userQuery",
+          "startFrame": 355,
+          "nodes": [
+            { "label": "Prompt", "icon": "terminal" },
+            { "label": "Encoder", "icon": "cube" }
+          ]
+        },
+        {
+          "id": "kling_embeddings",
+          "title": "Embeddings",
+          "subtitle": "Vector Representation",
+          "colorKey": "embedding",
+          "startFrame": 467,
+          "nodes": [
+            { "label": "Words", "icon": "file" },
+            { "label": "Vectors", "icon": "vector" }
+          ]
+        },
+        {
+          "id": "kling_diffusion",
+          "title": "Diffusion Model",
+          "subtitle": "Frame Generation",
+          "colorKey": "vectorSearch",
+          "startFrame": 575,
+          "nodes": [
+            { "label": "Noise", "icon": "zap" },
+            { "label": "Denoise", "icon": "layers" },
+            { "label": "Frames", "icon": "video" }
+          ]
+        },
+        {
+          "id": "kling_output",
+          "title": "1080p Output",
+          "subtitle": "Final Video",
+          "colorKey": "generate",
+          "startFrame": 819,
+          "nodes": [
+            { "label": "Render", "icon": "cpu" },
+            { "label": "Export", "icon": "sparkle" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Runway",
+      "color": "#8b5cf6",
+      "sections": [
+        {
+          "id": "runway_input",
+          "title": "Multi-Modal Input",
+          "subtitle": "Text + Image",
+          "colorKey": "userQuery",
+          "startFrame": 938,
+          "nodes": [
+            { "label": "Prompt", "icon": "terminal" },
+            { "label": "Image", "icon": "image" }
+          ]
+        },
+        {
+          "id": "runway_encoder",
+          "title": "Multi-Modal Encoder",
+          "subtitle": "Unified Processing",
+          "colorKey": "embedding",
+          "startFrame": 1103,
+          "nodes": [
+            { "label": "Text", "icon": "file" },
+            { "label": "Visual", "icon": "cube" },
+            { "label": "Merge", "icon": "merge" }
+          ]
+        },
+        {
+          "id": "runway_gen3",
+          "title": "Gen-3 Alpha",
+          "subtitle": "Temporal Diffusion",
+          "colorKey": "vectorSearch",
+          "startFrame": 1303,
+          "nodes": [
+            { "label": "Motion", "icon": "zap" },
+            { "label": "Frames", "icon": "layers" }
+          ]
+        },
+        {
+          "id": "runway_output",
+          "title": "Cinematic Output",
+          "subtitle": "Smooth Video",
+          "colorKey": "generate",
+          "startFrame": 1499,
+          "nodes": [
+            { "label": "Render", "icon": "cpu" },
+            { "label": "Quality", "icon": "sparkle" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Sora",
+      "color": "#06b6d4",
+      "sections": [
+        {
+          "id": "sora_prompt",
+          "title": "Scene Description",
+          "subtitle": "Full Scene Prompt",
+          "colorKey": "userQuery",
+          "startFrame": 1604,
+          "nodes": [
+            { "label": "Prompt", "icon": "terminal" },
+            { "label": "Scene", "icon": "file" }
+          ]
+        },
+        {
+          "id": "sora_transformer",
+          "title": "Transformer",
+          "subtitle": "Not Diffusion",
+          "colorKey": "embedding",
+          "startFrame": 1753,
+          "nodes": [
+            { "label": "Attention", "icon": "cube" },
+            { "label": "Patches", "icon": "layers" }
+          ]
+        },
+        {
+          "id": "sora_physics",
+          "title": "Physics Engine",
+          "subtitle": "World Understanding",
+          "colorKey": "vectorSearch",
+          "startFrame": 1964,
+          "nodes": [
+            { "label": "Physics", "icon": "zap" },
+            { "label": "Objects", "icon": "database" }
+          ]
+        },
+        {
+          "id": "sora_output",
+          "title": "Coherent Output",
+          "subtitle": "Long-Form Video",
+          "colorKey": "generate",
+          "startFrame": 2063,
+          "nodes": [
+            { "label": "Consistency", "icon": "merge" },
+            { "label": "Video", "icon": "sparkle" }
+          ]
+        }
+      ]
+    }
+  ]
+}

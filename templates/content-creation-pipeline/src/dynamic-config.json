@@ -1,0 +1,137 @@
+{
+  "title": "Content Pipeline",
+  "subtitle": "From Idea to Published Video",
+  "fps": 30,
+  "totalFrames": 1800,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Research",
+      "color": "#3b82f6",
+      "sections": [
+        {
+          "id": "TOPIC_RESEARCH",
+          "title": "Topic Research",
+          "subtitle": "Find trending topics",
+          "colorKey": "userQuery",
+          "startFrame": 60,
+          "layout": "flow",
+          "nodes": [
+            { "label": "Trends", "icon": "search", "color": "blue" },
+            { "label": "Validate", "icon": "check", "color": "green" }
+          ]
+        },
+        {
+          "id": "COMPETITOR",
+          "title": "Competitor Analysis",
+          "subtitle": "What works in niche",
+          "colorKey": "embedding",
+          "startFrame": 200,
+          "layout": "flow",
+          "nodes": [
+            { "label": "Channels", "icon": "user", "color": "purple" },
+            { "label": "Videos", "icon": "play", "color": "orange" },
+            { "label": "Insights", "icon": "sparkle", "color": "blue" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Script",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "OUTLINE",
+          "title": "Outline",
+          "subtitle": "Structure your content",
+          "colorKey": "vectorSearch",
+          "startFrame": 450,
+          "layout": "flow",
+          "nodes": [
+            { "label": "Hook", "icon": "zap", "color": "red" },
+            { "label": "Body", "icon": "file", "color": "blue" },
+            { "label": "CTA", "icon": "user", "color": "green" }
+          ]
+        },
+        {
+          "id": "AI_WRITE",
+          "title": "AI Writing",
+          "subtitle": "Claude or GPT draft",
+          "colorKey": "retrieve",
+          "startFrame": 650,
+          "layout": "combine",
+          "nodes": [
+            { "label": "Prompt", "icon": "terminal", "color": "blue" },
+            { "label": "AI", "icon": "brain", "color": "purple" },
+            { "label": "Draft", "icon": "file", "color": "green" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Production",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "VOICE_GEN",
+          "title": "Voice",
+          "subtitle": "ElevenLabs narration",
+          "colorKey": "augment",
+          "startFrame": 900,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Script", "icon": "file", "color": "blue" },
+            { "label": "Audio", "icon": "play", "color": "green" }
+          ]
+        },
+        {
+          "id": "VISUALS",
+          "title": "Visuals",
+          "subtitle": "Remotion animation",
+          "colorKey": "augment",
+          "startFrame": 1100,
+          "layout": "merge",
+          "nodes": [
+            { "label": "Code", "icon": "code", "color": "blue" },
+            { "label": "Assets", "icon": "layers", "color": "purple" },
+            { "label": "Video", "icon": "monitor", "color": "green" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Publish",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "THUMBNAIL",
+          "title": "Thumbnail",
+          "subtitle": "Ideogram + Canva",
+          "colorKey": "generate",
+          "startFrame": 1400,
+          "layout": "flow",
+          "nodes": [
+            { "label": "Generate", "icon": "sparkle", "color": "blue" },
+            { "label": "Edit", "icon": "layers", "color": "orange" },
+            { "label": "Export", "icon": "file", "color": "green" }
+          ]
+        },
+        {
+          "id": "UPLOAD",
+          "title": "Upload",
+          "subtitle": "Schedule and publish",
+          "colorKey": "generate",
+          "startFrame": 1600,
+          "layout": "arrow",
+          "nodes": [
+            { "label": "YouTube", "icon": "globe", "color": "red" },
+            { "label": "Live", "icon": "check", "color": "green" }
+          ]
+        }
+      ]
+    }
+  ]
+}
