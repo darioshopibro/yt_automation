@@ -1,4 +1,4 @@
-# TODO: Skill Restructure za Production Quality
+je tt# TODO: Skill Restructure za Production Quality
 
 **Cilj:** Dostići nivo "pravog video editora" - 9/10 kvalitet
 **Trenutno:** 6/10

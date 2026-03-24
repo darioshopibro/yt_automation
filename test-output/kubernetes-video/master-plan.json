@@ -1,0 +1,133 @@
+{
+  "meta": {
+    "title": "Kubernetes Explained",
+    "fps": 30,
+    "totalFrames": 1735,
+    "totalDuration": 57.82,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 57.82,
+    "processedText": "koo-ber-net-eez a tool for managing and automating containerized workloads...",
+    "words": [
+      { "word": "koo-ber-net-eez", "start": 0.0, "end": 1.277, "startFrame": 0, "endFrame": 38 },
+      { "word": "a", "start": 1.393, "end": 1.451, "startFrame": 42, "endFrame": 44 },
+      { "word": "tool", "start": 1.544, "end": 1.985, "startFrame": 46, "endFrame": 60 },
+      { "word": "docker", "start": 10.855, "end": 11.192, "startFrame": 326, "endFrame": 336 },
+      { "word": "container", "start": 11.262, "end": 11.784, "startFrame": 338, "endFrame": 354 },
+      { "word": "conductor", "start": 14.408, "end": 14.872, "startFrame": 432, "endFrame": 446 },
+      { "word": "cluster", "start": 27.237, "end": 27.701, "startFrame": 817, "endFrame": 831 },
+      { "word": "control", "start": 30.209, "end": 30.592, "startFrame": 906, "endFrame": 918 },
+      { "word": "plane", "start": 30.65, "end": 31.114, "startFrame": 920, "endFrame": 933 },
+      { "word": "A", "start": 32.728, "end": 32.844, "startFrame": 982, "endFrame": 985 },
+      { "word": "P", "start": 32.995, "end": 33.169, "startFrame": 990, "endFrame": 995 },
+      { "word": "I", "start": 33.378, "end": 33.622, "startFrame": 1001, "endFrame": 1009 },
+      { "word": "ett-see-dee", "start": 42.945, "end": 44.338, "startFrame": 1288, "endFrame": 1330 },
+      { "word": "yammel", "start": 50.143, "end": 50.514, "startFrame": 1504, "endFrame": 1515 },
+      { "word": "engine", "start": 54.45, "end": 54.752, "startFrame": 1634, "endFrame": 1643 },
+      { "word": "X", "start": 54.798, "end": 54.972, "startFrame": 1644, "endFrame": 1649 },
+      { "word": "replica", "start": 55.947, "end": 56.296, "startFrame": 1678, "endFrame": 1689 },
+      { "word": "pods", "start": 57.027, "end": 57.817, "startFrame": 1711, "endFrame": 1735 }
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "Orchestra Analogy",
+        "color": "#3b82f6",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "The Analogy",
+            "layout": "flow",
+            "startFrame": 5,
+            "nodes": [
+              { "label": "Kubernetes", "icon": "cloud", "startFrame": 0 },
+              { "label": "Docker Container", "icon": "container", "startFrame": 326 },
+              { "label": "Conductor", "icon": "cpu", "startFrame": 432 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Cluster Architecture",
+        "color": "#a855f7",
+        "startFrame": 720,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Components",
+            "layout": "flow",
+            "startFrame": 725,
+            "nodes": [
+              { "label": "Cluster", "icon": "layers", "startFrame": 817 },
+              { "label": "Control Plane", "icon": "brain", "startFrame": 906 },
+              { "label": "API Server", "icon": "api", "startFrame": 982 },
+              { "label": "etcd", "icon": "database", "startFrame": 1288 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Configuration",
+        "color": "#22c55e",
+        "startFrame": 1440,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "YAML Objects",
+            "layout": "flow",
+            "startFrame": 1445,
+            "nodes": [
+              { "label": "YAML", "icon": "file", "startFrame": 1504 },
+              { "label": "nginx Deployment", "icon": "server", "startFrame": 1634 },
+              { "label": "Replica Set", "icon": "layers", "startFrame": 1678 },
+              { "label": "Pods", "icon": "container", "startFrame": 1711 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6, "note": "Title + all stickies visible" },
+      { "frame": 5, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0, "note": "Zoom to Orchestra Analogy" },
+      { "frame": 705, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0, "note": "15 frames before sticky_2 starts" },
+      { "frame": 1425, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.0, "note": "15 frames before sticky_3 starts" }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25, "note": "zoom to sticky 1" },
+      { "frame": 703, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25, "note": "zoom to sticky 2" },
+      { "frame": 745, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12, "note": "section 2 reveal" },
+      { "frame": 1423, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25, "note": "zoom to sticky 3" },
+      { "frame": 1465, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12, "note": "section 3 reveal" }
+    ],
+    "totalCount": 6
+  },
+
+  "validation": {
+    "frame0HasContent": true,
+    "firstElementWithin30Frames": true,
+    "cameraAnticipates15Frames": true,
+    "soundsBefore2Frames": true,
+    "soundsUnder10": true,
+    "noOverlapUnder20Frames": true,
+    "allNodesHaveStartFrame": true
+  }
+}

@@ -1,0 +1,90 @@
+{
+  "title": "Kubernetes Explained",
+  "subtitle": "Container Orchestration",
+  "fps": 30,
+  "totalFrames": 1735,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Orchestra Analogy",
+      "color": "#3b82f6",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "The Analogy",
+          "subtitle": "Understanding Kubernetes",
+          "layout": "flow",
+          "colorKey": "userQuery",
+          "startFrame": 5,
+          "nodes": [
+            { "label": "Kubernetes", "icon": "cloud", "startFrame": 0 },
+            { "label": "Docker Container", "icon": "container", "startFrame": 326 },
+            { "label": "Conductor", "icon": "cpu", "startFrame": 432 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Cluster Architecture",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Components",
+          "subtitle": "Core Building Blocks",
+          "layout": "flow",
+          "colorKey": "embedding",
+          "startFrame": 725,
+          "nodes": [
+            { "label": "Cluster", "icon": "layers", "startFrame": 817 },
+            { "label": "Control Plane", "icon": "brain", "startFrame": 906 },
+            { "label": "API Server", "icon": "api", "startFrame": 982 },
+            { "label": "etcd", "icon": "database", "startFrame": 1288 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Configuration",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "YAML Objects",
+          "subtitle": "Defining State",
+          "layout": "flow",
+          "colorKey": "generate",
+          "startFrame": 1445,
+          "nodes": [
+            { "label": "YAML", "icon": "file", "startFrame": 1504 },
+            { "label": "nginx Deployment", "icon": "server", "startFrame": 1634 },
+            { "label": "Replica Set", "icon": "layers", "startFrame": 1678 },
+            { "label": "Pods", "icon": "container", "startFrame": 1711 }
+          ]
+        }
+      ]
+    }
+  ],
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 5, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0 },
+      { "frame": 705, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0 },
+      { "frame": 1425, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.0 }
+    ]
+  },
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 703, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 745, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1423, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1465, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 }
+    ],
+    "totalCount": 6
+  }
+}

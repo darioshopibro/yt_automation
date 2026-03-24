@@ -26,9 +26,27 @@ Planira KOMPLETNU video kompoziciju: voiceover, timestamps, struktura, camera, z
 
 ## WORKFLOW
 
-### KORAK 1: Generiši Voiceover + Timestamps
+### KORAK 0: Očisti Transcript (AI radi!)
 
-**UVEK PRVO!** Timestamps definišu SVE ostalo.
+**Pročitaj:** `reference/text-cleaning.md`
+
+Primeni pravila PRE slanja u ElevenLabs:
+1. Ukloni filler words (um, basically, you know)
+2. Popravi "and then" repetition → variraj: First/Then/Finally
+3. Primeni kontrakcije (don't, we'll, it's)
+4. Passive→Active samo ako 100% siguran
+
+**NE dodavaj CAPS za emphasis! NE dodavaj ! ili ?**
+
+---
+
+### KORAK 1: Tech Terms + Voiceover
+
+```bash
+python3 scripts/full-pipeline.py --file cleaned-transcript.txt --output-dir ./output/
+```
+
+**Output:** voiceover.mp3, voiceover-timestamps.json, processed-text.txt
 
 **ElevenLabs API:**
 ```typescript
@@ -56,6 +74,58 @@ const VOICE_ID = "21m00Tcm4TlvDq8ikWAM"; // Rachel
 ---
 
 ### KORAK 2: Analiziraj Transcript → Struktura
+
+---
+
+## ⚠️ VISUAL BALANCE RULES (OBAVEZNO!)
+
+**PRE kreiranja strukture, odredi vizualni balans:**
+
+### Sticky Count Formula:
+| Transcript dužina | Stickies | Sections po sticky |
+|-------------------|----------|-------------------|
+| < 60 sec | 2 | 2-3 |
+| 60-120 sec | 2-3 | 2-4 |
+| 120+ sec | 3-4 | 3-4 |
+
+### Pravila:
+1. **MAX 4 stickies** (nikad 5+!)
+2. **MIN 2 sekcije po sticky-ju** (nikad 1!)
+3. **Grupiši srodne teme** u isti sticky
+
+### Node Label Pravilo:
+```
+❌ "Test Frequently" (2 reči ali duge)
+❌ "Continuous Integration" (predugačko)
+✅ "Test Often" (kratko)
+✅ "CI" (acronym)
+
+PRAVILO: Max 2 kratke reči ILI 1 duža reč ILI acronym
+         Label MORA stati u 1 RED!
+```
+
+### Primer - CI/CD transcript (120+ sec):
+```
+❌ LOŠE: 5 stickies × 1 section = prazno, ružno
+
+✅ DOBRO: 2 stickies × 3 sections = popunjeno, balansirano
+
+Sticky 1: "The Problem"
+  ├── Section: Merge Issues (nodes: Code, Conflict, Break)
+  ├── Section: Code Freeze (nodes: Sprint End, Lock, Wait)
+  └── Section: Manual Deploy (nodes: Checkout, Build, Push)
+
+Sticky 2: "The Solution"
+  ├── Section: Test First (nodes: Branch, Test, Isolate)
+  └── Section: CI Way (nodes: Commit, Small, Often)
+```
+
+**UVEK proveri pre KORAK 3:**
+- [ ] Imam li 2-4 stickies? (ne više!)
+- [ ] Svaki sticky ima 2+ sekcija?
+- [ ] Svi labels staju u 1 red?
+
+---
 
 **KRITIČNO:** Odredi tip hijerarhije!
 
@@ -87,16 +157,85 @@ Komponente                  Step-by-step
 - Tutorial, step-by-step
 - Duži tekst sa logičkim grupama
 
-**⚠️ KRITIČNO: SVAKI KORAK = ZASEBAN STICKY!**
+**⚠️ STICKY ≠ SVAKI KORAK! Vidi VISUAL BALANCE RULES iznad.**
+
+**DOSTUPNE IKONICE (35):**
 ```
-❌ POGREŠNO: 1 sticky sa 5 sekcija
-✅ ISPRAVNO: 3-5 sticky-ja, svaki sa 2-4 sekcije
+user, search, terminal, cube, vector, database, zap, file, layers,
+merge, sparkle, cpu, check, server, cloud, gitBranch, gitMerge,
+settings, play, lock, shield, monitor, refreshCw, code, globe,
+api, webhook, queue, network, brain, alert, x, arrowRight,
+container, package, messageSquare
 ```
 
-**IKONICE & LAYOUT-I:**
-- Ikonice (35): vidi `remotion-motion/reference/icons.md`
-- Layout-i (9): vidi `remotion-motion/reference/layouts.md`
-- Svaka sekcija MORA imati `layout` property (default: `"flow"`)
+**DOSTUPNI LAYOUT-I (9):**
+
+## ⚠️ LAYOUT DECISION RULES - AI MORA DA RAZMISLI!
+
+**NE KORISTI FLOW ZA SVE!** Analiziraj šta sekcija OPISUJE i odaberi pravi layout:
+
+| Ako sadržaj opisuje... | Layout | Vizual | Primer iz teksta |
+|------------------------|--------|--------|------------------|
+| Korake u procesu, sekvence | `flow` | A → B → C | "First build, then test, then deploy" |
+| Problem → Rešenje | `negation` | ✗A → B | "Manual deploys are bad → Use CI/CD" |
+| Dve alternative/opcije | `vs` | A vs B | "Blue environment vs Green environment" |
+| Stvari koje se kombinuju | `combine` | A + B = C | "Code + Tests = Artifact" |
+| Odluke, branch logic | `if-else` | A → [B, C] | "If tests pass → deploy, else → fix" |
+| Dvosmernu komunikaciju | `bidirectional` | A ↔ B | "Client syncs with Server" |
+| Filtriranje, selekcija | `filter` | A ▷ B | "Filter failing tests" |
+| Više inputa u jedan output | `merge` | [A, B] → C | "Dev + Staging merge to Prod" |
+| Jednostavna veza (2 noda) | `arrow` | A → B | "Request triggers Build" |
+
+### DECISION PROCESS:
+
+```
+1. Pročitaj šta sekcija opisuje
+2. Pitaj se: "Kakav je ODNOS između nodova?"
+   - Sekvencijalni koraci? → flow
+   - Loše vs Dobro? → negation
+   - Poređenje opcija? → vs
+   - Spajanje stvari? → combine ili merge
+   - Razdvajanje/odluka? → if-else
+3. Odaberi layout koji VIZUALNO pokazuje taj odnos
+```
+
+### PRIMERI IZ PRAKSE:
+
+```
+Tekst: "Merge conflicts happen when multiple developers push code"
+  → Nodovi: [Code, Merge, Conflict]
+  → Odnos: Sekvencijalni proces
+  → Layout: "flow" ✓
+
+Tekst: "Instead of manual deploys, use automated CI/CD"
+  → Nodovi: [Manual, Automated]
+  → Odnos: Loše → Dobro
+  → Layout: "negation" ✓
+
+Tekst: "Blue environment runs old version, Green runs new"
+  → Nodovi: [Blue, Green]
+  → Odnos: Poređenje alternativa
+  → Layout: "vs" ✓
+
+Tekst: "Code and tests combine to create deployable artifact"
+  → Nodovi: [Code, Tests, Artifact]
+  → Odnos: Kombinacija
+  → Layout: "combine" ✓
+```
+
+**⚠️ SVAKA SEKCIJA MORA IMATI `layout`!**
+```json
+{
+  "sections": [
+    {
+      "id": "problem_solution",
+      "title": "The Fix",
+      "layout": "negation",  // ← RAZMISLI koji layout!
+      "nodes": [...]
+    }
+  ]
+}
+```
 
 ---
 

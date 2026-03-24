@@ -1,0 +1,153 @@
+{
+  "meta": {
+    "title": "CI/CD Explained",
+    "fps": 30,
+    "totalFrames": 4037,
+    "totalDuration": 134.58,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 134.58
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "Manual Deploy",
+        "color": "#ef4444",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "The Problem",
+            "layout": "flow",
+            "startFrame": 5,
+            "nodes": [
+              { "label": "Code Changes", "icon": "code", "startFrame": 0 },
+              { "label": "Merge Conflict", "icon": "gitMerge", "startFrame": 330 },
+              { "label": "Jenkins Tests", "icon": "zap", "startFrame": 600 },
+              { "label": "Main Breaks", "icon": "alert", "startFrame": 720 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Code Freeze",
+        "color": "#f97316",
+        "startFrame": 820,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Sprint End",
+            "layout": "flow",
+            "startFrame": 825,
+            "nodes": [
+              { "label": "End of Sprint", "icon": "check", "startFrame": 1020 },
+              { "label": "Code Freeze", "icon": "lock", "startFrame": 1200 },
+              { "label": "Deploy State", "icon": "play", "startFrame": 1350 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Deploy Process",
+        "color": "#eab308",
+        "startFrame": 1446,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Manual Steps",
+            "layout": "flow",
+            "startFrame": 1451,
+            "nodes": [
+              { "label": "Checkout Main", "icon": "gitBranch", "startFrame": 1740 },
+              { "label": "Bump Version", "icon": "settings", "startFrame": 1815 },
+              { "label": "Docker Build", "icon": "container", "startFrame": 1980 },
+              { "label": "K8s Manifest", "icon": "cloud", "startFrame": 2220 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_4",
+        "step": 4,
+        "title": "Better Approach",
+        "color": "#22c55e",
+        "startFrame": 2304,
+        "sections": [
+          {
+            "id": "section_4_1",
+            "title": "Test Early",
+            "layout": "flow",
+            "startFrame": 2310,
+            "nodes": [
+              { "label": "Feature Branch", "icon": "gitBranch", "startFrame": 2370 },
+              { "label": "Test Before Merge", "icon": "search", "startFrame": 2490 },
+              { "label": "Isolate Issues", "icon": "layers", "startFrame": 2790 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_5",
+        "step": 5,
+        "title": "Continuous Integration",
+        "color": "#3b82f6",
+        "startFrame": 3000,
+        "sections": [
+          {
+            "id": "section_5_1",
+            "title": "CI Philosophy",
+            "layout": "flow",
+            "startFrame": 3005,
+            "nodes": [
+              { "label": "Every Commit", "icon": "zap", "startFrame": 3120 },
+              { "label": "Small Changes", "icon": "code", "startFrame": 3450 },
+              { "label": "Test Frequently", "icon": "refreshCw", "startFrame": 3600 },
+              { "label": "CI", "icon": "check", "startFrame": 3950 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.5 },
+      { "frame": 5, "target": "sticky_1", "x": 300, "y": 350, "scale": 1.0 },
+      { "frame": 805, "target": "sticky_2", "x": 700, "y": 350, "scale": 1.0 },
+      { "frame": 1431, "target": "sticky_3", "x": 1100, "y": 350, "scale": 1.0 },
+      { "frame": 2289, "target": "sticky_4", "x": 500, "y": 700, "scale": 1.0 },
+      { "frame": 2985, "target": "sticky_5", "x": 960, "y": 700, "scale": 1.0 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 803, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1429, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2287, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2983, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 }
+    ],
+    "totalCount": 6
+  },
+
+  "validation": {
+    "frame0HasContent": true,
+    "firstElementWithin30Frames": true,
+    "cameraAnticipates15Frames": true,
+    "soundsBefore2Frames": true,
+    "soundsUnder10": true
+  }
+}

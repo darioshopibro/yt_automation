@@ -1,0 +1,101 @@
+{
+  "title": "RAG Explained",
+  "subtitle": "Retrieval Augmented Generation",
+  "fps": 30,
+  "totalFrames": 1653,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "RAG Process",
+      "color": "#3b82f6",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Definition",
+          "subtitle": "Retrieval Augmented Generation",
+          "layout": "flow",
+          "colorKey": "userQuery",
+          "startFrame": 5,
+          "nodes": [
+            { "label": "RAG", "icon": "sparkle", "startFrame": 53 },
+            { "label": "LLM", "icon": "brain", "startFrame": 158 },
+            { "label": "Vector DB", "icon": "database", "startFrame": 210 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Vector Database",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Data Storage",
+          "subtitle": "Mathematical Representation",
+          "layout": "flow",
+          "colorKey": "embedding",
+          "startFrame": 450,
+          "nodes": [
+            { "label": "Data", "icon": "file", "startFrame": 480 },
+            { "label": "Vector DB", "icon": "database", "startFrame": 550 },
+            { "label": "Arrays", "icon": "layers", "startFrame": 680 }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "Embedding",
+          "subtitle": "Query & Retrieve",
+          "layout": "flow",
+          "colorKey": "vectorSearch",
+          "startFrame": 900,
+          "nodes": [
+            { "label": "Query", "icon": "search", "startFrame": 930 },
+            { "label": "Embedding", "icon": "vector", "startFrame": 1000 },
+            { "label": "Prompt", "icon": "terminal", "startFrame": 1080 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "LLM Output",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Generation",
+          "subtitle": "Final Answer",
+          "layout": "flow",
+          "colorKey": "generate",
+          "startFrame": 1200,
+          "nodes": [
+            { "label": "Prompt + Embeddings", "icon": "merge", "startFrame": 1230 },
+            { "label": "LLM", "icon": "brain", "startFrame": 1350 },
+            { "label": "Answer", "icon": "sparkle", "startFrame": 1500 }
+          ]
+        }
+      ]
+    }
+  ],
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 5, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0 },
+      { "frame": 435, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0 },
+      { "frame": 1185, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.0 }
+    ]
+  },
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 433, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 470, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1183, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1220, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 }
+    ],
+    "totalCount": 6
+  }
+}

@@ -1,0 +1,783 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 57.539,
+  "wordCount": 154,
+  "words": [
+    {
+      "word": "this",
+      "start": 0.0,
+      "end": 0.221
+    },
+    {
+      "word": "sounds",
+      "start": 0.279,
+      "end": 0.58
+    },
+    {
+      "word": "like",
+      "start": 0.615,
+      "end": 0.755
+    },
+    {
+      "word": "the",
+      "start": 0.778,
+      "end": 0.848
+    },
+    {
+      "word": "process",
+      "start": 0.894,
+      "end": 1.393
+    },
+    {
+      "word": "of",
+      "start": 1.451,
+      "end": 1.544
+    },
+    {
+      "word": "R",
+      "start": 1.695,
+      "end": 1.939
+    },
+    {
+      "word": "A",
+      "start": 2.055,
+      "end": 2.229
+    },
+    {
+      "word": "G",
+      "start": 2.345,
+      "end": 2.624
+    },
+    {
+      "word": "or",
+      "start": 2.902,
+      "end": 3.065
+    },
+    {
+      "word": "retrieval",
+      "start": 3.158,
+      "end": 3.669
+    },
+    {
+      "word": "augmented",
+      "start": 3.738,
+      "end": 4.226
+    },
+    {
+      "word": "generation",
+      "start": 4.272,
+      "end": 4.957
+    },
+    {
+      "word": "where",
+      "start": 5.341,
+      "end": 5.573
+    },
+    {
+      "word": "large",
+      "start": 5.631,
+      "end": 5.991
+    },
+    {
+      "word": "language",
+      "start": 6.06,
+      "end": 6.478
+    },
+    {
+      "word": "models",
+      "start": 6.525,
+      "end": 6.885
+    },
+    {
+      "word": "call",
+      "start": 6.954,
+      "end": 7.233
+    },
+    {
+      "word": "on",
+      "start": 7.314,
+      "end": 7.43
+    },
+    {
+      "word": "vector",
+      "start": 7.523,
+      "end": 7.872
+    },
+    {
+      "word": "databases",
+      "start": 7.93,
+      "end": 8.673
+    },
+    {
+      "word": "to",
+      "start": 8.951,
+      "end": 9.056
+    },
+    {
+      "word": "provide",
+      "start": 9.137,
+      "end": 9.543
+    },
+    {
+      "word": "key",
+      "start": 9.601,
+      "end": 9.822
+    },
+    {
+      "word": "sources",
+      "start": 9.903,
+      "end": 10.321
+    },
+    {
+      "word": "of",
+      "start": 10.368,
+      "end": 10.426
+    },
+    {
+      "word": "data",
+      "start": 10.495,
+      "end": 10.902
+    },
+    {
+      "word": "and",
+      "start": 11.18,
+      "end": 11.587
+    },
+    {
+      "word": "information",
+      "start": 11.738,
+      "end": 12.469
+    },
+    {
+      "word": "to",
+      "start": 12.852,
+      "end": 12.968
+    },
+    {
+      "word": "answer",
+      "start": 13.061,
+      "end": 13.305
+    },
+    {
+      "word": "a",
+      "start": 13.363,
+      "end": 13.386
+    },
+    {
+      "word": "question\n\nwe",
+      "start": 13.444,
+      "end": 15.186
+    },
+    {
+      "word": "can",
+      "start": 15.244,
+      "end": 15.36
+    },
+    {
+      "word": "take",
+      "start": 15.418,
+      "end": 15.615
+    },
+    {
+      "word": "this",
+      "start": 15.65,
+      "end": 15.801
+    },
+    {
+      "word": "data",
+      "start": 15.882,
+      "end": 16.3
+    },
+    {
+      "word": "and",
+      "start": 16.416,
+      "end": 16.567
+    },
+    {
+      "word": "put",
+      "start": 16.625,
+      "end": 16.776
+    },
+    {
+      "word": "it",
+      "start": 16.823,
+      "end": 16.892
+    },
+    {
+      "word": "into",
+      "start": 16.95,
+      "end": 17.113
+    },
+    {
+      "word": "what",
+      "start": 17.171,
+      "end": 17.299
+    },
+    {
+      "word": "we",
+      "start": 17.345,
+      "end": 17.426
+    },
+    {
+      "word": "call",
+      "start": 17.485,
+      "end": 17.786
+    },
+    {
+      "word": "a",
+      "start": 17.879,
+      "end": 17.926
+    },
+    {
+      "word": "vector",
+      "start": 18.019,
+      "end": 18.355
+    },
+    {
+      "word": "database",
+      "start": 18.413,
+      "end": 19.087
+    },
+    {
+      "word": "a",
+      "start": 19.598,
+      "end": 19.679
+    },
+    {
+      "word": "vector",
+      "start": 19.748,
+      "end": 20.05
+    },
+    {
+      "word": "database",
+      "start": 20.108,
+      "end": 20.689
+    },
+    {
+      "word": "is",
+      "start": 20.724,
+      "end": 20.851
+    },
+    {
+      "word": "a",
+      "start": 20.898,
+      "end": 20.921
+    },
+    {
+      "word": "mathematical",
+      "start": 20.979,
+      "end": 21.571
+    },
+    {
+      "word": "representation",
+      "start": 21.641,
+      "end": 22.465
+    },
+    {
+      "word": "of",
+      "start": 22.546,
+      "end": 22.639
+    },
+    {
+      "word": "structured",
+      "start": 22.721,
+      "end": 23.301
+    },
+    {
+      "word": "and",
+      "start": 23.371,
+      "end": 23.487
+    },
+    {
+      "word": "unstructured",
+      "start": 23.603,
+      "end": 24.288
+    },
+    {
+      "word": "data",
+      "start": 24.323,
+      "end": 24.729
+    },
+    {
+      "word": "similar",
+      "start": 25.17,
+      "end": 25.588
+    },
+    {
+      "word": "to",
+      "start": 25.646,
+      "end": 25.704
+    },
+    {
+      "word": "what",
+      "start": 25.751,
+      "end": 25.879
+    },
+    {
+      "word": "we",
+      "start": 25.913,
+      "end": 25.983
+    },
+    {
+      "word": "might",
+      "start": 26.041,
+      "end": 26.227
+    },
+    {
+      "word": "see",
+      "start": 26.285,
+      "end": 26.517
+    },
+    {
+      "word": "in",
+      "start": 26.587,
+      "end": 26.68
+    },
+    {
+      "word": "an",
+      "start": 26.726,
+      "end": 26.796
+    },
+    {
+      "word": "array",
+      "start": 26.831,
+      "end": 27.26
+    },
+    {
+      "word": "and",
+      "start": 27.771,
+      "end": 27.968
+    },
+    {
+      "word": "these",
+      "start": 28.015,
+      "end": 28.212
+    },
+    {
+      "word": "arrays",
+      "start": 28.247,
+      "end": 28.63
+    },
+    {
+      "word": "are",
+      "start": 28.688,
+      "end": 28.804
+    },
+    {
+      "word": "better",
+      "start": 28.839,
+      "end": 29.048
+    },
+    {
+      "word": "suited",
+      "start": 29.106,
+      "end": 29.42
+    },
+    {
+      "word": "for",
+      "start": 29.466,
+      "end": 29.571
+    },
+    {
+      "word": "machine",
+      "start": 29.629,
+      "end": 29.954
+    },
+    {
+      "word": "learning",
+      "start": 30.0,
+      "end": 30.36
+    },
+    {
+      "word": "or",
+      "start": 30.488,
+      "end": 30.685
+    },
+    {
+      "word": "generative",
+      "start": 30.755,
+      "end": 31.231
+    },
+    {
+      "word": "ai",
+      "start": 31.289,
+      "end": 31.661
+    },
+    {
+      "word": "models\n\nwe",
+      "start": 31.73,
+      "end": 32.833
+    },
+    {
+      "word": "query",
+      "start": 32.903,
+      "end": 33.263
+    },
+    {
+      "word": "our",
+      "start": 33.333,
+      "end": 33.425
+    },
+    {
+      "word": "vector",
+      "start": 33.483,
+      "end": 33.75
+    },
+    {
+      "word": "database",
+      "start": 33.809,
+      "end": 34.517
+    },
+    {
+      "word": "and",
+      "start": 34.691,
+      "end": 34.923
+    },
+    {
+      "word": "we",
+      "start": 34.97,
+      "end": 35.028
+    },
+    {
+      "word": "get",
+      "start": 35.086,
+      "end": 35.202
+    },
+    {
+      "word": "back",
+      "start": 35.248,
+      "end": 35.434
+    },
+    {
+      "word": "an",
+      "start": 35.492,
+      "end": 35.55
+    },
+    {
+      "word": "embedding",
+      "start": 35.596,
+      "end": 36.072
+    },
+    {
+      "word": "that",
+      "start": 36.189,
+      "end": 36.351
+    },
+    {
+      "word": "includes",
+      "start": 36.398,
+      "end": 36.757
+    },
+    {
+      "word": "the",
+      "start": 36.792,
+      "end": 36.862
+    },
+    {
+      "word": "relevant",
+      "start": 36.92,
+      "end": 37.28
+    },
+    {
+      "word": "data",
+      "start": 37.315,
+      "end": 37.663
+    },
+    {
+      "word": "for",
+      "start": 37.779,
+      "end": 37.918
+    },
+    {
+      "word": "which",
+      "start": 37.953,
+      "end": 38.093
+    },
+    {
+      "word": "we're",
+      "start": 38.127,
+      "end": 38.255
+    },
+    {
+      "word": "prompting",
+      "start": 38.29,
+      "end": 38.754
+    },
+    {
+      "word": "and",
+      "start": 39.138,
+      "end": 39.405
+    },
+    {
+      "word": "then",
+      "start": 39.463,
+      "end": 39.764
+    },
+    {
+      "word": "we",
+      "start": 39.939,
+      "end": 40.066
+    },
+    {
+      "word": "include",
+      "start": 40.124,
+      "end": 40.426
+    },
+    {
+      "word": "it",
+      "start": 40.449,
+      "end": 40.507
+    },
+    {
+      "word": "back",
+      "start": 40.554,
+      "end": 40.74
+    },
+    {
+      "word": "into",
+      "start": 40.786,
+      "end": 40.925
+    },
+    {
+      "word": "the",
+      "start": 40.983,
+      "end": 41.053
+    },
+    {
+      "word": "original",
+      "start": 41.1,
+      "end": 41.448
+    },
+    {
+      "word": "prompt",
+      "start": 41.506,
+      "end": 41.912
+    },
+    {
+      "word": "and",
+      "start": 42.191,
+      "end": 42.458
+    },
+    {
+      "word": "then",
+      "start": 42.516,
+      "end": 42.922
+    },
+    {
+      "word": "we",
+      "start": 43.131,
+      "end": 43.259
+    },
+    {
+      "word": "move",
+      "start": 43.329,
+      "end": 43.514
+    },
+    {
+      "word": "over",
+      "start": 43.549,
+      "end": 43.712
+    },
+    {
+      "word": "to",
+      "start": 43.758,
+      "end": 43.816
+    },
+    {
+      "word": "the",
+      "start": 43.874,
+      "end": 43.944
+    },
+    {
+      "word": "large",
+      "start": 44.002,
+      "end": 44.362
+    },
+    {
+      "word": "language",
+      "start": 44.432,
+      "end": 44.826
+    },
+    {
+      "word": "model\n\nthat",
+      "start": 44.873,
+      "end": 45.453
+    },
+    {
+      "word": "prompt",
+      "start": 45.511,
+      "end": 45.941
+    },
+    {
+      "word": "that",
+      "start": 46.324,
+      "end": 46.498
+    },
+    {
+      "word": "includes",
+      "start": 46.545,
+      "end": 46.928
+    },
+    {
+      "word": "the",
+      "start": 46.963,
+      "end": 47.032
+    },
+    {
+      "word": "vector",
+      "start": 47.079,
+      "end": 47.346
+    },
+    {
+      "word": "embeddings",
+      "start": 47.392,
+      "end": 47.845
+    },
+    {
+      "word": "now",
+      "start": 47.903,
+      "end": 48.135
+    },
+    {
+      "word": "are",
+      "start": 48.217,
+      "end": 48.379
+    },
+    {
+      "word": "fed",
+      "start": 48.437,
+      "end": 48.716
+    },
+    {
+      "word": "into",
+      "start": 48.809,
+      "end": 48.994
+    },
+    {
+      "word": "the",
+      "start": 49.052,
+      "end": 49.122
+    },
+    {
+      "word": "large",
+      "start": 49.18,
+      "end": 49.494
+    },
+    {
+      "word": "language",
+      "start": 49.563,
+      "end": 49.946
+    },
+    {
+      "word": "model",
+      "start": 49.993,
+      "end": 50.272
+    },
+    {
+      "word": "which",
+      "start": 50.55,
+      "end": 50.771
+    },
+    {
+      "word": "then",
+      "start": 50.817,
+      "end": 50.991
+    },
+    {
+      "word": "produces",
+      "start": 51.061,
+      "end": 51.583
+    },
+    {
+      "word": "the",
+      "start": 51.642,
+      "end": 51.723
+    },
+    {
+      "word": "output",
+      "start": 51.804,
+      "end": 52.222
+    },
+    {
+      "word": "with",
+      "start": 52.315,
+      "end": 52.501
+    },
+    {
+      "word": "the",
+      "start": 52.524,
+      "end": 52.594
+    },
+    {
+      "word": "answer",
+      "start": 52.675,
+      "end": 53.023
+    },
+    {
+      "word": "to",
+      "start": 53.093,
+      "end": 53.162
+    },
+    {
+      "word": "our",
+      "start": 53.255,
+      "end": 53.36
+    },
+    {
+      "word": "original",
+      "start": 53.418,
+      "end": 53.801
+    },
+    {
+      "word": "question",
+      "start": 53.859,
+      "end": 54.335
+    },
+    {
+      "word": "with",
+      "start": 54.66,
+      "end": 54.846
+    },
+    {
+      "word": "sourced",
+      "start": 54.916,
+      "end": 55.287
+    },
+    {
+      "word": "up",
+      "start": 55.357,
+      "end": 55.473
+    },
+    {
+      "word": "to",
+      "start": 55.531,
+      "end": 55.577
+    },
+    {
+      "word": "date",
+      "start": 55.647,
+      "end": 56.018
+    },
+    {
+      "word": "and",
+      "start": 56.135,
+      "end": 56.378
+    },
+    {
+      "word": "accurate",
+      "start": 56.448,
+      "end": 56.854
+    },
+    {
+      "word": "data",
+      "start": 56.889,
+      "end": 57.539
+    }
+  ]
+}

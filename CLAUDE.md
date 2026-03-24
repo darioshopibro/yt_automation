@@ -94,6 +94,26 @@ Imam spremne MD fajlove za pojedinačne klijente - dodaću ih posebno.
 
 ---
 
+## Skill Engineering Rule
+
+**OBAVEZNO pročitaj PRE bilo kakve izmene skill-ova:**
+`.claude/skills/SKILL-ENGINEERING-GUIDE.md`
+
+**Trigger:**
+- Kreiranje novog skill-a
+- Editovanje postojećeg skill-a
+- Dodavanje reference fajlova
+- Refaktorisanje skill strukture
+
+**Ključna pravila (ukratko):**
+- SKILL.md < 500 tokena
+- Name + Description su NAJVAŽNIJI (Claude koristi samo to za trigger)
+- Dodatni kontekst ide u `reference/` folder
+- Ne objašnjavaj ono što Claude već zna
+- Uključi primere input/output
+
+---
+
 ## KRITIČNO: Testing Rule za Animacije
 
 **Kada se testira BILO ŠTA vezano za animacije/remotion:**

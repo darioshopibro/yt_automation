@@ -1,0 +1,5 @@
+You check in your code and try to merge it into the main branch. You get merge conflicts. You fix those issues manually. A simple Jenkins job runs tests and discovers issues. We rush to fix them because we just broke the main branch.
+
+Let's run tests on every commit so it's easy to isolate the issue. We encourage developers to commit and push more often so their smaller changes are tested more frequently. We're committing smaller code changes more frequently and testing them right away. That's called continuous integration, CI.
+
+Canary deployment rolls out the new feature to one percent of users, then ten percent, then a hundred percent. Blue green deployment creates two identical environments. Blue runs the current version, green runs the new version. If something goes wrong, you can fall back to the previous environment.
