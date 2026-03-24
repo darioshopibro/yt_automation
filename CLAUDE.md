@@ -94,6 +94,46 @@ Imam spremne MD fajlove za pojedinačne klijente - dodaću ih posebno.
 
 ---
 
+## KRITIČNO: Testing Rule za Animacije
+
+**Kada se testira BILO ŠTA vezano za animacije/remotion:**
+
+### DVA AGENTA - OBAVEZNO OBA!
+
+```
+1. REMOTION-PLANNER → planira SVE (voiceover, structure, camera, sounds)
+   Output: master-plan.json
+
+2. REMOTION-BUILDER → implementira prema planu
+   Input: master-plan.json
+   Output: Funkcionalan projekat
+```
+
+### Workflow za testiranje:
+
+1. Pokreni `remotion-planner` skill sa transkriptom
+2. Proveri `master-plan.json` (frame 0 ima content?)
+3. Pokreni `remotion-builder` skill sa master-plan.json
+4. Proveri output u preview-u
+
+### Pravila:
+
+- **UVEK koristi OBA SKILLA** - nikad ručno
+- Skills se nalaze u:
+  - `.claude/skills/remotion-planner/SKILL.md`
+  - `.claude/skills/remotion-builder/SKILL.md`
+  - `.claude/skills/remotion-motion/SKILL.md` (orchestrator)
+- Ako skill ima bug - FIXUJ SKILL, ne zaobilazi
+
+```
+❌ POGREŠNO: Ručno editovati template, ubaciti timestamps, napisati kod
+✅ ISPRAVNO: Planner → master-plan.json → Builder → projekat
+```
+
+**Zašto:** Ako ručno radiš - testiraš SEBE, ne skill. A skill je ono što mora da radi perfektno.
+
+---
+
 ## YT Automation Terminologija
 
 **Visual template hijerarhija:**

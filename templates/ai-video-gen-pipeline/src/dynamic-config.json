@@ -14,6 +14,7 @@
           "id": "kling_encoder",
           "title": "Text Encoder",
           "subtitle": "Prompt Processing",
+          "layout": "flow",
           "colorKey": "userQuery",
           "startFrame": 355,
           "nodes": [
@@ -25,6 +26,7 @@
           "id": "kling_embeddings",
           "title": "Embeddings",
           "subtitle": "Vector Representation",
+          "layout": "flow",
           "colorKey": "embedding",
           "startFrame": 467,
           "nodes": [
@@ -36,6 +38,7 @@
           "id": "kling_diffusion",
           "title": "Diffusion Model",
           "subtitle": "Frame Generation",
+          "layout": "flow",
           "colorKey": "vectorSearch",
           "startFrame": 575,
           "nodes": [
@@ -48,6 +51,7 @@
           "id": "kling_output",
           "title": "1080p Output",
           "subtitle": "Final Video",
+          "layout": "flow",
           "colorKey": "generate",
           "startFrame": 819,
           "nodes": [
@@ -66,6 +70,7 @@
           "id": "runway_input",
           "title": "Multi-Modal Input",
           "subtitle": "Text + Image",
+          "layout": "flow",
           "colorKey": "userQuery",
           "startFrame": 938,
           "nodes": [
@@ -77,6 +82,7 @@
           "id": "runway_encoder",
           "title": "Multi-Modal Encoder",
           "subtitle": "Unified Processing",
+          "layout": "flow",
           "colorKey": "embedding",
           "startFrame": 1103,
           "nodes": [
@@ -89,6 +95,7 @@
           "id": "runway_gen3",
           "title": "Gen-3 Alpha",
           "subtitle": "Temporal Diffusion",
+          "layout": "flow",
           "colorKey": "vectorSearch",
           "startFrame": 1303,
           "nodes": [
@@ -100,6 +107,7 @@
           "id": "runway_output",
           "title": "Cinematic Output",
           "subtitle": "Smooth Video",
+          "layout": "flow",
           "colorKey": "generate",
           "startFrame": 1499,
           "nodes": [
@@ -118,6 +126,7 @@
           "id": "sora_prompt",
           "title": "Scene Description",
           "subtitle": "Full Scene Prompt",
+          "layout": "flow",
           "colorKey": "userQuery",
           "startFrame": 1604,
           "nodes": [
@@ -129,6 +138,7 @@
           "id": "sora_transformer",
           "title": "Transformer",
           "subtitle": "Not Diffusion",
+          "layout": "flow",
           "colorKey": "embedding",
           "startFrame": 1753,
           "nodes": [
@@ -140,6 +150,7 @@
           "id": "sora_physics",
           "title": "Physics Engine",
           "subtitle": "World Understanding",
+          "layout": "flow",
           "colorKey": "vectorSearch",
           "startFrame": 1964,
           "nodes": [
@@ -151,6 +162,7 @@
           "id": "sora_output",
           "title": "Coherent Output",
           "subtitle": "Long-Form Video",
+          "layout": "flow",
           "colorKey": "generate",
           "startFrame": 2063,
           "nodes": [

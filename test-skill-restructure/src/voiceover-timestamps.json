@@ -1,0 +1,950 @@
+{
+  "words": [
+    {
+      "word": "Data",
+      "start": 0,
+      "end": 0.383,
+      "startFrame": 0,
+      "endFrame": 11
+    },
+    {
+      "word": "in",
+      "start": 0.476,
+      "end": 0.557,
+      "startFrame": 14,
+      "endFrame": 17
+    },
+    {
+      "word": "organizations",
+      "start": 0.627,
+      "end": 1.486,
+      "startFrame": 19,
+      "endFrame": 45
+    },
+    {
+      "word": "starts",
+      "start": 1.695,
+      "end": 2.078,
+      "startFrame": 51,
+      "endFrame": 62
+    },
+    {
+      "word": "out",
+      "start": 2.148,
+      "end": 2.45,
+      "startFrame": 64,
+      "endFrame": 74
+    },
+    {
+      "word": "in",
+      "start": 2.601,
+      "end": 2.752,
+      "startFrame": 78,
+      "endFrame": 83
+    },
+    {
+      "word": "many",
+      "start": 2.821,
+      "end": 3.03,
+      "startFrame": 85,
+      "endFrame": 91
+    },
+    {
+      "word": "places.",
+      "start": 3.1,
+      "end": 3.878,
+      "startFrame": 93,
+      "endFrame": 116
+    },
+    {
+      "word": "It's",
+      "start": 4.389,
+      "end": 4.586,
+      "startFrame": 132,
+      "endFrame": 138
+    },
+    {
+      "word": "in",
+      "start": 4.644,
+      "end": 4.737,
+      "startFrame": 139,
+      "endFrame": 142
+    },
+    {
+      "word": "data",
+      "start": 4.807,
+      "end": 5.05,
+      "startFrame": 144,
+      "endFrame": 152
+    },
+    {
+      "word": "lakes,",
+      "start": 5.108,
+      "end": 5.654,
+      "startFrame": 153,
+      "endFrame": 170
+    },
+    {
+      "word": "different",
+      "start": 5.898,
+      "end": 6.211,
+      "startFrame": 177,
+      "endFrame": 186
+    },
+    {
+      "word": "databases,",
+      "start": 6.246,
+      "end": 7.198,
+      "startFrame": 187,
+      "endFrame": 216
+    },
+    {
+      "word": "SaaS",
+      "start": 7.523,
+      "end": 7.906,
+      "startFrame": 226,
+      "endFrame": 237
+    },
+    {
+      "word": "applications,",
+      "start": 7.976,
+      "end": 9.033,
+      "startFrame": 239,
+      "endFrame": 271
+    },
+    {
+      "word": "and",
+      "start": 9.242,
+      "end": 9.381,
+      "startFrame": 277,
+      "endFrame": 281
+    },
+    {
+      "word": "we",
+      "start": 9.439,
+      "end": 9.532,
+      "startFrame": 283,
+      "endFrame": 286
+    },
+    {
+      "word": "also",
+      "start": 9.601,
+      "end": 9.915,
+      "startFrame": 288,
+      "endFrame": 297
+    },
+    {
+      "word": "have",
+      "start": 9.985,
+      "end": 10.147,
+      "startFrame": 300,
+      "endFrame": 304
+    },
+    {
+      "word": "streaming",
+      "start": 10.194,
+      "end": 10.67,
+      "startFrame": 306,
+      "endFrame": 320
+    },
+    {
+      "word": "data",
+      "start": 10.728,
+      "end": 11.064,
+      "startFrame": 322,
+      "endFrame": 332
+    },
+    {
+      "word": "coming",
+      "start": 11.18,
+      "end": 11.517,
+      "startFrame": 335,
+      "endFrame": 346
+    },
+    {
+      "word": "in",
+      "start": 11.575,
+      "end": 11.656,
+      "startFrame": 347,
+      "endFrame": 350
+    },
+    {
+      "word": "real",
+      "start": 11.738,
+      "end": 12.005,
+      "startFrame": 352,
+      "endFrame": 360
+    },
+    {
+      "word": "time",
+      "start": 12.074,
+      "end": 12.527,
+      "startFrame": 362,
+      "endFrame": 376
+    },
+    {
+      "word": "from",
+      "start": 12.574,
+      "end": 12.771,
+      "startFrame": 377,
+      "endFrame": 383
+    },
+    {
+      "word": "sensors",
+      "start": 12.852,
+      "end": 13.409,
+      "startFrame": 386,
+      "endFrame": 402
+    },
+    {
+      "word": "and",
+      "start": 13.467,
+      "end": 13.607,
+      "startFrame": 404,
+      "endFrame": 408
+    },
+    {
+      "word": "factories.",
+      "start": 13.688,
+      "end": 14.489,
+      "startFrame": 411,
+      "endFrame": 435
+    },
+    {
+      "word": "To",
+      "start": 15.186,
+      "end": 15.29,
+      "startFrame": 456,
+      "endFrame": 459
+    },
+    {
+      "word": "make",
+      "start": 15.36,
+      "end": 15.522,
+      "startFrame": 461,
+      "endFrame": 466
+    },
+    {
+      "word": "this",
+      "start": 15.557,
+      "end": 15.685,
+      "startFrame": 467,
+      "endFrame": 471
+    },
+    {
+      "word": "data",
+      "start": 15.755,
+      "end": 15.987,
+      "startFrame": 473,
+      "endFrame": 480
+    },
+    {
+      "word": "useful,",
+      "start": 16.103,
+      "end": 16.776,
+      "startFrame": 483,
+      "endFrame": 503
+    },
+    {
+      "word": "we",
+      "start": 16.985,
+      "end": 17.125,
+      "startFrame": 510,
+      "endFrame": 514
+    },
+    {
+      "word": "use",
+      "start": 17.206,
+      "end": 17.403,
+      "startFrame": 516,
+      "endFrame": 522
+    },
+    {
+      "word": "ETL",
+      "start": 17.485,
+      "end": 18.216,
+      "startFrame": 525,
+      "endFrame": 546
+    },
+    {
+      "word": "which",
+      "start": 18.39,
+      "end": 18.599,
+      "startFrame": 552,
+      "endFrame": 558
+    },
+    {
+      "word": "stands",
+      "start": 18.646,
+      "end": 18.982,
+      "startFrame": 559,
+      "endFrame": 569
+    },
+    {
+      "word": "for",
+      "start": 19.04,
+      "end": 19.168,
+      "startFrame": 571,
+      "endFrame": 575
+    },
+    {
+      "word": "Extract,",
+      "start": 19.296,
+      "end": 20.097,
+      "startFrame": 579,
+      "endFrame": 603
+    },
+    {
+      "word": "Transform,",
+      "start": 20.224,
+      "end": 21.153,
+      "startFrame": 607,
+      "endFrame": 635
+    },
+    {
+      "word": "and",
+      "start": 21.269,
+      "end": 21.444,
+      "startFrame": 638,
+      "endFrame": 643
+    },
+    {
+      "word": "Load.",
+      "start": 21.56,
+      "end": 22.105,
+      "startFrame": 647,
+      "endFrame": 663
+    },
+    {
+      "word": "First,",
+      "start": 22.709,
+      "end": 23.324,
+      "startFrame": 681,
+      "endFrame": 700
+    },
+    {
+      "word": "we",
+      "start": 23.533,
+      "end": 23.696,
+      "startFrame": 706,
+      "endFrame": 711
+    },
+    {
+      "word": "Extract",
+      "start": 23.766,
+      "end": 24.253,
+      "startFrame": 713,
+      "endFrame": 728
+    },
+    {
+      "word": "data",
+      "start": 24.323,
+      "end": 24.59,
+      "startFrame": 730,
+      "endFrame": 738
+    },
+    {
+      "word": "from",
+      "start": 24.648,
+      "end": 24.787,
+      "startFrame": 739,
+      "endFrame": 744
+    },
+    {
+      "word": "all",
+      "start": 24.857,
+      "end": 25.043,
+      "startFrame": 746,
+      "endFrame": 751
+    },
+    {
+      "word": "these",
+      "start": 25.112,
+      "end": 25.298,
+      "startFrame": 753,
+      "endFrame": 759
+    },
+    {
+      "word": "different",
+      "start": 25.333,
+      "end": 25.635,
+      "startFrame": 760,
+      "endFrame": 769
+    },
+    {
+      "word": "sources.",
+      "start": 25.681,
+      "end": 26.459,
+      "startFrame": 770,
+      "endFrame": 794
+    },
+    {
+      "word": "Then",
+      "start": 26.97,
+      "end": 27.167,
+      "startFrame": 809,
+      "endFrame": 815
+    },
+    {
+      "word": "we",
+      "start": 27.225,
+      "end": 27.33,
+      "startFrame": 817,
+      "endFrame": 820
+    },
+    {
+      "word": "Transform",
+      "start": 27.388,
+      "end": 27.957,
+      "startFrame": 822,
+      "endFrame": 839
+    },
+    {
+      "word": "it",
+      "start": 28.003,
+      "end": 28.084,
+      "startFrame": 840,
+      "endFrame": 843
+    },
+    {
+      "word": "by",
+      "start": 28.142,
+      "end": 28.27,
+      "startFrame": 844,
+      "endFrame": 848
+    },
+    {
+      "word": "cleaning",
+      "start": 28.34,
+      "end": 28.7,
+      "startFrame": 850,
+      "endFrame": 861
+    },
+    {
+      "word": "up",
+      "start": 28.758,
+      "end": 28.851,
+      "startFrame": 863,
+      "endFrame": 866
+    },
+    {
+      "word": "mismatching",
+      "start": 28.932,
+      "end": 29.536,
+      "startFrame": 868,
+      "endFrame": 886
+    },
+    {
+      "word": "data,",
+      "start": 29.594,
+      "end": 30.093,
+      "startFrame": 888,
+      "endFrame": 903
+    },
+    {
+      "word": "taking",
+      "start": 30.267,
+      "end": 30.592,
+      "startFrame": 908,
+      "endFrame": 918
+    },
+    {
+      "word": "care",
+      "start": 30.65,
+      "end": 30.848,
+      "startFrame": 920,
+      "endFrame": 925
+    },
+    {
+      "word": "of",
+      "start": 30.883,
+      "end": 30.941,
+      "startFrame": 926,
+      "endFrame": 928
+    },
+    {
+      "word": "missing",
+      "start": 31.01,
+      "end": 31.301,
+      "startFrame": 930,
+      "endFrame": 939
+    },
+    {
+      "word": "values,",
+      "start": 31.359,
+      "end": 32.171,
+      "startFrame": 941,
+      "endFrame": 965
+    },
+    {
+      "word": "getting",
+      "start": 32.346,
+      "end": 32.601,
+      "startFrame": 970,
+      "endFrame": 978
+    },
+    {
+      "word": "rid",
+      "start": 32.647,
+      "end": 32.763,
+      "startFrame": 979,
+      "endFrame": 983
+    },
+    {
+      "word": "of",
+      "start": 32.798,
+      "end": 32.845,
+      "startFrame": 984,
+      "endFrame": 985
+    },
+    {
+      "word": "duplicates,",
+      "start": 32.903,
+      "end": 33.715,
+      "startFrame": 987,
+      "endFrame": 1011
+    },
+    {
+      "word": "and",
+      "start": 33.959,
+      "end": 34.099,
+      "startFrame": 1019,
+      "endFrame": 1023
+    },
+    {
+      "word": "making",
+      "start": 34.145,
+      "end": 34.389,
+      "startFrame": 1024,
+      "endFrame": 1032
+    },
+    {
+      "word": "sure",
+      "start": 34.435,
+      "end": 34.586,
+      "startFrame": 1033,
+      "endFrame": 1038
+    },
+    {
+      "word": "the",
+      "start": 34.621,
+      "end": 34.691,
+      "startFrame": 1039,
+      "endFrame": 1041
+    },
+    {
+      "word": "columns",
+      "start": 34.737,
+      "end": 35.155,
+      "startFrame": 1042,
+      "endFrame": 1055
+    },
+    {
+      "word": "are",
+      "start": 35.202,
+      "end": 35.294,
+      "startFrame": 1056,
+      "endFrame": 1059
+    },
+    {
+      "word": "correct.",
+      "start": 35.329,
+      "end": 35.979,
+      "startFrame": 1060,
+      "endFrame": 1079
+    },
+    {
+      "word": "Finally,",
+      "start": 36.676,
+      "end": 37.489,
+      "startFrame": 1100,
+      "endFrame": 1125
+    },
+    {
+      "word": "we",
+      "start": 37.698,
+      "end": 37.825,
+      "startFrame": 1131,
+      "endFrame": 1135
+    },
+    {
+      "word": "Load",
+      "start": 37.942,
+      "end": 38.197,
+      "startFrame": 1138,
+      "endFrame": 1146
+    },
+    {
+      "word": "this",
+      "start": 38.243,
+      "end": 38.383,
+      "startFrame": 1147,
+      "endFrame": 1151
+    },
+    {
+      "word": "clean",
+      "start": 38.464,
+      "end": 38.789,
+      "startFrame": 1154,
+      "endFrame": 1164
+    },
+    {
+      "word": "data",
+      "start": 38.87,
+      "end": 39.23,
+      "startFrame": 1166,
+      "endFrame": 1177
+    },
+    {
+      "word": "into",
+      "start": 39.346,
+      "end": 39.567,
+      "startFrame": 1180,
+      "endFrame": 1187
+    },
+    {
+      "word": "a",
+      "start": 39.648,
+      "end": 39.671,
+      "startFrame": 1189,
+      "endFrame": 1190
+    },
+    {
+      "word": "destination",
+      "start": 39.729,
+      "end": 40.38,
+      "startFrame": 1192,
+      "endFrame": 1211
+    },
+    {
+      "word": "repository,",
+      "start": 40.449,
+      "end": 41.459,
+      "startFrame": 1213,
+      "endFrame": 1244
+    },
+    {
+      "word": "like",
+      "start": 41.668,
+      "end": 41.842,
+      "startFrame": 1250,
+      "endFrame": 1255
+    },
+    {
+      "word": "an",
+      "start": 41.866,
+      "end": 41.935,
+      "startFrame": 1256,
+      "endFrame": 1258
+    },
+    {
+      "word": "enterprise",
+      "start": 41.993,
+      "end": 42.527,
+      "startFrame": 1260,
+      "endFrame": 1276
+    },
+    {
+      "word": "data",
+      "start": 42.586,
+      "end": 42.806,
+      "startFrame": 1278,
+      "endFrame": 1284
+    },
+    {
+      "word": "warehouse.",
+      "start": 42.864,
+      "end": 43.607,
+      "startFrame": 1286,
+      "endFrame": 1308
+    },
+    {
+      "word": "Once",
+      "start": 44.118,
+      "end": 44.362,
+      "startFrame": 1324,
+      "endFrame": 1331
+    },
+    {
+      "word": "the",
+      "start": 44.408,
+      "end": 44.49,
+      "startFrame": 1332,
+      "endFrame": 1335
+    },
+    {
+      "word": "data",
+      "start": 44.536,
+      "end": 44.768,
+      "startFrame": 1336,
+      "endFrame": 1343
+    },
+    {
+      "word": "is",
+      "start": 44.838,
+      "end": 44.942,
+      "startFrame": 1345,
+      "endFrame": 1348
+    },
+    {
+      "word": "ready,",
+      "start": 45.012,
+      "end": 45.534,
+      "startFrame": 1350,
+      "endFrame": 1366
+    },
+    {
+      "word": "we",
+      "start": 45.743,
+      "end": 45.86,
+      "startFrame": 1372,
+      "endFrame": 1376
+    },
+    {
+      "word": "can",
+      "start": 45.906,
+      "end": 46.022,
+      "startFrame": 1377,
+      "endFrame": 1381
+    },
+    {
+      "word": "use",
+      "start": 46.103,
+      "end": 46.266,
+      "startFrame": 1383,
+      "endFrame": 1388
+    },
+    {
+      "word": "it",
+      "start": 46.301,
+      "end": 46.37,
+      "startFrame": 1389,
+      "endFrame": 1391
+    },
+    {
+      "word": "for",
+      "start": 46.405,
+      "end": 46.51,
+      "startFrame": 1392,
+      "endFrame": 1395
+    },
+    {
+      "word": "business",
+      "start": 46.568,
+      "end": 46.928,
+      "startFrame": 1397,
+      "endFrame": 1408
+    },
+    {
+      "word": "intelligence",
+      "start": 46.974,
+      "end": 47.555,
+      "startFrame": 1409,
+      "endFrame": 1427
+    },
+    {
+      "word": "dashboards,",
+      "start": 47.601,
+      "end": 48.53,
+      "startFrame": 1428,
+      "endFrame": 1456
+    },
+    {
+      "word": "machine",
+      "start": 48.681,
+      "end": 49.075,
+      "startFrame": 1460,
+      "endFrame": 1472
+    },
+    {
+      "word": "learning",
+      "start": 49.122,
+      "end": 49.389,
+      "startFrame": 1474,
+      "endFrame": 1482
+    },
+    {
+      "word": "models,",
+      "start": 49.447,
+      "end": 49.993,
+      "startFrame": 1483,
+      "endFrame": 1500
+    },
+    {
+      "word": "and",
+      "start": 50.016,
+      "end": 50.19,
+      "startFrame": 1500,
+      "endFrame": 1506
+    },
+    {
+      "word": "other",
+      "start": 50.283,
+      "end": 50.515,
+      "startFrame": 1508,
+      "endFrame": 1515
+    },
+    {
+      "word": "analytics",
+      "start": 50.585,
+      "end": 51.096,
+      "startFrame": 1518,
+      "endFrame": 1533
+    },
+    {
+      "word": "applications.",
+      "start": 51.142,
+      "end": 52.21,
+      "startFrame": 1534,
+      "endFrame": 1566
+    },
+    {
+      "word": "This",
+      "start": 53.325,
+      "end": 53.545,
+      "startFrame": 1600,
+      "endFrame": 1606
+    },
+    {
+      "word": "is",
+      "start": 53.615,
+      "end": 53.696,
+      "startFrame": 1608,
+      "endFrame": 1611
+    },
+    {
+      "word": "how",
+      "start": 53.766,
+      "end": 53.917,
+      "startFrame": 1613,
+      "endFrame": 1618
+    },
+    {
+      "word": "data",
+      "start": 54.033,
+      "end": 54.3,
+      "startFrame": 1621,
+      "endFrame": 1629
+    },
+    {
+      "word": "pipelines",
+      "start": 54.37,
+      "end": 54.927,
+      "startFrame": 1631,
+      "endFrame": 1648
+    },
+    {
+      "word": "work.",
+      "start": 54.985,
+      "end": 55.484,
+      "startFrame": 1650,
+      "endFrame": 1665
+    },
+    {
+      "word": "They",
+      "start": 56.088,
+      "end": 56.262,
+      "startFrame": 1683,
+      "endFrame": 1688
+    },
+    {
+      "word": "take",
+      "start": 56.308,
+      "end": 56.517,
+      "startFrame": 1689,
+      "endFrame": 1696
+    },
+    {
+      "word": "raw",
+      "start": 56.599,
+      "end": 56.866,
+      "startFrame": 1698,
+      "endFrame": 1706
+    },
+    {
+      "word": "data",
+      "start": 56.935,
+      "end": 57.191,
+      "startFrame": 1708,
+      "endFrame": 1716
+    },
+    {
+      "word": "from",
+      "start": 57.249,
+      "end": 57.377,
+      "startFrame": 1717,
+      "endFrame": 1721
+    },
+    {
+      "word": "many",
+      "start": 57.435,
+      "end": 57.632,
+      "startFrame": 1723,
+      "endFrame": 1729
+    },
+    {
+      "word": "sources",
+      "start": 57.702,
+      "end": 58.212,
+      "startFrame": 1731,
+      "endFrame": 1746
+    },
+    {
+      "word": "and",
+      "start": 58.271,
+      "end": 58.41,
+      "startFrame": 1748,
+      "endFrame": 1752
+    },
+    {
+      "word": "turn",
+      "start": 58.456,
+      "end": 58.63,
+      "startFrame": 1754,
+      "endFrame": 1759
+    },
+    {
+      "word": "it",
+      "start": 58.665,
+      "end": 58.735,
+      "startFrame": 1760,
+      "endFrame": 1762
+    },
+    {
+      "word": "into",
+      "start": 58.77,
+      "end": 58.921,
+      "startFrame": 1763,
+      "endFrame": 1768
+    },
+    {
+      "word": "clean,",
+      "start": 59.002,
+      "end": 59.478,
+      "startFrame": 1770,
+      "endFrame": 1784
+    },
+    {
+      "word": "ready-to-use",
+      "start": 59.629,
+      "end": 60.244,
+      "startFrame": 1789,
+      "endFrame": 1807
+    },
+    {
+      "word": "business",
+      "start": 60.279,
+      "end": 60.627,
+      "startFrame": 1808,
+      "endFrame": 1819
+    },
+    {
+      "word": "data.",
+      "start": 60.674,
+      "end": 61.347,
+      "startFrame": 1820,
+      "endFrame": 1840
+    }
+  ],
+  "fps": 30
+}

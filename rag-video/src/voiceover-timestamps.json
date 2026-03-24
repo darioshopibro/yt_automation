@@ -1,0 +1,713 @@
+{
+  "duration": 42.26,
+  "totalFrames": 1297,
+  "words": [
+    {
+      "word": "Let",
+      "start": 0.0,
+      "end": 0.186,
+      "startFrame": 0,
+      "endFrame": 5
+    },
+    {
+      "word": "me",
+      "start": 0.232,
+      "end": 0.302,
+      "startFrame": 6,
+      "endFrame": 9
+    },
+    {
+      "word": "quickly",
+      "start": 0.36,
+      "end": 0.662,
+      "startFrame": 10,
+      "endFrame": 19
+    },
+    {
+      "word": "walk",
+      "start": 0.72,
+      "end": 0.917,
+      "startFrame": 21,
+      "endFrame": 27
+    },
+    {
+      "word": "you",
+      "start": 0.987,
+      "end": 1.068,
+      "startFrame": 29,
+      "endFrame": 32
+    },
+    {
+      "word": "through",
+      "start": 1.126,
+      "end": 1.393,
+      "startFrame": 33,
+      "endFrame": 41
+    },
+    {
+      "word": "how",
+      "start": 1.463,
+      "end": 1.614,
+      "startFrame": 43,
+      "endFrame": 48
+    },
+    {
+      "word": "basic",
+      "start": 1.707,
+      "end": 2.183,
+      "startFrame": 51,
+      "endFrame": 65
+    },
+    {
+      "word": "rag",
+      "start": 2.357,
+      "end": 2.728,
+      "startFrame": 70,
+      "endFrame": 81
+    },
+    {
+      "word": "works",
+      "start": 2.798,
+      "end": 3.448,
+      "startFrame": 83,
+      "endFrame": 103
+    },
+    {
+      "word": "A",
+      "start": 4.052,
+      "end": 4.145,
+      "startFrame": 121,
+      "endFrame": 124
+    },
+    {
+      "word": "user",
+      "start": 4.272,
+      "end": 4.679,
+      "startFrame": 128,
+      "endFrame": 140
+    },
+    {
+      "word": "sends",
+      "start": 4.795,
+      "end": 5.074,
+      "startFrame": 143,
+      "endFrame": 152
+    },
+    {
+      "word": "a",
+      "start": 5.108,
+      "end": 5.143,
+      "startFrame": 153,
+      "endFrame": 154
+    },
+    {
+      "word": "query",
+      "start": 5.19,
+      "end": 5.805,
+      "startFrame": 155,
+      "endFrame": 174
+    },
+    {
+      "word": "That",
+      "start": 6.246,
+      "end": 6.455,
+      "startFrame": 187,
+      "endFrame": 193
+    },
+    {
+      "word": "query",
+      "start": 6.525,
+      "end": 6.838,
+      "startFrame": 195,
+      "endFrame": 205
+    },
+    {
+      "word": "gets",
+      "start": 6.896,
+      "end": 7.07,
+      "startFrame": 206,
+      "endFrame": 212
+    },
+    {
+      "word": "converted",
+      "start": 7.117,
+      "end": 7.639,
+      "startFrame": 213,
+      "endFrame": 229
+    },
+    {
+      "word": "into",
+      "start": 7.721,
+      "end": 7.964,
+      "startFrame": 231,
+      "endFrame": 238
+    },
+    {
+      "word": "an",
+      "start": 8.046,
+      "end": 8.104,
+      "startFrame": 241,
+      "endFrame": 243
+    },
+    {
+      "word": "embedding",
+      "start": 8.139,
+      "end": 8.742,
+      "startFrame": 244,
+      "endFrame": 262
+    },
+    {
+      "word": "which",
+      "start": 8.951,
+      "end": 9.137,
+      "startFrame": 268,
+      "endFrame": 274
+    },
+    {
+      "word": "is",
+      "start": 9.195,
+      "end": 9.265,
+      "startFrame": 275,
+      "endFrame": 277
+    },
+    {
+      "word": "just",
+      "start": 9.334,
+      "end": 9.59,
+      "startFrame": 280,
+      "endFrame": 287
+    },
+    {
+      "word": "a",
+      "start": 9.636,
+      "end": 9.66,
+      "startFrame": 289,
+      "endFrame": 289
+    },
+    {
+      "word": "numerical",
+      "start": 9.718,
+      "end": 10.274,
+      "startFrame": 291,
+      "endFrame": 308
+    },
+    {
+      "word": "representation",
+      "start": 10.356,
+      "end": 11.215,
+      "startFrame": 310,
+      "endFrame": 336
+    },
+    {
+      "word": "of",
+      "start": 11.366,
+      "end": 11.493,
+      "startFrame": 340,
+      "endFrame": 344
+    },
+    {
+      "word": "the",
+      "start": 11.552,
+      "end": 11.621,
+      "startFrame": 346,
+      "endFrame": 348
+    },
+    {
+      "word": "text",
+      "start": 11.668,
+      "end": 12.295,
+      "startFrame": 350,
+      "endFrame": 368
+    },
+    {
+      "word": "You",
+      "start": 12.991,
+      "end": 13.119,
+      "startFrame": 389,
+      "endFrame": 393
+    },
+    {
+      "word": "then",
+      "start": 13.177,
+      "end": 13.316,
+      "startFrame": 395,
+      "endFrame": 399
+    },
+    {
+      "word": "search",
+      "start": 13.398,
+      "end": 13.63,
+      "startFrame": 401,
+      "endFrame": 408
+    },
+    {
+      "word": "your",
+      "start": 13.665,
+      "end": 13.769,
+      "startFrame": 409,
+      "endFrame": 413
+    },
+    {
+      "word": "vector",
+      "start": 13.815,
+      "end": 14.094,
+      "startFrame": 414,
+      "endFrame": 422
+    },
+    {
+      "word": "database",
+      "start": 14.141,
+      "end": 14.628,
+      "startFrame": 424,
+      "endFrame": 438
+    },
+    {
+      "word": "for",
+      "start": 14.675,
+      "end": 14.791,
+      "startFrame": 440,
+      "endFrame": 443
+    },
+    {
+      "word": "chunks",
+      "start": 14.849,
+      "end": 15.139,
+      "startFrame": 445,
+      "endFrame": 454
+    },
+    {
+      "word": "that",
+      "start": 15.185,
+      "end": 15.302,
+      "startFrame": 455,
+      "endFrame": 459
+    },
+    {
+      "word": "are",
+      "start": 15.336,
+      "end": 15.441,
+      "startFrame": 460,
+      "endFrame": 463
+    },
+    {
+      "word": "similar",
+      "start": 15.487,
+      "end": 15.859,
+      "startFrame": 464,
+      "endFrame": 475
+    },
+    {
+      "word": "to",
+      "start": 15.94,
+      "end": 16.01,
+      "startFrame": 478,
+      "endFrame": 480
+    },
+    {
+      "word": "this",
+      "start": 16.079,
+      "end": 16.23,
+      "startFrame": 482,
+      "endFrame": 486
+    },
+    {
+      "word": "embedding",
+      "start": 16.288,
+      "end": 16.892,
+      "startFrame": 488,
+      "endFrame": 506
+    },
+    {
+      "word": "That's",
+      "start": 17.496,
+      "end": 17.763,
+      "startFrame": 524,
+      "endFrame": 532
+    },
+    {
+      "word": "step",
+      "start": 17.821,
+      "end": 18.123,
+      "startFrame": 534,
+      "endFrame": 543
+    },
+    {
+      "word": "one",
+      "start": 18.239,
+      "end": 18.703,
+      "startFrame": 547,
+      "endFrame": 561
+    },
+    {
+      "word": "retrieve",
+      "start": 19.028,
+      "end": 19.783,
+      "startFrame": 570,
+      "endFrame": 593
+    },
+    {
+      "word": "The",
+      "start": 20.387,
+      "end": 20.503,
+      "startFrame": 611,
+      "endFrame": 615
+    },
+    {
+      "word": "chunks",
+      "start": 20.561,
+      "end": 20.828,
+      "startFrame": 616,
+      "endFrame": 624
+    },
+    {
+      "word": "you",
+      "start": 20.874,
+      "end": 20.944,
+      "startFrame": 626,
+      "endFrame": 628
+    },
+    {
+      "word": "get",
+      "start": 21.014,
+      "end": 21.141,
+      "startFrame": 630,
+      "endFrame": 634
+    },
+    {
+      "word": "back",
+      "start": 21.188,
+      "end": 21.513,
+      "startFrame": 635,
+      "endFrame": 645
+    },
+    {
+      "word": "become",
+      "start": 21.629,
+      "end": 21.931,
+      "startFrame": 648,
+      "endFrame": 657
+    },
+    {
+      "word": "your",
+      "start": 21.966,
+      "end": 22.07,
+      "startFrame": 658,
+      "endFrame": 662
+    },
+    {
+      "word": "context",
+      "start": 22.117,
+      "end": 22.999,
+      "startFrame": 663,
+      "endFrame": 689
+    },
+    {
+      "word": "In",
+      "start": 23.603,
+      "end": 23.754,
+      "startFrame": 708,
+      "endFrame": 712
+    },
+    {
+      "word": "step",
+      "start": 23.823,
+      "end": 24.079,
+      "startFrame": 714,
+      "endFrame": 722
+    },
+    {
+      "word": "two",
+      "start": 24.148,
+      "end": 24.717,
+      "startFrame": 724,
+      "endFrame": 741
+    },
+    {
+      "word": "argument",
+      "start": 25.1,
+      "end": 25.855,
+      "startFrame": 753,
+      "endFrame": 775
+    },
+    {
+      "word": "You",
+      "start": 26.459,
+      "end": 26.586,
+      "startFrame": 793,
+      "endFrame": 797
+    },
+    {
+      "word": "take",
+      "start": 26.656,
+      "end": 26.865,
+      "startFrame": 799,
+      "endFrame": 805
+    },
+    {
+      "word": "that",
+      "start": 26.9,
+      "end": 27.051,
+      "startFrame": 807,
+      "endFrame": 811
+    },
+    {
+      "word": "context",
+      "start": 27.121,
+      "end": 27.805,
+      "startFrame": 813,
+      "endFrame": 834
+    },
+    {
+      "word": "and",
+      "start": 27.864,
+      "end": 28.003,
+      "startFrame": 835,
+      "endFrame": 840
+    },
+    {
+      "word": "combine",
+      "start": 28.073,
+      "end": 28.479,
+      "startFrame": 842,
+      "endFrame": 854
+    },
+    {
+      "word": "it",
+      "start": 28.514,
+      "end": 28.583,
+      "startFrame": 855,
+      "endFrame": 857
+    },
+    {
+      "word": "with",
+      "start": 28.618,
+      "end": 28.746,
+      "startFrame": 858,
+      "endFrame": 862
+    },
+    {
+      "word": "the",
+      "start": 28.792,
+      "end": 28.862,
+      "startFrame": 863,
+      "endFrame": 865
+    },
+    {
+      "word": "original",
+      "start": 28.932,
+      "end": 29.326,
+      "startFrame": 867,
+      "endFrame": 879
+    },
+    {
+      "word": "query",
+      "start": 29.396,
+      "end": 29.826,
+      "startFrame": 881,
+      "endFrame": 894
+    },
+    {
+      "word": "into",
+      "start": 30.0,
+      "end": 30.22,
+      "startFrame": 900,
+      "endFrame": 906
+    },
+    {
+      "word": "a",
+      "start": 30.29,
+      "end": 30.325,
+      "startFrame": 908,
+      "endFrame": 909
+    },
+    {
+      "word": "prompt",
+      "start": 30.371,
+      "end": 30.905,
+      "startFrame": 911,
+      "endFrame": 927
+    },
+    {
+      "word": "Finally",
+      "start": 31.416,
+      "end": 31.927,
+      "startFrame": 942,
+      "endFrame": 957
+    },
+    {
+      "word": "in",
+      "start": 31.95,
+      "end": 32.032,
+      "startFrame": 958,
+      "endFrame": 960
+    },
+    {
+      "word": "step",
+      "start": 32.09,
+      "end": 32.322,
+      "startFrame": 962,
+      "endFrame": 969
+    },
+    {
+      "word": "three",
+      "start": 32.38,
+      "end": 32.856,
+      "startFrame": 971,
+      "endFrame": 985
+    },
+    {
+      "word": "generate",
+      "start": 33.1,
+      "end": 33.808,
+      "startFrame": 993,
+      "endFrame": 1014
+    },
+    {
+      "word": "You",
+      "start": 34.191,
+      "end": 34.296,
+      "startFrame": 1025,
+      "endFrame": 1028
+    },
+    {
+      "word": "pass",
+      "start": 34.365,
+      "end": 34.621,
+      "startFrame": 1030,
+      "endFrame": 1038
+    },
+    {
+      "word": "that",
+      "start": 34.667,
+      "end": 34.806,
+      "startFrame": 1040,
+      "endFrame": 1044
+    },
+    {
+      "word": "prompt",
+      "start": 34.853,
+      "end": 35.143,
+      "startFrame": 1045,
+      "endFrame": 1054
+    },
+    {
+      "word": "to",
+      "start": 35.166,
+      "end": 35.213,
+      "startFrame": 1054,
+      "endFrame": 1056
+    },
+    {
+      "word": "the",
+      "start": 35.271,
+      "end": 35.352,
+      "startFrame": 1058,
+      "endFrame": 1060
+    },
+    {
+      "word": "LLM",
+      "start": 35.422,
+      "end": 35.956,
+      "startFrame": 1062,
+      "endFrame": 1078
+    },
+    {
+      "word": "and",
+      "start": 36.072,
+      "end": 36.188,
+      "startFrame": 1082,
+      "endFrame": 1085
+    },
+    {
+      "word": "it",
+      "start": 36.246,
+      "end": 36.304,
+      "startFrame": 1087,
+      "endFrame": 1089
+    },
+    {
+      "word": "generates",
+      "start": 36.351,
+      "end": 36.803,
+      "startFrame": 1090,
+      "endFrame": 1104
+    },
+    {
+      "word": "a",
+      "start": 36.838,
+      "end": 36.861,
+      "startFrame": 1105,
+      "endFrame": 1105
+    },
+    {
+      "word": "response",
+      "start": 36.919,
+      "end": 37.477,
+      "startFrame": 1107,
+      "endFrame": 1124
+    },
+    {
+      "word": "based",
+      "start": 37.523,
+      "end": 37.813,
+      "startFrame": 1125,
+      "endFrame": 1134
+    },
+    {
+      "word": "on",
+      "start": 37.848,
+      "end": 37.918,
+      "startFrame": 1135,
+      "endFrame": 1137
+    },
+    {
+      "word": "the",
+      "start": 37.953,
+      "end": 38.022,
+      "startFrame": 1138,
+      "endFrame": 1140
+    },
+    {
+      "word": "context",
+      "start": 38.069,
+      "end": 38.626,
+      "startFrame": 1142,
+      "endFrame": 1158
+    },
+    {
+      "word": "you",
+      "start": 38.673,
+      "end": 38.765,
+      "startFrame": 1160,
+      "endFrame": 1162
+    },
+    {
+      "word": "gave",
+      "start": 38.823,
+      "end": 39.323,
+      "startFrame": 1164,
+      "endFrame": 1179
+    },
+    {
+      "word": "Retrieve",
+      "start": 40.019,
+      "end": 40.577,
+      "startFrame": 1200,
+      "endFrame": 1217
+    },
+    {
+      "word": "argument",
+      "start": 40.623,
+      "end": 41.192,
+      "startFrame": 1218,
+      "endFrame": 1235
+    },
+    {
+      "word": "generate",
+      "start": 41.366,
+      "end": 42.26,
+      "startFrame": 1240,
+      "endFrame": 1267
+    }
+  ]
+}

@@ -1,0 +1,143 @@
+{
+  "meta": {
+    "title": "How Basic RAG Works",
+    "fps": 30,
+    "totalFrames": 1300,
+    "totalDuration": 43.0,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 42.26
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "Retrieve",
+        "color": "#a855f7",
+        "startFrame": 120,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Query Input",
+            "layout": "flow",
+            "startFrame": 125,
+            "nodes": [
+              { "id": "n_1_1_1", "label": "User", "icon": "user", "startFrame": 128 },
+              { "id": "n_1_1_2", "label": "Query", "icon": "search", "startFrame": 162 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Embedding",
+            "layout": "arrow",
+            "startFrame": 240,
+            "nodes": [
+              { "id": "n_1_2_1", "label": "Text", "icon": "terminal", "startFrame": 244 },
+              { "id": "n_1_2_2", "label": "Vector", "icon": "cube", "startFrame": 287 }
+            ]
+          },
+          {
+            "id": "section_1_3",
+            "title": "Vector Search",
+            "layout": "flow",
+            "startFrame": 410,
+            "nodes": [
+              { "id": "n_1_3_1", "label": "Database", "icon": "database", "startFrame": 414 },
+              { "id": "n_1_3_2", "label": "Chunks", "icon": "layers", "startFrame": 445 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Augment",
+        "color": "#3b82f6",
+        "startFrame": 605,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Context",
+            "layout": "arrow",
+            "startFrame": 610,
+            "nodes": [
+              { "id": "n_2_1_1", "label": "Chunks", "icon": "layers", "startFrame": 616 },
+              { "id": "n_2_1_2", "label": "Context", "icon": "file", "startFrame": 663 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Combine",
+            "layout": "combine",
+            "startFrame": 805,
+            "nodes": [
+              { "id": "n_2_2_1", "label": "Context", "icon": "file", "startFrame": 813 },
+              { "id": "n_2_2_2", "label": "Query", "icon": "search", "startFrame": 860 },
+              { "id": "n_2_2_3", "label": "Prompt", "icon": "terminal", "startFrame": 911 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Generate",
+        "color": "#22c55e",
+        "startFrame": 935,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "LLM Processing",
+            "layout": "flow",
+            "startFrame": 940,
+            "nodes": [
+              { "id": "n_3_1_1", "label": "Prompt", "icon": "terminal", "startFrame": 1045 },
+              { "id": "n_3_1_2", "label": "LLM", "icon": "brain", "startFrame": 1062 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Output",
+            "layout": "arrow",
+            "startFrame": 1090,
+            "nodes": [
+              { "id": "n_3_2_1", "label": "Generate", "icon": "sparkle", "startFrame": 1094 },
+              { "id": "n_3_2_2", "label": "Response", "icon": "messageSquare", "startFrame": 1118 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "title", "x": 960, "y": 540, "scale": 0.5 },
+      { "frame": 105, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0 },
+      { "frame": 590, "target": "sticky_2", "x": 900, "y": 400, "scale": 1.0 },
+      { "frame": 920, "target": "sticky_3", "x": 1400, "y": 400, "scale": 1.0 },
+      { "frame": 1185, "target": "overview", "x": 960, "y": 540, "scale": 0.6 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 103, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 135, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 250, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 420, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 588, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 815, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 918, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1100, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1183, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 10
+  }
+}
