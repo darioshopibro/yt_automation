@@ -16,9 +16,10 @@
           "subtitle": "User sends request to server",
           "colorKey": "userQuery",
           "startFrame": 74,
+          "layout": "flow",
           "nodes": [
-            { "label": "User", "icon": "user" },
-            { "label": "Request", "icon": "terminal" }
+            { "label": "User", "icon": "user", "color": "blue" },
+            { "label": "Request", "icon": "terminal", "color": "green" }
           ]
         },
         {
@@ -27,9 +28,10 @@
           "subtitle": "Controller handles request",
           "colorKey": "embedding",
           "startFrame": 230,
+          "layout": "flow",
           "nodes": [
-            { "label": "Route", "icon": "zap" },
-            { "label": "Controller", "icon": "cube" }
+            { "label": "Route", "icon": "zap", "color": "orange" },
+            { "label": "Controller", "icon": "cube", "color": "purple" }
           ]
         },
         {
@@ -38,9 +40,10 @@
           "subtitle": "Controller asks model",
           "colorKey": "vectorSearch",
           "startFrame": 355,
+          "layout": "arrow",
           "nodes": [
-            { "label": "Model", "icon": "layers" },
-            { "label": "Query", "icon": "search" }
+            { "label": "Model", "icon": "layers", "color": "blue" },
+            { "label": "Query", "icon": "search", "color": "green" }
           ]
         },
         {
@@ -49,9 +52,10 @@
           "subtitle": "Model queries database",
           "colorKey": "retrieve",
           "startFrame": 542,
+          "layout": "bidirectional",
           "nodes": [
-            { "label": "Database", "icon": "database" },
-            { "label": "Data", "icon": "file" }
+            { "label": "Database", "icon": "database", "color": "purple" },
+            { "label": "Data", "icon": "file", "color": "orange" }
           ]
         }
       ]
@@ -67,9 +71,11 @@
           "subtitle": "Return data to controller",
           "colorKey": "augment",
           "startFrame": 643,
+          "layout": "combine",
           "nodes": [
-            { "label": "Result", "icon": "file" },
-            { "label": "Return", "icon": "zap" }
+            { "label": "Result", "icon": "file", "color": "purple" },
+            { "label": "Context", "icon": "layers", "color": "blue" },
+            { "label": "Return", "icon": "zap", "color": "green" }
           ]
         },
         {
@@ -78,9 +84,10 @@
           "subtitle": "Controller asks view",
           "colorKey": "augment",
           "startFrame": 823,
+          "layout": "arrow",
           "nodes": [
-            { "label": "View", "icon": "layers" },
-            { "label": "Render", "icon": "sparkle" }
+            { "label": "View", "icon": "layers", "color": "orange" },
+            { "label": "Render", "icon": "sparkle", "color": "green" }
           ]
         }
       ]
@@ -96,9 +103,11 @@
           "subtitle": "View renders HTML",
           "colorKey": "generate",
           "startFrame": 1120,
+          "layout": "flow",
           "nodes": [
-            { "label": "HTML", "icon": "file" },
-            { "label": "Browser", "icon": "terminal" }
+            { "label": "Template", "icon": "code", "color": "blue" },
+            { "label": "HTML", "icon": "file", "color": "orange" },
+            { "label": "Browser", "icon": "monitor", "color": "green" }
           ]
         },
         {
@@ -107,9 +116,10 @@
           "subtitle": "Return to user",
           "colorKey": "generate",
           "startFrame": 1329,
+          "layout": "arrow",
           "nodes": [
-            { "label": "Response", "icon": "sparkle" },
-            { "label": "User", "icon": "user" }
+            { "label": "Response", "icon": "sparkle", "color": "green" },
+            { "label": "User", "icon": "user", "color": "blue" }
           ]
         }
       ]

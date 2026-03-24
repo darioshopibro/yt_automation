@@ -11,6 +11,8 @@ import {
 } from "remotion";
 import React from "react";
 import config from "./dynamic-config.json";
+import { ExplainerLayout } from "./ExplainerLayout";
+import { getLayoutSize } from "./dimensions";
 
 /*
 === DYNAMIC STICKY PIPELINE ===
@@ -30,6 +32,7 @@ Features:
 interface NodeConfig {
   label: string;
   icon: string;
+  color?: string; // Optional: blue, green, orange, purple, red
 }
 
 interface SectionConfig {
@@ -38,6 +41,7 @@ interface SectionConfig {
   subtitle?: string;
   colorKey: string;
   startFrame: number;
+  layout?: string; // Optional: flow, arrow, vs, combine, negation, if-else, merge, bidirectional, filter
   nodes: NodeConfig[];
 }
 
@@ -224,8 +228,20 @@ const getContainerSize = (itemCount: number) => {
   return { width, height };
 };
 
-// Actual SectionBox size based on node count
-const getSectionBoxSize = (nodeCount: number) => {
+// Actual SectionBox size based on node count and layout type
+const getSectionBoxSize = (nodeCount: number, layout?: string) => {
+  // If layout is specified, use ExplainerLayout sizing
+  if (layout && layout !== "grid") {
+    const layoutSize = getLayoutSize(layout, nodeCount);
+    if (layoutSize.width > 0) {
+      // Add padding for header and borders
+      return {
+        width: Math.max(MIN_WIDTH, PADDING_X + layoutSize.width),
+        height: Math.max(MIN_HEIGHT, HEADER_HEIGHT + PADDING_Y + layoutSize.height),
+      };
+    }
+  }
+  // Fallback to grid sizing
   return getContainerSize(nodeCount);
 };
 
@@ -238,8 +254,8 @@ const getStickyDimensions = (sections: SectionConfig[]) => {
   const paddingX = 48; // left + right
   const paddingY = 24; // top + bottom (symmetric)
 
-  // Calculate max box dimensions per row
-  const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length));
+  // Calculate max box dimensions per row (including layout-based sizing)
+  const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length, s.layout));
   const maxBoxW = Math.max(...boxSizes.map(s => s.width));
   const maxBoxH = Math.max(...boxSizes.map(s => s.height));
 
@@ -300,8 +316,8 @@ const getSectionPositions = (
   const gap = 24;
   const padding = 24;
 
-  // Get actual box sizes
-  const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length));
+  // Get actual box sizes (including layout-based sizing)
+  const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length, s.layout));
   const maxBoxW = Math.max(...boxSizes.map(s => s.width));
   const maxBoxH = Math.max(...boxSizes.map(s => s.height));
 
@@ -507,13 +523,19 @@ const SectionBox: React.FC<{
   title: string;
   subtitle?: string;
   colorScheme: ColorScheme;
-  children: React.ReactNode;
+  children?: React.ReactNode;
   opacity: number;
   scale: number;
   activeIntensity?: number; // 0-1, how "active" this section is (for highlight)
-}> = ({ title, subtitle, colorScheme, children, opacity, scale, activeIntensity = 1 }) => {
-  const childCount = React.Children.count(children);
-  const autoSize = getContainerSize(childCount);
+  layout?: string; // NEW: flow, arrow, vs, combine, negation, if-else, merge, etc.
+  nodes?: NodeConfig[]; // NEW: nodes for ExplainerLayout
+}> = ({ title, subtitle, colorScheme, children, opacity, scale, activeIntensity = 1, layout, nodes }) => {
+  // Use ExplainerLayout sizing if layout is specified
+  const useExplainer = layout && layout !== "grid" && nodes && nodes.length > 0;
+  const childCount = useExplainer ? nodes!.length : React.Children.count(children);
+  const autoSize = useExplainer
+    ? getSectionBoxSize(nodes!.length, layout)
+    : getContainerSize(childCount);
 
   return (
     <div
@@ -571,17 +593,32 @@ const SectionBox: React.FC<{
         </div>
       )}
 
-      {/* Content - CSS Grid */}
-      <div style={{
-        flex: 1,
-        display: "grid",
-        gridTemplateColumns: `repeat(${getGridCols(childCount)}, minmax(0, 1fr))`,
-        gap: 20,
-        justifyItems: "center",
-        alignContent: "start",
-      }}>
-        {children}
-      </div>
+      {/* Content - ExplainerLayout or CSS Grid */}
+      {useExplainer ? (
+        <div style={{
+          flex: 1,
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}>
+          <ExplainerLayout
+            layout={layout!}
+            nodes={nodes!}
+            accentColor={colorScheme.accent}
+          />
+        </div>
+      ) : (
+        <div style={{
+          flex: 1,
+          display: "grid",
+          gridTemplateColumns: `repeat(${getGridCols(childCount)}, minmax(0, 1fr))`,
+          gap: 20,
+          justifyItems: "center",
+          alignContent: "start",
+        }}>
+          {children}
+        </div>
+      )}
     </div>
   );
 };
@@ -836,16 +873,51 @@ export const DynamicPipeline: React.FC = () => {
   const canvasWidth = lastSticky.x + lastSticky.width + 100;
   const canvasHeight = stickyY + Math.max(...stickyLayouts.map(s => s.height)) + 100;
 
+  // Calculate dynamic scale based on sticky size (smaller scale for larger stickies)
+  const camViewW = 1920;
+  const camViewH = 1080;
+  const BADGE_HEIGHT = 38; // Badge above sticky (28px offset + 10px extra space)
+
+  const getScaleForSticky = (stickyWidth: number, stickyHeight: number) => {
+    // Account for badge in visual height
+    const visualHeight = stickyHeight + BADGE_HEIGHT;
+
+    // Calculate scale needed to fit sticky in viewport
+    // We want: stickyWidth * scale = viewportWidth - padding
+    // So: scale = (viewportWidth - padding) / stickyWidth
+    // But we're scaling the CANVAS down, so SMALLER scale = more zoomed out
+    const padding = 400; // generous padding around sticky
+    const availableW = camViewW - padding;
+    const availableH = camViewH - padding;
+
+    // Scale needed to fit - take the smaller (more restrictive)
+    const scaleToFitW = availableW / stickyWidth;
+    const scaleToFitH = availableH / visualHeight;
+    const scaleToFit = Math.min(scaleToFitW, scaleToFitH);
+
+    // Cap between 0.55 and 0.75 - always show full sticky with room to spare
+    return Math.min(0.75, Math.max(0.55, scaleToFit));
+  };
+
   // Generate camera keyframes from sticky positions
+  // Camera Y accounts for badge: visual center = stickyY + (height - 28) / 2 = stickyY + height/2 - 14
+  const getCameraY = (stickyHeight: number) => stickyY + stickyHeight / 2 - 14;
+
   const cameraKeyframes = [
-    { frame: 0, x: stickyLayouts[0].x + stickyLayouts[0].width / 2, y: stickyY + stickyLayouts[0].height / 2, scale: 0.7 },
+    {
+      frame: 0,
+      x: stickyLayouts[0].x + stickyLayouts[0].width / 2,
+      y: getCameraY(stickyLayouts[0].height),
+      scale: getScaleForSticky(stickyLayouts[0].width, stickyLayouts[0].height) // same scale, no extra zoom
+    },
     ...cfg.stickies.map((sticky, i) => {
       const firstSection = sticky.sections[0];
+      const stickyScale = getScaleForSticky(stickyLayouts[i].width, stickyLayouts[i].height);
       return {
         frame: firstSection.startFrame - 5,
         x: stickyLayouts[i].x + stickyLayouts[i].width / 2,
-        y: stickyY + stickyLayouts[i].height / 2,
-        scale: 0.85,
+        y: getCameraY(stickyLayouts[i].height),
+        scale: stickyScale,
       };
     }),
   ];
@@ -994,9 +1066,11 @@ export const DynamicPipeline: React.FC = () => {
           width: canvasWidth,
           height: canvasHeight,
           position: "absolute",
-          left: viewportWidth / 2,
-          top: viewportHeight / 2,
-          transform: `scale(${cameraScale}) translate(${-cameraX}px, ${-cameraY}px)`,
+          // Camera centering: position canvas so camera point is at screen center
+          // Offset to push view right (+) so sticky is more centered
+          left: viewportWidth / 2 - cameraX * cameraScale + 300,
+          top: viewportHeight / 2 - cameraY * cameraScale + 100,
+          transform: `scale(${cameraScale})`,
           transformOrigin: "0 0",
         }}
       >
@@ -1166,8 +1240,11 @@ export const DynamicPipeline: React.FC = () => {
                     opacity={getOpacity(sectionAppearFrame)}
                     scale={finalScale}
                     activeIntensity={intensity}
+                    layout={section.layout}
+                    nodes={section.nodes}
                   >
-                    {section.nodes.map((node, nodeIndex) => {
+                    {/* Fallback: render NodeItems if no layout specified */}
+                    {(!section.layout || section.layout === "grid") && section.nodes.map((node, nodeIndex) => {
                       const nodeDelay = section.startFrame + (nodeIndex * 10);
                       return (
                         <NodeItem

@@ -3,7 +3,7 @@
   "version": "1.0.0",
   "scripts": {
     "dev": "remotion studio --port 3020",
-    "build": "remotion render RAGPipeline out/rag-pipeline.mp4",
+    "build": "remotion render DynamicPipeline out/dynamic-pipeline.mp4",
     "preview": "remotion preview --port 3003"
   },
   "dependencies": {
