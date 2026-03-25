@@ -870,54 +870,72 @@ export const DynamicPipeline: React.FC = () => {
   const canvasWidth = lastSticky.x + lastSticky.width + 100;
   const canvasHeight = stickyY + Math.max(...stickyLayouts.map(s => s.height)) + 100;
 
-  // Calculate dynamic scale based on sticky size (smaller scale for larger stickies)
+  // === CAMERA SYSTEM ===
+  // Camera follows sections, not just stickies. Pans within sticky to active section.
   const camViewW = 1920;
   const camViewH = 1080;
-  const BADGE_HEIGHT = 38; // Badge above sticky (28px offset + 10px extra space)
+  const BADGE_HEIGHT = 38;
 
+  // Scale to fit entire sticky in viewport — NO minimum clamp that cuts content
   const getScaleForSticky = (stickyWidth: number, stickyHeight: number) => {
-    // Account for badge in visual height
     const visualHeight = stickyHeight + BADGE_HEIGHT;
-
-    // Calculate scale needed to fit sticky in viewport
-    // We want: stickyWidth * scale = viewportWidth - padding
-    // So: scale = (viewportWidth - padding) / stickyWidth
-    // But we're scaling the CANVAS down, so SMALLER scale = more zoomed out
-    const padding = 400; // generous padding around sticky
-    const availableW = camViewW - padding;
-    const availableH = camViewH - padding;
-
-    // Scale needed to fit - take the smaller (more restrictive)
-    const scaleToFitW = availableW / stickyWidth;
-    const scaleToFitH = availableH / visualHeight;
-    const scaleToFit = Math.min(scaleToFitW, scaleToFitH);
-
-    // Cap between 0.7 and 0.95 - more zoomed in
-    return Math.min(0.95, Math.max(0.7, scaleToFit));
+    const padding = 300;
+    const scaleToFitW = (camViewW - padding) / stickyWidth;
+    const scaleToFitH = (camViewH - padding) / visualHeight;
+    // Always fit — no min clamp. Max 0.95 so we don't zoom in too much.
+    return Math.min(0.95, Math.min(scaleToFitW, scaleToFitH));
   };
 
-  // Generate camera keyframes from sticky positions
-  // Camera Y accounts for badge: visual center = stickyY + (height - 28) / 2 = stickyY + height/2 - 14
-  const getCameraY = (stickyHeight: number) => stickyY + stickyHeight / 2 - 14;
+  // Get camera target for a specific section within a sticky
+  const getSectionCameraTarget = (stickyIdx: number, sectionIdx: number) => {
+    const layout = stickyLayouts[stickyIdx];
+    const sticky = cfg.stickies[stickyIdx];
+    const stickyScale = getScaleForSticky(layout.width, layout.height);
 
-  const cameraKeyframes = [
-    {
-      frame: 0,
-      x: stickyLayouts[0].x + stickyLayouts[0].width / 2,
-      y: getCameraY(stickyLayouts[0].height),
-      scale: getScaleForSticky(stickyLayouts[0].width, stickyLayouts[0].height) // same scale, no extra zoom
-    },
-    ...cfg.stickies.map((sticky, i) => {
-      const firstSection = sticky.sections[0];
-      const stickyScale = getScaleForSticky(stickyLayouts[i].width, stickyLayouts[i].height);
-      return {
-        frame: firstSection.startFrame - 5,
-        x: stickyLayouts[i].x + stickyLayouts[i].width / 2,
-        y: getCameraY(stickyLayouts[i].height),
-        scale: stickyScale,
-      };
-    }),
-  ];
+    // Sticky center (default target)
+    const stickyCenterX = layout.x + layout.width / 2;
+    const stickyCenterY = stickyY + layout.height / 2 - 14;
+
+    // If only 1-2 sections, just center on sticky — no need to pan
+    if (sticky.sections.length <= 2) {
+      return { x: stickyCenterX, y: stickyCenterY, scale: stickyScale };
+    }
+
+    // For 3+ sections, pan toward active section while keeping scale
+    const { positions } = getSectionPositions(sticky.sections, layout.width, layout.height, sticky.sections.length <= 2);
+    const pos = positions[sectionIdx];
+    if (!pos) return { x: stickyCenterX, y: stickyCenterY, scale: stickyScale };
+
+    // Blend: 70% sticky center + 30% section position — gentle pan, not a jump
+    const sectionCenterY = stickyY + pos.y + pos.h / 2;
+    const blendedY = stickyCenterY * 0.5 + sectionCenterY * 0.5;
+
+    return { x: stickyCenterX, y: blendedY, scale: stickyScale };
+  };
+
+  // Build camera keyframes: one per section (not per sticky)
+  const cameraKeyframes: { frame: number; x: number; y: number; scale: number }[] = [];
+
+  // Frame 0: start on first sticky
+  const firstTarget = getSectionCameraTarget(0, 0);
+  cameraKeyframes.push({ frame: 0, ...firstTarget });
+
+  // One keyframe per section — camera pans to each section as it becomes active
+  cfg.stickies.forEach((sticky, stickyIdx) => {
+    sticky.sections.forEach((section, sectionIdx) => {
+      const target = getSectionCameraTarget(stickyIdx, sectionIdx);
+      // Camera arrives 15 frames BEFORE section starts
+      cameraKeyframes.push({ frame: Math.max(1, section.startFrame - 15), ...target });
+    });
+  });
+
+  // End: zoom out to overview showing all stickies
+  const totalContentWidth = lastSticky.x + lastSticky.width - stickyLayouts[0].x;
+  const overviewScale = Math.min(0.5, (camViewW - 200) / totalContentWidth);
+  const overviewX = stickyLayouts[0].x + totalContentWidth / 2;
+  const overviewY = stickyY + Math.max(...stickyLayouts.map(s => s.height)) / 2;
+  // Zoom out 60 frames before end
+  cameraKeyframes.push({ frame: Math.max(cameraKeyframes[cameraKeyframes.length - 1].frame + 60, cfg.totalFrames - 60), x: overviewX, y: overviewY, scale: overviewScale });
 
   const getCameraValue = (prop: "x" | "y" | "scale") => {
     for (let i = 0; i < cameraKeyframes.length - 1; i++) {
@@ -1063,10 +1081,9 @@ export const DynamicPipeline: React.FC = () => {
           width: canvasWidth,
           height: canvasHeight,
           position: "absolute",
-          // Camera centering: position canvas so camera point is at screen center
-          // Offset to push view right (+) so sticky is more centered
-          left: viewportWidth / 2 - cameraX * cameraScale + 450,
-          top: viewportHeight / 2 - cameraY * cameraScale + 150,
+          // Camera centering: position canvas so camera target is at screen center
+          left: viewportWidth / 2 - cameraX * cameraScale,
+          top: viewportHeight / 2 - cameraY * cameraScale,
           transform: `scale(${cameraScale})`,
           transformOrigin: "0 0",
         }}
