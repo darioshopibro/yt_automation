@@ -4,6 +4,11 @@ Planira KOMPLETNU video kompoziciju: voiceover, timestamps, struktura, camera, z
 
 **Output:** `master-plan.json` koji se prosleđuje `remotion-builder` skill-u.
 
+**⚠️ OUTPUT LOKACIJE:**
+- **Finalni projekti** → `videos/{project-name}/` (gotovi video projekti)
+- **Privremeni fajlovi** → `workspace/{project-name}/` (voiceover, timestamps, master-plan dok se radi)
+- **NIKAD u root, NIKAD u skills folder, NIKAD u templates!**
+
 ---
 
 ## FUNDAMENTALNO: JEDNA KOMPOZICIJA

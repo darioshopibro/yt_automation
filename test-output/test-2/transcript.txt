@@ -1,3 +1,0 @@
-Kubernetes is a tool for managing and automating containerized workloads in the cloud. Imagine you have an orchestra. Think of each individual musician as a Docker container. To create beautiful music, we need a conductor to manage the musicians and set the tempo. Now imagine the conductor as Kubernetes and the orchestra as an app like Robinhood.
-
-When the markets are closed, an app like Robinhood isn't doing much. But when they open, it needs to fulfill millions of trades for overpriced stocks like Tesla and Shopify. Kubernetes is the tool that orchestrates the infrastructure to handle the changing workload. It can scale containers across multiple machines, and if one fails, it knows how to replace it with a new one.

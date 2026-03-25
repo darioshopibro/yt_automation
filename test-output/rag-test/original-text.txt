@@ -1,7 +1,0 @@
-this sounds like the process of rag or retrieval augmented generation where large language models call on vector databases to provide key sources of data and information to answer a question
-
-we can take this data and put it into what we call a vector database a vector database is a mathematical representation of structured and unstructured data similar to what we might see in an array and these arrays are better suited for machine learning or generative ai models
-
-we query our vector database and we get back an embedding that includes the relevant data for which we're prompting and then we include it back into the original prompt and then we move over to the large language model
-
-that prompt that includes the vector embeddings now are fed into the large language model which then produces the output with the answer to our original question with sourced up to date and accurate data

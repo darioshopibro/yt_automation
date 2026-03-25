@@ -1,9 +1,0 @@
-If you split your application into microservices, how do you get them all to talk to each other? There are three main ways that microservices can communicate.
-
-The first is by API. Each microservice has its own endpoint that other microservices can call.
-
-The second option is a message broker. If your application can work asynchronously, you're better off using a message broker.
-
-The last option is a service mesh. A service mesh handles all communication, as well as discoverability and reliability of your services.
-
-With monoliths, if one part of your application gets more requests, you have no choice but to scale the whole application. But with microservices, you can scale just that one service and save money.

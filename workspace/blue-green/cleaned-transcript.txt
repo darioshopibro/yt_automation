@@ -1,0 +1,7 @@
+Every time your team ships code, something breaks in production. The reason is simple: you're deploying manually, infrequently, and without tests.
+
+Blue-Green deployment changes that. You run two identical environments: Blue, which serves live traffic, and Green, which is your staging area. When developers commit code, it triggers an automated pipeline. First, the CI server pulls the latest changes and runs your test suite. If tests pass, it pushes the build artifact to the Green environment. If tests fail, the pipeline stops and the team gets notified.
+
+Once Green is verified, you flip the load balancer. Traffic instantly shifts from Blue to Green. Blue stays warm as a rollback target. If anything goes wrong in production, you switch back in seconds.
+
+The result: code plus tests combine to create a safe, deployable artifact. Developers commit small changes often. Conflicts are caught early. Deployments become routine, not emergencies.

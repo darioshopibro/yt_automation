@@ -1,5 +1,0 @@
-kubernetes a tool for managing and automating containerized workloads in the cloud imagine you have an orchestra think of each individual musician as a docker container to create beautiful music we need a conductor to manage the musicians and set the tempo now imagine the conductor as kubernetes and the orchestra as an app like robinhood
-
-a system deployed on kubernetes is known as a cluster the brain of the operation is known as the control plane it exposes an api server that can handle both internal and external requests to manage the cluster it also contains its own key value database called etcd used to store important information about running the cluster
-
-as a developer you define objects in yaml that describe the desired state of your cluster for example we might have an nginx deployment that has a replica set with three pods

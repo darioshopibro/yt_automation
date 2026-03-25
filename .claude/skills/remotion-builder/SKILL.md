@@ -5,6 +5,11 @@ Implementira video prema `master-plan.json` koji je generisao `remotion-planner`
 **Input:** `master-plan.json` (iz planner-a)
 **Output:** Funkcionalan Remotion projekat
 
+**⚠️ OUTPUT LOKACIJE:**
+- **Finalni projekti** → `videos/{project-name}/` (gotovi video projekti)
+- **Privremeni fajlovi** → `workspace/{project-name}/` (voiceover, timestamps, master-plan dok se radi)
+- **NIKAD u root, NIKAD u skills folder, NIKAD u templates!**
+
 ---
 
 ## WORKFLOW
@@ -121,7 +126,7 @@ cp master-plan.json ./my-project/src/
 ### KORAK 3: Kopiraj Sounds (OBAVEZNO!)
 
 ```bash
-cp -r "/Users/dario61/Desktop/YT automation/templates/remotion-nvidia-test/public/sounds" ./my-project/public/
+# Sounds su već u template-u (ai-video-gen-pipeline/public/sounds/) — ne treba kopirati posebno
 ```
 
 **MORA postojati:**

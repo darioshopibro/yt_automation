@@ -1,5 +1,0 @@
-We now have a service that's publishing events. But how do we get all the other services to respond to them? We do this using an event broker. Your other services subscribe to this event broker, and the broker is responsible for pushing events out to the subscribed services. This is often referred to as the publisher-subscriber model, or pub-sub for short.
-
-When a service subscribes to the event broker, they specify which events they're interested in.
-
-In an event-driven architecture, there are three main components. There's the producer, which publishes the events. The broker, which manages which subscribers get which events. And finally, there's the consumer, which subscribes to the event broker to receive the events.

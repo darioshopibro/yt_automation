@@ -1,0 +1,289 @@
+{
+  "meta": {
+    "title": "Blue-Green Deployment",
+    "fps": 30,
+    "totalFrames": 2032,
+    "totalDuration": 67.73,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 66.734,
+    "words": [
+      { "word": "Every", "start": 0.0, "end": 0.325, "startFrame": 0, "endFrame": 10 },
+      { "word": "time", "start": 0.383, "end": 0.65, "startFrame": 11, "endFrame": 20 },
+      { "word": "your", "start": 0.685, "end": 0.813, "startFrame": 21, "endFrame": 24 },
+      { "word": "team", "start": 0.859, "end": 1.091, "startFrame": 26, "endFrame": 33 },
+      { "word": "ships", "start": 1.149, "end": 1.451, "startFrame": 34, "endFrame": 44 },
+      { "word": "code,", "start": 1.509, "end": 1.927, "startFrame": 45, "endFrame": 58 },
+      { "word": "something", "start": 2.101, "end": 2.473, "startFrame": 63, "endFrame": 74 },
+      { "word": "breaks", "start": 2.531, "end": 2.856, "startFrame": 76, "endFrame": 86 },
+      { "word": "in", "start": 2.902, "end": 2.972, "startFrame": 87, "endFrame": 89 },
+      { "word": "production.", "start": 3.03, "end": 3.75, "startFrame": 91, "endFrame": 113 },
+      { "word": "The", "start": 4.133, "end": 4.249, "startFrame": 124, "endFrame": 127 },
+      { "word": "reason", "start": 4.319, "end": 4.748, "startFrame": 130, "endFrame": 142 },
+      { "word": "is", "start": 4.923, "end": 5.097, "startFrame": 148, "endFrame": 153 },
+      { "word": "simple:", "start": 5.155, "end": 5.724, "startFrame": 155, "endFrame": 172 },
+      { "word": "you're", "start": 6.107, "end": 6.304, "startFrame": 183, "endFrame": 189 },
+      { "word": "deploying", "start": 6.339, "end": 6.769, "startFrame": 190, "endFrame": 203 },
+      { "word": "manually,", "start": 6.838, "end": 7.57, "startFrame": 205, "endFrame": 227 },
+      { "word": "infrequently,", "start": 7.686, "end": 8.545, "startFrame": 231, "endFrame": 256 },
+      { "word": "and", "start": 8.568, "end": 8.707, "startFrame": 257, "endFrame": 261 },
+      { "word": "without", "start": 8.754, "end": 9.079, "startFrame": 263, "endFrame": 272 },
+      { "word": "tests.", "start": 9.125, "end": 10.902, "startFrame": 274, "endFrame": 327 },
+      { "word": "Blue-Green", "start": 10.902, "end": 10.902, "startFrame": 327, "endFrame": 327 },
+      { "word": "deployment", "start": 10.96, "end": 11.482, "startFrame": 329, "endFrame": 344 },
+      { "word": "changes", "start": 11.529, "end": 11.981, "startFrame": 346, "endFrame": 359 },
+      { "word": "that.", "start": 12.04, "end": 12.516, "startFrame": 361, "endFrame": 375 },
+      { "word": "You", "start": 12.957, "end": 13.096, "startFrame": 389, "endFrame": 393 },
+      { "word": "run", "start": 13.189, "end": 13.386, "startFrame": 396, "endFrame": 402 },
+      { "word": "two", "start": 13.456, "end": 13.746, "startFrame": 404, "endFrame": 412 },
+      { "word": "identical", "start": 13.897, "end": 14.443, "startFrame": 417, "endFrame": 433 },
+      { "word": "environments:", "start": 14.501, "end": 15.302, "startFrame": 435, "endFrame": 459 },
+      { "word": "Blue,", "start": 15.418, "end": 15.975, "startFrame": 463, "endFrame": 479 },
+      { "word": "which", "start": 16.091, "end": 16.312, "startFrame": 483, "endFrame": 489 },
+      { "word": "serves", "start": 16.358, "end": 16.66, "startFrame": 491, "endFrame": 500 },
+      { "word": "live", "start": 16.73, "end": 16.997, "startFrame": 502, "endFrame": 510 },
+      { "word": "traffic,", "start": 17.032, "end": 17.566, "startFrame": 511, "endFrame": 527 },
+      { "word": "and", "start": 17.6, "end": 17.763, "startFrame": 528, "endFrame": 533 },
+      { "word": "Green,", "start": 17.844, "end": 18.46, "startFrame": 535, "endFrame": 554 },
+      { "word": "which", "start": 18.634, "end": 18.843, "startFrame": 559, "endFrame": 565 },
+      { "word": "is", "start": 18.877, "end": 18.947, "startFrame": 566, "endFrame": 568 },
+      { "word": "your", "start": 19.005, "end": 19.121, "startFrame": 570, "endFrame": 574 },
+      { "word": "staging", "start": 19.168, "end": 19.574, "startFrame": 575, "endFrame": 587 },
+      { "word": "area.", "start": 19.632, "end": 20.155, "startFrame": 589, "endFrame": 605 },
+      { "word": "When", "start": 20.665, "end": 20.851, "startFrame": 620, "endFrame": 626 },
+      { "word": "developers", "start": 20.898, "end": 21.42, "startFrame": 627, "endFrame": 643 },
+      { "word": "commit", "start": 21.467, "end": 21.722, "startFrame": 644, "endFrame": 652 },
+      { "word": "code,", "start": 21.803, "end": 22.337, "startFrame": 654, "endFrame": 670 },
+      { "word": "it", "start": 22.453, "end": 22.593, "startFrame": 674, "endFrame": 678 },
+      { "word": "triggers", "start": 22.628, "end": 23.022, "startFrame": 679, "endFrame": 691 },
+      { "word": "an", "start": 23.057, "end": 23.127, "startFrame": 692, "endFrame": 694 },
+      { "word": "automated", "start": 23.185, "end": 23.707, "startFrame": 696, "endFrame": 711 },
+      { "word": "pipeline.", "start": 23.754, "end": 24.532, "startFrame": 713, "endFrame": 736 },
+      { "word": "First,", "start": 24.973, "end": 25.611, "startFrame": 749, "endFrame": 768 },
+      { "word": "the", "start": 25.936, "end": 26.052, "startFrame": 778, "endFrame": 782 },
+      { "word": "CI", "start": 26.111, "end": 26.552, "startFrame": 783, "endFrame": 797 },
+      { "word": "server", "start": 26.668, "end": 27.004, "startFrame": 800, "endFrame": 810 },
+      { "word": "pulls", "start": 27.063, "end": 27.295, "startFrame": 812, "endFrame": 819 },
+      { "word": "the", "start": 27.353, "end": 27.422, "startFrame": 821, "endFrame": 823 },
+      { "word": "latest", "start": 27.469, "end": 27.782, "startFrame": 824, "endFrame": 833 },
+      { "word": "changes", "start": 27.829, "end": 28.293, "startFrame": 835, "endFrame": 849 },
+      { "word": "and", "start": 28.363, "end": 28.479, "startFrame": 851, "endFrame": 854 },
+      { "word": "runs", "start": 28.537, "end": 28.758, "startFrame": 856, "endFrame": 863 },
+      { "word": "your", "start": 28.804, "end": 28.92, "startFrame": 864, "endFrame": 868 },
+      { "word": "test", "start": 28.967, "end": 29.199, "startFrame": 869, "endFrame": 876 },
+      { "word": "suite.", "start": 29.234, "end": 29.71, "startFrame": 877, "endFrame": 891 },
+      { "word": "If", "start": 30.035, "end": 30.186, "startFrame": 901, "endFrame": 906 },
+      { "word": "tests", "start": 30.244, "end": 30.546, "startFrame": 907, "endFrame": 916 },
+      { "word": "pass,", "start": 30.604, "end": 31.219, "startFrame": 918, "endFrame": 937 },
+      { "word": "it", "start": 31.428, "end": 31.556, "startFrame": 943, "endFrame": 947 },
+      { "word": "pushes", "start": 31.602, "end": 31.915, "startFrame": 948, "endFrame": 957 },
+      { "word": "the", "start": 31.973, "end": 32.043, "startFrame": 959, "endFrame": 961 },
+      { "word": "build", "start": 32.09, "end": 32.333, "startFrame": 963, "endFrame": 970 },
+      { "word": "artifact", "start": 32.391, "end": 32.926, "startFrame": 972, "endFrame": 988 },
+      { "word": "to", "start": 32.96, "end": 33.018, "startFrame": 989, "endFrame": 991 },
+      { "word": "the", "start": 33.076, "end": 33.146, "startFrame": 992, "endFrame": 994 },
+      { "word": "Green", "start": 33.181, "end": 33.402, "startFrame": 995, "endFrame": 1002 },
+      { "word": "environment.", "start": 33.448, "end": 34.098, "startFrame": 1003, "endFrame": 1023 },
+      { "word": "If", "start": 34.539, "end": 34.679, "startFrame": 1036, "endFrame": 1040 },
+      { "word": "tests", "start": 34.737, "end": 34.992, "startFrame": 1042, "endFrame": 1050 },
+      { "word": "fail,", "start": 35.05, "end": 35.584, "startFrame": 1052, "endFrame": 1068 },
+      { "word": "the", "start": 35.758, "end": 35.851, "startFrame": 1073, "endFrame": 1076 },
+      { "word": "pipeline", "start": 35.886, "end": 36.316, "startFrame": 1077, "endFrame": 1089 },
+      { "word": "stops", "start": 36.35, "end": 36.803, "startFrame": 1091, "endFrame": 1104 },
+      { "word": "and", "start": 37.012, "end": 37.268, "startFrame": 1110, "endFrame": 1118 },
+      { "word": "the", "start": 37.302, "end": 37.372, "startFrame": 1119, "endFrame": 1121 },
+      { "word": "team", "start": 37.407, "end": 37.593, "startFrame": 1122, "endFrame": 1128 },
+      { "word": "gets", "start": 37.651, "end": 37.825, "startFrame": 1130, "endFrame": 1135 },
+      { "word": "notified.", "start": 37.871, "end": 39.241, "startFrame": 1136, "endFrame": 1177 },
+      { "word": "Once", "start": 39.241, "end": 39.241, "startFrame": 1177, "endFrame": 1177 },
+      { "word": "Green", "start": 39.288, "end": 39.508, "startFrame": 1179, "endFrame": 1185 },
+      { "word": "is", "start": 39.555, "end": 39.624, "startFrame": 1187, "endFrame": 1189 },
+      { "word": "verified,", "start": 39.683, "end": 40.379, "startFrame": 1190, "endFrame": 1211 },
+      { "word": "you", "start": 40.588, "end": 40.693, "startFrame": 1218, "endFrame": 1221 },
+      { "word": "flip", "start": 40.751, "end": 40.96, "startFrame": 1223, "endFrame": 1229 },
+      { "word": "the", "start": 41.006, "end": 41.076, "startFrame": 1230, "endFrame": 1232 },
+      { "word": "load", "start": 41.111, "end": 41.273, "startFrame": 1233, "endFrame": 1238 },
+      { "word": "balancer.", "start": 41.32, "end": 41.97, "startFrame": 1240, "endFrame": 1259 },
+      { "word": "Traffic", "start": 42.353, "end": 42.829, "startFrame": 1271, "endFrame": 1285 },
+      { "word": "instantly", "start": 42.945, "end": 43.467, "startFrame": 1288, "endFrame": 1304 },
+      { "word": "shifts", "start": 43.525, "end": 43.827, "startFrame": 1306, "endFrame": 1315 },
+      { "word": "from", "start": 43.874, "end": 44.025, "startFrame": 1316, "endFrame": 1321 },
+      { "word": "Blue", "start": 44.083, "end": 44.524, "startFrame": 1322, "endFrame": 1336 },
+      { "word": "to", "start": 44.64, "end": 44.768, "startFrame": 1339, "endFrame": 1343 },
+      { "word": "Green.", "start": 44.837, "end": 45.325, "startFrame": 1345, "endFrame": 1360 },
+      { "word": "Blue", "start": 45.766, "end": 46.045, "startFrame": 1373, "endFrame": 1381 },
+      { "word": "stays", "start": 46.08, "end": 46.335, "startFrame": 1382, "endFrame": 1390 },
+      { "word": "warm", "start": 46.393, "end": 46.741, "startFrame": 1392, "endFrame": 1402 },
+      { "word": "as", "start": 46.857, "end": 47.02, "startFrame": 1406, "endFrame": 1411 },
+      { "word": "a", "start": 47.066, "end": 47.09, "startFrame": 1412, "endFrame": 1413 },
+      { "word": "rollback", "start": 47.148, "end": 47.52, "startFrame": 1414, "endFrame": 1426 },
+      { "word": "target.", "start": 47.566, "end": 48.1, "startFrame": 1427, "endFrame": 1443 },
+      { "word": "If", "start": 48.483, "end": 48.623, "startFrame": 1455, "endFrame": 1459 },
+      { "word": "anything", "start": 48.704, "end": 49.11, "startFrame": 1461, "endFrame": 1473 },
+      { "word": "goes", "start": 49.157, "end": 49.342, "startFrame": 1475, "endFrame": 1480 },
+      { "word": "wrong", "start": 49.389, "end": 49.633, "startFrame": 1482, "endFrame": 1489 },
+      { "word": "in", "start": 49.679, "end": 49.737, "startFrame": 1490, "endFrame": 1492 },
+      { "word": "production,", "start": 49.795, "end": 50.503, "startFrame": 1494, "endFrame": 1515 },
+      { "word": "you", "start": 50.654, "end": 50.759, "startFrame": 1520, "endFrame": 1523 },
+      { "word": "switch", "start": 50.828, "end": 51.107, "startFrame": 1525, "endFrame": 1533 },
+      { "word": "back", "start": 51.153, "end": 51.339, "startFrame": 1535, "endFrame": 1540 },
+      { "word": "in", "start": 51.397, "end": 51.467, "startFrame": 1542, "endFrame": 1544 },
+      { "word": "seconds.", "start": 51.537, "end": 52.698, "startFrame": 1546, "endFrame": 1581 },
+      { "word": "The", "start": 52.698, "end": 52.698, "startFrame": 1581, "endFrame": 1581 },
+      { "word": "result:", "start": 52.767, "end": 53.383, "startFrame": 1583, "endFrame": 1601 },
+      { "word": "code", "start": 53.708, "end": 54.068, "startFrame": 1611, "endFrame": 1622 },
+      { "word": "plus", "start": 54.114, "end": 54.404, "startFrame": 1623, "endFrame": 1632 },
+      { "word": "tests", "start": 54.462, "end": 55.008, "startFrame": 1634, "endFrame": 1650 },
+      { "word": "combine", "start": 55.182, "end": 55.647, "startFrame": 1655, "endFrame": 1669 },
+      { "word": "to", "start": 55.681, "end": 55.739, "startFrame": 1670, "endFrame": 1672 },
+      { "word": "create", "start": 55.809, "end": 56.146, "startFrame": 1674, "endFrame": 1684 },
+      { "word": "a", "start": 56.192, "end": 56.227, "startFrame": 1686, "endFrame": 1687 },
+      { "word": "safe,", "start": 56.343, "end": 56.854, "startFrame": 1690, "endFrame": 1706 },
+      { "word": "deployable", "start": 57.028, "end": 57.655, "startFrame": 1711, "endFrame": 1730 },
+      { "word": "artifact.", "start": 57.702, "end": 58.491, "startFrame": 1731, "endFrame": 1755 },
+      { "word": "Developers", "start": 58.932, "end": 59.501, "startFrame": 1768, "endFrame": 1785 },
+      { "word": "commit", "start": 59.547, "end": 59.791, "startFrame": 1786, "endFrame": 1794 },
+      { "word": "small", "start": 59.849, "end": 60.093, "startFrame": 1795, "endFrame": 1803 },
+      { "word": "changes", "start": 60.151, "end": 60.569, "startFrame": 1805, "endFrame": 1817 },
+      { "word": "often.", "start": 60.65, "end": 61.219, "startFrame": 1820, "endFrame": 1837 },
+      { "word": "Conflicts", "start": 61.463, "end": 62.02, "startFrame": 1844, "endFrame": 1861 },
+      { "word": "are", "start": 62.055, "end": 62.148, "startFrame": 1862, "endFrame": 1864 },
+      { "word": "caught", "start": 62.183, "end": 62.404, "startFrame": 1865, "endFrame": 1872 },
+      { "word": "early.", "start": 62.462, "end": 62.984, "startFrame": 1874, "endFrame": 1890 },
+      { "word": "Deployments", "start": 63.228, "end": 63.785, "startFrame": 1897, "endFrame": 1914 },
+      { "word": "become", "start": 63.832, "end": 64.099, "startFrame": 1915, "endFrame": 1923 },
+      { "word": "routine,", "start": 64.133, "end": 64.83, "startFrame": 1924, "endFrame": 1945 },
+      { "word": "not", "start": 65.039, "end": 65.422, "startFrame": 1951, "endFrame": 1963 },
+      { "word": "emergencies.", "start": 65.596, "end": 66.734, "startFrame": 1968, "endFrame": 2002 }
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Problem",
+        "color": "#ef4444",
+        "startFrame": 5,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Bad Deploy",
+            "layout": "flow",
+            "startFrame": 10,
+            "nodes": [
+              { "label": "Manual", "icon": "Wrench", "startFrame": 200 },
+              { "label": "Rare", "icon": "Clock", "startFrame": 226 },
+              { "label": "Break", "icon": "Warning", "startFrame": 260 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Environments",
+            "layout": "vs",
+            "startFrame": 410,
+            "nodes": [
+              { "label": "Blue", "icon": "Globe", "startFrame": 458 },
+              { "label": "Green", "icon": "Cube", "startFrame": 530 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "The Pipeline",
+        "color": "#3b82f6",
+        "startFrame": 610,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "CI Build",
+            "layout": "flow",
+            "startFrame": 630,
+            "nodes": [
+              { "label": "Commit", "icon": "GitCommit", "startFrame": 640 },
+              { "label": "Pull", "icon": "GitPullRequest", "startFrame": 807 },
+              { "label": "Test", "icon": "ShieldCheck", "startFrame": 864 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Gate",
+            "layout": "if-else",
+            "startFrame": 895,
+            "nodes": [
+              { "label": "Pass", "icon": "CheckCircle", "startFrame": 896 },
+              { "label": "Deploy", "icon": "CloudArrowUp", "startFrame": 952 },
+              { "label": "Fail", "icon": "XCircle", "startFrame": 1031 },
+              { "label": "Alert", "icon": "Bell", "startFrame": 1118 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Go Live",
+        "color": "#22c55e",
+        "startFrame": 1160,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Cutover",
+            "layout": "flow",
+            "startFrame": 1175,
+            "nodes": [
+              { "label": "Flip", "icon": "Swap", "startFrame": 1218 },
+              { "label": "Shift", "icon": "ArrowsSplit", "startFrame": 1266 },
+              { "label": "Rollback", "icon": "ArrowCounterClockwise", "startFrame": 1409 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Outcome",
+            "layout": "combine",
+            "startFrame": 1600,
+            "nodes": [
+              { "label": "Code", "icon": "Code", "startFrame": 1606 },
+              { "label": "Tests", "icon": "ListChecks", "startFrame": 1645 },
+              { "label": "Artifact", "icon": "Package", "startFrame": 1685 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 450, "scale": 0.5 },
+      { "frame": 185, "target": "sticky_1", "x": 350, "y": 420, "scale": 1.0 },
+      { "frame": 395, "target": "section_1_2", "x": 350, "y": 560, "scale": 1.0 },
+      { "frame": 595, "target": "sticky_2", "x": 960, "y": 420, "scale": 1.0 },
+      { "frame": 880, "target": "section_2_2", "x": 960, "y": 560, "scale": 1.0 },
+      { "frame": 1145, "target": "sticky_3", "x": 1570, "y": 420, "scale": 1.0 },
+      { "frame": 1585, "target": "section_3_2", "x": 1570, "y": 560, "scale": 1.0 },
+      { "frame": 1920, "target": "overview", "x": 960, "y": 450, "scale": 0.5 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 183, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 210, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 393, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 593, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 650, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 878, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.18 },
+      { "frame": 1143, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1918, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 9
+  }
+}

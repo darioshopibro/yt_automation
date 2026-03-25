@@ -1,5 +1,0 @@
-Here on GitHub I have a Node.js web app. To deliver this to my customers, I need to run three commands: test, build, and deploy. I can automate this entire process in the cloud using a CI service like GitHub Actions. First I create a workflow, then tell it to run on every push to the master branch.
-
-The event triggers a job that runs on a Linux container in the cloud. We tell the container what to do as a series of steps. First it checks out the code in this GitHub repo, sets up Node.js, installs my dependencies, and runs my test, build, and deploy commands.
-
-Now anytime we commit code to the master branch, it runs this workflow.

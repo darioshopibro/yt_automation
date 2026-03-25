@@ -1,3 +1,0 @@
-Data in an organization starts out in data lakes, in different databases that are part of different SaaS applications. Some applications are on-prem, and we also have streaming data, like our river here. This can be real-time data, like sensor data from factories where data is collected every second.
-
-One of the most common processes is ETL, which stands for extract, transform, and load. It does exactly what it sounds like. It extracts data from where it is. It transforms it by cleaning up mismatching data, taking care of missing values, getting rid of duplicated data, and making sure the right columns are there. Then it loads data into a landing repository with ready-to-use business data. An example of one of these repositories could be an enterprise data warehouse.
