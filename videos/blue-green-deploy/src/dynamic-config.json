@@ -1,0 +1,106 @@
+{
+  "title": "Blue-Green Deployment",
+  "fps": 30,
+  "totalFrames": 2106,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Problem",
+      "color": "#ef4444",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Broken Deploy",
+          "layout": "flow",
+          "startFrame": 30,
+          "nodes": [
+            { "label": "Ship", "icon": "Rocket" },
+            { "label": "Break", "icon": "LinkBreak" },
+            { "label": "Prod", "icon": "HardDrives" }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Root Cause",
+          "layout": "flow",
+          "startFrame": 178,
+          "nodes": [
+            { "label": "Manual", "icon": "Hand" },
+            { "label": "Rare", "icon": "ClockCountdown" },
+            { "label": "No Tests", "icon": "XCircle" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Blue-Green",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Environments",
+          "layout": "vs",
+          "startFrame": 445,
+          "nodes": [
+            { "label": "Blue", "icon": "Globe" },
+            { "label": "Green", "icon": "Leaf" }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "CI Pipeline",
+          "layout": "flow",
+          "startFrame": 662,
+          "nodes": [
+            { "label": "Commit", "icon": "GitCommit" },
+            { "label": "CI", "icon": "ShareNetwork" },
+            { "label": "Test", "icon": "ListChecks" }
+          ]
+        },
+        {
+          "id": "section_2_3",
+          "title": "Gate",
+          "layout": "if-else",
+          "startFrame": 920,
+          "nodes": [
+            { "label": "Pass", "icon": "CheckCircle" },
+            { "label": "Deploy", "icon": "Package" },
+            { "label": "Fail", "icon": "Warning" },
+            { "label": "Stop", "icon": "Prohibit" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "The Result",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Go Live",
+          "layout": "flow",
+          "startFrame": 1210,
+          "nodes": [
+            { "label": "Verify", "icon": "ShieldCheck" },
+            { "label": "Flip", "icon": "Swap" },
+            { "label": "Rollback", "icon": "ArrowCounterClockwise" }
+          ]
+        },
+        {
+          "id": "section_3_2",
+          "title": "Outcome",
+          "layout": "combine",
+          "startFrame": 1644,
+          "nodes": [
+            { "label": "Code", "icon": "Code" },
+            { "label": "Tests", "icon": "Checks" },
+            { "label": "Artifact", "icon": "Archive" }
+          ]
+        }
+      ]
+    }
+  ]
+}

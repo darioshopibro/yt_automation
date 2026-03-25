@@ -404,13 +404,22 @@ Primer: voiceover = 45.5 sec → totalFrames = ceil(45.5 * 30) + 30 = 1395
 
 ## OUTPUT
 
-Kada završiš planiranje, generiši:
+Sve ide u `workspace/{project-name}/`:
+```
+workspace/blue-green/
+├── master-plan.json
+├── voiceover.mp3
+├── voiceover-timestamps.json
+└── cleaned-transcript.txt
+```
 
-1. **`master-plan.json`** - kompletan plan (format gore)
-2. **`voiceover.mp3`** - audio fajl (u public/)
-3. **`voiceover-timestamps.json`** - word timestamps (u src/)
-
-Zatim proslijedi `remotion-builder` skill-u za implementaciju.
+**Kad završiš, reci builderu TAČNO gde su fajlovi:**
+```
+Pokreni remotion-builder sa:
+- master-plan.json: workspace/{project-name}/master-plan.json
+- voiceover.mp3: workspace/{project-name}/voiceover.mp3
+- voiceover-timestamps.json: workspace/{project-name}/voiceover-timestamps.json
+```
 
 ---
 
