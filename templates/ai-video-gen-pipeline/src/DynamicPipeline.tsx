@@ -87,13 +87,15 @@ interface NodeConfig {
   label: string;
   icon: string;
   color?: string; // Optional: blue, green, orange, purple, red
+  connectorAfter?: string; // Optional: label shown on connector after this node
+  startFrame?: number; // Optional: used by ExplainerLayout
 }
 
 interface SectionConfig {
   id: string;
   title: string;
   subtitle?: string;
-  colorKey: string;
+  colorKey?: string;
   startFrame: number;
   layout?: string; // Optional: flow, arrow, vs, combine, negation, if-else, merge, bidirectional, filter
   nodes: NodeConfig[];
@@ -103,12 +105,13 @@ interface StickyConfig {
   step: number;
   title: string;
   color: string;
+  startFrame?: number;
   sections: SectionConfig[];
 }
 
 interface Config {
   title: string;
-  subtitle: string;
+  subtitle?: string;
   fps: number;
   totalFrames: number;
   showStepPrefix?: boolean; // true = "Step 1: Title", false = just "Title"
@@ -522,7 +525,8 @@ const SectionBox: React.FC<{
   activeIntensity?: number; // 0-1, how "active" this section is (for highlight)
   layout?: string; // NEW: flow, arrow, vs, combine, negation, if-else, merge, etc.
   nodes?: NodeConfig[]; // NEW: nodes for ExplainerLayout
-}> = ({ title, subtitle, colorScheme, children, opacity, scale, activeIntensity = 1, layout, nodes }) => {
+  startFrame?: number; // For connector animation timing
+}> = ({ title, subtitle, colorScheme, children, opacity, scale, activeIntensity = 1, layout, nodes, startFrame }) => {
   // Use ExplainerLayout sizing if layout is specified
   const useExplainer = layout && layout !== "grid" && nodes && nodes.length > 0;
   const childCount = useExplainer ? nodes!.length : React.Children.count(children);
@@ -597,7 +601,7 @@ const SectionBox: React.FC<{
           <ExplainerLayout
             layout={layout!}
             nodes={nodes!}
-            accentColor={colorScheme.accent}
+            accentColor={colorScheme.border}
           />
         </div>
       ) : (
@@ -1235,6 +1239,7 @@ export const DynamicPipeline: React.FC = () => {
                     activeIntensity={intensity}
                     layout={section.layout}
                     nodes={section.nodes}
+                    startFrame={section.startFrame}
                   >
                     {/* Fallback: render NodeItems if no layout specified */}
                     {(!section.layout || section.layout === "grid") && section.nodes.map((node, nodeIndex) => {
@@ -1245,7 +1250,7 @@ export const DynamicPipeline: React.FC = () => {
                           label={node.label}
                           icon={node.icon}
                           opacity={getOpacity(nodeDelay)}
-                          accentColor={colorScheme.accent}
+                          accentColor={colorScheme.border}
                           frame={frame}
                           delay={nodeDelay}
                         />

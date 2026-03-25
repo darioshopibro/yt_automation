@@ -1,0 +1,72 @@
+{
+  "title": "Continuous Integration",
+  "subtitle": "How CI Solves Integration Problems",
+  "fps": 30,
+  "totalFrames": 1266,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Problem",
+      "color": "#ef4444",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Isolated Work",
+          "subtitle": "Developers working in silos",
+          "layout": "flow",
+          "colorKey": "userQuery",
+          "startFrame": 25,
+          "nodes": [
+            { "label": "Backend", "icon": "CloudX" },
+            { "label": "Frontend", "icon": "Desktop" }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Merge Fails",
+          "subtitle": "Integration breakdown",
+          "layout": "negation",
+          "colorKey": "augment",
+          "startFrame": 370,
+          "nodes": [
+            { "label": "Merge", "icon": "GitMerge" },
+            { "label": "Conflict", "icon": "Warning" },
+            { "label": "Cost", "icon": "CurrencyDollar" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "CI Solution",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Daily Commits",
+          "subtitle": "Frequent integration to shared repo",
+          "layout": "flow",
+          "colorKey": "embedding",
+          "startFrame": 710,
+          "nodes": [
+            { "label": "Commit", "icon": "GitCommit" },
+            { "label": "Repo", "icon": "Archive" }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "CI Workflow",
+          "subtitle": "Automated build and notify",
+          "layout": "flow",
+          "colorKey": "generate",
+          "startFrame": 970,
+          "nodes": [
+            { "label": "CI Server", "icon": "ShareNetwork" },
+            { "label": "Notify", "icon": "Bell" }
+          ]
+        }
+      ]
+    }
+  ]
+}

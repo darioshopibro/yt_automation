@@ -11,44 +11,52 @@ bo**Vreme po videu:** 30-60 min
 
 ---
 
-## TODO
+## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
 
-### FAZA 0: Struktura & Organizacija
-- [ ] **Audit projekta** - da li sve ima smisla kako je organizovano?
-  - [ ] Da li trebaju skills? (remotion-motion, research, itd.) ili pojednostaviti?
-  - [ ] Da li podeliti na više sub-agenata? (voiceover agent, animation agent, itd.)
-  - [ ] Restruktuiranje foldera/fajlova ako treba
-  - [ ] Proveriti kvalitet strukture - ima dosta stvari i dodavaćemo još
-  - [ ] Definisati jasnu hijerarhiju: templates/, tests/, research/, skills/
-  - [ ] Očistiti nepotrebne/zastarele fajlove
-  - [ ] Dokumentovati arhitekturu sistema
+### FAZA 1: Korekcije workflow
+- [ ] 1.1 Vizualne korekcije — menjaj dynamic-config.json (ikone, layout, nodovi, boje)
+- [ ] 1.2 Voice korekcije — regeneriši voiceover ili splice segment
 
-### FAZA 1: Testiranje (IN PROGRESS)
-- [x] test-flat-1 - PASS
-- [x] test-flat-2 - PASS
-- [x] test-sticky-1 - PASS
-- [x] test-sticky-2 - PASS
-- [ ] test-sticky-3 - TESTING
-- [ ] test-sticky-4 - TESTING
+### FAZA 2: Novi vizuali
+- [ ] 2.1 Table vizual (poređenja, feature matrice)
+- [ ] 2.2 Code Block vizual (syntax highlight, typing animacija)
+- [ ] 2.3 Terminal vizual (CLI, command output)
+- [ ] 2.4 List/Bullets vizual (numbered, checkmarks)
+- [ ] 2.5 Logo Grid vizual (tech stack, ekosistem)
+- [ ] 2.6 Timeline vizual (istorija, roadmap, verzije)
+- [ ] 2.7 Bar/Line charts (benchmarks, statistike)
+- [ ] 2.8 Pie/Donut charts (distribucija, procenti)
+- [ ] 2.9 VS Layout wrapper (side-by-side duboko poređenje)
 
-### FAZA 2: Novi vizuali (HIGH PRIORITY)
-- [ ] Table vizual
-- [ ] Code Block vizual
-- [ ] Terminal vizual
-- [ ] List/Bullets vizual
-- [ ] Logo Grid vizual
-- [ ] VS Layout (wrapper)
+### FAZA 3: Kompozitni vizuali
+- [ ] 3.1 Vizual kao node — sekcija može sadržati mini-vizual umesto samo ikona
+- [ ] 3.2 ExplainerLayout kao konektor — strelice/vs/combine povezuju vizuale
+- [ ] 3.3 Mixed sections — mešavina ikona + vizuala u istom sticky-ju
 
-### FAZA 3: Timeline & Charts
-- [ ] Timeline vizual
-- [ ] Bar/Line charts
-- [ ] Pie/Donut charts
+### FAZA 4: Vizual Routing (mozak sistema)
+- [ ] 4.1 Pravila po vizualu — uslovi kad se koji vizual koristi (ključne reči, heuristike)
+- [ ] 4.2 Transcript segmentacija — podeli transcript na logičke delove
+- [ ] 4.3 Segment → vizual matching — AI bira vizual za svaki segment
+- [ ] 4.4 Planner integracija — routing logika u remotion-planner skill
 
-### FAZA 4: Iterate
-- [ ] Poboljšati workflow based on learnings
-- [ ] Napraviti još 2-3 test videa
-- [ ] Definisati finalni stil
-- [ ] Uporedi Remotion vs Hera AI
+### FAZA 5: Research & Content Pipeline
+- [ ] 5.1 YT niša monitoring — prati kanale, nalazi videe koji performuju
+- [ ] 5.2 Video scoring — ranira po views/engagement/relevance
+- [ ] 5.3 Transcript extraction — skida i čisti transcript
+- [ ] 5.4 Content processing — preformuliše u originalan tekst (NE plagijat)
+- [ ] 5.5 User review — prikazuje kandidate, user bira/odobrava
+
+### FAZA 6: Branding skill
+- [ ] 6.1 Brand config — boje, font, logo, custom bg
+- [ ] 6.2 Template theming — svi vizuali čitaju brand config
+- [ ] 6.3 Per-project override — različiti brendovi za različite projekte
+
+### CLEANUP (kad stignemo)
+- [ ] Obriši nepotrebne test foldere (test-output/*, test-sticky-1, etc.)
+- [ ] Obriši backup fajlove (.backup.md)
+- [ ] Očisti root MD fajlove — konsoliduj/obriši zastarele docs
+- [ ] Obriši stare template-ove koji se više ne koriste
+
 
 
 ---

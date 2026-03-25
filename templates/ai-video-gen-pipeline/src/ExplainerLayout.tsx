@@ -90,6 +90,7 @@ export interface NodeConfig {
   label: string;
   icon: string;
   color?: string; // blue, green, orange, purple, red
+  connectorAfter?: string; // Optional label shown on the connector after this node
 }
 
 export interface ExplainerLayoutProps {
@@ -201,67 +202,84 @@ const NegatedNode: React.FC<{ label: string; icon: string }> = ({ label, icon })
   </div>
 );
 
-// === CONNECTOR WRAP (centers arrow with icon) ===
+// === CONNECTOR WRAP (centers connector with icon row) ===
 
 const ConnectorWrap: React.FC<{ children: React.ReactNode }> = ({ children }) => (
   <div style={{ height: ICON_SIZE, display: "flex", alignItems: "center" }}>{children}</div>
 );
 
-// === CONNECTORS ===
 
-const Arrow: React.FC = () => (
+// === CONNECTORS — accent colored + glow ===
+
+const Arrow: React.FC<{ color?: string; uid?: string }> = ({
+  color = "#ffffff",
+  uid = "0",
+}) => {
+  const c = color.replace(/[^a-zA-Z0-9]/g, "");
+  return (
+    <svg width={40} height={20} viewBox="0 0 40 20">
+      <defs>
+        <marker id={`arh-${uid}-${c}`} markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
+          <path d="M0,0 L8,4 L0,8 Z" fill={color} />
+        </marker>
+      </defs>
+      <line x1="0" y1="10" x2="32" y2="10" stroke={color} strokeWidth="2" markerEnd={`url(#arh-${uid}-${c})`} />
+    </svg>
+  );
+};
+
+const BiArrow: React.FC<{ color?: string; uid?: string }> = ({
+  color = "#ffffff",
+  uid = "0",
+}) => {
+  const c = color.replace(/[^a-zA-Z0-9]/g, "");
+  return (
+    <svg width={40} height={20} viewBox="0 0 40 20">
+      <defs>
+        <marker id={`biarL-${uid}-${c}`} markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto">
+          <path d="M6,0 L0,3 L6,6 Z" fill={color} />
+        </marker>
+        <marker id={`biarR-${uid}-${c}`} markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill={color} />
+        </marker>
+      </defs>
+      <line x1="8" y1="10" x2="32" y2="10" stroke={color} strokeWidth="2" markerStart={`url(#biarL-${uid}-${c})`} markerEnd={`url(#biarR-${uid}-${c})`} />
+    </svg>
+  );
+};
+
+const FilterArrow: React.FC<{ color?: string; uid?: string }> = ({
+  color = "#ffffff",
+  uid = "0",
+}) => (
   <svg width={40} height={20} viewBox="0 0 40 20">
-    <defs>
-      <marker id="arrowhead" markerWidth="8" markerHeight="8" refX="6" refY="4" orient="auto">
-        <path d="M0,0 L8,4 L0,8 Z" fill="#ffffff" />
-      </marker>
-    </defs>
-    <line x1="0" y1="10" x2="32" y2="10" stroke="#ffffff" strokeWidth="2" markerEnd="url(#arrowhead)" />
+    <polygon points="5,2 5,18 25,10" fill="none" stroke={color} strokeWidth="2" />
+    <line x1="25" y1="10" x2="38" y2="10" stroke={color} strokeWidth="2" />
   </svg>
 );
 
-const BiArrow: React.FC = () => (
-  <svg width={40} height={20} viewBox="0 0 40 20">
-    <defs>
-      <marker id="arrowL" markerWidth="6" markerHeight="6" refX="0" refY="3" orient="auto">
-        <path d="M6,0 L0,3 L6,6 Z" fill="#ffffff" />
-      </marker>
-      <marker id="arrowR" markerWidth="6" markerHeight="6" refX="6" refY="3" orient="auto">
-        <path d="M0,0 L6,3 L0,6 Z" fill="#ffffff" />
-      </marker>
-    </defs>
-    <line x1="8" y1="10" x2="32" y2="10" stroke="#ffffff" strokeWidth="2" markerStart="url(#arrowL)" markerEnd="url(#arrowR)" />
-  </svg>
-);
-
-const FilterArrow: React.FC = () => (
-  <svg width={40} height={20} viewBox="0 0 40 20">
-    <polygon points="5,2 5,18 25,10" fill="none" stroke="#ffffff" strokeWidth="2" />
-    <line x1="25" y1="10" x2="38" y2="10" stroke="#ffffff" strokeWidth="2" />
-  </svg>
-);
-
-const VsSymbol: React.FC = () => (
+const VsSymbol: React.FC<{ color?: string }> = ({ color = "#ffffff" }) => (
   <div
     style={{
       fontSize: 16,
       fontWeight: 800,
-      color: "#ffffff",
-      textShadow: "0 0 10px rgba(255,255,255,0.4)",
+      color,
+      textShadow: `0 0 12px ${color}60`,
       padding: "0 8px",
+      fontFamily: "'SF Mono', monospace",
     }}
   >
     vs
   </div>
 );
 
-const PlusSymbol: React.FC = () => (
+const PlusSymbol: React.FC<{ color?: string }> = ({ color = "#ffffff" }) => (
   <div
     style={{
-      fontSize: 20,
+      fontSize: 22,
       fontWeight: 700,
-      color: "#ffffff",
-      textShadow: "0 0 10px rgba(255,255,255,0.4)",
+      color,
+      textShadow: `0 0 12px ${color}60`,
       padding: "0 4px",
     }}
   >
@@ -269,13 +287,13 @@ const PlusSymbol: React.FC = () => (
   </div>
 );
 
-const EqualsSymbol: React.FC = () => (
+const EqualsSymbol: React.FC<{ color?: string }> = ({ color = "#ffffff" }) => (
   <div
     style={{
-      fontSize: 20,
+      fontSize: 22,
       fontWeight: 700,
-      color: "#ffffff",
-      textShadow: "0 0 10px rgba(255,255,255,0.4)",
+      color,
+      textShadow: `0 0 12px ${color}60`,
       padding: "0 4px",
     }}
   >
@@ -285,52 +303,46 @@ const EqualsSymbol: React.FC = () => (
 
 // === SPLIT/MERGE ARROWS ===
 
-const SplitArrow: React.FC = () => (
-  <svg width={50} height={STACKED_HEIGHT} viewBox={`0 0 50 ${STACKED_HEIGHT}`}>
-    <defs>
-      <marker id="splitArrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-        <path d="M0,0 L6,3 L0,6 Z" fill="#ffffff" />
-      </marker>
-    </defs>
-    <path
-      d={`M0,${STACKED_MIDDLE} L20,${STACKED_MIDDLE} L20,${STACKED_TOP_CENTER} L42,${STACKED_TOP_CENTER}`}
-      fill="none"
-      stroke="#ffffff"
-      strokeWidth="2"
-      markerEnd="url(#splitArrow)"
-    />
-    <path
-      d={`M20,${STACKED_MIDDLE} L20,${STACKED_BOTTOM_CENTER} L42,${STACKED_BOTTOM_CENTER}`}
-      fill="none"
-      stroke="#ffffff"
-      strokeWidth="2"
-      markerEnd="url(#splitArrow)"
-    />
-  </svg>
-);
+const SplitArrow: React.FC<{ color?: string; uid?: string }> = ({
+  color = "#ffffff",
+  uid = "0",
+}) => {
+  const c = color.replace(/[^a-zA-Z0-9]/g, "");
+  return (
+    <svg width={50} height={STACKED_HEIGHT} viewBox={`0 0 50 ${STACKED_HEIGHT}`}>
+      <defs>
+        <marker id={`spl-${uid}-${c}`} markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill={color} />
+        </marker>
+      </defs>
+      <path d={`M0,${STACKED_MIDDLE} L20,${STACKED_MIDDLE} L20,${STACKED_TOP_CENTER} L42,${STACKED_TOP_CENTER}`}
+        fill="none" stroke={color} strokeWidth="2" markerEnd={`url(#spl-${uid}-${c})`} />
+      <path d={`M20,${STACKED_MIDDLE} L20,${STACKED_BOTTOM_CENTER} L42,${STACKED_BOTTOM_CENTER}`}
+        fill="none" stroke={color} strokeWidth="2" markerEnd={`url(#spl-${uid}-${c})`} />
+    </svg>
+  );
+};
 
-const MergeArrow: React.FC = () => (
-  <svg width={50} height={STACKED_HEIGHT} viewBox={`0 0 50 ${STACKED_HEIGHT}`}>
-    <defs>
-      <marker id="mergeArrow" markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
-        <path d="M0,0 L6,3 L0,6 Z" fill="#ffffff" />
-      </marker>
-    </defs>
-    <path
-      d={`M0,${STACKED_TOP_CENTER} L20,${STACKED_TOP_CENTER} L20,${STACKED_MIDDLE} L42,${STACKED_MIDDLE}`}
-      fill="none"
-      stroke="#ffffff"
-      strokeWidth="2"
-      markerEnd="url(#mergeArrow)"
-    />
-    <path
-      d={`M0,${STACKED_BOTTOM_CENTER} L20,${STACKED_BOTTOM_CENTER} L20,${STACKED_MIDDLE}`}
-      fill="none"
-      stroke="#ffffff"
-      strokeWidth="2"
-    />
-  </svg>
-);
+const MergeArrow: React.FC<{ color?: string; uid?: string }> = ({
+  color = "#ffffff",
+  uid = "0",
+}) => {
+  const c = color.replace(/[^a-zA-Z0-9]/g, "");
+  return (
+    <svg width={50} height={STACKED_HEIGHT} viewBox={`0 0 50 ${STACKED_HEIGHT}`}>
+      <defs>
+        <marker id={`mrg-${uid}-${c}`} markerWidth="6" markerHeight="6" refX="5" refY="3" orient="auto">
+          <path d="M0,0 L6,3 L0,6 Z" fill={color} />
+        </marker>
+      </defs>
+      <path d={`M0,${STACKED_TOP_CENTER} L20,${STACKED_TOP_CENTER} L20,${STACKED_MIDDLE} L42,${STACKED_MIDDLE}`}
+        fill="none" stroke={color} strokeWidth="2" markerEnd={`url(#mrg-${uid}-${c})`} />
+      <path d={`M0,${STACKED_BOTTOM_CENTER} L20,${STACKED_BOTTOM_CENTER} L20,${STACKED_MIDDLE}`}
+        fill="none" stroke={color} strokeWidth="2" />
+    </svg>
+  );
+};
+
 
 // === STACKED NODES (for IF/ELSE, MERGE) ===
 
@@ -366,14 +378,10 @@ const FlowLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ n
   <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
     {nodes.map((node, i) => (
       <React.Fragment key={i}>
-        <Node
-          label={node.label}
-          icon={node.icon}
-          color={getColor(node.color, defaultColor)}
-        />
+        <Node label={node.label} icon={node.icon} color={getColor(node.color, defaultColor)} />
         {i < nodes.length - 1 && (
           <ConnectorWrap>
-            <Arrow />
+            <Arrow uid={`fl-${i}`} color={defaultColor} />
           </ConnectorWrap>
         )}
       </React.Fragment>
@@ -392,15 +400,15 @@ const VsLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nod
     <Node
       label={nodes[0]?.label || "A"}
       icon={nodes[0]?.icon || "cube"}
-      color={getColor(nodes[0]?.color, defaultColor)}
+      color={getColor(nodes[0]?.color, layoutColors.red)}
     />
     <ConnectorWrap>
-      <VsSymbol />
+      <VsSymbol color={defaultColor} />
     </ConnectorWrap>
     <Node
       label={nodes[1]?.label || "B"}
       icon={nodes[1]?.icon || "cube"}
-      color={getColor(nodes[1]?.color, defaultColor)}
+      color={getColor(nodes[1]?.color, layoutColors.green)}
     />
   </div>
 );
@@ -414,7 +422,7 @@ const CombineLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = (
       color={getColor(nodes[0]?.color, defaultColor)}
     />
     <ConnectorWrap>
-      <PlusSymbol />
+      <PlusSymbol color={defaultColor} />
     </ConnectorWrap>
     <Node
       label={nodes[1]?.label || "B"}
@@ -422,7 +430,7 @@ const CombineLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = (
       color={getColor(nodes[1]?.color, defaultColor)}
     />
     <ConnectorWrap>
-      <EqualsSymbol />
+      <EqualsSymbol color={defaultColor} />
     </ConnectorWrap>
     <Node
       label={nodes[2]?.label || "C"}
@@ -436,86 +444,48 @@ const CombineLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = (
 const NegationLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
   <div style={{ display: "flex", alignItems: "flex-start", gap: 20 }}>
     <NegatedNode label={nodes[0]?.label || "Bad"} icon={nodes[0]?.icon || "x"} />
-    <ConnectorWrap>
-      <Arrow />
-    </ConnectorWrap>
-    <Node
-      label={nodes[1]?.label || "Good"}
-      icon={nodes[1]?.icon || "check"}
-      color={getColor(nodes[1]?.color, layoutColors.green)}
-    />
+    <ConnectorWrap><Arrow uid="neg-0" color={layoutColors.green} /></ConnectorWrap>
+    <Node label={nodes[1]?.label || "Good"} icon={nodes[1]?.icon || "check"} color={getColor(nodes[1]?.color, layoutColors.green)} />
   </div>
 );
 
 // BIDIRECTIONAL: A ↔ B
 const BidirectionalLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
   <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-    <Node
-      label={nodes[0]?.label || "A"}
-      icon={nodes[0]?.icon || "cube"}
-      color={getColor(nodes[0]?.color, defaultColor)}
-    />
-    <ConnectorWrap>
-      <BiArrow />
-    </ConnectorWrap>
-    <Node
-      label={nodes[1]?.label || "B"}
-      icon={nodes[1]?.icon || "cube"}
-      color={getColor(nodes[1]?.color, defaultColor)}
-    />
+    <Node label={nodes[0]?.label || "A"} icon={nodes[0]?.icon || "cube"} color={getColor(nodes[0]?.color, defaultColor)} />
+    <ConnectorWrap><BiArrow uid="bi-0" color={defaultColor} /></ConnectorWrap>
+    <Node label={nodes[1]?.label || "B"} icon={nodes[1]?.icon || "cube"} color={getColor(nodes[1]?.color, defaultColor)} />
   </div>
 );
 
 // FILTER: A ▷ B
 const FilterLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
   <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-    <Node
-      label={nodes[0]?.label || "Input"}
-      icon={nodes[0]?.icon || "cube"}
-      color={getColor(nodes[0]?.color, defaultColor)}
-    />
-    <ConnectorWrap>
-      <FilterArrow />
-    </ConnectorWrap>
-    <Node
-      label={nodes[1]?.label || "Output"}
-      icon={nodes[1]?.icon || "cube"}
-      color={getColor(nodes[1]?.color, layoutColors.green)}
-    />
+    <Node label={nodes[0]?.label || "Input"} icon={nodes[0]?.icon || "cube"} color={getColor(nodes[0]?.color, defaultColor)} />
+    <ConnectorWrap><FilterArrow uid="fi-0" color={defaultColor} /></ConnectorWrap>
+    <Node label={nodes[1]?.label || "Output"} icon={nodes[1]?.icon || "cube"} color={getColor(nodes[1]?.color, layoutColors.green)} />
   </div>
 );
 
 // IF/ELSE: A → [B, C]
 const IfElseLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
   <div style={{ display: "flex", alignItems: "flex-start", gap: 0 }}>
-    <CenteredSingleNode
-      node={nodes[0] || { label: "Input", icon: "cube" }}
-      defaultColor={defaultColor}
-    />
+    <CenteredSingleNode node={nodes[0] || { label: "Input", icon: "cube" }} defaultColor={defaultColor} />
     <div style={{ height: STACKED_HEIGHT, display: "flex", alignItems: "center" }}>
-      <SplitArrow />
+      <SplitArrow uid="ife-0" color={defaultColor} />
     </div>
-    <StackedNodes
-      nodes={nodes.slice(1, 3)}
-      defaultColor={defaultColor}
-    />
+    <StackedNodes nodes={nodes.slice(1, 3)} defaultColor={defaultColor} />
   </div>
 );
 
 // MERGE: [A, B] → C
 const MergeLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
   <div style={{ display: "flex", alignItems: "flex-start", gap: 0 }}>
-    <StackedNodes
-      nodes={nodes.slice(0, 2)}
-      defaultColor={defaultColor}
-    />
+    <StackedNodes nodes={nodes.slice(0, 2)} defaultColor={defaultColor} />
     <div style={{ height: STACKED_HEIGHT, display: "flex", alignItems: "center" }}>
-      <MergeArrow />
+      <MergeArrow uid="mrg-0" color={defaultColor} />
     </div>
-    <CenteredSingleNode
-      node={nodes[2] || { label: "Output", icon: "sparkle" }}
-      defaultColor={layoutColors.green}
-    />
+    <CenteredSingleNode node={nodes[2] || { label: "Output", icon: "sparkle" }} defaultColor={layoutColors.green} />
   </div>
 );
 
@@ -527,29 +497,17 @@ export const ExplainerLayout: React.FC<ExplainerLayoutProps> = ({
   accentColor = layoutColors.blue,
 }) => {
   const defaultColor = accentColor;
-
   switch (layout) {
-    case "flow":
-      return <FlowLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "arrow":
-      return <ArrowLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "vs":
-      return <VsLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "combine":
-      return <CombineLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "negation":
-      return <NegationLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "bidirectional":
-      return <BidirectionalLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "filter":
-      return <FilterLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "if-else":
-      return <IfElseLayout nodes={nodes} defaultColor={defaultColor} />;
-    case "merge":
-      return <MergeLayout nodes={nodes} defaultColor={defaultColor} />;
-    default:
-      // Fallback: render as flow
-      return <FlowLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "flow":        return <FlowLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "arrow":       return <ArrowLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "vs":          return <VsLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "combine":     return <CombineLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "negation":    return <NegationLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "bidirectional": return <BidirectionalLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "filter":      return <FilterLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "if-else":     return <IfElseLayout nodes={nodes} defaultColor={defaultColor} />;
+    case "merge":       return <MergeLayout nodes={nodes} defaultColor={defaultColor} />;
+    default:            return <FlowLayout nodes={nodes} defaultColor={defaultColor} />;
   }
 };
 

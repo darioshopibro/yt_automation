@@ -1,0 +1,203 @@
+{
+  "title": "Blue-Green Deployment",
+  "fps": 30,
+  "totalFrames": 1993,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Problem",
+      "color": "#ef4444",
+      "startFrame": 5,
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Ship & Break",
+          "layout": "flow",
+          "startFrame": 10,
+          "nodes": [
+            {
+              "label": "Code",
+              "icon": "Code",
+              "startFrame": 15,
+              "connectorAfter": "ships"
+            },
+            {
+              "label": "Deploy",
+              "icon": "Upload",
+              "startFrame": 21,
+              "connectorAfter": "breaks"
+            },
+            {
+              "label": "Break",
+              "icon": "HeartBreak",
+              "startFrame": 27
+            }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Root Cause",
+          "layout": "negation",
+          "startFrame": 195,
+          "nodes": [
+            {
+              "label": "Manual",
+              "icon": "HandFist",
+              "startFrame": 200,
+              "connectorAfter": "\u2192 need"
+            },
+            {
+              "label": "Automated",
+              "icon": "Robot",
+              "startFrame": 206
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Blue-Green",
+      "color": "#06b6d4",
+      "startFrame": 280,
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Two Envs",
+          "layout": "vs",
+          "startFrame": 285,
+          "nodes": [
+            {
+              "label": "Blue",
+              "icon": "Broadcast",
+              "startFrame": 290
+            },
+            {
+              "label": "Green",
+              "icon": "Storefront",
+              "startFrame": 296
+            }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "CI Pipeline",
+          "layout": "flow",
+          "startFrame": 585,
+          "nodes": [
+            {
+              "label": "Commit",
+              "icon": "GitCommit",
+              "startFrame": 590,
+              "connectorAfter": "runs"
+            },
+            {
+              "label": "Test Suite",
+              "icon": "Checks",
+              "startFrame": 596,
+              "connectorAfter": "creates"
+            },
+            {
+              "label": "Artifact",
+              "icon": "Package",
+              "startFrame": 602
+            }
+          ]
+        },
+        {
+          "id": "section_2_3",
+          "title": "Pass or Fail",
+          "layout": "if-else",
+          "startFrame": 855,
+          "nodes": [
+            {
+              "label": "Tests",
+              "icon": "ShieldCheck",
+              "startFrame": 860
+            },
+            {
+              "label": "Push",
+              "icon": "CloudArrowUp",
+              "startFrame": 866
+            },
+            {
+              "label": "Stop",
+              "icon": "XCircle",
+              "startFrame": 872
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Deploy & Win",
+      "color": "#22c55e",
+      "startFrame": 1110,
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Flip Traffic",
+          "layout": "arrow",
+          "startFrame": 1115,
+          "nodes": [
+            {
+              "label": "Load Bal",
+              "icon": "Network",
+              "startFrame": 1120,
+              "connectorAfter": "routes to"
+            },
+            {
+              "label": "Live",
+              "icon": "Globe",
+              "startFrame": 1126
+            }
+          ]
+        },
+        {
+          "id": "section_3_2",
+          "title": "Safe Return",
+          "layout": "bidirectional",
+          "startFrame": 1300,
+          "nodes": [
+            {
+              "label": "Active",
+              "icon": "CheckCircle",
+              "startFrame": 1305,
+              "connectorAfter": "rollback"
+            },
+            {
+              "label": "Standby",
+              "icon": "HardDrives",
+              "startFrame": 1311
+            }
+          ]
+        },
+        {
+          "id": "section_3_3",
+          "title": "The Result",
+          "layout": "combine",
+          "startFrame": 1510,
+          "nodes": [
+            {
+              "label": "Code",
+              "icon": "CodeSimple",
+              "startFrame": 1515
+            },
+            {
+              "label": "Tests",
+              "icon": "ClipboardText",
+              "startFrame": 1521
+            },
+            {
+              "label": "Routine",
+              "icon": "ArrowsClockwise",
+              "startFrame": 1527
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

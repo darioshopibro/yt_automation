@@ -1,0 +1,207 @@
+{
+  "meta": {
+    "title": "Continuous Integration",
+    "fps": 30,
+    "totalFrames": 1266,
+    "totalDuration": 42.2,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 41.193,
+    "words": [
+      { "word": "Imagine", "start": 0.0, "end": 0.58, "startFrame": 0, "endFrame": 17 },
+      { "word": "Mary,", "start": 0.627, "end": 1.149, "startFrame": 18, "endFrame": 34 },
+      { "word": "your", "start": 1.265, "end": 1.405, "startFrame": 37, "endFrame": 42 },
+      { "word": "backend", "start": 1.451, "end": 1.8, "startFrame": 43, "endFrame": 54 },
+      { "word": "developer,", "start": 1.846, "end": 2.543, "startFrame": 55, "endFrame": 76 },
+      { "word": "builds", "start": 2.752, "end": 3.111, "startFrame": 82, "endFrame": 93 },
+      { "word": "a", "start": 3.17, "end": 3.216, "startFrame": 95, "endFrame": 96 },
+      { "word": "new", "start": 3.332, "end": 3.553, "startFrame": 99, "endFrame": 106 },
+      { "word": "A", "start": 3.669, "end": 3.75, "startFrame": 110, "endFrame": 112 },
+      { "word": "P", "start": 3.878, "end": 3.994, "startFrame": 116, "endFrame": 119 },
+      { "word": "I", "start": 4.203, "end": 4.447, "startFrame": 126, "endFrame": 133 },
+      { "word": "for", "start": 4.656, "end": 4.783, "startFrame": 139, "endFrame": 143 },
+      { "word": "your", "start": 4.83, "end": 4.934, "startFrame": 144, "endFrame": 148 },
+      { "word": "product.", "start": 4.981, "end": 5.619, "startFrame": 149, "endFrame": 168 },
+      { "word": "Shortly", "start": 6.13, "end": 6.513, "startFrame": 183, "endFrame": 195 },
+      { "word": "after,", "start": 6.583, "end": 7.21, "startFrame": 197, "endFrame": 216 },
+      { "word": "Jane,", "start": 7.454, "end": 8.104, "startFrame": 223, "endFrame": 243 },
+      { "word": "your", "start": 8.348, "end": 8.487, "startFrame": 250, "endFrame": 254 },
+      { "word": "frontend", "start": 8.533, "end": 8.893, "startFrame": 255, "endFrame": 266 },
+      { "word": "developer,", "start": 8.94, "end": 9.648, "startFrame": 268, "endFrame": 289 },
+      { "word": "starts", "start": 9.927, "end": 10.298, "startFrame": 297, "endFrame": 308 },
+      { "word": "work", "start": 10.368, "end": 10.646, "startFrame": 311, "endFrame": 319 },
+      { "word": "on", "start": 10.728, "end": 10.89, "startFrame": 321, "endFrame": 326 },
+      { "word": "a", "start": 10.937, "end": 10.96, "startFrame": 328, "endFrame": 328 },
+      { "word": "new", "start": 11.053, "end": 11.297, "startFrame": 331, "endFrame": 338 },
+      { "word": "U", "start": 11.54, "end": 11.749, "startFrame": 346, "endFrame": 352 },
+      { "word": "I.", "start": 11.865, "end": 12.318, "startFrame": 355, "endFrame": 369 },
+      { "word": "A", "start": 12.829, "end": 12.899, "startFrame": 384, "endFrame": 386 },
+      { "word": "few", "start": 12.98, "end": 13.108, "startFrame": 389, "endFrame": 393 },
+      { "word": "months", "start": 13.154, "end": 13.363, "startFrame": 394, "endFrame": 400 },
+      { "word": "later", "start": 13.41, "end": 13.665, "startFrame": 402, "endFrame": 409 },
+      { "word": "when", "start": 13.711, "end": 13.839, "startFrame": 411, "endFrame": 415 },
+      { "word": "it's", "start": 13.874, "end": 14.002, "startFrame": 416, "endFrame": 420 },
+      { "word": "time", "start": 14.048, "end": 14.257, "startFrame": 421, "endFrame": 427 },
+      { "word": "to", "start": 14.28, "end": 14.338, "startFrame": 428, "endFrame": 430 },
+      { "word": "merge", "start": 14.396, "end": 14.617, "startFrame": 431, "endFrame": 438 },
+      { "word": "their", "start": 14.652, "end": 14.803, "startFrame": 439, "endFrame": 444 },
+      { "word": "features,", "start": 14.849, "end": 15.523, "startFrame": 445, "endFrame": 465 },
+      { "word": "we", "start": 15.673, "end": 15.801, "startFrame": 470, "endFrame": 474 },
+      { "word": "find", "start": 15.871, "end": 16.103, "startFrame": 476, "endFrame": 483 },
+      { "word": "they're", "start": 16.149, "end": 16.347, "startFrame": 484, "endFrame": 490 },
+      { "word": "completely", "start": 16.382, "end": 17.078, "startFrame": 491, "endFrame": 512 },
+      { "word": "incompatible.", "start": 17.148, "end": 18.1, "startFrame": 514, "endFrame": 543 },
+      { "word": "The", "start": 18.425, "end": 18.53, "startFrame": 552, "endFrame": 555 },
+      { "word": "build", "start": 18.576, "end": 18.808, "startFrame": 557, "endFrame": 564 },
+      { "word": "fails", "start": 18.878, "end": 19.4, "startFrame": 566, "endFrame": 582 },
+      { "word": "and", "start": 19.517, "end": 19.644, "startFrame": 585, "endFrame": 589 },
+      { "word": "we", "start": 19.691, "end": 19.76, "startFrame": 590, "endFrame": 592 },
+      { "word": "now", "start": 19.818, "end": 19.946, "startFrame": 594, "endFrame": 598 },
+      { "word": "have", "start": 20.004, "end": 20.12, "startFrame": 600, "endFrame": 603 },
+      { "word": "to", "start": 20.143, "end": 20.19, "startFrame": 604, "endFrame": 605 },
+      { "word": "spend", "start": 20.225, "end": 20.445, "startFrame": 606, "endFrame": 613 },
+      { "word": "time", "start": 20.503, "end": 20.863, "startFrame": 615, "endFrame": 625 },
+      { "word": "and", "start": 20.91, "end": 21.003, "startFrame": 627, "endFrame": 630 },
+      { "word": "money", "start": 21.072, "end": 21.363, "startFrame": 632, "endFrame": 640 },
+      { "word": "resolving", "start": 21.513, "end": 21.955, "startFrame": 645, "endFrame": 658 },
+      { "word": "these", "start": 22.001, "end": 22.164, "startFrame": 660, "endFrame": 664 },
+      { "word": "conflicts.", "start": 22.198, "end": 23.65, "startFrame": 665, "endFrame": 709 },
+      { "word": "One", "start": 23.65, "end": 24.126, "startFrame": 709, "endFrame": 723 },
+      { "word": "of", "start": 23.685, "end": 23.731, "startFrame": 710, "endFrame": 711 },
+      { "word": "the", "start": 23.777, "end": 23.847, "startFrame": 713, "endFrame": 715 },
+      { "word": "core", "start": 23.893, "end": 24.126, "startFrame": 716, "endFrame": 723 },
+      { "word": "practices", "start": 24.161, "end": 24.718, "startFrame": 724, "endFrame": 741 },
+      { "word": "of", "start": 24.764, "end": 24.822, "startFrame": 742, "endFrame": 744 },
+      { "word": "DevOps", "start": 24.88, "end": 25.368, "startFrame": 746, "endFrame": 760 },
+      { "word": "is", "start": 25.426, "end": 25.554, "startFrame": 762, "endFrame": 766 },
+      { "word": "continuous", "start": 25.623, "end": 26.285, "startFrame": 768, "endFrame": 788 },
+      { "word": "integration,", "start": 26.343, "end": 27.179, "startFrame": 790, "endFrame": 815 },
+      { "word": "where", "start": 27.388, "end": 27.574, "startFrame": 821, "endFrame": 827 },
+      { "word": "developers", "start": 27.609, "end": 28.108, "startFrame": 828, "endFrame": 843 },
+      { "word": "commit", "start": 28.166, "end": 28.398, "startFrame": 844, "endFrame": 851 },
+      { "word": "their", "start": 28.433, "end": 28.584, "startFrame": 852, "endFrame": 857 },
+      { "word": "code", "start": 28.642, "end": 28.967, "startFrame": 859, "endFrame": 869 },
+      { "word": "to", "start": 29.002, "end": 29.072, "startFrame": 870, "endFrame": 872 },
+      { "word": "a", "start": 29.153, "end": 29.176, "startFrame": 874, "endFrame": 875 },
+      { "word": "shared", "start": 29.246, "end": 29.548, "startFrame": 877, "endFrame": 886 },
+      { "word": "repository", "start": 29.594, "end": 30.407, "startFrame": 887, "endFrame": 912 },
+      { "word": "often", "start": 30.581, "end": 30.953, "startFrame": 917, "endFrame": 928 },
+      { "word": "on", "start": 31.022, "end": 31.127, "startFrame": 930, "endFrame": 933 },
+      { "word": "a", "start": 31.162, "end": 31.185, "startFrame": 934, "endFrame": 935 },
+      { "word": "daily", "start": 31.243, "end": 31.498, "startFrame": 937, "endFrame": 944 },
+      { "word": "basis.", "start": 31.556, "end": 32.3, "startFrame": 946, "endFrame": 969 },
+      { "word": "Each", "start": 32.81, "end": 33.054, "startFrame": 984, "endFrame": 991 },
+      { "word": "commit", "start": 33.124, "end": 33.565, "startFrame": 993, "endFrame": 1006 },
+      { "word": "triggers", "start": 33.681, "end": 34.111, "startFrame": 1010, "endFrame": 1023 },
+      { "word": "an", "start": 34.146, "end": 34.215, "startFrame": 1024, "endFrame": 1026 },
+      { "word": "automated", "start": 34.285, "end": 34.819, "startFrame": 1028, "endFrame": 1044 },
+      { "word": "workflow", "start": 34.877, "end": 35.469, "startFrame": 1046, "endFrame": 1064 },
+      { "word": "on", "start": 35.597, "end": 35.759, "startFrame": 1067, "endFrame": 1072 },
+      { "word": "a", "start": 35.806, "end": 35.829, "startFrame": 1074, "endFrame": 1074 },
+      { "word": "C", "start": 35.887, "end": 36.061, "startFrame": 1076, "endFrame": 1081 },
+      { "word": "I", "start": 36.27, "end": 36.363, "startFrame": 1088, "endFrame": 1090 },
+      { "word": "server", "start": 36.491, "end": 36.92, "startFrame": 1094, "endFrame": 1107 },
+      { "word": "that", "start": 37.199, "end": 37.373, "startFrame": 1115, "endFrame": 1121 },
+      { "word": "can", "start": 37.42, "end": 37.536, "startFrame": 1122, "endFrame": 1126 },
+      { "word": "notify", "start": 37.605, "end": 38.0, "startFrame": 1128, "endFrame": 1140 },
+      { "word": "developers", "start": 38.07, "end": 38.592, "startFrame": 1142, "endFrame": 1157 },
+      { "word": "of", "start": 38.639, "end": 38.697, "startFrame": 1159, "endFrame": 1160 },
+      { "word": "any", "start": 38.778, "end": 39.01, "startFrame": 1163, "endFrame": 1170 },
+      { "word": "issues", "start": 39.091, "end": 39.486, "startFrame": 1172, "endFrame": 1184 },
+      { "word": "integrating", "start": 39.556, "end": 40.078, "startFrame": 1186, "endFrame": 1202 },
+      { "word": "their", "start": 40.113, "end": 40.252, "startFrame": 1203, "endFrame": 1207 },
+      { "word": "changes.", "start": 40.299, "end": 41.193, "startFrame": 1208, "endFrame": 1235 }
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Problem",
+        "color": "#ef4444",
+        "startFrame": 15,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Isolated Work",
+            "layout": "flow",
+            "startFrame": 25,
+            "nodes": [
+              { "label": "Backend", "icon": "CloudX", "startFrame": 30 },
+              { "label": "Frontend", "icon": "Desktop", "startFrame": 36 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Merge Fails",
+            "layout": "negation",
+            "startFrame": 370,
+            "nodes": [
+              { "label": "Merge", "icon": "GitMerge", "startFrame": 376 },
+              { "label": "Conflict", "icon": "Building", "startFrame": 382 },
+              { "label": "Cost", "icon": "Money", "startFrame": 390 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "CI Solution",
+        "color": "#22c55e",
+        "startFrame": 694,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Daily Commits",
+            "layout": "flow",
+            "startFrame": 710,
+            "nodes": [
+              { "label": "Commit", "icon": "GitCommit", "startFrame": 716 },
+              { "label": "Repo", "icon": "Archive", "startFrame": 722 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "CI Workflow",
+            "layout": "flow",
+            "startFrame": 970,
+            "nodes": [
+              { "label": "CI Server", "icon": "ShareNetwork", "startFrame": 976 },
+              { "label": "Notify", "icon": "Notification", "startFrame": 982 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.7 },
+      { "frame": 5, "target": "sticky_1", "x": 480, "y": 400, "scale": 1.0 },
+      { "frame": 355, "target": "sticky_1_section_2", "x": 480, "y": 600, "scale": 1.05 },
+      { "frame": 679, "target": "sticky_2", "x": 1100, "y": 400, "scale": 1.0 },
+      { "frame": 955, "target": "sticky_2_section_2", "x": 1100, "y": 600, "scale": 1.05 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 353, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 395, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 },
+      { "frame": 677, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 715, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 953, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 980, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 }
+    ],
+    "totalCount": 8
+  }
+}

@@ -1,0 +1,3 @@
+Imagine Mary, your backend developer, builds a new A P I for your product. Shortly after, Jane, your frontend developer, starts work on a new U I. A few months later when it's time to merge their features, we find they're completely incompatible. The build fails and we now have to spend time and money resolving these conflicts.
+
+One of the core practices of DevOps is continuous integration, where developers commit their code to a shared repository often on a daily basis. Each commit triggers an automated workflow on a C I server that can notify developers of any issues integrating their changes.

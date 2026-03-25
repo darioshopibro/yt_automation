@@ -57,17 +57,11 @@ cd ./my-project && npm install
 
 ---
 
-## DOSTUPNE IKONICE (35)
+## IKONICE
 
-```
-user, search, terminal, cube, vector, database, zap, file, layers,
-merge, sparkle, cpu, check, server, cloud, gitBranch, gitMerge,
-settings, play, lock, shield, monitor, refreshCw, code, globe,
-api, webhook, queue, network, brain, alert, x, arrowRight,
-container, package, messageSquare
-```
-
-**AKO IKONICA NE POSTOJI → PRAZNO POLJE! Koristi samo ove.**
+Template podržava **1512 Phosphor ikona** — dinamički lookup, nema hardcoded liste.
+Planner bira ikone via `batch_icons.py` i vraća PascalCase nazive (npr. `GitMerge`, `Database`, `Brain`).
+Ako ikona ne postoji u Phosphor → fallback je `Cube` (vidljivo, ne prazno).
 
 ---
 
