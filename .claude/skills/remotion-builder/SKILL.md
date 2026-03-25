@@ -9,12 +9,18 @@ Implementira video prema `master-plan.json` koji je generisao `remotion-planner`
 
 ## WORKFLOW
 
-### KORAK 1: Kopiraj Template
+### KORAK 1: Kopiraj Template + npm install
 
 **⚠️ UVEK KORISTI OVAJ TEMPLATE:**
 ```bash
-cp -r "/Users/dario61/Desktop/YT automation/templates/ai-video-gen-pipeline" ./my-project
+cp -r "/Users/dario61/Desktop/YT automation/templates/ai-video-gen-pipeline"/* ./my-project/
+cd ./my-project && npm install
 ```
+
+**KRITIČNO:**
+- Template NEMA node_modules (namerno!)
+- UVEK radi `npm install` posle kopiranja
+- Bez npm install = NEĆE RADITI!
 
 **OVAJ TEMPLATE IMA SVE:**
 - DynamicPipeline.tsx sa AnimatedLine (linije između ikonica)
@@ -381,10 +387,11 @@ Builder samo implementira plan - ako plan ima grešku, output će imati grešku.
 
 ```bash
 cd my-project
-npm install
-npm run dev
-# Otvori http://localhost:3000
+npm install          # OBAVEZNO - template nema node_modules!
+npm run dev          # ili: npx remotion studio --port 3001
 ```
+
+**⚠️ NIKAD ne preskači npm install - template namerno nema node_modules!**
 
 ---
 

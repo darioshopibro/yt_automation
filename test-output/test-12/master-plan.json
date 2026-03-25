@@ -1,0 +1,125 @@
+{
+  "meta": {
+    "title": "Event Broker & Pub-Sub",
+    "fps": 30,
+    "totalFrames": 1440,
+    "totalDuration": 48.0,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 47.0
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "Event Broker",
+        "color": "#a855f7",
+        "startFrame": 15,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Publish Events",
+            "layout": "arrow",
+            "startFrame": 20,
+            "nodes": [
+              { "label": "Service", "icon": "server", "startFrame": 25 },
+              { "label": "Events", "icon": "zap", "startFrame": 31 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Subscribe",
+            "layout": "flow",
+            "startFrame": 230,
+            "nodes": [
+              { "label": "Services", "icon": "server", "startFrame": 235 },
+              { "label": "Broker", "icon": "network", "startFrame": 241 },
+              { "label": "Push", "icon": "arrowRight", "startFrame": 247 }
+            ]
+          },
+          {
+            "id": "section_1_3",
+            "title": "Pub-Sub",
+            "layout": "bidirectional",
+            "startFrame": 480,
+            "nodes": [
+              { "label": "Publisher", "icon": "cloud", "startFrame": 485 },
+              { "label": "Subscriber", "icon": "user", "startFrame": 491 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Components",
+        "color": "#06b6d4",
+        "startFrame": 780,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Producer",
+            "layout": "arrow",
+            "startFrame": 795,
+            "nodes": [
+              { "label": "Producer", "icon": "server", "startFrame": 800 },
+              { "label": "Publish", "icon": "zap", "startFrame": 806 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Broker",
+            "layout": "filter",
+            "startFrame": 990,
+            "nodes": [
+              { "label": "Broker", "icon": "network", "startFrame": 995 },
+              { "label": "Route", "icon": "gitBranch", "startFrame": 1001 }
+            ]
+          },
+          {
+            "id": "section_2_3",
+            "title": "Consumer",
+            "layout": "arrow",
+            "startFrame": 1125,
+            "nodes": [
+              { "label": "Consumer", "icon": "user", "startFrame": 1130 },
+              { "label": "Receive", "icon": "messageSquare", "startFrame": 1136 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.7 },
+      { "frame": 5, "target": "sticky_1", "x": 500, "y": 450, "scale": 1.0 },
+      { "frame": 215, "target": "section_1_2", "x": 500, "y": 500, "scale": 1.1 },
+      { "frame": 465, "target": "section_1_3", "x": 500, "y": 550, "scale": 1.1 },
+      { "frame": 765, "target": "sticky_2", "x": 1420, "y": 450, "scale": 1.0 },
+      { "frame": 975, "target": "section_2_2", "x": 1420, "y": 500, "scale": 1.1 },
+      { "frame": 1110, "target": "section_2_3", "x": 1420, "y": 550, "scale": 1.1 },
+      { "frame": 1350, "target": "overview", "x": 960, "y": 540, "scale": 0.75 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 213, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 463, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 763, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 973, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 1108, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 1348, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.18 }
+    ],
+    "totalCount": 8
+  }
+}

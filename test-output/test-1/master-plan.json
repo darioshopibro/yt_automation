@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "CI/CD Merge Problem",
+    "fps": 30,
+    "totalFrames": 1259,
+    "totalDuration": 41.97,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 40.96,
+    "timestampsFile": "voiceover-timestamps.json"
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_problem",
+        "step": 1,
+        "title": "The Problem",
+        "color": "#ef4444",
+        "startFrame": 5,
+        "sections": [
+          {
+            "id": "section_separate",
+            "title": "Separate Work",
+            "layout": "flow",
+            "startFrame": 15,
+            "nodes": [
+              { "label": "Mary", "icon": "user", "startFrame": 18 },
+              { "label": "API", "icon": "code", "startFrame": 120 },
+              { "label": "Jane", "icon": "user", "startFrame": 219 },
+              { "label": "UI", "icon": "layout", "startFrame": 330 }
+            ]
+          },
+          {
+            "id": "section_conflict",
+            "title": "Merge Fails",
+            "layout": "negation",
+            "startFrame": 408,
+            "nodes": [
+              { "label": "Merge", "icon": "gitMerge", "startFrame": 413 },
+              { "label": "Conflict", "icon": "alertTriangle", "startFrame": 504 },
+              { "label": "Break", "icon": "x", "startFrame": 552 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_solution",
+        "step": 2,
+        "title": "The Solution",
+        "color": "#22c55e",
+        "startFrame": 704,
+        "sections": [
+          {
+            "id": "section_ci",
+            "title": "CI Workflow",
+            "layout": "flow",
+            "startFrame": 710,
+            "nodes": [
+              { "label": "DevOps", "icon": "settings", "startFrame": 750 },
+              { "label": "Commit", "icon": "gitCommit", "startFrame": 861 },
+              { "label": "Repo", "icon": "database", "startFrame": 894 },
+              { "label": "Daily", "icon": "calendar", "startFrame": 954 }
+            ]
+          },
+          {
+            "id": "section_automation",
+            "title": "Automation",
+            "layout": "flow",
+            "startFrame": 1010,
+            "nodes": [
+              { "label": "Trigger", "icon": "zap", "startFrame": 1017 },
+              { "label": "CI Server", "icon": "server", "startFrame": 1077 },
+              { "label": "Notify", "icon": "bell", "startFrame": 1122 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.5 },
+      { "frame": 3, "target": "sticky_problem", "x": 400, "y": 400, "scale": 0.9 },
+      { "frame": 393, "target": "section_conflict", "x": 400, "y": 550, "scale": 1.0 },
+      { "frame": 689, "target": "sticky_solution", "x": 1200, "y": 400, "scale": 0.9 },
+      { "frame": 995, "target": "section_automation", "x": 1200, "y": 550, "scale": 1.0 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 1, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 35, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 391, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 430, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 687, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 730, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 993, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 8
+  }
+}

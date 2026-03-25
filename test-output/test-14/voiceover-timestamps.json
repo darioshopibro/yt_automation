@@ -1,0 +1,628 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 39.753,
+  "wordCount": 123,
+  "words": [
+    {
+      "word": "Most",
+      "start": 0.0,
+      "end": 0.302
+    },
+    {
+      "word": "of",
+      "start": 0.348,
+      "end": 0.395
+    },
+    {
+      "word": "the",
+      "start": 0.441,
+      "end": 0.511
+    },
+    {
+      "word": "time",
+      "start": 0.557,
+      "end": 0.801
+    },
+    {
+      "word": "we",
+      "start": 0.836,
+      "end": 0.94
+    },
+    {
+      "word": "use",
+      "start": 1.01,
+      "end": 1.184
+    },
+    {
+      "word": "something",
+      "start": 1.207,
+      "end": 1.509
+    },
+    {
+      "word": "called",
+      "start": 1.556,
+      "end": 1.8
+    },
+    {
+      "word": "batch",
+      "start": 1.869,
+      "end": 2.194
+    },
+    {
+      "word": "processing,",
+      "start": 2.264,
+      "end": 3.053
+    },
+    {
+      "word": "which",
+      "start": 3.262,
+      "end": 3.46
+    },
+    {
+      "word": "means",
+      "start": 3.506,
+      "end": 3.727
+    },
+    {
+      "word": "that",
+      "start": 3.762,
+      "end": 3.878
+    },
+    {
+      "word": "on",
+      "start": 3.924,
+      "end": 3.994
+    },
+    {
+      "word": "a",
+      "start": 4.029,
+      "end": 4.052
+    },
+    {
+      "word": "given",
+      "start": 4.11,
+      "end": 4.365
+    },
+    {
+      "word": "schedule",
+      "start": 4.423,
+      "end": 4.888
+    },
+    {
+      "word": "we",
+      "start": 4.934,
+      "end": 5.05
+    },
+    {
+      "word": "load",
+      "start": 5.132,
+      "end": 5.364
+    },
+    {
+      "word": "data",
+      "start": 5.422,
+      "end": 5.747
+    },
+    {
+      "word": "into",
+      "start": 5.828,
+      "end": 6.014
+    },
+    {
+      "word": "our",
+      "start": 6.084,
+      "end": 6.188
+    },
+    {
+      "word": "E",
+      "start": 6.269,
+      "end": 6.327
+    },
+    {
+      "word": "T",
+      "start": 6.444,
+      "end": 6.536
+    },
+    {
+      "word": "L",
+      "start": 6.687,
+      "end": 6.838
+    },
+    {
+      "word": "tool",
+      "start": 6.896,
+      "end": 7.221
+    },
+    {
+      "word": "and",
+      "start": 7.43,
+      "end": 7.628
+    },
+    {
+      "word": "then",
+      "start": 7.674,
+      "end": 7.814
+    },
+    {
+      "word": "load",
+      "start": 7.872,
+      "end": 8.057
+    },
+    {
+      "word": "it",
+      "start": 8.104,
+      "end": 8.173
+    },
+    {
+      "word": "to",
+      "start": 8.208,
+      "end": 8.266
+    },
+    {
+      "word": "where",
+      "start": 8.313,
+      "end": 8.487
+    },
+    {
+      "word": "it",
+      "start": 8.522,
+      "end": 8.58
+    },
+    {
+      "word": "needs",
+      "start": 8.626,
+      "end": 8.847
+    },
+    {
+      "word": "to",
+      "start": 8.905,
+      "end": 8.975
+    },
+    {
+      "word": "be.",
+      "start": 9.044,
+      "end": 9.439
+    },
+    {
+      "word": "But",
+      "start": 9.88,
+      "end": 10.019
+    },
+    {
+      "word": "we",
+      "start": 10.054,
+      "end": 10.124
+    },
+    {
+      "word": "could",
+      "start": 10.17,
+      "end": 10.31
+    },
+    {
+      "word": "also",
+      "start": 10.344,
+      "end": 10.635
+    },
+    {
+      "word": "have",
+      "start": 10.728,
+      "end": 10.89
+    },
+    {
+      "word": "stream",
+      "start": 10.937,
+      "end": 11.308
+    },
+    {
+      "word": "ingestion,",
+      "start": 11.366,
+      "end": 12.144
+    },
+    {
+      "word": "which",
+      "start": 12.272,
+      "end": 12.457
+    },
+    {
+      "word": "would",
+      "start": 12.492,
+      "end": 12.632
+    },
+    {
+      "word": "support",
+      "start": 12.667,
+      "end": 13.004
+    },
+    {
+      "word": "streaming",
+      "start": 13.062,
+      "end": 13.456
+    },
+    {
+      "word": "data.",
+      "start": 13.514,
+      "end": 13.99
+    },
+    {
+      "word": "So",
+      "start": 14.315,
+      "end": 14.466
+    },
+    {
+      "word": "it's",
+      "start": 14.536,
+      "end": 14.664
+    },
+    {
+      "word": "continuously",
+      "start": 14.71,
+      "end": 15.407
+    },
+    {
+      "word": "taking",
+      "start": 15.453,
+      "end": 15.743
+    },
+    {
+      "word": "data",
+      "start": 15.802,
+      "end": 16.069
+    },
+    {
+      "word": "in,",
+      "start": 16.15,
+      "end": 16.568
+    },
+    {
+      "word": "transforming",
+      "start": 16.684,
+      "end": 17.369
+    },
+    {
+      "word": "it,",
+      "start": 17.427,
+      "end": 17.694
+    },
+    {
+      "word": "and",
+      "start": 17.903,
+      "end": 18.042
+    },
+    {
+      "word": "then",
+      "start": 18.089,
+      "end": 18.228
+    },
+    {
+      "word": "continuously",
+      "start": 18.298,
+      "end": 18.983
+    },
+    {
+      "word": "loading",
+      "start": 19.052,
+      "end": 19.343
+    },
+    {
+      "word": "it",
+      "start": 19.389,
+      "end": 19.459
+    },
+    {
+      "word": "to",
+      "start": 19.505,
+      "end": 19.552
+    },
+    {
+      "word": "where",
+      "start": 19.598,
+      "end": 19.761
+    },
+    {
+      "word": "it",
+      "start": 19.795,
+      "end": 19.842
+    },
+    {
+      "word": "needs",
+      "start": 19.888,
+      "end": 20.097
+    },
+    {
+      "word": "to",
+      "start": 20.144,
+      "end": 20.202
+    },
+    {
+      "word": "be.",
+      "start": 20.271,
+      "end": 20.713
+    },
+    {
+      "word": "After",
+      "start": 21.038,
+      "end": 21.328
+    },
+    {
+      "word": "we've",
+      "start": 21.374,
+      "end": 21.548
+    },
+    {
+      "word": "used",
+      "start": 21.595,
+      "end": 21.792
+    },
+    {
+      "word": "all",
+      "start": 21.815,
+      "end": 21.92
+    },
+    {
+      "word": "these",
+      "start": 21.966,
+      "end": 22.129
+    },
+    {
+      "word": "different",
+      "start": 22.164,
+      "end": 22.442
+    },
+    {
+      "word": "processes",
+      "start": 22.466,
+      "end": 23.011
+    },
+    {
+      "word": "to",
+      "start": 23.069,
+      "end": 23.116
+    },
+    {
+      "word": "get",
+      "start": 23.174,
+      "end": 23.302
+    },
+    {
+      "word": "data",
+      "start": 23.36,
+      "end": 23.603
+    },
+    {
+      "word": "ready",
+      "start": 23.673,
+      "end": 23.859
+    },
+    {
+      "word": "for",
+      "start": 23.905,
+      "end": 24.01
+    },
+    {
+      "word": "analysis",
+      "start": 24.068,
+      "end": 24.73
+    },
+    {
+      "word": "or",
+      "start": 24.881,
+      "end": 25.031
+    },
+    {
+      "word": "different",
+      "start": 25.089,
+      "end": 25.368
+    },
+    {
+      "word": "applications,",
+      "start": 25.414,
+      "end": 26.366
+    },
+    {
+      "word": "we",
+      "start": 26.575,
+      "end": 26.691
+    },
+    {
+      "word": "can",
+      "start": 26.738,
+      "end": 26.854
+    },
+    {
+      "word": "start",
+      "start": 26.9,
+      "end": 27.121
+    },
+    {
+      "word": "using",
+      "start": 27.191,
+      "end": 27.458
+    },
+    {
+      "word": "it.",
+      "start": 27.516,
+      "end": 27.818
+    },
+    {
+      "word": "We",
+      "start": 28.143,
+      "end": 28.27
+    },
+    {
+      "word": "might",
+      "start": 28.328,
+      "end": 28.514
+    },
+    {
+      "word": "need",
+      "start": 28.561,
+      "end": 28.723
+    },
+    {
+      "word": "it",
+      "start": 28.758,
+      "end": 28.816
+    },
+    {
+      "word": "for",
+      "start": 28.862,
+      "end": 28.955
+    },
+    {
+      "word": "our",
+      "start": 28.99,
+      "end": 29.083
+    },
+    {
+      "word": "business",
+      "start": 29.129,
+      "end": 29.455
+    },
+    {
+      "word": "intelligence",
+      "start": 29.501,
+      "end": 30.058
+    },
+    {
+      "word": "platforms",
+      "start": 30.093,
+      "end": 30.65
+    },
+    {
+      "word": "that",
+      "start": 30.697,
+      "end": 30.813
+    },
+    {
+      "word": "are",
+      "start": 30.848,
+      "end": 30.941
+    },
+    {
+      "word": "needed",
+      "start": 30.975,
+      "end": 31.219
+    },
+    {
+      "word": "for",
+      "start": 31.266,
+      "end": 31.359
+    },
+    {
+      "word": "different",
+      "start": 31.393,
+      "end": 31.66
+    },
+    {
+      "word": "types",
+      "start": 31.695,
+      "end": 31.939
+    },
+    {
+      "word": "of",
+      "start": 31.974,
+      "end": 32.032
+    },
+    {
+      "word": "reporting.",
+      "start": 32.09,
+      "end": 32.752
+    },
+    {
+      "word": "We",
+      "start": 33.263,
+      "end": 33.379
+    },
+    {
+      "word": "might",
+      "start": 33.437,
+      "end": 33.623
+    },
+    {
+      "word": "also",
+      "start": 33.657,
+      "end": 33.913
+    },
+    {
+      "word": "need",
+      "start": 33.994,
+      "end": 34.157
+    },
+    {
+      "word": "it",
+      "start": 34.191,
+      "end": 34.249
+    },
+    {
+      "word": "for",
+      "start": 34.296,
+      "end": 34.4
+    },
+    {
+      "word": "machine",
+      "start": 34.458,
+      "end": 34.795
+    },
+    {
+      "word": "learning",
+      "start": 34.842,
+      "end": 35.12
+    },
+    {
+      "word": "use",
+      "start": 35.19,
+      "end": 35.364
+    },
+    {
+      "word": "cases,",
+      "start": 35.41,
+      "end": 36.095
+    },
+    {
+      "word": "which",
+      "start": 36.421,
+      "end": 36.618
+    },
+    {
+      "word": "requires",
+      "start": 36.676,
+      "end": 37.14
+    },
+    {
+      "word": "tons",
+      "start": 37.222,
+      "end": 37.64
+    },
+    {
+      "word": "and",
+      "start": 37.698,
+      "end": 37.802
+    },
+    {
+      "word": "tons",
+      "start": 37.872,
+      "end": 38.208
+    },
+    {
+      "word": "of",
+      "start": 38.255,
+      "end": 38.313
+    },
+    {
+      "word": "high-quality",
+      "start": 38.383,
+      "end": 38.975
+    },
+    {
+      "word": "data.",
+      "start": 39.033,
+      "end": 39.753
+    }
+  ]
+}

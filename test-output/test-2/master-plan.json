@@ -1,0 +1,104 @@
+{
+  "meta": {
+    "title": "Kubernetes Explained",
+    "fps": 30,
+    "totalFrames": 1497,
+    "totalDuration": 49.9,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 48.90,
+    "timestampsFile": "voiceover-timestamps.json"
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_analogy",
+        "step": 1,
+        "title": "The Analogy",
+        "color": "#8b5cf6",
+        "startFrame": 5,
+        "sections": [
+          {
+            "id": "section_orchestra",
+            "title": "Orchestra Model",
+            "layout": "flow",
+            "startFrame": 15,
+            "nodes": [
+              { "label": "Orchestra", "icon": "music", "startFrame": 233 },
+              { "label": "Musicians", "icon": "users", "startFrame": 320 },
+              { "label": "Containers", "icon": "container", "startFrame": 347 }
+            ]
+          },
+          {
+            "id": "section_conductor",
+            "title": "The Conductor",
+            "layout": "arrow",
+            "startFrame": 455,
+            "nodes": [
+              { "label": "Conductor", "icon": "crown", "startFrame": 460 },
+              { "label": "K8s", "icon": "ship", "startFrame": 611 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_scaling",
+        "step": 2,
+        "title": "Auto Scaling",
+        "color": "#06b6d4",
+        "startFrame": 752,
+        "sections": [
+          {
+            "id": "section_traffic",
+            "title": "Traffic Patterns",
+            "layout": "vs",
+            "startFrame": 760,
+            "nodes": [
+              { "label": "Closed", "icon": "moon", "startFrame": 765 },
+              { "label": "Open", "icon": "sun", "startFrame": 887 }
+            ]
+          },
+          {
+            "id": "section_features",
+            "title": "K8s Features",
+            "layout": "flow",
+            "startFrame": 1150,
+            "nodes": [
+              { "label": "Scale", "icon": "arrowUpRight", "startFrame": 1156 },
+              { "label": "Machines", "icon": "server", "startFrame": 1314 },
+              { "label": "Heal", "icon": "refreshCw", "startFrame": 1420 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.5 },
+      { "frame": 3, "target": "sticky_analogy", "x": 400, "y": 400, "scale": 0.9 },
+      { "frame": 440, "target": "section_conductor", "x": 400, "y": 550, "scale": 1.0 },
+      { "frame": 737, "target": "sticky_scaling", "x": 1200, "y": 400, "scale": 0.9 },
+      { "frame": 1135, "target": "section_features", "x": 1200, "y": 550, "scale": 1.0 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 1, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 35, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 438, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 475, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 735, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 780, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1133, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 8
+  }
+}

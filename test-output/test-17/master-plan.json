@@ -1,0 +1,134 @@
+{
+  "meta": {
+    "title": "Username Check - Behind The Scenes",
+    "fps": 30,
+    "totalFrames": 1872,
+    "totalDuration": 62.4,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 61.394
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Problem",
+        "color": "#f97316",
+        "startFrame": 5,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "User Flow",
+            "layout": "flow",
+            "startFrame": 10,
+            "nodes": [
+              { "label": "New App", "icon": "smartphone", "startFrame": 15 },
+              { "label": "Username", "icon": "user", "startFrame": 21 },
+              { "label": "Taken", "icon": "xCircle", "startFrame": 27 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Scale Issue",
+            "layout": "negation",
+            "startFrame": 480,
+            "nodes": [
+              { "label": "Billions", "icon": "users", "startFrame": 485 },
+              { "label": "DB Query", "icon": "database", "startFrame": 491 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Redis Hashmap",
+        "color": "#ef4444",
+        "startFrame": 700,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Structure",
+            "layout": "combine",
+            "startFrame": 720,
+            "nodes": [
+              { "label": "Key", "icon": "key", "startFrame": 725 },
+              { "label": "Fields", "icon": "layers", "startFrame": 731 },
+              { "label": "Values", "icon": "database", "startFrame": 737 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Lookup",
+            "layout": "flow",
+            "startFrame": 900,
+            "nodes": [
+              { "label": "Query", "icon": "search", "startFrame": 905 },
+              { "label": "Cache Hit", "icon": "zap", "startFrame": 911 },
+              { "label": "Instant", "icon": "check", "startFrame": 917 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Trie Structure",
+        "color": "#8b5cf6",
+        "startFrame": 1240,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Tree Logic",
+            "layout": "flow",
+            "startFrame": 1260,
+            "nodes": [
+              { "label": "Prefix", "icon": "gitBranch", "startFrame": 1265 },
+              { "label": "Char", "icon": "type", "startFrame": 1271 },
+              { "label": "Path", "icon": "route", "startFrame": 1277 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Performance",
+            "layout": "arrow",
+            "startFrame": 1665,
+            "nodes": [
+              { "label": "O(M)", "icon": "gauge", "startFrame": 1670 },
+              { "label": "Fast", "icon": "rocket", "startFrame": 1676 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 5, "target": "sticky_1", "x": 350, "y": 400, "scale": 1.0 },
+      { "frame": 699, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0 },
+      { "frame": 1236, "target": "sticky_3", "x": 1570, "y": 400, "scale": 1.0 },
+      { "frame": 1842, "target": "overview", "x": 960, "y": 540, "scale": 0.6 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 30, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 697, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 740, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1234, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1280, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1840, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.15 }
+    ],
+    "totalCount": 8
+  }
+}

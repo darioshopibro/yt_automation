@@ -1,0 +1,683 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 44.025,
+  "wordCount": 134,
+  "words": [
+    {
+      "word": "When",
+      "start": 0.0,
+      "end": 0.186
+    },
+    {
+      "word": "you're",
+      "start": 0.221,
+      "end": 0.383
+    },
+    {
+      "word": "using",
+      "start": 0.441,
+      "end": 0.731
+    },
+    {
+      "word": "an",
+      "start": 0.778,
+      "end": 0.824
+    },
+    {
+      "word": "event-based",
+      "start": 0.871,
+      "end": 1.533
+    },
+    {
+      "word": "system,",
+      "start": 1.602,
+      "end": 2.229
+    },
+    {
+      "word": "there",
+      "start": 2.473,
+      "end": 2.67
+    },
+    {
+      "word": "is",
+      "start": 2.717,
+      "end": 2.798
+    },
+    {
+      "word": "always",
+      "start": 2.868,
+      "end": 3.262
+    },
+    {
+      "word": "going",
+      "start": 3.32,
+      "end": 3.518
+    },
+    {
+      "word": "to",
+      "start": 3.564,
+      "end": 3.611
+    },
+    {
+      "word": "be",
+      "start": 3.657,
+      "end": 3.75
+    },
+    {
+      "word": "a",
+      "start": 3.785,
+      "end": 3.808
+    },
+    {
+      "word": "delay",
+      "start": 3.866,
+      "end": 4.261
+    },
+    {
+      "word": "between",
+      "start": 4.331,
+      "end": 4.748
+    },
+    {
+      "word": "when",
+      "start": 4.865,
+      "end": 5.062
+    },
+    {
+      "word": "the",
+      "start": 5.097,
+      "end": 5.166
+    },
+    {
+      "word": "event",
+      "start": 5.224,
+      "end": 5.468
+    },
+    {
+      "word": "is",
+      "start": 5.526,
+      "end": 5.596
+    },
+    {
+      "word": "published",
+      "start": 5.654,
+      "end": 6.142
+    },
+    {
+      "word": "and",
+      "start": 6.385,
+      "end": 6.641
+    },
+    {
+      "word": "when",
+      "start": 6.699,
+      "end": 6.838
+    },
+    {
+      "word": "your",
+      "start": 6.873,
+      "end": 6.989
+    },
+    {
+      "word": "subscribers",
+      "start": 7.024,
+      "end": 7.628
+    },
+    {
+      "word": "pick",
+      "start": 7.674,
+      "end": 7.825
+    },
+    {
+      "word": "it",
+      "start": 7.872,
+      "end": 7.93
+    },
+    {
+      "word": "up.",
+      "start": 7.988,
+      "end": 8.324
+    },
+    {
+      "word": "This",
+      "start": 8.928,
+      "end": 9.114
+    },
+    {
+      "word": "is",
+      "start": 9.172,
+      "end": 9.253
+    },
+    {
+      "word": "usually",
+      "start": 9.369,
+      "end": 9.787
+    },
+    {
+      "word": "one",
+      "start": 9.834,
+      "end": 9.938
+    },
+    {
+      "word": "of",
+      "start": 9.961,
+      "end": 10.008
+    },
+    {
+      "word": "the",
+      "start": 10.043,
+      "end": 10.112
+    },
+    {
+      "word": "trade-offs",
+      "start": 10.147,
+      "end": 10.635
+    },
+    {
+      "word": "that",
+      "start": 10.67,
+      "end": 10.774
+    },
+    {
+      "word": "you",
+      "start": 10.797,
+      "end": 10.867
+    },
+    {
+      "word": "have",
+      "start": 10.948,
+      "end": 11.088
+    },
+    {
+      "word": "to",
+      "start": 11.122,
+      "end": 11.169
+    },
+    {
+      "word": "put",
+      "start": 11.215,
+      "end": 11.366
+    },
+    {
+      "word": "up",
+      "start": 11.413,
+      "end": 11.505
+    },
+    {
+      "word": "with",
+      "start": 11.564,
+      "end": 11.784
+    },
+    {
+      "word": "if",
+      "start": 11.877,
+      "end": 12.028
+    },
+    {
+      "word": "you",
+      "start": 12.086,
+      "end": 12.167
+    },
+    {
+      "word": "want",
+      "start": 12.237,
+      "end": 12.422
+    },
+    {
+      "word": "scalability.",
+      "start": 12.48,
+      "end": 13.374
+    },
+    {
+      "word": "We",
+      "start": 13.816,
+      "end": 13.943
+    },
+    {
+      "word": "call",
+      "start": 14.001,
+      "end": 14.21
+    },
+    {
+      "word": "this",
+      "start": 14.28,
+      "end": 14.466
+    },
+    {
+      "word": "eventual",
+      "start": 14.559,
+      "end": 15.081
+    },
+    {
+      "word": "consistency,",
+      "start": 15.162,
+      "end": 16.219
+    },
+    {
+      "word": "as",
+      "start": 16.393,
+      "end": 16.567
+    },
+    {
+      "word": "your",
+      "start": 16.637,
+      "end": 16.753
+    },
+    {
+      "word": "data",
+      "start": 16.799,
+      "end": 17.043
+    },
+    {
+      "word": "is",
+      "start": 17.101,
+      "end": 17.183
+    },
+    {
+      "word": "going",
+      "start": 17.241,
+      "end": 17.426
+    },
+    {
+      "word": "to",
+      "start": 17.473,
+      "end": 17.519
+    },
+    {
+      "word": "be",
+      "start": 17.566,
+      "end": 17.67
+    },
+    {
+      "word": "eventually",
+      "start": 17.717,
+      "end": 18.332
+    },
+    {
+      "word": "consistent",
+      "start": 18.378,
+      "end": 18.924
+    },
+    {
+      "word": "with",
+      "start": 18.982,
+      "end": 19.145
+    },
+    {
+      "word": "what's",
+      "start": 19.179,
+      "end": 19.388
+    },
+    {
+      "word": "being",
+      "start": 19.435,
+      "end": 19.644
+    },
+    {
+      "word": "published.",
+      "start": 19.702,
+      "end": 20.306
+    },
+    {
+      "word": "For",
+      "start": 20.689,
+      "end": 20.828
+    },
+    {
+      "word": "example,",
+      "start": 20.886,
+      "end": 21.501
+    },
+    {
+      "word": "say",
+      "start": 21.745,
+      "end": 21.931
+    },
+    {
+      "word": "you're",
+      "start": 21.977,
+      "end": 22.14
+    },
+    {
+      "word": "running",
+      "start": 22.163,
+      "end": 22.395
+    },
+    {
+      "word": "an",
+      "start": 22.43,
+      "end": 22.488
+    },
+    {
+      "word": "e-commerce",
+      "start": 22.558,
+      "end": 23.104
+    },
+    {
+      "word": "site",
+      "start": 23.127,
+      "end": 23.556
+    },
+    {
+      "word": "and",
+      "start": 23.765,
+      "end": 23.998
+    },
+    {
+      "word": "you",
+      "start": 24.044,
+      "end": 24.125
+    },
+    {
+      "word": "use",
+      "start": 24.241,
+      "end": 24.45
+    },
+    {
+      "word": "an",
+      "start": 24.485,
+      "end": 24.532
+    },
+    {
+      "word": "event-based",
+      "start": 24.578,
+      "end": 25.217
+    },
+    {
+      "word": "system",
+      "start": 25.298,
+      "end": 25.727
+    },
+    {
+      "word": "to",
+      "start": 25.809,
+      "end": 25.902
+    },
+    {
+      "word": "manage",
+      "start": 25.983,
+      "end": 26.296
+    },
+    {
+      "word": "the",
+      "start": 26.331,
+      "end": 26.401
+    },
+    {
+      "word": "stock",
+      "start": 26.447,
+      "end": 26.703
+    },
+    {
+      "word": "numbers.",
+      "start": 26.761,
+      "end": 27.376
+    },
+    {
+      "word": "As",
+      "start": 27.817,
+      "end": 28.108
+    },
+    {
+      "word": "the",
+      "start": 28.189,
+      "end": 28.27
+    },
+    {
+      "word": "system",
+      "start": 28.328,
+      "end": 28.676
+    },
+    {
+      "word": "is",
+      "start": 28.758,
+      "end": 28.839
+    },
+    {
+      "word": "eventually",
+      "start": 28.885,
+      "end": 29.269
+    },
+    {
+      "word": "consistent,",
+      "start": 29.315,
+      "end": 30.058
+    },
+    {
+      "word": "this",
+      "start": 30.232,
+      "end": 30.406
+    },
+    {
+      "word": "could",
+      "start": 30.453,
+      "end": 30.592
+    },
+    {
+      "word": "allow",
+      "start": 30.627,
+      "end": 30.836
+    },
+    {
+      "word": "two",
+      "start": 30.906,
+      "end": 31.103
+    },
+    {
+      "word": "people",
+      "start": 31.173,
+      "end": 31.463
+    },
+    {
+      "word": "to",
+      "start": 31.498,
+      "end": 31.556
+    },
+    {
+      "word": "order",
+      "start": 31.637,
+      "end": 31.834
+    },
+    {
+      "word": "the",
+      "start": 31.881,
+      "end": 31.95
+    },
+    {
+      "word": "last",
+      "start": 31.997,
+      "end": 32.264
+    },
+    {
+      "word": "item",
+      "start": 32.345,
+      "end": 32.577
+    },
+    {
+      "word": "in",
+      "start": 32.624,
+      "end": 32.694
+    },
+    {
+      "word": "stock.",
+      "start": 32.763,
+      "end": 33.309
+    },
+    {
+      "word": "Or",
+      "start": 33.692,
+      "end": 33.959
+    },
+    {
+      "word": "for",
+      "start": 34.029,
+      "end": 34.145
+    },
+    {
+      "word": "example,",
+      "start": 34.203,
+      "end": 34.818
+    },
+    {
+      "word": "if",
+      "start": 35.062,
+      "end": 35.178
+    },
+    {
+      "word": "you're",
+      "start": 35.213,
+      "end": 35.375
+    },
+    {
+      "word": "using",
+      "start": 35.433,
+      "end": 35.689
+    },
+    {
+      "word": "it",
+      "start": 35.735,
+      "end": 35.793
+    },
+    {
+      "word": "to",
+      "start": 35.828,
+      "end": 35.875
+    },
+    {
+      "word": "keep",
+      "start": 35.921,
+      "end": 36.072
+    },
+    {
+      "word": "a",
+      "start": 36.118,
+      "end": 36.142
+    },
+    {
+      "word": "history",
+      "start": 36.188,
+      "end": 36.49
+    },
+    {
+      "word": "of",
+      "start": 36.536,
+      "end": 36.583
+    },
+    {
+      "word": "past",
+      "start": 36.653,
+      "end": 36.966
+    },
+    {
+      "word": "orders,",
+      "start": 37.036,
+      "end": 37.639
+    },
+    {
+      "word": "a",
+      "start": 37.918,
+      "end": 37.999
+    },
+    {
+      "word": "user",
+      "start": 38.115,
+      "end": 38.429
+    },
+    {
+      "word": "could",
+      "start": 38.487,
+      "end": 38.626
+    },
+    {
+      "word": "order",
+      "start": 38.673,
+      "end": 38.893
+    },
+    {
+      "word": "something",
+      "start": 38.951,
+      "end": 39.346
+    },
+    {
+      "word": "and",
+      "start": 39.462,
+      "end": 39.601
+    },
+    {
+      "word": "then",
+      "start": 39.648,
+      "end": 39.787
+    },
+    {
+      "word": "go",
+      "start": 39.857,
+      "end": 39.973
+    },
+    {
+      "word": "look",
+      "start": 40.054,
+      "end": 40.194
+    },
+    {
+      "word": "at",
+      "start": 40.24,
+      "end": 40.286
+    },
+    {
+      "word": "their",
+      "start": 40.321,
+      "end": 40.472
+    },
+    {
+      "word": "orders,",
+      "start": 40.53,
+      "end": 41.134
+    },
+    {
+      "word": "and",
+      "start": 41.517,
+      "end": 41.656
+    },
+    {
+      "word": "their",
+      "start": 41.703,
+      "end": 41.854
+    },
+    {
+      "word": "latest",
+      "start": 41.9,
+      "end": 42.214
+    },
+    {
+      "word": "order",
+      "start": 42.272,
+      "end": 42.574
+    },
+    {
+      "word": "won't",
+      "start": 42.748,
+      "end": 42.992
+    },
+    {
+      "word": "be",
+      "start": 43.038,
+      "end": 43.131
+    },
+    {
+      "word": "there",
+      "start": 43.177,
+      "end": 43.34
+    },
+    {
+      "word": "yet.",
+      "start": 43.386,
+      "end": 44.025
+    }
+  ]
+}

@@ -18,8 +18,8 @@
           "colorKey": "userQuery",
           "startFrame": 355,
           "nodes": [
-            { "label": "Prompt", "icon": "terminal" },
-            { "label": "Encoder", "icon": "cube" }
+            { "label": "Prompt", "icon": "textCursorInput" },
+            { "label": "Encoder", "icon": "cpu" }
           ]
         },
         {
@@ -30,8 +30,8 @@
           "colorKey": "embedding",
           "startFrame": 467,
           "nodes": [
-            { "label": "Words", "icon": "file" },
-            { "label": "Vectors", "icon": "vector" }
+            { "label": "Words", "icon": "type" },
+            { "label": "Vectors", "icon": "grid3x3" }
           ]
         },
         {
@@ -42,9 +42,9 @@
           "colorKey": "vectorSearch",
           "startFrame": 575,
           "nodes": [
-            { "label": "Noise", "icon": "zap" },
-            { "label": "Denoise", "icon": "layers" },
-            { "label": "Frames", "icon": "video" }
+            { "label": "Noise", "icon": "cloudy" },
+            { "label": "Denoise", "icon": "sparkles" },
+            { "label": "Frames", "icon": "frame" }
           ]
         },
         {
@@ -55,8 +55,8 @@
           "colorKey": "generate",
           "startFrame": 819,
           "nodes": [
-            { "label": "Render", "icon": "cpu" },
-            { "label": "Export", "icon": "sparkle" }
+            { "label": "Render", "icon": "clapperboard" },
+            { "label": "Export", "icon": "fileVideo" }
           ]
         }
       ]
@@ -74,7 +74,7 @@
           "colorKey": "userQuery",
           "startFrame": 938,
           "nodes": [
-            { "label": "Prompt", "icon": "terminal" },
+            { "label": "Prompt", "icon": "messageSquareText" },
             { "label": "Image", "icon": "image" }
           ]
         },
@@ -86,8 +86,8 @@
           "colorKey": "embedding",
           "startFrame": 1103,
           "nodes": [
-            { "label": "Text", "icon": "file" },
-            { "label": "Visual", "icon": "cube" },
+            { "label": "Text", "icon": "fileText" },
+            { "label": "Visual", "icon": "eye" },
             { "label": "Merge", "icon": "merge" }
           ]
         },
@@ -99,7 +99,7 @@
           "colorKey": "vectorSearch",
           "startFrame": 1303,
           "nodes": [
-            { "label": "Motion", "icon": "zap" },
+            { "label": "Motion", "icon": "move3d" },
             { "label": "Frames", "icon": "layers" }
           ]
         },
@@ -111,7 +111,7 @@
           "colorKey": "generate",
           "startFrame": 1499,
           "nodes": [
-            { "label": "Render", "icon": "cpu" },
+            { "label": "Render", "icon": "film" },
             { "label": "Quality", "icon": "sparkle" }
           ]
         }
@@ -130,8 +130,8 @@
           "colorKey": "userQuery",
           "startFrame": 1604,
           "nodes": [
-            { "label": "Prompt", "icon": "terminal" },
-            { "label": "Scene", "icon": "file" }
+            { "label": "Prompt", "icon": "pencilLine" },
+            { "label": "Scene", "icon": "captions" }
           ]
         },
         {
@@ -142,8 +142,8 @@
           "colorKey": "embedding",
           "startFrame": 1753,
           "nodes": [
-            { "label": "Attention", "icon": "cube" },
-            { "label": "Patches", "icon": "layers" }
+            { "label": "Attention", "icon": "focus" },
+            { "label": "Patches", "icon": "layoutGrid" }
           ]
         },
         {
@@ -154,8 +154,8 @@
           "colorKey": "vectorSearch",
           "startFrame": 1964,
           "nodes": [
-            { "label": "Physics", "icon": "zap" },
-            { "label": "Objects", "icon": "database" }
+            { "label": "Physics", "icon": "orbit" },
+            { "label": "Objects", "icon": "boxes" }
           ]
         },
         {
@@ -166,8 +166,8 @@
           "colorKey": "generate",
           "startFrame": 2063,
           "nodes": [
-            { "label": "Consistency", "icon": "merge" },
-            { "label": "Video", "icon": "sparkle" }
+            { "label": "Temporal", "icon": "clock" },
+            { "label": "Video", "icon": "video" }
           ]
         }
       ]

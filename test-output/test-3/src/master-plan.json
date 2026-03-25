@@ -1,0 +1,127 @@
+{
+  "meta": {
+    "title": "Machine Learning Explained",
+    "fps": 30,
+    "totalFrames": 1603,
+    "totalDuration": 52.43,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 52.43,
+    "words": [
+      { "word": "Machine", "start": 0.0, "end": 0.372, "startFrame": 0, "endFrame": 11 },
+      { "word": "learning", "start": 0.395, "end": 0.639, "startFrame": 12, "endFrame": 19 },
+      { "word": "teaches", "start": 0.685, "end": 0.952, "startFrame": 21, "endFrame": 29 },
+      { "word": "data", "start": 6.606, "end": 6.908, "startFrame": 198, "endFrame": 207 },
+      { "word": "algorithm", "start": 7.349, "end": 7.848, "startFrame": 220, "endFrame": 235 },
+      { "word": "outcomes", "start": 8.974, "end": 9.404, "startFrame": 269, "endFrame": 282 },
+      { "word": "Predictive", "start": 13.305, "end": 13.757, "startFrame": 399, "endFrame": 413 },
+      { "word": "two", "start": 17.496, "end": 17.763, "startFrame": 525, "endFrame": 533 },
+      { "word": "jobs", "start": 18.564, "end": 19.237, "startFrame": 557, "endFrame": 577 },
+      { "word": "classify", "start": 20.561, "end": 21.049, "startFrame": 617, "endFrame": 631 },
+      { "word": "car", "start": 23.231, "end": 23.452, "startFrame": 697, "endFrame": 704 },
+      { "word": "cancer", "start": 25.298, "end": 25.994, "startFrame": 759, "endFrame": 780 },
+      { "word": "predictions", "start": 27.666, "end": 28.188, "startFrame": 830, "endFrame": 846 },
+      { "word": "stock", "start": 30.568, "end": 30.812, "startFrame": 917, "endFrame": 924 },
+      { "word": "YouTube", "start": 31.904, "end": 32.264, "startFrame": 957, "endFrame": 968 },
+      { "word": "first", "start": 34.829, "end": 35.05, "startFrame": 1045, "endFrame": 1052 },
+      { "word": "step", "start": 35.096, "end": 35.445, "startFrame": 1053, "endFrame": 1063 },
+      { "word": "acquire", "start": 35.944, "end": 36.513, "startFrame": 1078, "endFrame": 1095 },
+      { "word": "clean", "start": 36.791, "end": 37.024, "startFrame": 1104, "endFrame": 1111 },
+      { "word": "lots", "start": 38.185, "end": 38.603, "startFrame": 1146, "endFrame": 1158 },
+      { "word": "Garbage", "start": 44.965, "end": 45.429, "startFrame": 1349, "endFrame": 1363 },
+      { "word": "signal", "start": 48.889, "end": 49.283, "startFrame": 1467, "endFrame": 1478 }
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "ML Basics",
+        "color": "#a855f7",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "How It Learns",
+            "layout": "flow",
+            "startFrame": 5,
+            "nodes": [
+              { "id": "node_1_1_1", "label": "Data", "icon": "database", "startFrame": 195 },
+              { "id": "node_1_1_2", "label": "Algorithm", "icon": "cpu", "startFrame": 217 },
+              { "id": "node_1_1_3", "label": "Outcomes", "icon": "sparkles", "startFrame": 266 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Two Jobs",
+            "layout": "vs",
+            "startFrame": 520,
+            "nodes": [
+              { "id": "node_1_2_1", "label": "Classify", "icon": "tags", "startFrame": 614 },
+              { "id": "node_1_2_2", "label": "Predict", "icon": "trendingUp", "startFrame": 827 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Data First",
+        "color": "#22c55e",
+        "startFrame": 1030,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Get Data",
+            "layout": "flow",
+            "startFrame": 1065,
+            "nodes": [
+              { "id": "node_2_1_1", "label": "Acquire", "icon": "download", "startFrame": 1075 },
+              { "id": "node_2_1_2", "label": "Clean", "icon": "sparkles", "startFrame": 1101 },
+              { "id": "node_2_1_3", "label": "Lots", "icon": "layers", "startFrame": 1143 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Quality Rule",
+            "layout": "negation",
+            "startFrame": 1335,
+            "nodes": [
+              { "id": "node_2_2_1", "label": "Garbage", "icon": "trash", "startFrame": 1346 },
+              { "id": "node_2_2_2", "label": "Signal", "icon": "zap", "startFrame": 1464 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 180, "target": "section_1_1", "x": 400, "y": 350, "scale": 1.0 },
+      { "frame": 505, "target": "section_1_2", "x": 400, "y": 550, "scale": 1.0 },
+      { "frame": 1015, "target": "sticky_2", "x": 1100, "y": 350, "scale": 0.9 },
+      { "frame": 1320, "target": "section_2_2", "x": 1100, "y": 550, "scale": 1.0 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 178, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 503, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 545, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1013, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1085, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1318, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1355, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 }
+    ],
+    "totalCount": 8
+  }
+}

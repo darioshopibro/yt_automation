@@ -1,0 +1,37 @@
+{
+  "title": "CI/CD Benefits",
+  "fps": 30,
+  "totalFrames": 1277,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Overview",
+      "color": "#a855f7",
+      "sections": [
+        {
+          "id": "main_section",
+          "title": "Main Concept",
+          "subtitle": "Key Ideas",
+          "layout": "flow",
+          "colorKey": "userQuery",
+          "startFrame": 30,
+          "nodes": [
+            {
+              "label": "Start",
+              "icon": "play"
+            },
+            {
+              "label": "Process",
+              "icon": "cpu"
+            },
+            {
+              "label": "End",
+              "icon": "check"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

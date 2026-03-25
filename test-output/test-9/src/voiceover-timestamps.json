@@ -1,0 +1,788 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 54.102,
+  "wordCount": 155,
+  "words": [
+    {
+      "word": "If",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "word": "you",
+      "start": 0.209,
+      "end": 0.302
+    },
+    {
+      "word": "split",
+      "start": 0.395,
+      "end": 0.708
+    },
+    {
+      "word": "your",
+      "start": 0.755,
+      "end": 0.871
+    },
+    {
+      "word": "application",
+      "start": 0.94,
+      "end": 1.625
+    },
+    {
+      "word": "into",
+      "start": 1.695,
+      "end": 1.881
+    },
+    {
+      "word": "micro",
+      "start": 1.974,
+      "end": 2.345
+    },
+    {
+      "word": "services,",
+      "start": 2.415,
+      "end": 3.193
+    },
+    {
+      "word": "how",
+      "start": 3.309,
+      "end": 3.448
+    },
+    {
+      "word": "do",
+      "start": 3.495,
+      "end": 3.553
+    },
+    {
+      "word": "you",
+      "start": 3.611,
+      "end": 3.68
+    },
+    {
+      "word": "get",
+      "start": 3.75,
+      "end": 3.878
+    },
+    {
+      "word": "them",
+      "start": 3.913,
+      "end": 4.04
+    },
+    {
+      "word": "all",
+      "start": 4.087,
+      "end": 4.203
+    },
+    {
+      "word": "to",
+      "start": 4.261,
+      "end": 4.319
+    },
+    {
+      "word": "talk",
+      "start": 4.377,
+      "end": 4.586
+    },
+    {
+      "word": "to",
+      "start": 4.644,
+      "end": 4.714
+    },
+    {
+      "word": "each",
+      "start": 4.795,
+      "end": 4.946
+    },
+    {
+      "word": "other?",
+      "start": 4.992,
+      "end": 5.41
+    },
+    {
+      "word": "There's",
+      "start": 6.107,
+      "end": 6.397
+    },
+    {
+      "word": "three",
+      "start": 6.467,
+      "end": 6.769
+    },
+    {
+      "word": "main",
+      "start": 6.85,
+      "end": 7.094
+    },
+    {
+      "word": "ways",
+      "start": 7.175,
+      "end": 7.523
+    },
+    {
+      "word": "that",
+      "start": 7.581,
+      "end": 7.709
+    },
+    {
+      "word": "micro",
+      "start": 7.767,
+      "end": 8.115
+    },
+    {
+      "word": "services",
+      "start": 8.185,
+      "end": 8.661
+    },
+    {
+      "word": "can",
+      "start": 8.719,
+      "end": 8.847
+    },
+    {
+      "word": "communicate.",
+      "start": 8.905,
+      "end": 9.718
+    },
+    {
+      "word": "The",
+      "start": 10.101,
+      "end": 10.217
+    },
+    {
+      "word": "first",
+      "start": 10.298,
+      "end": 10.658
+    },
+    {
+      "word": "is",
+      "start": 10.739,
+      "end": 10.89
+    },
+    {
+      "word": "by",
+      "start": 10.96,
+      "end": 11.111
+    },
+    {
+      "word": "A",
+      "start": 11.227,
+      "end": 11.343
+    },
+    {
+      "word": "P",
+      "start": 11.471,
+      "end": 11.622
+    },
+    {
+      "word": "I.",
+      "start": 11.796,
+      "end": 12.249
+    },
+    {
+      "word": "Each",
+      "start": 12.759,
+      "end": 13.038
+    },
+    {
+      "word": "micro",
+      "start": 13.119,
+      "end": 13.491
+    },
+    {
+      "word": "service",
+      "start": 13.572,
+      "end": 13.967
+    },
+    {
+      "word": "has",
+      "start": 14.013,
+      "end": 14.164
+    },
+    {
+      "word": "its",
+      "start": 14.222,
+      "end": 14.338
+    },
+    {
+      "word": "own",
+      "start": 14.396,
+      "end": 14.629
+    },
+    {
+      "word": "endpoint",
+      "start": 14.698,
+      "end": 15.29
+    },
+    {
+      "word": "that",
+      "start": 15.406,
+      "end": 15.604
+    },
+    {
+      "word": "the",
+      "start": 15.639,
+      "end": 15.72
+    },
+    {
+      "word": "other",
+      "start": 15.801,
+      "end": 15.999
+    },
+    {
+      "word": "micro",
+      "start": 16.068,
+      "end": 16.405
+    },
+    {
+      "word": "services",
+      "start": 16.475,
+      "end": 16.928
+    },
+    {
+      "word": "can",
+      "start": 16.986,
+      "end": 17.113
+    },
+    {
+      "word": "call.",
+      "start": 17.183,
+      "end": 17.717
+    },
+    {
+      "word": "The",
+      "start": 18.228,
+      "end": 18.344
+    },
+    {
+      "word": "second",
+      "start": 18.414,
+      "end": 18.715
+    },
+    {
+      "word": "option",
+      "start": 18.785,
+      "end": 19.133
+    },
+    {
+      "word": "is",
+      "start": 19.203,
+      "end": 19.296
+    },
+    {
+      "word": "to",
+      "start": 19.354,
+      "end": 19.4
+    },
+    {
+      "word": "use",
+      "start": 19.482,
+      "end": 19.644
+    },
+    {
+      "word": "a",
+      "start": 19.667,
+      "end": 19.702
+    },
+    {
+      "word": "message",
+      "start": 19.749,
+      "end": 20.062
+    },
+    {
+      "word": "broker.",
+      "start": 20.085,
+      "end": 20.62
+    },
+    {
+      "word": "If",
+      "start": 20.945,
+      "end": 21.084
+    },
+    {
+      "word": "what",
+      "start": 21.142,
+      "end": 21.293
+    },
+    {
+      "word": "your",
+      "start": 21.339,
+      "end": 21.455
+    },
+    {
+      "word": "application",
+      "start": 21.513,
+      "end": 22.117
+    },
+    {
+      "word": "needs",
+      "start": 22.187,
+      "end": 22.442
+    },
+    {
+      "word": "to",
+      "start": 22.5,
+      "end": 22.57
+    },
+    {
+      "word": "do",
+      "start": 22.651,
+      "end": 22.872
+    },
+    {
+      "word": "can",
+      "start": 22.965,
+      "end": 23.092
+    },
+    {
+      "word": "be",
+      "start": 23.139,
+      "end": 23.209
+    },
+    {
+      "word": "done",
+      "start": 23.255,
+      "end": 23.429
+    },
+    {
+      "word": "asynchronously,",
+      "start": 23.476,
+      "end": 24.637
+    },
+    {
+      "word": "then",
+      "start": 24.88,
+      "end": 25.031
+    },
+    {
+      "word": "you're",
+      "start": 25.066,
+      "end": 25.24
+    },
+    {
+      "word": "better",
+      "start": 25.264,
+      "end": 25.496
+    },
+    {
+      "word": "off",
+      "start": 25.565,
+      "end": 25.74
+    },
+    {
+      "word": "using",
+      "start": 25.821,
+      "end": 26.076
+    },
+    {
+      "word": "a",
+      "start": 26.111,
+      "end": 26.134
+    },
+    {
+      "word": "message",
+      "start": 26.181,
+      "end": 26.483
+    },
+    {
+      "word": "broker.",
+      "start": 26.506,
+      "end": 27.051
+    },
+    {
+      "word": "The",
+      "start": 27.377,
+      "end": 27.493
+    },
+    {
+      "word": "last",
+      "start": 27.562,
+      "end": 27.876
+    },
+    {
+      "word": "option",
+      "start": 27.945,
+      "end": 28.329
+    },
+    {
+      "word": "is",
+      "start": 28.421,
+      "end": 28.514
+    },
+    {
+      "word": "what",
+      "start": 28.561,
+      "end": 28.688
+    },
+    {
+      "word": "we",
+      "start": 28.723,
+      "end": 28.793
+    },
+    {
+      "word": "call",
+      "start": 28.839,
+      "end": 29.141
+    },
+    {
+      "word": "a",
+      "start": 29.222,
+      "end": 29.268
+    },
+    {
+      "word": "service",
+      "start": 29.385,
+      "end": 29.837
+    },
+    {
+      "word": "mesh.",
+      "start": 29.895,
+      "end": 30.418
+    },
+    {
+      "word": "A",
+      "start": 30.801,
+      "end": 30.871
+    },
+    {
+      "word": "service",
+      "start": 30.987,
+      "end": 31.381
+    },
+    {
+      "word": "mesh",
+      "start": 31.44,
+      "end": 31.73
+    },
+    {
+      "word": "handles",
+      "start": 31.799,
+      "end": 32.171
+    },
+    {
+      "word": "all",
+      "start": 32.229,
+      "end": 32.45
+    },
+    {
+      "word": "of",
+      "start": 32.496,
+      "end": 32.542
+    },
+    {
+      "word": "the",
+      "start": 32.589,
+      "end": 32.659
+    },
+    {
+      "word": "communication",
+      "start": 32.705,
+      "end": 33.541
+    },
+    {
+      "word": "as",
+      "start": 33.611,
+      "end": 33.762
+    },
+    {
+      "word": "well",
+      "start": 33.843,
+      "end": 34.029
+    },
+    {
+      "word": "as",
+      "start": 34.087,
+      "end": 34.156
+    },
+    {
+      "word": "dealing",
+      "start": 34.226,
+      "end": 34.539
+    },
+    {
+      "word": "with",
+      "start": 34.574,
+      "end": 34.702
+    },
+    {
+      "word": "the",
+      "start": 34.748,
+      "end": 34.818
+    },
+    {
+      "word": "discoverability",
+      "start": 34.864,
+      "end": 35.805
+    },
+    {
+      "word": "and",
+      "start": 35.886,
+      "end": 36.014
+    },
+    {
+      "word": "the",
+      "start": 36.06,
+      "end": 36.13
+    },
+    {
+      "word": "reliability",
+      "start": 36.176,
+      "end": 36.943
+    },
+    {
+      "word": "of",
+      "start": 37.001,
+      "end": 37.047
+    },
+    {
+      "word": "your",
+      "start": 37.105,
+      "end": 37.221
+    },
+    {
+      "word": "services.",
+      "start": 37.279,
+      "end": 38.057
+    },
+    {
+      "word": "As",
+      "start": 38.661,
+      "end": 38.858
+    },
+    {
+      "word": "we",
+      "start": 38.928,
+      "end": 39.032
+    },
+    {
+      "word": "saw",
+      "start": 39.09,
+      "end": 39.323
+    },
+    {
+      "word": "with",
+      "start": 39.381,
+      "end": 39.52
+    },
+    {
+      "word": "monoliths,",
+      "start": 39.578,
+      "end": 40.437
+    },
+    {
+      "word": "if",
+      "start": 40.681,
+      "end": 40.797
+    },
+    {
+      "word": "you",
+      "start": 40.855,
+      "end": 40.936
+    },
+    {
+      "word": "have",
+      "start": 41.006,
+      "end": 41.169
+    },
+    {
+      "word": "one",
+      "start": 41.227,
+      "end": 41.447
+    },
+    {
+      "word": "part",
+      "start": 41.494,
+      "end": 41.703
+    },
+    {
+      "word": "of",
+      "start": 41.738,
+      "end": 41.784
+    },
+    {
+      "word": "your",
+      "start": 41.83,
+      "end": 41.947
+    },
+    {
+      "word": "application",
+      "start": 42.005,
+      "end": 42.643
+    },
+    {
+      "word": "that's",
+      "start": 42.69,
+      "end": 42.887
+    },
+    {
+      "word": "getting",
+      "start": 42.933,
+      "end": 43.165
+    },
+    {
+      "word": "more",
+      "start": 43.235,
+      "end": 43.421
+    },
+    {
+      "word": "requests,",
+      "start": 43.467,
+      "end": 44.419
+    },
+    {
+      "word": "then",
+      "start": 44.698,
+      "end": 44.86
+    },
+    {
+      "word": "you",
+      "start": 44.907,
+      "end": 44.988
+    },
+    {
+      "word": "have",
+      "start": 45.058,
+      "end": 45.209
+    },
+    {
+      "word": "no",
+      "start": 45.255,
+      "end": 45.371
+    },
+    {
+      "word": "choice",
+      "start": 45.452,
+      "end": 45.824
+    },
+    {
+      "word": "but",
+      "start": 45.87,
+      "end": 45.986
+    },
+    {
+      "word": "to",
+      "start": 46.021,
+      "end": 46.068
+    },
+    {
+      "word": "scale",
+      "start": 46.126,
+      "end": 46.416
+    },
+    {
+      "word": "up",
+      "start": 46.451,
+      "end": 46.544
+    },
+    {
+      "word": "your",
+      "start": 46.59,
+      "end": 46.706
+    },
+    {
+      "word": "whole",
+      "start": 46.753,
+      "end": 46.938
+    },
+    {
+      "word": "application.",
+      "start": 46.973,
+      "end": 47.832
+    },
+    {
+      "word": "But",
+      "start": 48.216,
+      "end": 48.366
+    },
+    {
+      "word": "with",
+      "start": 48.401,
+      "end": 48.529
+    },
+    {
+      "word": "micro",
+      "start": 48.587,
+      "end": 48.901
+    },
+    {
+      "word": "services,",
+      "start": 48.97,
+      "end": 49.725
+    },
+    {
+      "word": "you",
+      "start": 50.003,
+      "end": 50.085
+    },
+    {
+      "word": "can",
+      "start": 50.143,
+      "end": 50.259
+    },
+    {
+      "word": "scale",
+      "start": 50.317,
+      "end": 50.596
+    },
+    {
+      "word": "up",
+      "start": 50.63,
+      "end": 50.723
+    },
+    {
+      "word": "just",
+      "start": 50.839,
+      "end": 51.141
+    },
+    {
+      "word": "that",
+      "start": 51.188,
+      "end": 51.35
+    },
+    {
+      "word": "one",
+      "start": 51.432,
+      "end": 51.629
+    },
+    {
+      "word": "service",
+      "start": 51.687,
+      "end": 52.221
+    },
+    {
+      "word": "and",
+      "start": 52.267,
+      "end": 52.43
+    },
+    {
+      "word": "save",
+      "start": 52.511,
+      "end": 52.79
+    },
+    {
+      "word": "money",
+      "start": 52.836,
+      "end": 53.08
+    },
+    {
+      "word": "in",
+      "start": 53.15,
+      "end": 53.231
+    },
+    {
+      "word": "the",
+      "start": 53.266,
+      "end": 53.336
+    },
+    {
+      "word": "process.",
+      "start": 53.37,
+      "end": 54.102
+    }
+  ]
+}

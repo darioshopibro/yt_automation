@@ -1,0 +1,121 @@
+{
+  "meta": {
+    "title": "How RAG Works",
+    "fps": 30,
+    "totalFrames": 1380,
+    "totalDuration": 46.0,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 45.4
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_retrieval",
+        "step": 1,
+        "title": "Retrieval",
+        "color": "#8b5cf6",
+        "startFrame": 170,
+        "sections": [
+          {
+            "id": "section_embed",
+            "title": "Embedding",
+            "layout": "flow",
+            "startFrame": 180,
+            "nodes": [
+              { "label": "Docs", "icon": "fileText", "startFrame": 185 },
+              { "label": "Vectors", "icon": "cube", "startFrame": 280 },
+              { "label": "Database", "icon": "database", "startFrame": 330 }
+            ]
+          },
+          {
+            "id": "section_compare",
+            "title": "Compare",
+            "layout": "bidirectional",
+            "startFrame": 420,
+            "nodes": [
+              { "label": "Query", "icon": "search", "startFrame": 425 },
+              { "label": "Match", "icon": "gitCompare", "startFrame": 530 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_augment",
+        "step": 2,
+        "title": "Augmentation",
+        "color": "#06b6d4",
+        "startFrame": 615,
+        "sections": [
+          {
+            "id": "section_inject",
+            "title": "Inject Data",
+            "layout": "flow",
+            "startFrame": 625,
+            "nodes": [
+              { "label": "Context", "icon": "fileSearch", "startFrame": 715 },
+              { "label": "Prompt", "icon": "messageSquare", "startFrame": 775 }
+            ]
+          },
+          {
+            "id": "section_fresh",
+            "title": "Fresh vs Static",
+            "layout": "negation",
+            "startFrame": 820,
+            "nodes": [
+              { "label": "Static", "icon": "archive", "startFrame": 905 },
+              { "label": "Live", "icon": "refreshCw", "startFrame": 1050 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_generate",
+        "step": 3,
+        "title": "Generation",
+        "color": "#22c55e",
+        "startFrame": 1220,
+        "sections": [
+          {
+            "id": "section_output",
+            "title": "AI Response",
+            "layout": "flow",
+            "startFrame": 1230,
+            "nodes": [
+              { "label": "LLM", "icon": "brain", "startFrame": 1250 },
+              { "label": "Response", "icon": "sparkles", "startFrame": 1320 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 155, "target": "sticky_retrieval", "x": 350, "y": 450, "scale": 0.95 },
+      { "frame": 600, "target": "sticky_augment", "x": 960, "y": 450, "scale": 0.95 },
+      { "frame": 1205, "target": "sticky_generate", "x": 1570, "y": 450, "scale": 0.95 },
+      { "frame": 1350, "target": "overview", "x": 960, "y": 540, "scale": 0.65 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 153, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 200, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 598, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 650, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1203, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.22 },
+      { "frame": 1250, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1348, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.15 }
+    ],
+    "totalCount": 8
+  }
+}

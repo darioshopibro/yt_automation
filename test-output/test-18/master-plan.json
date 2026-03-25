@@ -1,0 +1,254 @@
+{
+  "meta": {
+    "title": "Bloom Filter",
+    "fps": 30,
+    "totalFrames": 1442,
+    "totalDuration": 48.07,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 47.047,
+    "words": [
+      { "word": "A", "start": 0.0, "end": 0.286, "startFrame": 0, "endFrame": 9 },
+      { "word": "Bloom", "start": 0.318, "end": 0.604, "startFrame": 10, "endFrame": 18 },
+      { "word": "filter", "start": 0.636, "end": 0.922, "startFrame": 19, "endFrame": 28 },
+      { "word": "is", "start": 0.954, "end": 1.24, "startFrame": 29, "endFrame": 37 },
+      { "word": "just", "start": 1.272, "end": 1.558, "startFrame": 38, "endFrame": 47 },
+      { "word": "a", "start": 1.589, "end": 1.876, "startFrame": 48, "endFrame": 56 },
+      { "word": "bit", "start": 1.907, "end": 2.193, "startFrame": 57, "endFrame": 66 },
+      { "word": "array", "start": 2.225, "end": 2.511, "startFrame": 67, "endFrame": 75 },
+      { "word": "combined", "start": 2.543, "end": 2.829, "startFrame": 76, "endFrame": 85 },
+      { "word": "with", "start": 2.861, "end": 3.147, "startFrame": 86, "endFrame": 94 },
+      { "word": "handful", "start": 3.179, "end": 3.465, "startFrame": 95, "endFrame": 104 },
+      { "word": "of", "start": 3.497, "end": 3.783, "startFrame": 105, "endFrame": 113 },
+      { "word": "hash", "start": 3.815, "end": 4.101, "startFrame": 114, "endFrame": 123 },
+      { "word": "functions", "start": 4.132, "end": 4.476, "startFrame": 124, "endFrame": 134 },
+      { "word": "When", "start": 4.514, "end": 4.8, "startFrame": 135, "endFrame": 144 },
+      { "word": "you", "start": 4.832, "end": 5.118, "startFrame": 145, "endFrame": 154 },
+      { "word": "add", "start": 5.15, "end": 5.436, "startFrame": 155, "endFrame": 163 },
+      { "word": "a", "start": 5.468, "end": 5.754, "startFrame": 164, "endFrame": 173 },
+      { "word": "username", "start": 5.785, "end": 6.072, "startFrame": 174, "endFrame": 182 },
+      { "word": "it's", "start": 6.103, "end": 6.389, "startFrame": 183, "endFrame": 192 },
+      { "word": "hashed", "start": 6.421, "end": 6.707, "startFrame": 193, "endFrame": 201 },
+      { "word": "multiple", "start": 6.739, "end": 7.025, "startFrame": 202, "endFrame": 211 },
+      { "word": "times", "start": 7.057, "end": 7.343, "startFrame": 212, "endFrame": 220 },
+      { "word": "and", "start": 7.375, "end": 7.661, "startFrame": 221, "endFrame": 230 },
+      { "word": "each", "start": 7.693, "end": 7.979, "startFrame": 231, "endFrame": 239 },
+      { "word": "hash", "start": 8.011, "end": 8.297, "startFrame": 240, "endFrame": 249 },
+      { "word": "sets", "start": 8.329, "end": 8.615, "startFrame": 250, "endFrame": 258 },
+      { "word": "a", "start": 8.646, "end": 8.932, "startFrame": 259, "endFrame": 268 },
+      { "word": "corresponding", "start": 8.964, "end": 9.25, "startFrame": 269, "endFrame": 278 },
+      { "word": "bit", "start": 9.282, "end": 9.568, "startFrame": 278, "endFrame": 287 },
+      { "word": "in", "start": 9.6, "end": 9.886, "startFrame": 288, "endFrame": 297 },
+      { "word": "the", "start": 9.918, "end": 10.204, "startFrame": 298, "endFrame": 306 },
+      { "word": "array", "start": 10.236, "end": 10.579, "startFrame": 307, "endFrame": 317 },
+      { "word": "To", "start": 10.617, "end": 10.903, "startFrame": 319, "endFrame": 327 },
+      { "word": "check", "start": 10.935, "end": 11.221, "startFrame": 328, "endFrame": 337 },
+      { "word": "a", "start": 11.253, "end": 11.539, "startFrame": 338, "endFrame": 346 },
+      { "word": "username", "start": 11.571, "end": 11.857, "startFrame": 347, "endFrame": 356 },
+      { "word": "you", "start": 11.889, "end": 12.175, "startFrame": 357, "endFrame": 365 },
+      { "word": "hash", "start": 12.207, "end": 12.493, "startFrame": 366, "endFrame": 375 },
+      { "word": "it", "start": 12.525, "end": 12.811, "startFrame": 376, "endFrame": 384 },
+      { "word": "the", "start": 12.842, "end": 13.129, "startFrame": 385, "endFrame": 394 },
+      { "word": "same", "start": 13.16, "end": 13.446, "startFrame": 395, "endFrame": 403 },
+      { "word": "way", "start": 13.478, "end": 13.822, "startFrame": 404, "endFrame": 415 },
+      { "word": "If", "start": 13.86, "end": 14.146, "startFrame": 416, "endFrame": 424 },
+      { "word": "any", "start": 14.178, "end": 14.464, "startFrame": 425, "endFrame": 434 },
+      { "word": "of", "start": 14.495, "end": 14.782, "startFrame": 435, "endFrame": 443 },
+      { "word": "those", "start": 14.813, "end": 15.099, "startFrame": 444, "endFrame": 453 },
+      { "word": "bits", "start": 15.131, "end": 15.417, "startFrame": 454, "endFrame": 463 },
+      { "word": "is", "start": 15.449, "end": 15.735, "startFrame": 464, "endFrame": 472 },
+      { "word": "zero", "start": 15.767, "end": 16.053, "startFrame": 473, "endFrame": 482 },
+      { "word": "the", "start": 16.085, "end": 16.371, "startFrame": 483, "endFrame": 491 },
+      { "word": "username", "start": 16.403, "end": 16.689, "startFrame": 492, "endFrame": 501 },
+      { "word": "is", "start": 16.721, "end": 17.007, "startFrame": 502, "endFrame": 510 },
+      { "word": "definitely", "start": 17.038, "end": 17.325, "startFrame": 511, "endFrame": 520 },
+      { "word": "not", "start": 17.356, "end": 17.642, "startFrame": 521, "endFrame": 529 },
+      { "word": "in", "start": 17.674, "end": 17.96, "startFrame": 530, "endFrame": 539 },
+      { "word": "the", "start": 17.992, "end": 18.278, "startFrame": 540, "endFrame": 548 },
+      { "word": "set", "start": 18.31, "end": 18.653, "startFrame": 549, "endFrame": 560 },
+      { "word": "If", "start": 18.691, "end": 18.978, "startFrame": 561, "endFrame": 569 },
+      { "word": "all", "start": 19.009, "end": 19.295, "startFrame": 570, "endFrame": 579 },
+      { "word": "the", "start": 19.327, "end": 19.613, "startFrame": 580, "endFrame": 588 },
+      { "word": "bits", "start": 19.645, "end": 19.931, "startFrame": 589, "endFrame": 598 },
+      { "word": "are", "start": 19.963, "end": 20.249, "startFrame": 599, "endFrame": 607 },
+      { "word": "one", "start": 20.281, "end": 20.567, "startFrame": 608, "endFrame": 617 },
+      { "word": "then", "start": 20.599, "end": 20.885, "startFrame": 618, "endFrame": 627 },
+      { "word": "it's", "start": 20.917, "end": 21.203, "startFrame": 628, "endFrame": 636 },
+      { "word": "probably", "start": 21.235, "end": 21.521, "startFrame": 637, "endFrame": 646 },
+      { "word": "present", "start": 21.552, "end": 21.896, "startFrame": 647, "endFrame": 657 },
+      { "word": "And", "start": 21.934, "end": 22.22, "startFrame": 658, "endFrame": 667 },
+      { "word": "that's", "start": 22.252, "end": 22.538, "startFrame": 668, "endFrame": 676 },
+      { "word": "when", "start": 22.57, "end": 22.856, "startFrame": 677, "endFrame": 686 },
+      { "word": "you", "start": 22.888, "end": 23.174, "startFrame": 687, "endFrame": 695 },
+      { "word": "fall", "start": 23.205, "end": 23.491, "startFrame": 696, "endFrame": 705 },
+      { "word": "back", "start": 23.523, "end": 23.809, "startFrame": 706, "endFrame": 714 },
+      { "word": "to", "start": 23.841, "end": 24.127, "startFrame": 715, "endFrame": 724 },
+      { "word": "database", "start": 26.066, "end": 26.352, "startFrame": 782, "endFrame": 791 },
+      { "word": "query", "start": 26.384, "end": 26.728, "startFrame": 792, "endFrame": 802 },
+      { "word": "What", "start": 26.766, "end": 27.052, "startFrame": 803, "endFrame": 812 },
+      { "word": "makes", "start": 27.084, "end": 27.37, "startFrame": 813, "endFrame": 821 },
+      { "word": "Bloom", "start": 27.401, "end": 27.688, "startFrame": 822, "endFrame": 831 },
+      { "word": "filters", "start": 27.719, "end": 28.005, "startFrame": 832, "endFrame": 840 },
+      { "word": "powerful", "start": 28.355, "end": 28.641, "startFrame": 851, "endFrame": 859 },
+      { "word": "never", "start": 29.627, "end": 29.913, "startFrame": 889, "endFrame": 897 },
+      { "word": "false", "start": 30.262, "end": 30.548, "startFrame": 908, "endFrame": 916 },
+      { "word": "negatives", "start": 30.58, "end": 30.924, "startFrame": 917, "endFrame": 928 },
+      { "word": "trust", "start": 33.823, "end": 34.109, "startFrame": 1015, "endFrame": 1023 },
+      { "word": "trade-off", "start": 35.158, "end": 35.444, "startFrame": 1055, "endFrame": 1063 },
+      { "word": "false", "start": 36.747, "end": 37.033, "startFrame": 1102, "endFrame": 1111 },
+      { "word": "positives", "start": 37.065, "end": 37.351, "startFrame": 1112, "endFrame": 1121 },
+      { "word": "acceptable", "start": 38.337, "end": 38.623, "startFrame": 1150, "endFrame": 1159 },
+      { "word": "database", "start": 40.88, "end": 41.223, "startFrame": 1226, "endFrame": 1237 },
+      { "word": "billion", "start": 42.215, "end": 42.501, "startFrame": 1266, "endFrame": 1275 },
+      { "word": "usernames", "start": 42.533, "end": 42.819, "startFrame": 1276, "endFrame": 1285 },
+      { "word": "GB", "start": 46.665, "end": 46.951, "startFrame": 1400, "endFrame": 1409 },
+      { "word": "memory", "start": 47.301, "end": 47.644, "startFrame": 1419, "endFrame": 1429 }
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "How It Works",
+        "color": "#a855f7",
+        "startFrame": 5,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Structure",
+            "layout": "combine",
+            "startFrame": 15,
+            "nodes": [
+              { "label": "Bit Array", "icon": "layers", "startFrame": 55 },
+              { "label": "Hash", "icon": "zap", "startFrame": 110 },
+              { "label": "Filter", "icon": "filter", "startFrame": 120 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Add User",
+            "layout": "flow",
+            "startFrame": 145,
+            "nodes": [
+              { "label": "Username", "icon": "user", "startFrame": 170 },
+              { "label": "Hash", "icon": "zap", "startFrame": 190 },
+              { "label": "Set Bits", "icon": "check", "startFrame": 245 }
+            ]
+          },
+          {
+            "id": "section_1_3",
+            "title": "Check User",
+            "layout": "flow",
+            "startFrame": 320,
+            "nodes": [
+              { "label": "Query", "icon": "search", "startFrame": 325 },
+              { "label": "Hash", "icon": "zap", "startFrame": 365 },
+              { "label": "Compare", "icon": "gitMerge", "startFrame": 395 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "The Power",
+        "color": "#06b6d4",
+        "startFrame": 410,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Bit Check",
+            "layout": "if-else",
+            "startFrame": 420,
+            "nodes": [
+              { "label": "Any Zero", "icon": "x", "startFrame": 465 },
+              { "label": "Not In Set", "icon": "shield", "startFrame": 510 },
+              { "label": "All Ones", "icon": "check", "startFrame": 605 },
+              { "label": "Probably", "icon": "alert", "startFrame": 640 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Fallback",
+            "layout": "arrow",
+            "startFrame": 670,
+            "nodes": [
+              { "label": "Uncertain", "icon": "alert", "startFrame": 680 },
+              { "label": "DB Query", "icon": "database", "startFrame": 785 }
+            ]
+          },
+          {
+            "id": "section_2_3",
+            "title": "Guarantee",
+            "layout": "negation",
+            "startFrame": 820,
+            "nodes": [
+              { "label": "No False-", "icon": "x", "startFrame": 890 },
+              { "label": "Trust It", "icon": "shield", "startFrame": 1015 }
+            ]
+          },
+          {
+            "id": "section_2_4",
+            "title": "Trade-off",
+            "layout": "vs",
+            "startFrame": 1050,
+            "nodes": [
+              { "label": "False+", "icon": "alert", "startFrame": 1105 },
+              { "label": "Massive DB", "icon": "database", "startFrame": 1220 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Real Numbers",
+        "color": "#22c55e",
+        "startFrame": 1250,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Scale",
+            "layout": "flow",
+            "startFrame": 1260,
+            "nodes": [
+              { "label": "1 Billion", "icon": "globe", "startFrame": 1265 },
+              { "label": "1% Error", "icon": "cpu", "startFrame": 1290 },
+              { "label": "1.2 GB", "icon": "server", "startFrame": 1400 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.65 },
+      { "frame": 5, "target": "title", "x": 960, "y": 300, "scale": 0.8 },
+      { "frame": 45, "target": "sticky_1", "x": 450, "y": 450, "scale": 1.0 },
+      { "frame": 400, "target": "sticky_2", "x": 960, "y": 450, "scale": 1.0 },
+      { "frame": 1240, "target": "sticky_3", "x": 1400, "y": 450, "scale": 1.0 },
+      { "frame": 1410, "target": "overview", "x": 960, "y": 540, "scale": 0.65 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 43, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 75, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 398, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 440, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1238, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1280, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1408, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 8
+  }
+}

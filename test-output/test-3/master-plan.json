@@ -1,0 +1,135 @@
+{
+  "meta": {
+    "title": "Machine Learning",
+    "fps": 30,
+    "totalFrames": 1460,
+    "totalDuration": 48.67,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 47.65
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "How It Works",
+        "color": "#a855f7",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Learning Process",
+            "layout": "flow",
+            "startFrame": 5,
+            "nodes": [
+              { "label": "Data", "icon": "database", "startFrame": 10 },
+              { "label": "Algorithm", "icon": "cpu", "startFrame": 16 },
+              { "label": "Improve", "icon": "sparkles", "startFrame": 22 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "No Explicit Code",
+            "layout": "negation",
+            "startFrame": 75,
+            "nodes": [
+              { "label": "Manual", "icon": "code", "startFrame": 80 },
+              { "label": "Auto", "icon": "brain", "startFrame": 86 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Two Jobs",
+        "color": "#f97316",
+        "startFrame": 390,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Classification",
+            "layout": "flow",
+            "startFrame": 400,
+            "nodes": [
+              { "label": "Input", "icon": "file", "startFrame": 405 },
+              { "label": "Classify", "icon": "layers", "startFrame": 411 },
+              { "label": "Label", "icon": "check", "startFrame": 417 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Prediction",
+            "layout": "flow",
+            "startFrame": 745,
+            "nodes": [
+              { "label": "History", "icon": "database", "startFrame": 750 },
+              { "label": "Model", "icon": "brain", "startFrame": 756 },
+              { "label": "Future", "icon": "zap", "startFrame": 762 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Data Quality",
+        "color": "#06b6d4",
+        "startFrame": 960,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Acquire & Clean",
+            "layout": "flow",
+            "startFrame": 970,
+            "nodes": [
+              { "label": "Collect", "icon": "search", "startFrame": 975 },
+              { "label": "Clean", "icon": "refreshCw", "startFrame": 981 },
+              { "label": "Store", "icon": "database", "startFrame": 987 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Signal Matters",
+            "layout": "combine",
+            "startFrame": 1220,
+            "nodes": [
+              { "label": "Quality", "icon": "check", "startFrame": 1225 },
+              { "label": "Signal", "icon": "zap", "startFrame": 1231 },
+              { "label": "Value", "icon": "sparkles", "startFrame": 1237 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 1, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0 },
+      { "frame": 375, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0 },
+      { "frame": 945, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.0 },
+      { "frame": 1400, "target": "overview", "x": 960, "y": 540, "scale": 0.6 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 373, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 420, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 765, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 943, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 990, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1240, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1398, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 8
+  }
+}

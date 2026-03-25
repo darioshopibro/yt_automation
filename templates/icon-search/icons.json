@@ -1,0 +1,7750 @@
+[
+  {
+    "name": "aArrowDown",
+    "readable": "a arrow down"
+  },
+  {
+    "name": "aArrowUp",
+    "readable": "a arrow up"
+  },
+  {
+    "name": "aLargeSmall",
+    "readable": "a large small"
+  },
+  {
+    "name": "accessibility",
+    "readable": "accessibility"
+  },
+  {
+    "name": "activity",
+    "readable": "activity"
+  },
+  {
+    "name": "activitySquare",
+    "readable": "activity square"
+  },
+  {
+    "name": "airVent",
+    "readable": "air vent"
+  },
+  {
+    "name": "airplay",
+    "readable": "airplay"
+  },
+  {
+    "name": "alarmCheck",
+    "readable": "alarm check"
+  },
+  {
+    "name": "alarmClock",
+    "readable": "alarm clock"
+  },
+  {
+    "name": "alarmClockCheck",
+    "readable": "alarm clock check"
+  },
+  {
+    "name": "alarmClockMinus",
+    "readable": "alarm clock minus"
+  },
+  {
+    "name": "alarmClockOff",
+    "readable": "alarm clock off"
+  },
+  {
+    "name": "alarmClockPlus",
+    "readable": "alarm clock plus"
+  },
+  {
+    "name": "alarmMinus",
+    "readable": "alarm minus"
+  },
+  {
+    "name": "alarmPlus",
+    "readable": "alarm plus"
+  },
+  {
+    "name": "alarmSmoke",
+    "readable": "alarm smoke"
+  },
+  {
+    "name": "album",
+    "readable": "album"
+  },
+  {
+    "name": "alertCircle",
+    "readable": "alert circle"
+  },
+  {
+    "name": "alertOctagon",
+    "readable": "alert octagon"
+  },
+  {
+    "name": "alertTriangle",
+    "readable": "alert triangle"
+  },
+  {
+    "name": "alignCenter",
+    "readable": "align center"
+  },
+  {
+    "name": "alignCenterHorizontal",
+    "readable": "align center horizontal"
+  },
+  {
+    "name": "alignCenterVertical",
+    "readable": "align center vertical"
+  },
+  {
+    "name": "alignEndHorizontal",
+    "readable": "align end horizontal"
+  },
+  {
+    "name": "alignEndVertical",
+    "readable": "align end vertical"
+  },
+  {
+    "name": "alignHorizontalDistributeCenter",
+    "readable": "align horizontal distribute center"
+  },
+  {
+    "name": "alignHorizontalDistributeEnd",
+    "readable": "align horizontal distribute end"
+  },
+  {
+    "name": "alignHorizontalDistributeStart",
+    "readable": "align horizontal distribute start"
+  },
+  {
+    "name": "alignHorizontalJustifyCenter",
+    "readable": "align horizontal justify center"
+  },
+  {
+    "name": "alignHorizontalJustifyEnd",
+    "readable": "align horizontal justify end"
+  },
+  {
+    "name": "alignHorizontalJustifyStart",
+    "readable": "align horizontal justify start"
+  },
+  {
+    "name": "alignHorizontalSpaceAround",
+    "readable": "align horizontal space around"
+  },
+  {
+    "name": "alignHorizontalSpaceBetween",
+    "readable": "align horizontal space between"
+  },
+  {
+    "name": "alignJustify",
+    "readable": "align justify"
+  },
+  {
+    "name": "alignLeft",
+    "readable": "align left"
+  },
+  {
+    "name": "alignRight",
+    "readable": "align right"
+  },
+  {
+    "name": "alignStartHorizontal",
+    "readable": "align start horizontal"
+  },
+  {
+    "name": "alignStartVertical",
+    "readable": "align start vertical"
+  },
+  {
+    "name": "alignVerticalDistributeCenter",
+    "readable": "align vertical distribute center"
+  },
+  {
+    "name": "alignVerticalDistributeEnd",
+    "readable": "align vertical distribute end"
+  },
+  {
+    "name": "alignVerticalDistributeStart",
+    "readable": "align vertical distribute start"
+  },
+  {
+    "name": "alignVerticalJustifyCenter",
+    "readable": "align vertical justify center"
+  },
+  {
+    "name": "alignVerticalJustifyEnd",
+    "readable": "align vertical justify end"
+  },
+  {
+    "name": "alignVerticalJustifyStart",
+    "readable": "align vertical justify start"
+  },
+  {
+    "name": "alignVerticalSpaceAround",
+    "readable": "align vertical space around"
+  },
+  {
+    "name": "alignVerticalSpaceBetween",
+    "readable": "align vertical space between"
+  },
+  {
+    "name": "ambulance",
+    "readable": "ambulance"
+  },
+  {
+    "name": "ampersand",
+    "readable": "ampersand"
+  },
+  {
+    "name": "ampersands",
+    "readable": "ampersands"
+  },
+  {
+    "name": "amphora",
+    "readable": "amphora"
+  },
+  {
+    "name": "anchor",
+    "readable": "anchor"
+  },
+  {
+    "name": "angry",
+    "readable": "angry"
+  },
+  {
+    "name": "annoyed",
+    "readable": "annoyed"
+  },
+  {
+    "name": "antenna",
+    "readable": "antenna"
+  },
+  {
+    "name": "anvil",
+    "readable": "anvil"
+  },
+  {
+    "name": "aperture",
+    "readable": "aperture"
+  },
+  {
+    "name": "appWindow",
+    "readable": "app window"
+  },
+  {
+    "name": "appWindowMac",
+    "readable": "app window mac"
+  },
+  {
+    "name": "apple",
+    "readable": "apple"
+  },
+  {
+    "name": "archive",
+    "readable": "archive"
+  },
+  {
+    "name": "archiveRestore",
+    "readable": "archive restore"
+  },
+  {
+    "name": "archiveX",
+    "readable": "archive x"
+  },
+  {
+    "name": "areaChart",
+    "readable": "area chart"
+  },
+  {
+    "name": "armchair",
+    "readable": "armchair"
+  },
+  {
+    "name": "arrowBigDown",
+    "readable": "arrow big down"
+  },
+  {
+    "name": "arrowBigDownDash",
+    "readable": "arrow big down dash"
+  },
+  {
+    "name": "arrowBigLeft",
+    "readable": "arrow big left"
+  },
+  {
+    "name": "arrowBigLeftDash",
+    "readable": "arrow big left dash"
+  },
+  {
+    "name": "arrowBigRight",
+    "readable": "arrow big right"
+  },
+  {
+    "name": "arrowBigRightDash",
+    "readable": "arrow big right dash"
+  },
+  {
+    "name": "arrowBigUp",
+    "readable": "arrow big up"
+  },
+  {
+    "name": "arrowBigUpDash",
+    "readable": "arrow big up dash"
+  },
+  {
+    "name": "arrowDown",
+    "readable": "arrow down"
+  },
+  {
+    "name": "arrowDown01",
+    "readable": "arrow down01"
+  },
+  {
+    "name": "arrowDown10",
+    "readable": "arrow down10"
+  },
+  {
+    "name": "arrowDownAZ",
+    "readable": "arrow down a z"
+  },
+  {
+    "name": "arrowDownAz",
+    "readable": "arrow down az"
+  },
+  {
+    "name": "arrowDownCircle",
+    "readable": "arrow down circle"
+  },
+  {
+    "name": "arrowDownFromLine",
+    "readable": "arrow down from line"
+  },
+  {
+    "name": "arrowDownLeft",
+    "readable": "arrow down left"
+  },
+  {
+    "name": "arrowDownLeftFromCircle",
+    "readable": "arrow down left from circle"
+  },
+  {
+    "name": "arrowDownLeftFromSquare",
+    "readable": "arrow down left from square"
+  },
+  {
+    "name": "arrowDownLeftSquare",
+    "readable": "arrow down left square"
+  },
+  {
+    "name": "arrowDownNarrowWide",
+    "readable": "arrow down narrow wide"
+  },
+  {
+    "name": "arrowDownRight",
+    "readable": "arrow down right"
+  },
+  {
+    "name": "arrowDownRightFromCircle",
+    "readable": "arrow down right from circle"
+  },
+  {
+    "name": "arrowDownRightFromSquare",
+    "readable": "arrow down right from square"
+  },
+  {
+    "name": "arrowDownRightSquare",
+    "readable": "arrow down right square"
+  },
+  {
+    "name": "arrowDownSquare",
+    "readable": "arrow down square"
+  },
+  {
+    "name": "arrowDownToDot",
+    "readable": "arrow down to dot"
+  },
+  {
+    "name": "arrowDownToLine",
+    "readable": "arrow down to line"
+  },
+  {
+    "name": "arrowDownUp",
+    "readable": "arrow down up"
+  },
+  {
+    "name": "arrowDownWideNarrow",
+    "readable": "arrow down wide narrow"
+  },
+  {
+    "name": "arrowDownZA",
+    "readable": "arrow down z a"
+  },
+  {
+    "name": "arrowDownZa",
+    "readable": "arrow down za"
+  },
+  {
+    "name": "arrowLeft",
+    "readable": "arrow left"
+  },
+  {
+    "name": "arrowLeftCircle",
+    "readable": "arrow left circle"
+  },
+  {
+    "name": "arrowLeftFromLine",
+    "readable": "arrow left from line"
+  },
+  {
+    "name": "arrowLeftRight",
+    "readable": "arrow left right"
+  },
+  {
+    "name": "arrowLeftSquare",
+    "readable": "arrow left square"
+  },
+  {
+    "name": "arrowLeftToLine",
+    "readable": "arrow left to line"
+  },
+  {
+    "name": "arrowRight",
+    "readable": "arrow right"
+  },
+  {
+    "name": "arrowRightCircle",
+    "readable": "arrow right circle"
+  },
+  {
+    "name": "arrowRightFromLine",
+    "readable": "arrow right from line"
+  },
+  {
+    "name": "arrowRightLeft",
+    "readable": "arrow right left"
+  },
+  {
+    "name": "arrowRightSquare",
+    "readable": "arrow right square"
+  },
+  {
+    "name": "arrowRightToLine",
+    "readable": "arrow right to line"
+  },
+  {
+    "name": "arrowUp",
+    "readable": "arrow up"
+  },
+  {
+    "name": "arrowUp01",
+    "readable": "arrow up01"
+  },
+  {
+    "name": "arrowUp10",
+    "readable": "arrow up10"
+  },
+  {
+    "name": "arrowUpAZ",
+    "readable": "arrow up a z"
+  },
+  {
+    "name": "arrowUpAz",
+    "readable": "arrow up az"
+  },
+  {
+    "name": "arrowUpCircle",
+    "readable": "arrow up circle"
+  },
+  {
+    "name": "arrowUpDown",
+    "readable": "arrow up down"
+  },
+  {
+    "name": "arrowUpFromDot",
+    "readable": "arrow up from dot"
+  },
+  {
+    "name": "arrowUpFromLine",
+    "readable": "arrow up from line"
+  },
+  {
+    "name": "arrowUpLeft",
+    "readable": "arrow up left"
+  },
+  {
+    "name": "arrowUpLeftFromCircle",
+    "readable": "arrow up left from circle"
+  },
+  {
+    "name": "arrowUpLeftFromSquare",
+    "readable": "arrow up left from square"
+  },
+  {
+    "name": "arrowUpLeftSquare",
+    "readable": "arrow up left square"
+  },
+  {
+    "name": "arrowUpNarrowWide",
+    "readable": "arrow up narrow wide"
+  },
+  {
+    "name": "arrowUpRight",
+    "readable": "arrow up right"
+  },
+  {
+    "name": "arrowUpRightFromCircle",
+    "readable": "arrow up right from circle"
+  },
+  {
+    "name": "arrowUpRightFromSquare",
+    "readable": "arrow up right from square"
+  },
+  {
+    "name": "arrowUpRightSquare",
+    "readable": "arrow up right square"
+  },
+  {
+    "name": "arrowUpSquare",
+    "readable": "arrow up square"
+  },
+  {
+    "name": "arrowUpToLine",
+    "readable": "arrow up to line"
+  },
+  {
+    "name": "arrowUpWideNarrow",
+    "readable": "arrow up wide narrow"
+  },
+  {
+    "name": "arrowUpZA",
+    "readable": "arrow up z a"
+  },
+  {
+    "name": "arrowUpZa",
+    "readable": "arrow up za"
+  },
+  {
+    "name": "arrowsUpFromLine",
+    "readable": "arrows up from line"
+  },
+  {
+    "name": "asterisk",
+    "readable": "asterisk"
+  },
+  {
+    "name": "asteriskSquare",
+    "readable": "asterisk square"
+  },
+  {
+    "name": "atSign",
+    "readable": "at sign"
+  },
+  {
+    "name": "atom",
+    "readable": "atom"
+  },
+  {
+    "name": "audioLines",
+    "readable": "audio lines"
+  },
+  {
+    "name": "audioWaveform",
+    "readable": "audio waveform"
+  },
+  {
+    "name": "award",
+    "readable": "award"
+  },
+  {
+    "name": "axe",
+    "readable": "axe"
+  },
+  {
+    "name": "axis3D",
+    "readable": "axis3 d"
+  },
+  {
+    "name": "axis3d",
+    "readable": "axis3d"
+  },
+  {
+    "name": "baby",
+    "readable": "baby"
+  },
+  {
+    "name": "backpack",
+    "readable": "backpack"
+  },
+  {
+    "name": "badge",
+    "readable": "badge"
+  },
+  {
+    "name": "badgeAlert",
+    "readable": "badge alert"
+  },
+  {
+    "name": "badgeCent",
+    "readable": "badge cent"
+  },
+  {
+    "name": "badgeCheck",
+    "readable": "badge check"
+  },
+  {
+    "name": "badgeDollarSign",
+    "readable": "badge dollar sign"
+  },
+  {
+    "name": "badgeEuro",
+    "readable": "badge euro"
+  },
+  {
+    "name": "badgeHelp",
+    "readable": "badge help"
+  },
+  {
+    "name": "badgeIndianRupee",
+    "readable": "badge indian rupee"
+  },
+  {
+    "name": "badgeInfo",
+    "readable": "badge info"
+  },
+  {
+    "name": "badgeJapaneseYen",
+    "readable": "badge japanese yen"
+  },
+  {
+    "name": "badgeMinus",
+    "readable": "badge minus"
+  },
+  {
+    "name": "badgePercent",
+    "readable": "badge percent"
+  },
+  {
+    "name": "badgePlus",
+    "readable": "badge plus"
+  },
+  {
+    "name": "badgePoundSterling",
+    "readable": "badge pound sterling"
+  },
+  {
+    "name": "badgeQuestionMark",
+    "readable": "badge question mark"
+  },
+  {
+    "name": "badgeRussianRuble",
+    "readable": "badge russian ruble"
+  },
+  {
+    "name": "badgeSwissFranc",
+    "readable": "badge swiss franc"
+  },
+  {
+    "name": "badgeTurkishLira",
+    "readable": "badge turkish lira"
+  },
+  {
+    "name": "badgeX",
+    "readable": "badge x"
+  },
+  {
+    "name": "baggageClaim",
+    "readable": "baggage claim"
+  },
+  {
+    "name": "balloon",
+    "readable": "balloon"
+  },
+  {
+    "name": "ban",
+    "readable": "ban"
+  },
+  {
+    "name": "banana",
+    "readable": "banana"
+  },
+  {
+    "name": "bandage",
+    "readable": "bandage"
+  },
+  {
+    "name": "banknote",
+    "readable": "banknote"
+  },
+  {
+    "name": "banknoteArrowDown",
+    "readable": "banknote arrow down"
+  },
+  {
+    "name": "banknoteArrowUp",
+    "readable": "banknote arrow up"
+  },
+  {
+    "name": "banknoteX",
+    "readable": "banknote x"
+  },
+  {
+    "name": "barChart",
+    "readable": "bar chart"
+  },
+  {
+    "name": "barChart2",
+    "readable": "bar chart2"
+  },
+  {
+    "name": "barChart3",
+    "readable": "bar chart3"
+  },
+  {
+    "name": "barChart4",
+    "readable": "bar chart4"
+  },
+  {
+    "name": "barChartBig",
+    "readable": "bar chart big"
+  },
+  {
+    "name": "barChartHorizontal",
+    "readable": "bar chart horizontal"
+  },
+  {
+    "name": "barChartHorizontalBig",
+    "readable": "bar chart horizontal big"
+  },
+  {
+    "name": "barcode",
+    "readable": "barcode"
+  },
+  {
+    "name": "barrel",
+    "readable": "barrel"
+  },
+  {
+    "name": "baseline",
+    "readable": "baseline"
+  },
+  {
+    "name": "bath",
+    "readable": "bath"
+  },
+  {
+    "name": "battery",
+    "readable": "battery"
+  },
+  {
+    "name": "batteryCharging",
+    "readable": "battery charging"
+  },
+  {
+    "name": "batteryFull",
+    "readable": "battery full"
+  },
+  {
+    "name": "batteryLow",
+    "readable": "battery low"
+  },
+  {
+    "name": "batteryMedium",
+    "readable": "battery medium"
+  },
+  {
+    "name": "batteryPlus",
+    "readable": "battery plus"
+  },
+  {
+    "name": "batteryWarning",
+    "readable": "battery warning"
+  },
+  {
+    "name": "beaker",
+    "readable": "beaker"
+  },
+  {
+    "name": "bean",
+    "readable": "bean"
+  },
+  {
+    "name": "beanOff",
+    "readable": "bean off"
+  },
+  {
+    "name": "bed",
+    "readable": "bed"
+  },
+  {
+    "name": "bedDouble",
+    "readable": "bed double"
+  },
+  {
+    "name": "bedSingle",
+    "readable": "bed single"
+  },
+  {
+    "name": "beef",
+    "readable": "beef"
+  },
+  {
+    "name": "beefOff",
+    "readable": "beef off"
+  },
+  {
+    "name": "beer",
+    "readable": "beer"
+  },
+  {
+    "name": "beerOff",
+    "readable": "beer off"
+  },
+  {
+    "name": "bell",
+    "readable": "bell"
+  },
+  {
+    "name": "bellDot",
+    "readable": "bell dot"
+  },
+  {
+    "name": "bellElectric",
+    "readable": "bell electric"
+  },
+  {
+    "name": "bellMinus",
+    "readable": "bell minus"
+  },
+  {
+    "name": "bellOff",
+    "readable": "bell off"
+  },
+  {
+    "name": "bellPlus",
+    "readable": "bell plus"
+  },
+  {
+    "name": "bellRing",
+    "readable": "bell ring"
+  },
+  {
+    "name": "betweenHorizonalEnd",
+    "readable": "between horizonal end"
+  },
+  {
+    "name": "betweenHorizonalStart",
+    "readable": "between horizonal start"
+  },
+  {
+    "name": "betweenHorizontalEnd",
+    "readable": "between horizontal end"
+  },
+  {
+    "name": "betweenHorizontalStart",
+    "readable": "between horizontal start"
+  },
+  {
+    "name": "betweenVerticalEnd",
+    "readable": "between vertical end"
+  },
+  {
+    "name": "betweenVerticalStart",
+    "readable": "between vertical start"
+  },
+  {
+    "name": "bicepsFlexed",
+    "readable": "biceps flexed"
+  },
+  {
+    "name": "bike",
+    "readable": "bike"
+  },
+  {
+    "name": "binary",
+    "readable": "binary"
+  },
+  {
+    "name": "binoculars",
+    "readable": "binoculars"
+  },
+  {
+    "name": "biohazard",
+    "readable": "biohazard"
+  },
+  {
+    "name": "bird",
+    "readable": "bird"
+  },
+  {
+    "name": "birdhouse",
+    "readable": "birdhouse"
+  },
+  {
+    "name": "bitcoin",
+    "readable": "bitcoin"
+  },
+  {
+    "name": "blend",
+    "readable": "blend"
+  },
+  {
+    "name": "blinds",
+    "readable": "blinds"
+  },
+  {
+    "name": "blocks",
+    "readable": "blocks"
+  },
+  {
+    "name": "bluetooth",
+    "readable": "bluetooth"
+  },
+  {
+    "name": "bluetoothConnected",
+    "readable": "bluetooth connected"
+  },
+  {
+    "name": "bluetoothOff",
+    "readable": "bluetooth off"
+  },
+  {
+    "name": "bluetoothSearching",
+    "readable": "bluetooth searching"
+  },
+  {
+    "name": "bold",
+    "readable": "bold"
+  },
+  {
+    "name": "bolt",
+    "readable": "bolt"
+  },
+  {
+    "name": "bomb",
+    "readable": "bomb"
+  },
+  {
+    "name": "bone",
+    "readable": "bone"
+  },
+  {
+    "name": "book",
+    "readable": "book"
+  },
+  {
+    "name": "bookA",
+    "readable": "book a"
+  },
+  {
+    "name": "bookAlert",
+    "readable": "book alert"
+  },
+  {
+    "name": "bookAudio",
+    "readable": "book audio"
+  },
+  {
+    "name": "bookCheck",
+    "readable": "book check"
+  },
+  {
+    "name": "bookCopy",
+    "readable": "book copy"
+  },
+  {
+    "name": "bookDashed",
+    "readable": "book dashed"
+  },
+  {
+    "name": "bookDown",
+    "readable": "book down"
+  },
+  {
+    "name": "bookHeadphones",
+    "readable": "book headphones"
+  },
+  {
+    "name": "bookHeart",
+    "readable": "book heart"
+  },
+  {
+    "name": "bookImage",
+    "readable": "book image"
+  },
+  {
+    "name": "bookKey",
+    "readable": "book key"
+  },
+  {
+    "name": "bookLock",
+    "readable": "book lock"
+  },
+  {
+    "name": "bookMarked",
+    "readable": "book marked"
+  },
+  {
+    "name": "bookMinus",
+    "readable": "book minus"
+  },
+  {
+    "name": "bookOpen",
+    "readable": "book open"
+  },
+  {
+    "name": "bookOpenCheck",
+    "readable": "book open check"
+  },
+  {
+    "name": "bookOpenText",
+    "readable": "book open text"
+  },
+  {
+    "name": "bookPlus",
+    "readable": "book plus"
+  },
+  {
+    "name": "bookSearch",
+    "readable": "book search"
+  },
+  {
+    "name": "bookTemplate",
+    "readable": "book template"
+  },
+  {
+    "name": "bookText",
+    "readable": "book text"
+  },
+  {
+    "name": "bookType",
+    "readable": "book type"
+  },
+  {
+    "name": "bookUp",
+    "readable": "book up"
+  },
+  {
+    "name": "bookUp2",
+    "readable": "book up2"
+  },
+  {
+    "name": "bookUser",
+    "readable": "book user"
+  },
+  {
+    "name": "bookX",
+    "readable": "book x"
+  },
+  {
+    "name": "bookmark",
+    "readable": "bookmark"
+  },
+  {
+    "name": "bookmarkCheck",
+    "readable": "bookmark check"
+  },
+  {
+    "name": "bookmarkMinus",
+    "readable": "bookmark minus"
+  },
+  {
+    "name": "bookmarkPlus",
+    "readable": "bookmark plus"
+  },
+  {
+    "name": "bookmarkX",
+    "readable": "bookmark x"
+  },
+  {
+    "name": "boomBox",
+    "readable": "boom box"
+  },
+  {
+    "name": "bot",
+    "readable": "bot"
+  },
+  {
+    "name": "botMessageSquare",
+    "readable": "bot message square"
+  },
+  {
+    "name": "botOff",
+    "readable": "bot off"
+  },
+  {
+    "name": "bottleWine",
+    "readable": "bottle wine"
+  },
+  {
+    "name": "bowArrow",
+    "readable": "bow arrow"
+  },
+  {
+    "name": "box",
+    "readable": "box"
+  },
+  {
+    "name": "boxSelect",
+    "readable": "box select"
+  },
+  {
+    "name": "boxes",
+    "readable": "boxes"
+  },
+  {
+    "name": "braces",
+    "readable": "braces"
+  },
+  {
+    "name": "brackets",
+    "readable": "brackets"
+  },
+  {
+    "name": "brain",
+    "readable": "brain"
+  },
+  {
+    "name": "brainCircuit",
+    "readable": "brain circuit"
+  },
+  {
+    "name": "brainCog",
+    "readable": "brain cog"
+  },
+  {
+    "name": "brickWall",
+    "readable": "brick wall"
+  },
+  {
+    "name": "brickWallFire",
+    "readable": "brick wall fire"
+  },
+  {
+    "name": "brickWallShield",
+    "readable": "brick wall shield"
+  },
+  {
+    "name": "briefcase",
+    "readable": "briefcase"
+  },
+  {
+    "name": "briefcaseBusiness",
+    "readable": "briefcase business"
+  },
+  {
+    "name": "briefcaseConveyorBelt",
+    "readable": "briefcase conveyor belt"
+  },
+  {
+    "name": "briefcaseMedical",
+    "readable": "briefcase medical"
+  },
+  {
+    "name": "bringToFront",
+    "readable": "bring to front"
+  },
+  {
+    "name": "brush",
+    "readable": "brush"
+  },
+  {
+    "name": "brushCleaning",
+    "readable": "brush cleaning"
+  },
+  {
+    "name": "bubbles",
+    "readable": "bubbles"
+  },
+  {
+    "name": "bug",
+    "readable": "bug"
+  },
+  {
+    "name": "bugOff",
+    "readable": "bug off"
+  },
+  {
+    "name": "bugPlay",
+    "readable": "bug play"
+  },
+  {
+    "name": "building",
+    "readable": "building"
+  },
+  {
+    "name": "building2",
+    "readable": "building2"
+  },
+  {
+    "name": "bus",
+    "readable": "bus"
+  },
+  {
+    "name": "busFront",
+    "readable": "bus front"
+  },
+  {
+    "name": "cable",
+    "readable": "cable"
+  },
+  {
+    "name": "cableCar",
+    "readable": "cable car"
+  },
+  {
+    "name": "cake",
+    "readable": "cake"
+  },
+  {
+    "name": "cakeSlice",
+    "readable": "cake slice"
+  },
+  {
+    "name": "calculator",
+    "readable": "calculator"
+  },
+  {
+    "name": "calendar",
+    "readable": "calendar"
+  },
+  {
+    "name": "calendar1",
+    "readable": "calendar1"
+  },
+  {
+    "name": "calendarArrowDown",
+    "readable": "calendar arrow down"
+  },
+  {
+    "name": "calendarArrowUp",
+    "readable": "calendar arrow up"
+  },
+  {
+    "name": "calendarCheck",
+    "readable": "calendar check"
+  },
+  {
+    "name": "calendarCheck2",
+    "readable": "calendar check2"
+  },
+  {
+    "name": "calendarClock",
+    "readable": "calendar clock"
+  },
+  {
+    "name": "calendarCog",
+    "readable": "calendar cog"
+  },
+  {
+    "name": "calendarDays",
+    "readable": "calendar days"
+  },
+  {
+    "name": "calendarFold",
+    "readable": "calendar fold"
+  },
+  {
+    "name": "calendarHeart",
+    "readable": "calendar heart"
+  },
+  {
+    "name": "calendarMinus",
+    "readable": "calendar minus"
+  },
+  {
+    "name": "calendarMinus2",
+    "readable": "calendar minus2"
+  },
+  {
+    "name": "calendarOff",
+    "readable": "calendar off"
+  },
+  {
+    "name": "calendarPlus",
+    "readable": "calendar plus"
+  },
+  {
+    "name": "calendarPlus2",
+    "readable": "calendar plus2"
+  },
+  {
+    "name": "calendarRange",
+    "readable": "calendar range"
+  },
+  {
+    "name": "calendarSearch",
+    "readable": "calendar search"
+  },
+  {
+    "name": "calendarSync",
+    "readable": "calendar sync"
+  },
+  {
+    "name": "calendarX",
+    "readable": "calendar x"
+  },
+  {
+    "name": "calendarX2",
+    "readable": "calendar x2"
+  },
+  {
+    "name": "calendars",
+    "readable": "calendars"
+  },
+  {
+    "name": "camera",
+    "readable": "camera"
+  },
+  {
+    "name": "cameraOff",
+    "readable": "camera off"
+  },
+  {
+    "name": "candlestickChart",
+    "readable": "candlestick chart"
+  },
+  {
+    "name": "candy",
+    "readable": "candy"
+  },
+  {
+    "name": "candyCane",
+    "readable": "candy cane"
+  },
+  {
+    "name": "candyOff",
+    "readable": "candy off"
+  },
+  {
+    "name": "cannabis",
+    "readable": "cannabis"
+  },
+  {
+    "name": "cannabisOff",
+    "readable": "cannabis off"
+  },
+  {
+    "name": "captions",
+    "readable": "captions"
+  },
+  {
+    "name": "captionsOff",
+    "readable": "captions off"
+  },
+  {
+    "name": "car",
+    "readable": "car"
+  },
+  {
+    "name": "carFront",
+    "readable": "car front"
+  },
+  {
+    "name": "carTaxiFront",
+    "readable": "car taxi front"
+  },
+  {
+    "name": "caravan",
+    "readable": "caravan"
+  },
+  {
+    "name": "cardSim",
+    "readable": "card sim"
+  },
+  {
+    "name": "carrot",
+    "readable": "carrot"
+  },
+  {
+    "name": "caseLower",
+    "readable": "case lower"
+  },
+  {
+    "name": "caseSensitive",
+    "readable": "case sensitive"
+  },
+  {
+    "name": "caseUpper",
+    "readable": "case upper"
+  },
+  {
+    "name": "cassetteTape",
+    "readable": "cassette tape"
+  },
+  {
+    "name": "cast",
+    "readable": "cast"
+  },
+  {
+    "name": "castle",
+    "readable": "castle"
+  },
+  {
+    "name": "cat",
+    "readable": "cat"
+  },
+  {
+    "name": "cctv",
+    "readable": "cctv"
+  },
+  {
+    "name": "cctvOff",
+    "readable": "cctv off"
+  },
+  {
+    "name": "chartArea",
+    "readable": "chart area"
+  },
+  {
+    "name": "chartBar",
+    "readable": "chart bar"
+  },
+  {
+    "name": "chartBarBig",
+    "readable": "chart bar big"
+  },
+  {
+    "name": "chartBarDecreasing",
+    "readable": "chart bar decreasing"
+  },
+  {
+    "name": "chartBarIncreasing",
+    "readable": "chart bar increasing"
+  },
+  {
+    "name": "chartBarStacked",
+    "readable": "chart bar stacked"
+  },
+  {
+    "name": "chartCandlestick",
+    "readable": "chart candlestick"
+  },
+  {
+    "name": "chartColumn",
+    "readable": "chart column"
+  },
+  {
+    "name": "chartColumnBig",
+    "readable": "chart column big"
+  },
+  {
+    "name": "chartColumnDecreasing",
+    "readable": "chart column decreasing"
+  },
+  {
+    "name": "chartColumnIncreasing",
+    "readable": "chart column increasing"
+  },
+  {
+    "name": "chartColumnStacked",
+    "readable": "chart column stacked"
+  },
+  {
+    "name": "chartGantt",
+    "readable": "chart gantt"
+  },
+  {
+    "name": "chartLine",
+    "readable": "chart line"
+  },
+  {
+    "name": "chartNetwork",
+    "readable": "chart network"
+  },
+  {
+    "name": "chartNoAxesColumn",
+    "readable": "chart no axes column"
+  },
+  {
+    "name": "chartNoAxesColumnDecreasing",
+    "readable": "chart no axes column decreasing"
+  },
+  {
+    "name": "chartNoAxesColumnIncreasing",
+    "readable": "chart no axes column increasing"
+  },
+  {
+    "name": "chartNoAxesCombined",
+    "readable": "chart no axes combined"
+  },
+  {
+    "name": "chartNoAxesGantt",
+    "readable": "chart no axes gantt"
+  },
+  {
+    "name": "chartPie",
+    "readable": "chart pie"
+  },
+  {
+    "name": "chartScatter",
+    "readable": "chart scatter"
+  },
+  {
+    "name": "chartSpline",
+    "readable": "chart spline"
+  },
+  {
+    "name": "check",
+    "readable": "check"
+  },
+  {
+    "name": "checkCheck",
+    "readable": "check check"
+  },
+  {
+    "name": "checkCircle",
+    "readable": "check circle"
+  },
+  {
+    "name": "checkCircle2",
+    "readable": "check circle2"
+  },
+  {
+    "name": "checkLine",
+    "readable": "check line"
+  },
+  {
+    "name": "checkSquare",
+    "readable": "check square"
+  },
+  {
+    "name": "checkSquare2",
+    "readable": "check square2"
+  },
+  {
+    "name": "chefHat",
+    "readable": "chef hat"
+  },
+  {
+    "name": "cherry",
+    "readable": "cherry"
+  },
+  {
+    "name": "chessBishop",
+    "readable": "chess bishop"
+  },
+  {
+    "name": "chessKing",
+    "readable": "chess king"
+  },
+  {
+    "name": "chessKnight",
+    "readable": "chess knight"
+  },
+  {
+    "name": "chessPawn",
+    "readable": "chess pawn"
+  },
+  {
+    "name": "chessQueen",
+    "readable": "chess queen"
+  },
+  {
+    "name": "chessRook",
+    "readable": "chess rook"
+  },
+  {
+    "name": "chevronDown",
+    "readable": "chevron down"
+  },
+  {
+    "name": "chevronDownCircle",
+    "readable": "chevron down circle"
+  },
+  {
+    "name": "chevronDownSquare",
+    "readable": "chevron down square"
+  },
+  {
+    "name": "chevronFirst",
+    "readable": "chevron first"
+  },
+  {
+    "name": "chevronLast",
+    "readable": "chevron last"
+  },
+  {
+    "name": "chevronLeft",
+    "readable": "chevron left"
+  },
+  {
+    "name": "chevronLeftCircle",
+    "readable": "chevron left circle"
+  },
+  {
+    "name": "chevronLeftSquare",
+    "readable": "chevron left square"
+  },
+  {
+    "name": "chevronRight",
+    "readable": "chevron right"
+  },
+  {
+    "name": "chevronRightCircle",
+    "readable": "chevron right circle"
+  },
+  {
+    "name": "chevronRightSquare",
+    "readable": "chevron right square"
+  },
+  {
+    "name": "chevronUp",
+    "readable": "chevron up"
+  },
+  {
+    "name": "chevronUpCircle",
+    "readable": "chevron up circle"
+  },
+  {
+    "name": "chevronUpSquare",
+    "readable": "chevron up square"
+  },
+  {
+    "name": "chevronsDown",
+    "readable": "chevrons down"
+  },
+  {
+    "name": "chevronsDownUp",
+    "readable": "chevrons down up"
+  },
+  {
+    "name": "chevronsLeft",
+    "readable": "chevrons left"
+  },
+  {
+    "name": "chevronsLeftRight",
+    "readable": "chevrons left right"
+  },
+  {
+    "name": "chevronsLeftRightEllipsis",
+    "readable": "chevrons left right ellipsis"
+  },
+  {
+    "name": "chevronsRight",
+    "readable": "chevrons right"
+  },
+  {
+    "name": "chevronsRightLeft",
+    "readable": "chevrons right left"
+  },
+  {
+    "name": "chevronsUp",
+    "readable": "chevrons up"
+  },
+  {
+    "name": "chevronsUpDown",
+    "readable": "chevrons up down"
+  },
+  {
+    "name": "church",
+    "readable": "church"
+  },
+  {
+    "name": "cigarette",
+    "readable": "cigarette"
+  },
+  {
+    "name": "cigaretteOff",
+    "readable": "cigarette off"
+  },
+  {
+    "name": "circle",
+    "readable": "circle"
+  },
+  {
+    "name": "circleAlert",
+    "readable": "circle alert"
+  },
+  {
+    "name": "circleArrowDown",
+    "readable": "circle arrow down"
+  },
+  {
+    "name": "circleArrowLeft",
+    "readable": "circle arrow left"
+  },
+  {
+    "name": "circleArrowOutDownLeft",
+    "readable": "circle arrow out down left"
+  },
+  {
+    "name": "circleArrowOutDownRight",
+    "readable": "circle arrow out down right"
+  },
+  {
+    "name": "circleArrowOutUpLeft",
+    "readable": "circle arrow out up left"
+  },
+  {
+    "name": "circleArrowOutUpRight",
+    "readable": "circle arrow out up right"
+  },
+  {
+    "name": "circleArrowRight",
+    "readable": "circle arrow right"
+  },
+  {
+    "name": "circleArrowUp",
+    "readable": "circle arrow up"
+  },
+  {
+    "name": "circleCheck",
+    "readable": "circle check"
+  },
+  {
+    "name": "circleCheckBig",
+    "readable": "circle check big"
+  },
+  {
+    "name": "circleChevronDown",
+    "readable": "circle chevron down"
+  },
+  {
+    "name": "circleChevronLeft",
+    "readable": "circle chevron left"
+  },
+  {
+    "name": "circleChevronRight",
+    "readable": "circle chevron right"
+  },
+  {
+    "name": "circleChevronUp",
+    "readable": "circle chevron up"
+  },
+  {
+    "name": "circleDashed",
+    "readable": "circle dashed"
+  },
+  {
+    "name": "circleDivide",
+    "readable": "circle divide"
+  },
+  {
+    "name": "circleDollarSign",
+    "readable": "circle dollar sign"
+  },
+  {
+    "name": "circleDot",
+    "readable": "circle dot"
+  },
+  {
+    "name": "circleDotDashed",
+    "readable": "circle dot dashed"
+  },
+  {
+    "name": "circleEllipsis",
+    "readable": "circle ellipsis"
+  },
+  {
+    "name": "circleEqual",
+    "readable": "circle equal"
+  },
+  {
+    "name": "circleFadingArrowUp",
+    "readable": "circle fading arrow up"
+  },
+  {
+    "name": "circleFadingPlus",
+    "readable": "circle fading plus"
+  },
+  {
+    "name": "circleGauge",
+    "readable": "circle gauge"
+  },
+  {
+    "name": "circleHelp",
+    "readable": "circle help"
+  },
+  {
+    "name": "circleMinus",
+    "readable": "circle minus"
+  },
+  {
+    "name": "circleOff",
+    "readable": "circle off"
+  },
+  {
+    "name": "circleParking",
+    "readable": "circle parking"
+  },
+  {
+    "name": "circleParkingOff",
+    "readable": "circle parking off"
+  },
+  {
+    "name": "circlePause",
+    "readable": "circle pause"
+  },
+  {
+    "name": "circlePercent",
+    "readable": "circle percent"
+  },
+  {
+    "name": "circlePile",
+    "readable": "circle pile"
+  },
+  {
+    "name": "circlePlay",
+    "readable": "circle play"
+  },
+  {
+    "name": "circlePlus",
+    "readable": "circle plus"
+  },
+  {
+    "name": "circlePoundSterling",
+    "readable": "circle pound sterling"
+  },
+  {
+    "name": "circlePower",
+    "readable": "circle power"
+  },
+  {
+    "name": "circleQuestionMark",
+    "readable": "circle question mark"
+  },
+  {
+    "name": "circleSlash",
+    "readable": "circle slash"
+  },
+  {
+    "name": "circleSlash2",
+    "readable": "circle slash2"
+  },
+  {
+    "name": "circleSlashed",
+    "readable": "circle slashed"
+  },
+  {
+    "name": "circleSmall",
+    "readable": "circle small"
+  },
+  {
+    "name": "circleStar",
+    "readable": "circle star"
+  },
+  {
+    "name": "circleStop",
+    "readable": "circle stop"
+  },
+  {
+    "name": "circleUser",
+    "readable": "circle user"
+  },
+  {
+    "name": "circleUserRound",
+    "readable": "circle user round"
+  },
+  {
+    "name": "circleX",
+    "readable": "circle x"
+  },
+  {
+    "name": "circuitBoard",
+    "readable": "circuit board"
+  },
+  {
+    "name": "citrus",
+    "readable": "citrus"
+  },
+  {
+    "name": "clapperboard",
+    "readable": "clapperboard"
+  },
+  {
+    "name": "clipboard",
+    "readable": "clipboard"
+  },
+  {
+    "name": "clipboardCheck",
+    "readable": "clipboard check"
+  },
+  {
+    "name": "clipboardClock",
+    "readable": "clipboard clock"
+  },
+  {
+    "name": "clipboardCopy",
+    "readable": "clipboard copy"
+  },
+  {
+    "name": "clipboardEdit",
+    "readable": "clipboard edit"
+  },
+  {
+    "name": "clipboardList",
+    "readable": "clipboard list"
+  },
+  {
+    "name": "clipboardMinus",
+    "readable": "clipboard minus"
+  },
+  {
+    "name": "clipboardPaste",
+    "readable": "clipboard paste"
+  },
+  {
+    "name": "clipboardPen",
+    "readable": "clipboard pen"
+  },
+  {
+    "name": "clipboardPenLine",
+    "readable": "clipboard pen line"
+  },
+  {
+    "name": "clipboardPlus",
+    "readable": "clipboard plus"
+  },
+  {
+    "name": "clipboardSignature",
+    "readable": "clipboard signature"
+  },
+  {
+    "name": "clipboardType",
+    "readable": "clipboard type"
+  },
+  {
+    "name": "clipboardX",
+    "readable": "clipboard x"
+  },
+  {
+    "name": "clock",
+    "readable": "clock"
+  },
+  {
+    "name": "clock1",
+    "readable": "clock1"
+  },
+  {
+    "name": "clock10",
+    "readable": "clock10"
+  },
+  {
+    "name": "clock11",
+    "readable": "clock11"
+  },
+  {
+    "name": "clock12",
+    "readable": "clock12"
+  },
+  {
+    "name": "clock2",
+    "readable": "clock2"
+  },
+  {
+    "name": "clock3",
+    "readable": "clock3"
+  },
+  {
+    "name": "clock4",
+    "readable": "clock4"
+  },
+  {
+    "name": "clock5",
+    "readable": "clock5"
+  },
+  {
+    "name": "clock6",
+    "readable": "clock6"
+  },
+  {
+    "name": "clock7",
+    "readable": "clock7"
+  },
+  {
+    "name": "clock8",
+    "readable": "clock8"
+  },
+  {
+    "name": "clock9",
+    "readable": "clock9"
+  },
+  {
+    "name": "clockAlert",
+    "readable": "clock alert"
+  },
+  {
+    "name": "clockArrowDown",
+    "readable": "clock arrow down"
+  },
+  {
+    "name": "clockArrowUp",
+    "readable": "clock arrow up"
+  },
+  {
+    "name": "clockCheck",
+    "readable": "clock check"
+  },
+  {
+    "name": "clockFading",
+    "readable": "clock fading"
+  },
+  {
+    "name": "clockPlus",
+    "readable": "clock plus"
+  },
+  {
+    "name": "closedCaption",
+    "readable": "closed caption"
+  },
+  {
+    "name": "cloud",
+    "readable": "cloud"
+  },
+  {
+    "name": "cloudAlert",
+    "readable": "cloud alert"
+  },
+  {
+    "name": "cloudBackup",
+    "readable": "cloud backup"
+  },
+  {
+    "name": "cloudCheck",
+    "readable": "cloud check"
+  },
+  {
+    "name": "cloudCog",
+    "readable": "cloud cog"
+  },
+  {
+    "name": "cloudDownload",
+    "readable": "cloud download"
+  },
+  {
+    "name": "cloudDrizzle",
+    "readable": "cloud drizzle"
+  },
+  {
+    "name": "cloudFog",
+    "readable": "cloud fog"
+  },
+  {
+    "name": "cloudHail",
+    "readable": "cloud hail"
+  },
+  {
+    "name": "cloudLightning",
+    "readable": "cloud lightning"
+  },
+  {
+    "name": "cloudMoon",
+    "readable": "cloud moon"
+  },
+  {
+    "name": "cloudMoonRain",
+    "readable": "cloud moon rain"
+  },
+  {
+    "name": "cloudOff",
+    "readable": "cloud off"
+  },
+  {
+    "name": "cloudRain",
+    "readable": "cloud rain"
+  },
+  {
+    "name": "cloudRainWind",
+    "readable": "cloud rain wind"
+  },
+  {
+    "name": "cloudSnow",
+    "readable": "cloud snow"
+  },
+  {
+    "name": "cloudSun",
+    "readable": "cloud sun"
+  },
+  {
+    "name": "cloudSunRain",
+    "readable": "cloud sun rain"
+  },
+  {
+    "name": "cloudSync",
+    "readable": "cloud sync"
+  },
+  {
+    "name": "cloudUpload",
+    "readable": "cloud upload"
+  },
+  {
+    "name": "cloudy",
+    "readable": "cloudy"
+  },
+  {
+    "name": "clover",
+    "readable": "clover"
+  },
+  {
+    "name": "club",
+    "readable": "club"
+  },
+  {
+    "name": "code",
+    "readable": "code"
+  },
+  {
+    "name": "code2",
+    "readable": "code2"
+  },
+  {
+    "name": "codeSquare",
+    "readable": "code square"
+  },
+  {
+    "name": "codeXml",
+    "readable": "code xml"
+  },
+  {
+    "name": "coffee",
+    "readable": "coffee"
+  },
+  {
+    "name": "cog",
+    "readable": "cog"
+  },
+  {
+    "name": "coins",
+    "readable": "coins"
+  },
+  {
+    "name": "columns",
+    "readable": "columns"
+  },
+  {
+    "name": "columns2",
+    "readable": "columns2"
+  },
+  {
+    "name": "columns3",
+    "readable": "columns3"
+  },
+  {
+    "name": "columns3Cog",
+    "readable": "columns3 cog"
+  },
+  {
+    "name": "columns4",
+    "readable": "columns4"
+  },
+  {
+    "name": "columnsSettings",
+    "readable": "columns settings"
+  },
+  {
+    "name": "combine",
+    "readable": "combine"
+  },
+  {
+    "name": "command",
+    "readable": "command"
+  },
+  {
+    "name": "compass",
+    "readable": "compass"
+  },
+  {
+    "name": "component",
+    "readable": "component"
+  },
+  {
+    "name": "computer",
+    "readable": "computer"
+  },
+  {
+    "name": "conciergeBell",
+    "readable": "concierge bell"
+  },
+  {
+    "name": "cone",
+    "readable": "cone"
+  },
+  {
+    "name": "construction",
+    "readable": "construction"
+  },
+  {
+    "name": "contact",
+    "readable": "contact"
+  },
+  {
+    "name": "contact2",
+    "readable": "contact2"
+  },
+  {
+    "name": "contactRound",
+    "readable": "contact round"
+  },
+  {
+    "name": "container",
+    "readable": "container"
+  },
+  {
+    "name": "contrast",
+    "readable": "contrast"
+  },
+  {
+    "name": "cookie",
+    "readable": "cookie"
+  },
+  {
+    "name": "cookingPot",
+    "readable": "cooking pot"
+  },
+  {
+    "name": "copy",
+    "readable": "copy"
+  },
+  {
+    "name": "copyCheck",
+    "readable": "copy check"
+  },
+  {
+    "name": "copyMinus",
+    "readable": "copy minus"
+  },
+  {
+    "name": "copyPlus",
+    "readable": "copy plus"
+  },
+  {
+    "name": "copySlash",
+    "readable": "copy slash"
+  },
+  {
+    "name": "copyX",
+    "readable": "copy x"
+  },
+  {
+    "name": "copyleft",
+    "readable": "copyleft"
+  },
+  {
+    "name": "copyright",
+    "readable": "copyright"
+  },
+  {
+    "name": "cornerDownLeft",
+    "readable": "corner down left"
+  },
+  {
+    "name": "cornerDownRight",
+    "readable": "corner down right"
+  },
+  {
+    "name": "cornerLeftDown",
+    "readable": "corner left down"
+  },
+  {
+    "name": "cornerLeftUp",
+    "readable": "corner left up"
+  },
+  {
+    "name": "cornerRightDown",
+    "readable": "corner right down"
+  },
+  {
+    "name": "cornerRightUp",
+    "readable": "corner right up"
+  },
+  {
+    "name": "cornerUpLeft",
+    "readable": "corner up left"
+  },
+  {
+    "name": "cornerUpRight",
+    "readable": "corner up right"
+  },
+  {
+    "name": "cpu",
+    "readable": "cpu"
+  },
+  {
+    "name": "creativeCommons",
+    "readable": "creative commons"
+  },
+  {
+    "name": "creditCard",
+    "readable": "credit card"
+  },
+  {
+    "name": "croissant",
+    "readable": "croissant"
+  },
+  {
+    "name": "crop",
+    "readable": "crop"
+  },
+  {
+    "name": "cross",
+    "readable": "cross"
+  },
+  {
+    "name": "crosshair",
+    "readable": "crosshair"
+  },
+  {
+    "name": "crown",
+    "readable": "crown"
+  },
+  {
+    "name": "cuboid",
+    "readable": "cuboid"
+  },
+  {
+    "name": "cupSoda",
+    "readable": "cup soda"
+  },
+  {
+    "name": "curlyBraces",
+    "readable": "curly braces"
+  },
+  {
+    "name": "currency",
+    "readable": "currency"
+  },
+  {
+    "name": "cylinder",
+    "readable": "cylinder"
+  },
+  {
+    "name": "dam",
+    "readable": "dam"
+  },
+  {
+    "name": "database",
+    "readable": "database"
+  },
+  {
+    "name": "databaseBackup",
+    "readable": "database backup"
+  },
+  {
+    "name": "databaseSearch",
+    "readable": "database search"
+  },
+  {
+    "name": "databaseZap",
+    "readable": "database zap"
+  },
+  {
+    "name": "decimalsArrowLeft",
+    "readable": "decimals arrow left"
+  },
+  {
+    "name": "decimalsArrowRight",
+    "readable": "decimals arrow right"
+  },
+  {
+    "name": "delete",
+    "readable": "delete"
+  },
+  {
+    "name": "dessert",
+    "readable": "dessert"
+  },
+  {
+    "name": "diameter",
+    "readable": "diameter"
+  },
+  {
+    "name": "diamond",
+    "readable": "diamond"
+  },
+  {
+    "name": "diamondMinus",
+    "readable": "diamond minus"
+  },
+  {
+    "name": "diamondPercent",
+    "readable": "diamond percent"
+  },
+  {
+    "name": "diamondPlus",
+    "readable": "diamond plus"
+  },
+  {
+    "name": "dice1",
+    "readable": "dice1"
+  },
+  {
+    "name": "dice2",
+    "readable": "dice2"
+  },
+  {
+    "name": "dice3",
+    "readable": "dice3"
+  },
+  {
+    "name": "dice4",
+    "readable": "dice4"
+  },
+  {
+    "name": "dice5",
+    "readable": "dice5"
+  },
+  {
+    "name": "dice6",
+    "readable": "dice6"
+  },
+  {
+    "name": "dices",
+    "readable": "dices"
+  },
+  {
+    "name": "diff",
+    "readable": "diff"
+  },
+  {
+    "name": "disc",
+    "readable": "disc"
+  },
+  {
+    "name": "disc2",
+    "readable": "disc2"
+  },
+  {
+    "name": "disc3",
+    "readable": "disc3"
+  },
+  {
+    "name": "discAlbum",
+    "readable": "disc album"
+  },
+  {
+    "name": "divide",
+    "readable": "divide"
+  },
+  {
+    "name": "divideCircle",
+    "readable": "divide circle"
+  },
+  {
+    "name": "divideSquare",
+    "readable": "divide square"
+  },
+  {
+    "name": "dna",
+    "readable": "dna"
+  },
+  {
+    "name": "dnaOff",
+    "readable": "dna off"
+  },
+  {
+    "name": "dock",
+    "readable": "dock"
+  },
+  {
+    "name": "dog",
+    "readable": "dog"
+  },
+  {
+    "name": "dollarSign",
+    "readable": "dollar sign"
+  },
+  {
+    "name": "donut",
+    "readable": "donut"
+  },
+  {
+    "name": "doorClosed",
+    "readable": "door closed"
+  },
+  {
+    "name": "doorClosedLocked",
+    "readable": "door closed locked"
+  },
+  {
+    "name": "doorOpen",
+    "readable": "door open"
+  },
+  {
+    "name": "dot",
+    "readable": "dot"
+  },
+  {
+    "name": "dotSquare",
+    "readable": "dot square"
+  },
+  {
+    "name": "download",
+    "readable": "download"
+  },
+  {
+    "name": "downloadCloud",
+    "readable": "download cloud"
+  },
+  {
+    "name": "draftingCompass",
+    "readable": "drafting compass"
+  },
+  {
+    "name": "drama",
+    "readable": "drama"
+  },
+  {
+    "name": "drill",
+    "readable": "drill"
+  },
+  {
+    "name": "drone",
+    "readable": "drone"
+  },
+  {
+    "name": "droplet",
+    "readable": "droplet"
+  },
+  {
+    "name": "dropletOff",
+    "readable": "droplet off"
+  },
+  {
+    "name": "droplets",
+    "readable": "droplets"
+  },
+  {
+    "name": "drum",
+    "readable": "drum"
+  },
+  {
+    "name": "drumstick",
+    "readable": "drumstick"
+  },
+  {
+    "name": "dumbbell",
+    "readable": "dumbbell"
+  },
+  {
+    "name": "ear",
+    "readable": "ear"
+  },
+  {
+    "name": "earOff",
+    "readable": "ear off"
+  },
+  {
+    "name": "earth",
+    "readable": "earth"
+  },
+  {
+    "name": "earthLock",
+    "readable": "earth lock"
+  },
+  {
+    "name": "eclipse",
+    "readable": "eclipse"
+  },
+  {
+    "name": "edit",
+    "readable": "edit"
+  },
+  {
+    "name": "edit2",
+    "readable": "edit2"
+  },
+  {
+    "name": "edit3",
+    "readable": "edit3"
+  },
+  {
+    "name": "egg",
+    "readable": "egg"
+  },
+  {
+    "name": "eggFried",
+    "readable": "egg fried"
+  },
+  {
+    "name": "eggOff",
+    "readable": "egg off"
+  },
+  {
+    "name": "ellipse",
+    "readable": "ellipse"
+  },
+  {
+    "name": "ellipsis",
+    "readable": "ellipsis"
+  },
+  {
+    "name": "ellipsisVertical",
+    "readable": "ellipsis vertical"
+  },
+  {
+    "name": "equal",
+    "readable": "equal"
+  },
+  {
+    "name": "equalApproximately",
+    "readable": "equal approximately"
+  },
+  {
+    "name": "equalNot",
+    "readable": "equal not"
+  },
+  {
+    "name": "equalSquare",
+    "readable": "equal square"
+  },
+  {
+    "name": "eraser",
+    "readable": "eraser"
+  },
+  {
+    "name": "ethernetPort",
+    "readable": "ethernet port"
+  },
+  {
+    "name": "euro",
+    "readable": "euro"
+  },
+  {
+    "name": "evCharger",
+    "readable": "ev charger"
+  },
+  {
+    "name": "expand",
+    "readable": "expand"
+  },
+  {
+    "name": "externalLink",
+    "readable": "external link"
+  },
+  {
+    "name": "eye",
+    "readable": "eye"
+  },
+  {
+    "name": "eyeClosed",
+    "readable": "eye closed"
+  },
+  {
+    "name": "eyeOff",
+    "readable": "eye off"
+  },
+  {
+    "name": "factory",
+    "readable": "factory"
+  },
+  {
+    "name": "fan",
+    "readable": "fan"
+  },
+  {
+    "name": "fastForward",
+    "readable": "fast forward"
+  },
+  {
+    "name": "feather",
+    "readable": "feather"
+  },
+  {
+    "name": "fence",
+    "readable": "fence"
+  },
+  {
+    "name": "ferrisWheel",
+    "readable": "ferris wheel"
+  },
+  {
+    "name": "file",
+    "readable": "file"
+  },
+  {
+    "name": "fileArchive",
+    "readable": "file archive"
+  },
+  {
+    "name": "fileAudio",
+    "readable": "file audio"
+  },
+  {
+    "name": "fileAudio2",
+    "readable": "file audio2"
+  },
+  {
+    "name": "fileAxis3D",
+    "readable": "file axis3 d"
+  },
+  {
+    "name": "fileAxis3d",
+    "readable": "file axis3d"
+  },
+  {
+    "name": "fileBadge",
+    "readable": "file badge"
+  },
+  {
+    "name": "fileBadge2",
+    "readable": "file badge2"
+  },
+  {
+    "name": "fileBarChart",
+    "readable": "file bar chart"
+  },
+  {
+    "name": "fileBarChart2",
+    "readable": "file bar chart2"
+  },
+  {
+    "name": "fileBox",
+    "readable": "file box"
+  },
+  {
+    "name": "fileBraces",
+    "readable": "file braces"
+  },
+  {
+    "name": "fileBracesCorner",
+    "readable": "file braces corner"
+  },
+  {
+    "name": "fileChartColumn",
+    "readable": "file chart column"
+  },
+  {
+    "name": "fileChartColumnIncreasing",
+    "readable": "file chart column increasing"
+  },
+  {
+    "name": "fileChartLine",
+    "readable": "file chart line"
+  },
+  {
+    "name": "fileChartPie",
+    "readable": "file chart pie"
+  },
+  {
+    "name": "fileCheck",
+    "readable": "file check"
+  },
+  {
+    "name": "fileCheck2",
+    "readable": "file check2"
+  },
+  {
+    "name": "fileCheckCorner",
+    "readable": "file check corner"
+  },
+  {
+    "name": "fileClock",
+    "readable": "file clock"
+  },
+  {
+    "name": "fileCode",
+    "readable": "file code"
+  },
+  {
+    "name": "fileCode2",
+    "readable": "file code2"
+  },
+  {
+    "name": "fileCodeCorner",
+    "readable": "file code corner"
+  },
+  {
+    "name": "fileCog",
+    "readable": "file cog"
+  },
+  {
+    "name": "fileCog2",
+    "readable": "file cog2"
+  },
+  {
+    "name": "fileDiff",
+    "readable": "file diff"
+  },
+  {
+    "name": "fileDigit",
+    "readable": "file digit"
+  },
+  {
+    "name": "fileDown",
+    "readable": "file down"
+  },
+  {
+    "name": "fileEdit",
+    "readable": "file edit"
+  },
+  {
+    "name": "fileExclamationPoint",
+    "readable": "file exclamation point"
+  },
+  {
+    "name": "fileHeadphone",
+    "readable": "file headphone"
+  },
+  {
+    "name": "fileHeart",
+    "readable": "file heart"
+  },
+  {
+    "name": "fileImage",
+    "readable": "file image"
+  },
+  {
+    "name": "fileInput",
+    "readable": "file input"
+  },
+  {
+    "name": "fileJson",
+    "readable": "file json"
+  },
+  {
+    "name": "fileJson2",
+    "readable": "file json2"
+  },
+  {
+    "name": "fileKey",
+    "readable": "file key"
+  },
+  {
+    "name": "fileKey2",
+    "readable": "file key2"
+  },
+  {
+    "name": "fileLineChart",
+    "readable": "file line chart"
+  },
+  {
+    "name": "fileLock",
+    "readable": "file lock"
+  },
+  {
+    "name": "fileLock2",
+    "readable": "file lock2"
+  },
+  {
+    "name": "fileMinus",
+    "readable": "file minus"
+  },
+  {
+    "name": "fileMinus2",
+    "readable": "file minus2"
+  },
+  {
+    "name": "fileMinusCorner",
+    "readable": "file minus corner"
+  },
+  {
+    "name": "fileMusic",
+    "readable": "file music"
+  },
+  {
+    "name": "fileOutput",
+    "readable": "file output"
+  },
+  {
+    "name": "filePen",
+    "readable": "file pen"
+  },
+  {
+    "name": "filePenLine",
+    "readable": "file pen line"
+  },
+  {
+    "name": "filePieChart",
+    "readable": "file pie chart"
+  },
+  {
+    "name": "filePlay",
+    "readable": "file play"
+  },
+  {
+    "name": "filePlus",
+    "readable": "file plus"
+  },
+  {
+    "name": "filePlus2",
+    "readable": "file plus2"
+  },
+  {
+    "name": "filePlusCorner",
+    "readable": "file plus corner"
+  },
+  {
+    "name": "fileQuestion",
+    "readable": "file question"
+  },
+  {
+    "name": "fileQuestionMark",
+    "readable": "file question mark"
+  },
+  {
+    "name": "fileScan",
+    "readable": "file scan"
+  },
+  {
+    "name": "fileSearch",
+    "readable": "file search"
+  },
+  {
+    "name": "fileSearch2",
+    "readable": "file search2"
+  },
+  {
+    "name": "fileSearchCorner",
+    "readable": "file search corner"
+  },
+  {
+    "name": "fileSignal",
+    "readable": "file signal"
+  },
+  {
+    "name": "fileSignature",
+    "readable": "file signature"
+  },
+  {
+    "name": "fileSliders",
+    "readable": "file sliders"
+  },
+  {
+    "name": "fileSpreadsheet",
+    "readable": "file spreadsheet"
+  },
+  {
+    "name": "fileStack",
+    "readable": "file stack"
+  },
+  {
+    "name": "fileSymlink",
+    "readable": "file symlink"
+  },
+  {
+    "name": "fileTerminal",
+    "readable": "file terminal"
+  },
+  {
+    "name": "fileText",
+    "readable": "file text"
+  },
+  {
+    "name": "fileType",
+    "readable": "file type"
+  },
+  {
+    "name": "fileType2",
+    "readable": "file type2"
+  },
+  {
+    "name": "fileTypeCorner",
+    "readable": "file type corner"
+  },
+  {
+    "name": "fileUp",
+    "readable": "file up"
+  },
+  {
+    "name": "fileUser",
+    "readable": "file user"
+  },
+  {
+    "name": "fileVideo",
+    "readable": "file video"
+  },
+  {
+    "name": "fileVideo2",
+    "readable": "file video2"
+  },
+  {
+    "name": "fileVideoCamera",
+    "readable": "file video camera"
+  },
+  {
+    "name": "fileVolume",
+    "readable": "file volume"
+  },
+  {
+    "name": "fileVolume2",
+    "readable": "file volume2"
+  },
+  {
+    "name": "fileWarning",
+    "readable": "file warning"
+  },
+  {
+    "name": "fileX",
+    "readable": "file x"
+  },
+  {
+    "name": "fileX2",
+    "readable": "file x2"
+  },
+  {
+    "name": "fileXCorner",
+    "readable": "file x corner"
+  },
+  {
+    "name": "files",
+    "readable": "files"
+  },
+  {
+    "name": "film",
+    "readable": "film"
+  },
+  {
+    "name": "filter",
+    "readable": "filter"
+  },
+  {
+    "name": "filterX",
+    "readable": "filter x"
+  },
+  {
+    "name": "fingerprint",
+    "readable": "fingerprint"
+  },
+  {
+    "name": "fingerprintPattern",
+    "readable": "fingerprint pattern"
+  },
+  {
+    "name": "fireExtinguisher",
+    "readable": "fire extinguisher"
+  },
+  {
+    "name": "fish",
+    "readable": "fish"
+  },
+  {
+    "name": "fishOff",
+    "readable": "fish off"
+  },
+  {
+    "name": "fishSymbol",
+    "readable": "fish symbol"
+  },
+  {
+    "name": "fishingHook",
+    "readable": "fishing hook"
+  },
+  {
+    "name": "fishingRod",
+    "readable": "fishing rod"
+  },
+  {
+    "name": "flag",
+    "readable": "flag"
+  },
+  {
+    "name": "flagOff",
+    "readable": "flag off"
+  },
+  {
+    "name": "flagTriangleLeft",
+    "readable": "flag triangle left"
+  },
+  {
+    "name": "flagTriangleRight",
+    "readable": "flag triangle right"
+  },
+  {
+    "name": "flame",
+    "readable": "flame"
+  },
+  {
+    "name": "flameKindling",
+    "readable": "flame kindling"
+  },
+  {
+    "name": "flashlight",
+    "readable": "flashlight"
+  },
+  {
+    "name": "flashlightOff",
+    "readable": "flashlight off"
+  },
+  {
+    "name": "flaskConical",
+    "readable": "flask conical"
+  },
+  {
+    "name": "flaskConicalOff",
+    "readable": "flask conical off"
+  },
+  {
+    "name": "flaskRound",
+    "readable": "flask round"
+  },
+  {
+    "name": "flipHorizontal",
+    "readable": "flip horizontal"
+  },
+  {
+    "name": "flipHorizontal2",
+    "readable": "flip horizontal2"
+  },
+  {
+    "name": "flipVertical",
+    "readable": "flip vertical"
+  },
+  {
+    "name": "flipVertical2",
+    "readable": "flip vertical2"
+  },
+  {
+    "name": "flower",
+    "readable": "flower"
+  },
+  {
+    "name": "flower2",
+    "readable": "flower2"
+  },
+  {
+    "name": "focus",
+    "readable": "focus"
+  },
+  {
+    "name": "foldHorizontal",
+    "readable": "fold horizontal"
+  },
+  {
+    "name": "foldVertical",
+    "readable": "fold vertical"
+  },
+  {
+    "name": "folder",
+    "readable": "folder"
+  },
+  {
+    "name": "folderArchive",
+    "readable": "folder archive"
+  },
+  {
+    "name": "folderCheck",
+    "readable": "folder check"
+  },
+  {
+    "name": "folderClock",
+    "readable": "folder clock"
+  },
+  {
+    "name": "folderClosed",
+    "readable": "folder closed"
+  },
+  {
+    "name": "folderCode",
+    "readable": "folder code"
+  },
+  {
+    "name": "folderCog",
+    "readable": "folder cog"
+  },
+  {
+    "name": "folderCog2",
+    "readable": "folder cog2"
+  },
+  {
+    "name": "folderDot",
+    "readable": "folder dot"
+  },
+  {
+    "name": "folderDown",
+    "readable": "folder down"
+  },
+  {
+    "name": "folderEdit",
+    "readable": "folder edit"
+  },
+  {
+    "name": "folderGit",
+    "readable": "folder git"
+  },
+  {
+    "name": "folderGit2",
+    "readable": "folder git2"
+  },
+  {
+    "name": "folderHeart",
+    "readable": "folder heart"
+  },
+  {
+    "name": "folderInput",
+    "readable": "folder input"
+  },
+  {
+    "name": "folderKanban",
+    "readable": "folder kanban"
+  },
+  {
+    "name": "folderKey",
+    "readable": "folder key"
+  },
+  {
+    "name": "folderLock",
+    "readable": "folder lock"
+  },
+  {
+    "name": "folderMinus",
+    "readable": "folder minus"
+  },
+  {
+    "name": "folderOpen",
+    "readable": "folder open"
+  },
+  {
+    "name": "folderOpenDot",
+    "readable": "folder open dot"
+  },
+  {
+    "name": "folderOutput",
+    "readable": "folder output"
+  },
+  {
+    "name": "folderPen",
+    "readable": "folder pen"
+  },
+  {
+    "name": "folderPlus",
+    "readable": "folder plus"
+  },
+  {
+    "name": "folderRoot",
+    "readable": "folder root"
+  },
+  {
+    "name": "folderSearch",
+    "readable": "folder search"
+  },
+  {
+    "name": "folderSearch2",
+    "readable": "folder search2"
+  },
+  {
+    "name": "folderSymlink",
+    "readable": "folder symlink"
+  },
+  {
+    "name": "folderSync",
+    "readable": "folder sync"
+  },
+  {
+    "name": "folderTree",
+    "readable": "folder tree"
+  },
+  {
+    "name": "folderUp",
+    "readable": "folder up"
+  },
+  {
+    "name": "folderX",
+    "readable": "folder x"
+  },
+  {
+    "name": "folders",
+    "readable": "folders"
+  },
+  {
+    "name": "footprints",
+    "readable": "footprints"
+  },
+  {
+    "name": "forkKnife",
+    "readable": "fork knife"
+  },
+  {
+    "name": "forkKnifeCrossed",
+    "readable": "fork knife crossed"
+  },
+  {
+    "name": "forklift",
+    "readable": "forklift"
+  },
+  {
+    "name": "form",
+    "readable": "form"
+  },
+  {
+    "name": "formInput",
+    "readable": "form input"
+  },
+  {
+    "name": "forward",
+    "readable": "forward"
+  },
+  {
+    "name": "frame",
+    "readable": "frame"
+  },
+  {
+    "name": "frown",
+    "readable": "frown"
+  },
+  {
+    "name": "fuel",
+    "readable": "fuel"
+  },
+  {
+    "name": "fullscreen",
+    "readable": "fullscreen"
+  },
+  {
+    "name": "functionSquare",
+    "readable": "function square"
+  },
+  {
+    "name": "funnel",
+    "readable": "funnel"
+  },
+  {
+    "name": "funnelPlus",
+    "readable": "funnel plus"
+  },
+  {
+    "name": "funnelX",
+    "readable": "funnel x"
+  },
+  {
+    "name": "galleryHorizontal",
+    "readable": "gallery horizontal"
+  },
+  {
+    "name": "galleryHorizontalEnd",
+    "readable": "gallery horizontal end"
+  },
+  {
+    "name": "galleryThumbnails",
+    "readable": "gallery thumbnails"
+  },
+  {
+    "name": "galleryVertical",
+    "readable": "gallery vertical"
+  },
+  {
+    "name": "galleryVerticalEnd",
+    "readable": "gallery vertical end"
+  },
+  {
+    "name": "gamepad",
+    "readable": "gamepad"
+  },
+  {
+    "name": "gamepad2",
+    "readable": "gamepad2"
+  },
+  {
+    "name": "gamepadDirectional",
+    "readable": "gamepad directional"
+  },
+  {
+    "name": "ganttChart",
+    "readable": "gantt chart"
+  },
+  {
+    "name": "ganttChartSquare",
+    "readable": "gantt chart square"
+  },
+  {
+    "name": "gauge",
+    "readable": "gauge"
+  },
+  {
+    "name": "gaugeCircle",
+    "readable": "gauge circle"
+  },
+  {
+    "name": "gavel",
+    "readable": "gavel"
+  },
+  {
+    "name": "gem",
+    "readable": "gem"
+  },
+  {
+    "name": "georgianLari",
+    "readable": "georgian lari"
+  },
+  {
+    "name": "ghost",
+    "readable": "ghost"
+  },
+  {
+    "name": "gift",
+    "readable": "gift"
+  },
+  {
+    "name": "gitBranch",
+    "readable": "git branch"
+  },
+  {
+    "name": "gitBranchMinus",
+    "readable": "git branch minus"
+  },
+  {
+    "name": "gitBranchPlus",
+    "readable": "git branch plus"
+  },
+  {
+    "name": "gitCommit",
+    "readable": "git commit"
+  },
+  {
+    "name": "gitCommitHorizontal",
+    "readable": "git commit horizontal"
+  },
+  {
+    "name": "gitCommitVertical",
+    "readable": "git commit vertical"
+  },
+  {
+    "name": "gitCompare",
+    "readable": "git compare"
+  },
+  {
+    "name": "gitCompareArrows",
+    "readable": "git compare arrows"
+  },
+  {
+    "name": "gitFork",
+    "readable": "git fork"
+  },
+  {
+    "name": "gitGraph",
+    "readable": "git graph"
+  },
+  {
+    "name": "gitMerge",
+    "readable": "git merge"
+  },
+  {
+    "name": "gitMergeConflict",
+    "readable": "git merge conflict"
+  },
+  {
+    "name": "gitPullRequest",
+    "readable": "git pull request"
+  },
+  {
+    "name": "gitPullRequestArrow",
+    "readable": "git pull request arrow"
+  },
+  {
+    "name": "gitPullRequestClosed",
+    "readable": "git pull request closed"
+  },
+  {
+    "name": "gitPullRequestCreate",
+    "readable": "git pull request create"
+  },
+  {
+    "name": "gitPullRequestCreateArrow",
+    "readable": "git pull request create arrow"
+  },
+  {
+    "name": "gitPullRequestDraft",
+    "readable": "git pull request draft"
+  },
+  {
+    "name": "glassWater",
+    "readable": "glass water"
+  },
+  {
+    "name": "glasses",
+    "readable": "glasses"
+  },
+  {
+    "name": "globe",
+    "readable": "globe"
+  },
+  {
+    "name": "globe2",
+    "readable": "globe2"
+  },
+  {
+    "name": "globeLock",
+    "readable": "globe lock"
+  },
+  {
+    "name": "globeOff",
+    "readable": "globe off"
+  },
+  {
+    "name": "globeX",
+    "readable": "globe x"
+  },
+  {
+    "name": "goal",
+    "readable": "goal"
+  },
+  {
+    "name": "gpu",
+    "readable": "gpu"
+  },
+  {
+    "name": "grab",
+    "readable": "grab"
+  },
+  {
+    "name": "graduationCap",
+    "readable": "graduation cap"
+  },
+  {
+    "name": "grape",
+    "readable": "grape"
+  },
+  {
+    "name": "grid",
+    "readable": "grid"
+  },
+  {
+    "name": "grid2X2",
+    "readable": "grid2 x2"
+  },
+  {
+    "name": "grid2X2Check",
+    "readable": "grid2 x2 check"
+  },
+  {
+    "name": "grid2X2Plus",
+    "readable": "grid2 x2 plus"
+  },
+  {
+    "name": "grid2X2X",
+    "readable": "grid2 x2 x"
+  },
+  {
+    "name": "grid2x2",
+    "readable": "grid2x2"
+  },
+  {
+    "name": "grid2x2Check",
+    "readable": "grid2x2 check"
+  },
+  {
+    "name": "grid2x2Plus",
+    "readable": "grid2x2 plus"
+  },
+  {
+    "name": "grid2x2X",
+    "readable": "grid2x2 x"
+  },
+  {
+    "name": "grid3X3",
+    "readable": "grid3 x3"
+  },
+  {
+    "name": "grid3x2",
+    "readable": "grid3x2"
+  },
+  {
+    "name": "grid3x3",
+    "readable": "grid3x3"
+  },
+  {
+    "name": "grip",
+    "readable": "grip"
+  },
+  {
+    "name": "gripHorizontal",
+    "readable": "grip horizontal"
+  },
+  {
+    "name": "gripVertical",
+    "readable": "grip vertical"
+  },
+  {
+    "name": "group",
+    "readable": "group"
+  },
+  {
+    "name": "guitar",
+    "readable": "guitar"
+  },
+  {
+    "name": "ham",
+    "readable": "ham"
+  },
+  {
+    "name": "hamburger",
+    "readable": "hamburger"
+  },
+  {
+    "name": "hammer",
+    "readable": "hammer"
+  },
+  {
+    "name": "hand",
+    "readable": "hand"
+  },
+  {
+    "name": "handCoins",
+    "readable": "hand coins"
+  },
+  {
+    "name": "handFist",
+    "readable": "hand fist"
+  },
+  {
+    "name": "handGrab",
+    "readable": "hand grab"
+  },
+  {
+    "name": "handHeart",
+    "readable": "hand heart"
+  },
+  {
+    "name": "handHelping",
+    "readable": "hand helping"
+  },
+  {
+    "name": "handMetal",
+    "readable": "hand metal"
+  },
+  {
+    "name": "handPlatter",
+    "readable": "hand platter"
+  },
+  {
+    "name": "handbag",
+    "readable": "handbag"
+  },
+  {
+    "name": "handshake",
+    "readable": "handshake"
+  },
+  {
+    "name": "hardDrive",
+    "readable": "hard drive"
+  },
+  {
+    "name": "hardDriveDownload",
+    "readable": "hard drive download"
+  },
+  {
+    "name": "hardDriveUpload",
+    "readable": "hard drive upload"
+  },
+  {
+    "name": "hardHat",
+    "readable": "hard hat"
+  },
+  {
+    "name": "hash",
+    "readable": "hash"
+  },
+  {
+    "name": "hatGlasses",
+    "readable": "hat glasses"
+  },
+  {
+    "name": "haze",
+    "readable": "haze"
+  },
+  {
+    "name": "hd",
+    "readable": "hd"
+  },
+  {
+    "name": "hdmiPort",
+    "readable": "hdmi port"
+  },
+  {
+    "name": "heading",
+    "readable": "heading"
+  },
+  {
+    "name": "heading1",
+    "readable": "heading1"
+  },
+  {
+    "name": "heading2",
+    "readable": "heading2"
+  },
+  {
+    "name": "heading3",
+    "readable": "heading3"
+  },
+  {
+    "name": "heading4",
+    "readable": "heading4"
+  },
+  {
+    "name": "heading5",
+    "readable": "heading5"
+  },
+  {
+    "name": "heading6",
+    "readable": "heading6"
+  },
+  {
+    "name": "headphoneOff",
+    "readable": "headphone off"
+  },
+  {
+    "name": "headphones",
+    "readable": "headphones"
+  },
+  {
+    "name": "headset",
+    "readable": "headset"
+  },
+  {
+    "name": "heart",
+    "readable": "heart"
+  },
+  {
+    "name": "heartCrack",
+    "readable": "heart crack"
+  },
+  {
+    "name": "heartHandshake",
+    "readable": "heart handshake"
+  },
+  {
+    "name": "heartMinus",
+    "readable": "heart minus"
+  },
+  {
+    "name": "heartOff",
+    "readable": "heart off"
+  },
+  {
+    "name": "heartPlus",
+    "readable": "heart plus"
+  },
+  {
+    "name": "heartPulse",
+    "readable": "heart pulse"
+  },
+  {
+    "name": "heater",
+    "readable": "heater"
+  },
+  {
+    "name": "helicopter",
+    "readable": "helicopter"
+  },
+  {
+    "name": "helpCircle",
+    "readable": "help circle"
+  },
+  {
+    "name": "helpingHand",
+    "readable": "helping hand"
+  },
+  {
+    "name": "hexagon",
+    "readable": "hexagon"
+  },
+  {
+    "name": "highlighter",
+    "readable": "highlighter"
+  },
+  {
+    "name": "history",
+    "readable": "history"
+  },
+  {
+    "name": "home",
+    "readable": "home"
+  },
+  {
+    "name": "hop",
+    "readable": "hop"
+  },
+  {
+    "name": "hopOff",
+    "readable": "hop off"
+  },
+  {
+    "name": "hospital",
+    "readable": "hospital"
+  },
+  {
+    "name": "hotel",
+    "readable": "hotel"
+  },
+  {
+    "name": "hourglass",
+    "readable": "hourglass"
+  },
+  {
+    "name": "house",
+    "readable": "house"
+  },
+  {
+    "name": "houseHeart",
+    "readable": "house heart"
+  },
+  {
+    "name": "housePlug",
+    "readable": "house plug"
+  },
+  {
+    "name": "housePlus",
+    "readable": "house plus"
+  },
+  {
+    "name": "houseWifi",
+    "readable": "house wifi"
+  },
+  {
+    "name": "iceCream",
+    "readable": "ice cream"
+  },
+  {
+    "name": "iceCream2",
+    "readable": "ice cream2"
+  },
+  {
+    "name": "iceCreamBowl",
+    "readable": "ice cream bowl"
+  },
+  {
+    "name": "iceCreamCone",
+    "readable": "ice cream cone"
+  },
+  {
+    "name": "idCard",
+    "readable": "id card"
+  },
+  {
+    "name": "idCardLanyard",
+    "readable": "id card lanyard"
+  },
+  {
+    "name": "image",
+    "readable": "image"
+  },
+  {
+    "name": "imageDown",
+    "readable": "image down"
+  },
+  {
+    "name": "imageMinus",
+    "readable": "image minus"
+  },
+  {
+    "name": "imageOff",
+    "readable": "image off"
+  },
+  {
+    "name": "imagePlay",
+    "readable": "image play"
+  },
+  {
+    "name": "imagePlus",
+    "readable": "image plus"
+  },
+  {
+    "name": "imageUp",
+    "readable": "image up"
+  },
+  {
+    "name": "imageUpscale",
+    "readable": "image upscale"
+  },
+  {
+    "name": "images",
+    "readable": "images"
+  },
+  {
+    "name": "import",
+    "readable": "import"
+  },
+  {
+    "name": "inbox",
+    "readable": "inbox"
+  },
+  {
+    "name": "indent",
+    "readable": "indent"
+  },
+  {
+    "name": "indentDecrease",
+    "readable": "indent decrease"
+  },
+  {
+    "name": "indentIncrease",
+    "readable": "indent increase"
+  },
+  {
+    "name": "indianRupee",
+    "readable": "indian rupee"
+  },
+  {
+    "name": "infinity",
+    "readable": "infinity"
+  },
+  {
+    "name": "info",
+    "readable": "info"
+  },
+  {
+    "name": "inspect",
+    "readable": "inspect"
+  },
+  {
+    "name": "inspectionPanel",
+    "readable": "inspection panel"
+  },
+  {
+    "name": "italic",
+    "readable": "italic"
+  },
+  {
+    "name": "iterationCcw",
+    "readable": "iteration ccw"
+  },
+  {
+    "name": "iterationCw",
+    "readable": "iteration cw"
+  },
+  {
+    "name": "japaneseYen",
+    "readable": "japanese yen"
+  },
+  {
+    "name": "joystick",
+    "readable": "joystick"
+  },
+  {
+    "name": "kanban",
+    "readable": "kanban"
+  },
+  {
+    "name": "kanbanSquare",
+    "readable": "kanban square"
+  },
+  {
+    "name": "kanbanSquareDashed",
+    "readable": "kanban square dashed"
+  },
+  {
+    "name": "kayak",
+    "readable": "kayak"
+  },
+  {
+    "name": "key",
+    "readable": "key"
+  },
+  {
+    "name": "keyRound",
+    "readable": "key round"
+  },
+  {
+    "name": "keySquare",
+    "readable": "key square"
+  },
+  {
+    "name": "keyboard",
+    "readable": "keyboard"
+  },
+  {
+    "name": "keyboardMusic",
+    "readable": "keyboard music"
+  },
+  {
+    "name": "keyboardOff",
+    "readable": "keyboard off"
+  },
+  {
+    "name": "lamp",
+    "readable": "lamp"
+  },
+  {
+    "name": "lampCeiling",
+    "readable": "lamp ceiling"
+  },
+  {
+    "name": "lampDesk",
+    "readable": "lamp desk"
+  },
+  {
+    "name": "lampFloor",
+    "readable": "lamp floor"
+  },
+  {
+    "name": "lampWallDown",
+    "readable": "lamp wall down"
+  },
+  {
+    "name": "lampWallUp",
+    "readable": "lamp wall up"
+  },
+  {
+    "name": "landPlot",
+    "readable": "land plot"
+  },
+  {
+    "name": "landmark",
+    "readable": "landmark"
+  },
+  {
+    "name": "languages",
+    "readable": "languages"
+  },
+  {
+    "name": "laptop",
+    "readable": "laptop"
+  },
+  {
+    "name": "laptop2",
+    "readable": "laptop2"
+  },
+  {
+    "name": "laptopMinimal",
+    "readable": "laptop minimal"
+  },
+  {
+    "name": "laptopMinimalCheck",
+    "readable": "laptop minimal check"
+  },
+  {
+    "name": "lasso",
+    "readable": "lasso"
+  },
+  {
+    "name": "lassoSelect",
+    "readable": "lasso select"
+  },
+  {
+    "name": "laugh",
+    "readable": "laugh"
+  },
+  {
+    "name": "layers",
+    "readable": "layers"
+  },
+  {
+    "name": "layers2",
+    "readable": "layers2"
+  },
+  {
+    "name": "layers3",
+    "readable": "layers3"
+  },
+  {
+    "name": "layersPlus",
+    "readable": "layers plus"
+  },
+  {
+    "name": "layout",
+    "readable": "layout"
+  },
+  {
+    "name": "layoutDashboard",
+    "readable": "layout dashboard"
+  },
+  {
+    "name": "layoutGrid",
+    "readable": "layout grid"
+  },
+  {
+    "name": "layoutList",
+    "readable": "layout list"
+  },
+  {
+    "name": "layoutPanelLeft",
+    "readable": "layout panel left"
+  },
+  {
+    "name": "layoutPanelTop",
+    "readable": "layout panel top"
+  },
+  {
+    "name": "layoutTemplate",
+    "readable": "layout template"
+  },
+  {
+    "name": "leaf",
+    "readable": "leaf"
+  },
+  {
+    "name": "leafyGreen",
+    "readable": "leafy green"
+  },
+  {
+    "name": "lectern",
+    "readable": "lectern"
+  },
+  {
+    "name": "lensConcave",
+    "readable": "lens concave"
+  },
+  {
+    "name": "lensConvex",
+    "readable": "lens convex"
+  },
+  {
+    "name": "letterText",
+    "readable": "letter text"
+  },
+  {
+    "name": "library",
+    "readable": "library"
+  },
+  {
+    "name": "libraryBig",
+    "readable": "library big"
+  },
+  {
+    "name": "librarySquare",
+    "readable": "library square"
+  },
+  {
+    "name": "lifeBuoy",
+    "readable": "life buoy"
+  },
+  {
+    "name": "ligature",
+    "readable": "ligature"
+  },
+  {
+    "name": "lightbulb",
+    "readable": "lightbulb"
+  },
+  {
+    "name": "lightbulbOff",
+    "readable": "lightbulb off"
+  },
+  {
+    "name": "lineChart",
+    "readable": "line chart"
+  },
+  {
+    "name": "lineDotRightHorizontal",
+    "readable": "line dot right horizontal"
+  },
+  {
+    "name": "lineSquiggle",
+    "readable": "line squiggle"
+  },
+  {
+    "name": "lineStyle",
+    "readable": "line style"
+  },
+  {
+    "name": "link",
+    "readable": "link"
+  },
+  {
+    "name": "link2",
+    "readable": "link2"
+  },
+  {
+    "name": "link2Off",
+    "readable": "link2 off"
+  },
+  {
+    "name": "list",
+    "readable": "list"
+  },
+  {
+    "name": "listCheck",
+    "readable": "list check"
+  },
+  {
+    "name": "listChecks",
+    "readable": "list checks"
+  },
+  {
+    "name": "listChevronsDownUp",
+    "readable": "list chevrons down up"
+  },
+  {
+    "name": "listChevronsUpDown",
+    "readable": "list chevrons up down"
+  },
+  {
+    "name": "listCollapse",
+    "readable": "list collapse"
+  },
+  {
+    "name": "listEnd",
+    "readable": "list end"
+  },
+  {
+    "name": "listFilter",
+    "readable": "list filter"
+  },
+  {
+    "name": "listFilterPlus",
+    "readable": "list filter plus"
+  },
+  {
+    "name": "listIndentDecrease",
+    "readable": "list indent decrease"
+  },
+  {
+    "name": "listIndentIncrease",
+    "readable": "list indent increase"
+  },
+  {
+    "name": "listMinus",
+    "readable": "list minus"
+  },
+  {
+    "name": "listMusic",
+    "readable": "list music"
+  },
+  {
+    "name": "listOrdered",
+    "readable": "list ordered"
+  },
+  {
+    "name": "listPlus",
+    "readable": "list plus"
+  },
+  {
+    "name": "listRestart",
+    "readable": "list restart"
+  },
+  {
+    "name": "listStart",
+    "readable": "list start"
+  },
+  {
+    "name": "listTodo",
+    "readable": "list todo"
+  },
+  {
+    "name": "listTree",
+    "readable": "list tree"
+  },
+  {
+    "name": "listVideo",
+    "readable": "list video"
+  },
+  {
+    "name": "listX",
+    "readable": "list x"
+  },
+  {
+    "name": "loader",
+    "readable": "loader"
+  },
+  {
+    "name": "loader2",
+    "readable": "loader2"
+  },
+  {
+    "name": "loaderCircle",
+    "readable": "loader circle"
+  },
+  {
+    "name": "loaderPinwheel",
+    "readable": "loader pinwheel"
+  },
+  {
+    "name": "locate",
+    "readable": "locate"
+  },
+  {
+    "name": "locateFixed",
+    "readable": "locate fixed"
+  },
+  {
+    "name": "locateOff",
+    "readable": "locate off"
+  },
+  {
+    "name": "locationEdit",
+    "readable": "location edit"
+  },
+  {
+    "name": "lock",
+    "readable": "lock"
+  },
+  {
+    "name": "lockKeyhole",
+    "readable": "lock keyhole"
+  },
+  {
+    "name": "lockKeyholeOpen",
+    "readable": "lock keyhole open"
+  },
+  {
+    "name": "lockOpen",
+    "readable": "lock open"
+  },
+  {
+    "name": "logIn",
+    "readable": "log in"
+  },
+  {
+    "name": "logOut",
+    "readable": "log out"
+  },
+  {
+    "name": "logs",
+    "readable": "logs"
+  },
+  {
+    "name": "lollipop",
+    "readable": "lollipop"
+  },
+  {
+    "name": "luggage",
+    "readable": "luggage"
+  },
+  {
+    "name": "mSquare",
+    "readable": "m square"
+  },
+  {
+    "name": "magnet",
+    "readable": "magnet"
+  },
+  {
+    "name": "mail",
+    "readable": "mail"
+  },
+  {
+    "name": "mailCheck",
+    "readable": "mail check"
+  },
+  {
+    "name": "mailMinus",
+    "readable": "mail minus"
+  },
+  {
+    "name": "mailOpen",
+    "readable": "mail open"
+  },
+  {
+    "name": "mailPlus",
+    "readable": "mail plus"
+  },
+  {
+    "name": "mailQuestion",
+    "readable": "mail question"
+  },
+  {
+    "name": "mailQuestionMark",
+    "readable": "mail question mark"
+  },
+  {
+    "name": "mailSearch",
+    "readable": "mail search"
+  },
+  {
+    "name": "mailWarning",
+    "readable": "mail warning"
+  },
+  {
+    "name": "mailX",
+    "readable": "mail x"
+  },
+  {
+    "name": "mailbox",
+    "readable": "mailbox"
+  },
+  {
+    "name": "mails",
+    "readable": "mails"
+  },
+  {
+    "name": "map",
+    "readable": "map"
+  },
+  {
+    "name": "mapMinus",
+    "readable": "map minus"
+  },
+  {
+    "name": "mapPin",
+    "readable": "map pin"
+  },
+  {
+    "name": "mapPinCheck",
+    "readable": "map pin check"
+  },
+  {
+    "name": "mapPinCheckInside",
+    "readable": "map pin check inside"
+  },
+  {
+    "name": "mapPinHouse",
+    "readable": "map pin house"
+  },
+  {
+    "name": "mapPinMinus",
+    "readable": "map pin minus"
+  },
+  {
+    "name": "mapPinMinusInside",
+    "readable": "map pin minus inside"
+  },
+  {
+    "name": "mapPinOff",
+    "readable": "map pin off"
+  },
+  {
+    "name": "mapPinPen",
+    "readable": "map pin pen"
+  },
+  {
+    "name": "mapPinPlus",
+    "readable": "map pin plus"
+  },
+  {
+    "name": "mapPinPlusInside",
+    "readable": "map pin plus inside"
+  },
+  {
+    "name": "mapPinX",
+    "readable": "map pin x"
+  },
+  {
+    "name": "mapPinXInside",
+    "readable": "map pin x inside"
+  },
+  {
+    "name": "mapPinned",
+    "readable": "map pinned"
+  },
+  {
+    "name": "mapPlus",
+    "readable": "map plus"
+  },
+  {
+    "name": "mars",
+    "readable": "mars"
+  },
+  {
+    "name": "marsStroke",
+    "readable": "mars stroke"
+  },
+  {
+    "name": "martini",
+    "readable": "martini"
+  },
+  {
+    "name": "maximize",
+    "readable": "maximize"
+  },
+  {
+    "name": "maximize2",
+    "readable": "maximize2"
+  },
+  {
+    "name": "medal",
+    "readable": "medal"
+  },
+  {
+    "name": "megaphone",
+    "readable": "megaphone"
+  },
+  {
+    "name": "megaphoneOff",
+    "readable": "megaphone off"
+  },
+  {
+    "name": "meh",
+    "readable": "meh"
+  },
+  {
+    "name": "memoryStick",
+    "readable": "memory stick"
+  },
+  {
+    "name": "menu",
+    "readable": "menu"
+  },
+  {
+    "name": "menuSquare",
+    "readable": "menu square"
+  },
+  {
+    "name": "merge",
+    "readable": "merge"
+  },
+  {
+    "name": "messageCircle",
+    "readable": "message circle"
+  },
+  {
+    "name": "messageCircleCheck",
+    "readable": "message circle check"
+  },
+  {
+    "name": "messageCircleCode",
+    "readable": "message circle code"
+  },
+  {
+    "name": "messageCircleDashed",
+    "readable": "message circle dashed"
+  },
+  {
+    "name": "messageCircleHeart",
+    "readable": "message circle heart"
+  },
+  {
+    "name": "messageCircleMore",
+    "readable": "message circle more"
+  },
+  {
+    "name": "messageCircleOff",
+    "readable": "message circle off"
+  },
+  {
+    "name": "messageCirclePlus",
+    "readable": "message circle plus"
+  },
+  {
+    "name": "messageCircleQuestion",
+    "readable": "message circle question"
+  },
+  {
+    "name": "messageCircleQuestionMark",
+    "readable": "message circle question mark"
+  },
+  {
+    "name": "messageCircleReply",
+    "readable": "message circle reply"
+  },
+  {
+    "name": "messageCircleWarning",
+    "readable": "message circle warning"
+  },
+  {
+    "name": "messageCircleX",
+    "readable": "message circle x"
+  },
+  {
+    "name": "messageSquare",
+    "readable": "message square"
+  },
+  {
+    "name": "messageSquareCheck",
+    "readable": "message square check"
+  },
+  {
+    "name": "messageSquareCode",
+    "readable": "message square code"
+  },
+  {
+    "name": "messageSquareDashed",
+    "readable": "message square dashed"
+  },
+  {
+    "name": "messageSquareDiff",
+    "readable": "message square diff"
+  },
+  {
+    "name": "messageSquareDot",
+    "readable": "message square dot"
+  },
+  {
+    "name": "messageSquareHeart",
+    "readable": "message square heart"
+  },
+  {
+    "name": "messageSquareLock",
+    "readable": "message square lock"
+  },
+  {
+    "name": "messageSquareMore",
+    "readable": "message square more"
+  },
+  {
+    "name": "messageSquareOff",
+    "readable": "message square off"
+  },
+  {
+    "name": "messageSquarePlus",
+    "readable": "message square plus"
+  },
+  {
+    "name": "messageSquareQuote",
+    "readable": "message square quote"
+  },
+  {
+    "name": "messageSquareReply",
+    "readable": "message square reply"
+  },
+  {
+    "name": "messageSquareShare",
+    "readable": "message square share"
+  },
+  {
+    "name": "messageSquareText",
+    "readable": "message square text"
+  },
+  {
+    "name": "messageSquareWarning",
+    "readable": "message square warning"
+  },
+  {
+    "name": "messageSquareX",
+    "readable": "message square x"
+  },
+  {
+    "name": "messagesSquare",
+    "readable": "messages square"
+  },
+  {
+    "name": "metronome",
+    "readable": "metronome"
+  },
+  {
+    "name": "mic",
+    "readable": "mic"
+  },
+  {
+    "name": "mic2",
+    "readable": "mic2"
+  },
+  {
+    "name": "micOff",
+    "readable": "mic off"
+  },
+  {
+    "name": "micVocal",
+    "readable": "mic vocal"
+  },
+  {
+    "name": "microchip",
+    "readable": "microchip"
+  },
+  {
+    "name": "microscope",
+    "readable": "microscope"
+  },
+  {
+    "name": "microwave",
+    "readable": "microwave"
+  },
+  {
+    "name": "milestone",
+    "readable": "milestone"
+  },
+  {
+    "name": "milk",
+    "readable": "milk"
+  },
+  {
+    "name": "milkOff",
+    "readable": "milk off"
+  },
+  {
+    "name": "minimize",
+    "readable": "minimize"
+  },
+  {
+    "name": "minimize2",
+    "readable": "minimize2"
+  },
+  {
+    "name": "minus",
+    "readable": "minus"
+  },
+  {
+    "name": "minusCircle",
+    "readable": "minus circle"
+  },
+  {
+    "name": "minusSquare",
+    "readable": "minus square"
+  },
+  {
+    "name": "mirrorRectangular",
+    "readable": "mirror rectangular"
+  },
+  {
+    "name": "mirrorRound",
+    "readable": "mirror round"
+  },
+  {
+    "name": "monitor",
+    "readable": "monitor"
+  },
+  {
+    "name": "monitorCheck",
+    "readable": "monitor check"
+  },
+  {
+    "name": "monitorCloud",
+    "readable": "monitor cloud"
+  },
+  {
+    "name": "monitorCog",
+    "readable": "monitor cog"
+  },
+  {
+    "name": "monitorDot",
+    "readable": "monitor dot"
+  },
+  {
+    "name": "monitorDown",
+    "readable": "monitor down"
+  },
+  {
+    "name": "monitorOff",
+    "readable": "monitor off"
+  },
+  {
+    "name": "monitorPause",
+    "readable": "monitor pause"
+  },
+  {
+    "name": "monitorPlay",
+    "readable": "monitor play"
+  },
+  {
+    "name": "monitorSmartphone",
+    "readable": "monitor smartphone"
+  },
+  {
+    "name": "monitorSpeaker",
+    "readable": "monitor speaker"
+  },
+  {
+    "name": "monitorStop",
+    "readable": "monitor stop"
+  },
+  {
+    "name": "monitorUp",
+    "readable": "monitor up"
+  },
+  {
+    "name": "monitorX",
+    "readable": "monitor x"
+  },
+  {
+    "name": "moon",
+    "readable": "moon"
+  },
+  {
+    "name": "moonStar",
+    "readable": "moon star"
+  },
+  {
+    "name": "moreHorizontal",
+    "readable": "more horizontal"
+  },
+  {
+    "name": "moreVertical",
+    "readable": "more vertical"
+  },
+  {
+    "name": "motorbike",
+    "readable": "motorbike"
+  },
+  {
+    "name": "mountain",
+    "readable": "mountain"
+  },
+  {
+    "name": "mountainSnow",
+    "readable": "mountain snow"
+  },
+  {
+    "name": "mouse",
+    "readable": "mouse"
+  },
+  {
+    "name": "mouseLeft",
+    "readable": "mouse left"
+  },
+  {
+    "name": "mouseOff",
+    "readable": "mouse off"
+  },
+  {
+    "name": "mousePointer",
+    "readable": "mouse pointer"
+  },
+  {
+    "name": "mousePointer2",
+    "readable": "mouse pointer2"
+  },
+  {
+    "name": "mousePointer2Off",
+    "readable": "mouse pointer2 off"
+  },
+  {
+    "name": "mousePointerBan",
+    "readable": "mouse pointer ban"
+  },
+  {
+    "name": "mousePointerClick",
+    "readable": "mouse pointer click"
+  },
+  {
+    "name": "mousePointerSquareDashed",
+    "readable": "mouse pointer square dashed"
+  },
+  {
+    "name": "mouseRight",
+    "readable": "mouse right"
+  },
+  {
+    "name": "move",
+    "readable": "move"
+  },
+  {
+    "name": "move3D",
+    "readable": "move3 d"
+  },
+  {
+    "name": "move3d",
+    "readable": "move3d"
+  },
+  {
+    "name": "moveDiagonal",
+    "readable": "move diagonal"
+  },
+  {
+    "name": "moveDiagonal2",
+    "readable": "move diagonal2"
+  },
+  {
+    "name": "moveDown",
+    "readable": "move down"
+  },
+  {
+    "name": "moveDownLeft",
+    "readable": "move down left"
+  },
+  {
+    "name": "moveDownRight",
+    "readable": "move down right"
+  },
+  {
+    "name": "moveHorizontal",
+    "readable": "move horizontal"
+  },
+  {
+    "name": "moveLeft",
+    "readable": "move left"
+  },
+  {
+    "name": "moveRight",
+    "readable": "move right"
+  },
+  {
+    "name": "moveUp",
+    "readable": "move up"
+  },
+  {
+    "name": "moveUpLeft",
+    "readable": "move up left"
+  },
+  {
+    "name": "moveUpRight",
+    "readable": "move up right"
+  },
+  {
+    "name": "moveVertical",
+    "readable": "move vertical"
+  },
+  {
+    "name": "music",
+    "readable": "music"
+  },
+  {
+    "name": "music2",
+    "readable": "music2"
+  },
+  {
+    "name": "music3",
+    "readable": "music3"
+  },
+  {
+    "name": "music4",
+    "readable": "music4"
+  },
+  {
+    "name": "navigation",
+    "readable": "navigation"
+  },
+  {
+    "name": "navigation2",
+    "readable": "navigation2"
+  },
+  {
+    "name": "navigation2Off",
+    "readable": "navigation2 off"
+  },
+  {
+    "name": "navigationOff",
+    "readable": "navigation off"
+  },
+  {
+    "name": "network",
+    "readable": "network"
+  },
+  {
+    "name": "newspaper",
+    "readable": "newspaper"
+  },
+  {
+    "name": "nfc",
+    "readable": "nfc"
+  },
+  {
+    "name": "nonBinary",
+    "readable": "non binary"
+  },
+  {
+    "name": "notebook",
+    "readable": "notebook"
+  },
+  {
+    "name": "notebookPen",
+    "readable": "notebook pen"
+  },
+  {
+    "name": "notebookTabs",
+    "readable": "notebook tabs"
+  },
+  {
+    "name": "notebookText",
+    "readable": "notebook text"
+  },
+  {
+    "name": "notepadText",
+    "readable": "notepad text"
+  },
+  {
+    "name": "notepadTextDashed",
+    "readable": "notepad text dashed"
+  },
+  {
+    "name": "nut",
+    "readable": "nut"
+  },
+  {
+    "name": "nutOff",
+    "readable": "nut off"
+  },
+  {
+    "name": "octagon",
+    "readable": "octagon"
+  },
+  {
+    "name": "octagonAlert",
+    "readable": "octagon alert"
+  },
+  {
+    "name": "octagonMinus",
+    "readable": "octagon minus"
+  },
+  {
+    "name": "octagonPause",
+    "readable": "octagon pause"
+  },
+  {
+    "name": "octagonX",
+    "readable": "octagon x"
+  },
+  {
+    "name": "omega",
+    "readable": "omega"
+  },
+  {
+    "name": "option",
+    "readable": "option"
+  },
+  {
+    "name": "orbit",
+    "readable": "orbit"
+  },
+  {
+    "name": "origami",
+    "readable": "origami"
+  },
+  {
+    "name": "outdent",
+    "readable": "outdent"
+  },
+  {
+    "name": "package",
+    "readable": "package"
+  },
+  {
+    "name": "package2",
+    "readable": "package2"
+  },
+  {
+    "name": "packageCheck",
+    "readable": "package check"
+  },
+  {
+    "name": "packageMinus",
+    "readable": "package minus"
+  },
+  {
+    "name": "packageOpen",
+    "readable": "package open"
+  },
+  {
+    "name": "packagePlus",
+    "readable": "package plus"
+  },
+  {
+    "name": "packageSearch",
+    "readable": "package search"
+  },
+  {
+    "name": "packageX",
+    "readable": "package x"
+  },
+  {
+    "name": "paintBucket",
+    "readable": "paint bucket"
+  },
+  {
+    "name": "paintRoller",
+    "readable": "paint roller"
+  },
+  {
+    "name": "paintbrush",
+    "readable": "paintbrush"
+  },
+  {
+    "name": "paintbrush2",
+    "readable": "paintbrush2"
+  },
+  {
+    "name": "paintbrushVertical",
+    "readable": "paintbrush vertical"
+  },
+  {
+    "name": "palette",
+    "readable": "palette"
+  },
+  {
+    "name": "palmtree",
+    "readable": "palmtree"
+  },
+  {
+    "name": "panda",
+    "readable": "panda"
+  },
+  {
+    "name": "panelBottom",
+    "readable": "panel bottom"
+  },
+  {
+    "name": "panelBottomClose",
+    "readable": "panel bottom close"
+  },
+  {
+    "name": "panelBottomDashed",
+    "readable": "panel bottom dashed"
+  },
+  {
+    "name": "panelBottomInactive",
+    "readable": "panel bottom inactive"
+  },
+  {
+    "name": "panelBottomOpen",
+    "readable": "panel bottom open"
+  },
+  {
+    "name": "panelLeft",
+    "readable": "panel left"
+  },
+  {
+    "name": "panelLeftClose",
+    "readable": "panel left close"
+  },
+  {
+    "name": "panelLeftDashed",
+    "readable": "panel left dashed"
+  },
+  {
+    "name": "panelLeftInactive",
+    "readable": "panel left inactive"
+  },
+  {
+    "name": "panelLeftOpen",
+    "readable": "panel left open"
+  },
+  {
+    "name": "panelLeftRightDashed",
+    "readable": "panel left right dashed"
+  },
+  {
+    "name": "panelRight",
+    "readable": "panel right"
+  },
+  {
+    "name": "panelRightClose",
+    "readable": "panel right close"
+  },
+  {
+    "name": "panelRightDashed",
+    "readable": "panel right dashed"
+  },
+  {
+    "name": "panelRightInactive",
+    "readable": "panel right inactive"
+  },
+  {
+    "name": "panelRightOpen",
+    "readable": "panel right open"
+  },
+  {
+    "name": "panelTop",
+    "readable": "panel top"
+  },
+  {
+    "name": "panelTopBottomDashed",
+    "readable": "panel top bottom dashed"
+  },
+  {
+    "name": "panelTopClose",
+    "readable": "panel top close"
+  },
+  {
+    "name": "panelTopDashed",
+    "readable": "panel top dashed"
+  },
+  {
+    "name": "panelTopInactive",
+    "readable": "panel top inactive"
+  },
+  {
+    "name": "panelTopOpen",
+    "readable": "panel top open"
+  },
+  {
+    "name": "panelsLeftBottom",
+    "readable": "panels left bottom"
+  },
+  {
+    "name": "panelsLeftRight",
+    "readable": "panels left right"
+  },
+  {
+    "name": "panelsRightBottom",
+    "readable": "panels right bottom"
+  },
+  {
+    "name": "panelsTopBottom",
+    "readable": "panels top bottom"
+  },
+  {
+    "name": "panelsTopLeft",
+    "readable": "panels top left"
+  },
+  {
+    "name": "paperclip",
+    "readable": "paperclip"
+  },
+  {
+    "name": "parentheses",
+    "readable": "parentheses"
+  },
+  {
+    "name": "parkingCircle",
+    "readable": "parking circle"
+  },
+  {
+    "name": "parkingCircleOff",
+    "readable": "parking circle off"
+  },
+  {
+    "name": "parkingMeter",
+    "readable": "parking meter"
+  },
+  {
+    "name": "parkingSquare",
+    "readable": "parking square"
+  },
+  {
+    "name": "parkingSquareOff",
+    "readable": "parking square off"
+  },
+  {
+    "name": "partyPopper",
+    "readable": "party popper"
+  },
+  {
+    "name": "pause",
+    "readable": "pause"
+  },
+  {
+    "name": "pauseCircle",
+    "readable": "pause circle"
+  },
+  {
+    "name": "pauseOctagon",
+    "readable": "pause octagon"
+  },
+  {
+    "name": "pawPrint",
+    "readable": "paw print"
+  },
+  {
+    "name": "pcCase",
+    "readable": "pc case"
+  },
+  {
+    "name": "pen",
+    "readable": "pen"
+  },
+  {
+    "name": "penBox",
+    "readable": "pen box"
+  },
+  {
+    "name": "penLine",
+    "readable": "pen line"
+  },
+  {
+    "name": "penOff",
+    "readable": "pen off"
+  },
+  {
+    "name": "penSquare",
+    "readable": "pen square"
+  },
+  {
+    "name": "penTool",
+    "readable": "pen tool"
+  },
+  {
+    "name": "pencil",
+    "readable": "pencil"
+  },
+  {
+    "name": "pencilLine",
+    "readable": "pencil line"
+  },
+  {
+    "name": "pencilOff",
+    "readable": "pencil off"
+  },
+  {
+    "name": "pencilRuler",
+    "readable": "pencil ruler"
+  },
+  {
+    "name": "pentagon",
+    "readable": "pentagon"
+  },
+  {
+    "name": "percent",
+    "readable": "percent"
+  },
+  {
+    "name": "percentCircle",
+    "readable": "percent circle"
+  },
+  {
+    "name": "percentDiamond",
+    "readable": "percent diamond"
+  },
+  {
+    "name": "percentSquare",
+    "readable": "percent square"
+  },
+  {
+    "name": "personStanding",
+    "readable": "person standing"
+  },
+  {
+    "name": "philippinePeso",
+    "readable": "philippine peso"
+  },
+  {
+    "name": "phone",
+    "readable": "phone"
+  },
+  {
+    "name": "phoneCall",
+    "readable": "phone call"
+  },
+  {
+    "name": "phoneForwarded",
+    "readable": "phone forwarded"
+  },
+  {
+    "name": "phoneIncoming",
+    "readable": "phone incoming"
+  },
+  {
+    "name": "phoneMissed",
+    "readable": "phone missed"
+  },
+  {
+    "name": "phoneOff",
+    "readable": "phone off"
+  },
+  {
+    "name": "phoneOutgoing",
+    "readable": "phone outgoing"
+  },
+  {
+    "name": "pi",
+    "readable": "pi"
+  },
+  {
+    "name": "piSquare",
+    "readable": "pi square"
+  },
+  {
+    "name": "piano",
+    "readable": "piano"
+  },
+  {
+    "name": "pickaxe",
+    "readable": "pickaxe"
+  },
+  {
+    "name": "pictureInPicture",
+    "readable": "picture in picture"
+  },
+  {
+    "name": "pictureInPicture2",
+    "readable": "picture in picture2"
+  },
+  {
+    "name": "pieChart",
+    "readable": "pie chart"
+  },
+  {
+    "name": "piggyBank",
+    "readable": "piggy bank"
+  },
+  {
+    "name": "pilcrow",
+    "readable": "pilcrow"
+  },
+  {
+    "name": "pilcrowLeft",
+    "readable": "pilcrow left"
+  },
+  {
+    "name": "pilcrowRight",
+    "readable": "pilcrow right"
+  },
+  {
+    "name": "pilcrowSquare",
+    "readable": "pilcrow square"
+  },
+  {
+    "name": "pill",
+    "readable": "pill"
+  },
+  {
+    "name": "pillBottle",
+    "readable": "pill bottle"
+  },
+  {
+    "name": "pin",
+    "readable": "pin"
+  },
+  {
+    "name": "pinOff",
+    "readable": "pin off"
+  },
+  {
+    "name": "pipette",
+    "readable": "pipette"
+  },
+  {
+    "name": "pizza",
+    "readable": "pizza"
+  },
+  {
+    "name": "plane",
+    "readable": "plane"
+  },
+  {
+    "name": "planeLanding",
+    "readable": "plane landing"
+  },
+  {
+    "name": "planeTakeoff",
+    "readable": "plane takeoff"
+  },
+  {
+    "name": "play",
+    "readable": "play"
+  },
+  {
+    "name": "playCircle",
+    "readable": "play circle"
+  },
+  {
+    "name": "playSquare",
+    "readable": "play square"
+  },
+  {
+    "name": "plug",
+    "readable": "plug"
+  },
+  {
+    "name": "plug2",
+    "readable": "plug2"
+  },
+  {
+    "name": "plugZap",
+    "readable": "plug zap"
+  },
+  {
+    "name": "plugZap2",
+    "readable": "plug zap2"
+  },
+  {
+    "name": "plus",
+    "readable": "plus"
+  },
+  {
+    "name": "plusCircle",
+    "readable": "plus circle"
+  },
+  {
+    "name": "plusSquare",
+    "readable": "plus square"
+  },
+  {
+    "name": "pocketKnife",
+    "readable": "pocket knife"
+  },
+  {
+    "name": "podcast",
+    "readable": "podcast"
+  },
+  {
+    "name": "pointer",
+    "readable": "pointer"
+  },
+  {
+    "name": "pointerOff",
+    "readable": "pointer off"
+  },
+  {
+    "name": "popcorn",
+    "readable": "popcorn"
+  },
+  {
+    "name": "popsicle",
+    "readable": "popsicle"
+  },
+  {
+    "name": "poundSterling",
+    "readable": "pound sterling"
+  },
+  {
+    "name": "power",
+    "readable": "power"
+  },
+  {
+    "name": "powerCircle",
+    "readable": "power circle"
+  },
+  {
+    "name": "powerOff",
+    "readable": "power off"
+  },
+  {
+    "name": "powerSquare",
+    "readable": "power square"
+  },
+  {
+    "name": "presentation",
+    "readable": "presentation"
+  },
+  {
+    "name": "printer",
+    "readable": "printer"
+  },
+  {
+    "name": "printerCheck",
+    "readable": "printer check"
+  },
+  {
+    "name": "printerX",
+    "readable": "printer x"
+  },
+  {
+    "name": "projector",
+    "readable": "projector"
+  },
+  {
+    "name": "proportions",
+    "readable": "proportions"
+  },
+  {
+    "name": "puzzle",
+    "readable": "puzzle"
+  },
+  {
+    "name": "pyramid",
+    "readable": "pyramid"
+  },
+  {
+    "name": "qrCode",
+    "readable": "qr code"
+  },
+  {
+    "name": "quote",
+    "readable": "quote"
+  },
+  {
+    "name": "rabbit",
+    "readable": "rabbit"
+  },
+  {
+    "name": "radar",
+    "readable": "radar"
+  },
+  {
+    "name": "radiation",
+    "readable": "radiation"
+  },
+  {
+    "name": "radical",
+    "readable": "radical"
+  },
+  {
+    "name": "radio",
+    "readable": "radio"
+  },
+  {
+    "name": "radioOff",
+    "readable": "radio off"
+  },
+  {
+    "name": "radioReceiver",
+    "readable": "radio receiver"
+  },
+  {
+    "name": "radioTower",
+    "readable": "radio tower"
+  },
+  {
+    "name": "radius",
+    "readable": "radius"
+  },
+  {
+    "name": "rainbow",
+    "readable": "rainbow"
+  },
+  {
+    "name": "rat",
+    "readable": "rat"
+  },
+  {
+    "name": "ratio",
+    "readable": "ratio"
+  },
+  {
+    "name": "receipt",
+    "readable": "receipt"
+  },
+  {
+    "name": "receiptCent",
+    "readable": "receipt cent"
+  },
+  {
+    "name": "receiptEuro",
+    "readable": "receipt euro"
+  },
+  {
+    "name": "receiptIndianRupee",
+    "readable": "receipt indian rupee"
+  },
+  {
+    "name": "receiptJapaneseYen",
+    "readable": "receipt japanese yen"
+  },
+  {
+    "name": "receiptPoundSterling",
+    "readable": "receipt pound sterling"
+  },
+  {
+    "name": "receiptRussianRuble",
+    "readable": "receipt russian ruble"
+  },
+  {
+    "name": "receiptSwissFranc",
+    "readable": "receipt swiss franc"
+  },
+  {
+    "name": "receiptText",
+    "readable": "receipt text"
+  },
+  {
+    "name": "receiptTurkishLira",
+    "readable": "receipt turkish lira"
+  },
+  {
+    "name": "rectangleCircle",
+    "readable": "rectangle circle"
+  },
+  {
+    "name": "rectangleEllipsis",
+    "readable": "rectangle ellipsis"
+  },
+  {
+    "name": "rectangleGoggles",
+    "readable": "rectangle goggles"
+  },
+  {
+    "name": "rectangleHorizontal",
+    "readable": "rectangle horizontal"
+  },
+  {
+    "name": "rectangleVertical",
+    "readable": "rectangle vertical"
+  },
+  {
+    "name": "recycle",
+    "readable": "recycle"
+  },
+  {
+    "name": "redo",
+    "readable": "redo"
+  },
+  {
+    "name": "redo2",
+    "readable": "redo2"
+  },
+  {
+    "name": "redoDot",
+    "readable": "redo dot"
+  },
+  {
+    "name": "refreshCcw",
+    "readable": "refresh ccw"
+  },
+  {
+    "name": "refreshCcwDot",
+    "readable": "refresh ccw dot"
+  },
+  {
+    "name": "refreshCw",
+    "readable": "refresh cw"
+  },
+  {
+    "name": "refreshCwOff",
+    "readable": "refresh cw off"
+  },
+  {
+    "name": "refrigerator",
+    "readable": "refrigerator"
+  },
+  {
+    "name": "regex",
+    "readable": "regex"
+  },
+  {
+    "name": "removeFormatting",
+    "readable": "remove formatting"
+  },
+  {
+    "name": "repeat",
+    "readable": "repeat"
+  },
+  {
+    "name": "repeat1",
+    "readable": "repeat1"
+  },
+  {
+    "name": "repeat2",
+    "readable": "repeat2"
+  },
+  {
+    "name": "replace",
+    "readable": "replace"
+  },
+  {
+    "name": "replaceAll",
+    "readable": "replace all"
+  },
+  {
+    "name": "reply",
+    "readable": "reply"
+  },
+  {
+    "name": "replyAll",
+    "readable": "reply all"
+  },
+  {
+    "name": "rewind",
+    "readable": "rewind"
+  },
+  {
+    "name": "ribbon",
+    "readable": "ribbon"
+  },
+  {
+    "name": "road",
+    "readable": "road"
+  },
+  {
+    "name": "rocket",
+    "readable": "rocket"
+  },
+  {
+    "name": "rockingChair",
+    "readable": "rocking chair"
+  },
+  {
+    "name": "rollerCoaster",
+    "readable": "roller coaster"
+  },
+  {
+    "name": "rose",
+    "readable": "rose"
+  },
+  {
+    "name": "rotate3D",
+    "readable": "rotate3 d"
+  },
+  {
+    "name": "rotate3d",
+    "readable": "rotate3d"
+  },
+  {
+    "name": "rotateCcw",
+    "readable": "rotate ccw"
+  },
+  {
+    "name": "rotateCcwKey",
+    "readable": "rotate ccw key"
+  },
+  {
+    "name": "rotateCcwSquare",
+    "readable": "rotate ccw square"
+  },
+  {
+    "name": "rotateCw",
+    "readable": "rotate cw"
+  },
+  {
+    "name": "rotateCwSquare",
+    "readable": "rotate cw square"
+  },
+  {
+    "name": "route",
+    "readable": "route"
+  },
+  {
+    "name": "routeOff",
+    "readable": "route off"
+  },
+  {
+    "name": "router",
+    "readable": "router"
+  },
+  {
+    "name": "rows",
+    "readable": "rows"
+  },
+  {
+    "name": "rows2",
+    "readable": "rows2"
+  },
+  {
+    "name": "rows3",
+    "readable": "rows3"
+  },
+  {
+    "name": "rows4",
+    "readable": "rows4"
+  },
+  {
+    "name": "rss",
+    "readable": "rss"
+  },
+  {
+    "name": "ruler",
+    "readable": "ruler"
+  },
+  {
+    "name": "rulerDimensionLine",
+    "readable": "ruler dimension line"
+  },
+  {
+    "name": "russianRuble",
+    "readable": "russian ruble"
+  },
+  {
+    "name": "sailboat",
+    "readable": "sailboat"
+  },
+  {
+    "name": "salad",
+    "readable": "salad"
+  },
+  {
+    "name": "sandwich",
+    "readable": "sandwich"
+  },
+  {
+    "name": "satellite",
+    "readable": "satellite"
+  },
+  {
+    "name": "satelliteDish",
+    "readable": "satellite dish"
+  },
+  {
+    "name": "saudiRiyal",
+    "readable": "saudi riyal"
+  },
+  {
+    "name": "save",
+    "readable": "save"
+  },
+  {
+    "name": "saveAll",
+    "readable": "save all"
+  },
+  {
+    "name": "saveOff",
+    "readable": "save off"
+  },
+  {
+    "name": "scale",
+    "readable": "scale"
+  },
+  {
+    "name": "scale3D",
+    "readable": "scale3 d"
+  },
+  {
+    "name": "scale3d",
+    "readable": "scale3d"
+  },
+  {
+    "name": "scaling",
+    "readable": "scaling"
+  },
+  {
+    "name": "scan",
+    "readable": "scan"
+  },
+  {
+    "name": "scanBarcode",
+    "readable": "scan barcode"
+  },
+  {
+    "name": "scanEye",
+    "readable": "scan eye"
+  },
+  {
+    "name": "scanFace",
+    "readable": "scan face"
+  },
+  {
+    "name": "scanHeart",
+    "readable": "scan heart"
+  },
+  {
+    "name": "scanLine",
+    "readable": "scan line"
+  },
+  {
+    "name": "scanQrCode",
+    "readable": "scan qr code"
+  },
+  {
+    "name": "scanSearch",
+    "readable": "scan search"
+  },
+  {
+    "name": "scanText",
+    "readable": "scan text"
+  },
+  {
+    "name": "scatterChart",
+    "readable": "scatter chart"
+  },
+  {
+    "name": "school",
+    "readable": "school"
+  },
+  {
+    "name": "school2",
+    "readable": "school2"
+  },
+  {
+    "name": "scissors",
+    "readable": "scissors"
+  },
+  {
+    "name": "scissorsLineDashed",
+    "readable": "scissors line dashed"
+  },
+  {
+    "name": "scissorsSquare",
+    "readable": "scissors square"
+  },
+  {
+    "name": "scissorsSquareDashedBottom",
+    "readable": "scissors square dashed bottom"
+  },
+  {
+    "name": "scooter",
+    "readable": "scooter"
+  },
+  {
+    "name": "screenShare",
+    "readable": "screen share"
+  },
+  {
+    "name": "screenShareOff",
+    "readable": "screen share off"
+  },
+  {
+    "name": "scroll",
+    "readable": "scroll"
+  },
+  {
+    "name": "scrollText",
+    "readable": "scroll text"
+  },
+  {
+    "name": "search",
+    "readable": "search"
+  },
+  {
+    "name": "searchAlert",
+    "readable": "search alert"
+  },
+  {
+    "name": "searchCheck",
+    "readable": "search check"
+  },
+  {
+    "name": "searchCode",
+    "readable": "search code"
+  },
+  {
+    "name": "searchSlash",
+    "readable": "search slash"
+  },
+  {
+    "name": "searchX",
+    "readable": "search x"
+  },
+  {
+    "name": "section",
+    "readable": "section"
+  },
+  {
+    "name": "send",
+    "readable": "send"
+  },
+  {
+    "name": "sendHorizonal",
+    "readable": "send horizonal"
+  },
+  {
+    "name": "sendHorizontal",
+    "readable": "send horizontal"
+  },
+  {
+    "name": "sendToBack",
+    "readable": "send to back"
+  },
+  {
+    "name": "separatorHorizontal",
+    "readable": "separator horizontal"
+  },
+  {
+    "name": "separatorVertical",
+    "readable": "separator vertical"
+  },
+  {
+    "name": "server",
+    "readable": "server"
+  },
+  {
+    "name": "serverCog",
+    "readable": "server cog"
+  },
+  {
+    "name": "serverCrash",
+    "readable": "server crash"
+  },
+  {
+    "name": "serverOff",
+    "readable": "server off"
+  },
+  {
+    "name": "settings",
+    "readable": "settings"
+  },
+  {
+    "name": "settings2",
+    "readable": "settings2"
+  },
+  {
+    "name": "shapes",
+    "readable": "shapes"
+  },
+  {
+    "name": "share",
+    "readable": "share"
+  },
+  {
+    "name": "share2",
+    "readable": "share2"
+  },
+  {
+    "name": "sheet",
+    "readable": "sheet"
+  },
+  {
+    "name": "shell",
+    "readable": "shell"
+  },
+  {
+    "name": "shelvingUnit",
+    "readable": "shelving unit"
+  },
+  {
+    "name": "shield",
+    "readable": "shield"
+  },
+  {
+    "name": "shieldAlert",
+    "readable": "shield alert"
+  },
+  {
+    "name": "shieldBan",
+    "readable": "shield ban"
+  },
+  {
+    "name": "shieldCheck",
+    "readable": "shield check"
+  },
+  {
+    "name": "shieldClose",
+    "readable": "shield close"
+  },
+  {
+    "name": "shieldCog",
+    "readable": "shield cog"
+  },
+  {
+    "name": "shieldCogCorner",
+    "readable": "shield cog corner"
+  },
+  {
+    "name": "shieldEllipsis",
+    "readable": "shield ellipsis"
+  },
+  {
+    "name": "shieldHalf",
+    "readable": "shield half"
+  },
+  {
+    "name": "shieldMinus",
+    "readable": "shield minus"
+  },
+  {
+    "name": "shieldOff",
+    "readable": "shield off"
+  },
+  {
+    "name": "shieldPlus",
+    "readable": "shield plus"
+  },
+  {
+    "name": "shieldQuestion",
+    "readable": "shield question"
+  },
+  {
+    "name": "shieldQuestionMark",
+    "readable": "shield question mark"
+  },
+  {
+    "name": "shieldUser",
+    "readable": "shield user"
+  },
+  {
+    "name": "shieldX",
+    "readable": "shield x"
+  },
+  {
+    "name": "ship",
+    "readable": "ship"
+  },
+  {
+    "name": "shipWheel",
+    "readable": "ship wheel"
+  },
+  {
+    "name": "shirt",
+    "readable": "shirt"
+  },
+  {
+    "name": "shoppingBag",
+    "readable": "shopping bag"
+  },
+  {
+    "name": "shoppingBasket",
+    "readable": "shopping basket"
+  },
+  {
+    "name": "shoppingCart",
+    "readable": "shopping cart"
+  },
+  {
+    "name": "shovel",
+    "readable": "shovel"
+  },
+  {
+    "name": "showerHead",
+    "readable": "shower head"
+  },
+  {
+    "name": "shredder",
+    "readable": "shredder"
+  },
+  {
+    "name": "shrimp",
+    "readable": "shrimp"
+  },
+  {
+    "name": "shrink",
+    "readable": "shrink"
+  },
+  {
+    "name": "shrub",
+    "readable": "shrub"
+  },
+  {
+    "name": "shuffle",
+    "readable": "shuffle"
+  },
+  {
+    "name": "sidebar",
+    "readable": "sidebar"
+  },
+  {
+    "name": "sidebarClose",
+    "readable": "sidebar close"
+  },
+  {
+    "name": "sidebarOpen",
+    "readable": "sidebar open"
+  },
+  {
+    "name": "sigma",
+    "readable": "sigma"
+  },
+  {
+    "name": "sigmaSquare",
+    "readable": "sigma square"
+  },
+  {
+    "name": "signal",
+    "readable": "signal"
+  },
+  {
+    "name": "signalHigh",
+    "readable": "signal high"
+  },
+  {
+    "name": "signalLow",
+    "readable": "signal low"
+  },
+  {
+    "name": "signalMedium",
+    "readable": "signal medium"
+  },
+  {
+    "name": "signalZero",
+    "readable": "signal zero"
+  },
+  {
+    "name": "signature",
+    "readable": "signature"
+  },
+  {
+    "name": "signpost",
+    "readable": "signpost"
+  },
+  {
+    "name": "signpostBig",
+    "readable": "signpost big"
+  },
+  {
+    "name": "siren",
+    "readable": "siren"
+  },
+  {
+    "name": "skipBack",
+    "readable": "skip back"
+  },
+  {
+    "name": "skipForward",
+    "readable": "skip forward"
+  },
+  {
+    "name": "skull",
+    "readable": "skull"
+  },
+  {
+    "name": "slash",
+    "readable": "slash"
+  },
+  {
+    "name": "slashSquare",
+    "readable": "slash square"
+  },
+  {
+    "name": "slice",
+    "readable": "slice"
+  },
+  {
+    "name": "sliders",
+    "readable": "sliders"
+  },
+  {
+    "name": "slidersHorizontal",
+    "readable": "sliders horizontal"
+  },
+  {
+    "name": "slidersVertical",
+    "readable": "sliders vertical"
+  },
+  {
+    "name": "smartphone",
+    "readable": "smartphone"
+  },
+  {
+    "name": "smartphoneCharging",
+    "readable": "smartphone charging"
+  },
+  {
+    "name": "smartphoneNfc",
+    "readable": "smartphone nfc"
+  },
+  {
+    "name": "smile",
+    "readable": "smile"
+  },
+  {
+    "name": "smilePlus",
+    "readable": "smile plus"
+  },
+  {
+    "name": "snail",
+    "readable": "snail"
+  },
+  {
+    "name": "snowflake",
+    "readable": "snowflake"
+  },
+  {
+    "name": "soapDispenserDroplet",
+    "readable": "soap dispenser droplet"
+  },
+  {
+    "name": "sofa",
+    "readable": "sofa"
+  },
+  {
+    "name": "solarPanel",
+    "readable": "solar panel"
+  },
+  {
+    "name": "sortAsc",
+    "readable": "sort asc"
+  },
+  {
+    "name": "sortDesc",
+    "readable": "sort desc"
+  },
+  {
+    "name": "soup",
+    "readable": "soup"
+  },
+  {
+    "name": "space",
+    "readable": "space"
+  },
+  {
+    "name": "spade",
+    "readable": "spade"
+  },
+  {
+    "name": "sparkle",
+    "readable": "sparkle"
+  },
+  {
+    "name": "sparkles",
+    "readable": "sparkles"
+  },
+  {
+    "name": "speaker",
+    "readable": "speaker"
+  },
+  {
+    "name": "speech",
+    "readable": "speech"
+  },
+  {
+    "name": "spellCheck",
+    "readable": "spell check"
+  },
+  {
+    "name": "spellCheck2",
+    "readable": "spell check2"
+  },
+  {
+    "name": "spline",
+    "readable": "spline"
+  },
+  {
+    "name": "splinePointer",
+    "readable": "spline pointer"
+  },
+  {
+    "name": "split",
+    "readable": "split"
+  },
+  {
+    "name": "splitSquareHorizontal",
+    "readable": "split square horizontal"
+  },
+  {
+    "name": "splitSquareVertical",
+    "readable": "split square vertical"
+  },
+  {
+    "name": "spool",
+    "readable": "spool"
+  },
+  {
+    "name": "sportShoe",
+    "readable": "sport shoe"
+  },
+  {
+    "name": "spotlight",
+    "readable": "spotlight"
+  },
+  {
+    "name": "sprayCan",
+    "readable": "spray can"
+  },
+  {
+    "name": "sprout",
+    "readable": "sprout"
+  },
+  {
+    "name": "square",
+    "readable": "square"
+  },
+  {
+    "name": "squareActivity",
+    "readable": "square activity"
+  },
+  {
+    "name": "squareArrowDown",
+    "readable": "square arrow down"
+  },
+  {
+    "name": "squareArrowDownLeft",
+    "readable": "square arrow down left"
+  },
+  {
+    "name": "squareArrowDownRight",
+    "readable": "square arrow down right"
+  },
+  {
+    "name": "squareArrowLeft",
+    "readable": "square arrow left"
+  },
+  {
+    "name": "squareArrowOutDownLeft",
+    "readable": "square arrow out down left"
+  },
+  {
+    "name": "squareArrowOutDownRight",
+    "readable": "square arrow out down right"
+  },
+  {
+    "name": "squareArrowOutUpLeft",
+    "readable": "square arrow out up left"
+  },
+  {
+    "name": "squareArrowOutUpRight",
+    "readable": "square arrow out up right"
+  },
+  {
+    "name": "squareArrowRight",
+    "readable": "square arrow right"
+  },
+  {
+    "name": "squareArrowRightEnter",
+    "readable": "square arrow right enter"
+  },
+  {
+    "name": "squareArrowRightExit",
+    "readable": "square arrow right exit"
+  },
+  {
+    "name": "squareArrowUp",
+    "readable": "square arrow up"
+  },
+  {
+    "name": "squareArrowUpLeft",
+    "readable": "square arrow up left"
+  },
+  {
+    "name": "squareArrowUpRight",
+    "readable": "square arrow up right"
+  },
+  {
+    "name": "squareAsterisk",
+    "readable": "square asterisk"
+  },
+  {
+    "name": "squareBottomDashedScissors",
+    "readable": "square bottom dashed scissors"
+  },
+  {
+    "name": "squareCenterlineDashedHorizontal",
+    "readable": "square centerline dashed horizontal"
+  },
+  {
+    "name": "squareCenterlineDashedVertical",
+    "readable": "square centerline dashed vertical"
+  },
+  {
+    "name": "squareChartGantt",
+    "readable": "square chart gantt"
+  },
+  {
+    "name": "squareCheck",
+    "readable": "square check"
+  },
+  {
+    "name": "squareCheckBig",
+    "readable": "square check big"
+  },
+  {
+    "name": "squareChevronDown",
+    "readable": "square chevron down"
+  },
+  {
+    "name": "squareChevronLeft",
+    "readable": "square chevron left"
+  },
+  {
+    "name": "squareChevronRight",
+    "readable": "square chevron right"
+  },
+  {
+    "name": "squareChevronUp",
+    "readable": "square chevron up"
+  },
+  {
+    "name": "squareCode",
+    "readable": "square code"
+  },
+  {
+    "name": "squareDashed",
+    "readable": "square dashed"
+  },
+  {
+    "name": "squareDashedBottom",
+    "readable": "square dashed bottom"
+  },
+  {
+    "name": "squareDashedBottomCode",
+    "readable": "square dashed bottom code"
+  },
+  {
+    "name": "squareDashedKanban",
+    "readable": "square dashed kanban"
+  },
+  {
+    "name": "squareDashedMousePointer",
+    "readable": "square dashed mouse pointer"
+  },
+  {
+    "name": "squareDashedTopSolid",
+    "readable": "square dashed top solid"
+  },
+  {
+    "name": "squareDivide",
+    "readable": "square divide"
+  },
+  {
+    "name": "squareDot",
+    "readable": "square dot"
+  },
+  {
+    "name": "squareEqual",
+    "readable": "square equal"
+  },
+  {
+    "name": "squareFunction",
+    "readable": "square function"
+  },
+  {
+    "name": "squareGanttChart",
+    "readable": "square gantt chart"
+  },
+  {
+    "name": "squareKanban",
+    "readable": "square kanban"
+  },
+  {
+    "name": "squareLibrary",
+    "readable": "square library"
+  },
+  {
+    "name": "squareM",
+    "readable": "square m"
+  },
+  {
+    "name": "squareMenu",
+    "readable": "square menu"
+  },
+  {
+    "name": "squareMinus",
+    "readable": "square minus"
+  },
+  {
+    "name": "squareMousePointer",
+    "readable": "square mouse pointer"
+  },
+  {
+    "name": "squareParking",
+    "readable": "square parking"
+  },
+  {
+    "name": "squareParkingOff",
+    "readable": "square parking off"
+  },
+  {
+    "name": "squarePause",
+    "readable": "square pause"
+  },
+  {
+    "name": "squarePen",
+    "readable": "square pen"
+  },
+  {
+    "name": "squarePercent",
+    "readable": "square percent"
+  },
+  {
+    "name": "squarePi",
+    "readable": "square pi"
+  },
+  {
+    "name": "squarePilcrow",
+    "readable": "square pilcrow"
+  },
+  {
+    "name": "squarePlay",
+    "readable": "square play"
+  },
+  {
+    "name": "squarePlus",
+    "readable": "square plus"
+  },
+  {
+    "name": "squarePower",
+    "readable": "square power"
+  },
+  {
+    "name": "squareRadical",
+    "readable": "square radical"
+  },
+  {
+    "name": "squareRoundCorner",
+    "readable": "square round corner"
+  },
+  {
+    "name": "squareScissors",
+    "readable": "square scissors"
+  },
+  {
+    "name": "squareSigma",
+    "readable": "square sigma"
+  },
+  {
+    "name": "squareSlash",
+    "readable": "square slash"
+  },
+  {
+    "name": "squareSplitHorizontal",
+    "readable": "square split horizontal"
+  },
+  {
+    "name": "squareSplitVertical",
+    "readable": "square split vertical"
+  },
+  {
+    "name": "squareSquare",
+    "readable": "square square"
+  },
+  {
+    "name": "squareStack",
+    "readable": "square stack"
+  },
+  {
+    "name": "squareStar",
+    "readable": "square star"
+  },
+  {
+    "name": "squareStop",
+    "readable": "square stop"
+  },
+  {
+    "name": "squareTerminal",
+    "readable": "square terminal"
+  },
+  {
+    "name": "squareUser",
+    "readable": "square user"
+  },
+  {
+    "name": "squareUserRound",
+    "readable": "square user round"
+  },
+  {
+    "name": "squareX",
+    "readable": "square x"
+  },
+  {
+    "name": "squaresExclude",
+    "readable": "squares exclude"
+  },
+  {
+    "name": "squaresIntersect",
+    "readable": "squares intersect"
+  },
+  {
+    "name": "squaresSubtract",
+    "readable": "squares subtract"
+  },
+  {
+    "name": "squaresUnite",
+    "readable": "squares unite"
+  },
+  {
+    "name": "squircle",
+    "readable": "squircle"
+  },
+  {
+    "name": "squircleDashed",
+    "readable": "squircle dashed"
+  },
+  {
+    "name": "squirrel",
+    "readable": "squirrel"
+  },
+  {
+    "name": "stamp",
+    "readable": "stamp"
+  },
+  {
+    "name": "star",
+    "readable": "star"
+  },
+  {
+    "name": "starHalf",
+    "readable": "star half"
+  },
+  {
+    "name": "starOff",
+    "readable": "star off"
+  },
+  {
+    "name": "stars",
+    "readable": "stars"
+  },
+  {
+    "name": "stepBack",
+    "readable": "step back"
+  },
+  {
+    "name": "stepForward",
+    "readable": "step forward"
+  },
+  {
+    "name": "stethoscope",
+    "readable": "stethoscope"
+  },
+  {
+    "name": "sticker",
+    "readable": "sticker"
+  },
+  {
+    "name": "stickyNote",
+    "readable": "sticky note"
+  },
+  {
+    "name": "stone",
+    "readable": "stone"
+  },
+  {
+    "name": "stopCircle",
+    "readable": "stop circle"
+  },
+  {
+    "name": "store",
+    "readable": "store"
+  },
+  {
+    "name": "stretchHorizontal",
+    "readable": "stretch horizontal"
+  },
+  {
+    "name": "stretchVertical",
+    "readable": "stretch vertical"
+  },
+  {
+    "name": "strikethrough",
+    "readable": "strikethrough"
+  },
+  {
+    "name": "subscript",
+    "readable": "subscript"
+  },
+  {
+    "name": "subtitles",
+    "readable": "subtitles"
+  },
+  {
+    "name": "sun",
+    "readable": "sun"
+  },
+  {
+    "name": "sunDim",
+    "readable": "sun dim"
+  },
+  {
+    "name": "sunMedium",
+    "readable": "sun medium"
+  },
+  {
+    "name": "sunMoon",
+    "readable": "sun moon"
+  },
+  {
+    "name": "sunSnow",
+    "readable": "sun snow"
+  },
+  {
+    "name": "sunrise",
+    "readable": "sunrise"
+  },
+  {
+    "name": "sunset",
+    "readable": "sunset"
+  },
+  {
+    "name": "superscript",
+    "readable": "superscript"
+  },
+  {
+    "name": "swatchBook",
+    "readable": "swatch book"
+  },
+  {
+    "name": "swissFranc",
+    "readable": "swiss franc"
+  },
+  {
+    "name": "switchCamera",
+    "readable": "switch camera"
+  },
+  {
+    "name": "sword",
+    "readable": "sword"
+  },
+  {
+    "name": "swords",
+    "readable": "swords"
+  },
+  {
+    "name": "syringe",
+    "readable": "syringe"
+  },
+  {
+    "name": "table",
+    "readable": "table"
+  },
+  {
+    "name": "table2",
+    "readable": "table2"
+  },
+  {
+    "name": "tableCellsMerge",
+    "readable": "table cells merge"
+  },
+  {
+    "name": "tableCellsSplit",
+    "readable": "table cells split"
+  },
+  {
+    "name": "tableColumnsSplit",
+    "readable": "table columns split"
+  },
+  {
+    "name": "tableConfig",
+    "readable": "table config"
+  },
+  {
+    "name": "tableOfContents",
+    "readable": "table of contents"
+  },
+  {
+    "name": "tableProperties",
+    "readable": "table properties"
+  },
+  {
+    "name": "tableRowsSplit",
+    "readable": "table rows split"
+  },
+  {
+    "name": "tablet",
+    "readable": "tablet"
+  },
+  {
+    "name": "tabletSmartphone",
+    "readable": "tablet smartphone"
+  },
+  {
+    "name": "tablets",
+    "readable": "tablets"
+  },
+  {
+    "name": "tag",
+    "readable": "tag"
+  },
+  {
+    "name": "tags",
+    "readable": "tags"
+  },
+  {
+    "name": "tally1",
+    "readable": "tally1"
+  },
+  {
+    "name": "tally2",
+    "readable": "tally2"
+  },
+  {
+    "name": "tally3",
+    "readable": "tally3"
+  },
+  {
+    "name": "tally4",
+    "readable": "tally4"
+  },
+  {
+    "name": "tally5",
+    "readable": "tally5"
+  },
+  {
+    "name": "tangent",
+    "readable": "tangent"
+  },
+  {
+    "name": "target",
+    "readable": "target"
+  },
+  {
+    "name": "telescope",
+    "readable": "telescope"
+  },
+  {
+    "name": "tent",
+    "readable": "tent"
+  },
+  {
+    "name": "tentTree",
+    "readable": "tent tree"
+  },
+  {
+    "name": "terminal",
+    "readable": "terminal"
+  },
+  {
+    "name": "terminalSquare",
+    "readable": "terminal square"
+  },
+  {
+    "name": "testTube",
+    "readable": "test tube"
+  },
+  {
+    "name": "testTube2",
+    "readable": "test tube2"
+  },
+  {
+    "name": "testTubeDiagonal",
+    "readable": "test tube diagonal"
+  },
+  {
+    "name": "testTubes",
+    "readable": "test tubes"
+  },
+  {
+    "name": "text",
+    "readable": "text"
+  },
+  {
+    "name": "textAlignCenter",
+    "readable": "text align center"
+  },
+  {
+    "name": "textAlignEnd",
+    "readable": "text align end"
+  },
+  {
+    "name": "textAlignJustify",
+    "readable": "text align justify"
+  },
+  {
+    "name": "textAlignStart",
+    "readable": "text align start"
+  },
+  {
+    "name": "textCursor",
+    "readable": "text cursor"
+  },
+  {
+    "name": "textCursorInput",
+    "readable": "text cursor input"
+  },
+  {
+    "name": "textInitial",
+    "readable": "text initial"
+  },
+  {
+    "name": "textQuote",
+    "readable": "text quote"
+  },
+  {
+    "name": "textSearch",
+    "readable": "text search"
+  },
+  {
+    "name": "textSelect",
+    "readable": "text select"
+  },
+  {
+    "name": "textSelection",
+    "readable": "text selection"
+  },
+  {
+    "name": "textWrap",
+    "readable": "text wrap"
+  },
+  {
+    "name": "theater",
+    "readable": "theater"
+  },
+  {
+    "name": "thermometer",
+    "readable": "thermometer"
+  },
+  {
+    "name": "thermometerSnowflake",
+    "readable": "thermometer snowflake"
+  },
+  {
+    "name": "thermometerSun",
+    "readable": "thermometer sun"
+  },
+  {
+    "name": "thumbsDown",
+    "readable": "thumbs down"
+  },
+  {
+    "name": "thumbsUp",
+    "readable": "thumbs up"
+  },
+  {
+    "name": "ticket",
+    "readable": "ticket"
+  },
+  {
+    "name": "ticketCheck",
+    "readable": "ticket check"
+  },
+  {
+    "name": "ticketMinus",
+    "readable": "ticket minus"
+  },
+  {
+    "name": "ticketPercent",
+    "readable": "ticket percent"
+  },
+  {
+    "name": "ticketPlus",
+    "readable": "ticket plus"
+  },
+  {
+    "name": "ticketSlash",
+    "readable": "ticket slash"
+  },
+  {
+    "name": "ticketX",
+    "readable": "ticket x"
+  },
+  {
+    "name": "tickets",
+    "readable": "tickets"
+  },
+  {
+    "name": "ticketsPlane",
+    "readable": "tickets plane"
+  },
+  {
+    "name": "timer",
+    "readable": "timer"
+  },
+  {
+    "name": "timerOff",
+    "readable": "timer off"
+  },
+  {
+    "name": "timerReset",
+    "readable": "timer reset"
+  },
+  {
+    "name": "toggleLeft",
+    "readable": "toggle left"
+  },
+  {
+    "name": "toggleRight",
+    "readable": "toggle right"
+  },
+  {
+    "name": "toilet",
+    "readable": "toilet"
+  },
+  {
+    "name": "toolCase",
+    "readable": "tool case"
+  },
+  {
+    "name": "toolbox",
+    "readable": "toolbox"
+  },
+  {
+    "name": "tornado",
+    "readable": "tornado"
+  },
+  {
+    "name": "torus",
+    "readable": "torus"
+  },
+  {
+    "name": "touchpad",
+    "readable": "touchpad"
+  },
+  {
+    "name": "touchpadOff",
+    "readable": "touchpad off"
+  },
+  {
+    "name": "towelRack",
+    "readable": "towel rack"
+  },
+  {
+    "name": "towerControl",
+    "readable": "tower control"
+  },
+  {
+    "name": "toyBrick",
+    "readable": "toy brick"
+  },
+  {
+    "name": "tractor",
+    "readable": "tractor"
+  },
+  {
+    "name": "trafficCone",
+    "readable": "traffic cone"
+  },
+  {
+    "name": "train",
+    "readable": "train"
+  },
+  {
+    "name": "trainFront",
+    "readable": "train front"
+  },
+  {
+    "name": "trainFrontTunnel",
+    "readable": "train front tunnel"
+  },
+  {
+    "name": "trainTrack",
+    "readable": "train track"
+  },
+  {
+    "name": "tramFront",
+    "readable": "tram front"
+  },
+  {
+    "name": "transgender",
+    "readable": "transgender"
+  },
+  {
+    "name": "trash",
+    "readable": "trash"
+  },
+  {
+    "name": "trash2",
+    "readable": "trash2"
+  },
+  {
+    "name": "treeDeciduous",
+    "readable": "tree deciduous"
+  },
+  {
+    "name": "treePalm",
+    "readable": "tree palm"
+  },
+  {
+    "name": "treePine",
+    "readable": "tree pine"
+  },
+  {
+    "name": "trees",
+    "readable": "trees"
+  },
+  {
+    "name": "trendingDown",
+    "readable": "trending down"
+  },
+  {
+    "name": "trendingUp",
+    "readable": "trending up"
+  },
+  {
+    "name": "trendingUpDown",
+    "readable": "trending up down"
+  },
+  {
+    "name": "triangle",
+    "readable": "triangle"
+  },
+  {
+    "name": "triangleAlert",
+    "readable": "triangle alert"
+  },
+  {
+    "name": "triangleDashed",
+    "readable": "triangle dashed"
+  },
+  {
+    "name": "triangleRight",
+    "readable": "triangle right"
+  },
+  {
+    "name": "trophy",
+    "readable": "trophy"
+  },
+  {
+    "name": "truck",
+    "readable": "truck"
+  },
+  {
+    "name": "truckElectric",
+    "readable": "truck electric"
+  },
+  {
+    "name": "turkishLira",
+    "readable": "turkish lira"
+  },
+  {
+    "name": "turntable",
+    "readable": "turntable"
+  },
+  {
+    "name": "turtle",
+    "readable": "turtle"
+  },
+  {
+    "name": "tv",
+    "readable": "tv"
+  },
+  {
+    "name": "tv2",
+    "readable": "tv2"
+  },
+  {
+    "name": "tvMinimal",
+    "readable": "tv minimal"
+  },
+  {
+    "name": "tvMinimalPlay",
+    "readable": "tv minimal play"
+  },
+  {
+    "name": "type",
+    "readable": "type"
+  },
+  {
+    "name": "typeOutline",
+    "readable": "type outline"
+  },
+  {
+    "name": "umbrella",
+    "readable": "umbrella"
+  },
+  {
+    "name": "umbrellaOff",
+    "readable": "umbrella off"
+  },
+  {
+    "name": "underline",
+    "readable": "underline"
+  },
+  {
+    "name": "undo",
+    "readable": "undo"
+  },
+  {
+    "name": "undo2",
+    "readable": "undo2"
+  },
+  {
+    "name": "undoDot",
+    "readable": "undo dot"
+  },
+  {
+    "name": "unfoldHorizontal",
+    "readable": "unfold horizontal"
+  },
+  {
+    "name": "unfoldVertical",
+    "readable": "unfold vertical"
+  },
+  {
+    "name": "ungroup",
+    "readable": "ungroup"
+  },
+  {
+    "name": "university",
+    "readable": "university"
+  },
+  {
+    "name": "unlink",
+    "readable": "unlink"
+  },
+  {
+    "name": "unlink2",
+    "readable": "unlink2"
+  },
+  {
+    "name": "unlock",
+    "readable": "unlock"
+  },
+  {
+    "name": "unlockKeyhole",
+    "readable": "unlock keyhole"
+  },
+  {
+    "name": "unplug",
+    "readable": "unplug"
+  },
+  {
+    "name": "upload",
+    "readable": "upload"
+  },
+  {
+    "name": "uploadCloud",
+    "readable": "upload cloud"
+  },
+  {
+    "name": "usb",
+    "readable": "usb"
+  },
+  {
+    "name": "user",
+    "readable": "user"
+  },
+  {
+    "name": "user2",
+    "readable": "user2"
+  },
+  {
+    "name": "userCheck",
+    "readable": "user check"
+  },
+  {
+    "name": "userCheck2",
+    "readable": "user check2"
+  },
+  {
+    "name": "userCircle",
+    "readable": "user circle"
+  },
+  {
+    "name": "userCircle2",
+    "readable": "user circle2"
+  },
+  {
+    "name": "userCog",
+    "readable": "user cog"
+  },
+  {
+    "name": "userCog2",
+    "readable": "user cog2"
+  },
+  {
+    "name": "userKey",
+    "readable": "user key"
+  },
+  {
+    "name": "userLock",
+    "readable": "user lock"
+  },
+  {
+    "name": "userMinus",
+    "readable": "user minus"
+  },
+  {
+    "name": "userMinus2",
+    "readable": "user minus2"
+  },
+  {
+    "name": "userPen",
+    "readable": "user pen"
+  },
+  {
+    "name": "userPlus",
+    "readable": "user plus"
+  },
+  {
+    "name": "userPlus2",
+    "readable": "user plus2"
+  },
+  {
+    "name": "userRound",
+    "readable": "user round"
+  },
+  {
+    "name": "userRoundCheck",
+    "readable": "user round check"
+  },
+  {
+    "name": "userRoundCog",
+    "readable": "user round cog"
+  },
+  {
+    "name": "userRoundKey",
+    "readable": "user round key"
+  },
+  {
+    "name": "userRoundMinus",
+    "readable": "user round minus"
+  },
+  {
+    "name": "userRoundPen",
+    "readable": "user round pen"
+  },
+  {
+    "name": "userRoundPlus",
+    "readable": "user round plus"
+  },
+  {
+    "name": "userRoundSearch",
+    "readable": "user round search"
+  },
+  {
+    "name": "userRoundX",
+    "readable": "user round x"
+  },
+  {
+    "name": "userSearch",
+    "readable": "user search"
+  },
+  {
+    "name": "userSquare",
+    "readable": "user square"
+  },
+  {
+    "name": "userSquare2",
+    "readable": "user square2"
+  },
+  {
+    "name": "userStar",
+    "readable": "user star"
+  },
+  {
+    "name": "userX",
+    "readable": "user x"
+  },
+  {
+    "name": "userX2",
+    "readable": "user x2"
+  },
+  {
+    "name": "users",
+    "readable": "users"
+  },
+  {
+    "name": "users2",
+    "readable": "users2"
+  },
+  {
+    "name": "usersRound",
+    "readable": "users round"
+  },
+  {
+    "name": "utensils",
+    "readable": "utensils"
+  },
+  {
+    "name": "utensilsCrossed",
+    "readable": "utensils crossed"
+  },
+  {
+    "name": "utilityPole",
+    "readable": "utility pole"
+  },
+  {
+    "name": "van",
+    "readable": "van"
+  },
+  {
+    "name": "variable",
+    "readable": "variable"
+  },
+  {
+    "name": "vault",
+    "readable": "vault"
+  },
+  {
+    "name": "vectorSquare",
+    "readable": "vector square"
+  },
+  {
+    "name": "vegan",
+    "readable": "vegan"
+  },
+  {
+    "name": "venetianMask",
+    "readable": "venetian mask"
+  },
+  {
+    "name": "venus",
+    "readable": "venus"
+  },
+  {
+    "name": "venusAndMars",
+    "readable": "venus and mars"
+  },
+  {
+    "name": "verified",
+    "readable": "verified"
+  },
+  {
+    "name": "vibrate",
+    "readable": "vibrate"
+  },
+  {
+    "name": "vibrateOff",
+    "readable": "vibrate off"
+  },
+  {
+    "name": "video",
+    "readable": "video"
+  },
+  {
+    "name": "videoOff",
+    "readable": "video off"
+  },
+  {
+    "name": "videotape",
+    "readable": "videotape"
+  },
+  {
+    "name": "view",
+    "readable": "view"
+  },
+  {
+    "name": "voicemail",
+    "readable": "voicemail"
+  },
+  {
+    "name": "volleyball",
+    "readable": "volleyball"
+  },
+  {
+    "name": "volume",
+    "readable": "volume"
+  },
+  {
+    "name": "volume1",
+    "readable": "volume1"
+  },
+  {
+    "name": "volume2",
+    "readable": "volume2"
+  },
+  {
+    "name": "volumeOff",
+    "readable": "volume off"
+  },
+  {
+    "name": "volumeX",
+    "readable": "volume x"
+  },
+  {
+    "name": "vote",
+    "readable": "vote"
+  },
+  {
+    "name": "wallet",
+    "readable": "wallet"
+  },
+  {
+    "name": "wallet2",
+    "readable": "wallet2"
+  },
+  {
+    "name": "walletCards",
+    "readable": "wallet cards"
+  },
+  {
+    "name": "walletMinimal",
+    "readable": "wallet minimal"
+  },
+  {
+    "name": "wallpaper",
+    "readable": "wallpaper"
+  },
+  {
+    "name": "wand",
+    "readable": "wand"
+  },
+  {
+    "name": "wand2",
+    "readable": "wand2"
+  },
+  {
+    "name": "wandSparkles",
+    "readable": "wand sparkles"
+  },
+  {
+    "name": "warehouse",
+    "readable": "warehouse"
+  },
+  {
+    "name": "washingMachine",
+    "readable": "washing machine"
+  },
+  {
+    "name": "watch",
+    "readable": "watch"
+  },
+  {
+    "name": "waves",
+    "readable": "waves"
+  },
+  {
+    "name": "wavesArrowDown",
+    "readable": "waves arrow down"
+  },
+  {
+    "name": "wavesArrowUp",
+    "readable": "waves arrow up"
+  },
+  {
+    "name": "wavesLadder",
+    "readable": "waves ladder"
+  },
+  {
+    "name": "waypoints",
+    "readable": "waypoints"
+  },
+  {
+    "name": "webcam",
+    "readable": "webcam"
+  },
+  {
+    "name": "webhook",
+    "readable": "webhook"
+  },
+  {
+    "name": "webhookOff",
+    "readable": "webhook off"
+  },
+  {
+    "name": "weight",
+    "readable": "weight"
+  },
+  {
+    "name": "weightTilde",
+    "readable": "weight tilde"
+  },
+  {
+    "name": "wheat",
+    "readable": "wheat"
+  },
+  {
+    "name": "wheatOff",
+    "readable": "wheat off"
+  },
+  {
+    "name": "wholeWord",
+    "readable": "whole word"
+  },
+  {
+    "name": "wifi",
+    "readable": "wifi"
+  },
+  {
+    "name": "wifiCog",
+    "readable": "wifi cog"
+  },
+  {
+    "name": "wifiHigh",
+    "readable": "wifi high"
+  },
+  {
+    "name": "wifiLow",
+    "readable": "wifi low"
+  },
+  {
+    "name": "wifiOff",
+    "readable": "wifi off"
+  },
+  {
+    "name": "wifiPen",
+    "readable": "wifi pen"
+  },
+  {
+    "name": "wifiSync",
+    "readable": "wifi sync"
+  },
+  {
+    "name": "wifiZero",
+    "readable": "wifi zero"
+  },
+  {
+    "name": "wind",
+    "readable": "wind"
+  },
+  {
+    "name": "windArrowDown",
+    "readable": "wind arrow down"
+  },
+  {
+    "name": "wine",
+    "readable": "wine"
+  },
+  {
+    "name": "wineOff",
+    "readable": "wine off"
+  },
+  {
+    "name": "workflow",
+    "readable": "workflow"
+  },
+  {
+    "name": "worm",
+    "readable": "worm"
+  },
+  {
+    "name": "wrapText",
+    "readable": "wrap text"
+  },
+  {
+    "name": "wrench",
+    "readable": "wrench"
+  },
+  {
+    "name": "x",
+    "readable": "x"
+  },
+  {
+    "name": "xCircle",
+    "readable": "x circle"
+  },
+  {
+    "name": "xLineTop",
+    "readable": "x line top"
+  },
+  {
+    "name": "xOctagon",
+    "readable": "x octagon"
+  },
+  {
+    "name": "xSquare",
+    "readable": "x square"
+  },
+  {
+    "name": "zap",
+    "readable": "zap"
+  },
+  {
+    "name": "zapOff",
+    "readable": "zap off"
+  },
+  {
+    "name": "zodiacAquarius",
+    "readable": "zodiac aquarius"
+  },
+  {
+    "name": "zodiacAries",
+    "readable": "zodiac aries"
+  },
+  {
+    "name": "zodiacCancer",
+    "readable": "zodiac cancer"
+  },
+  {
+    "name": "zodiacCapricorn",
+    "readable": "zodiac capricorn"
+  },
+  {
+    "name": "zodiacGemini",
+    "readable": "zodiac gemini"
+  },
+  {
+    "name": "zodiacLeo",
+    "readable": "zodiac leo"
+  },
+  {
+    "name": "zodiacLibra",
+    "readable": "zodiac libra"
+  },
+  {
+    "name": "zodiacOphiuchus",
+    "readable": "zodiac ophiuchus"
+  },
+  {
+    "name": "zodiacPisces",
+    "readable": "zodiac pisces"
+  },
+  {
+    "name": "zodiacSagittarius",
+    "readable": "zodiac sagittarius"
+  },
+  {
+    "name": "zodiacScorpio",
+    "readable": "zodiac scorpio"
+  },
+  {
+    "name": "zodiacTaurus",
+    "readable": "zodiac taurus"
+  },
+  {
+    "name": "zodiacVirgo",
+    "readable": "zodiac virgo"
+  },
+  {
+    "name": "zoomIn",
+    "readable": "zoom in"
+  },
+  {
+    "name": "zoomOut",
+    "readable": "zoom out"
+  },
+  {
+    "name": "useLucideContext",
+    "readable": "use lucide context"
+  }
+]

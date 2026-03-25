@@ -159,14 +159,33 @@ Komponente                  Step-by-step
 
 **⚠️ STICKY ≠ SVAKI KORAK! Vidi VISUAL BALANCE RULES iznad.**
 
-**DOSTUPNE IKONICE (35):**
+## ⚠️ ICON SEARCH - OBAVEZNO KORISTI!
+
+**NIKAD ne izmišljaj ikone!** Koristi semantic search:
+
+```bash
+# Za jedan koncept:
+python3 /Users/dario61/Desktop/YT\ automation/templates/icon-search/find_icon.py "video encoding"
+# Output: fileVideo, videotape, fileVideo2, camera, film
+
+# Za batch (svi nodes odjednom):
+echo '["prompt input", "encoder", "vector db", "attention"]' | \
+  python3 /Users/dario61/Desktop/YT\ automation/templates/icon-search/batch_icons.py
+# Output: {"prompt input": "formInput", "encoder": "text", ...}
 ```
-user, search, terminal, cube, vector, database, zap, file, layers,
-merge, sparkle, cpu, check, server, cloud, gitBranch, gitMerge,
-settings, play, lock, shield, monitor, refreshCw, code, globe,
-api, webhook, queue, network, brain, alert, x, arrowRight,
-container, package, messageSquare
-```
+
+**WORKFLOW:**
+1. Napravi listu svih node labels
+2. Pozovi batch_icons.py sa tom listom
+3. Koristi vraćene ikone u config-u
+
+**Primeri dobrih query-ja:**
+- "user input prompt" → formInput
+- "neural network layer" → layers
+- "database storage" → database
+- "merge combine" → merge, gitMerge
+- "video frames" → frame, videotape
+- "attention focus" → focus, brain
 
 **DOSTUPNI LAYOUT-I (9):**
 
@@ -267,14 +286,22 @@ AKO |section_frame - camera_frame| < 20:
 
 ### KORAK 4: Generiši master-plan.json
 
+**⚠️ KRITIČNO - totalFrames MORA da se računa iz voiceover duration:**
+```
+totalFrames = Math.ceil(voiceover_duration_seconds * fps) + 30
+```
+Primer: voiceover = 45.5 sec → totalFrames = ceil(45.5 * 30) + 30 = 1395
+
+**NIKAD ne koristi hardcoded vrednosti (2700, 1200, etc.)!**
+
 **Output format:**
 ```json
 {
   "meta": {
     "title": "Video Title",
     "fps": 30,
-    "totalFrames": 1200,
-    "totalDuration": 40.0,
+    "totalFrames": 1395,  // RAČUNAJ: ceil(voiceover_sec * 30) + 30
+    "totalDuration": 46.5,
     "hierarchyType": "sticky"
   },
 

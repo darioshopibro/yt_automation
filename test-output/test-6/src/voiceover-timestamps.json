@@ -1,0 +1,698 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 45.79,
+  "wordCount": 137,
+  "words": [
+    {
+      "word": "Here",
+      "start": 0.0,
+      "end": 0.244
+    },
+    {
+      "word": "on",
+      "start": 0.29,
+      "end": 0.383
+    },
+    {
+      "word": "git",
+      "start": 0.453,
+      "end": 0.627
+    },
+    {
+      "word": "hub",
+      "start": 0.673,
+      "end": 0.906
+    },
+    {
+      "word": "I",
+      "start": 1.022,
+      "end": 1.08
+    },
+    {
+      "word": "have",
+      "start": 1.173,
+      "end": 1.324
+    },
+    {
+      "word": "a",
+      "start": 1.347,
+      "end": 1.37
+    },
+    {
+      "word": "node",
+      "start": 1.44,
+      "end": 1.765
+    },
+    {
+      "word": "J",
+      "start": 1.916,
+      "end": 2.194
+    },
+    {
+      "word": "S",
+      "start": 2.438,
+      "end": 2.682
+    },
+    {
+      "word": "web",
+      "start": 2.926,
+      "end": 3.181
+    },
+    {
+      "word": "app.",
+      "start": 3.297,
+      "end": 3.738
+    },
+    {
+      "word": "In",
+      "start": 4.063,
+      "end": 4.203
+    },
+    {
+      "word": "order",
+      "start": 4.249,
+      "end": 4.447
+    },
+    {
+      "word": "to",
+      "start": 4.505,
+      "end": 4.551
+    },
+    {
+      "word": "deliver",
+      "start": 4.609,
+      "end": 4.899
+    },
+    {
+      "word": "this",
+      "start": 4.946,
+      "end": 5.085
+    },
+    {
+      "word": "out",
+      "start": 5.132,
+      "end": 5.259
+    },
+    {
+      "word": "to",
+      "start": 5.294,
+      "end": 5.341
+    },
+    {
+      "word": "my",
+      "start": 5.41,
+      "end": 5.48
+    },
+    {
+      "word": "customers,",
+      "start": 5.55,
+      "end": 6.153
+    },
+    {
+      "word": "I",
+      "start": 6.223,
+      "end": 6.269
+    },
+    {
+      "word": "need",
+      "start": 6.362,
+      "end": 6.536
+    },
+    {
+      "word": "to",
+      "start": 6.571,
+      "end": 6.618
+    },
+    {
+      "word": "run",
+      "start": 6.687,
+      "end": 6.861
+    },
+    {
+      "word": "three",
+      "start": 6.954,
+      "end": 7.268
+    },
+    {
+      "word": "commands:",
+      "start": 7.314,
+      "end": 8.046
+    },
+    {
+      "word": "test,",
+      "start": 8.29,
+      "end": 8.963
+    },
+    {
+      "word": "build,",
+      "start": 9.172,
+      "end": 9.764
+    },
+    {
+      "word": "and",
+      "start": 9.88,
+      "end": 10.054
+    },
+    {
+      "word": "deploy.",
+      "start": 10.124,
+      "end": 10.809
+    },
+    {
+      "word": "I",
+      "start": 11.32,
+      "end": 11.378
+    },
+    {
+      "word": "can",
+      "start": 11.459,
+      "end": 11.587
+    },
+    {
+      "word": "automate",
+      "start": 11.645,
+      "end": 12.063
+    },
+    {
+      "word": "this",
+      "start": 12.086,
+      "end": 12.214
+    },
+    {
+      "word": "entire",
+      "start": 12.283,
+      "end": 12.678
+    },
+    {
+      "word": "process",
+      "start": 12.725,
+      "end": 13.212
+    },
+    {
+      "word": "in",
+      "start": 13.247,
+      "end": 13.305
+    },
+    {
+      "word": "the",
+      "start": 13.351,
+      "end": 13.421
+    },
+    {
+      "word": "cloud",
+      "start": 13.468,
+      "end": 13.816
+    },
+    {
+      "word": "by",
+      "start": 13.874,
+      "end": 13.978
+    },
+    {
+      "word": "using",
+      "start": 14.06,
+      "end": 14.315
+    },
+    {
+      "word": "a",
+      "start": 14.362,
+      "end": 14.385
+    },
+    {
+      "word": "C",
+      "start": 14.454,
+      "end": 14.605
+    },
+    {
+      "word": "I",
+      "start": 14.779,
+      "end": 14.872
+    },
+    {
+      "word": "service",
+      "start": 15.0,
+      "end": 15.383
+    },
+    {
+      "word": "like",
+      "start": 15.43,
+      "end": 15.604
+    },
+    {
+      "word": "git",
+      "start": 15.65,
+      "end": 15.859
+    },
+    {
+      "word": "hub",
+      "start": 15.906,
+      "end": 16.08
+    },
+    {
+      "word": "Actions.",
+      "start": 16.161,
+      "end": 16.87
+    },
+    {
+      "word": "First",
+      "start": 17.311,
+      "end": 17.74
+    },
+    {
+      "word": "I",
+      "start": 17.856,
+      "end": 17.914
+    },
+    {
+      "word": "create",
+      "start": 18.031,
+      "end": 18.332
+    },
+    {
+      "word": "a",
+      "start": 18.356,
+      "end": 18.379
+    },
+    {
+      "word": "workflow,",
+      "start": 18.425,
+      "end": 19.11
+    },
+    {
+      "word": "and",
+      "start": 19.284,
+      "end": 19.435
+    },
+    {
+      "word": "then",
+      "start": 19.493,
+      "end": 19.644
+    },
+    {
+      "word": "I",
+      "start": 19.702,
+      "end": 19.726
+    },
+    {
+      "word": "tell",
+      "start": 19.818,
+      "end": 19.993
+    },
+    {
+      "word": "it",
+      "start": 20.051,
+      "end": 20.12
+    },
+    {
+      "word": "to",
+      "start": 20.155,
+      "end": 20.213
+    },
+    {
+      "word": "run",
+      "start": 20.294,
+      "end": 20.48
+    },
+    {
+      "word": "on",
+      "start": 20.527,
+      "end": 20.62
+    },
+    {
+      "word": "every",
+      "start": 20.736,
+      "end": 21.038
+    },
+    {
+      "word": "push",
+      "start": 21.107,
+      "end": 21.397
+    },
+    {
+      "word": "to",
+      "start": 21.455,
+      "end": 21.525
+    },
+    {
+      "word": "the",
+      "start": 21.583,
+      "end": 21.653
+    },
+    {
+      "word": "master",
+      "start": 21.688,
+      "end": 22.036
+    },
+    {
+      "word": "branch.",
+      "start": 22.082,
+      "end": 22.628
+    },
+    {
+      "word": "The",
+      "start": 23.069,
+      "end": 23.197
+    },
+    {
+      "word": "event",
+      "start": 23.267,
+      "end": 23.568
+    },
+    {
+      "word": "triggers",
+      "start": 23.615,
+      "end": 23.975
+    },
+    {
+      "word": "a",
+      "start": 24.021,
+      "end": 24.056
+    },
+    {
+      "word": "job",
+      "start": 24.114,
+      "end": 24.37
+    },
+    {
+      "word": "that",
+      "start": 24.416,
+      "end": 24.532
+    },
+    {
+      "word": "runs",
+      "start": 24.579,
+      "end": 24.822
+    },
+    {
+      "word": "on",
+      "start": 24.869,
+      "end": 24.95
+    },
+    {
+      "word": "a",
+      "start": 24.997,
+      "end": 25.02
+    },
+    {
+      "word": "Linux",
+      "start": 25.078,
+      "end": 25.391
+    },
+    {
+      "word": "container",
+      "start": 25.461,
+      "end": 25.914
+    },
+    {
+      "word": "in",
+      "start": 25.96,
+      "end": 26.018
+    },
+    {
+      "word": "the",
+      "start": 26.065,
+      "end": 26.134
+    },
+    {
+      "word": "cloud.",
+      "start": 26.169,
+      "end": 26.75
+    },
+    {
+      "word": "We",
+      "start": 27.075,
+      "end": 27.214
+    },
+    {
+      "word": "tell",
+      "start": 27.26,
+      "end": 27.435
+    },
+    {
+      "word": "the",
+      "start": 27.481,
+      "end": 27.551
+    },
+    {
+      "word": "container",
+      "start": 27.586,
+      "end": 28.015
+    },
+    {
+      "word": "what",
+      "start": 28.062,
+      "end": 28.189
+    },
+    {
+      "word": "to",
+      "start": 28.236,
+      "end": 28.282
+    },
+    {
+      "word": "do",
+      "start": 28.352,
+      "end": 28.526
+    },
+    {
+      "word": "as",
+      "start": 28.607,
+      "end": 28.712
+    },
+    {
+      "word": "a",
+      "start": 28.758,
+      "end": 28.781
+    },
+    {
+      "word": "series",
+      "start": 28.839,
+      "end": 29.153
+    },
+    {
+      "word": "of",
+      "start": 29.199,
+      "end": 29.257
+    },
+    {
+      "word": "steps.",
+      "start": 29.315,
+      "end": 29.942
+    },
+    {
+      "word": "First",
+      "start": 30.384,
+      "end": 30.813
+    },
+    {
+      "word": "it",
+      "start": 30.929,
+      "end": 31.069
+    },
+    {
+      "word": "checks",
+      "start": 31.103,
+      "end": 31.37
+    },
+    {
+      "word": "out",
+      "start": 31.405,
+      "end": 31.533
+    },
+    {
+      "word": "the",
+      "start": 31.568,
+      "end": 31.637
+    },
+    {
+      "word": "code",
+      "start": 31.695,
+      "end": 32.032
+    },
+    {
+      "word": "in",
+      "start": 32.055,
+      "end": 32.125
+    },
+    {
+      "word": "this",
+      "start": 32.171,
+      "end": 32.299
+    },
+    {
+      "word": "git",
+      "start": 32.415,
+      "end": 32.659
+    },
+    {
+      "word": "hub",
+      "start": 32.706,
+      "end": 32.88
+    },
+    {
+      "word": "repo,",
+      "start": 32.961,
+      "end": 33.576
+    },
+    {
+      "word": "then",
+      "start": 33.82,
+      "end": 34.006
+    },
+    {
+      "word": "sets",
+      "start": 34.087,
+      "end": 34.343
+    },
+    {
+      "word": "up",
+      "start": 34.401,
+      "end": 34.493
+    },
+    {
+      "word": "node",
+      "start": 34.61,
+      "end": 35.004
+    },
+    {
+      "word": "J",
+      "start": 35.178,
+      "end": 35.422
+    },
+    {
+      "word": "S,",
+      "start": 35.631,
+      "end": 36.13
+    },
+    {
+      "word": "installs",
+      "start": 36.374,
+      "end": 36.874
+    },
+    {
+      "word": "my",
+      "start": 36.932,
+      "end": 37.013
+    },
+    {
+      "word": "dependencies,",
+      "start": 37.071,
+      "end": 37.942
+    },
+    {
+      "word": "and",
+      "start": 38.151,
+      "end": 38.302
+    },
+    {
+      "word": "runs",
+      "start": 38.383,
+      "end": 38.65
+    },
+    {
+      "word": "my",
+      "start": 38.719,
+      "end": 38.824
+    },
+    {
+      "word": "test,",
+      "start": 38.894,
+      "end": 39.416
+    },
+    {
+      "word": "build,",
+      "start": 39.59,
+      "end": 40.066
+    },
+    {
+      "word": "and",
+      "start": 40.182,
+      "end": 40.333
+    },
+    {
+      "word": "deploy",
+      "start": 40.391,
+      "end": 40.728
+    },
+    {
+      "word": "commands.",
+      "start": 40.786,
+      "end": 41.413
+    },
+    {
+      "word": "Now",
+      "start": 41.738,
+      "end": 41.889
+    },
+    {
+      "word": "anytime",
+      "start": 41.97,
+      "end": 42.388
+    },
+    {
+      "word": "we",
+      "start": 42.411,
+      "end": 42.493
+    },
+    {
+      "word": "commit",
+      "start": 42.539,
+      "end": 42.783
+    },
+    {
+      "word": "code",
+      "start": 42.841,
+      "end": 43.096
+    },
+    {
+      "word": "to",
+      "start": 43.12,
+      "end": 43.166
+    },
+    {
+      "word": "the",
+      "start": 43.224,
+      "end": 43.294
+    },
+    {
+      "word": "master",
+      "start": 43.329,
+      "end": 43.642
+    },
+    {
+      "word": "branch,",
+      "start": 43.677,
+      "end": 44.06
+    },
+    {
+      "word": "it",
+      "start": 44.176,
+      "end": 44.292
+    },
+    {
+      "word": "will",
+      "start": 44.327,
+      "end": 44.478
+    },
+    {
+      "word": "run",
+      "start": 44.548,
+      "end": 44.745
+    },
+    {
+      "word": "this",
+      "start": 44.792,
+      "end": 44.931
+    },
+    {
+      "word": "workflow.",
+      "start": 45.0,
+      "end": 45.79
+    }
+  ]
+}

@@ -1,0 +1,238 @@
+{
+  "meta": {
+    "title": "CI/CD Explained",
+    "fps": 30,
+    "totalFrames": 1140,
+    "totalDuration": 38.0,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 36.6,
+    "words": [
+      {"word": "DevOps", "start": 0.0, "end": 0.45, "startFrame": 0, "endFrame": 14},
+      {"word": "is", "start": 0.5, "end": 0.6, "startFrame": 15, "endFrame": 18},
+      {"word": "a", "start": 0.65, "end": 0.7, "startFrame": 20, "endFrame": 21},
+      {"word": "set", "start": 0.75, "end": 0.9, "startFrame": 23, "endFrame": 27},
+      {"word": "of", "start": 0.95, "end": 1.05, "startFrame": 29, "endFrame": 32},
+      {"word": "practices", "start": 1.1, "end": 1.6, "startFrame": 33, "endFrame": 48},
+      {"word": "to", "start": 1.65, "end": 1.75, "startFrame": 50, "endFrame": 53},
+      {"word": "build,", "start": 1.8, "end": 2.1, "startFrame": 54, "endFrame": 63},
+      {"word": "test,", "start": 2.2, "end": 2.5, "startFrame": 66, "endFrame": 75},
+      {"word": "and", "start": 2.55, "end": 2.65, "startFrame": 77, "endFrame": 80},
+      {"word": "release", "start": 2.7, "end": 3.1, "startFrame": 81, "endFrame": 93},
+      {"word": "your", "start": 3.15, "end": 3.3, "startFrame": 95, "endFrame": 99},
+      {"word": "code", "start": 3.35, "end": 3.6, "startFrame": 101, "endFrame": 108},
+      {"word": "in", "start": 3.65, "end": 3.75, "startFrame": 110, "endFrame": 113},
+      {"word": "small", "start": 3.8, "end": 4.1, "startFrame": 114, "endFrame": 123},
+      {"word": "frequent", "start": 4.15, "end": 4.55, "startFrame": 125, "endFrame": 137},
+      {"word": "steps.", "start": 4.6, "end": 5.0, "startFrame": 138, "endFrame": 150},
+      {"word": "Now", "start": 5.3, "end": 5.5, "startFrame": 159, "endFrame": 165},
+      {"word": "anytime", "start": 5.55, "end": 5.95, "startFrame": 167, "endFrame": 179},
+      {"word": "we", "start": 6.0, "end": 6.1, "startFrame": 180, "endFrame": 183},
+      {"word": "commit", "start": 6.15, "end": 6.5, "startFrame": 185, "endFrame": 195},
+      {"word": "code", "start": 6.55, "end": 6.8, "startFrame": 197, "endFrame": 204},
+      {"word": "to", "start": 6.85, "end": 6.95, "startFrame": 206, "endFrame": 209},
+      {"word": "the", "start": 7.0, "end": 7.1, "startFrame": 210, "endFrame": 213},
+      {"word": "master", "start": 7.15, "end": 7.5, "startFrame": 215, "endFrame": 225},
+      {"word": "branch", "start": 7.55, "end": 7.9, "startFrame": 227, "endFrame": 237},
+      {"word": "in", "start": 7.95, "end": 8.05, "startFrame": 239, "endFrame": 242},
+      {"word": "this", "start": 8.1, "end": 8.25, "startFrame": 243, "endFrame": 248},
+      {"word": "repo,", "start": 8.3, "end": 8.65, "startFrame": 249, "endFrame": 260},
+      {"word": "it'll", "start": 8.75, "end": 8.95, "startFrame": 263, "endFrame": 269},
+      {"word": "run", "start": 9.0, "end": 9.2, "startFrame": 270, "endFrame": 276},
+      {"word": "this", "start": 9.25, "end": 9.4, "startFrame": 278, "endFrame": 282},
+      {"word": "workflow.", "start": 9.45, "end": 10.0, "startFrame": 284, "endFrame": 300},
+      {"word": "If", "start": 10.3, "end": 10.45, "startFrame": 309, "endFrame": 314},
+      {"word": "any", "start": 10.5, "end": 10.7, "startFrame": 315, "endFrame": 321},
+      {"word": "of", "start": 10.75, "end": 10.85, "startFrame": 323, "endFrame": 326},
+      {"word": "the", "start": 10.9, "end": 11.0, "startFrame": 327, "endFrame": 330},
+      {"word": "steps", "start": 11.05, "end": 11.35, "startFrame": 332, "endFrame": 341},
+      {"word": "fail,", "start": 11.4, "end": 11.75, "startFrame": 342, "endFrame": 353},
+      {"word": "the", "start": 11.85, "end": 11.95, "startFrame": 356, "endFrame": 359},
+      {"word": "bad", "start": 12.0, "end": 12.2, "startFrame": 360, "endFrame": 366},
+      {"word": "software", "start": 12.25, "end": 12.7, "startFrame": 368, "endFrame": 381},
+      {"word": "won't", "start": 12.75, "end": 12.95, "startFrame": 383, "endFrame": 389},
+      {"word": "be", "start": 13.0, "end": 13.1, "startFrame": 390, "endFrame": 393},
+      {"word": "delivered", "start": 13.15, "end": 13.6, "startFrame": 395, "endFrame": 408},
+      {"word": "to", "start": 13.65, "end": 13.75, "startFrame": 410, "endFrame": 413},
+      {"word": "our", "start": 13.8, "end": 13.95, "startFrame": 414, "endFrame": 419},
+      {"word": "customers,", "start": 14.0, "end": 14.55, "startFrame": 420, "endFrame": 437},
+      {"word": "and", "start": 14.65, "end": 14.75, "startFrame": 440, "endFrame": 443},
+      {"word": "we'll", "start": 14.8, "end": 15.0, "startFrame": 444, "endFrame": 450},
+      {"word": "automatically", "start": 15.05, "end": 15.7, "startFrame": 452, "endFrame": 471},
+      {"word": "know", "start": 15.75, "end": 16.0, "startFrame": 473, "endFrame": 480},
+      {"word": "there's", "start": 16.05, "end": 16.3, "startFrame": 482, "endFrame": 489},
+      {"word": "an", "start": 16.35, "end": 16.45, "startFrame": 491, "endFrame": 494},
+      {"word": "issue", "start": 16.5, "end": 16.85, "startFrame": 495, "endFrame": 506},
+      {"word": "that", "start": 16.9, "end": 17.05, "startFrame": 507, "endFrame": 512},
+      {"word": "needs", "start": 17.1, "end": 17.35, "startFrame": 513, "endFrame": 521},
+      {"word": "to", "start": 17.4, "end": 17.5, "startFrame": 522, "endFrame": 525},
+      {"word": "be", "start": 17.55, "end": 17.65, "startFrame": 527, "endFrame": 530},
+      {"word": "addressed.", "start": 17.7, "end": 18.3, "startFrame": 531, "endFrame": 549},
+      {"word": "At", "start": 18.6, "end": 18.75, "startFrame": 558, "endFrame": 563},
+      {"word": "the", "start": 18.8, "end": 18.9, "startFrame": 564, "endFrame": 567},
+      {"word": "end", "start": 18.95, "end": 19.1, "startFrame": 569, "endFrame": 573},
+      {"word": "of", "start": 19.15, "end": 19.25, "startFrame": 575, "endFrame": 578},
+      {"word": "the", "start": 19.3, "end": 19.4, "startFrame": 579, "endFrame": 582},
+      {"word": "day,", "start": 19.45, "end": 19.8, "startFrame": 584, "endFrame": 594},
+      {"word": "CI/CD", "start": 19.9, "end": 20.5, "startFrame": 597, "endFrame": 615},
+      {"word": "offers", "start": 20.6, "end": 20.95, "startFrame": 618, "endFrame": 629},
+      {"word": "two", "start": 21.0, "end": 21.2, "startFrame": 630, "endFrame": 636},
+      {"word": "main", "start": 21.25, "end": 21.5, "startFrame": 638, "endFrame": 645},
+      {"word": "benefits.", "start": 21.55, "end": 22.1, "startFrame": 647, "endFrame": 663},
+      {"word": "It", "start": 22.4, "end": 22.55, "startFrame": 672, "endFrame": 677},
+      {"word": "helps", "start": 22.6, "end": 22.85, "startFrame": 678, "endFrame": 686},
+      {"word": "you", "start": 22.9, "end": 23.0, "startFrame": 687, "endFrame": 690},
+      {"word": "automate", "start": 23.05, "end": 23.55, "startFrame": 692, "endFrame": 707},
+      {"word": "things", "start": 23.6, "end": 23.9, "startFrame": 708, "endFrame": 717},
+      {"word": "that", "start": 23.95, "end": 24.1, "startFrame": 719, "endFrame": 723},
+      {"word": "would", "start": 24.15, "end": 24.35, "startFrame": 725, "endFrame": 731},
+      {"word": "otherwise", "start": 24.4, "end": 24.9, "startFrame": 732, "endFrame": 747},
+      {"word": "have", "start": 24.95, "end": 25.1, "startFrame": 749, "endFrame": 753},
+      {"word": "to", "start": 25.15, "end": 25.25, "startFrame": 755, "endFrame": 758},
+      {"word": "be", "start": 25.3, "end": 25.4, "startFrame": 759, "endFrame": 762},
+      {"word": "done", "start": 25.45, "end": 25.7, "startFrame": 764, "endFrame": 771},
+      {"word": "manually", "start": 25.75, "end": 26.25, "startFrame": 773, "endFrame": 788},
+      {"word": "by", "start": 26.3, "end": 26.45, "startFrame": 789, "endFrame": 794},
+      {"word": "developers.", "start": 26.5, "end": 27.2, "startFrame": 795, "endFrame": 816},
+      {"word": "That'll", "start": 27.4, "end": 27.7, "startFrame": 822, "endFrame": 831},
+      {"word": "increase", "start": 27.75, "end": 28.2, "startFrame": 833, "endFrame": 846},
+      {"word": "your", "start": 28.25, "end": 28.4, "startFrame": 848, "endFrame": 852},
+      {"word": "velocity.", "start": 28.45, "end": 29.1, "startFrame": 854, "endFrame": 873},
+      {"word": "But", "start": 29.4, "end": 29.6, "startFrame": 882, "endFrame": 888},
+      {"word": "it", "start": 29.65, "end": 29.75, "startFrame": 890, "endFrame": 893},
+      {"word": "also", "start": 29.8, "end": 30.1, "startFrame": 894, "endFrame": 903},
+      {"word": "detects", "start": 30.15, "end": 30.6, "startFrame": 905, "endFrame": 918},
+      {"word": "small", "start": 30.65, "end": 30.95, "startFrame": 920, "endFrame": 929},
+      {"word": "problems", "start": 31.0, "end": 31.45, "startFrame": 930, "endFrame": 944},
+      {"word": "early", "start": 31.5, "end": 31.85, "startFrame": 945, "endFrame": 956},
+      {"word": "before", "start": 31.9, "end": 32.2, "startFrame": 957, "endFrame": 966},
+      {"word": "they", "start": 32.25, "end": 32.4, "startFrame": 968, "endFrame": 972},
+      {"word": "can", "start": 32.45, "end": 32.6, "startFrame": 974, "endFrame": 978},
+      {"word": "grow", "start": 32.65, "end": 32.9, "startFrame": 980, "endFrame": 987},
+      {"word": "into", "start": 32.95, "end": 33.15, "startFrame": 989, "endFrame": 995},
+      {"word": "major", "start": 33.2, "end": 33.55, "startFrame": 996, "endFrame": 1007},
+      {"word": "disasters,", "start": 33.6, "end": 34.2, "startFrame": 1008, "endFrame": 1026},
+      {"word": "and", "start": 34.3, "end": 34.45, "startFrame": 1029, "endFrame": 1034},
+      {"word": "that", "start": 34.5, "end": 34.65, "startFrame": 1035, "endFrame": 1040},
+      {"word": "results", "start": 34.7, "end": 35.1, "startFrame": 1041, "endFrame": 1053},
+      {"word": "in", "start": 35.15, "end": 35.25, "startFrame": 1055, "endFrame": 1058},
+      {"word": "higher", "start": 35.3, "end": 35.65, "startFrame": 1059, "endFrame": 1070},
+      {"word": "code", "start": 35.7, "end": 35.95, "startFrame": 1071, "endFrame": 1079},
+      {"word": "quality.", "start": 36.0, "end": 36.6, "startFrame": 1080, "endFrame": 1098}
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Workflow",
+        "color": "#a855f7",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "DevOps Cycle",
+            "layout": "flow",
+            "startFrame": 5,
+            "nodes": [
+              {"label": "Build", "icon": "hammer", "startFrame": 50},
+              {"label": "Test", "icon": "testTube", "startFrame": 62},
+              {"label": "Release", "icon": "rocket", "startFrame": 77}
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Commit Trigger",
+            "layout": "arrow",
+            "startFrame": 155,
+            "nodes": [
+              {"label": "Commit", "icon": "gitCommit", "startFrame": 180},
+              {"label": "Workflow", "icon": "play", "startFrame": 280}
+            ]
+          },
+          {
+            "id": "section_1_3",
+            "title": "Fail Detection",
+            "layout": "if-else",
+            "startFrame": 305,
+            "nodes": [
+              {"label": "Check", "icon": "checkCircle", "startFrame": 330},
+              {"label": "Block", "icon": "shieldX", "startFrame": 380},
+              {"label": "Alert", "icon": "bell", "startFrame": 450}
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "The Benefits",
+        "color": "#22c55e",
+        "startFrame": 555,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Automation",
+            "layout": "negation",
+            "startFrame": 570,
+            "nodes": [
+              {"label": "Manual", "icon": "userX", "startFrame": 670},
+              {"label": "Auto", "icon": "zap", "startFrame": 690}
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Velocity",
+            "layout": "arrow",
+            "startFrame": 820,
+            "nodes": [
+              {"label": "Speed", "icon": "gauge", "startFrame": 830},
+              {"label": "Ship Fast", "icon": "rocket", "startFrame": 850}
+            ]
+          },
+          {
+            "id": "section_2_3",
+            "title": "Quality",
+            "layout": "flow",
+            "startFrame": 880,
+            "nodes": [
+              {"label": "Detect", "icon": "search", "startFrame": 905},
+              {"label": "Small Fix", "icon": "wrench", "startFrame": 930},
+              {"label": "Quality", "icon": "sparkles", "startFrame": 1055}
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      {"frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6},
+      {"frame": 140, "target": "section_1_2", "x": 450, "y": 450, "scale": 0.95},
+      {"frame": 290, "target": "section_1_3", "x": 450, "y": 600, "scale": 0.95},
+      {"frame": 555, "target": "sticky_2", "x": 1200, "y": 450, "scale": 0.85},
+      {"frame": 800, "target": "section_2_2", "x": 1200, "y": 400, "scale": 0.95},
+      {"frame": 865, "target": "section_2_3", "x": 1200, "y": 550, "scale": 0.95}
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      {"frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15},
+      {"frame": 138, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25},
+      {"frame": 175, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10},
+      {"frame": 288, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25},
+      {"frame": 553, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25},
+      {"frame": 600, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10},
+      {"frame": 798, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.20},
+      {"frame": 863, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.20}
+    ],
+    "totalCount": 8
+  }
+}

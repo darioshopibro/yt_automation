@@ -1,0 +1,132 @@
+{
+  "meta": {
+    "title": "Kubernetes Architecture",
+    "fps": 30,
+    "totalFrames": 1751,
+    "totalDuration": 58.37,
+    "hierarchyType": "sticky"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 57.353
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Cluster",
+        "color": "#3b82f6",
+        "startFrame": 15,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Control Plane",
+            "layout": "flow",
+            "startFrame": 20,
+            "nodes": [
+              { "id": "node_1_1_1", "label": "Cluster", "icon": "server", "startFrame": 98 },
+              { "id": "node_1_1_2", "label": "Control", "icon": "brain", "startFrame": 191 },
+              { "id": "node_1_1_3", "label": "API", "icon": "webhook", "startFrame": 257 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Storage",
+            "layout": "flow",
+            "startFrame": 430,
+            "nodes": [
+              { "id": "node_1_2_1", "label": "etcd", "icon": "database", "startFrame": 516 },
+              { "id": "node_1_2_2", "label": "Config", "icon": "settings", "startFrame": 580 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Worker Nodes",
+        "color": "#22c55e",
+        "startFrame": 680,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Node",
+            "layout": "flow",
+            "startFrame": 700,
+            "nodes": [
+              { "id": "node_2_1_1", "label": "Machine", "icon": "monitor", "startFrame": 781 },
+              { "id": "node_2_1_2", "label": "Worker", "icon": "cpu", "startFrame": 750 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Kubelet",
+            "layout": "bidirectional",
+            "startFrame": 900,
+            "nodes": [
+              { "id": "node_2_2_1", "label": "Kubelet", "icon": "radio", "startFrame": 955 },
+              { "id": "node_2_2_2", "label": "Connect", "icon": "link", "startFrame": 1090 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Inside Nodes",
+        "color": "#a855f7",
+        "startFrame": 1160,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Pods",
+            "layout": "combine",
+            "startFrame": 1180,
+            "nodes": [
+              { "id": "node_3_1_1", "label": "Pod", "icon": "box", "startFrame": 1240 },
+              { "id": "node_3_1_2", "label": "Container", "icon": "container", "startFrame": 1458 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Scaling",
+            "layout": "flow",
+            "startFrame": 1550,
+            "nodes": [
+              { "id": "node_3_2_1", "label": "Workload", "icon": "activity", "startFrame": 1530 },
+              { "id": "node_3_2_2", "label": "Scale", "icon": "trendingUp", "startFrame": 1625 },
+              { "id": "node_3_2_3", "label": "Add Nodes", "icon": "plus", "startFrame": 1665 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 5, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0 },
+      { "frame": 665, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0 },
+      { "frame": 1145, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.0 },
+      { "frame": 1700, "target": "overview", "x": 960, "y": 540, "scale": 0.6 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 40, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 663, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 720, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1143, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1200, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1698, "type": "camera", "file": "soft-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 8
+  }
+}

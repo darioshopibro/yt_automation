@@ -1,0 +1,5 @@
+When we have a system composed of lots of different microservices, you need a way for them all to talk to each other. One way to do this is with messages. We can have one service that adds a message to a queue. Then another service listens to that queue and acts on it when it receives it. This is what we call message-driven architecture.
+
+The main difference is that in event-driven architecture, our service sends an event after the event has happened. The service raising the event doesn't care what happens after the event has been raised. It doesn't care whether there's another service listening to it or not.
+
+A message is usually a command to do something. It's designed for a particular service with instructions on what needs to be done. With an event, there's not usually any instructions. It's just information on what has been performed and by who.

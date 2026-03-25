@@ -1,0 +1,73 @@
+{
+  "title": "Continuous Integration Explained",
+  "fps": 30,
+  "totalFrames": 1226,
+  "showStepPrefix": true,
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Problem",
+      "color": "#ef4444",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Dev Teams",
+          "subtitle": "",
+          "colorKey": "userQuery",
+          "layout": "vs",
+          "startFrame": 10,
+          "nodes": [
+            { "label": "Backend", "icon": "server" },
+            { "label": "Frontend", "icon": "menu" }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Merge Fails",
+          "subtitle": "",
+          "colorKey": "vectorSearch",
+          "layout": "flow",
+          "startFrame": 380,
+          "nodes": [
+            { "label": "Merge", "icon": "merge" },
+            { "label": "Conflict", "icon": "gitMergeConflict" },
+            { "label": "Cost", "icon": "dollarSign" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "CI Solution",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Daily Commits",
+          "subtitle": "",
+          "colorKey": "embedding",
+          "layout": "flow",
+          "startFrame": 703,
+          "nodes": [
+            { "label": "Branch", "icon": "gitBranch" },
+            { "label": "Commit", "icon": "gitCommit" },
+            { "label": "Repo", "icon": "network" }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "CI Pipeline",
+          "subtitle": "",
+          "colorKey": "generate",
+          "layout": "flow",
+          "startFrame": 963,
+          "nodes": [
+            { "label": "Trigger", "icon": "workflow" },
+            { "label": "CI Server", "icon": "server" },
+            { "label": "Notify", "icon": "alertCircle" }
+          ]
+        }
+      ]
+    }
+  ]
+}

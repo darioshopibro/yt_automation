@@ -1,0 +1,770 @@
+{
+  "duration": 61.394,
+  "words": [
+    {
+      "word": "When",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "word": "you're",
+      "start": 0.232,
+      "end": 0.406
+    },
+    {
+      "word": "signing",
+      "start": 0.441,
+      "end": 0.755
+    },
+    {
+      "word": "up",
+      "start": 0.813,
+      "end": 0.906
+    },
+    {
+      "word": "for",
+      "start": 0.975,
+      "end": 1.103
+    },
+    {
+      "word": "a",
+      "start": 1.149,
+      "end": 1.173
+    },
+    {
+      "word": "new",
+      "start": 1.265,
+      "end": 1.44
+    },
+    {
+      "word": "app,",
+      "start": 1.556,
+      "end": 2.055
+    },
+    {
+      "word": "you",
+      "start": 2.38,
+      "end": 2.485
+    },
+    {
+      "word": "enter",
+      "start": 2.601,
+      "end": 2.833
+    },
+    {
+      "word": "your",
+      "start": 2.902,
+      "end": 3.019
+    },
+    {
+      "word": "preferred",
+      "start": 3.077,
+      "end": 3.495
+    },
+    {
+      "word": "username",
+      "start": 3.553,
+      "end": 4.18
+    },
+    {
+      "word": "and",
+      "start": 4.238,
+      "end": 4.4
+    },
+    {
+      "word": "get",
+      "start": 4.458,
+      "end": 4.598
+    },
+    {
+      "word": "a",
+      "start": 4.632,
+      "end": 4.656
+    },
+    {
+      "word": "message",
+      "start": 4.714,
+      "end": 5.074
+    },
+    {
+      "word": "saying",
+      "start": 5.12,
+      "end": 5.515
+    },
+    {
+      "word": "this",
+      "start": 5.898,
+      "end": 6.13
+    },
+    {
+      "word": "username",
+      "start": 6.246,
+      "end": 6.803
+    },
+    {
+      "word": "is",
+      "start": 6.85,
+      "end": 7.012
+    },
+    {
+      "word": "already",
+      "start": 7.129,
+      "end": 7.721
+    },
+    {
+      "word": "taken.",
+      "start": 7.895,
+      "end": 8.603
+    },
+    {
+      "word": "It",
+      "start": 9.207,
+      "end": 9.346
+    },
+    {
+      "word": "feels",
+      "start": 9.404,
+      "end": 9.683
+    },
+    {
+      "word": "like",
+      "start": 9.729,
+      "end": 9.857
+    },
+    {
+      "word": "a",
+      "start": 9.892,
+      "end": 9.915
+    },
+    {
+      "word": "small",
+      "start": 9.985,
+      "end": 10.333
+    },
+    {
+      "word": "inconvenience,",
+      "start": 10.449,
+      "end": 11.425
+    },
+    {
+      "word": "but",
+      "start": 11.75,
+      "end": 11.901
+    },
+    {
+      "word": "behind",
+      "start": 11.947,
+      "end": 12.237
+    },
+    {
+      "word": "the",
+      "start": 12.284,
+      "end": 12.353
+    },
+    {
+      "word": "scenes,",
+      "start": 12.4,
+      "end": 12.934
+    },
+    {
+      "word": "that",
+      "start": 13.05,
+      "end": 13.236
+    },
+    {
+      "word": "simple",
+      "start": 13.305,
+      "end": 13.596
+    },
+    {
+      "word": "check",
+      "start": 13.63,
+      "end": 13.863
+    },
+    {
+      "word": "is",
+      "start": 13.921,
+      "end": 13.99
+    },
+    {
+      "word": "surprisingly",
+      "start": 14.037,
+      "end": 14.664
+    },
+    {
+      "word": "complex.",
+      "start": 14.722,
+      "end": 15.511
+    },
+    {
+      "word": "When",
+      "start": 16.115,
+      "end": 16.277
+    },
+    {
+      "word": "you're",
+      "start": 16.312,
+      "end": 16.486
+    },
+    {
+      "word": "dealing",
+      "start": 16.521,
+      "end": 16.823
+    },
+    {
+      "word": "with",
+      "start": 16.858,
+      "end": 16.986
+    },
+    {
+      "word": "billions",
+      "start": 17.055,
+      "end": 17.543
+    },
+    {
+      "word": "of",
+      "start": 17.578,
+      "end": 17.636
+    },
+    {
+      "word": "users,",
+      "start": 17.717,
+      "end": 18.332
+    },
+    {
+      "word": "checking",
+      "start": 18.541,
+      "end": 18.901
+    },
+    {
+      "word": "whether",
+      "start": 18.948,
+      "end": 19.192
+    },
+    {
+      "word": "a",
+      "start": 19.25,
+      "end": 19.273
+    },
+    {
+      "word": "username",
+      "start": 19.389,
+      "end": 19.865
+    },
+    {
+      "word": "exists",
+      "start": 19.9,
+      "end": 20.55
+    },
+    {
+      "word": "can't",
+      "start": 20.875,
+      "end": 21.165
+    },
+    {
+      "word": "rely",
+      "start": 21.212,
+      "end": 21.525
+    },
+    {
+      "word": "on",
+      "start": 21.618,
+      "end": 21.711
+    },
+    {
+      "word": "a",
+      "start": 21.746,
+      "end": 21.769
+    },
+    {
+      "word": "basic",
+      "start": 21.827,
+      "end": 22.141
+    },
+    {
+      "word": "database",
+      "start": 22.199,
+      "end": 22.64
+    },
+    {
+      "word": "query.",
+      "start": 22.686,
+      "end": 23.232
+    },
+    {
+      "word": "In",
+      "start": 23.836,
+      "end": 23.987
+    },
+    {
+      "word": "Redis,",
+      "start": 24.056,
+      "end": 24.66
+    },
+    {
+      "word": "a",
+      "start": 24.776,
+      "end": 24.846
+    },
+    {
+      "word": "hashmap",
+      "start": 24.962,
+      "end": 25.589
+    },
+    {
+      "word": "lets",
+      "start": 25.716,
+      "end": 25.937
+    },
+    {
+      "word": "you",
+      "start": 25.983,
+      "end": 26.065
+    },
+    {
+      "word": "store",
+      "start": 26.134,
+      "end": 26.39
+    },
+    {
+      "word": "multiple",
+      "start": 26.448,
+      "end": 26.866
+    },
+    {
+      "word": "field-value",
+      "start": 26.912,
+      "end": 27.539
+    },
+    {
+      "word": "pairs",
+      "start": 27.574,
+      "end": 27.911
+    },
+    {
+      "word": "under",
+      "start": 27.992,
+      "end": 28.201
+    },
+    {
+      "word": "one",
+      "start": 28.294,
+      "end": 28.549
+    },
+    {
+      "word": "key.",
+      "start": 28.619,
+      "end": 29.223
+    },
+    {
+      "word": "When",
+      "start": 29.826,
+      "end": 30.001
+    },
+    {
+      "word": "a",
+      "start": 30.035,
+      "end": 30.059
+    },
+    {
+      "word": "user",
+      "start": 30.175,
+      "end": 30.453
+    },
+    {
+      "word": "checks",
+      "start": 30.5,
+      "end": 30.79
+    },
+    {
+      "word": "if",
+      "start": 30.825,
+      "end": 30.894
+    },
+    {
+      "word": "a",
+      "start": 30.941,
+      "end": 30.976
+    },
+    {
+      "word": "username",
+      "start": 31.069,
+      "end": 31.521
+    },
+    {
+      "word": "is",
+      "start": 31.556,
+      "end": 31.626
+    },
+    {
+      "word": "available,",
+      "start": 31.661,
+      "end": 32.369
+    },
+    {
+      "word": "the",
+      "start": 32.578,
+      "end": 32.671
+    },
+    {
+      "word": "system",
+      "start": 32.729,
+      "end": 33.031
+    },
+    {
+      "word": "queries",
+      "start": 33.124,
+      "end": 33.623
+    },
+    {
+      "word": "this",
+      "start": 33.681,
+      "end": 33.82
+    },
+    {
+      "word": "hashmap.",
+      "start": 33.89,
+      "end": 34.668
+    },
+    {
+      "word": "If",
+      "start": 35.109,
+      "end": 35.248
+    },
+    {
+      "word": "the",
+      "start": 35.295,
+      "end": 35.364
+    },
+    {
+      "word": "field",
+      "start": 35.411,
+      "end": 35.689
+    },
+    {
+      "word": "exists,",
+      "start": 35.747,
+      "end": 36.688
+    },
+    {
+      "word": "that's",
+      "start": 36.932,
+      "end": 37.199
+    },
+    {
+      "word": "a",
+      "start": 37.234,
+      "end": 37.257
+    },
+    {
+      "word": "cache",
+      "start": 37.315,
+      "end": 37.721
+    },
+    {
+      "word": "hit",
+      "start": 37.779,
+      "end": 38.069
+    },
+    {
+      "word": "and",
+      "start": 38.511,
+      "end": 38.696
+    },
+    {
+      "word": "Redis",
+      "start": 38.789,
+      "end": 39.114
+    },
+    {
+      "word": "returns",
+      "start": 39.184,
+      "end": 39.567
+    },
+    {
+      "word": "a",
+      "start": 39.602,
+      "end": 39.637
+    },
+    {
+      "word": "result",
+      "start": 39.683,
+      "end": 40.113
+    },
+    {
+      "word": "instantly.",
+      "start": 40.287,
+      "end": 41.169
+    },
+    {
+      "word": "A",
+      "start": 41.773,
+      "end": 41.866
+    },
+    {
+      "word": "trie",
+      "start": 41.947,
+      "end": 42.504
+    },
+    {
+      "word": "is",
+      "start": 42.574,
+      "end": 42.737
+    },
+    {
+      "word": "a",
+      "start": 42.771,
+      "end": 42.806
+    },
+    {
+      "word": "tree-like",
+      "start": 42.864,
+      "end": 43.387
+    },
+    {
+      "word": "structure",
+      "start": 43.422,
+      "end": 43.863
+    },
+    {
+      "word": "that",
+      "start": 43.898,
+      "end": 44.014
+    },
+    {
+      "word": "organizes",
+      "start": 44.072,
+      "end": 44.664
+    },
+    {
+      "word": "strings",
+      "start": 44.71,
+      "end": 45.117
+    },
+    {
+      "word": "by",
+      "start": 45.175,
+      "end": 45.279
+    },
+    {
+      "word": "their",
+      "start": 45.326,
+      "end": 45.477
+    },
+    {
+      "word": "shared",
+      "start": 45.523,
+      "end": 45.871
+    },
+    {
+      "word": "prefixes.",
+      "start": 45.929,
+      "end": 46.916
+    },
+    {
+      "word": "Instead",
+      "start": 47.427,
+      "end": 47.81
+    },
+    {
+      "word": "of",
+      "start": 47.845,
+      "end": 47.903
+    },
+    {
+      "word": "storing",
+      "start": 47.961,
+      "end": 48.402
+    },
+    {
+      "word": "each",
+      "start": 48.518,
+      "end": 48.739
+    },
+    {
+      "word": "username",
+      "start": 48.832,
+      "end": 49.32
+    },
+    {
+      "word": "as",
+      "start": 49.354,
+      "end": 49.436
+    },
+    {
+      "word": "a",
+      "start": 49.482,
+      "end": 49.517
+    },
+    {
+      "word": "whole,",
+      "start": 49.563,
+      "end": 50.132
+    },
+    {
+      "word": "it",
+      "start": 50.411,
+      "end": 50.539
+    },
+    {
+      "word": "breaks",
+      "start": 50.597,
+      "end": 50.922
+    },
+    {
+      "word": "them",
+      "start": 50.98,
+      "end": 51.131
+    },
+    {
+      "word": "down",
+      "start": 51.189,
+      "end": 51.572
+    },
+    {
+      "word": "character",
+      "start": 51.688,
+      "end": 52.176
+    },
+    {
+      "word": "by",
+      "start": 52.257,
+      "end": 52.373
+    },
+    {
+      "word": "character",
+      "start": 52.431,
+      "end": 52.942
+    },
+    {
+      "word": "and",
+      "start": 53.116,
+      "end": 53.279
+    },
+    {
+      "word": "builds",
+      "start": 53.348,
+      "end": 53.65
+    },
+    {
+      "word": "a",
+      "start": 53.685,
+      "end": 53.708
+    },
+    {
+      "word": "path",
+      "start": 53.755,
+      "end": 54.057
+    },
+    {
+      "word": "through",
+      "start": 54.103,
+      "end": 54.335
+    },
+    {
+      "word": "the",
+      "start": 54.37,
+      "end": 54.44
+    },
+    {
+      "word": "tree.",
+      "start": 54.475,
+      "end": 54.985
+    },
+    {
+      "word": "This",
+      "start": 55.496,
+      "end": 55.694
+    },
+    {
+      "word": "allows",
+      "start": 55.74,
+      "end": 56.077
+    },
+    {
+      "word": "us",
+      "start": 56.135,
+      "end": 56.228
+    },
+    {
+      "word": "to",
+      "start": 56.274,
+      "end": 56.332
+    },
+    {
+      "word": "perform",
+      "start": 56.402,
+      "end": 56.773
+    },
+    {
+      "word": "lookups",
+      "start": 56.855,
+      "end": 57.284
+    },
+    {
+      "word": "in",
+      "start": 57.342,
+      "end": 57.424
+    },
+    {
+      "word": "O",
+      "start": 57.54,
+      "end": 57.783
+    },
+    {
+      "word": "of",
+      "start": 57.934,
+      "end": 58.039
+    },
+    {
+      "word": "M",
+      "start": 58.19,
+      "end": 58.399
+    },
+    {
+      "word": "time",
+      "start": 58.492,
+      "end": 58.933
+    },
+    {
+      "word": "where",
+      "start": 59.211,
+      "end": 59.49
+    },
+    {
+      "word": "M",
+      "start": 59.548,
+      "end": 59.757
+    },
+    {
+      "word": "is",
+      "start": 59.838,
+      "end": 59.931
+    },
+    {
+      "word": "the",
+      "start": 59.989,
+      "end": 60.059
+    },
+    {
+      "word": "length",
+      "start": 60.129,
+      "end": 60.372
+    },
+    {
+      "word": "of",
+      "start": 60.419,
+      "end": 60.477
+    },
+    {
+      "word": "the",
+      "start": 60.523,
+      "end": 60.593
+    },
+    {
+      "word": "string.",
+      "start": 60.639,
+      "end": 61.394
+    }
+  ]
+}
