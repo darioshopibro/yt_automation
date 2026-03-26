@@ -82,8 +82,7 @@
           "nodes": [
             {
               "label": "Commit",
-              "icon": "GitCommit",
-              "color": "green"
+              "icon": "GitCommit"
             },
             {
               "label": "CI",

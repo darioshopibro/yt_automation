@@ -19,7 +19,7 @@ from pathlib import Path
 # ============================================================
 
 ELEVENLABS_API_KEY = "sk_05502b179071a5af73848098c52b3b556ac144e89fe35998"
-VOICE_ID = "21m00Tcm4TlvDq8ikWAM"  # Rachel
+VOICE_ID = "IKne3meq5aSn9XLyUdCD"  # Charlie - Deep, Confident, Energetic
 
 VOICE_SETTINGS = {
     "stability": 0.50,

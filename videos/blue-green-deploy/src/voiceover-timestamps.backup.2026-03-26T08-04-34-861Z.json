@@ -1,0 +1,998 @@
+{
+  "words": [
+    {
+      "word": "Every",
+      "start": 0,
+      "end": 0.279,
+      "startFrame": 0,
+      "endFrame": 8
+    },
+    {
+      "word": "time",
+      "start": 0.325,
+      "end": 0.557,
+      "startFrame": 10,
+      "endFrame": 17
+    },
+    {
+      "word": "your",
+      "start": 0.604,
+      "end": 0.755,
+      "startFrame": 18,
+      "endFrame": 23
+    },
+    {
+      "word": "team",
+      "start": 0.813,
+      "end": 1.01,
+      "startFrame": 24,
+      "endFrame": 30
+    },
+    {
+      "word": "ships",
+      "start": 1.057,
+      "end": 1.312,
+      "startFrame": 32,
+      "endFrame": 39
+    },
+    {
+      "word": "code,",
+      "start": 1.358,
+      "end": 1.811,
+      "startFrame": 41,
+      "endFrame": 54
+    },
+    {
+      "word": "something",
+      "start": 2.055,
+      "end": 2.496,
+      "startFrame": 62,
+      "endFrame": 75
+    },
+    {
+      "word": "breaks",
+      "start": 2.577,
+      "end": 2.879,
+      "startFrame": 77,
+      "endFrame": 86
+    },
+    {
+      "word": "in",
+      "start": 2.914,
+      "end": 2.972,
+      "startFrame": 87,
+      "endFrame": 89
+    },
+    {
+      "word": "production.",
+      "start": 3.03,
+      "end": 3.738,
+      "startFrame": 91,
+      "endFrame": 112
+    },
+    {
+      "word": "The",
+      "start": 4.435,
+      "end": 4.563,
+      "startFrame": 133,
+      "endFrame": 137
+    },
+    {
+      "word": "reason's",
+      "start": 4.644,
+      "end": 5.05,
+      "startFrame": 139,
+      "endFrame": 152
+    },
+    {
+      "word": "simple:",
+      "start": 5.12,
+      "end": 5.689,
+      "startFrame": 154,
+      "endFrame": 171
+    },
+    {
+      "word": "you're",
+      "start": 6.014,
+      "end": 6.211,
+      "startFrame": 180,
+      "endFrame": 186
+    },
+    {
+      "word": "deploying",
+      "start": 6.246,
+      "end": 6.676,
+      "startFrame": 187,
+      "endFrame": 200
+    },
+    {
+      "word": "manually,",
+      "start": 6.757,
+      "end": 7.465,
+      "startFrame": 203,
+      "endFrame": 224
+    },
+    {
+      "word": "infrequently,",
+      "start": 7.616,
+      "end": 8.533,
+      "startFrame": 228,
+      "endFrame": 256
+    },
+    {
+      "word": "and",
+      "start": 8.684,
+      "end": 8.87,
+      "startFrame": 261,
+      "endFrame": 266
+    },
+    {
+      "word": "without",
+      "start": 8.928,
+      "end": 9.23,
+      "startFrame": 268,
+      "endFrame": 277
+    },
+    {
+      "word": "tests.\n\nBlue-Green",
+      "start": 9.288,
+      "end": 10.937,
+      "startFrame": 279,
+      "endFrame": 328
+    },
+    {
+      "word": "deployment",
+      "start": 10.983,
+      "end": 11.424,
+      "startFrame": 329,
+      "endFrame": 343
+    },
+    {
+      "word": "changes",
+      "start": 11.482,
+      "end": 11.889,
+      "startFrame": 344,
+      "endFrame": 357
+    },
+    {
+      "word": "that.",
+      "start": 11.935,
+      "end": 12.33,
+      "startFrame": 358,
+      "endFrame": 370
+    },
+    {
+      "word": "You",
+      "start": 12.934,
+      "end": 13.073,
+      "startFrame": 388,
+      "endFrame": 392
+    },
+    {
+      "word": "run",
+      "start": 13.154,
+      "end": 13.363,
+      "startFrame": 395,
+      "endFrame": 401
+    },
+    {
+      "word": "two",
+      "start": 13.456,
+      "end": 13.735,
+      "startFrame": 404,
+      "endFrame": 412
+    },
+    {
+      "word": "identical",
+      "start": 13.862,
+      "end": 14.443,
+      "startFrame": 416,
+      "endFrame": 433
+    },
+    {
+      "word": "environments:",
+      "start": 14.501,
+      "end": 15.302,
+      "startFrame": 435,
+      "endFrame": 459
+    },
+    {
+      "word": "Blue,",
+      "start": 15.581,
+      "end": 16.057,
+      "startFrame": 467,
+      "endFrame": 482
+    },
+    {
+      "word": "which",
+      "start": 16.126,
+      "end": 16.335,
+      "startFrame": 484,
+      "endFrame": 490
+    },
+    {
+      "word": "serves",
+      "start": 16.382,
+      "end": 16.684,
+      "startFrame": 491,
+      "endFrame": 501
+    },
+    {
+      "word": "live",
+      "start": 16.765,
+      "end": 17.032,
+      "startFrame": 503,
+      "endFrame": 511
+    },
+    {
+      "word": "traffic,",
+      "start": 17.055,
+      "end": 17.578,
+      "startFrame": 512,
+      "endFrame": 527
+    },
+    {
+      "word": "and",
+      "start": 17.787,
+      "end": 17.972,
+      "startFrame": 534,
+      "endFrame": 539
+    },
+    {
+      "word": "Green,",
+      "start": 18.065,
+      "end": 18.565,
+      "startFrame": 542,
+      "endFrame": 557
+    },
+    {
+      "word": "which",
+      "start": 18.681,
+      "end": 18.89,
+      "startFrame": 560,
+      "endFrame": 567
+    },
+    {
+      "word": "is",
+      "start": 18.924,
+      "end": 19.006,
+      "startFrame": 568,
+      "endFrame": 570
+    },
+    {
+      "word": "your",
+      "start": 19.052,
+      "end": 19.157,
+      "startFrame": 572,
+      "endFrame": 575
+    },
+    {
+      "word": "staging",
+      "start": 19.18,
+      "end": 19.586,
+      "startFrame": 575,
+      "endFrame": 588
+    },
+    {
+      "word": "area.",
+      "start": 19.633,
+      "end": 20.109,
+      "startFrame": 589,
+      "endFrame": 603
+    },
+    {
+      "word": "When",
+      "start": 20.805,
+      "end": 21.026,
+      "startFrame": 624,
+      "endFrame": 631
+    },
+    {
+      "word": "developers",
+      "start": 21.084,
+      "end": 21.572,
+      "startFrame": 633,
+      "endFrame": 647
+    },
+    {
+      "word": "commit",
+      "start": 21.63,
+      "end": 21.885,
+      "startFrame": 649,
+      "endFrame": 657
+    },
+    {
+      "word": "code,",
+      "start": 21.955,
+      "end": 22.361,
+      "startFrame": 659,
+      "endFrame": 671
+    },
+    {
+      "word": "it",
+      "start": 22.512,
+      "end": 22.651,
+      "startFrame": 675,
+      "endFrame": 680
+    },
+    {
+      "word": "triggers",
+      "start": 22.698,
+      "end": 23.092,
+      "startFrame": 681,
+      "endFrame": 693
+    },
+    {
+      "word": "an",
+      "start": 23.185,
+      "end": 23.325,
+      "startFrame": 696,
+      "endFrame": 700
+    },
+    {
+      "word": "automated",
+      "start": 23.418,
+      "end": 23.998,
+      "startFrame": 703,
+      "endFrame": 720
+    },
+    {
+      "word": "pipeline.",
+      "start": 24.056,
+      "end": 24.741,
+      "startFrame": 722,
+      "endFrame": 742
+    },
+    {
+      "word": "First,",
+      "start": 25.438,
+      "end": 25.902,
+      "startFrame": 763,
+      "endFrame": 777
+    },
+    {
+      "word": "the",
+      "start": 25.983,
+      "end": 26.099,
+      "startFrame": 779,
+      "endFrame": 783
+    },
+    {
+      "word": "CI",
+      "start": 26.158,
+      "end": 26.448,
+      "startFrame": 785,
+      "endFrame": 793
+    },
+    {
+      "word": "server",
+      "start": 26.564,
+      "end": 26.854,
+      "startFrame": 797,
+      "endFrame": 806
+    },
+    {
+      "word": "pulls",
+      "start": 26.901,
+      "end": 27.156,
+      "startFrame": 807,
+      "endFrame": 815
+    },
+    {
+      "word": "the",
+      "start": 27.214,
+      "end": 27.295,
+      "startFrame": 816,
+      "endFrame": 819
+    },
+    {
+      "word": "latest",
+      "start": 27.365,
+      "end": 27.69,
+      "startFrame": 821,
+      "endFrame": 831
+    },
+    {
+      "word": "changes",
+      "start": 27.736,
+      "end": 28.154,
+      "startFrame": 832,
+      "endFrame": 845
+    },
+    {
+      "word": "and",
+      "start": 28.212,
+      "end": 28.363,
+      "startFrame": 846,
+      "endFrame": 851
+    },
+    {
+      "word": "runs",
+      "start": 28.445,
+      "end": 28.7,
+      "startFrame": 853,
+      "endFrame": 861
+    },
+    {
+      "word": "your",
+      "start": 28.77,
+      "end": 28.932,
+      "startFrame": 863,
+      "endFrame": 868
+    },
+    {
+      "word": "test",
+      "start": 28.979,
+      "end": 29.223,
+      "startFrame": 869,
+      "endFrame": 877
+    },
+    {
+      "word": "suite.",
+      "start": 29.281,
+      "end": 29.733,
+      "startFrame": 878,
+      "endFrame": 892
+    },
+    {
+      "word": "If",
+      "start": 30.337,
+      "end": 30.488,
+      "startFrame": 910,
+      "endFrame": 915
+    },
+    {
+      "word": "tests",
+      "start": 30.546,
+      "end": 30.871,
+      "startFrame": 916,
+      "endFrame": 926
+    },
+    {
+      "word": "pass,",
+      "start": 30.929,
+      "end": 31.405,
+      "startFrame": 928,
+      "endFrame": 942
+    },
+    {
+      "word": "it",
+      "start": 31.556,
+      "end": 31.695,
+      "startFrame": 947,
+      "endFrame": 951
+    },
+    {
+      "word": "pushes",
+      "start": 31.765,
+      "end": 32.114,
+      "startFrame": 953,
+      "endFrame": 963
+    },
+    {
+      "word": "the",
+      "start": 32.172,
+      "end": 32.242,
+      "startFrame": 965,
+      "endFrame": 967
+    },
+    {
+      "word": "build",
+      "start": 32.3,
+      "end": 32.532,
+      "startFrame": 969,
+      "endFrame": 976
+    },
+    {
+      "word": "artifact",
+      "start": 32.578,
+      "end": 33.019,
+      "startFrame": 977,
+      "endFrame": 991
+    },
+    {
+      "word": "to",
+      "start": 33.089,
+      "end": 33.205,
+      "startFrame": 993,
+      "endFrame": 996
+    },
+    {
+      "word": "the",
+      "start": 33.275,
+      "end": 33.344,
+      "startFrame": 998,
+      "endFrame": 1000
+    },
+    {
+      "word": "Green",
+      "start": 33.391,
+      "end": 33.623,
+      "startFrame": 1002,
+      "endFrame": 1009
+    },
+    {
+      "word": "environment.",
+      "start": 33.67,
+      "end": 34.355,
+      "startFrame": 1010,
+      "endFrame": 1031
+    },
+    {
+      "word": "If",
+      "start": 34.796,
+      "end": 34.947,
+      "startFrame": 1044,
+      "endFrame": 1048
+    },
+    {
+      "word": "tests",
+      "start": 35.016,
+      "end": 35.33,
+      "startFrame": 1050,
+      "endFrame": 1060
+    },
+    {
+      "word": "fail,",
+      "start": 35.388,
+      "end": 35.864,
+      "startFrame": 1062,
+      "endFrame": 1076
+    },
+    {
+      "word": "the",
+      "start": 36.015,
+      "end": 36.119,
+      "startFrame": 1080,
+      "endFrame": 1084
+    },
+    {
+      "word": "pipeline",
+      "start": 36.189,
+      "end": 36.63,
+      "startFrame": 1086,
+      "endFrame": 1099
+    },
+    {
+      "word": "stops",
+      "start": 36.665,
+      "end": 37.025,
+      "startFrame": 1100,
+      "endFrame": 1111
+    },
+    {
+      "word": "and",
+      "start": 37.199,
+      "end": 37.431,
+      "startFrame": 1116,
+      "endFrame": 1123
+    },
+    {
+      "word": "the",
+      "start": 37.489,
+      "end": 37.559,
+      "startFrame": 1125,
+      "endFrame": 1127
+    },
+    {
+      "word": "team",
+      "start": 37.605,
+      "end": 37.849,
+      "startFrame": 1128,
+      "endFrame": 1135
+    },
+    {
+      "word": "gets",
+      "start": 37.907,
+      "end": 38.093,
+      "startFrame": 1137,
+      "endFrame": 1143
+    },
+    {
+      "word": "notified.\n\nOnce",
+      "start": 38.163,
+      "end": 39.788,
+      "startFrame": 1145,
+      "endFrame": 1194
+    },
+    {
+      "word": "Green's",
+      "start": 39.834,
+      "end": 40.148,
+      "startFrame": 1195,
+      "endFrame": 1204
+    },
+    {
+      "word": "verified,",
+      "start": 40.194,
+      "end": 40.879,
+      "startFrame": 1206,
+      "endFrame": 1226
+    },
+    {
+      "word": "you",
+      "start": 41.123,
+      "end": 41.228,
+      "startFrame": 1234,
+      "endFrame": 1237
+    },
+    {
+      "word": "flip",
+      "start": 41.309,
+      "end": 41.553,
+      "startFrame": 1239,
+      "endFrame": 1247
+    },
+    {
+      "word": "the",
+      "start": 41.622,
+      "end": 41.692,
+      "startFrame": 1249,
+      "endFrame": 1251
+    },
+    {
+      "word": "load",
+      "start": 41.762,
+      "end": 41.947,
+      "startFrame": 1253,
+      "endFrame": 1258
+    },
+    {
+      "word": "balancer.",
+      "start": 41.994,
+      "end": 42.574,
+      "startFrame": 1260,
+      "endFrame": 1277
+    },
+    {
+      "word": "Traffic",
+      "start": 43.085,
+      "end": 43.503,
+      "startFrame": 1293,
+      "endFrame": 1305
+    },
+    {
+      "word": "instantly",
+      "start": 43.619,
+      "end": 44.107,
+      "startFrame": 1309,
+      "endFrame": 1323
+    },
+    {
+      "word": "shifts",
+      "start": 44.165,
+      "end": 44.49,
+      "startFrame": 1325,
+      "endFrame": 1335
+    },
+    {
+      "word": "from",
+      "start": 44.536,
+      "end": 44.687,
+      "startFrame": 1336,
+      "endFrame": 1341
+    },
+    {
+      "word": "Blue",
+      "start": 44.757,
+      "end": 45.013,
+      "startFrame": 1343,
+      "endFrame": 1350
+    },
+    {
+      "word": "to",
+      "start": 45.047,
+      "end": 45.117,
+      "startFrame": 1351,
+      "endFrame": 1354
+    },
+    {
+      "word": "Green.",
+      "start": 45.175,
+      "end": 45.639,
+      "startFrame": 1355,
+      "endFrame": 1369
+    },
+    {
+      "word": "Blue",
+      "start": 46.243,
+      "end": 46.487,
+      "startFrame": 1387,
+      "endFrame": 1395
+    },
+    {
+      "word": "stays",
+      "start": 46.522,
+      "end": 46.812,
+      "startFrame": 1396,
+      "endFrame": 1404
+    },
+    {
+      "word": "warm",
+      "start": 46.893,
+      "end": 47.195,
+      "startFrame": 1407,
+      "endFrame": 1416
+    },
+    {
+      "word": "as",
+      "start": 47.242,
+      "end": 47.311,
+      "startFrame": 1417,
+      "endFrame": 1419
+    },
+    {
+      "word": "a",
+      "start": 47.358,
+      "end": 47.381,
+      "startFrame": 1421,
+      "endFrame": 1421
+    },
+    {
+      "word": "rollback",
+      "start": 47.451,
+      "end": 47.822,
+      "startFrame": 1424,
+      "endFrame": 1435
+    },
+    {
+      "word": "target.",
+      "start": 47.869,
+      "end": 48.415,
+      "startFrame": 1436,
+      "endFrame": 1452
+    },
+    {
+      "word": "If",
+      "start": 49.018,
+      "end": 49.169,
+      "startFrame": 1471,
+      "endFrame": 1475
+    },
+    {
+      "word": "anything",
+      "start": 49.227,
+      "end": 49.517,
+      "startFrame": 1477,
+      "endFrame": 1486
+    },
+    {
+      "word": "goes",
+      "start": 49.552,
+      "end": 49.75,
+      "startFrame": 1487,
+      "endFrame": 1493
+    },
+    {
+      "word": "wrong",
+      "start": 49.796,
+      "end": 49.982,
+      "startFrame": 1494,
+      "endFrame": 1499
+    },
+    {
+      "word": "in",
+      "start": 50.04,
+      "end": 50.098,
+      "startFrame": 1501,
+      "endFrame": 1503
+    },
+    {
+      "word": "production,",
+      "start": 50.156,
+      "end": 50.853,
+      "startFrame": 1505,
+      "endFrame": 1526
+    },
+    {
+      "word": "you",
+      "start": 51.062,
+      "end": 51.154,
+      "startFrame": 1532,
+      "endFrame": 1535
+    },
+    {
+      "word": "switch",
+      "start": 51.213,
+      "end": 51.468,
+      "startFrame": 1536,
+      "endFrame": 1544
+    },
+    {
+      "word": "back",
+      "start": 51.514,
+      "end": 51.665,
+      "startFrame": 1545,
+      "endFrame": 1550
+    },
+    {
+      "word": "in",
+      "start": 51.712,
+      "end": 51.77,
+      "startFrame": 1551,
+      "endFrame": 1553
+    },
+    {
+      "word": "seconds.\n\nThe",
+      "start": 51.828,
+      "end": 53.047,
+      "startFrame": 1555,
+      "endFrame": 1591
+    },
+    {
+      "word": "result:",
+      "start": 53.105,
+      "end": 53.755,
+      "startFrame": 1593,
+      "endFrame": 1613
+    },
+    {
+      "word": "code",
+      "start": 54.08,
+      "end": 54.359,
+      "startFrame": 1622,
+      "endFrame": 1631
+    },
+    {
+      "word": "plus",
+      "start": 54.382,
+      "end": 54.614,
+      "startFrame": 1631,
+      "endFrame": 1638
+    },
+    {
+      "word": "tests",
+      "start": 54.672,
+      "end": 54.986,
+      "startFrame": 1640,
+      "endFrame": 1650
+    },
+    {
+      "word": "combine",
+      "start": 55.044,
+      "end": 55.508,
+      "startFrame": 1651,
+      "endFrame": 1665
+    },
+    {
+      "word": "to",
+      "start": 55.543,
+      "end": 55.589,
+      "startFrame": 1666,
+      "endFrame": 1668
+    },
+    {
+      "word": "create",
+      "start": 55.648,
+      "end": 55.915,
+      "startFrame": 1669,
+      "endFrame": 1677
+    },
+    {
+      "word": "a",
+      "start": 55.938,
+      "end": 55.961,
+      "startFrame": 1678,
+      "endFrame": 1679
+    },
+    {
+      "word": "safe,",
+      "start": 56.054,
+      "end": 56.495,
+      "startFrame": 1682,
+      "endFrame": 1695
+    },
+    {
+      "word": "deployable",
+      "start": 56.623,
+      "end": 57.285,
+      "startFrame": 1699,
+      "endFrame": 1719
+    },
+    {
+      "word": "artifact.",
+      "start": 57.319,
+      "end": 57.993,
+      "startFrame": 1720,
+      "endFrame": 1740
+    },
+    {
+      "word": "Developers",
+      "start": 58.596,
+      "end": 59.107,
+      "startFrame": 1758,
+      "endFrame": 1773
+    },
+    {
+      "word": "commit",
+      "start": 59.165,
+      "end": 59.409,
+      "startFrame": 1775,
+      "endFrame": 1782
+    },
+    {
+      "word": "small",
+      "start": 59.467,
+      "end": 59.757,
+      "startFrame": 1784,
+      "endFrame": 1793
+    },
+    {
+      "word": "changes",
+      "start": 59.815,
+      "end": 60.175,
+      "startFrame": 1794,
+      "endFrame": 1805
+    },
+    {
+      "word": "often.",
+      "start": 60.233,
+      "end": 60.698,
+      "startFrame": 1807,
+      "endFrame": 1821
+    },
+    {
+      "word": "Conflicts",
+      "start": 61.302,
+      "end": 61.836,
+      "startFrame": 1839,
+      "endFrame": 1855
+    },
+    {
+      "word": "are",
+      "start": 61.87,
+      "end": 61.952,
+      "startFrame": 1856,
+      "endFrame": 1859
+    },
+    {
+      "word": "caught",
+      "start": 61.975,
+      "end": 62.196,
+      "startFrame": 1859,
+      "endFrame": 1866
+    },
+    {
+      "word": "early.",
+      "start": 62.23,
+      "end": 62.695,
+      "startFrame": 1867,
+      "endFrame": 1881
+    },
+    {
+      "word": "Deployments",
+      "start": 63.206,
+      "end": 63.74,
+      "startFrame": 1896,
+      "endFrame": 1912
+    },
+    {
+      "word": "become",
+      "start": 63.786,
+      "end": 64.053,
+      "startFrame": 1914,
+      "endFrame": 1922
+    },
+    {
+      "word": "routine,",
+      "start": 64.1,
+      "end": 64.738,
+      "startFrame": 1923,
+      "endFrame": 1942
+    },
+    {
+      "word": "not",
+      "start": 64.912,
+      "end": 65.098,
+      "startFrame": 1947,
+      "endFrame": 1953
+    },
+    {
+      "word": "emergencies.",
+      "start": 65.144,
+      "end": 66.131,
+      "startFrame": 1954,
+      "endFrame": 1984
+    }
+  ]
+}

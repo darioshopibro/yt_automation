@@ -56,7 +56,7 @@ python3 scripts/full-pipeline.py --file cleaned-transcript.txt --output-dir ./ou
 **ElevenLabs API:**
 ```typescript
 const ELEVENLABS_API_KEY = "sk_05502b179071a5af73848098c52b3b556ac144e89fe35998";
-const VOICE_ID = "21m00Tcm4TlvDq8ikWAM"; // Rachel
+const VOICE_ID = "IKne3meq5aSn9XLyUdCD"; // Charlie - Deep, Confident, Energetic
 
 // POST https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps
 // Body: { "text": "...", "model_id": "eleven_turbo_v2_5" }

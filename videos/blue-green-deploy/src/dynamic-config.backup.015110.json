@@ -64,13 +64,11 @@
           "nodes": [
             {
               "label": "Blue",
-              "icon": "Globe",
-              "color": "blue"
+              "icon": "Globe"
             },
             {
               "label": "Green",
-              "icon": "Leaf",
-              "color": "green"
+              "icon": "Leaf"
             }
           ]
         },
@@ -82,8 +80,7 @@
           "nodes": [
             {
               "label": "Commit",
-              "icon": "GitCommit",
-              "color": "green"
+              "icon": "GitCommit"
             },
             {
               "label": "CI",
@@ -162,7 +159,7 @@
             },
             {
               "label": "Artifact",
-              "icon": "CurrencyDollar"
+              "icon": "Archive"
             }
           ]
         }

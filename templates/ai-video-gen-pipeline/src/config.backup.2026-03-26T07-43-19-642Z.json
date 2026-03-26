@@ -18,14 +18,8 @@
           "colorKey": "userQuery",
           "startFrame": 355,
           "nodes": [
-            {
-              "label": "Prompt",
-              "icon": "textCursorInput"
-            },
-            {
-              "label": "Encoder",
-              "icon": "cpu"
-            }
+            { "label": "Prompt", "icon": "textCursorInput" },
+            { "label": "Encoder", "icon": "cpu" }
           ]
         },
         {
@@ -36,14 +30,8 @@
           "colorKey": "embedding",
           "startFrame": 467,
           "nodes": [
-            {
-              "label": "Words",
-              "icon": "type"
-            },
-            {
-              "label": "Vectors",
-              "icon": "grid3x3"
-            }
+            { "label": "Words", "icon": "type" },
+            { "label": "Vectors", "icon": "grid3x3" }
           ]
         },
         {
@@ -54,18 +42,9 @@
           "colorKey": "vectorSearch",
           "startFrame": 575,
           "nodes": [
-            {
-              "label": "Noise",
-              "icon": "cloudy"
-            },
-            {
-              "label": "Denoise",
-              "icon": "sparkles"
-            },
-            {
-              "label": "Frames",
-              "icon": "frame"
-            }
+            { "label": "Noise", "icon": "cloudy" },
+            { "label": "Denoise", "icon": "sparkles" },
+            { "label": "Frames", "icon": "frame" }
           ]
         },
         {
@@ -76,14 +55,8 @@
           "colorKey": "generate",
           "startFrame": 819,
           "nodes": [
-            {
-              "label": "Render",
-              "icon": "clapperboard"
-            },
-            {
-              "label": "Export",
-              "icon": "fileVideo"
-            }
+            { "label": "Render", "icon": "clapperboard" },
+            { "label": "Export", "icon": "fileVideo" }
           ]
         }
       ]
@@ -101,14 +74,8 @@
           "colorKey": "userQuery",
           "startFrame": 938,
           "nodes": [
-            {
-              "label": "Prompt",
-              "icon": "messageSquareText"
-            },
-            {
-              "label": "Image",
-              "icon": "image"
-            }
+            { "label": "Prompt", "icon": "messageSquareText" },
+            { "label": "Image", "icon": "image" }
           ]
         },
         {
@@ -119,18 +86,9 @@
           "colorKey": "embedding",
           "startFrame": 1103,
           "nodes": [
-            {
-              "label": "Text",
-              "icon": "fileText"
-            },
-            {
-              "label": "Visual",
-              "icon": "eye"
-            },
-            {
-              "label": "Merge",
-              "icon": "merge"
-            }
+            { "label": "Text", "icon": "fileText" },
+            { "label": "Visual", "icon": "eye" },
+            { "label": "Merge", "icon": "merge" }
           ]
         },
         {
@@ -141,14 +99,8 @@
           "colorKey": "vectorSearch",
           "startFrame": 1303,
           "nodes": [
-            {
-              "label": "Motion",
-              "icon": "move3d"
-            },
-            {
-              "label": "Frames",
-              "icon": "layers"
-            }
+            { "label": "Motion", "icon": "move3d" },
+            { "label": "Frames", "icon": "layers" }
           ]
         },
         {
@@ -159,14 +111,8 @@
           "colorKey": "generate",
           "startFrame": 1499,
           "nodes": [
-            {
-              "label": "Render",
-              "icon": "film"
-            },
-            {
-              "label": "Quality",
-              "icon": "sparkle"
-            }
+            { "label": "Render", "icon": "film" },
+            { "label": "Quality", "icon": "sparkle" }
           ]
         }
       ]
@@ -184,14 +130,8 @@
           "colorKey": "userQuery",
           "startFrame": 1604,
           "nodes": [
-            {
-              "label": "Prompt",
-              "icon": "pencilLine"
-            },
-            {
-              "label": "Scene",
-              "icon": "captions"
-            }
+            { "label": "Prompt", "icon": "pencilLine" },
+            { "label": "Scene", "icon": "captions" }
           ]
         },
         {
@@ -202,14 +142,8 @@
           "colorKey": "embedding",
           "startFrame": 1753,
           "nodes": [
-            {
-              "label": "Attention",
-              "icon": "focus"
-            },
-            {
-              "label": "Patches",
-              "icon": "layoutGrid"
-            }
+            { "label": "Attention", "icon": "focus" },
+            { "label": "Patches", "icon": "layoutGrid" }
           ]
         },
         {
@@ -220,14 +154,8 @@
           "colorKey": "vectorSearch",
           "startFrame": 1964,
           "nodes": [
-            {
-              "label": "Physics",
-              "icon": "orbit"
-            },
-            {
-              "label": "Objects",
-              "icon": "boxes"
-            }
+            { "label": "Physics", "icon": "orbit" },
+            { "label": "Objects", "icon": "boxes" }
           ]
         },
         {
@@ -238,14 +166,8 @@
           "colorKey": "generate",
           "startFrame": 2063,
           "nodes": [
-            {
-              "label": "Temporal",
-              "icon": "clock"
-            },
-            {
-              "label": "Video",
-              "icon": "video"
-            }
+            { "label": "Temporal", "icon": "clock" },
+            { "label": "Video", "icon": "video" }
           ]
         }
       ]

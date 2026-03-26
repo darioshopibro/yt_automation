@@ -82,8 +82,7 @@
           "nodes": [
             {
               "label": "Commit",
-              "icon": "GitCommit",
-              "color": "green"
+              "icon": "GitCommit"
             },
             {
               "label": "CI",
@@ -162,7 +161,7 @@
             },
             {
               "label": "Artifact",
-              "icon": "CurrencyDollar"
+              "icon": "Archive"
             }
           ]
         }
