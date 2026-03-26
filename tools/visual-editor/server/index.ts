@@ -154,6 +154,109 @@ app.get('/api/audio', (req, res) => {
   res.sendFile(audioPath);
 });
 
+// ========== Brand Endpoints ==========
+
+import multer from 'multer';
+
+const BRANDS_PATH = path.join(BASE_PATH, 'brands');
+
+// GET /api/brands — list all brands
+app.get('/api/brands', (_req, res) => {
+  if (!fs.existsSync(BRANDS_PATH)) {
+    return res.json({ brands: [] });
+  }
+  try {
+    const entries = fs.readdirSync(BRANDS_PATH, { withFileTypes: true });
+    const brands = entries
+      .filter(e => e.isDirectory() && fs.existsSync(path.join(BRANDS_PATH, e.name, 'brand.json')))
+      .map(e => e.name);
+    res.json({ brands });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/brands/:name — read brand config
+app.get('/api/brands/:name', (req, res) => {
+  const name = req.params.name.replace(/\.\./g, '');
+  const brandPath = path.join(BRANDS_PATH, name, 'brand.json');
+  if (!fs.existsSync(brandPath)) {
+    return res.status(404).json({ error: `Brand not found: ${name}` });
+  }
+  try {
+    const brand = JSON.parse(fs.readFileSync(brandPath, 'utf-8'));
+    res.json({ brand });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/brands/:name — save brand config
+app.post('/api/brands/:name', (req, res) => {
+  const name = req.params.name.replace(/\.\./g, '');
+  const brandDir = path.join(BRANDS_PATH, name);
+  const brandPath = path.join(brandDir, 'brand.json');
+
+  if (!fs.existsSync(brandDir)) {
+    fs.mkdirSync(brandDir, { recursive: true });
+  }
+
+  try {
+    fs.writeFileSync(brandPath, JSON.stringify(req.body, null, 2) + '\n', 'utf-8');
+    console.log(`Brand saved: ${brandPath}`);
+    res.json({ success: true });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// File upload for brand assets
+const brandUpload = multer({
+  storage: multer.diskStorage({
+    destination: (req, _file, cb) => {
+      const name = (req.params as any).name?.replace(/\.\./g, '') || 'default';
+      const dir = path.join(BRANDS_PATH, name);
+      if (!fs.existsSync(dir)) fs.mkdirSync(dir, { recursive: true });
+      cb(null, dir);
+    },
+    filename: (_req, file, cb) => {
+      const type = (_req.body?.type as string) || 'asset';
+      const ext = path.extname(file.originalname) || '.png';
+      cb(null, `${type}${ext}`);
+    },
+  }),
+  limits: { fileSize: 50 * 1024 * 1024 }, // 50MB for video
+});
+
+// POST /api/brands/:name/upload — upload logo, intro, or outro
+app.post('/api/brands/:name/upload', brandUpload.single('file'), (req, res) => {
+  if (!req.file) {
+    return res.status(400).json({ error: 'No file uploaded' });
+  }
+  const relativePath = req.file.filename;
+  console.log(`Brand file uploaded: ${req.file.path}`);
+  res.json({ success: true, path: relativePath });
+});
+
+// GET /api/brands/:name/logo — serve logo file
+app.get('/api/brands/:name/logo', (req, res) => {
+  const name = req.params.name.replace(/\.\./g, '');
+  const brandDir = path.join(BRANDS_PATH, name);
+
+  // Find logo file (any extension)
+  if (!fs.existsSync(brandDir)) {
+    return res.status(404).json({ error: 'Brand not found' });
+  }
+
+  const files = fs.readdirSync(brandDir);
+  const logoFile = files.find(f => f.startsWith('logo.'));
+  if (!logoFile) {
+    return res.status(404).json({ error: 'No logo found' });
+  }
+
+  res.sendFile(path.join(brandDir, logoFile));
+});
+
 // ========== Voice / TTS Endpoints ==========
 
 const ELEVENLABS_API_KEY = 'sk_05502b179071a5af73848098c52b3b556ac144e89fe35998';

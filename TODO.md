@@ -13,32 +13,22 @@ bo**Vreme po videu:** 30-60 min
 
 ## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
 
-### FAZA 1: Korekcije workflow ⚡ NAJHITNIJE
+### FAZA 1: Korekcije workflow ✅ DONE
 
-**1A: AI Correction Skill** (brzo za napraviti, odmah korisno)
-- [ ] 1A.1 Napravi `remotion-correction` skill koji čita dynamic-config.json KONKRETNOG projekta
-- [ ] 1A.2 Skill prima putanju projekta (npr. "videos/blue-green-deploy")
-- [ ] 1A.3 Čita CURRENT config, radi SAMO traženu promenu, save
-- [ ] 1A.4 Pravilo: NIKAD ne pokreće builder/planner ponovo, NIKAD ne menja .tsx
-- [ ] 1A.5 Primeri: zameni ikonu, promeni boju, promeni layout, dodaj/obriši node, promeni label
+**1A: AI Correction Skill** ✅
+- [x] remotion-correction skill — čita/menja dynamic-config.json, auto-backup
 
-**1B: Visual Editor** (veći effort, game-changer)
-- [ ] 1B.1 React app (localhost:3002) koji čita/piše dynamic-config.json
-- [ ] 1B.2 Phosphor icon picker — search + preview svih 1512 ikona
-- [ ] 1B.3 Color picker za nodove i sticky-je
-- [ ] 1B.4 Layout dropdown (flow/vs/combine/if-else/merge/negation/bidirectional/filter/arrow)
-- [ ] 1B.5 Node add/remove/reorder
-- [ ] 1B.6 Label inline editing
-- [ ] 1B.7 Live preview — editor šalje save, Remotion hot-reloads
+**1B: Visual Editor** ✅
+- [x] React app (localhost:3002) — Figma-style canvas, icon picker, color picker, layout strip, inline editing, live preview
 
-**1C: Auto-backup**
-- [ ] 1C.1 Pre svakog edita (AI ili editor) sačuvaj verziju (config.v1.json, config.v2.json...)
+**1C: Auto-backup** ✅ (parcijalno)
+- [x] Auto-backup pre svake AI korekcije
 - [ ] 1C.2 Rollback komanda — "vrati na verziju 3"
 
-**1D: Voice korekcije**
-- [ ] 1D.1 Regeneriši ceo voiceover sa popravljenim tekstom
-- [ ] 1D.2 Splice segment — zameni samo jednu rečenicu u mp3
-- [ ] 1D.3 Auto-update timestamps posle voice promene
+**1D: Voice korekcije** ✅
+- [x] Regenerate full voiceover (ElevenLabs)
+- [x] Splice segment
+- [x] Editor integration (player, transcript, voice picker)
 
 ### FAZA 2: Novi vizuali
 - [ ] 2.1 Table vizual (poređenja, feature matrice)
@@ -69,13 +59,13 @@ bo**Vreme po videu:** 30-60 min
 - [ ] 5.4 Content processing — preformuliše u originalan tekst (NE plagijat)
 - [ ] 5.5 User review — prikazuje kandidate, user bira/odobrava
 
-### FAZA 6: Branding skill
+### FAZA 6: Branding skill (zahteva focus — radi se kad bude vreme)
 - [ ] 6.1 Brand config — boje, font, logo, custom bg
 - [ ] 6.2 Template theming — svi vizuali čitaju brand config
 - [ ] 6.3 Per-project override — različiti brendovi za različite projekte
 - [ ] 6.4 Multi-template support — user može da bira između više template-a (ne samo 1), svaki sa svojim stilom/layoutom
 
-### FAZA 1.5: Editor poboljšanja
+### Editor poboljšanja (usput, kad radimo vizuale)
 - [ ] Sticky direction control — biramo gde ide sledeći sticky (desno, dole, levo, gore) umesto samo desno
 - [ ] Više icon library-ja — react-icons (40k+ ikona iz 25 libraryja) + update lookup u templateu
 - [ ] Vizuali unutar sticky-ja — nove komponente (table, chart, code) kao node tipovi

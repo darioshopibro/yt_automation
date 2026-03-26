@@ -109,19 +109,98 @@ interface StickyConfig {
   sections: SectionConfig[];
 }
 
+interface BrandStyleConfig {
+  stickyBorder?: boolean;
+  stickyBorderRadius?: number;
+  stickyBorderWidth?: number;
+  stickyBorderStyle?: string;
+  sectionBorder?: boolean;
+  sectionBorderRadius?: number;
+  glass?: {
+    enabled?: boolean;
+    blur?: number;
+    borderOpacity?: number;
+    glowIntensity?: number;
+  };
+  nodeShape?: string;
+  nodeIconSize?: number;
+  shadow?: boolean;
+}
+
+interface BrandConfig {
+  name?: string;
+  colors?: {
+    primary?: string;
+    secondary?: string;
+    accent?: string;
+    background?: string;
+    backgroundGradient?: string;
+    text?: string;
+    textMuted?: string;
+    stickyColors?: string[];
+  };
+  font?: {
+    heading?: string;
+    body?: string;
+    code?: string;
+  };
+  style?: BrandStyleConfig;
+  logo?: {
+    path?: string;
+    watermarkPosition?: string;
+    watermarkOpacity?: number;
+  };
+}
+
 interface Config {
   title: string;
   subtitle?: string;
   fps: number;
   totalFrames: number;
-  showStepPrefix?: boolean; // true = "Step 1: Title", false = just "Title"
+  showStepPrefix?: boolean;
   stickies: StickyConfig[];
+  brand?: BrandConfig;
 }
+
+// === THEME (reads brand config, falls back to defaults) ===
+
+const _brandCfg = config as Config;
+const brand = _brandCfg.brand || {};
+const brandColors = brand.colors || {};
+const brandFont = brand.font || {};
+const brandStyle = brand.style || {};
+const brandGlass = brandStyle.glass || {};
+
+const theme = {
+  bg: brandColors.background || "#030305",
+  bgGradient: brandColors.backgroundGradient || "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+  text: brandColors.text || "#f8fafc",
+  textMuted: brandColors.textMuted || "#94a3b8",
+  fontHeading: brandFont.heading || "'SF Mono', 'Fira Code', monospace",
+  fontBody: brandFont.body || "'Inter', -apple-system, sans-serif",
+  fontCode: brandFont.code || "'JetBrains Mono', 'Fira Code', monospace",
+  stickyBorder: brandStyle.stickyBorder !== false,
+  stickyBorderRadius: brandStyle.stickyBorderRadius ?? 20,
+  stickyBorderWidth: brandStyle.stickyBorderWidth ?? 1.5,
+  stickyBorderStyle: brandStyle.stickyBorderStyle || "solid",
+  sectionBorderRadius: brandStyle.sectionBorderRadius ?? 20,
+  glassEnabled: brandGlass.enabled !== false,
+  glassBlur: brandGlass.blur ?? 16,
+  glassBorderOpacity: brandGlass.borderOpacity ?? 0.37,
+  glassGlowIntensity: brandGlass.glowIntensity ?? 1.0,
+  shadow: brandStyle.shadow !== false,
+  nodeIconSize: brandStyle.nodeIconSize ?? 56,
+  nodeShape: brandStyle.nodeShape || "rounded",
+  stickyColors: brandColors.stickyColors,
+  logoPath: brand.logo?.path || "",
+  logoPosition: brand.logo?.watermarkPosition || "bottom-right",
+  logoOpacity: brand.logo?.watermarkOpacity ?? 0.3,
+};
 
 // === COLORS ===
 
 const colors = {
-  bg: "#030305",
+  bg: theme.bg,
   bgGradient1: "#080810",
   bgGradient2: "#050508",
 
@@ -163,8 +242,8 @@ const colors = {
     accent: "#4ade80",
   },
 
-  text: "#f8fafc",
-  textMuted: "#94a3b8",
+  text: theme.text,
+  textMuted: theme.textMuted,
   textAccent: "#e2e8f0",
   line: "#60a5fa",
 };
@@ -228,33 +307,34 @@ const getColorScheme = (key: string): ColorScheme => {
 // activeIntensity: 0 = not visible, 0.35 = dimmed (past), 1 = fully active (current topic)
 // GLOW ONLY ON ACTIVE - dimmed sections get NO colored glow
 const glassStyle = (borderColor: string, glowColor: string, activeIntensity: number = 1): React.CSSProperties => {
-  // Only apply colored glow when intensity > 0.5 (active state)
   const isActive = activeIntensity > 0.5;
-  const glowStrength = isActive ? (activeIntensity - 0.5) * 2 : 0; // 0-1 only when active
+  const glowStrength = isActive ? (activeIntensity - 0.5) * 2 : 0;
 
-  const borderWidth = 1.5;
-  const borderHex = Math.round((0.25 + (isActive ? 0.35 : 0)) * 255).toString(16).padStart(2, '0');
+  const borderWidth = theme.stickyBorderWidth;
+  const borderHex = Math.round((theme.glassBorderOpacity + (isActive ? 0.15 : 0)) * 255).toString(16).padStart(2, '0');
 
-  // Parse glow color base
-  const glowBase = glowColor.replace(/[\d.]+\)$/, ''); // "rgba(59, 130, 246, "
+  const glowBase = glowColor.replace(/[\d.]+\)$/, '');
+  const gi = theme.glassGlowIntensity;
 
-  // Build box-shadow: colored glow ONLY when active, always keep base shadow
-  const coloredGlow = isActive
-    ? `0 0 ${Math.round(40 + glowStrength * 40)}px ${glowBase}${(0.3 + glowStrength * 0.2).toFixed(2)}),
-       0 0 ${Math.round(60 + glowStrength * 60)}px ${glowBase}${(0.15 + glowStrength * 0.15).toFixed(2)}),`
-    : ''; // No colored glow when dimmed
+  const coloredGlow = isActive && theme.shadow
+    ? `0 0 ${Math.round((40 + glowStrength * 40) * gi)}px ${glowBase}${(0.3 + glowStrength * 0.2).toFixed(2)}),
+       0 0 ${Math.round((60 + glowStrength * 60) * gi)}px ${glowBase}${(0.15 + glowStrength * 0.15).toFixed(2)}),`
+    : '';
+
+  const baseShadow = theme.shadow
+    ? `0 8px 40px rgba(0, 0, 0, 0.6), inset 0 1px 0 rgba(255, 255, 255, 0.08), inset 0 -1px 0 rgba(0, 0, 0, 0.2)`
+    : 'none';
 
   return {
-    backdropFilter: "blur(16px) saturate(180%)",
-    WebkitBackdropFilter: "blur(16px) saturate(180%)",
-    border: `${borderWidth}px solid ${borderColor}${borderHex}`,
-    boxShadow: `
-      ${coloredGlow}
-      0 8px 40px rgba(0, 0, 0, 0.6),
-      inset 0 1px 0 rgba(255, 255, 255, 0.08),
-      inset 0 -1px 0 rgba(0, 0, 0, 0.2)
-    `,
-    borderRadius: 20,
+    ...(theme.glassEnabled ? {
+      backdropFilter: `blur(${theme.glassBlur}px) saturate(180%)`,
+      WebkitBackdropFilter: `blur(${theme.glassBlur}px) saturate(180%)`,
+    } : {}),
+    ...(theme.stickyBorder ? {
+      border: `${borderWidth}px ${theme.stickyBorderStyle} ${borderColor}${borderHex}`,
+    } : {}),
+    boxShadow: coloredGlow ? `${coloredGlow} ${baseShadow}` : baseShadow,
+    borderRadius: theme.stickyBorderRadius,
   };
 };
 
@@ -494,7 +574,7 @@ const StickyNote: React.FC<{
       letterSpacing: 2,
       textTransform: "uppercase",
       boxShadow: `0 -4px 30px ${color}60`,
-      fontFamily: "'SF Mono', 'Fira Code', monospace",
+      fontFamily: theme.fontHeading,
     }}>
       {showStepPrefix ? `Step ${step}: ${title}` : title}
     </div>
@@ -503,8 +583,8 @@ const StickyNote: React.FC<{
     <div style={{
       width: "100%",
       height: "100%",
-      border: `2px dashed ${color}40`,
-      borderRadius: 20,
+      border: theme.stickyBorder ? `2px dashed ${color}40` : 'none',
+      borderRadius: theme.sectionBorderRadius,
       background: `linear-gradient(145deg, ${color}08 0%, ${color}02 100%)`,
       position: "relative",
     }}>
@@ -568,7 +648,7 @@ const SectionBox: React.FC<{
           color: colorScheme.accent,
           textTransform: "uppercase",
           letterSpacing: 3,
-          fontFamily: "'SF Mono', 'Fira Code', monospace",
+          fontFamily: theme.fontHeading,
         }}>
           {title}
         </div>
@@ -584,7 +664,7 @@ const SectionBox: React.FC<{
           fontSize: 10,
           color: colors.textMuted,
           marginBottom: 12,
-          fontFamily: "'SF Mono', monospace",
+          fontFamily: theme.fontHeading,
         }}>
           {subtitle}
         </div>
@@ -679,7 +759,7 @@ const NodeItem: React.FC<{
         fontSize: 11,
         textAlign: "center",
         maxWidth: 75,
-        fontFamily: "'Inter', -apple-system, sans-serif",
+        fontFamily: theme.fontBody,
         fontWeight: 500,
         color: colors.textAccent,
       }}>
@@ -1068,9 +1148,9 @@ export const DynamicPipeline: React.FC = () => {
   return (
     <AbsoluteFill
       style={{
-        background: `radial-gradient(ellipse 120% 100% at 50% 0%, ${colors.bgGradient1} 0%, ${colors.bg} 50%, #000 100%)`,
+        background: theme.bgGradient || `radial-gradient(ellipse 120% 100% at 50% 0%, ${colors.bgGradient1} 0%, ${colors.bg} 50%, #000 100%)`,
         overflow: "hidden",
-        fontFamily: "'Inter', -apple-system, sans-serif",
+        fontFamily: theme.fontBody,
       }}
     >
       <MeshGradient />

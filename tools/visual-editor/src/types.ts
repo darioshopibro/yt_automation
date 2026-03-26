@@ -105,3 +105,60 @@ export function getColorValue(colorKey?: string, fallback: string = "#3b82f6"): 
   if (!colorKey) return fallback;
   return layoutColors[colorKey] || fallback;
 }
+
+// === Brand Config ===
+
+export interface BrandColors {
+  primary: string;
+  secondary: string;
+  accent: string;
+  background: string;
+  backgroundGradient: string;
+  text: string;
+  textMuted: string;
+  stickyColors: string[];
+}
+
+export interface BrandLogo {
+  path: string;
+  watermarkPosition: 'top-left' | 'top-right' | 'bottom-left' | 'bottom-right';
+  watermarkOpacity: number;
+}
+
+export interface BrandFont {
+  heading: string;
+  body: string;
+  code: string;
+}
+
+export interface BrandGlass {
+  enabled: boolean;
+  blur: number;
+  borderOpacity: number;
+  glowIntensity: number;
+}
+
+export interface BrandStyle {
+  stickyBorder: boolean;
+  stickyBorderRadius: number;
+  stickyBorderWidth: number;
+  stickyBorderStyle: 'solid' | 'dashed' | 'dotted' | 'none';
+  sectionBorder: boolean;
+  sectionBorderRadius: number;
+  glass: BrandGlass;
+  nodeShape: 'rounded' | 'square' | 'circle';
+  nodeIconSize: number;
+  connectorStyle: 'arrow' | 'line' | 'dotted';
+  shadow: boolean;
+  backgroundPattern: 'none' | 'dots' | 'grid' | 'noise';
+}
+
+export interface BrandConfig {
+  name: string;
+  colors: BrandColors;
+  logo: BrandLogo;
+  font: BrandFont;
+  style: BrandStyle;
+  intro: { videoPath: string };
+  outro: { videoPath: string };
+}

@@ -58,6 +58,14 @@ cp workspace/{project-name}/master-plan.json ./videos/{project-name}/src/
 
 Sounds su VEĆ u templateu (`public/sounds/whooshes/`).
 
+### KORAK 2.5: Kopiraj Brand Config (AKO POSTOJI)
+
+```bash
+# Proveri da li postoji aktivan brend
+ls brands/*/brand.json
+# Ako postoji, čitaj ga — brand.json se embeduje u dynamic-config.json (KORAK 3)
+```
+
 ### KORAK 3: Generiši `dynamic-config.json`
 
 Jedini fajl koji builder KREIRA. Transformacija iz master-plan.json:
@@ -68,6 +76,11 @@ Jedini fajl koji builder KREIRA. Transformacija iz master-plan.json:
   "fps": 30,
   "totalFrames": 1395,
   "showStepPrefix": true,
+  "brand": {
+    "colors": { "primary": "#3b82f6", "background": "#030305", "text": "#f8fafc" },
+    "font": { "heading": "SF Mono, monospace", "body": "Inter, sans-serif" },
+    "style": { "stickyBorder": true, "stickyBorderRadius": 20, "glass": { "enabled": true, "blur": 16 } }
+  },
   "stickies": [
     {
       "step": 1,
@@ -90,11 +103,16 @@ Jedini fajl koji builder KREIRA. Transformacija iz master-plan.json:
 }
 ```
 
+**Brand Integration:**
+- Ako `brands/` folder ima brend → čitaj `brand.json` i dodaj kao `brand` field u config
+- Ako nema brenda → ne dodaj `brand` field (template koristi default vrednosti)
+- Sticky boje: koristi `brand.colors.stickyColors[]` za rotaciju, ili default
+
 **Config Options:**
 - `showStepPrefix: true` → "STEP 1: RETRIEVE"
 - `showStepPrefix: false` → just "RETRIEVE"
 
-**Sticky Colors:** `#ef4444` (red), `#3b82f6` (blue), `#06b6d4` (cyan), `#22c55e` (green), `#a855f7` (purple), `#f97316` (orange)
+**Sticky Colors (default):** `#ef4444` (red), `#3b82f6` (blue), `#06b6d4` (cyan), `#22c55e` (green), `#a855f7` (purple), `#f97316` (orange)
 
 ### KORAK 4: Pokreni
 

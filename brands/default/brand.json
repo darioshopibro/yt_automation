@@ -1,0 +1,48 @@
+{
+  "name": "Default",
+  "colors": {
+    "primary": "#3b82f6",
+    "secondary": "#06b6d4",
+    "accent": "#f59e0b",
+    "background": "#030305",
+    "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+    "text": "#f8fafc",
+    "textMuted": "#94a3b8",
+    "stickyColors": ["#f97316", "#3b82f6", "#22c55e", "#a855f7"]
+  },
+  "logo": {
+    "path": "",
+    "watermarkPosition": "bottom-right",
+    "watermarkOpacity": 0.3
+  },
+  "font": {
+    "heading": "SF Mono, Fira Code, monospace",
+    "body": "Inter, system-ui, sans-serif",
+    "code": "JetBrains Mono, Fira Code, monospace"
+  },
+  "style": {
+    "stickyBorder": true,
+    "stickyBorderRadius": 20,
+    "stickyBorderWidth": 1.5,
+    "stickyBorderStyle": "solid",
+    "sectionBorder": true,
+    "sectionBorderRadius": 20,
+    "glass": {
+      "enabled": true,
+      "blur": 16,
+      "borderOpacity": 0.37,
+      "glowIntensity": 1.0
+    },
+    "nodeShape": "rounded",
+    "nodeIconSize": 56,
+    "connectorStyle": "arrow",
+    "shadow": true,
+    "backgroundPattern": "none"
+  },
+  "intro": {
+    "videoPath": ""
+  },
+  "outro": {
+    "videoPath": ""
+  }
+}

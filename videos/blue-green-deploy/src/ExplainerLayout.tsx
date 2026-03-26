@@ -389,56 +389,49 @@ const FlowLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ n
   </div>
 );
 
-// ARROW: A → B
+// ARROW: same as flow, just semantic name for simple connections
 const ArrowLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
-  <FlowLayout nodes={nodes.slice(0, 2)} defaultColor={defaultColor} />
+  <FlowLayout nodes={nodes} defaultColor={defaultColor} />
 );
 
-// VS: A vs B
+// VS: A vs B vs C (supports N nodes)
 const VsLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
   <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-    <Node
-      label={nodes[0]?.label || "A"}
-      icon={nodes[0]?.icon || "cube"}
-      color={getColor(nodes[0]?.color, layoutColors.red)}
-    />
-    <ConnectorWrap>
-      <VsSymbol color={defaultColor} />
-    </ConnectorWrap>
-    <Node
-      label={nodes[1]?.label || "B"}
-      icon={nodes[1]?.icon || "cube"}
-      color={getColor(nodes[1]?.color, layoutColors.green)}
-    />
+    {nodes.map((node, i) => (
+      <React.Fragment key={i}>
+        <Node label={node.label} icon={node.icon} color={getColor(node.color, defaultColor)} />
+        {i < nodes.length - 1 && (
+          <ConnectorWrap>
+            <VsSymbol color={defaultColor} />
+          </ConnectorWrap>
+        )}
+      </React.Fragment>
+    ))}
   </div>
 );
 
-// COMBINE: A + B = C
-const CombineLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (
-  <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
-    <Node
-      label={nodes[0]?.label || "A"}
-      icon={nodes[0]?.icon || "cube"}
-      color={getColor(nodes[0]?.color, defaultColor)}
-    />
-    <ConnectorWrap>
-      <PlusSymbol color={defaultColor} />
-    </ConnectorWrap>
-    <Node
-      label={nodes[1]?.label || "B"}
-      icon={nodes[1]?.icon || "cube"}
-      color={getColor(nodes[1]?.color, defaultColor)}
-    />
-    <ConnectorWrap>
-      <EqualsSymbol color={defaultColor} />
-    </ConnectorWrap>
-    <Node
-      label={nodes[2]?.label || "C"}
-      icon={nodes[2]?.icon || "sparkle"}
-      color={getColor(nodes[2]?.color, layoutColors.green)}
-    />
-  </div>
-);
+// COMBINE: A + B + C = D (N-1 inputs with + between, then = and last node)
+const CombineLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => {
+  if (nodes.length < 2) {
+    return <FlowLayout nodes={nodes} defaultColor={defaultColor} />;
+  }
+  const inputs = nodes.slice(0, -1);
+  const output = nodes[nodes.length - 1];
+  return (
+    <div style={{ display: "flex", alignItems: "flex-start", gap: 8 }}>
+      {inputs.map((node, i) => (
+        <React.Fragment key={i}>
+          <Node label={node.label} icon={node.icon} color={getColor(node.color, defaultColor)} />
+          {i < inputs.length - 1 && (
+            <ConnectorWrap><PlusSymbol color={defaultColor} /></ConnectorWrap>
+          )}
+        </React.Fragment>
+      ))}
+      <ConnectorWrap><EqualsSymbol color={defaultColor} /></ConnectorWrap>
+      <Node label={output.label} icon={output.icon} color={getColor(output.color, layoutColors.green)} />
+    </div>
+  );
+};
 
 // NEGATION: ✗A → B
 const NegationLayout: React.FC<{ nodes: NodeConfig[]; defaultColor: string }> = ({ nodes, defaultColor }) => (

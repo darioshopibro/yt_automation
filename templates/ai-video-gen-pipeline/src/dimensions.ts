@@ -54,16 +54,20 @@ export const getLayoutSize = (layout: string, nodeCount: number): { width: numbe
       return { width: flowWidth, height: NODE_HEIGHT };
 
     case "arrow":
-      // A → B (simple)
-      return { width: NODE_WIDTH * 2 + CONNECTOR_GAP * 2 + ARROW_WIDTH, height: NODE_HEIGHT };
+      // Same as flow — supports N nodes
+      const arrowWidth = (nodeCount * NODE_WIDTH) + ((nodeCount - 1) * (CONNECTOR_GAP * 2 + ARROW_WIDTH));
+      return { width: arrowWidth, height: NODE_HEIGHT };
 
     case "vs":
-      // A vs B
-      return { width: NODE_WIDTH * 2 + VS_WIDTH + CONNECTOR_GAP * 2, height: NODE_HEIGHT };
+      // A vs B vs C (supports N nodes)
+      const vsWidth = (nodeCount * NODE_WIDTH) + ((nodeCount - 1) * (CONNECTOR_GAP * 2 + VS_WIDTH));
+      return { width: vsWidth, height: NODE_HEIGHT };
 
     case "combine":
-      // A + B = C
-      return { width: NODE_WIDTH * 3 + PLUS_WIDTH + EQUALS_WIDTH + CONNECTOR_GAP * 4, height: NODE_HEIGHT };
+      // A + B + C = D (N-1 inputs with +, then = and output)
+      const combineInputs = Math.max(1, nodeCount - 1);
+      const combineW = (nodeCount * NODE_WIDTH) + ((combineInputs - 1) * (CONNECTOR_GAP * 2 + PLUS_WIDTH)) + (CONNECTOR_GAP * 2 + EQUALS_WIDTH);
+      return { width: combineW, height: NODE_HEIGHT };
 
     case "negation":
       // ✗A → B
@@ -80,8 +84,9 @@ export const getLayoutSize = (layout: string, nodeCount: number): { width: numbe
       return { width: NODE_WIDTH + CONNECTOR_GAP * 2 + ARROW_WIDTH + NODE_WIDTH, height: STACKED_HEIGHT };
 
     case "bidirectional":
-      // A ↔ B
-      return { width: NODE_WIDTH * 2 + CONNECTOR_GAP * 2 + ARROW_WIDTH, height: NODE_HEIGHT };
+      // A ↔ B (supports N nodes)
+      const biWidth = (nodeCount * NODE_WIDTH) + ((nodeCount - 1) * (CONNECTOR_GAP * 2 + ARROW_WIDTH));
+      return { width: biWidth, height: NODE_HEIGHT };
 
     case "filter":
       // A ▷ B

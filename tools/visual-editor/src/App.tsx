@@ -3,6 +3,7 @@ import { DynamicConfig } from './types';
 import { loadConfig, saveConfig, listProjects } from './api';
 import Canvas from './Canvas';
 import BottomPanel from './BottomPanel';
+import BrandingPage from './BrandingPage';
 
 // Deep clone helper
 function clone<T>(obj: T): T {
@@ -25,6 +26,7 @@ export default function App() {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [projects, setProjects] = useState<string[]>([]);
   const [dirty, setDirty] = useState(false);
+  const [activeTab, setActiveTab] = useState<'editor' | 'branding'>('editor');
 
   // Preview panel state
   const [showPreview, setShowPreview] = useState(false);
@@ -180,20 +182,47 @@ export default function App() {
         zIndex: 50,
         height: 38,
       }}>
-        {/* Title */}
-        <span style={{
-          fontSize: 13,
-          fontWeight: 700,
-          color: '#818cf8',
-          letterSpacing: '-0.02em',
-          whiteSpace: 'nowrap',
-        }}>
+        {/* Tab buttons */}
+        <button
+          onClick={() => setActiveTab('editor')}
+          style={{
+            background: activeTab === 'editor' ? '#818cf820' : 'transparent',
+            border: `1px solid ${activeTab === 'editor' ? '#818cf8' : 'transparent'}`,
+            borderRadius: 6,
+            padding: '3px 10px',
+            color: activeTab === 'editor' ? '#818cf8' : '#64748b',
+            fontSize: 12,
+            fontWeight: 700,
+            cursor: 'pointer',
+            letterSpacing: '-0.02em',
+            whiteSpace: 'nowrap',
+            transition: 'all 0.15s',
+          }}
+        >
           Visual Editor
-        </span>
+        </button>
+        <button
+          onClick={() => setActiveTab('branding')}
+          style={{
+            background: activeTab === 'branding' ? '#818cf820' : 'transparent',
+            border: `1px solid ${activeTab === 'branding' ? '#818cf8' : 'transparent'}`,
+            borderRadius: 6,
+            padding: '3px 10px',
+            color: activeTab === 'branding' ? '#818cf8' : '#64748b',
+            fontSize: 12,
+            fontWeight: 700,
+            cursor: 'pointer',
+            letterSpacing: '-0.02em',
+            whiteSpace: 'nowrap',
+            transition: 'all 0.15s',
+          }}
+        >
+          Branding
+        </button>
         <span style={{ color: '#1a1a2e', fontSize: 14 }}>|</span>
 
-        {/* Project dropdown — auto-loads on select */}
-        {projects.length > 0 && (
+        {/* Project dropdown — auto-loads on select (editor tab only) */}
+        {activeTab === 'editor' && projects.length > 0 && (
           <select
             value={project}
             onChange={e => {
@@ -220,7 +249,7 @@ export default function App() {
         )}
 
         {/* Config metadata */}
-        {config && (
+        {activeTab === 'editor' && config && (
           <>
             <span style={{ color: '#1a1a2e', fontSize: 14 }}>|</span>
             <span style={{ fontSize: 11, color: '#94a3b8', whiteSpace: 'nowrap' }}>
@@ -238,8 +267,8 @@ export default function App() {
         {/* Spacer */}
         <div style={{ flex: 1 }} />
 
-        {/* Preview toggle */}
-        <button
+        {/* Preview toggle (editor tab only) */}
+        {activeTab === 'editor' && <button
           onClick={() => setShowPreview(prev => !prev)}
           style={{
             background: showPreview ? '#818cf8' : 'transparent',
@@ -255,9 +284,10 @@ export default function App() {
           title="Toggle Remotion Preview"
         >
           {showPreview ? 'Hide Preview' : 'Preview'}
-        </button>
+        </button>}
 
-        {/* Undo icon button */}
+        {/* Undo icon button (editor tab only) */}
+        {activeTab === 'editor' &&
         <button
           onClick={handleUndo}
           disabled={history.length === 0}
@@ -299,9 +329,10 @@ export default function App() {
               {history.length}
             </span>
           )}
-        </button>
+        </button>}
 
-        {/* Save icon button with unsaved dot */}
+        {/* Save icon button with unsaved dot (editor tab only) */}
+        {activeTab === 'editor' &&
         <button
           onClick={handleSave}
           disabled={loading || !config}
@@ -337,43 +368,49 @@ export default function App() {
               boxShadow: '0 0 6px #22c55e',
             }} />
           )}
-        </button>
+        </button>}
       </div>
 
       {/* Main content area */}
-      <div style={{
-        flex: showPreview ? `0 0 ${100 - previewHeight}%` : '1 1 auto',
-        display: 'flex',
-        overflow: 'hidden',
-        transition: 'flex 0.2s ease',
-      }}>
-        {config ? (
-          <Canvas config={config} onChange={updateConfig} activeSection={activeSection} />
-        ) : (
-          <div style={{
-            flex: 1,
-            display: 'flex',
-            flexDirection: 'column',
-            alignItems: 'center',
-            justifyContent: 'center',
-            gap: 12,
-            color: '#475569',
-          }}>
-            {loading ? (
-              <span style={{ fontSize: 16 }}>Loading...</span>
-            ) : (
-              <>
-                <span style={{ fontSize: 48, opacity: 0.2 }}>~</span>
-                <span style={{ fontSize: 16 }}>No config loaded</span>
-                <span style={{ fontSize: 13 }}>Select a project above</span>
-              </>
-            )}
-          </div>
-        )}
-      </div>
+      {activeTab === 'branding' ? (
+        <div style={{ flex: 1, overflow: 'hidden' }}>
+          <BrandingPage />
+        </div>
+      ) : (
+        <div style={{
+          flex: showPreview ? `0 0 ${100 - previewHeight}%` : '1 1 auto',
+          display: 'flex',
+          overflow: 'hidden',
+          transition: 'flex 0.2s ease',
+        }}>
+          {config ? (
+            <Canvas config={config} onChange={updateConfig} activeSection={activeSection} />
+          ) : (
+            <div style={{
+              flex: 1,
+              display: 'flex',
+              flexDirection: 'column',
+              alignItems: 'center',
+              justifyContent: 'center',
+              gap: 12,
+              color: '#475569',
+            }}>
+              {loading ? (
+                <span style={{ fontSize: 16 }}>Loading...</span>
+              ) : (
+                <>
+                  <span style={{ fontSize: 48, opacity: 0.2 }}>~</span>
+                  <span style={{ fontSize: 16 }}>No config loaded</span>
+                  <span style={{ fontSize: 13 }}>Select a project above</span>
+                </>
+              )}
+            </div>
+          )}
+        </div>
+      )}
 
-      {/* Preview panel */}
-      {showPreview && (
+      {/* Preview panel (editor tab only) */}
+      {activeTab === 'editor' && showPreview && (
         <div style={{
           flex: `0 0 ${previewHeight}%`,
           display: 'flex',
@@ -501,8 +538,8 @@ export default function App() {
         </div>
       )}
 
-      {/* Bottom Panel (Player + Voice + Transcript) */}
-      {config && (
+      {/* Bottom Panel (Player + Voice + Transcript) — editor tab only */}
+      {activeTab === 'editor' && config && (
         <BottomPanel
           project={project}
           config={config}

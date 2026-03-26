@@ -75,26 +75,40 @@ function getLayoutSize(layout: string, nodeCount: number) {
   const ARROW_W = 40;
   const CONN_GAP = 20;
 
+  const VS_W = 50;
+  const PLUS_W = 30;
+  const EQUALS_W = 30;
+
   switch (layout) {
     case 'flow':
+    case 'arrow':
       return {
         width: (nodeCount * NODE_WIDTH) + ((nodeCount - 1) * (CONN_GAP * 2 + ARROW_W)),
         height: NODE_HEIGHT,
       };
-    case 'arrow':
-      return { width: NODE_WIDTH * 2 + CONN_GAP * 2 + ARROW_W, height: NODE_HEIGHT };
     case 'vs':
-      return { width: NODE_WIDTH * 2 + 50 + CONN_GAP * 2, height: NODE_HEIGHT };
-    case 'combine':
-      return { width: NODE_WIDTH * 3 + 30 + 30 + CONN_GAP * 4, height: NODE_HEIGHT };
+      return {
+        width: (nodeCount * NODE_WIDTH) + ((nodeCount - 1) * (CONN_GAP * 2 + VS_W)),
+        height: NODE_HEIGHT,
+      };
+    case 'bidirectional':
+      return {
+        width: (nodeCount * NODE_WIDTH) + ((nodeCount - 1) * (CONN_GAP * 2 + ARROW_W)),
+        height: NODE_HEIGHT,
+      };
+    case 'combine': {
+      const inputs = Math.max(1, nodeCount - 1);
+      return {
+        width: (nodeCount * NODE_WIDTH) + ((inputs - 1) * (CONN_GAP * 2 + PLUS_W)) + (CONN_GAP * 2 + EQUALS_W),
+        height: NODE_HEIGHT,
+      };
+    }
     case 'negation':
+    case 'filter':
       return { width: NODE_WIDTH * 2 + CONN_GAP * 2 + ARROW_W, height: NODE_HEIGHT };
     case 'if-else':
     case 'merge':
       return { width: NODE_WIDTH + CONN_GAP * 2 + ARROW_W + NODE_WIDTH, height: STACKED_HEIGHT };
-    case 'bidirectional':
-    case 'filter':
-      return { width: NODE_WIDTH * 2 + CONN_GAP * 2 + ARROW_W, height: NODE_HEIGHT };
     default:
       return { width: 0, height: 0 };
   }

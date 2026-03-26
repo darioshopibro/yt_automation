@@ -11,6 +11,19 @@ Planira KOMPLETNU video kompoziciju: voiceover, timestamps, struktura, camera, z
 
 ---
 
+## PRE-FLIGHT: BRAND CHECK
+
+Pre bilo kakvog generisanja, proveri da li postoji brand:
+```bash
+ls /Users/dario61/Desktop/YT\ automation/brands/*/brand.json 2>/dev/null
+```
+
+- Ako postoji → čitaj brand.json, prosledi builder-u da ga embeduje u config
+- Ako NE postoji → pitaj usera: "Nemaš setovan brend. Hoćeš da ga setupujemo pre generisanja? (Ili nastavljam sa default bojama)"
+- Brand sticky boje se koriste za rotaciju sticky-ja u planu
+
+---
+
 ## FUNDAMENTALNO: JEDNA KOMPOZICIJA
 
 **Vizualno + Audio + Camera + Sounds = JEDNA CELINA koja se planira ZAJEDNO.**
