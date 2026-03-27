@@ -1,0 +1,132 @@
+{
+  "title": "Building a Node.js REST API",
+  "fps": 30,
+  "totalFrames": 4041,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": ["#f97316", "#3b82f6", "#22c55e", "#a855f7"]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Setup",
+      "color": "#f97316",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Init",
+          "layout": "flow",
+          "startFrame": 351,
+          "nodes": [
+            { "label": "Package", "icon": "Package" },
+            { "label": "Express", "icon": "FileJsx" },
+            { "label": "CORS", "icon": "GlobeX" },
+            { "label": "Helmet", "icon": "ShieldCheck" }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Server",
+          "layout": "flow",
+          "startFrame": 999,
+          "nodes": [
+            { "label": "Import", "icon": "FileCode" },
+            { "label": "Stack", "icon": "Stack" },
+            { "label": "Listen", "icon": "Airplay" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Routes",
+      "color": "#3b82f6",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Health",
+          "layout": "arrow",
+          "startFrame": 1578,
+          "nodes": [
+            { "label": "Check", "icon": "Heartbeat" },
+            { "label": "OK", "icon": "CheckFat" }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "CRUD",
+          "layout": "flow",
+          "startFrame": 1788,
+          "nodes": [
+            { "label": "GET", "icon": "DownloadSimple" },
+            { "label": "POST", "icon": "Upload" },
+            { "label": "PUT", "icon": "PencilSimple" },
+            { "label": "DELETE", "icon": "Trash" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Protect",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Database",
+          "layout": "flow",
+          "startFrame": 2451,
+          "nodes": [
+            { "label": "Pool", "icon": "Database" },
+            { "label": "Query", "icon": "FileSql" },
+            { "label": "Params", "icon": "LockKey" }
+          ]
+        },
+        {
+          "id": "section_3_2",
+          "title": "Errors",
+          "layout": "flow",
+          "startFrame": 3081,
+          "nodes": [
+            { "label": "Catch", "icon": "Bug" },
+            { "label": "JSON", "icon": "BracketsCurly" },
+            { "label": "404", "icon": "NetworkSlash" }
+          ]
+        }
+      ]
+    }
+  ]
+}

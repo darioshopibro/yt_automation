@@ -1,0 +1,166 @@
+{
+  "title": "CI/CD Pipeline Explained",
+  "fps": 30,
+  "totalFrames": 3668,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": ["#f97316", "#3b82f6", "#22c55e"]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": { "enabled": true, "blur": 16, "borderOpacity": 0.37, "glowIntensity": 1.0 },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1, "title": "Pipeline", "color": "#f97316", "startFrame": 231,
+      "direction": "right", "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "s1_1", "title": "Stages", "subtitle": "The 4-Stage Pipeline", "startFrame": 225,
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Build", "description": "Compile & package" },
+              { "label": "Test", "description": "Unit, integration, E2E" },
+              { "label": "Stage", "description": "Mirror production" },
+              { "label": "Deploy", "description": "Blue-green switch" }
+            ]
+          }
+        },
+        {
+          "id": "s1_2", "title": "Trigger", "subtitle": "Code to Pipeline",
+          "layout": "flow", "startFrame": 350,
+          "nodes": [
+            { "label": "Branch", "icon": "GitBranch", "startFrame": 394 },
+            { "label": "Push", "icon": "CloudArrowUp", "startFrame": 434 },
+            { "label": "Webhook", "icon": "WebhooksLogo", "startFrame": 497 }
+          ]
+        },
+        {
+          "id": "s1_3", "title": "Compile", "subtitle": "Create Artifact",
+          "layout": "combine", "startFrame": 720,
+          "nodes": [
+            { "label": "Code", "icon": "Code", "startFrame": 737 },
+            { "label": "Deps", "icon": "Package", "startFrame": 766 },
+            { "label": "Artifact", "icon": "Archive", "startFrame": 891 }
+          ]
+        },
+        {
+          "id": "s1_4", "title": "Guard", "subtitle": "Pass or Fail",
+          "layout": "if-else", "startFrame": 935,
+          "nodes": [
+            { "label": "Build", "icon": "Hammer", "startFrame": 939 },
+            { "label": "Pass", "icon": "CheckCircle", "startFrame": 945 },
+            { "label": "Alert", "icon": "Bell", "startFrame": 996 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2, "title": "Validate", "color": "#3b82f6", "startFrame": 1124,
+      "direction": "right", "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "s2_1", "title": "Tests", "subtitle": "Three Layers",
+          "layout": "flow", "startFrame": 1168,
+          "nodes": [
+            { "label": "Unit", "icon": "Function", "startFrame": 1170 },
+            { "label": "Integrate", "icon": "PlugsConnected", "startFrame": 1234 },
+            { "label": "E2E", "icon": "UserCircle", "startFrame": 1288 }
+          ]
+        },
+        {
+          "id": "s2_2", "title": "Scope", "subtitle": "What Tests Verify",
+          "layout": "combine", "startFrame": 1430,
+          "nodes": [
+            { "label": "Verify", "icon": "MagnifyingGlass", "startFrame": 1434 },
+            { "label": "Connect", "icon": "ShareNetwork", "startFrame": 1528 },
+            { "label": "Coverage", "icon": "ShieldCheck", "startFrame": 1659 }
+          ]
+        },
+        {
+          "id": "s2_3", "title": "Staging", "subtitle": "Mirror Production",
+          "layout": "merge", "startFrame": 1840,
+          "nodes": [
+            { "label": "Deploy", "icon": "RocketLaunch", "startFrame": 1858 },
+            { "label": "Config", "icon": "GearSix", "startFrame": 1900 },
+            { "label": "Staging", "icon": "Cube", "startFrame": 2078 }
+          ]
+        },
+        {
+          "id": "s2_4", "title": "Review", "subtitle": "QA Approval",
+          "layout": "flow", "startFrame": 2160,
+          "nodes": [
+            { "label": "QA", "icon": "ListChecks", "startFrame": 2164 },
+            { "label": "Check", "icon": "ClipboardText", "startFrame": 2232 },
+            { "label": "Approve", "icon": "CheckFat", "startFrame": 2277 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3, "title": "Ship", "color": "#22c55e", "startFrame": 2349,
+      "direction": "right", "connectionToNext": "none",
+      "sections": [
+        {
+          "id": "s3_1", "title": "Blue-Green", "subtitle": "Two Environments",
+          "layout": "vs", "startFrame": 2445,
+          "nodes": [
+            { "label": "Blue", "icon": "Server", "startFrame": 2582 },
+            { "label": "Green", "icon": "HardDrives", "startFrame": 2646 }
+          ]
+        },
+        {
+          "id": "s3_2", "title": "Traffic", "subtitle": "Switch Over",
+          "layout": "arrow", "startFrame": 2710,
+          "nodes": [
+            { "label": "Switch", "icon": "ArrowsSplit", "startFrame": 2735 },
+            { "label": "Live", "icon": "Lightning", "startFrame": 2839 }
+          ]
+        },
+        {
+          "id": "s3_3", "title": "Rollback", "subtitle": "Instant Recovery",
+          "layout": "arrow", "startFrame": 2900,
+          "nodes": [
+            { "label": "Break", "icon": "Warning", "startFrame": 2912 },
+            { "label": "Flip", "icon": "ArrowCounterClockwise", "startFrame": 2938 }
+          ]
+        },
+        {
+          "id": "s3_4", "title": "Speed", "subtitle": "Pipeline Metrics", "startFrame": 3100,
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Pipeline", "value": "15 min", "subtitle": "Push to prod" },
+              { "label": "Rollback", "value": "<30s", "subtitle": "Zero downtime" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,154 @@
+{
+  "title": "How Claude Code Works",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Engine",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "CLI Assistant",
+          "subtitle": "Lives in your terminal",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Terminal", "icon": "Terminal" },
+            { "label": "AI", "icon": "Brain" },
+            { "label": "Code", "icon": "Code" }
+          ]
+        },
+        {
+          "title": "Input & Output",
+          "subtitle": "Type and get results",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Question", "icon": "ChatText" },
+            { "label": "API", "icon": "Plug" },
+            { "label": "Codebase", "icon": "FolderOpen" }
+          ]
+        },
+        {
+          "title": "API Call",
+          "subtitle": "Under the hood",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Message", "icon": "PaperPlaneTilt" },
+            { "label": "Anthropic", "icon": "Globe" },
+            { "label": "Context", "icon": "AppWindow" }
+          ]
+        },
+        {
+          "title": "Scale",
+          "subtitle": "Context window capacity",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Tokens", "value": "200K", "subtitle": "Context window" },
+              { "label": "Pages", "value": "500+", "subtitle": "Code at once" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "The Tools",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Actions",
+          "subtitle": "What Claude can do",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Read", "icon": "FileText" },
+            { "label": "Write", "icon": "PencilLine" },
+            { "label": "Bash", "icon": "TerminalWindow" }
+          ]
+        },
+        {
+          "title": "Search",
+          "subtitle": "Find and browse",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Grep", "icon": "MagnifyingGlass" },
+            { "label": "Browse", "icon": "GlobeSimple" },
+            { "label": "Scan", "icon": "Binoculars" }
+          ]
+        },
+        {
+          "title": "Permissions",
+          "subtitle": "You stay in control",
+          "layout": "vs",
+          "nodes": [
+            { "label": "Approve", "icon": "CheckCircle" },
+            { "label": "Deny", "icon": "XCircle" }
+          ]
+        },
+        {
+          "title": "Smart Context",
+          "subtitle": "Selects what matters",
+          "layout": "merge",
+          "nodes": [
+            { "label": "Config", "icon": "FileCode" },
+            { "label": "Git", "icon": "GitBranch" },
+            { "label": "Relevant", "icon": "Funnel" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Ship It",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Models",
+          "subtitle": "Pick the right one",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Opus", "icon": "Crown" },
+            { "label": "Sonnet", "icon": "Lightning" },
+            { "label": "Haiku", "icon": "Leaf" }
+          ]
+        },
+        {
+          "title": "Pricing",
+          "subtitle": "Usage-based costs",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Model", "Input", "Output"],
+            "rows": [
+              ["Opus", "$15/M", "$75/M"],
+              ["Sonnet", "$3/M", "$15/M"],
+              ["Haiku", "$0.25/M", "$1.25/M"]
+            ],
+            "highlightCol": 2
+          }
+        },
+        {
+          "title": "Typical Cost",
+          "subtitle": "Per coding session",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Session", "value": "$2-5", "subtitle": "With Sonnet" }
+            ]
+          }
+        },
+        {
+          "title": "Workflow",
+          "subtitle": "Simple and local",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Open", "icon": "Monitor" },
+            { "label": "Run", "icon": "Play" },
+            { "label": "Ship", "icon": "RocketLaunch" }
+          ]
+        }
+      ]
+    }
+  ]
+}

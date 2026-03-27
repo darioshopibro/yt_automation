@@ -5,6 +5,12 @@ export interface NodeItem {
   connectorAfter?: string;
 }
 
+export type ConnectionType = 'flow' | 'arrow' | 'vs' | 'bidirectional' | 'combine' | 'none';
+export type StickyDirection = 'right' | 'below' | 'left';
+
+export const CONNECTION_OPTIONS: ConnectionType[] = ['flow', 'arrow', 'vs', 'bidirectional', 'combine', 'none'];
+export const DIRECTION_OPTIONS: StickyDirection[] = ['right', 'below', 'left'];
+
 export interface Section {
   id: string;
   title: string;
@@ -12,6 +18,9 @@ export interface Section {
   colorKey?: string;
   layout: string;
   startFrame: number;
+  visualType?: string;
+  visualData?: any;
+  connectionToNext?: ConnectionType;
   nodes: NodeItem[];
 }
 
@@ -20,6 +29,8 @@ export interface Sticky {
   title: string;
   color: string;
   startFrame?: number;
+  direction?: StickyDirection;
+  connectionToNext?: ConnectionType;
   sections: Section[];
 }
 

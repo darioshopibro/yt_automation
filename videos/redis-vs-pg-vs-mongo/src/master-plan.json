@@ -1,0 +1,146 @@
+{
+  "meta": {
+    "title": "Redis vs PostgreSQL vs MongoDB",
+    "fps": 30,
+    "totalFrames": 3840,
+    "totalDuration": 128.0,
+    "hierarchyType": "sticky",
+    "port": 3010
+  },
+  "brand": { "file": "brands/default/brand.json" },
+  "voiceover": {
+    "file": "workspace/redis-vs-pg-vs-mongo/voiceover.mp3",
+    "timestamps": "workspace/redis-vs-pg-vs-mongo/voiceover-timestamps.json",
+    "duration": 126.967,
+    "wordCount": 261
+  },
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1", "step": 1, "title": "The Numbers", "color": "#f97316",
+        "startFrame": 0, "direction": "right", "connectionToNext": "flow",
+        "sections": [
+          {
+            "id": "section_1_1", "title": "Speed", "startFrame": 3,
+            "visualType": "bar-chart",
+            "visualData": {
+              "items": [
+                { "label": "Redis", "value": 100 },
+                { "label": "Mongo", "value": 25 },
+                { "label": "PG", "value": 5 }
+              ],
+              "unit": "K ops/s", "maxValue": 120
+            }
+          },
+          {
+            "id": "section_1_2", "title": "Monthly Cost", "startFrame": 432,
+            "visualType": "stats",
+            "visualData": {
+              "items": [
+                { "label": "Redis", "value": "$500/mo", "subtitle": "64GB RAM" },
+                { "label": "PG", "value": "$50/mo", "subtitle": "Same storage" }
+              ]
+            }
+          }
+        ]
+      },
+      {
+        "id": "sticky_2", "step": 2, "title": "The Databases", "color": "#3b82f6",
+        "startFrame": 920, "direction": "right", "connectionToNext": "flow",
+        "sections": [
+          {
+            "id": "section_2_1", "title": "Redis", "layout": "flow", "startFrame": 925,
+            "nodes": [
+              { "label": "Cache", "icon": "Bookmarks", "startFrame": 989 },
+              { "label": "Sessions", "icon": "Lock", "startFrame": 1020 },
+              { "label": "Rate Limit", "icon": "Queue", "startFrame": 1062 }
+            ]
+          },
+          {
+            "id": "section_2_2", "title": "PostgreSQL", "layout": "flow", "startFrame": 1360,
+            "nodes": [
+              { "label": "ACID", "icon": "Shield", "startFrame": 1424 },
+              { "label": "Joins", "icon": "Link", "startFrame": 1528 },
+              { "label": "Search", "icon": "MagnifyingGlass", "startFrame": 1619 }
+            ]
+          },
+          {
+            "id": "section_2_3", "title": "MongoDB", "layout": "flow", "startFrame": 1885,
+            "nodes": [
+              { "label": "Docs", "icon": "FileDoc", "startFrame": 1964 },
+              { "label": "Flex", "icon": "Plug", "startFrame": 2100 },
+              { "label": "Profiles", "icon": "UserList", "startFrame": 2140 }
+            ]
+          },
+          {
+            "id": "section_2_4", "title": "Trade-offs", "layout": "if-else", "startFrame": 2180,
+            "nodes": [
+              { "label": "Mongo", "icon": "Database", "startFrame": 2185 },
+              { "label": "No Joins", "icon": "X", "startFrame": 2218 },
+              { "label": "No Txns", "icon": "Warning", "startFrame": 2244 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3", "step": 3, "title": "The Winner", "color": "#22c55e",
+        "startFrame": 2285, "direction": "right", "connectionToNext": "none",
+        "sections": [
+          {
+            "id": "section_3_1", "title": "Market Share", "startFrame": 2290,
+            "visualType": "bar-chart",
+            "visualData": {
+              "items": [
+                { "label": "PG", "value": 85 },
+                { "label": "Redis", "value": 43 },
+                { "label": "Mongo", "value": 21 }
+              ],
+              "unit": "%", "maxValue": 100
+            }
+          },
+          {
+            "id": "section_3_2", "title": "Architecture", "layout": "flow", "startFrame": 2980,
+            "nodes": [
+              { "label": "Truth", "icon": "HardDrive", "startFrame": 3081 },
+              { "label": "Speed", "icon": "Speedometer", "startFrame": 3123 },
+              { "label": "Read", "icon": "FlowArrow", "startFrame": 3469 },
+              { "label": "Flush", "icon": "Eraser", "startFrame": 3665 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.45 },
+      { "frame": 15, "target": "sticky_1", "x": 350, "y": 400, "scale": 0.9 },
+      { "frame": 417, "target": "section_1_2", "x": 350, "y": 600, "scale": 1.0 },
+      { "frame": 910, "target": "sticky_2", "x": 850, "y": 400, "scale": 0.7 },
+      { "frame": 1345, "target": "section_2_2", "x": 900, "y": 400, "scale": 0.85 },
+      { "frame": 1870, "target": "section_2_3", "x": 850, "y": 600, "scale": 0.85 },
+      { "frame": 2165, "target": "section_2_4", "x": 900, "y": 600, "scale": 0.95 },
+      { "frame": 2275, "target": "sticky_3", "x": 1500, "y": 400, "scale": 0.9 },
+      { "frame": 2965, "target": "section_3_2", "x": 1500, "y": 600, "scale": 1.0 },
+      { "frame": 3780, "target": "overview", "x": 960, "y": 540, "scale": 0.45 }
+    ]
+  },
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 13, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 415, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 908, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 940, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1343, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 1380, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 1868, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 2163, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 2273, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2310, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 2963, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 3778, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.15 }
+    ],
+    "totalCount": 13
+  }
+}

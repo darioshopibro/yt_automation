@@ -1,0 +1,1438 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 128.126,
+  "wordCount": 285,
+  "words": [
+    {
+      "word": "Claude",
+      "start": 0.0,
+      "end": 0.372
+    },
+    {
+      "word": "Code",
+      "start": 0.406,
+      "end": 0.743
+    },
+    {
+      "word": "is",
+      "start": 0.789,
+      "end": 0.952
+    },
+    {
+      "word": "a",
+      "start": 0.998,
+      "end": 1.022
+    },
+    {
+      "word": "command-line",
+      "start": 1.08,
+      "end": 1.881
+    },
+    {
+      "word": "A",
+      "start": 1.962,
+      "end": 2.136
+    },
+    {
+      "word": "I",
+      "start": 2.31,
+      "end": 2.461
+    },
+    {
+      "word": "assistant",
+      "start": 2.577,
+      "end": 3.077
+    },
+    {
+      "word": "that",
+      "start": 3.251,
+      "end": 3.437
+    },
+    {
+      "word": "lives",
+      "start": 3.506,
+      "end": 3.75
+    },
+    {
+      "word": "in",
+      "start": 3.796,
+      "end": 3.855
+    },
+    {
+      "word": "your",
+      "start": 3.901,
+      "end": 3.994
+    },
+    {
+      "word": "terminal.",
+      "start": 4.029,
+      "end": 4.632
+    },
+    {
+      "word": "You",
+      "start": 5.236,
+      "end": 5.375
+    },
+    {
+      "word": "type",
+      "start": 5.445,
+      "end": 5.677
+    },
+    {
+      "word": "a",
+      "start": 5.712,
+      "end": 5.735
+    },
+    {
+      "word": "question",
+      "start": 5.782,
+      "end": 6.2
+    },
+    {
+      "word": "or",
+      "start": 6.374,
+      "end": 6.536
+    },
+    {
+      "word": "task,",
+      "start": 6.594,
+      "end": 7.129
+    },
+    {
+      "word": "and",
+      "start": 7.338,
+      "end": 7.488
+    },
+    {
+      "word": "Claude",
+      "start": 7.546,
+      "end": 7.86
+    },
+    {
+      "word": "reads",
+      "start": 7.895,
+      "end": 8.081
+    },
+    {
+      "word": "your",
+      "start": 8.115,
+      "end": 8.208
+    },
+    {
+      "word": "codebase,",
+      "start": 8.255,
+      "end": 8.893
+    },
+    {
+      "word": "writes",
+      "start": 9.044,
+      "end": 9.346
+    },
+    {
+      "word": "code,",
+      "start": 9.404,
+      "end": 9.845
+    },
+    {
+      "word": "runs",
+      "start": 10.089,
+      "end": 10.379
+    },
+    {
+      "word": "commands,",
+      "start": 10.437,
+      "end": 11.088
+    },
+    {
+      "word": "and",
+      "start": 11.204,
+      "end": 11.378
+    },
+    {
+      "word": "commits",
+      "start": 11.447,
+      "end": 11.842
+    },
+    {
+      "word": "changes.",
+      "start": 11.9,
+      "end": 12.55
+    },
+    {
+      "word": "All",
+      "start": 12.934,
+      "end": 13.201
+    },
+    {
+      "word": "from",
+      "start": 13.259,
+      "end": 13.398
+    },
+    {
+      "word": "the",
+      "start": 13.433,
+      "end": 13.502
+    },
+    {
+      "word": "terminal.\n\nHere's",
+      "start": 13.549,
+      "end": 14.884
+    },
+    {
+      "word": "how",
+      "start": 14.919,
+      "end": 15.023
+    },
+    {
+      "word": "it",
+      "start": 15.081,
+      "end": 15.151
+    },
+    {
+      "word": "works",
+      "start": 15.197,
+      "end": 15.452
+    },
+    {
+      "word": "under",
+      "start": 15.487,
+      "end": 15.65
+    },
+    {
+      "word": "the",
+      "start": 15.685,
+      "end": 15.754
+    },
+    {
+      "word": "hood.",
+      "start": 15.789,
+      "end": 16.126
+    },
+    {
+      "word": "You",
+      "start": 16.637,
+      "end": 16.776
+    },
+    {
+      "word": "send",
+      "start": 16.846,
+      "end": 17.031
+    },
+    {
+      "word": "a",
+      "start": 17.078,
+      "end": 17.101
+    },
+    {
+      "word": "message.",
+      "start": 17.147,
+      "end": 17.728
+    },
+    {
+      "word": "Claude",
+      "start": 18.169,
+      "end": 18.541
+    },
+    {
+      "word": "Code",
+      "start": 18.576,
+      "end": 18.901
+    },
+    {
+      "word": "calls",
+      "start": 18.947,
+      "end": 19.272
+    },
+    {
+      "word": "the",
+      "start": 19.33,
+      "end": 19.493
+    },
+    {
+      "word": "an-thro-pic",
+      "start": 19.609,
+      "end": 20.433
+    },
+    {
+      "word": "A",
+      "start": 20.549,
+      "end": 20.7
+    },
+    {
+      "word": "P",
+      "start": 20.851,
+      "end": 20.944
+    },
+    {
+      "word": "I",
+      "start": 21.223,
+      "end": 21.397
+    },
+    {
+      "word": "with",
+      "start": 21.722,
+      "end": 21.919
+    },
+    {
+      "word": "your",
+      "start": 21.966,
+      "end": 22.082
+    },
+    {
+      "word": "prompt",
+      "start": 22.14,
+      "end": 22.453
+    },
+    {
+      "word": "plus",
+      "start": 22.604,
+      "end": 22.894
+    },
+    {
+      "word": "context",
+      "start": 22.976,
+      "end": 23.44
+    },
+    {
+      "word": "from",
+      "start": 23.475,
+      "end": 23.614
+    },
+    {
+      "word": "your",
+      "start": 23.661,
+      "end": 23.765
+    },
+    {
+      "word": "project.",
+      "start": 23.8,
+      "end": 24.439
+    },
+    {
+      "word": "The",
+      "start": 24.949,
+      "end": 25.077
+    },
+    {
+      "word": "model",
+      "start": 25.158,
+      "end": 25.425
+    },
+    {
+      "word": "processes",
+      "start": 25.495,
+      "end": 26.041
+    },
+    {
+      "word": "everything",
+      "start": 26.157,
+      "end": 26.644
+    },
+    {
+      "word": "with",
+      "start": 26.703,
+      "end": 26.842
+    },
+    {
+      "word": "a",
+      "start": 26.888,
+      "end": 26.923
+    },
+    {
+      "word": "200K",
+      "start": 27.016,
+      "end": 27.666
+    },
+    {
+      "word": "token",
+      "start": 27.817,
+      "end": 28.177
+    },
+    {
+      "word": "context",
+      "start": 28.27,
+      "end": 28.723
+    },
+    {
+      "word": "window.",
+      "start": 28.769,
+      "end": 29.28
+    },
+    {
+      "word": "That's",
+      "start": 29.791,
+      "end": 30.081
+    },
+    {
+      "word": "roughly",
+      "start": 30.162,
+      "end": 30.499
+    },
+    {
+      "word": "500",
+      "start": 30.615,
+      "end": 31.161
+    },
+    {
+      "word": "pages",
+      "start": 31.219,
+      "end": 31.544
+    },
+    {
+      "word": "of",
+      "start": 31.59,
+      "end": 31.648
+    },
+    {
+      "word": "code",
+      "start": 31.706,
+      "end": 32.066
+    },
+    {
+      "word": "it",
+      "start": 32.24,
+      "end": 32.415
+    },
+    {
+      "word": "can",
+      "start": 32.461,
+      "end": 32.589
+    },
+    {
+      "word": "read",
+      "start": 32.67,
+      "end": 32.845
+    },
+    {
+      "word": "at",
+      "start": 32.879,
+      "end": 32.949
+    },
+    {
+      "word": "once.\n\nThe",
+      "start": 33.03,
+      "end": 34.203
+    },
+    {
+      "word": "tool",
+      "start": 34.273,
+      "end": 34.505
+    },
+    {
+      "word": "system",
+      "start": 34.574,
+      "end": 34.946
+    },
+    {
+      "word": "is",
+      "start": 35.097,
+      "end": 35.259
+    },
+    {
+      "word": "what",
+      "start": 35.329,
+      "end": 35.503
+    },
+    {
+      "word": "makes",
+      "start": 35.561,
+      "end": 35.77
+    },
+    {
+      "word": "it",
+      "start": 35.817,
+      "end": 35.886
+    },
+    {
+      "word": "powerful.",
+      "start": 35.944,
+      "end": 36.56
+    },
+    {
+      "word": "Claude",
+      "start": 37.163,
+      "end": 37.5
+    },
+    {
+      "word": "can",
+      "start": 37.523,
+      "end": 37.639
+    },
+    {
+      "word": "read",
+      "start": 37.709,
+      "end": 37.883
+    },
+    {
+      "word": "files,",
+      "start": 37.953,
+      "end": 38.533
+    },
+    {
+      "word": "write",
+      "start": 38.742,
+      "end": 39.033
+    },
+    {
+      "word": "files,",
+      "start": 39.068,
+      "end": 39.671
+    },
+    {
+      "word": "run",
+      "start": 39.915,
+      "end": 40.112
+    },
+    {
+      "word": "bash",
+      "start": 40.182,
+      "end": 40.391
+    },
+    {
+      "word": "commands,",
+      "start": 40.426,
+      "end": 41.006
+    },
+    {
+      "word": "search",
+      "start": 41.25,
+      "end": 41.529
+    },
+    {
+      "word": "code",
+      "start": 41.587,
+      "end": 41.784
+    },
+    {
+      "word": "with",
+      "start": 41.807,
+      "end": 41.924
+    },
+    {
+      "word": "grep,",
+      "start": 41.958,
+      "end": 42.388
+    },
+    {
+      "word": "and",
+      "start": 42.562,
+      "end": 42.713
+    },
+    {
+      "word": "even",
+      "start": 42.783,
+      "end": 42.98
+    },
+    {
+      "word": "browse",
+      "start": 43.05,
+      "end": 43.398
+    },
+    {
+      "word": "the",
+      "start": 43.433,
+      "end": 43.503
+    },
+    {
+      "word": "web.",
+      "start": 43.549,
+      "end": 44.002
+    },
+    {
+      "word": "Each",
+      "start": 44.605,
+      "end": 44.861
+    },
+    {
+      "word": "tool",
+      "start": 44.919,
+      "end": 45.174
+    },
+    {
+      "word": "call",
+      "start": 45.244,
+      "end": 45.465
+    },
+    {
+      "word": "goes",
+      "start": 45.546,
+      "end": 45.79
+    },
+    {
+      "word": "through",
+      "start": 45.848,
+      "end": 46.15
+    },
+    {
+      "word": "a",
+      "start": 46.231,
+      "end": 46.312
+    },
+    {
+      "word": "permission",
+      "start": 46.428,
+      "end": 46.904
+    },
+    {
+      "word": "system.",
+      "start": 46.974,
+      "end": 47.531
+    },
+    {
+      "word": "You",
+      "start": 48.042,
+      "end": 48.193
+    },
+    {
+      "word": "approve",
+      "start": 48.274,
+      "end": 48.727
+    },
+    {
+      "word": "or",
+      "start": 48.797,
+      "end": 48.959
+    },
+    {
+      "word": "deny",
+      "start": 49.017,
+      "end": 49.446
+    },
+    {
+      "word": "before",
+      "start": 49.597,
+      "end": 49.957
+    },
+    {
+      "word": "anything",
+      "start": 50.05,
+      "end": 50.549
+    },
+    {
+      "word": "executes.",
+      "start": 50.619,
+      "end": 51.339
+    },
+    {
+      "word": "No",
+      "start": 51.664,
+      "end": 51.815
+    },
+    {
+      "word": "surprises.\n\nThe",
+      "start": 51.873,
+      "end": 53.173
+    },
+    {
+      "word": "context",
+      "start": 53.231,
+      "end": 53.672
+    },
+    {
+      "word": "engine",
+      "start": 53.742,
+      "end": 53.986
+    },
+    {
+      "word": "is",
+      "start": 54.009,
+      "end": 54.079
+    },
+    {
+      "word": "smart.",
+      "start": 54.137,
+      "end": 54.694
+    },
+    {
+      "word": "It",
+      "start": 55.019,
+      "end": 55.159
+    },
+    {
+      "word": "reads",
+      "start": 55.228,
+      "end": 55.484
+    },
+    {
+      "word": "your",
+      "start": 55.542,
+      "end": 55.762
+    },
+    {
+      "word": "C",
+      "start": 55.832,
+      "end": 55.948
+    },
+    {
+      "word": "L",
+      "start": 56.192,
+      "end": 56.308
+    },
+    {
+      "word": "A",
+      "start": 56.424,
+      "end": 56.575
+    },
+    {
+      "word": "U",
+      "start": 56.726,
+      "end": 56.9
+    },
+    {
+      "word": "D",
+      "start": 56.993,
+      "end": 57.109
+    },
+    {
+      "word": "E.md",
+      "start": 57.283,
+      "end": 57.829
+    },
+    {
+      "word": "file",
+      "start": 57.98,
+      "end": 58.456
+    },
+    {
+      "word": "for",
+      "start": 58.549,
+      "end": 58.711
+    },
+    {
+      "word": "project",
+      "start": 58.769,
+      "end": 59.199
+    },
+    {
+      "word": "instructions.",
+      "start": 59.245,
+      "end": 60.012
+    },
+    {
+      "word": "It",
+      "start": 60.708,
+      "end": 60.847
+    },
+    {
+      "word": "scans",
+      "start": 60.905,
+      "end": 61.37
+    },
+    {
+      "word": "git",
+      "start": 61.451,
+      "end": 61.695
+    },
+    {
+      "word": "history.",
+      "start": 61.753,
+      "end": 62.275
+    },
+    {
+      "word": "It",
+      "start": 62.659,
+      "end": 62.798
+    },
+    {
+      "word": "uses",
+      "start": 62.868,
+      "end": 63.193
+    },
+    {
+      "word": "glob",
+      "start": 63.262,
+      "end": 63.518
+    },
+    {
+      "word": "patterns",
+      "start": 63.587,
+      "end": 63.912
+    },
+    {
+      "word": "to",
+      "start": 63.959,
+      "end": 64.017
+    },
+    {
+      "word": "find",
+      "start": 64.087,
+      "end": 64.307
+    },
+    {
+      "word": "relevant",
+      "start": 64.388,
+      "end": 64.795
+    },
+    {
+      "word": "files.",
+      "start": 64.853,
+      "end": 65.375
+    },
+    {
+      "word": "It",
+      "start": 65.7,
+      "end": 65.84
+    },
+    {
+      "word": "doesn't",
+      "start": 65.886,
+      "end": 66.188
+    },
+    {
+      "word": "dump",
+      "start": 66.234,
+      "end": 66.432
+    },
+    {
+      "word": "your",
+      "start": 66.478,
+      "end": 66.594
+    },
+    {
+      "word": "entire",
+      "start": 66.64,
+      "end": 67.012
+    },
+    {
+      "word": "codebase",
+      "start": 67.07,
+      "end": 67.581
+    },
+    {
+      "word": "into",
+      "start": 67.616,
+      "end": 67.755
+    },
+    {
+      "word": "the",
+      "start": 67.813,
+      "end": 67.883
+    },
+    {
+      "word": "prompt.",
+      "start": 67.918,
+      "end": 68.347
+    },
+    {
+      "word": "It",
+      "start": 68.626,
+      "end": 68.765
+    },
+    {
+      "word": "selects",
+      "start": 68.823,
+      "end": 69.253
+    },
+    {
+      "word": "what",
+      "start": 69.311,
+      "end": 69.473
+    },
+    {
+      "word": "matters.\n\nClaude",
+      "start": 69.543,
+      "end": 70.82
+    },
+    {
+      "word": "Code",
+      "start": 70.843,
+      "end": 71.134
+    },
+    {
+      "word": "supports",
+      "start": 71.168,
+      "end": 71.586
+    },
+    {
+      "word": "three",
+      "start": 71.679,
+      "end": 71.935
+    },
+    {
+      "word": "models.",
+      "start": 71.969,
+      "end": 72.538
+    },
+    {
+      "word": "Opus",
+      "start": 72.979,
+      "end": 73.386
+    },
+    {
+      "word": "for",
+      "start": 73.455,
+      "end": 73.56
+    },
+    {
+      "word": "complex",
+      "start": 73.618,
+      "end": 74.048
+    },
+    {
+      "word": "tasks.",
+      "start": 74.106,
+      "end": 74.675
+    },
+    {
+      "word": "Deep",
+      "start": 75.116,
+      "end": 75.348
+    },
+    {
+      "word": "reasoning,",
+      "start": 75.429,
+      "end": 75.975
+    },
+    {
+      "word": "architecture",
+      "start": 76.184,
+      "end": 76.788
+    },
+    {
+      "word": "decisions,",
+      "start": 76.822,
+      "end": 77.496
+    },
+    {
+      "word": "large",
+      "start": 77.74,
+      "end": 77.995
+    },
+    {
+      "word": "refactors.",
+      "start": 78.03,
+      "end": 78.75
+    },
+    {
+      "word": "Sonnet",
+      "start": 79.191,
+      "end": 79.539
+    },
+    {
+      "word": "for",
+      "start": 79.586,
+      "end": 79.678
+    },
+    {
+      "word": "everyday",
+      "start": 79.736,
+      "end": 80.073
+    },
+    {
+      "word": "coding.",
+      "start": 80.131,
+      "end": 80.654
+    },
+    {
+      "word": "Fast,",
+      "start": 81.095,
+      "end": 81.641
+    },
+    {
+      "word": "capable,",
+      "start": 81.815,
+      "end": 82.441
+    },
+    {
+      "word": "cost-effective.",
+      "start": 82.685,
+      "end": 83.567
+    },
+    {
+      "word": "Haiku",
+      "start": 84.078,
+      "end": 84.531
+    },
+    {
+      "word": "for",
+      "start": 84.601,
+      "end": 84.705
+    },
+    {
+      "word": "simple",
+      "start": 84.752,
+      "end": 85.03
+    },
+    {
+      "word": "tasks.",
+      "start": 85.065,
+      "end": 85.564
+    },
+    {
+      "word": "Quick",
+      "start": 85.901,
+      "end": 86.11
+    },
+    {
+      "word": "edits,",
+      "start": 86.145,
+      "end": 86.551
+    },
+    {
+      "word": "formatting,",
+      "start": 86.621,
+      "end": 87.283
+    },
+    {
+      "word": "lookups.",
+      "start": 87.387,
+      "end": 87.991
+    },
+    {
+      "word": "You",
+      "start": 88.513,
+      "end": 88.629
+    },
+    {
+      "word": "pick",
+      "start": 88.687,
+      "end": 88.827
+    },
+    {
+      "word": "the",
+      "start": 88.873,
+      "end": 88.943
+    },
+    {
+      "word": "model",
+      "start": 88.989,
+      "end": 89.21
+    },
+    {
+      "word": "that",
+      "start": 89.268,
+      "end": 89.372
+    },
+    {
+      "word": "fits",
+      "start": 89.43,
+      "end": 89.639
+    },
+    {
+      "word": "the",
+      "start": 89.686,
+      "end": 89.744
+    },
+    {
+      "word": "job.\n\nPricing",
+      "start": 89.802,
+      "end": 91.102
+    },
+    {
+      "word": "is",
+      "start": 91.184,
+      "end": 91.323
+    },
+    {
+      "word": "usage-based.",
+      "start": 91.427,
+      "end": 92.194
+    },
+    {
+      "word": "Opus",
+      "start": 92.646,
+      "end": 92.983
+    },
+    {
+      "word": "costs",
+      "start": 93.041,
+      "end": 93.355
+    },
+    {
+      "word": "$15",
+      "start": 93.54,
+      "end": 94.353
+    },
+    {
+      "word": "per",
+      "start": 94.423,
+      "end": 94.539
+    },
+    {
+      "word": "million",
+      "start": 94.62,
+      "end": 95.084
+    },
+    {
+      "word": "input",
+      "start": 95.143,
+      "end": 95.398
+    },
+    {
+      "word": "tokens",
+      "start": 95.433,
+      "end": 95.828
+    },
+    {
+      "word": "and",
+      "start": 96.002,
+      "end": 96.187
+    },
+    {
+      "word": "$75",
+      "start": 96.257,
+      "end": 96.965
+    },
+    {
+      "word": "per",
+      "start": 97.023,
+      "end": 97.116
+    },
+    {
+      "word": "million",
+      "start": 97.174,
+      "end": 97.406
+    },
+    {
+      "word": "output",
+      "start": 97.465,
+      "end": 97.732
+    },
+    {
+      "word": "tokens.",
+      "start": 97.766,
+      "end": 98.266
+    },
+    {
+      "word": "Sonnet",
+      "start": 98.985,
+      "end": 99.311
+    },
+    {
+      "word": "is",
+      "start": 99.369,
+      "end": 99.508
+    },
+    {
+      "word": "$3",
+      "start": 99.554,
+      "end": 99.786
+    },
+    {
+      "word": "input",
+      "start": 100.042,
+      "end": 100.32
+    },
+    {
+      "word": "and",
+      "start": 100.378,
+      "end": 100.483
+    },
+    {
+      "word": "$15",
+      "start": 100.552,
+      "end": 100.901
+    },
+    {
+      "word": "output.",
+      "start": 101.145,
+      "end": 101.632
+    },
+    {
+      "word": "Haiku",
+      "start": 102.085,
+      "end": 102.456
+    },
+    {
+      "word": "is",
+      "start": 102.503,
+      "end": 102.573
+    },
+    {
+      "word": "the",
+      "start": 102.631,
+      "end": 102.689
+    },
+    {
+      "word": "cheapest",
+      "start": 102.735,
+      "end": 103.107
+    },
+    {
+      "word": "at",
+      "start": 103.153,
+      "end": 103.223
+    },
+    {
+      "word": "$0.25",
+      "start": 103.258,
+      "end": 104.221
+    },
+    {
+      "word": "input",
+      "start": 104.291,
+      "end": 104.581
+    },
+    {
+      "word": "and",
+      "start": 104.639,
+      "end": 104.755
+    },
+    {
+      "word": "$1.25",
+      "start": 104.813,
+      "end": 105.51
+    },
+    {
+      "word": "output.",
+      "start": 105.568,
+      "end": 106.032
+    },
+    {
+      "word": "A",
+      "start": 106.473,
+      "end": 106.543
+    },
+    {
+      "word": "typical",
+      "start": 106.659,
+      "end": 107.054
+    },
+    {
+      "word": "coding",
+      "start": 107.124,
+      "end": 107.414
+    },
+    {
+      "word": "session",
+      "start": 107.472,
+      "end": 107.727
+    },
+    {
+      "word": "with",
+      "start": 107.774,
+      "end": 107.902
+    },
+    {
+      "word": "Sonnet",
+      "start": 107.948,
+      "end": 108.227
+    },
+    {
+      "word": "costs",
+      "start": 108.285,
+      "end": 108.528
+    },
+    {
+      "word": "about",
+      "start": 108.563,
+      "end": 108.761
+    },
+    {
+      "word": "$2",
+      "start": 108.807,
+      "end": 109.051
+    },
+    {
+      "word": "to",
+      "start": 109.144,
+      "end": 109.202
+    },
+    {
+      "word": "$5.\n\nThe",
+      "start": 109.26,
+      "end": 110.978
+    },
+    {
+      "word": "workflow",
+      "start": 111.048,
+      "end": 111.489
+    },
+    {
+      "word": "is",
+      "start": 111.547,
+      "end": 111.617
+    },
+    {
+      "word": "simple.",
+      "start": 111.675,
+      "end": 112.151
+    },
+    {
+      "word": "Open",
+      "start": 112.464,
+      "end": 112.754
+    },
+    {
+      "word": "your",
+      "start": 112.789,
+      "end": 112.882
+    },
+    {
+      "word": "terminal.",
+      "start": 112.917,
+      "end": 113.416
+    },
+    {
+      "word": "Navigate",
+      "start": 113.846,
+      "end": 114.31
+    },
+    {
+      "word": "to",
+      "start": 114.333,
+      "end": 114.38
+    },
+    {
+      "word": "your",
+      "start": 114.426,
+      "end": 114.519
+    },
+    {
+      "word": "project.",
+      "start": 114.566,
+      "end": 115.1
+    },
+    {
+      "word": "Run",
+      "start": 115.529,
+      "end": 115.738
+    },
+    {
+      "word": "claude.",
+      "start": 115.796,
+      "end": 116.284
+    },
+    {
+      "word": "Describe",
+      "start": 116.713,
+      "end": 117.166
+    },
+    {
+      "word": "what",
+      "start": 117.201,
+      "end": 117.305
+    },
+    {
+      "word": "you",
+      "start": 117.34,
+      "end": 117.421
+    },
+    {
+      "word": "want.",
+      "start": 117.491,
+      "end": 117.874
+    },
+    {
+      "word": "Review",
+      "start": 118.385,
+      "end": 118.687
+    },
+    {
+      "word": "the",
+      "start": 118.745,
+      "end": 118.815
+    },
+    {
+      "word": "changes.",
+      "start": 118.861,
+      "end": 119.5
+    },
+    {
+      "word": "Approve",
+      "start": 119.941,
+      "end": 120.51
+    },
+    {
+      "word": "or",
+      "start": 120.579,
+      "end": 120.73
+    },
+    {
+      "word": "deny.",
+      "start": 120.788,
+      "end": 121.311
+    },
+    {
+      "word": "Ship",
+      "start": 121.694,
+      "end": 121.961
+    },
+    {
+      "word": "it.",
+      "start": 122.019,
+      "end": 122.24
+    },
+    {
+      "word": "No",
+      "start": 122.681,
+      "end": 122.866
+    },
+    {
+      "word": "I",
+      "start": 122.983,
+      "end": 123.052
+    },
+    {
+      "word": "D",
+      "start": 123.168,
+      "end": 123.226
+    },
+    {
+      "word": "E",
+      "start": 123.343,
+      "end": 123.424
+    },
+    {
+      "word": "plugins",
+      "start": 123.482,
+      "end": 123.853
+    },
+    {
+      "word": "needed.",
+      "start": 123.9,
+      "end": 124.318
+    },
+    {
+      "word": "No",
+      "start": 124.643,
+      "end": 124.829
+    },
+    {
+      "word": "cloud",
+      "start": 124.887,
+      "end": 125.13
+    },
+    {
+      "word": "sync.",
+      "start": 125.177,
+      "end": 125.525
+    },
+    {
+      "word": "Everything",
+      "start": 125.908,
+      "end": 126.373
+    },
+    {
+      "word": "runs",
+      "start": 126.431,
+      "end": 126.663
+    },
+    {
+      "word": "locally",
+      "start": 126.733,
+      "end": 127.058
+    },
+    {
+      "word": "on",
+      "start": 127.116,
+      "end": 127.185
+    },
+    {
+      "word": "your",
+      "start": 127.243,
+      "end": 127.36
+    },
+    {
+      "word": "machine.",
+      "start": 127.394,
+      "end": 128.126
+    }
+  ]
+}

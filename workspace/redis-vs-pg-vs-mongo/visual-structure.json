@@ -1,0 +1,112 @@
+{
+  "title": "Redis vs PostgreSQL vs MongoDB",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Numbers",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Speed",
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "Redis", "value": 100 },
+              { "label": "Mongo", "value": 25 },
+              { "label": "PG", "value": 5 }
+            ],
+            "unit": "K ops/s",
+            "maxValue": 120
+          }
+        },
+        {
+          "title": "Monthly Cost",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Redis", "value": "$500/mo", "subtitle": "64GB RAM" },
+              { "label": "PG", "value": "$50/mo", "subtitle": "Same storage" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "The Databases",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Redis",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Cache", "icon": "Bookmarks" },
+            { "label": "Sessions", "icon": "Lock" },
+            { "label": "Rate Limit", "icon": "Queue" }
+          ]
+        },
+        {
+          "title": "PostgreSQL",
+          "layout": "flow",
+          "nodes": [
+            { "label": "ACID", "icon": "Shield" },
+            { "label": "Joins", "icon": "Link" },
+            { "label": "Search", "icon": "MagnifyingGlass" }
+          ]
+        },
+        {
+          "title": "MongoDB",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Docs", "icon": "FileDoc" },
+            { "label": "Flex", "icon": "Plug" },
+            { "label": "Profiles", "icon": "UserList" }
+          ]
+        },
+        {
+          "title": "Trade-offs",
+          "layout": "if-else",
+          "nodes": [
+            { "label": "Mongo", "icon": "Database" },
+            { "label": "No Joins", "icon": "X" },
+            { "label": "No Txns", "icon": "Warning" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "The Winner",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Market Share",
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "PG", "value": 85 },
+              { "label": "Redis", "value": 43 },
+              { "label": "Mongo", "value": 21 }
+            ],
+            "unit": "%",
+            "maxValue": 100
+          }
+        },
+        {
+          "title": "Architecture",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Truth", "icon": "HardDrive" },
+            { "label": "Speed", "icon": "Speedometer" },
+            { "label": "Read", "icon": "FlowArrow" },
+            { "label": "Flush", "icon": "Eraser" }
+          ]
+        }
+      ]
+    }
+  ]
+}

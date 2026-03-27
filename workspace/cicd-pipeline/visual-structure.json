@@ -1,0 +1,151 @@
+{
+  "title": "CI/CD Pipeline Explained",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Pipeline",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Stages",
+          "subtitle": "The 4-Stage Pipeline",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Build", "description": "Compile & package" },
+              { "label": "Test", "description": "Unit, integration, E2E" },
+              { "label": "Stage", "description": "Mirror production" },
+              { "label": "Deploy", "description": "Blue-green switch" }
+            ]
+          }
+        },
+        {
+          "title": "Trigger",
+          "subtitle": "Code to Pipeline",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Branch", "icon": "GitBranch" },
+            { "label": "Push", "icon": "CloudArrowUp" },
+            { "label": "Webhook", "icon": "WebhooksLogo" }
+          ]
+        },
+        {
+          "title": "Compile",
+          "subtitle": "Create Artifact",
+          "layout": "combine",
+          "nodes": [
+            { "label": "Code", "icon": "Code" },
+            { "label": "Deps", "icon": "Package" },
+            { "label": "Artifact", "icon": "Archive" }
+          ]
+        },
+        {
+          "title": "Guard",
+          "subtitle": "Pass or Fail",
+          "layout": "if-else",
+          "nodes": [
+            { "label": "Build", "icon": "Hammer" },
+            { "label": "Pass", "icon": "CheckCircle" },
+            { "label": "Alert", "icon": "Bell" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Validate",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Tests",
+          "subtitle": "Three Layers",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Unit", "icon": "Function" },
+            { "label": "Integrate", "icon": "PlugsConnected" },
+            { "label": "E2E", "icon": "UserCircle" }
+          ]
+        },
+        {
+          "title": "Scope",
+          "subtitle": "What Tests Verify",
+          "layout": "combine",
+          "nodes": [
+            { "label": "Verify", "icon": "MagnifyingGlass" },
+            { "label": "Connect", "icon": "ShareNetwork" },
+            { "label": "Coverage", "icon": "ShieldCheck" }
+          ]
+        },
+        {
+          "title": "Staging",
+          "subtitle": "Mirror Production",
+          "layout": "merge",
+          "nodes": [
+            { "label": "Deploy", "icon": "RocketLaunch" },
+            { "label": "Config", "icon": "GearSix" },
+            { "label": "Staging", "icon": "Cube" }
+          ]
+        },
+        {
+          "title": "Review",
+          "subtitle": "QA Approval",
+          "layout": "flow",
+          "nodes": [
+            { "label": "QA", "icon": "ListChecks" },
+            { "label": "Check", "icon": "ClipboardText" },
+            { "label": "Approve", "icon": "CheckFat" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Ship",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Blue-Green",
+          "subtitle": "Two Environments",
+          "layout": "vs",
+          "nodes": [
+            { "label": "Blue", "icon": "Server" },
+            { "label": "Green", "icon": "HardDrives" }
+          ]
+        },
+        {
+          "title": "Traffic",
+          "subtitle": "Switch Over",
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Switch", "icon": "ArrowsSplit" },
+            { "label": "Live", "icon": "Lightning" }
+          ]
+        },
+        {
+          "title": "Rollback",
+          "subtitle": "Instant Recovery",
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Break", "icon": "Warning" },
+            { "label": "Flip", "icon": "ArrowCounterClockwise" }
+          ]
+        },
+        {
+          "title": "Speed",
+          "subtitle": "Pipeline Metrics",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Pipeline", "value": "15 min", "subtitle": "Push to prod" },
+              { "label": "Rollback", "value": "<30s", "subtitle": "Zero downtime" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

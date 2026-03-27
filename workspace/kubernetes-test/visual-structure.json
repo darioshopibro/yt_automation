@@ -1,0 +1,169 @@
+{
+  "title": "Kubernetes Architecture Explained",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Overview",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Master vs Worker",
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Worker Nodes",
+              "items": [
+                "Run application containers",
+                "Container runtime (Docker)",
+                "Kubelet schedules pods",
+                "Kube-proxy handles networking"
+              ]
+            },
+            "right": {
+              "title": "Master Nodes",
+              "items": [
+                "Control cluster state",
+                "API Server (gateway)",
+                "Scheduler assigns nodes",
+                "Controller detects failures"
+              ]
+            },
+            "leftColor": "#3b82f6",
+            "rightColor": "#22c55e",
+            "dividerLabel": "vs"
+          }
+        },
+        {
+          "title": "Cluster Setup",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["", "Master", "Worker"],
+            "rows": [
+              ["Role", "Manage", "Execute"],
+              ["Count", "2+ (HA)", "3-100s"],
+              ["CPU/RAM", "Less", "More"],
+              ["Processes", "4", "3"]
+            ],
+            "highlightCol": 2
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Worker Nodes",
+      "direction": "right",
+      "connectionToNext": "bidirectional",
+      "sections": [
+        {
+          "title": "Three Processes",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Runtime", "icon": "Package" },
+            { "label": "Kubelet", "icon": "Cpu" },
+            { "label": "Kube-Proxy", "icon": "ShareNetwork" }
+          ]
+        },
+        {
+          "title": "Pod Lifecycle",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Config", "icon": "FileCode" },
+            { "label": "Schedule", "icon": "Timer" },
+            { "label": "Run Pod", "icon": "Play" },
+            { "label": "Resources", "icon": "HardDrives" }
+          ]
+        },
+        {
+          "title": "Smart Routing",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Request", "icon": "ArrowRight" },
+            { "label": "Service", "icon": "Funnel" },
+            { "label": "Same Node", "icon": "CheckCircle" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Master Nodes",
+      "direction": "below",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Control Plane",
+          "layout": "flow",
+          "nodes": [
+            { "label": "API Server", "icon": "Globe" },
+            { "label": "Scheduler", "icon": "ListChecks" },
+            { "label": "Controller", "icon": "ArrowsClockwise" },
+            { "label": "etcd", "icon": "Database" }
+          ]
+        },
+        {
+          "title": "API Server Flow",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Client Request", "description": "kubectl, dashboard, or API call" },
+              { "label": "Authentication", "description": "Validates credentials and permissions" },
+              { "label": "Forward", "description": "Routes to scheduler or controller" },
+              { "label": "Response", "description": "Returns cluster state or confirmation" }
+            ]
+          }
+        },
+        {
+          "title": "Self-Healing Cycle",
+          "layout": "negation",
+          "nodes": [
+            { "label": "Pod Crash", "icon": "Warning" },
+            { "label": "Recovery", "icon": "Recycle" }
+          ]
+        },
+        {
+          "title": "Cluster Brain",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "etcd", "value": "K/V Store", "subtitle": "Cluster state" },
+              { "label": "Data", "value": "State Only", "subtitle": "Not app data" },
+              { "label": "Replicated", "value": "Distributed", "subtitle": "Across masters" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Scaling",
+      "sections": [
+        {
+          "title": "How to Scale",
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Get new bare metal server",
+              "Install master or worker processes",
+              "Add to existing Kubernetes cluster",
+              "Pods auto-distribute to new nodes",
+              "Scale infinitely as demand grows"
+            ],
+            "style": "numbered"
+          }
+        },
+        {
+          "title": "Key Takeaway",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Self-managed, self-healing, infinitely scalable",
+            "highlight": ["self-managed", "self-healing", "scalable"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

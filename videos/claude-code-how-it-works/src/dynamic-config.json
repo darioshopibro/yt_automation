@@ -1,0 +1,216 @@
+{
+  "title": "How Claude Code Works",
+  "fps": 30,
+  "totalFrames": 3874,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": ["#f97316", "#3b82f6", "#22c55e", "#a855f7"]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Engine",
+      "color": "#f97316",
+      "startFrame": 5,
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "CLI Assistant",
+          "subtitle": "Lives in your terminal",
+          "layout": "flow",
+          "startFrame": 10,
+          "nodes": [
+            { "label": "Terminal", "icon": "Terminal", "startFrame": 10 },
+            { "label": "AI", "icon": "Brain", "startFrame": 55 },
+            { "label": "Code", "icon": "Code", "startFrame": 267 }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Input & Output",
+          "subtitle": "Type and get results",
+          "layout": "flow",
+          "startFrame": 150,
+          "nodes": [
+            { "label": "Question", "icon": "ChatText", "startFrame": 153 },
+            { "label": "API", "icon": "Plug", "startFrame": 222 },
+            { "label": "Codebase", "icon": "FolderOpen", "startFrame": 244 }
+          ]
+        },
+        {
+          "id": "section_1_3",
+          "title": "API Call",
+          "subtitle": "Under the hood",
+          "layout": "flow",
+          "startFrame": 435,
+          "nodes": [
+            { "label": "Message", "icon": "PaperPlaneTilt", "startFrame": 495 },
+            { "label": "Anthropic", "icon": "Globe", "startFrame": 584 },
+            { "label": "Context", "icon": "AppWindow", "startFrame": 649 }
+          ]
+        },
+        {
+          "id": "section_1_4",
+          "title": "Scale",
+          "subtitle": "Context window capacity",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Tokens", "value": "200K", "subtitle": "Context window" },
+              { "label": "Pages", "value": "500+", "subtitle": "Code at once" }
+            ]
+          },
+          "startFrame": 805
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "The Tools",
+      "color": "#3b82f6",
+      "startFrame": 1005,
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Actions",
+          "subtitle": "What Claude can do",
+          "layout": "flow",
+          "startFrame": 1020,
+          "nodes": [
+            { "label": "Read", "icon": "FileText", "startFrame": 1127 },
+            { "label": "Write", "icon": "PencilLine", "startFrame": 1158 },
+            { "label": "Bash", "icon": "TerminalWindow", "startFrame": 1193 }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "Search",
+          "subtitle": "Find and browse",
+          "layout": "flow",
+          "startFrame": 1230,
+          "nodes": [
+            { "label": "Grep", "icon": "MagnifyingGlass", "startFrame": 1234 },
+            { "label": "Browse", "icon": "GlobeSimple", "startFrame": 1261 },
+            { "label": "Scan", "icon": "Binoculars", "startFrame": 1311 }
+          ]
+        },
+        {
+          "id": "section_2_3",
+          "title": "Permissions",
+          "subtitle": "You stay in control",
+          "layout": "vs",
+          "startFrame": 1388,
+          "nodes": [
+            { "label": "Approve", "icon": "CheckCircle", "startFrame": 1444 },
+            { "label": "Deny", "icon": "XCircle", "startFrame": 1467 }
+          ]
+        },
+        {
+          "id": "section_2_4",
+          "title": "Smart Context",
+          "subtitle": "Selects what matters",
+          "layout": "merge",
+          "startFrame": 1580,
+          "nodes": [
+            { "label": "Config", "icon": "FileCode", "startFrame": 1671 },
+            { "label": "Git", "icon": "GitBranch", "startFrame": 1823 },
+            { "label": "Relevant", "icon": "Funnel", "startFrame": 1894 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Ship It",
+      "color": "#22c55e",
+      "startFrame": 2100,
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Models",
+          "subtitle": "Pick the right one",
+          "layout": "flow",
+          "startFrame": 2115,
+          "nodes": [
+            { "label": "Opus", "icon": "Crown", "startFrame": 2185 },
+            { "label": "Sonnet", "icon": "Lightning", "startFrame": 2372 },
+            { "label": "Haiku", "icon": "Leaf", "startFrame": 2518 }
+          ]
+        },
+        {
+          "id": "section_3_2",
+          "title": "Pricing",
+          "subtitle": "Usage-based costs",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Model", "Input", "Output"],
+            "rows": [
+              ["Opus", "$15/M", "$75/M"],
+              ["Sonnet", "$3/M", "$15/M"],
+              ["Haiku", "$0.25/M", "$1.25/M"]
+            ],
+            "highlightCol": 2
+          },
+          "startFrame": 2710
+        },
+        {
+          "id": "section_3_3",
+          "title": "Typical Cost",
+          "subtitle": "Per coding session",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Session", "value": "$2-5", "subtitle": "With Sonnet" }
+            ]
+          },
+          "startFrame": 3190
+        },
+        {
+          "id": "section_3_4",
+          "title": "Workflow",
+          "subtitle": "Simple and local",
+          "layout": "flow",
+          "startFrame": 3320,
+          "nodes": [
+            { "label": "Open", "icon": "Monitor", "startFrame": 3370 },
+            { "label": "Run", "icon": "Play", "startFrame": 3462 },
+            { "label": "Ship", "icon": "RocketLaunch", "startFrame": 3647 }
+          ]
+        }
+      ]
+    }
+  ]
+}

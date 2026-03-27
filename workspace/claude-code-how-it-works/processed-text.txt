@@ -1,0 +1,13 @@
+Claude Code is a command-line A I assistant that lives in your terminal. You type a question or task, and Claude reads your codebase, writes code, runs commands, and commits changes. All from the terminal.
+
+Here's how it works under the hood. You send a message. Claude Code calls the an-thro-pic A P I with your prompt plus context from your project. The model processes everything with a 200K token context window. That's roughly 500 pages of code it can read at once.
+
+The tool system is what makes it powerful. Claude can read files, write files, run bash commands, search code with grep, and even browse the web. Each tool call goes through a permission system. You approve or deny before anything executes. No surprises.
+
+The context engine is smart. It reads your C L A U D E.md file for project instructions. It scans git history. It uses glob patterns to find relevant files. It doesn't dump your entire codebase into the prompt. It selects what matters.
+
+Claude Code supports three models. Opus for complex tasks. Deep reasoning, architecture decisions, large refactors. Sonnet for everyday coding. Fast, capable, cost-effective. Haiku for simple tasks. Quick edits, formatting, lookups. You pick the model that fits the job.
+
+Pricing is usage-based. Opus costs $15 per million input tokens and $75 per million output tokens. Sonnet is $3 input and $15 output. Haiku is the cheapest at $0.25 input and $1.25 output. A typical coding session with Sonnet costs about $2 to $5.
+
+The workflow is simple. Open your terminal. Navigate to your project. Run claude. Describe what you want. Review the changes. Approve or deny. Ship it. No I D E plugins needed. No cloud sync. Everything runs locally on your machine.

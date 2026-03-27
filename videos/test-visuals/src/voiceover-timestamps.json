@@ -1,0 +1,207 @@
+{
+  "words": [
+    {
+      "word": "Overview",
+      "start": 0.5,
+      "end": 0.8,
+      "startFrame": 15,
+      "endFrame": 24
+    },
+    {
+      "word": "Master",
+      "start": 0.85,
+      "end": 1.15,
+      "startFrame": 25,
+      "endFrame": 34
+    },
+    {
+      "word": "vs",
+      "start": 1.2,
+      "end": 1.5,
+      "startFrame": 36,
+      "endFrame": 45
+    },
+    {
+      "word": "Worker",
+      "start": 1.55,
+      "end": 1.85,
+      "startFrame": 46,
+      "endFrame": 55
+    },
+    {
+      "word": "Cluster",
+      "start": 1.9,
+      "end": 2.2,
+      "startFrame": 57,
+      "endFrame": 65
+    },
+    {
+      "word": "Setup",
+      "start": 2.25,
+      "end": 2.55,
+      "startFrame": 67,
+      "endFrame": 76
+    },
+    {
+      "word": "Table",
+      "start": 2.6,
+      "end": 2.9,
+      "startFrame": 78,
+      "endFrame": 87
+    },
+    {
+      "word": "Three",
+      "start": 2.95,
+      "end": 3.25,
+      "startFrame": 88,
+      "endFrame": 97
+    },
+    {
+      "word": "Worker",
+      "start": 3.3,
+      "end": 3.6,
+      "startFrame": 99,
+      "endFrame": 108
+    },
+    {
+      "word": "Processes",
+      "start": 3.65,
+      "end": 3.95,
+      "startFrame": 109,
+      "endFrame": 118
+    },
+    {
+      "word": "Pod",
+      "start": 4.0,
+      "end": 4.3,
+      "startFrame": 120,
+      "endFrame": 129
+    },
+    {
+      "word": "Lifecycle",
+      "start": 4.35,
+      "end": 4.65,
+      "startFrame": 130,
+      "endFrame": 139
+    },
+    {
+      "word": "Smart",
+      "start": 4.7,
+      "end": 5.0,
+      "startFrame": 140,
+      "endFrame": 149
+    },
+    {
+      "word": "Routing",
+      "start": 5.05,
+      "end": 5.35,
+      "startFrame": 151,
+      "endFrame": 160
+    },
+    {
+      "word": "Control",
+      "start": 5.4,
+      "end": 5.7,
+      "startFrame": 161,
+      "endFrame": 170
+    },
+    {
+      "word": "Plane",
+      "start": 5.75,
+      "end": 6.05,
+      "startFrame": 172,
+      "endFrame": 181
+    },
+    {
+      "word": "API",
+      "start": 6.1,
+      "end": 6.4,
+      "startFrame": 182,
+      "endFrame": 191
+    },
+    {
+      "word": "Server",
+      "start": 6.45,
+      "end": 6.75,
+      "startFrame": 193,
+      "endFrame": 202
+    },
+    {
+      "word": "Flow",
+      "start": 6.8,
+      "end": 7.1,
+      "startFrame": 203,
+      "endFrame": 212
+    },
+    {
+      "word": "Self",
+      "start": 7.15,
+      "end": 7.45,
+      "startFrame": 214,
+      "endFrame": 223
+    },
+    {
+      "word": "Healing",
+      "start": 7.5,
+      "end": 7.8,
+      "startFrame": 224,
+      "endFrame": 233
+    },
+    {
+      "word": "Cluster",
+      "start": 7.85,
+      "end": 8.15,
+      "startFrame": 235,
+      "endFrame": 244
+    },
+    {
+      "word": "Brain",
+      "start": 8.2,
+      "end": 8.5,
+      "startFrame": 245,
+      "endFrame": 254
+    },
+    {
+      "word": "etcd",
+      "start": 8.55,
+      "end": 8.85,
+      "startFrame": 256,
+      "endFrame": 265
+    },
+    {
+      "word": "How",
+      "start": 8.9,
+      "end": 9.2,
+      "startFrame": 266,
+      "endFrame": 275
+    },
+    {
+      "word": "to",
+      "start": 9.25,
+      "end": 9.55,
+      "startFrame": 277,
+      "endFrame": 286
+    },
+    {
+      "word": "Scale",
+      "start": 9.6,
+      "end": 9.9,
+      "startFrame": 287,
+      "endFrame": 296
+    },
+    {
+      "word": "Key",
+      "start": 9.95,
+      "end": 10.25,
+      "startFrame": 298,
+      "endFrame": 307
+    },
+    {
+      "word": "Takeaway",
+      "start": 10.3,
+      "end": 10.6,
+      "startFrame": 308,
+      "endFrame": 317
+    }
+  ]
+}

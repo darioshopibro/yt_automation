@@ -1,0 +1,249 @@
+{
+  "title": "Building a Node.js REST API",
+  "port": 3013,
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Setup",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Initialize",
+          "subtitle": "Create project and install deps",
+          "visualType": "terminal",
+          "visualData": {
+            "commands": [
+              {
+                "prompt": "$",
+                "command": "npm init -y",
+                "output": "Created package.json"
+              },
+              {
+                "prompt": "$",
+                "command": "npm install express cors helmet morgan"
+              }
+            ],
+            "title": "bash \u2014 setup"
+          }
+        },
+        {
+          "title": "Tech Stack",
+          "subtitle": "Core dependencies",
+          "visualType": "logo-grid",
+          "visualData": {
+            "items": [
+              {
+                "icon": "Browser",
+                "label": "Express",
+                "color": "#339933"
+              },
+              {
+                "icon": "ShieldCheck",
+                "label": "Cors",
+                "color": "#3b82f6"
+              },
+              {
+                "icon": "HardHat",
+                "label": "Helmet",
+                "color": "#f59e0b"
+              },
+              {
+                "icon": "Scroll",
+                "label": "Morgan",
+                "color": "#22c55e"
+              }
+            ]
+          }
+        },
+        {
+          "title": "Server Code",
+          "subtitle": "Express app with middleware",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "server.js",
+            "code": "const app = express();\n\napp.use(cors());\napp.use(helmet());\napp.use(morgan('dev'));\n\napp.listen(3000);",
+            "highlightLines": [
+              3,
+              4,
+              5
+            ]
+          }
+        },
+        {
+          "title": "Config & Start",
+          "subtitle": "Port and listen",
+          "layout": "arrow",
+          "nodes": [
+            {
+              "label": "Port",
+              "icon": "Gear"
+            },
+            {
+              "label": "Listen",
+              "icon": "Broadcast"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Routes",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Health Check",
+          "subtitle": "Load balancer endpoint",
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Health",
+              "icon": "Heartbeat"
+            },
+            {
+              "label": "Status OK",
+              "icon": "CheckCircle"
+            },
+            {
+              "label": "Balancer",
+              "icon": "Scales"
+            }
+          ]
+        },
+        {
+          "title": "CRUD Routes",
+          "subtitle": "User resource endpoints",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "routes.js",
+            "code": "app.get('/users', getAll);\napp.get('/users/:id', getOne);\napp.post('/users', create);\napp.put('/users/:id', update);\napp.delete('/users/:id', remove);",
+            "highlightLines": [
+              3,
+              5
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Database",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Connection Pool",
+          "subtitle": "PostgreSQL with pg driver",
+          "layout": "arrow",
+          "nodes": [
+            {
+              "label": "PostgreSQL",
+              "icon": "Database"
+            },
+            {
+              "label": "Pool",
+              "icon": "SwimmingPool"
+            }
+          ]
+        },
+        {
+          "title": "Query Safety",
+          "subtitle": "Prevent SQL injection",
+          "layout": "negation",
+          "nodes": [
+            {
+              "label": "Concatenate",
+              "icon": "Syringe"
+            },
+            {
+              "label": "Params",
+              "icon": "BracketsCurly"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Production",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Error Middleware",
+          "subtitle": "Catch everything",
+          "layout": "if-else",
+          "nodes": [
+            {
+              "label": "Error",
+              "icon": "Bug"
+            },
+            {
+              "label": "Dev Stack",
+              "icon": "StackSimple"
+            },
+            {
+              "label": "Prod JSON",
+              "icon": "FileJs"
+            }
+          ]
+        },
+        {
+          "title": "Not Found",
+          "subtitle": "404 handler",
+          "layout": "arrow",
+          "nodes": [
+            {
+              "label": "404",
+              "icon": "Warning"
+            },
+            {
+              "label": "Handler",
+              "icon": "ArrowBendLeftUp"
+            }
+          ]
+        },
+        {
+          "title": "Launch",
+          "subtitle": "Start and test server",
+          "visualType": "terminal",
+          "visualData": {
+            "commands": [
+              {
+                "prompt": "$",
+                "command": "node server.js",
+                "output": "Listening on port 3000"
+              },
+              {
+                "prompt": "$",
+                "command": "curl localhost:3000/health",
+                "output": "{\"status\":\"ok\"}"
+              }
+            ],
+            "title": "bash \u2014 launch"
+          }
+        },
+        {
+          "title": "Deploy",
+          "subtitle": "Ready for production",
+          "layout": "arrow",
+          "nodes": [
+            {
+              "label": "Start",
+              "icon": "Play"
+            },
+            {
+              "label": "Deploy",
+              "icon": "RocketLaunch"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

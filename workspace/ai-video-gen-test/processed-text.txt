@@ -1,0 +1,9 @@
+You write a text prompt describing your video. That prompt goes to the A I model for processing. Let me show you how Kling, Runway, and Sora each handle this differently.
+
+Step one, Kling. Your prompt enters the text encoder. The encoder transforms words into embeddings. Those embeddings feed into the diffusion model. The model generates video frames iteratively. Each frame builds on the previous. Kling outputs your final video in 1080p.
+
+Step two, Runway. You provide your prompt plus an optional image. Runway uses multi-modal encoding. The encoder processes both text and visual input. Gen-3 Alpha runs temporal diffusion. It generates motion across frames simultaneously. Runway delivers smooth, cinematic output.
+
+Step three, Sora. Your prompt describes the full scene. Sora uses a transformer architecture, not diffusion. The model predicts video patches directly. It understands physics and object permanence. Sora generates longer, more coherent videos. The output maintains consistency across frames.
+
+Each tool has its strength. Kling excels at speed and accessibility. Runway delivers professional quality. Sora leads in understanding and coherence.

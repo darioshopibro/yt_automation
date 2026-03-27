@@ -1,0 +1,132 @@
+{
+  "title": "Redis vs PostgreSQL vs MongoDB",
+  "fps": 30,
+  "totalFrames": 3840,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": ["#f97316", "#3b82f6", "#22c55e", "#a855f7"]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": { "enabled": true, "blur": 16, "borderOpacity": 0.37, "glowIntensity": 1.0 },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1, "title": "The Numbers", "color": "#f97316",
+      "startFrame": 0, "direction": "right", "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_1_1", "title": "Speed", "startFrame": 3,
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "Redis", "value": 100 },
+              { "label": "Mongo", "value": 25 },
+              { "label": "PG", "value": 5 }
+            ],
+            "unit": "K ops/s", "maxValue": 120
+          }
+        },
+        {
+          "id": "section_1_2", "title": "Monthly Cost", "startFrame": 432,
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Redis", "value": "$500/mo", "subtitle": "64GB RAM" },
+              { "label": "PG", "value": "$50/mo", "subtitle": "Same storage" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2, "title": "The Databases", "color": "#3b82f6",
+      "startFrame": 920, "direction": "right", "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_2_1", "title": "Redis", "layout": "flow", "startFrame": 925,
+          "nodes": [
+            { "label": "Cache", "icon": "Bookmarks", "startFrame": 989 },
+            { "label": "Sessions", "icon": "Lock", "startFrame": 1020 },
+            { "label": "Rate Limit", "icon": "Queue", "startFrame": 1062 }
+          ]
+        },
+        {
+          "id": "section_2_2", "title": "PostgreSQL", "layout": "flow", "startFrame": 1360,
+          "nodes": [
+            { "label": "ACID", "icon": "Shield", "startFrame": 1424 },
+            { "label": "Joins", "icon": "Link", "startFrame": 1528 },
+            { "label": "Search", "icon": "MagnifyingGlass", "startFrame": 1619 }
+          ]
+        },
+        {
+          "id": "section_2_3", "title": "MongoDB", "layout": "flow", "startFrame": 1885,
+          "nodes": [
+            { "label": "Docs", "icon": "FileDoc", "startFrame": 1964 },
+            { "label": "Flex", "icon": "Plug", "startFrame": 2100 },
+            { "label": "Profiles", "icon": "UserList", "startFrame": 2140 }
+          ]
+        },
+        {
+          "id": "section_2_4", "title": "Trade-offs", "layout": "if-else", "startFrame": 2180,
+          "nodes": [
+            { "label": "Mongo", "icon": "Database", "startFrame": 2185 },
+            { "label": "No Joins", "icon": "X", "startFrame": 2218 },
+            { "label": "No Txns", "icon": "Warning", "startFrame": 2244 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3, "title": "The Winner", "color": "#22c55e",
+      "startFrame": 2285, "direction": "right", "connectionToNext": "none",
+      "sections": [
+        {
+          "id": "section_3_1", "title": "Market Share", "startFrame": 2290,
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "PG", "value": 85 },
+              { "label": "Redis", "value": 43 },
+              { "label": "Mongo", "value": 21 }
+            ],
+            "unit": "%", "maxValue": 100
+          }
+        },
+        {
+          "id": "section_3_2", "title": "Architecture", "layout": "flow", "startFrame": 2980,
+          "nodes": [
+            { "label": "Truth", "icon": "HardDrive", "startFrame": 3081 },
+            { "label": "Speed", "icon": "Speedometer", "startFrame": 3123 },
+            { "label": "Read", "icon": "FlowArrow", "startFrame": 3469 },
+            { "label": "Flush", "icon": "Eraser", "startFrame": 3665 }
+          ]
+        }
+      ]
+    }
+  ]
+}

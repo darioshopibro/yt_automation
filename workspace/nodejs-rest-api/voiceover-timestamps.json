@@ -1,0 +1,1473 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 133.7,
+  "wordCount": 292,
+  "words": [
+    {
+      "word": "Let",
+      "start": 0.0,
+      "end": 0.197
+    },
+    {
+      "word": "me",
+      "start": 0.244,
+      "end": 0.313
+    },
+    {
+      "word": "walk",
+      "start": 0.372,
+      "end": 0.557
+    },
+    {
+      "word": "you",
+      "start": 0.604,
+      "end": 0.685
+    },
+    {
+      "word": "through",
+      "start": 0.72,
+      "end": 0.94
+    },
+    {
+      "word": "building",
+      "start": 0.998,
+      "end": 1.289
+    },
+    {
+      "word": "a",
+      "start": 1.335,
+      "end": 1.358
+    },
+    {
+      "word": "production-ready",
+      "start": 1.428,
+      "end": 2.113
+    },
+    {
+      "word": "rest",
+      "start": 2.183,
+      "end": 2.415
+    },
+    {
+      "word": "A",
+      "start": 2.531,
+      "end": 2.647
+    },
+    {
+      "word": "P",
+      "start": 2.775,
+      "end": 2.891
+    },
+    {
+      "word": "I",
+      "start": 3.1,
+      "end": 3.216
+    },
+    {
+      "word": "with",
+      "start": 3.367,
+      "end": 3.553
+    },
+    {
+      "word": "node",
+      "start": 3.634,
+      "end": 3.982
+    },
+    {
+      "word": "J",
+      "start": 4.156,
+      "end": 4.435
+    },
+    {
+      "word": "S.",
+      "start": 4.609,
+      "end": 5.027
+    },
+    {
+      "word": "Five",
+      "start": 5.631,
+      "end": 5.909
+    },
+    {
+      "word": "steps.",
+      "start": 5.921,
+      "end": 6.49
+    },
+    {
+      "word": "No",
+      "start": 6.873,
+      "end": 7.047
+    },
+    {
+      "word": "frameworks",
+      "start": 7.14,
+      "end": 7.732
+    },
+    {
+      "word": "besides",
+      "start": 7.79,
+      "end": 8.173
+    },
+    {
+      "word": "Express.\n\nStep",
+      "start": 8.22,
+      "end": 9.718
+    },
+    {
+      "word": "one,",
+      "start": 9.799,
+      "end": 10.112
+    },
+    {
+      "word": "initialize.",
+      "start": 10.286,
+      "end": 11.157
+    },
+    {
+      "word": "Run",
+      "start": 11.854,
+      "end": 12.132
+    },
+    {
+      "word": "npm",
+      "start": 12.26,
+      "end": 12.713
+    },
+    {
+      "word": "init",
+      "start": 12.806,
+      "end": 13.05
+    },
+    {
+      "word": "dash",
+      "start": 13.119,
+      "end": 13.456
+    },
+    {
+      "word": "y",
+      "start": 13.572,
+      "end": 13.886
+    },
+    {
+      "word": "to",
+      "start": 13.955,
+      "end": 14.048
+    },
+    {
+      "word": "create",
+      "start": 14.118,
+      "end": 14.431
+    },
+    {
+      "word": "your",
+      "start": 14.466,
+      "end": 14.582
+    },
+    {
+      "word": "package.jason.",
+      "start": 14.629,
+      "end": 16.184
+    },
+    {
+      "word": "Then",
+      "start": 16.625,
+      "end": 16.823
+    },
+    {
+      "word": "install",
+      "start": 16.881,
+      "end": 17.252
+    },
+    {
+      "word": "your",
+      "start": 17.334,
+      "end": 17.508
+    },
+    {
+      "word": "core",
+      "start": 17.589,
+      "end": 17.774
+    },
+    {
+      "word": "dependencies.",
+      "start": 17.809,
+      "end": 18.645
+    },
+    {
+      "word": "npm",
+      "start": 19.156,
+      "end": 19.574
+    },
+    {
+      "word": "install",
+      "start": 19.632,
+      "end": 20.096
+    },
+    {
+      "word": "express",
+      "start": 20.213,
+      "end": 20.689
+    },
+    {
+      "word": "cors",
+      "start": 20.747,
+      "end": 21.014
+    },
+    {
+      "word": "helmet",
+      "start": 21.072,
+      "end": 21.35
+    },
+    {
+      "word": "morgan.",
+      "start": 21.42,
+      "end": 21.977
+    },
+    {
+      "word": "Express",
+      "start": 22.488,
+      "end": 22.941
+    },
+    {
+      "word": "for",
+      "start": 22.999,
+      "end": 23.103
+    },
+    {
+      "word": "routing.",
+      "start": 23.15,
+      "end": 23.603
+    },
+    {
+      "word": "Cors",
+      "start": 24.206,
+      "end": 24.531
+    },
+    {
+      "word": "for",
+      "start": 24.589,
+      "end": 24.694
+    },
+    {
+      "word": "cross-origin",
+      "start": 24.752,
+      "end": 25.298
+    },
+    {
+      "word": "requests.",
+      "start": 25.356,
+      "end": 25.971
+    },
+    {
+      "word": "Helmet",
+      "start": 26.412,
+      "end": 26.784
+    },
+    {
+      "word": "for",
+      "start": 26.842,
+      "end": 26.97
+    },
+    {
+      "word": "security",
+      "start": 27.028,
+      "end": 27.434
+    },
+    {
+      "word": "headers.",
+      "start": 27.492,
+      "end": 27.945
+    },
+    {
+      "word": "Morgan",
+      "start": 28.548,
+      "end": 28.955
+    },
+    {
+      "word": "for",
+      "start": 29.036,
+      "end": 29.141
+    },
+    {
+      "word": "request",
+      "start": 29.199,
+      "end": 29.524
+    },
+    {
+      "word": "logging.\n\nStep",
+      "start": 29.582,
+      "end": 30.929
+    },
+    {
+      "word": "two,",
+      "start": 30.987,
+      "end": 31.381
+    },
+    {
+      "word": "create",
+      "start": 31.706,
+      "end": 32.136
+    },
+    {
+      "word": "your",
+      "start": 32.194,
+      "end": 32.368
+    },
+    {
+      "word": "server.",
+      "start": 32.438,
+      "end": 32.96
+    },
+    {
+      "word": "Import",
+      "start": 33.471,
+      "end": 33.901
+    },
+    {
+      "word": "Express.",
+      "start": 33.936,
+      "end": 34.586
+    },
+    {
+      "word": "Create",
+      "start": 35.097,
+      "end": 35.491
+    },
+    {
+      "word": "an",
+      "start": 35.514,
+      "end": 35.573
+    },
+    {
+      "word": "app",
+      "start": 35.619,
+      "end": 35.723
+    },
+    {
+      "word": "instance.",
+      "start": 35.793,
+      "end": 36.362
+    },
+    {
+      "word": "Add",
+      "start": 36.803,
+      "end": 37.012
+    },
+    {
+      "word": "your",
+      "start": 37.058,
+      "end": 37.151
+    },
+    {
+      "word": "middle",
+      "start": 37.186,
+      "end": 37.395
+    },
+    {
+      "word": "ware",
+      "start": 37.418,
+      "end": 37.592
+    },
+    {
+      "word": "stack.",
+      "start": 37.616,
+      "end": 38.126
+    },
+    {
+      "word": "Cors",
+      "start": 38.637,
+      "end": 38.939
+    },
+    {
+      "word": "goes",
+      "start": 38.997,
+      "end": 39.206
+    },
+    {
+      "word": "first,",
+      "start": 39.264,
+      "end": 39.74
+    },
+    {
+      "word": "then",
+      "start": 39.856,
+      "end": 40.042
+    },
+    {
+      "word": "helmet,",
+      "start": 40.112,
+      "end": 40.611
+    },
+    {
+      "word": "then",
+      "start": 40.936,
+      "end": 41.133
+    },
+    {
+      "word": "morgan",
+      "start": 41.203,
+      "end": 41.517
+    },
+    {
+      "word": "with",
+      "start": 41.563,
+      "end": 41.691
+    },
+    {
+      "word": "the",
+      "start": 41.726,
+      "end": 41.795
+    },
+    {
+      "word": "dev",
+      "start": 41.865,
+      "end": 42.085
+    },
+    {
+      "word": "format.",
+      "start": 42.155,
+      "end": 42.724
+    },
+    {
+      "word": "Define",
+      "start": 43.328,
+      "end": 43.688
+    },
+    {
+      "word": "your",
+      "start": 43.722,
+      "end": 43.815
+    },
+    {
+      "word": "port,",
+      "start": 43.85,
+      "end": 44.268
+    },
+    {
+      "word": "default",
+      "start": 44.477,
+      "end": 44.849
+    },
+    {
+      "word": "three",
+      "start": 44.883,
+      "end": 45.104
+    },
+    {
+      "word": "thousand.",
+      "start": 45.151,
+      "end": 45.743
+    },
+    {
+      "word": "Call",
+      "start": 46.253,
+      "end": 46.497
+    },
+    {
+      "word": "app.listen",
+      "start": 46.59,
+      "end": 47.484
+    },
+    {
+      "word": "and",
+      "start": 47.658,
+      "end": 47.856
+    },
+    {
+      "word": "log",
+      "start": 47.925,
+      "end": 48.111
+    },
+    {
+      "word": "a",
+      "start": 48.157,
+      "end": 48.181
+    },
+    {
+      "word": "startup",
+      "start": 48.227,
+      "end": 48.61
+    },
+    {
+      "word": "message.\n\nStep",
+      "start": 48.668,
+      "end": 50.085
+    },
+    {
+      "word": "three,",
+      "start": 50.143,
+      "end": 50.584
+    },
+    {
+      "word": "define",
+      "start": 50.735,
+      "end": 51.072
+    },
+    {
+      "word": "your",
+      "start": 51.106,
+      "end": 51.199
+    },
+    {
+      "word": "routes.",
+      "start": 51.223,
+      "end": 51.675
+    },
+    {
+      "word": "Start",
+      "start": 52.186,
+      "end": 52.5
+    },
+    {
+      "word": "with",
+      "start": 52.546,
+      "end": 52.662
+    },
+    {
+      "word": "a",
+      "start": 52.697,
+      "end": 52.72
+    },
+    {
+      "word": "health",
+      "start": 52.778,
+      "end": 52.964
+    },
+    {
+      "word": "check.",
+      "start": 53.01,
+      "end": 53.428
+    },
+    {
+      "word": "G",
+      "start": 53.869,
+      "end": 54.078
+    },
+    {
+      "word": "E",
+      "start": 54.195,
+      "end": 54.311
+    },
+    {
+      "word": "T",
+      "start": 54.427,
+      "end": 54.578
+    },
+    {
+      "word": "slash",
+      "start": 54.787,
+      "end": 55.158
+    },
+    {
+      "word": "health",
+      "start": 55.239,
+      "end": 55.483
+    },
+    {
+      "word": "returns",
+      "start": 55.53,
+      "end": 55.89
+    },
+    {
+      "word": "status",
+      "start": 55.913,
+      "end": 56.284
+    },
+    {
+      "word": "O",
+      "start": 56.424,
+      "end": 56.586
+    },
+    {
+      "word": "K.",
+      "start": 56.702,
+      "end": 57.143
+    },
+    {
+      "word": "That's",
+      "start": 57.55,
+      "end": 57.736
+    },
+    {
+      "word": "what",
+      "start": 57.759,
+      "end": 57.863
+    },
+    {
+      "word": "your",
+      "start": 57.898,
+      "end": 57.991
+    },
+    {
+      "word": "load",
+      "start": 58.037,
+      "end": 58.188
+    },
+    {
+      "word": "balancer",
+      "start": 58.235,
+      "end": 58.548
+    },
+    {
+      "word": "pings.",
+      "start": 58.583,
+      "end": 59.047
+    },
+    {
+      "word": "Then",
+      "start": 59.396,
+      "end": 59.582
+    },
+    {
+      "word": "your",
+      "start": 59.64,
+      "end": 59.732
+    },
+    {
+      "word": "resource",
+      "start": 59.779,
+      "end": 60.15
+    },
+    {
+      "word": "routes.",
+      "start": 60.185,
+      "end": 60.638
+    },
+    {
+      "word": "G",
+      "start": 61.114,
+      "end": 61.265
+    },
+    {
+      "word": "E",
+      "start": 61.358,
+      "end": 61.462
+    },
+    {
+      "word": "T",
+      "start": 61.555,
+      "end": 61.671
+    },
+    {
+      "word": "slash",
+      "start": 61.834,
+      "end": 62.147
+    },
+    {
+      "word": "users",
+      "start": 62.217,
+      "end": 62.519
+    },
+    {
+      "word": "returns",
+      "start": 62.6,
+      "end": 62.983
+    },
+    {
+      "word": "all",
+      "start": 63.088,
+      "end": 63.343
+    },
+    {
+      "word": "users.",
+      "start": 63.424,
+      "end": 63.97
+    },
+    {
+      "word": "G",
+      "start": 64.376,
+      "end": 64.516
+    },
+    {
+      "word": "E",
+      "start": 64.609,
+      "end": 64.713
+    },
+    {
+      "word": "T",
+      "start": 64.818,
+      "end": 64.934
+    },
+    {
+      "word": "slash",
+      "start": 65.096,
+      "end": 65.387
+    },
+    {
+      "word": "users",
+      "start": 65.445,
+      "end": 65.816
+    },
+    {
+      "word": "slash",
+      "start": 65.921,
+      "end": 66.246
+    },
+    {
+      "word": "id",
+      "start": 66.327,
+      "end": 66.629
+    },
+    {
+      "word": "returns",
+      "start": 66.71,
+      "end": 67.024
+    },
+    {
+      "word": "one",
+      "start": 67.082,
+      "end": 67.221
+    },
+    {
+      "word": "user.",
+      "start": 67.279,
+      "end": 67.709
+    },
+    {
+      "word": "P",
+      "start": 68.185,
+      "end": 68.301
+    },
+    {
+      "word": "O",
+      "start": 68.417,
+      "end": 68.533
+    },
+    {
+      "word": "S",
+      "start": 68.637,
+      "end": 68.719
+    },
+    {
+      "word": "T",
+      "start": 68.777,
+      "end": 68.881
+    },
+    {
+      "word": "slash",
+      "start": 69.02,
+      "end": 69.299
+    },
+    {
+      "word": "users",
+      "start": 69.357,
+      "end": 69.659
+    },
+    {
+      "word": "creates",
+      "start": 69.729,
+      "end": 70.077
+    },
+    {
+      "word": "a",
+      "start": 70.1,
+      "end": 70.135
+    },
+    {
+      "word": "new",
+      "start": 70.193,
+      "end": 70.309
+    },
+    {
+      "word": "user.",
+      "start": 70.39,
+      "end": 70.832
+    },
+    {
+      "word": "P",
+      "start": 71.308,
+      "end": 71.424
+    },
+    {
+      "word": "U",
+      "start": 71.54,
+      "end": 71.644
+    },
+    {
+      "word": "T",
+      "start": 71.749,
+      "end": 71.865
+    },
+    {
+      "word": "slash",
+      "start": 72.004,
+      "end": 72.271
+    },
+    {
+      "word": "users",
+      "start": 72.329,
+      "end": 72.736
+    },
+    {
+      "word": "slash",
+      "start": 72.875,
+      "end": 73.223
+    },
+    {
+      "word": "id",
+      "start": 73.339,
+      "end": 73.63
+    },
+    {
+      "word": "updates.",
+      "start": 73.664,
+      "end": 74.291
+    },
+    {
+      "word": "D",
+      "start": 74.721,
+      "end": 74.837
+    },
+    {
+      "word": "E",
+      "start": 74.988,
+      "end": 75.197
+    },
+    {
+      "word": "L",
+      "start": 75.336,
+      "end": 75.487
+    },
+    {
+      "word": "E",
+      "start": 75.603,
+      "end": 75.777
+    },
+    {
+      "word": "T",
+      "start": 75.859,
+      "end": 76.01
+    },
+    {
+      "word": "E",
+      "start": 76.126,
+      "end": 76.37
+    },
+    {
+      "word": "slash",
+      "start": 76.695,
+      "end": 77.008
+    },
+    {
+      "word": "users",
+      "start": 77.066,
+      "end": 77.438
+    },
+    {
+      "word": "slash",
+      "start": 77.565,
+      "end": 77.856
+    },
+    {
+      "word": "id",
+      "start": 77.937,
+      "end": 78.227
+    },
+    {
+      "word": "removes.\n\nStep",
+      "start": 78.343,
+      "end": 79.667
+    },
+    {
+      "word": "four,",
+      "start": 79.736,
+      "end": 80.166
+    },
+    {
+      "word": "connect",
+      "start": 80.34,
+      "end": 80.688
+    },
+    {
+      "word": "your",
+      "start": 80.712,
+      "end": 80.805
+    },
+    {
+      "word": "database.",
+      "start": 80.851,
+      "end": 81.548
+    },
+    {
+      "word": "Install",
+      "start": 81.861,
+      "end": 82.314
+    },
+    {
+      "word": "pg",
+      "start": 82.395,
+      "end": 82.674
+    },
+    {
+      "word": "for",
+      "start": 82.848,
+      "end": 82.964
+    },
+    {
+      "word": "post-gres.",
+      "start": 83.022,
+      "end": 83.904
+    },
+    {
+      "word": "Create",
+      "start": 84.334,
+      "end": 84.659
+    },
+    {
+      "word": "a",
+      "start": 84.682,
+      "end": 84.706
+    },
+    {
+      "word": "connection",
+      "start": 84.752,
+      "end": 85.193
+    },
+    {
+      "word": "pool",
+      "start": 85.251,
+      "end": 85.53
+    },
+    {
+      "word": "with",
+      "start": 85.646,
+      "end": 85.797
+    },
+    {
+      "word": "your",
+      "start": 85.843,
+      "end": 85.936
+    },
+    {
+      "word": "database",
+      "start": 85.994,
+      "end": 86.633
+    },
+    {
+      "word": "U",
+      "start": 86.76,
+      "end": 86.935
+    },
+    {
+      "word": "R",
+      "start": 87.062,
+      "end": 87.213
+    },
+    {
+      "word": "L.",
+      "start": 87.318,
+      "end": 87.643
+    },
+    {
+      "word": "Write",
+      "start": 88.084,
+      "end": 88.351
+    },
+    {
+      "word": "a",
+      "start": 88.374,
+      "end": 88.397
+    },
+    {
+      "word": "query",
+      "start": 88.467,
+      "end": 88.781
+    },
+    {
+      "word": "helper",
+      "start": 88.839,
+      "end": 89.095
+    },
+    {
+      "word": "function",
+      "start": 89.141,
+      "end": 89.524
+    },
+    {
+      "word": "that",
+      "start": 89.675,
+      "end": 89.838
+    },
+    {
+      "word": "takes",
+      "start": 89.884,
+      "end": 90.128
+    },
+    {
+      "word": "sequel",
+      "start": 90.186,
+      "end": 90.534
+    },
+    {
+      "word": "and",
+      "start": 90.581,
+      "end": 90.65
+    },
+    {
+      "word": "parameters.",
+      "start": 90.685,
+      "end": 91.324
+    },
+    {
+      "word": "Use",
+      "start": 91.834,
+      "end": 92.09
+    },
+    {
+      "word": "parameterized",
+      "start": 92.136,
+      "end": 92.775
+    },
+    {
+      "word": "queries",
+      "start": 92.833,
+      "end": 93.251
+    },
+    {
+      "word": "always.",
+      "start": 93.344,
+      "end": 94.156
+    },
+    {
+      "word": "Never",
+      "start": 94.667,
+      "end": 94.958
+    },
+    {
+      "word": "concatenate",
+      "start": 95.027,
+      "end": 95.724
+    },
+    {
+      "word": "user",
+      "start": 95.782,
+      "end": 96.026
+    },
+    {
+      "word": "input",
+      "start": 96.072,
+      "end": 96.316
+    },
+    {
+      "word": "into",
+      "start": 96.351,
+      "end": 96.513
+    },
+    {
+      "word": "sequel.",
+      "start": 96.583,
+      "end": 97.14
+    },
+    {
+      "word": "That's",
+      "start": 97.523,
+      "end": 97.79
+    },
+    {
+      "word": "how",
+      "start": 97.825,
+      "end": 97.918
+    },
+    {
+      "word": "you",
+      "start": 97.976,
+      "end": 98.046
+    },
+    {
+      "word": "get",
+      "start": 98.104,
+      "end": 98.232
+    },
+    {
+      "word": "sequel",
+      "start": 98.324,
+      "end": 98.673
+    },
+    {
+      "word": "injection.\n\nStep",
+      "start": 98.731,
+      "end": 100.31
+    },
+    {
+      "word": "five,",
+      "start": 100.391,
+      "end": 100.948
+    },
+    {
+      "word": "add",
+      "start": 101.192,
+      "end": 101.413
+    },
+    {
+      "word": "error",
+      "start": 101.506,
+      "end": 101.807
+    },
+    {
+      "word": "handling.",
+      "start": 101.865,
+      "end": 102.481
+    },
+    {
+      "word": "Create",
+      "start": 102.864,
+      "end": 103.212
+    },
+    {
+      "word": "an",
+      "start": 103.235,
+      "end": 103.294
+    },
+    {
+      "word": "error",
+      "start": 103.375,
+      "end": 103.63
+    },
+    {
+      "word": "middle",
+      "start": 103.688,
+      "end": 103.92
+    },
+    {
+      "word": "ware",
+      "start": 103.955,
+      "end": 104.199
+    },
+    {
+      "word": "that",
+      "start": 104.246,
+      "end": 104.408
+    },
+    {
+      "word": "catches",
+      "start": 104.466,
+      "end": 104.837
+    },
+    {
+      "word": "everything.",
+      "start": 104.953,
+      "end": 105.604
+    },
+    {
+      "word": "Log",
+      "start": 106.114,
+      "end": 106.347
+    },
+    {
+      "word": "the",
+      "start": 106.393,
+      "end": 106.474
+    },
+    {
+      "word": "error",
+      "start": 106.521,
+      "end": 106.707
+    },
+    {
+      "word": "stack",
+      "start": 106.741,
+      "end": 107.008
+    },
+    {
+      "word": "in",
+      "start": 107.067,
+      "end": 107.148
+    },
+    {
+      "word": "development.",
+      "start": 107.206,
+      "end": 107.914
+    },
+    {
+      "word": "Return",
+      "start": 108.355,
+      "end": 108.68
+    },
+    {
+      "word": "a",
+      "start": 108.715,
+      "end": 108.75
+    },
+    {
+      "word": "clean",
+      "start": 108.796,
+      "end": 109.04
+    },
+    {
+      "word": "jason",
+      "start": 109.121,
+      "end": 109.481
+    },
+    {
+      "word": "error",
+      "start": 109.539,
+      "end": 109.748
+    },
+    {
+      "word": "in",
+      "start": 109.83,
+      "end": 109.946
+    },
+    {
+      "word": "production.",
+      "start": 110.004,
+      "end": 110.666
+    },
+    {
+      "word": "Never",
+      "start": 111.362,
+      "end": 111.618
+    },
+    {
+      "word": "expose",
+      "start": 111.676,
+      "end": 112.094
+    },
+    {
+      "word": "internal",
+      "start": 112.128,
+      "end": 112.512
+    },
+    {
+      "word": "errors",
+      "start": 112.558,
+      "end": 112.79
+    },
+    {
+      "word": "to",
+      "start": 112.837,
+      "end": 112.895
+    },
+    {
+      "word": "the",
+      "start": 112.953,
+      "end": 113.022
+    },
+    {
+      "word": "client.",
+      "start": 113.046,
+      "end": 113.498
+    },
+    {
+      "word": "Add",
+      "start": 113.94,
+      "end": 114.149
+    },
+    {
+      "word": "a",
+      "start": 114.172,
+      "end": 114.195
+    },
+    {
+      "word": "not-found",
+      "start": 114.311,
+      "end": 114.799
+    },
+    {
+      "word": "handler",
+      "start": 114.857,
+      "end": 115.24
+    },
+    {
+      "word": "for",
+      "start": 115.31,
+      "end": 115.461
+    },
+    {
+      "word": "undefined",
+      "start": 115.577,
+      "end": 116.18
+    },
+    {
+      "word": "routes.",
+      "start": 116.227,
+      "end": 116.714
+    },
+    {
+      "word": "Return",
+      "start": 117.527,
+      "end": 117.91
+    },
+    {
+      "word": "four-oh-four",
+      "start": 118.026,
+      "end": 118.804
+    },
+    {
+      "word": "with",
+      "start": 118.955,
+      "end": 119.141
+    },
+    {
+      "word": "a",
+      "start": 119.176,
+      "end": 119.211
+    },
+    {
+      "word": "meaningful",
+      "start": 119.28,
+      "end": 119.733
+    },
+    {
+      "word": "message.\n\nStart",
+      "start": 119.803,
+      "end": 121.394
+    },
+    {
+      "word": "your",
+      "start": 121.44,
+      "end": 121.545
+    },
+    {
+      "word": "server",
+      "start": 121.579,
+      "end": 121.963
+    },
+    {
+      "word": "with",
+      "start": 122.137,
+      "end": 122.334
+    },
+    {
+      "word": "node",
+      "start": 122.427,
+      "end": 122.717
+    },
+    {
+      "word": "server.js.",
+      "start": 122.764,
+      "end": 123.716
+    },
+    {
+      "word": "Test",
+      "start": 124.041,
+      "end": 124.319
+    },
+    {
+      "word": "with",
+      "start": 124.366,
+      "end": 124.505
+    },
+    {
+      "word": "curl.",
+      "start": 124.563,
+      "end": 124.993
+    },
+    {
+      "word": "G",
+      "start": 125.504,
+      "end": 125.678
+    },
+    {
+      "word": "E",
+      "start": 125.805,
+      "end": 125.922
+    },
+    {
+      "word": "T",
+      "start": 126.038,
+      "end": 126.154
+    },
+    {
+      "word": "local",
+      "start": 126.305,
+      "end": 126.595
+    },
+    {
+      "word": "host",
+      "start": 126.653,
+      "end": 126.885
+    },
+    {
+      "word": "three",
+      "start": 127.013,
+      "end": 127.28
+    },
+    {
+      "word": "thousand",
+      "start": 127.326,
+      "end": 127.709
+    },
+    {
+      "word": "slash",
+      "start": 127.756,
+      "end": 128.069
+    },
+    {
+      "word": "health.",
+      "start": 128.116,
+      "end": 128.511
+    },
+    {
+      "word": "You",
+      "start": 128.836,
+      "end": 128.94
+    },
+    {
+      "word": "should",
+      "start": 128.975,
+      "end": 129.172
+    },
+    {
+      "word": "see",
+      "start": 129.23,
+      "end": 129.416
+    },
+    {
+      "word": "status",
+      "start": 129.474,
+      "end": 129.881
+    },
+    {
+      "word": "O",
+      "start": 130.008,
+      "end": 130.124
+    },
+    {
+      "word": "K.",
+      "start": 130.252,
+      "end": 130.705
+    },
+    {
+      "word": "Your",
+      "start": 131.216,
+      "end": 131.436
+    },
+    {
+      "word": "A",
+      "start": 131.529,
+      "end": 131.622
+    },
+    {
+      "word": "P",
+      "start": 131.75,
+      "end": 131.819
+    },
+    {
+      "word": "I's",
+      "start": 132.098,
+      "end": 132.365
+    },
+    {
+      "word": "ready",
+      "start": 132.481,
+      "end": 132.702
+    },
+    {
+      "word": "for",
+      "start": 132.737,
+      "end": 132.818
+    },
+    {
+      "word": "deployment.",
+      "start": 132.876,
+      "end": 133.7
+    }
+  ]
+}

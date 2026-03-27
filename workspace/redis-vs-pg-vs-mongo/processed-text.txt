@@ -1,0 +1,13 @@
+red-iss handles a hundred thousand operations per second. Compare that to post-gres at five thousand and mongo D B at twenty-five thousand. That's a twenty-x difference between red-iss and post-gres.
+
+red-iss stores everything in memory. ram is fast but expensive. A sixty-four gigabyte red-iss instance costs five hundred dollars per month on A W S. The same storage in post-gres costs fifty dollars. Ten times cheaper.
+
+So why use red-iss at all? Caching. Session storage. Rate limiting. Leaderboards. Anything that needs sub-millisecond response times. red-iss isn't your primary database. It's your speed layer.
+
+post-gres handles the heavy lifting. Transactions with A C I D compliance. Complex joins across multiple tables. Full-text search. jason support. It's the Swiss Army knife of databases. Most companies start here and never leave.
+
+mongo D B sits in between. Document storage without rigid skee-mas. Good for content management, product catalogs, user profiles. Flexible but you lose joins and transactions.
+
+Here's what the industry looks like right now. Eighty-five percent of startups use post-gres as their primary database. red-iss adoption is at forty-three percent, mostly as a cash layer. mongo D B dropped from thirty percent to twenty-one percent in the last two years. Developers are choosing post-gres plus red-iss over mongo D B alone.
+
+The winning architecture is simple. post-gres as your source of truth. red-iss as your cash. Skip mongo D B unless you have a specific document storage need. This combination handles ninety percent of use cases. Your reads go through red-iss first. Cache miss hits post-gres. Writes go directly to post-gres and invalidate the red-iss cash. Simple, proven, scalable.

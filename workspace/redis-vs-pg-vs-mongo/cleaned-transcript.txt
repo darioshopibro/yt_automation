@@ -1,0 +1,13 @@
+Redis handles a hundred thousand operations per second. Compare that to PostgreSQL at five thousand and MongoDB at twenty-five thousand. That's a twenty-x difference between Redis and PostgreSQL.
+
+Redis stores everything in memory. RAM is fast but expensive. A sixty-four gigabyte Redis instance costs five hundred dollars per month on AWS. The same storage in PostgreSQL costs fifty dollars. Ten times cheaper.
+
+So why use Redis at all? Caching. Session storage. Rate limiting. Leaderboards. Anything that needs sub-millisecond response times. Redis isn't your primary database. It's your speed layer.
+
+PostgreSQL handles the heavy lifting. Transactions with ACID compliance. Complex joins across multiple tables. Full-text search. JSON support. It's the Swiss Army knife of databases. Most companies start here and never leave.
+
+MongoDB sits in between. Document storage without rigid schemas. Good for content management, product catalogs, user profiles. Flexible but you lose joins and transactions.
+
+Here's what the industry looks like right now. Eighty-five percent of startups use PostgreSQL as their primary database. Redis adoption is at forty-three percent, mostly as a cache layer. MongoDB dropped from thirty percent to twenty-one percent in the last two years. Developers are choosing PostgreSQL plus Redis over MongoDB alone.
+
+The winning architecture is simple. PostgreSQL as your source of truth. Redis as your cache. Skip MongoDB unless you have a specific document storage need. This combination handles ninety percent of use cases. Your reads go through Redis first. Cache miss hits PostgreSQL. Writes go directly to PostgreSQL and invalidate the Redis cache. Simple, proven, scalable.

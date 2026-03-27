@@ -1,0 +1,13 @@
+Let me walk you through building a production-ready REST API with Node.js. Five steps. No frameworks besides Express.
+
+Step one, initialize. Run npm init dash y to create your package.json. Then install your core dependencies. npm install express cors helmet morgan. Express for routing. Cors for cross-origin requests. Helmet for security headers. Morgan for request logging.
+
+Step two, create your server. Import Express. Create an app instance. Add your middleware stack. Cors goes first, then helmet, then morgan with the dev format. Define your port, default three thousand. Call app.listen and log a startup message.
+
+Step three, define your routes. Start with a health check. GET slash health returns status OK. That's what your load balancer pings. Then your resource routes. GET slash users returns all users. GET slash users slash id returns one user. POST slash users creates a new user. PUT slash users slash id updates. DELETE slash users slash id removes.
+
+Step four, connect your database. Install pg for PostgreSQL. Create a connection pool with your database URL. Write a query helper function that takes SQL and parameters. Use parameterized queries always. Never concatenate user input into SQL. That's how you get SQL injection.
+
+Step five, add error handling. Create an error middleware that catches everything. Log the error stack in development. Return a clean JSON error in production. Never expose internal errors to the client. Add a not-found handler for undefined routes. Return four-oh-four with a meaningful message.
+
+Start your server with node server.js. Test with curl. GET localhost three thousand slash health. You should see status OK. Your API's ready for deployment.

@@ -1,0 +1,170 @@
+{
+  "title": "AI Video Generation",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Kling",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Text Encoder",
+          "subtitle": "Prompt Processing",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Prompt", "icon": "Textbox" },
+            { "label": "Encoder", "icon": "Barcode" }
+          ]
+        },
+        {
+          "title": "Embeddings",
+          "subtitle": "Vector Space",
+          "layout": "arrow",
+          "nodes": [
+            { "label": "Words", "icon": "TextT" },
+            { "label": "Vectors", "icon": "VectorTwo" }
+          ]
+        },
+        {
+          "title": "Diffusion Model",
+          "subtitle": "Frame Generation",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Noise", "icon": "Gradient" },
+            { "label": "Denoise", "icon": "Sparkle" },
+            { "label": "Frames", "icon": "FilmStrip" }
+          ]
+        },
+        {
+          "title": "1080p Output",
+          "subtitle": "Final Video",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Render", "icon": "GraphicsCard" },
+            { "label": "Export", "icon": "Export" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Runway",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Multi-Modal Input",
+          "subtitle": "Text + Image",
+          "layout": "combine",
+          "nodes": [
+            { "label": "Prompt", "icon": "PencilSimple" },
+            { "label": "Image", "icon": "FileImage" },
+            { "label": "Input", "icon": "GitMerge" }
+          ]
+        },
+        {
+          "title": "Unified Encoder",
+          "subtitle": "Multi-Modal Processing",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Text", "icon": "FileText" },
+            { "label": "Visual", "icon": "Scan" },
+            { "label": "Merge", "icon": "Parallelogram" }
+          ]
+        },
+        {
+          "title": "Gen-3 Alpha",
+          "subtitle": "Temporal Diffusion",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Motion", "icon": "Lightning" },
+            { "label": "Frames", "icon": "Timer" }
+          ]
+        },
+        {
+          "title": "Cinematic Output",
+          "subtitle": "Smooth Video",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Render", "icon": "FilmReel" },
+            { "label": "Quality", "icon": "Diamond" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Sora",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Scene Description",
+          "subtitle": "Full Scene Prompt",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Prompt", "icon": "Paragraph" },
+            { "label": "Scene", "icon": "Monitor" }
+          ]
+        },
+        {
+          "title": "Transformer",
+          "subtitle": "Not Diffusion",
+          "layout": "negation",
+          "nodes": [
+            { "label": "Diffusion", "icon": "Equalizer" },
+            { "label": "Attention", "icon": "Brain" }
+          ]
+        },
+        {
+          "title": "Physics Engine",
+          "subtitle": "World Understanding",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Physics", "icon": "Atom" },
+            { "label": "Objects", "icon": "Cube" }
+          ]
+        },
+        {
+          "title": "Coherent Output",
+          "subtitle": "Long-Form Video",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Temporal", "icon": "Repeat" },
+            { "label": "Video", "icon": "VideoCamera" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Strengths",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Comparison",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Feature", "Kling", "Runway", "Sora"],
+            "rows": [
+              ["Strength", "Speed", "Quality", "Coherence"],
+              ["Architecture", "Diffusion", "Multi-Modal", "Transformer"],
+              ["Output", "1080p video", "Cinematic", "Long-form"]
+            ],
+            "highlightCol": 3
+          }
+        },
+        {
+          "title": "Pick Your Tool",
+          "layout": "vs",
+          "nodes": [
+            { "label": "Speed", "icon": "Speedometer" },
+            { "label": "Quality", "icon": "Crown" }
+          ]
+        }
+      ]
+    }
+  ]
+}

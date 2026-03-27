@@ -1,0 +1,149 @@
+{
+  "meta": {
+    "title": "Building a Node.js REST API",
+    "fps": 30,
+    "totalFrames": 4041,
+    "totalDuration": 134.7,
+    "hierarchyType": "sticky",
+    "port": 3012
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 133.7,
+    "words": "voiceover-timestamps.json"
+  },
+
+  "brand": {
+    "file": "brands/default/brand.json",
+    "stickyColors": ["#f97316", "#3b82f6", "#22c55e", "#a855f7"]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "Setup",
+        "color": "#f97316",
+        "startFrame": 289,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Init",
+            "layout": "flow",
+            "startFrame": 351,
+            "nodes": [
+              { "label": "Package", "icon": "Package", "startFrame": 364 },
+              { "label": "Express", "icon": "FileJsx", "startFrame": 602 },
+              { "label": "CORS", "icon": "GlobeX", "startFrame": 722 },
+              { "label": "Helmet", "icon": "ShieldCheck", "startFrame": 788 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Server",
+            "layout": "flow",
+            "startFrame": 999,
+            "nodes": [
+              { "label": "Import", "icon": "FileCode", "startFrame": 1000 },
+              { "label": "Stack", "icon": "Stack", "startFrame": 1112 },
+              { "label": "Listen", "icon": "Airplay", "startFrame": 1394 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Routes",
+        "color": "#3b82f6",
+        "startFrame": 1498,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Health",
+            "layout": "arrow",
+            "startFrame": 1578,
+            "nodes": [
+              { "label": "Check", "icon": "Heartbeat", "startFrame": 1579 },
+              { "label": "OK", "icon": "CheckFat", "startFrame": 1684 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "CRUD",
+            "layout": "flow",
+            "startFrame": 1788,
+            "nodes": [
+              { "label": "GET", "icon": "DownloadSimple", "startFrame": 1829 },
+              { "label": "POST", "icon": "Upload", "startFrame": 2042 },
+              { "label": "PUT", "icon": "PencilSimple", "startFrame": 2135 },
+              { "label": "DELETE", "icon": "Trash", "startFrame": 2238 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Protect",
+        "color": "#22c55e",
+        "startFrame": 2385,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Database",
+            "layout": "flow",
+            "startFrame": 2451,
+            "nodes": [
+              { "label": "Pool", "icon": "Database", "startFrame": 2539 },
+              { "label": "Query", "icon": "FileSql", "startFrame": 2650 },
+              { "label": "Params", "icon": "LockKey", "startFrame": 2760 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Errors",
+            "layout": "flow",
+            "startFrame": 3081,
+            "nodes": [
+              { "label": "Catch", "icon": "Bug", "startFrame": 3130 },
+              { "label": "JSON", "icon": "BracketsCurly", "startFrame": 3270 },
+              { "label": "404", "icon": "NetworkSlash", "startFrame": 3425 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.5 },
+      { "frame": 274, "target": "sticky_1", "x": 350, "y": 450, "scale": 0.85 },
+      { "frame": 1483, "target": "sticky_2", "x": 960, "y": 450, "scale": 0.85 },
+      { "frame": 2370, "target": "sticky_3_top", "x": 1570, "y": 400, "scale": 0.85 },
+      { "frame": 3066, "target": "sticky_3_bottom", "x": 1570, "y": 600, "scale": 0.9 },
+      { "frame": 3640, "target": "overview", "x": 960, "y": 540, "scale": 0.5 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 272, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 295, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 },
+      { "frame": 1020, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1481, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1503, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 },
+      { "frame": 1810, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 2368, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2391, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 },
+      { "frame": 3064, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 3100, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 3638, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 12
+  }
+}

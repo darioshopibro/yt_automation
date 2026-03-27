@@ -1,0 +1,199 @@
+{
+  "meta": {
+    "title": "CI/CD Pipeline Explained",
+    "fps": 30,
+    "totalFrames": 3668,
+    "totalDuration": 122.27,
+    "hierarchyType": "sticky",
+    "port": 3012
+  },
+  "brand": {
+    "configPath": "brands/default/brand.json",
+    "stickyColors": ["#f97316", "#3b82f6", "#22c55e"]
+  },
+  "voiceover": {
+    "file": "workspace/cicd-pipeline/voiceover.mp3",
+    "timestampsFile": "workspace/cicd-pipeline/voiceover-timestamps.json",
+    "duration": 121.254,
+    "wordCount": 259
+  },
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "Pipeline",
+        "color": "#f97316",
+        "startFrame": 231,
+        "direction": "right",
+        "connectionToNext": "flow",
+        "sections": [
+          {
+            "id": "s1_1", "title": "Stages", "subtitle": "The 4-Stage Pipeline",
+            "startFrame": 225,
+            "visualType": "process-steps",
+            "visualData": {
+              "steps": [
+                { "label": "Build", "description": "Compile & package" },
+                { "label": "Test", "description": "Unit, integration, E2E" },
+                { "label": "Stage", "description": "Mirror production" },
+                { "label": "Deploy", "description": "Blue-green switch" }
+              ]
+            }
+          },
+          {
+            "id": "s1_2", "title": "Trigger", "subtitle": "Code to Pipeline",
+            "layout": "flow", "startFrame": 350,
+            "nodes": [
+              { "label": "Branch", "icon": "GitBranch", "startFrame": 394 },
+              { "label": "Push", "icon": "CloudArrowUp", "startFrame": 434 },
+              { "label": "Webhook", "icon": "WebhooksLogo", "startFrame": 497 }
+            ]
+          },
+          {
+            "id": "s1_3", "title": "Compile", "subtitle": "Create Artifact",
+            "layout": "combine", "startFrame": 720,
+            "nodes": [
+              { "label": "Code", "icon": "Code", "startFrame": 737 },
+              { "label": "Deps", "icon": "Package", "startFrame": 766 },
+              { "label": "Artifact", "icon": "Archive", "startFrame": 891 }
+            ]
+          },
+          {
+            "id": "s1_4", "title": "Guard", "subtitle": "Pass or Fail",
+            "layout": "if-else", "startFrame": 935,
+            "nodes": [
+              { "label": "Build", "icon": "Hammer", "startFrame": 939 },
+              { "label": "Pass", "icon": "CheckCircle", "startFrame": 945 },
+              { "label": "Alert", "icon": "Bell", "startFrame": 996 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Validate",
+        "color": "#3b82f6",
+        "startFrame": 1124,
+        "direction": "right",
+        "connectionToNext": "flow",
+        "sections": [
+          {
+            "id": "s2_1", "title": "Tests", "subtitle": "Three Layers",
+            "layout": "flow", "startFrame": 1168,
+            "nodes": [
+              { "label": "Unit", "icon": "Function", "startFrame": 1170 },
+              { "label": "Integrate", "icon": "PlugsConnected", "startFrame": 1234 },
+              { "label": "E2E", "icon": "UserCircle", "startFrame": 1288 }
+            ]
+          },
+          {
+            "id": "s2_2", "title": "Scope", "subtitle": "What Tests Verify",
+            "layout": "combine", "startFrame": 1430,
+            "nodes": [
+              { "label": "Verify", "icon": "MagnifyingGlass", "startFrame": 1434 },
+              { "label": "Connect", "icon": "ShareNetwork", "startFrame": 1528 },
+              { "label": "Coverage", "icon": "ShieldCheck", "startFrame": 1659 }
+            ]
+          },
+          {
+            "id": "s2_3", "title": "Staging", "subtitle": "Mirror Production",
+            "layout": "merge", "startFrame": 1840,
+            "nodes": [
+              { "label": "Deploy", "icon": "RocketLaunch", "startFrame": 1858 },
+              { "label": "Config", "icon": "GearSix", "startFrame": 1900 },
+              { "label": "Staging", "icon": "Cube", "startFrame": 2078 }
+            ]
+          },
+          {
+            "id": "s2_4", "title": "Review", "subtitle": "QA Approval",
+            "layout": "flow", "startFrame": 2160,
+            "nodes": [
+              { "label": "QA", "icon": "ListChecks", "startFrame": 2164 },
+              { "label": "Check", "icon": "ClipboardText", "startFrame": 2232 },
+              { "label": "Approve", "icon": "CheckFat", "startFrame": 2277 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Ship",
+        "color": "#22c55e",
+        "startFrame": 2349,
+        "direction": "right",
+        "connectionToNext": "none",
+        "sections": [
+          {
+            "id": "s3_1", "title": "Blue-Green", "subtitle": "Two Environments",
+            "layout": "vs", "startFrame": 2445,
+            "nodes": [
+              { "label": "Blue", "icon": "Server", "startFrame": 2582 },
+              { "label": "Green", "icon": "HardDrives", "startFrame": 2646 }
+            ]
+          },
+          {
+            "id": "s3_2", "title": "Traffic", "subtitle": "Switch Over",
+            "layout": "arrow", "startFrame": 2710,
+            "nodes": [
+              { "label": "Switch", "icon": "ArrowsSplit", "startFrame": 2735 },
+              { "label": "Live", "icon": "Lightning", "startFrame": 2839 }
+            ]
+          },
+          {
+            "id": "s3_3", "title": "Rollback", "subtitle": "Instant Recovery",
+            "layout": "arrow", "startFrame": 2900,
+            "nodes": [
+              { "label": "Break", "icon": "Warning", "startFrame": 2912 },
+              { "label": "Flip", "icon": "ArrowCounterClockwise", "startFrame": 2938 }
+            ]
+          },
+          {
+            "id": "s3_4", "title": "Speed", "subtitle": "Pipeline Metrics",
+            "startFrame": 3100,
+            "visualType": "stats",
+            "visualData": {
+              "items": [
+                { "label": "Pipeline", "value": "15 min", "subtitle": "Push to prod" },
+                { "label": "Rollback", "value": "<30s", "subtitle": "Zero downtime" }
+              ]
+            }
+          }
+        ]
+      }
+    ]
+  },
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.55 },
+      { "frame": 216, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.1 },
+      { "frame": 1109, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.1 },
+      { "frame": 2334, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.1 },
+      { "frame": 3467, "target": "overview", "x": 960, "y": 540, "scale": 0.55 }
+    ]
+  },
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 214, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 236, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 356, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 726, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 940, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1107, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1174, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1435, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1845, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 2165, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 2332, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2450, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 2715, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 2905, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 3105, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 3465, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 17
+  }
+}

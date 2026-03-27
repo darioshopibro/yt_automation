@@ -1,0 +1,13 @@
+Let me walk you through building a production-ready rest A P I with node J S. Five steps. No frameworks besides Express.
+
+Step one, initialize. Run npm init dash y to create your package.jason. Then install your core dependencies. npm install express cors helmet morgan. Express for routing. Cors for cross-origin requests. Helmet for security headers. Morgan for request logging.
+
+Step two, create your server. Import Express. Create an app instance. Add your middle ware stack. Cors goes first, then helmet, then morgan with the dev format. Define your port, default three thousand. Call app.listen and log a startup message.
+
+Step three, define your routes. Start with a health check. G E T slash health returns status O K. That's what your load balancer pings. Then your resource routes. G E T slash users returns all users. G E T slash users slash id returns one user. P O S T slash users creates a new user. P U T slash users slash id updates. D E L E T E slash users slash id removes.
+
+Step four, connect your database. Install pg for post-gres. Create a connection pool with your database U R L. Write a query helper function that takes sequel and parameters. Use parameterized queries always. Never concatenate user input into sequel. That's how you get sequel injection.
+
+Step five, add error handling. Create an error middle ware that catches everything. Log the error stack in development. Return a clean jason error in production. Never expose internal errors to the client. Add a not-found handler for undefined routes. Return four-oh-four with a meaningful message.
+
+Start your server with node server.js. Test with curl. G E T local host three thousand slash health. You should see status O K. Your A P I's ready for deployment.

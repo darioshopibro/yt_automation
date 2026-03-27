@@ -1,0 +1,1485 @@
+{
+  "meta": {
+    "title": "AI Video Generation \u2014 Kling vs Runway vs Sora",
+    "fps": 30,
+    "totalFrames": 2615,
+    "totalDuration": 86.15,
+    "hierarchyType": "sticky"
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 86.147,
+    "words": [
+      {
+        "word": "You",
+        "start": 0.0,
+        "end": 0.163,
+        "startFrame": 0,
+        "endFrame": 5
+      },
+      {
+        "word": "write",
+        "start": 0.221,
+        "end": 0.418,
+        "startFrame": 7,
+        "endFrame": 13
+      },
+      {
+        "word": "a",
+        "start": 0.441,
+        "end": 0.464,
+        "startFrame": 13,
+        "endFrame": 14
+      },
+      {
+        "word": "text",
+        "start": 0.522,
+        "end": 0.789,
+        "startFrame": 16,
+        "endFrame": 24
+      },
+      {
+        "word": "prompt",
+        "start": 0.836,
+        "end": 1.115,
+        "startFrame": 25,
+        "endFrame": 33
+      },
+      {
+        "word": "describing",
+        "start": 1.161,
+        "end": 1.637,
+        "startFrame": 35,
+        "endFrame": 49
+      },
+      {
+        "word": "your",
+        "start": 1.672,
+        "end": 1.765,
+        "startFrame": 50,
+        "endFrame": 53
+      },
+      {
+        "word": "video.",
+        "start": 1.8,
+        "end": 2.322,
+        "startFrame": 54,
+        "endFrame": 70
+      },
+      {
+        "word": "That",
+        "start": 2.763,
+        "end": 2.972,
+        "startFrame": 83,
+        "endFrame": 89
+      },
+      {
+        "word": "prompt",
+        "start": 3.03,
+        "end": 3.32,
+        "startFrame": 91,
+        "endFrame": 100
+      },
+      {
+        "word": "goes",
+        "start": 3.379,
+        "end": 3.622,
+        "startFrame": 101,
+        "endFrame": 109
+      },
+      {
+        "word": "to",
+        "start": 3.669,
+        "end": 3.738,
+        "startFrame": 110,
+        "endFrame": 112
+      },
+      {
+        "word": "the",
+        "start": 3.796,
+        "end": 3.866,
+        "startFrame": 114,
+        "endFrame": 116
+      },
+      {
+        "word": "A",
+        "start": 3.959,
+        "end": 4.075,
+        "startFrame": 119,
+        "endFrame": 122
+      },
+      {
+        "word": "I",
+        "start": 4.226,
+        "end": 4.296,
+        "startFrame": 127,
+        "endFrame": 129
+      },
+      {
+        "word": "model",
+        "start": 4.412,
+        "end": 4.679,
+        "startFrame": 132,
+        "endFrame": 140
+      },
+      {
+        "word": "for",
+        "start": 4.737,
+        "end": 4.841,
+        "startFrame": 142,
+        "endFrame": 145
+      },
+      {
+        "word": "processing.",
+        "start": 4.899,
+        "end": 5.642,
+        "startFrame": 147,
+        "endFrame": 169
+      },
+      {
+        "word": "Let",
+        "start": 6.153,
+        "end": 6.293,
+        "startFrame": 185,
+        "endFrame": 189
+      },
+      {
+        "word": "me",
+        "start": 6.339,
+        "end": 6.42,
+        "startFrame": 190,
+        "endFrame": 193
+      },
+      {
+        "word": "show",
+        "start": 6.467,
+        "end": 6.653,
+        "startFrame": 194,
+        "endFrame": 200
+      },
+      {
+        "word": "you",
+        "start": 6.734,
+        "end": 6.827,
+        "startFrame": 202,
+        "endFrame": 205
+      },
+      {
+        "word": "how",
+        "start": 6.896,
+        "end": 7.036,
+        "startFrame": 207,
+        "endFrame": 211
+      },
+      {
+        "word": "Kling,",
+        "start": 7.152,
+        "end": 7.697,
+        "startFrame": 215,
+        "endFrame": 231
+      },
+      {
+        "word": "Runway,",
+        "start": 7.906,
+        "end": 8.464,
+        "startFrame": 237,
+        "endFrame": 254
+      },
+      {
+        "word": "and",
+        "start": 8.487,
+        "end": 8.673,
+        "startFrame": 255,
+        "endFrame": 260
+      },
+      {
+        "word": "Sora",
+        "start": 8.754,
+        "end": 9.183,
+        "startFrame": 263,
+        "endFrame": 275
+      },
+      {
+        "word": "each",
+        "start": 9.509,
+        "end": 9.741,
+        "startFrame": 285,
+        "endFrame": 292
+      },
+      {
+        "word": "handle",
+        "start": 9.799,
+        "end": 10.124,
+        "startFrame": 294,
+        "endFrame": 304
+      },
+      {
+        "word": "this",
+        "start": 10.159,
+        "end": 10.298,
+        "startFrame": 305,
+        "endFrame": 309
+      },
+      {
+        "word": "differently.\n\nStep",
+        "start": 10.344,
+        "end": 11.97,
+        "startFrame": 310,
+        "endFrame": 359
+      },
+      {
+        "word": "one,",
+        "start": 12.063,
+        "end": 12.423,
+        "startFrame": 362,
+        "endFrame": 373
+      },
+      {
+        "word": "Kling.",
+        "start": 12.55,
+        "end": 13.073,
+        "startFrame": 376,
+        "endFrame": 392
+      },
+      {
+        "word": "Your",
+        "start": 13.584,
+        "end": 13.793,
+        "startFrame": 408,
+        "endFrame": 414
+      },
+      {
+        "word": "prompt",
+        "start": 13.862,
+        "end": 14.176,
+        "startFrame": 416,
+        "endFrame": 425
+      },
+      {
+        "word": "enters",
+        "start": 14.257,
+        "end": 14.594,
+        "startFrame": 428,
+        "endFrame": 438
+      },
+      {
+        "word": "the",
+        "start": 14.652,
+        "end": 14.721,
+        "startFrame": 440,
+        "endFrame": 442
+      },
+      {
+        "word": "text",
+        "start": 14.779,
+        "end": 15.07,
+        "startFrame": 443,
+        "endFrame": 452
+      },
+      {
+        "word": "encoder.",
+        "start": 15.105,
+        "end": 15.732,
+        "startFrame": 453,
+        "endFrame": 472
+      },
+      {
+        "word": "The",
+        "start": 16.242,
+        "end": 16.37,
+        "startFrame": 487,
+        "endFrame": 491
+      },
+      {
+        "word": "encoder",
+        "start": 16.428,
+        "end": 16.893,
+        "startFrame": 493,
+        "endFrame": 507
+      },
+      {
+        "word": "transforms",
+        "start": 16.939,
+        "end": 17.543,
+        "startFrame": 508,
+        "endFrame": 526
+      },
+      {
+        "word": "words",
+        "start": 17.601,
+        "end": 17.891,
+        "startFrame": 528,
+        "endFrame": 537
+      },
+      {
+        "word": "into",
+        "start": 17.938,
+        "end": 18.123,
+        "startFrame": 538,
+        "endFrame": 544
+      },
+      {
+        "word": "embeddings.",
+        "start": 18.205,
+        "end": 18.936,
+        "startFrame": 546,
+        "endFrame": 568
+      },
+      {
+        "word": "Those",
+        "start": 19.319,
+        "end": 19.621,
+        "startFrame": 580,
+        "endFrame": 589
+      },
+      {
+        "word": "embeddings",
+        "start": 19.656,
+        "end": 20.167,
+        "startFrame": 590,
+        "endFrame": 605
+      },
+      {
+        "word": "feed",
+        "start": 20.318,
+        "end": 20.631,
+        "startFrame": 610,
+        "endFrame": 619
+      },
+      {
+        "word": "into",
+        "start": 20.678,
+        "end": 20.863,
+        "startFrame": 620,
+        "endFrame": 626
+      },
+      {
+        "word": "the",
+        "start": 20.933,
+        "end": 21.003,
+        "startFrame": 628,
+        "endFrame": 630
+      },
+      {
+        "word": "diffusion",
+        "start": 21.049,
+        "end": 21.618,
+        "startFrame": 631,
+        "endFrame": 649
+      },
+      {
+        "word": "model.",
+        "start": 21.688,
+        "end": 22.152,
+        "startFrame": 651,
+        "endFrame": 665
+      },
+      {
+        "word": "The",
+        "start": 22.756,
+        "end": 22.883,
+        "startFrame": 683,
+        "endFrame": 686
+      },
+      {
+        "word": "model",
+        "start": 22.965,
+        "end": 23.22,
+        "startFrame": 689,
+        "endFrame": 697
+      },
+      {
+        "word": "generates",
+        "start": 23.278,
+        "end": 23.696,
+        "startFrame": 698,
+        "endFrame": 711
+      },
+      {
+        "word": "video",
+        "start": 23.777,
+        "end": 24.102,
+        "startFrame": 713,
+        "endFrame": 723
+      },
+      {
+        "word": "frames",
+        "start": 24.184,
+        "end": 24.555,
+        "startFrame": 726,
+        "endFrame": 737
+      },
+      {
+        "word": "iteratively.",
+        "start": 24.671,
+        "end": 25.507,
+        "startFrame": 740,
+        "endFrame": 765
+      },
+      {
+        "word": "Each",
+        "start": 26.111,
+        "end": 26.332,
+        "startFrame": 783,
+        "endFrame": 790
+      },
+      {
+        "word": "frame",
+        "start": 26.401,
+        "end": 26.761,
+        "startFrame": 792,
+        "endFrame": 803
+      },
+      {
+        "word": "builds",
+        "start": 26.819,
+        "end": 27.133,
+        "startFrame": 805,
+        "endFrame": 814
+      },
+      {
+        "word": "on",
+        "start": 27.179,
+        "end": 27.26,
+        "startFrame": 815,
+        "endFrame": 818
+      },
+      {
+        "word": "the",
+        "start": 27.295,
+        "end": 27.365,
+        "startFrame": 819,
+        "endFrame": 821
+      },
+      {
+        "word": "previous.",
+        "start": 27.411,
+        "end": 28.073,
+        "startFrame": 822,
+        "endFrame": 842
+      },
+      {
+        "word": "Kling",
+        "start": 28.77,
+        "end": 29.06,
+        "startFrame": 863,
+        "endFrame": 872
+      },
+      {
+        "word": "outputs",
+        "start": 29.118,
+        "end": 29.524,
+        "startFrame": 874,
+        "endFrame": 886
+      },
+      {
+        "word": "your",
+        "start": 29.571,
+        "end": 29.698,
+        "startFrame": 887,
+        "endFrame": 891
+      },
+      {
+        "word": "final",
+        "start": 29.768,
+        "end": 30.07,
+        "startFrame": 893,
+        "endFrame": 902
+      },
+      {
+        "word": "video",
+        "start": 30.128,
+        "end": 30.488,
+        "startFrame": 904,
+        "endFrame": 915
+      },
+      {
+        "word": "in",
+        "start": 30.604,
+        "end": 30.767,
+        "startFrame": 918,
+        "endFrame": 923
+      },
+      {
+        "word": "1080p.\n\nStep",
+        "start": 30.883,
+        "end": 32.578,
+        "startFrame": 926,
+        "endFrame": 977
+      },
+      {
+        "word": "two,",
+        "start": 32.636,
+        "end": 33.019,
+        "startFrame": 979,
+        "endFrame": 991
+      },
+      {
+        "word": "Runway.",
+        "start": 33.298,
+        "end": 33.925,
+        "startFrame": 999,
+        "endFrame": 1018
+      },
+      {
+        "word": "You",
+        "start": 34.435,
+        "end": 34.586,
+        "startFrame": 1033,
+        "endFrame": 1038
+      },
+      {
+        "word": "provide",
+        "start": 34.668,
+        "end": 35.086,
+        "startFrame": 1040,
+        "endFrame": 1053
+      },
+      {
+        "word": "your",
+        "start": 35.12,
+        "end": 35.225,
+        "startFrame": 1054,
+        "endFrame": 1057
+      },
+      {
+        "word": "prompt",
+        "start": 35.271,
+        "end": 35.585,
+        "startFrame": 1058,
+        "endFrame": 1068
+      },
+      {
+        "word": "plus",
+        "start": 35.759,
+        "end": 36.014,
+        "startFrame": 1073,
+        "endFrame": 1080
+      },
+      {
+        "word": "an",
+        "start": 36.061,
+        "end": 36.119,
+        "startFrame": 1082,
+        "endFrame": 1084
+      },
+      {
+        "word": "optional",
+        "start": 36.165,
+        "end": 36.502,
+        "startFrame": 1085,
+        "endFrame": 1095
+      },
+      {
+        "word": "image.",
+        "start": 36.56,
+        "end": 36.99,
+        "startFrame": 1097,
+        "endFrame": 1110
+      },
+      {
+        "word": "Runway",
+        "start": 37.593,
+        "end": 38.011,
+        "startFrame": 1128,
+        "endFrame": 1140
+      },
+      {
+        "word": "uses",
+        "start": 38.093,
+        "end": 38.441,
+        "startFrame": 1143,
+        "endFrame": 1153
+      },
+      {
+        "word": "multi-modal",
+        "start": 38.534,
+        "end": 39.265,
+        "startFrame": 1156,
+        "endFrame": 1178
+      },
+      {
+        "word": "encoding.",
+        "start": 39.323,
+        "end": 39.915,
+        "startFrame": 1180,
+        "endFrame": 1197
+      },
+      {
+        "word": "The",
+        "start": 40.24,
+        "end": 40.368,
+        "startFrame": 1207,
+        "endFrame": 1211
+      },
+      {
+        "word": "encoder",
+        "start": 40.426,
+        "end": 40.914,
+        "startFrame": 1213,
+        "endFrame": 1227
+      },
+      {
+        "word": "processes",
+        "start": 40.96,
+        "end": 41.552,
+        "startFrame": 1229,
+        "endFrame": 1247
+      },
+      {
+        "word": "both",
+        "start": 41.645,
+        "end": 41.889,
+        "startFrame": 1249,
+        "endFrame": 1257
+      },
+      {
+        "word": "text",
+        "start": 41.959,
+        "end": 42.319,
+        "startFrame": 1259,
+        "endFrame": 1270
+      },
+      {
+        "word": "and",
+        "start": 42.435,
+        "end": 42.655,
+        "startFrame": 1273,
+        "endFrame": 1280
+      },
+      {
+        "word": "visual",
+        "start": 42.737,
+        "end": 43.05,
+        "startFrame": 1282,
+        "endFrame": 1292
+      },
+      {
+        "word": "input.",
+        "start": 43.12,
+        "end": 43.561,
+        "startFrame": 1294,
+        "endFrame": 1307
+      },
+      {
+        "word": "Gen-3",
+        "start": 44.165,
+        "end": 44.687,
+        "startFrame": 1325,
+        "endFrame": 1341
+      },
+      {
+        "word": "Alpha",
+        "start": 44.78,
+        "end": 45.151,
+        "startFrame": 1343,
+        "endFrame": 1355
+      },
+      {
+        "word": "runs",
+        "start": 45.395,
+        "end": 45.697,
+        "startFrame": 1362,
+        "endFrame": 1371
+      },
+      {
+        "word": "temporal",
+        "start": 45.767,
+        "end": 46.15,
+        "startFrame": 1373,
+        "endFrame": 1384
+      },
+      {
+        "word": "diffusion.",
+        "start": 46.196,
+        "end": 46.858,
+        "startFrame": 1386,
+        "endFrame": 1406
+      },
+      {
+        "word": "It",
+        "start": 47.369,
+        "end": 47.508,
+        "startFrame": 1421,
+        "endFrame": 1425
+      },
+      {
+        "word": "generates",
+        "start": 47.566,
+        "end": 48.019,
+        "startFrame": 1427,
+        "endFrame": 1441
+      },
+      {
+        "word": "motion",
+        "start": 48.089,
+        "end": 48.379,
+        "startFrame": 1443,
+        "endFrame": 1451
+      },
+      {
+        "word": "across",
+        "start": 48.425,
+        "end": 48.716,
+        "startFrame": 1453,
+        "endFrame": 1461
+      },
+      {
+        "word": "frames",
+        "start": 48.762,
+        "end": 49.087,
+        "startFrame": 1463,
+        "endFrame": 1473
+      },
+      {
+        "word": "simultaneously.",
+        "start": 49.203,
+        "end": 50.225,
+        "startFrame": 1476,
+        "endFrame": 1507
+      },
+      {
+        "word": "Runway",
+        "start": 50.829,
+        "end": 51.212,
+        "startFrame": 1525,
+        "endFrame": 1536
+      },
+      {
+        "word": "delivers",
+        "start": 51.27,
+        "end": 51.618,
+        "startFrame": 1538,
+        "endFrame": 1549
+      },
+      {
+        "word": "smooth,",
+        "start": 51.688,
+        "end": 52.315,
+        "startFrame": 1551,
+        "endFrame": 1569
+      },
+      {
+        "word": "cinematic",
+        "start": 52.396,
+        "end": 52.907,
+        "startFrame": 1572,
+        "endFrame": 1587
+      },
+      {
+        "word": "output.\n\nStep",
+        "start": 52.953,
+        "end": 54.428,
+        "startFrame": 1589,
+        "endFrame": 1633
+      },
+      {
+        "word": "three,",
+        "start": 54.486,
+        "end": 54.962,
+        "startFrame": 1635,
+        "endFrame": 1649
+      },
+      {
+        "word": "Sora.",
+        "start": 55.392,
+        "end": 56.077,
+        "startFrame": 1662,
+        "endFrame": 1682
+      },
+      {
+        "word": "Your",
+        "start": 56.576,
+        "end": 56.762,
+        "startFrame": 1697,
+        "endFrame": 1703
+      },
+      {
+        "word": "prompt",
+        "start": 56.82,
+        "end": 57.098,
+        "startFrame": 1705,
+        "endFrame": 1713
+      },
+      {
+        "word": "describes",
+        "start": 57.179,
+        "end": 57.679,
+        "startFrame": 1715,
+        "endFrame": 1730
+      },
+      {
+        "word": "the",
+        "start": 57.725,
+        "end": 57.795,
+        "startFrame": 1732,
+        "endFrame": 1734
+      },
+      {
+        "word": "full",
+        "start": 57.876,
+        "end": 58.108,
+        "startFrame": 1736,
+        "endFrame": 1743
+      },
+      {
+        "word": "scene.",
+        "start": 58.19,
+        "end": 58.689,
+        "startFrame": 1746,
+        "endFrame": 1761
+      },
+      {
+        "word": "Sora",
+        "start": 59.478,
+        "end": 59.803,
+        "startFrame": 1784,
+        "endFrame": 1794
+      },
+      {
+        "word": "uses",
+        "start": 59.873,
+        "end": 60.198,
+        "startFrame": 1796,
+        "endFrame": 1806
+      },
+      {
+        "word": "a",
+        "start": 60.245,
+        "end": 60.279,
+        "startFrame": 1807,
+        "endFrame": 1808
+      },
+      {
+        "word": "transformer",
+        "start": 60.326,
+        "end": 60.988,
+        "startFrame": 1810,
+        "endFrame": 1830
+      },
+      {
+        "word": "architecture,",
+        "start": 61.057,
+        "end": 61.731,
+        "startFrame": 1832,
+        "endFrame": 1852
+      },
+      {
+        "word": "not",
+        "start": 61.858,
+        "end": 62.044,
+        "startFrame": 1856,
+        "endFrame": 1861
+      },
+      {
+        "word": "diffusion.",
+        "start": 62.079,
+        "end": 62.81,
+        "startFrame": 1862,
+        "endFrame": 1884
+      },
+      {
+        "word": "The",
+        "start": 63.228,
+        "end": 63.356,
+        "startFrame": 1897,
+        "endFrame": 1901
+      },
+      {
+        "word": "model",
+        "start": 63.449,
+        "end": 63.716,
+        "startFrame": 1903,
+        "endFrame": 1911
+      },
+      {
+        "word": "predicts",
+        "start": 63.774,
+        "end": 64.145,
+        "startFrame": 1913,
+        "endFrame": 1924
+      },
+      {
+        "word": "video",
+        "start": 64.227,
+        "end": 64.563,
+        "startFrame": 1927,
+        "endFrame": 1937
+      },
+      {
+        "word": "patches",
+        "start": 64.633,
+        "end": 64.947,
+        "startFrame": 1939,
+        "endFrame": 1948
+      },
+      {
+        "word": "directly.",
+        "start": 65.005,
+        "end": 65.666,
+        "startFrame": 1950,
+        "endFrame": 1970
+      },
+      {
+        "word": "It",
+        "start": 66.166,
+        "end": 66.293,
+        "startFrame": 1985,
+        "endFrame": 1989
+      },
+      {
+        "word": "understands",
+        "start": 66.351,
+        "end": 66.885,
+        "startFrame": 1991,
+        "endFrame": 2007
+      },
+      {
+        "word": "physics",
+        "start": 66.943,
+        "end": 67.373,
+        "startFrame": 2008,
+        "endFrame": 2021
+      },
+      {
+        "word": "and",
+        "start": 67.524,
+        "end": 67.698,
+        "startFrame": 2026,
+        "endFrame": 2031
+      },
+      {
+        "word": "object",
+        "start": 67.779,
+        "end": 68.116,
+        "startFrame": 2033,
+        "endFrame": 2043
+      },
+      {
+        "word": "permanence.",
+        "start": 68.174,
+        "end": 68.79,
+        "startFrame": 2045,
+        "endFrame": 2064
+      },
+      {
+        "word": "Sora",
+        "start": 69.568,
+        "end": 69.928,
+        "startFrame": 2087,
+        "endFrame": 2098
+      },
+      {
+        "word": "generates",
+        "start": 69.974,
+        "end": 70.415,
+        "startFrame": 2099,
+        "endFrame": 2112
+      },
+      {
+        "word": "longer,",
+        "start": 70.496,
+        "end": 70.926,
+        "startFrame": 2115,
+        "endFrame": 2128
+      },
+      {
+        "word": "more",
+        "start": 71.042,
+        "end": 71.228,
+        "startFrame": 2131,
+        "endFrame": 2137
+      },
+      {
+        "word": "coherent",
+        "start": 71.274,
+        "end": 71.657,
+        "startFrame": 2138,
+        "endFrame": 2150
+      },
+      {
+        "word": "videos.",
+        "start": 71.692,
+        "end": 72.261,
+        "startFrame": 2151,
+        "endFrame": 2168
+      },
+      {
+        "word": "The",
+        "start": 72.865,
+        "end": 72.993,
+        "startFrame": 2186,
+        "endFrame": 2190
+      },
+      {
+        "word": "output",
+        "start": 73.051,
+        "end": 73.399,
+        "startFrame": 2192,
+        "endFrame": 2202
+      },
+      {
+        "word": "maintains",
+        "start": 73.457,
+        "end": 73.921,
+        "startFrame": 2204,
+        "endFrame": 2218
+      },
+      {
+        "word": "consistency",
+        "start": 73.979,
+        "end": 74.583,
+        "startFrame": 2219,
+        "endFrame": 2237
+      },
+      {
+        "word": "across",
+        "start": 74.641,
+        "end": 74.897,
+        "startFrame": 2239,
+        "endFrame": 2247
+      },
+      {
+        "word": "frames.\n\nEach",
+        "start": 74.955,
+        "end": 76.116,
+        "startFrame": 2249,
+        "endFrame": 2283
+      },
+      {
+        "word": "tool",
+        "start": 76.162,
+        "end": 76.371,
+        "startFrame": 2285,
+        "endFrame": 2291
+      },
+      {
+        "word": "has",
+        "start": 76.429,
+        "end": 76.557,
+        "startFrame": 2293,
+        "endFrame": 2297
+      },
+      {
+        "word": "its",
+        "start": 76.615,
+        "end": 76.731,
+        "startFrame": 2298,
+        "endFrame": 2302
+      },
+      {
+        "word": "strength.",
+        "start": 76.766,
+        "end": 77.277,
+        "startFrame": 2303,
+        "endFrame": 2318
+      },
+      {
+        "word": "Kling",
+        "start": 77.973,
+        "end": 78.217,
+        "startFrame": 2339,
+        "endFrame": 2347
+      },
+      {
+        "word": "excels",
+        "start": 78.275,
+        "end": 78.751,
+        "startFrame": 2348,
+        "endFrame": 2363
+      },
+      {
+        "word": "at",
+        "start": 78.798,
+        "end": 78.879,
+        "startFrame": 2364,
+        "endFrame": 2366
+      },
+      {
+        "word": "speed",
+        "start": 78.937,
+        "end": 79.297,
+        "startFrame": 2368,
+        "endFrame": 2379
+      },
+      {
+        "word": "and",
+        "start": 79.343,
+        "end": 79.413,
+        "startFrame": 2380,
+        "endFrame": 2382
+      },
+      {
+        "word": "accessibility.",
+        "start": 79.436,
+        "end": 80.26,
+        "startFrame": 2383,
+        "endFrame": 2408
+      },
+      {
+        "word": "Runway",
+        "start": 80.771,
+        "end": 81.166,
+        "startFrame": 2423,
+        "endFrame": 2435
+      },
+      {
+        "word": "delivers",
+        "start": 81.236,
+        "end": 81.572,
+        "startFrame": 2437,
+        "endFrame": 2447
+      },
+      {
+        "word": "professional",
+        "start": 81.63,
+        "end": 82.118,
+        "startFrame": 2449,
+        "endFrame": 2464
+      },
+      {
+        "word": "quality.",
+        "start": 82.164,
+        "end": 82.687,
+        "startFrame": 2465,
+        "endFrame": 2481
+      },
+      {
+        "word": "Sora",
+        "start": 83.291,
+        "end": 83.685,
+        "startFrame": 2499,
+        "endFrame": 2511
+      },
+      {
+        "word": "leads",
+        "start": 83.743,
+        "end": 83.999,
+        "startFrame": 2512,
+        "endFrame": 2520
+      },
+      {
+        "word": "in",
+        "start": 84.034,
+        "end": 84.103,
+        "startFrame": 2521,
+        "endFrame": 2523
+      },
+      {
+        "word": "understanding",
+        "start": 84.173,
+        "end": 84.881,
+        "startFrame": 2525,
+        "endFrame": 2546
+      },
+      {
+        "word": "and",
+        "start": 84.963,
+        "end": 85.16,
+        "startFrame": 2549,
+        "endFrame": 2555
+      },
+      {
+        "word": "coherence.",
+        "start": 85.241,
+        "end": 86.147,
+        "startFrame": 2557,
+        "endFrame": 2584
+      }
+    ]
+  },
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Pipeline",
+        "color": "#f97316",
+        "direction": "right",
+        "connectionToNext": "flow",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "How It Works",
+            "visualType": "process-steps",
+            "visualData": {
+              "steps": [
+                {
+                  "label": "Write Prompt",
+                  "description": "Describe your video"
+                },
+                {
+                  "label": "Encode Text",
+                  "description": "Words become embeddings"
+                },
+                {
+                  "label": "Generate Frames",
+                  "description": "AI model creates video"
+                },
+                {
+                  "label": "Output Video",
+                  "description": "Final rendered result"
+                }
+              ]
+            },
+            "startFrame": 3
+          },
+          {
+            "id": "section_1_2",
+            "title": "The Players",
+            "visualType": "logo-grid",
+            "visualData": {
+              "items": [
+                {
+                  "icon": "Lightning",
+                  "label": "Kling",
+                  "color": "#f59e0b"
+                },
+                {
+                  "icon": "FilmReel",
+                  "label": "Runway",
+                  "color": "#8b5cf6"
+                },
+                {
+                  "icon": "Brain",
+                  "label": "Sora",
+                  "color": "#06b6d4"
+                }
+              ]
+            },
+            "startFrame": 210
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Under The Hood",
+        "color": "#3b82f6",
+        "direction": "right",
+        "connectionToNext": "flow",
+        "startFrame": 345,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Feature Comparison",
+            "visualType": "table",
+            "visualData": {
+              "headers": [
+                "Feature",
+                "Kling",
+                "Runway",
+                "Sora"
+              ],
+              "rows": [
+                [
+                  "Architecture",
+                  "Diffusion",
+                  "Multi-Modal",
+                  "Transformer"
+                ],
+                [
+                  "Input",
+                  "Text prompt",
+                  "Text + Image",
+                  "Full scene text"
+                ],
+                [
+                  "Process",
+                  "Iterative frames",
+                  "Temporal diffusion",
+                  "Patch prediction"
+                ],
+                [
+                  "Output",
+                  "1080p video",
+                  "Cinematic motion",
+                  "Coherent long-form"
+                ]
+              ],
+              "highlightCol": 3
+            },
+            "startFrame": 355
+          },
+          {
+            "id": "section_2_2",
+            "title": "General Flow",
+            "layout": "flow",
+            "startFrame": 600,
+            "nodes": [
+              {
+                "label": "Prompt",
+                "icon": "Textbox",
+                "startFrame": 605
+              },
+              {
+                "label": "Encode",
+                "icon": "Barcode",
+                "startFrame": 610
+              },
+              {
+                "label": "Generate",
+                "icon": "Cpu",
+                "startFrame": 615
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "The Verdict",
+        "color": "#22c55e",
+        "direction": "right",
+        "connectionToNext": "none",
+        "startFrame": 2260,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Each Tool Excels",
+            "visualType": "list",
+            "visualData": {
+              "items": [
+                "Kling excels at speed",
+                "Runway delivers quality",
+                "Sora leads in coherence"
+              ],
+              "style": "bullet"
+            },
+            "startFrame": 2270
+          },
+          {
+            "id": "section_3_2",
+            "title": "Choose Your Priority",
+            "layout": "merge",
+            "startFrame": 2400,
+            "nodes": [
+              {
+                "label": "Speed",
+                "icon": "Speedometer",
+                "startFrame": 2405
+              },
+              {
+                "label": "Quality",
+                "icon": "Diamond",
+                "startFrame": 2410
+              },
+              {
+                "label": "Coherence",
+                "icon": "PuzzlePiece",
+                "startFrame": 2415
+              },
+              {
+                "label": "AI Video",
+                "icon": "Sparkle",
+                "startFrame": 2420
+              }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+  "camera": {
+    "initialPosition": {
+      "x": 960,
+      "y": 540,
+      "scale": 0.5
+    },
+    "keyframes": [
+      {
+        "frame": 0,
+        "target": "overview",
+        "x": 960,
+        "y": 540,
+        "scale": 0.5,
+        "description": "Title + overview"
+      },
+      {
+        "frame": 5,
+        "target": "sticky_1",
+        "x": 400,
+        "y": 400,
+        "scale": 0.95,
+        "description": "Zoom to Pipeline intro"
+      },
+      {
+        "frame": 330,
+        "target": "sticky_2",
+        "x": 960,
+        "y": 400,
+        "scale": 0.95,
+        "description": "Zoom to comparison table (15f before sticky_2 @ 345)"
+      },
+      {
+        "frame": 2245,
+        "target": "sticky_3",
+        "x": 1520,
+        "y": 400,
+        "scale": 0.95,
+        "description": "Zoom to verdict (15f before sticky_3 @ 2260)"
+      }
+    ]
+  },
+  "sounds": {
+    "points": [
+      {
+        "frame": 0,
+        "type": "title",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.15
+      },
+      {
+        "frame": 25,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.12
+      },
+      {
+        "frame": 210,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.12
+      },
+      {
+        "frame": 328,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 375,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.12
+      },
+      {
+        "frame": 600,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.1
+      },
+      {
+        "frame": 2243,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 2290,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.12
+      },
+      {
+        "frame": 2400,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.1
+      }
+    ],
+    "totalCount": 9
+  }
+}

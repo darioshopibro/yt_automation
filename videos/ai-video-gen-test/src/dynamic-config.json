@@ -1,0 +1,384 @@
+{
+  "title": "AI Video Generation",
+  "subtitle": "Kling vs Runway vs Sora",
+  "fps": 30,
+  "totalFrames": 765,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": [
+        "#f97316",
+        "#3b82f6",
+        "#22c55e",
+        "#a855f7"
+      ]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Kling",
+      "color": "#f97316",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Text Encoder",
+          "subtitle": "Prompt Processing",
+          "startFrame": 5,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Prompt",
+              "icon": "Textbox",
+              "startFrame": 10
+            },
+            {
+              "label": "Encoder",
+              "icon": "Barcode",
+              "startFrame": 16
+            }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Embeddings",
+          "subtitle": "Vector Space",
+          "startFrame": 55,
+          "layout": "arrow",
+          "nodes": [
+            {
+              "label": "Words",
+              "icon": "TextT",
+              "startFrame": 60
+            },
+            {
+              "label": "Vectors",
+              "icon": "VectorTwo",
+              "startFrame": 66
+            }
+          ]
+        },
+        {
+          "id": "section_1_3",
+          "title": "Diffusion Model",
+          "subtitle": "Frame Generation",
+          "startFrame": 105,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Noise",
+              "icon": "Gradient",
+              "startFrame": 110
+            },
+            {
+              "label": "Denoise",
+              "icon": "Sparkle",
+              "startFrame": 116
+            },
+            {
+              "label": "Frames",
+              "icon": "FilmStrip",
+              "startFrame": 122
+            }
+          ]
+        },
+        {
+          "id": "section_1_4",
+          "title": "1080p Output",
+          "subtitle": "Final Video",
+          "startFrame": 155,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Render",
+              "icon": "GraphicsCard",
+              "startFrame": 160
+            },
+            {
+              "label": "Export",
+              "icon": "Export",
+              "startFrame": 166
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Runway",
+      "color": "#8b5cf6",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Multi-Modal Input",
+          "subtitle": "Text + Image",
+          "startFrame": 205,
+          "layout": "combine",
+          "nodes": [
+            {
+              "label": "Prompt",
+              "icon": "PencilSimple",
+              "startFrame": 210
+            },
+            {
+              "label": "Image",
+              "icon": "FileImage",
+              "startFrame": 216
+            },
+            {
+              "label": "Input",
+              "icon": "GitMerge",
+              "startFrame": 222
+            }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "Unified Encoder",
+          "subtitle": "Multi-Modal Processing",
+          "startFrame": 255,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Text",
+              "icon": "FileText",
+              "startFrame": 260
+            },
+            {
+              "label": "Visual",
+              "icon": "Scan",
+              "startFrame": 266
+            },
+            {
+              "label": "Merge",
+              "icon": "Parallelogram",
+              "startFrame": 272
+            }
+          ]
+        },
+        {
+          "id": "section_2_3",
+          "title": "Gen-3 Alpha",
+          "subtitle": "Temporal Diffusion",
+          "startFrame": 305,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Motion",
+              "icon": "Lightning",
+              "startFrame": 310
+            },
+            {
+              "label": "Frames",
+              "icon": "Timer",
+              "startFrame": 316
+            }
+          ]
+        },
+        {
+          "id": "section_2_4",
+          "title": "Cinematic Output",
+          "subtitle": "Smooth Video",
+          "startFrame": 355,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Render",
+              "icon": "FilmReel",
+              "startFrame": 360
+            },
+            {
+              "label": "Quality",
+              "icon": "Diamond",
+              "startFrame": 366
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Sora",
+      "color": "#06b6d4",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Scene Description",
+          "subtitle": "Full Scene Prompt",
+          "startFrame": 405,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Prompt",
+              "icon": "Paragraph",
+              "startFrame": 410
+            },
+            {
+              "label": "Scene",
+              "icon": "Monitor",
+              "startFrame": 416
+            }
+          ]
+        },
+        {
+          "id": "section_3_2",
+          "title": "Transformer",
+          "subtitle": "Not Diffusion",
+          "startFrame": 455,
+          "layout": "negation",
+          "nodes": [
+            {
+              "label": "Diffusion",
+              "icon": "Equalizer",
+              "startFrame": 460
+            },
+            {
+              "label": "Attention",
+              "icon": "Brain",
+              "startFrame": 466
+            }
+          ]
+        },
+        {
+          "id": "section_3_3",
+          "title": "Physics Engine",
+          "subtitle": "World Understanding",
+          "startFrame": 505,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Physics",
+              "icon": "Atom",
+              "startFrame": 510
+            },
+            {
+              "label": "Objects",
+              "icon": "Cube",
+              "startFrame": 516
+            }
+          ]
+        },
+        {
+          "id": "section_3_4",
+          "title": "Coherent Output",
+          "subtitle": "Long-Form Video",
+          "startFrame": 555,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Temporal",
+              "icon": "Repeat",
+              "startFrame": 560
+            },
+            {
+              "label": "Video",
+              "icon": "VideoCamera",
+              "startFrame": 566
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Strengths",
+      "color": "#22c55e",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "id": "section_4_1",
+          "title": "Comparison",
+          "subtitle": "",
+          "startFrame": 605,
+          "visualType": "table",
+          "visualData": {
+            "headers": [
+              "Feature",
+              "Kling",
+              "Runway",
+              "Sora"
+            ],
+            "rows": [
+              [
+                "Strength",
+                "Speed",
+                "Quality",
+                "Coherence"
+              ],
+              [
+                "Architecture",
+                "Diffusion",
+                "Multi-Modal",
+                "Transformer"
+              ],
+              [
+                "Output",
+                "1080p video",
+                "Cinematic",
+                "Long-form"
+              ]
+            ],
+            "highlightCol": 3
+          }
+        },
+        {
+          "id": "section_4_2",
+          "title": "Pick Your Tool",
+          "subtitle": "",
+          "startFrame": 655,
+          "layout": "vs",
+          "nodes": [
+            {
+              "label": "Speed",
+              "icon": "Speedometer",
+              "startFrame": 660
+            },
+            {
+              "label": "Quality",
+              "icon": "Crown",
+              "startFrame": 666
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

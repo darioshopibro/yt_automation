@@ -4,6 +4,7 @@ import { loadConfig, saveConfig, listProjects } from './api';
 import Canvas from './Canvas';
 import BottomPanel from './BottomPanel';
 import BrandingPage from './BrandingPage';
+import VisualPreview from './VisualPreview';
 
 // Deep clone helper
 function clone<T>(obj: T): T {
@@ -26,7 +27,7 @@ export default function App() {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [projects, setProjects] = useState<string[]>([]);
   const [dirty, setDirty] = useState(false);
-  const [activeTab, setActiveTab] = useState<'editor' | 'branding'>('editor');
+  const [activeTab, setActiveTab] = useState<'editor' | 'branding' | 'visuals'>('editor');
 
   // Preview panel state
   const [showPreview, setShowPreview] = useState(false);
@@ -219,6 +220,24 @@ export default function App() {
         >
           Branding
         </button>
+        <button
+          onClick={() => setActiveTab('visuals')}
+          style={{
+            background: activeTab === 'visuals' ? '#818cf820' : 'transparent',
+            border: `1px solid ${activeTab === 'visuals' ? '#818cf8' : 'transparent'}`,
+            borderRadius: 6,
+            padding: '3px 10px',
+            color: activeTab === 'visuals' ? '#818cf8' : '#64748b',
+            fontSize: 12,
+            fontWeight: 700,
+            cursor: 'pointer',
+            letterSpacing: '-0.02em',
+            whiteSpace: 'nowrap',
+            transition: 'all 0.15s',
+          }}
+        >
+          Visuals
+        </button>
         <span style={{ color: '#1a1a2e', fontSize: 14 }}>|</span>
 
         {/* Project dropdown — auto-loads on select (editor tab only) */}
@@ -375,6 +394,10 @@ export default function App() {
       {activeTab === 'branding' ? (
         <div style={{ flex: 1, overflow: 'hidden' }}>
           <BrandingPage />
+        </div>
+      ) : activeTab === 'visuals' ? (
+        <div style={{ flex: 1, overflow: 'auto' }}>
+          <VisualPreview />
         </div>
       ) : (
         <div style={{

@@ -1,0 +1,242 @@
+{
+  "meta": {
+    "title": "How Claude Code Works",
+    "fps": 30,
+    "totalFrames": 3874,
+    "totalDuration": 129.13,
+    "hierarchyType": "sticky",
+    "port": 3013
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 128.126
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "The Engine",
+        "color": "#f97316",
+        "startFrame": 5,
+        "direction": "right",
+        "connectionToNext": "flow",
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "CLI Assistant",
+            "subtitle": "Lives in your terminal",
+            "layout": "flow",
+            "startFrame": 10,
+            "nodes": [
+              { "label": "Terminal", "icon": "Terminal", "startFrame": 10 },
+              { "label": "AI", "icon": "Brain", "startFrame": 55 },
+              { "label": "Code", "icon": "Code", "startFrame": 267 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Input & Output",
+            "subtitle": "Type and get results",
+            "layout": "flow",
+            "startFrame": 150,
+            "nodes": [
+              { "label": "Question", "icon": "ChatText", "startFrame": 153 },
+              { "label": "API", "icon": "Plug", "startFrame": 222 },
+              { "label": "Codebase", "icon": "FolderOpen", "startFrame": 244 }
+            ]
+          },
+          {
+            "id": "section_1_3",
+            "title": "API Call",
+            "subtitle": "Under the hood",
+            "layout": "flow",
+            "startFrame": 435,
+            "nodes": [
+              { "label": "Message", "icon": "PaperPlaneTilt", "startFrame": 495 },
+              { "label": "Anthropic", "icon": "Globe", "startFrame": 584 },
+              { "label": "Context", "icon": "AppWindow", "startFrame": 649 }
+            ]
+          },
+          {
+            "id": "section_1_4",
+            "title": "Scale",
+            "subtitle": "Context window capacity",
+            "visualType": "stats",
+            "visualData": {
+              "items": [
+                { "label": "Tokens", "value": "200K", "subtitle": "Context window" },
+                { "label": "Pages", "value": "500+", "subtitle": "Code at once" }
+              ]
+            },
+            "startFrame": 805
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "The Tools",
+        "color": "#3b82f6",
+        "startFrame": 1005,
+        "direction": "right",
+        "connectionToNext": "flow",
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Actions",
+            "subtitle": "What Claude can do",
+            "layout": "flow",
+            "startFrame": 1020,
+            "nodes": [
+              { "label": "Read", "icon": "FileText", "startFrame": 1127 },
+              { "label": "Write", "icon": "PencilLine", "startFrame": 1158 },
+              { "label": "Bash", "icon": "TerminalWindow", "startFrame": 1193 }
+            ]
+          },
+          {
+            "id": "section_2_2",
+            "title": "Search",
+            "subtitle": "Find and browse",
+            "layout": "flow",
+            "startFrame": 1230,
+            "nodes": [
+              { "label": "Grep", "icon": "MagnifyingGlass", "startFrame": 1234 },
+              { "label": "Browse", "icon": "GlobeSimple", "startFrame": 1261 },
+              { "label": "Scan", "icon": "Binoculars", "startFrame": 1311 }
+            ]
+          },
+          {
+            "id": "section_2_3",
+            "title": "Permissions",
+            "subtitle": "You stay in control",
+            "layout": "vs",
+            "startFrame": 1388,
+            "nodes": [
+              { "label": "Approve", "icon": "CheckCircle", "startFrame": 1444 },
+              { "label": "Deny", "icon": "XCircle", "startFrame": 1467 }
+            ]
+          },
+          {
+            "id": "section_2_4",
+            "title": "Smart Context",
+            "subtitle": "Selects what matters",
+            "layout": "merge",
+            "startFrame": 1580,
+            "nodes": [
+              { "label": "Config", "icon": "FileCode", "startFrame": 1671 },
+              { "label": "Git", "icon": "GitBranch", "startFrame": 1823 },
+              { "label": "Relevant", "icon": "Funnel", "startFrame": 1894 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Ship It",
+        "color": "#22c55e",
+        "startFrame": 2100,
+        "direction": "right",
+        "connectionToNext": "none",
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Models",
+            "subtitle": "Pick the right one",
+            "layout": "flow",
+            "startFrame": 2115,
+            "nodes": [
+              { "label": "Opus", "icon": "Crown", "startFrame": 2185 },
+              { "label": "Sonnet", "icon": "Lightning", "startFrame": 2372 },
+              { "label": "Haiku", "icon": "Leaf", "startFrame": 2518 }
+            ]
+          },
+          {
+            "id": "section_3_2",
+            "title": "Pricing",
+            "subtitle": "Usage-based costs",
+            "visualType": "table",
+            "visualData": {
+              "headers": ["Model", "Input", "Output"],
+              "rows": [
+                ["Opus", "$15/M", "$75/M"],
+                ["Sonnet", "$3/M", "$15/M"],
+                ["Haiku", "$0.25/M", "$1.25/M"]
+              ],
+              "highlightCol": 2
+            },
+            "startFrame": 2710
+          },
+          {
+            "id": "section_3_3",
+            "title": "Typical Cost",
+            "subtitle": "Per coding session",
+            "visualType": "stats",
+            "visualData": {
+              "items": [
+                { "label": "Session", "value": "$2-5", "subtitle": "With Sonnet" }
+              ]
+            },
+            "startFrame": 3190
+          },
+          {
+            "id": "section_3_4",
+            "title": "Workflow",
+            "subtitle": "Simple and local",
+            "layout": "flow",
+            "startFrame": 3320,
+            "nodes": [
+              { "label": "Open", "icon": "Monitor", "startFrame": 3370 },
+              { "label": "Run", "icon": "Play", "startFrame": 3462 },
+              { "label": "Ship", "icon": "RocketLaunch", "startFrame": 3647 }
+            ]
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.55 },
+      { "frame": 5, "target": "sticky_1", "x": 400, "y": 350, "scale": 0.85 },
+      { "frame": 135, "target": "section_1_2", "x": 400, "y": 420, "scale": 1.0 },
+      { "frame": 420, "target": "section_1_3", "x": 400, "y": 520, "scale": 1.0 },
+      { "frame": 790, "target": "section_1_4", "x": 400, "y": 650, "scale": 1.0 },
+      { "frame": 990, "target": "sticky_2", "x": 960, "y": 350, "scale": 0.85 },
+      { "frame": 1215, "target": "section_2_2", "x": 960, "y": 420, "scale": 1.0 },
+      { "frame": 1373, "target": "section_2_3", "x": 960, "y": 520, "scale": 1.0 },
+      { "frame": 1565, "target": "section_2_4", "x": 960, "y": 650, "scale": 1.0 },
+      { "frame": 2085, "target": "sticky_3", "x": 1500, "y": 350, "scale": 0.85 },
+      { "frame": 2695, "target": "section_3_2", "x": 1500, "y": 420, "scale": 1.0 },
+      { "frame": 3175, "target": "section_3_3", "x": 1500, "y": 520, "scale": 1.0 },
+      { "frame": 3305, "target": "section_3_4", "x": 1500, "y": 650, "scale": 1.0 },
+      { "frame": 3750, "target": "overview", "x": 960, "y": 540, "scale": 0.55 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 133, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 418, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 445, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 788, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 988, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1030, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1213, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 1371, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 1563, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 1590, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.10 },
+      { "frame": 2083, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2693, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 3173, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 3303, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 3748, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 }
+    ],
+    "totalCount": 16
+  }
+}
