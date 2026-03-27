@@ -1,0 +1,9 @@
+REST has been the standard for APIs for over a decade. You define endpoints like GET /users and POST /orders. Each endpoint returns a fixed data structure. Simple, predictable, and well understood.
+
+But REST has problems. Over-fetching means you get data you don't need. Under-fetching means you need multiple requests. And every new feature often requires a new endpoint.
+
+GraphQL solves these problems. You send a query describing exactly what data you want. One endpoint, one request, exactly the fields you need. The client is in control, not the server.
+
+GraphQL uses a schema that defines your data types. Queries fetch data, mutations change data, and subscriptions give you real-time updates. Tools like Apollo make it easy to add to any project.
+
+But GraphQL isn't always better. For simple APIs, REST is faster to build. GraphQL adds complexity with caching, error handling, and the N+1 query problem. Choose based on your needs: REST for simple CRUD, GraphQL for complex data requirements.

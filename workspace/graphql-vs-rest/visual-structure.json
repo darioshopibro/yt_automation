@@ -1,0 +1,101 @@
+{
+  "title": "GraphQL vs REST",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "REST API Basics",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "REST Endpoints",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "routes.js",
+            "code": "app.get('/users', getUsers);\napp.get('/users/:id', getUser);\napp.post('/orders', createOrder);\napp.get('/orders/:id', getOrder);",
+            "highlightLines": [1, 3]
+          }
+        },
+        {
+          "title": "REST Pain Points",
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Over-fetching unused data",
+              "Under-fetching needs more requests",
+              "New feature, new endpoint"
+            ],
+            "style": "bullet"
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "GraphQL Approach",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "REST vs GraphQL",
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "REST",
+              "items": ["Multiple endpoints", "Fixed data structure", "Server decides response"]
+            },
+            "right": {
+              "title": "GraphQL",
+              "items": ["Single endpoint", "Exact fields returned", "Client controls query"]
+            },
+            "leftColor": "#ef4444",
+            "rightColor": "#22c55e",
+            "dividerLabel": "vs"
+          }
+        },
+        {
+          "title": "Schema Structure",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Queries", "icon": "MagnifyingGlass" },
+            { "label": "Mutations", "icon": "PencilSimple" },
+            { "label": "Subscriptions", "icon": "BellRinging" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "When to Use What",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Comparison",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Criteria", "REST", "GraphQL"],
+            "rows": [
+              ["Setup Speed", "Fast", "Slower"],
+              ["Caching", "Easy", "Complex"],
+              ["Data Fetching", "Fixed", "Flexible"],
+              ["Simple CRUD", "Yes", "Overkill"]
+            ],
+            "highlightCol": 2
+          }
+        },
+        {
+          "title": "The Takeaway",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Choose based on your needs",
+            "highlight": ["Choose", "needs"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

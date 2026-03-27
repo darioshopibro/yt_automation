@@ -1,0 +1,118 @@
+{
+  "title": "Kubernetes Architecture Explained",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "Worker Nodes",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "3 Required Processes",
+          "visualType": "hierarchy",
+          "visualData": {
+            "root": {
+              "label": "Worker Node",
+              "children": [
+                { "label": "Container Runtime", "children": [{ "label": "Docker" }] },
+                { "label": "Kubelet", "children": [{ "label": "Pod Mgmt" }] },
+                { "label": "Kube-Proxy", "children": [{ "label": "Networking" }] }
+              ]
+            }
+          }
+        },
+        {
+          "title": "Smart Routing",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "App Request", "description": "Pod needs database" },
+              { "label": "Service Catches", "description": "Load balancer intercepts" },
+              { "label": "Kube-Proxy Routes", "description": "Intelligent forwarding" },
+              { "label": "Same Node Pod", "description": "Low overhead delivery" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Master Nodes",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Control Plane",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Process", "Role", "Handles"],
+            "rows": [
+              ["API Server", "Gateway", "Auth + Routing"],
+              ["Scheduler", "Placement", "Resource Calc"],
+              ["Controller", "Recovery", "State Changes"],
+              ["etcd", "Storage", "Cluster State"]
+            ],
+            "highlightCol": 1
+          }
+        },
+        {
+          "title": "Self-Healing Cycle",
+          "visualType": "timeline",
+          "visualData": {
+            "items": [
+              { "label": "Detect", "description": "Controller finds crash" },
+              { "label": "Schedule", "description": "Scheduler picks node" },
+              { "label": "Restart", "description": "Kubelet starts pod" },
+              { "label": "Healthy", "description": "Cluster state restored" }
+            ],
+            "direction": "horizontal"
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Cluster Setup",
+      "direction": "below",
+      "sections": [
+        {
+          "title": "Master vs Worker",
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Master Nodes",
+              "items": [
+                "Control cluster state",
+                "Less CPU/RAM needed",
+                "Run 4 processes",
+                "Load balanced API"
+              ]
+            },
+            "right": {
+              "title": "Worker Nodes",
+              "items": [
+                "Run app containers",
+                "More resources needed",
+                "Run 3 processes",
+                "Scale horizontally"
+              ]
+            },
+            "leftColor": "#326ce5",
+            "rightColor": "#22c55e",
+            "dividerLabel": "vs"
+          }
+        },
+        {
+          "title": "The Power of K8s",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Self-managed, self-healing, infinitely scalable",
+            "highlight": ["self-managed", "self-healing", "scalable"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

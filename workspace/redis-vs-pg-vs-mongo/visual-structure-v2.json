@@ -1,0 +1,92 @@
+{
+  "stickies": [
+    {
+      "label": "Performance & Cost",
+      "sections": [
+        {
+          "title": "Throughput Benchmark",
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "Redis", "value": 100000, "color": "#dc382d" },
+              { "label": "MongoDB", "value": 25000, "color": "#47a248" },
+              { "label": "PostgreSQL", "value": 5000, "color": "#336791" }
+            ],
+            "unit": "ops/s",
+            "maxValue": 120000
+          }
+        },
+        {
+          "title": "Monthly Storage Cost",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Redis", "value": "$500/mo", "subtitle": "64GB in-memory" },
+              { "label": "PostgreSQL", "value": "$50/mo", "subtitle": "Same storage" },
+              { "label": "Difference", "value": "10x", "subtitle": "Cheaper on disk" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "label": "Feature Comparison",
+      "sections": [
+        {
+          "title": "Database Capabilities",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Feature", "PostgreSQL", "Redis", "MongoDB"],
+            "rows": [
+              ["ACID Transactions", "Yes", "No", "No"],
+              ["Complex Joins", "Yes", "No", "No"],
+              ["Sub-ms Latency", "No", "Yes", "No"],
+              ["Schema Flexible", "Partial", "Yes", "Yes"],
+              ["Full-text Search", "Yes", "No", "No"]
+            ],
+            "highlightCol": 1
+          }
+        },
+        {
+          "title": "Industry Adoption",
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "PostgreSQL", "value": 85, "color": "#336791" },
+              { "label": "Redis", "value": 43, "color": "#dc382d" },
+              { "label": "MongoDB", "value": 21, "color": "#47a248" }
+            ],
+            "unit": "%",
+            "maxValue": 100
+          }
+        }
+      ]
+    },
+    {
+      "label": "Winning Architecture",
+      "sections": [
+        {
+          "title": "The Proven Stack",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Read Request", "description": "Check Redis cache first" },
+              { "label": "Cache Miss", "description": "Fall back to PostgreSQL" },
+              { "label": "Write Data", "description": "Write directly to PostgreSQL" },
+              { "label": "Invalidate", "description": "Clear Redis cache entry" }
+            ]
+          }
+        },
+        {
+          "title": "The Takeaway",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "PostgreSQL plus Redis handles ninety percent",
+            "highlight": ["PostgreSQL", "Redis", "ninety percent"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,9 @@
+docker changed how we deploy software. Before containers, you'd install dependencies directly on the server. Every server was unique, and deployments often failed because of environment differences.
+
+A container packages your application with everything it needs: code, runtime, libraries, and system tools. It runs the same everywhere, whether on your laptop or in production.
+
+The Dockerfile defines how to build your container. You start from a base image, copy your code, install dependencies, and set the startup command. docker builds this into an image you can push to a registry.
+
+docker Compose lets you run multiple containers together. Your web app, database, and cash can all start with one command. Each service gets its own container but they communicate through a shared network.
+
+In production, you'll use container orchestration. Tools like koo-ber-net-eez manage thousands of containers, handling scaling, load balancing, and automatic recovery when containers fail.

@@ -1,0 +1,133 @@
+{
+  "title": "Docker Containers Explained",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Problem & Solution",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Before vs After Containers",
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Before Docker",
+              "items": [
+                "Install deps on server",
+                "Every server unique",
+                "Environment differences",
+                "Deployments often failed"
+              ]
+            },
+            "right": {
+              "title": "With Containers",
+              "items": [
+                "Packaged with everything",
+                "Runs same everywhere",
+                "Laptop to production",
+                "Consistent deploys"
+              ]
+            },
+            "leftColor": "#ef4444",
+            "rightColor": "#22c55e",
+            "dividerLabel": "vs"
+          }
+        },
+        {
+          "title": "What Gets Packaged",
+          "layout": "combine",
+          "nodes": [
+            { "label": "App Code", "icon": "Code" },
+            { "label": "Runtime", "icon": "Play" },
+            { "label": "Libraries", "icon": "Books" },
+            { "label": "Container", "icon": "Package" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Building Images",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Dockerfile Steps",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Base Image", "description": "Start from base" },
+              { "label": "Copy Code", "description": "Add app source" },
+              { "label": "Install Deps", "description": "Install packages" },
+              { "label": "Set Command", "description": "Define startup cmd" }
+            ]
+          }
+        },
+        {
+          "title": "Dockerfile Example",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "dockerfile",
+            "filename": "Dockerfile",
+            "code": "FROM node:20-alpine\nWORKDIR /app\nCOPY . .\nRUN npm install\nCMD [\"node\", \"server.js\"]",
+            "highlightLines": [1, 5]
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Multi-Container Setup",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Docker Compose Services",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Web App", "icon": "AppWindow" },
+            { "label": "Database", "icon": "Database" },
+            { "label": "Cache", "icon": "Memory" }
+          ]
+        },
+        {
+          "title": "Compose Features",
+          "layout": "merge",
+          "nodes": [
+            { "label": "One Command", "icon": "Terminal" },
+            { "label": "Own Container", "icon": "Package" },
+            { "label": "Shared Net", "icon": "Graph" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Production at Scale",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Orchestration Handles",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Scaling", "icon": "ArrowsOutSimple" },
+            { "label": "Load Balance", "icon": "Scales" },
+            { "label": "Recovery", "icon": "ArrowsClockwise" }
+          ]
+        },
+        {
+          "title": "Deploy Everywhere",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Runs the same everywhere",
+            "highlight": ["same", "everywhere"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

@@ -1,0 +1,92 @@
+{
+  "title": "Serverless Architecture",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "What is Serverless",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Serverless Concept",
+          "layout": "negation",
+          "nodes": [
+            { "label": "No Servers?", "icon": "Empty" },
+            { "label": "Cloud Manages", "icon": "Cloud" },
+            { "label": "You Write", "icon": "Function" }
+          ]
+        },
+        {
+          "title": "Lambda Function",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "handler.js",
+            "code": "exports.handler = async (event) => {\n  const result = process(event);\n  return {\n    statusCode: 200,\n    body: JSON.stringify(result)\n  };\n};",
+            "highlightLines": [1, 2]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Use Cases & Limits",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Pros vs Cons",
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Use Cases",
+              "items": ["API endpoints", "File processing", "Scheduled tasks", "Webhook handlers"]
+            },
+            "right": {
+              "title": "Limitations",
+              "items": ["Cold start latency", "Execution time limit", "Distributed debugging", "Vendor lock-in"]
+            },
+            "leftColor": "#22c55e",
+            "rightColor": "#ef4444",
+            "dividerLabel": "vs"
+          }
+        },
+        {
+          "title": "Event-Driven Model",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Event", "icon": "Lightning" },
+            { "label": "Function", "icon": "Function" },
+            { "label": "Response", "icon": "ArrowRight" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Cost & Strategy",
+      "sections": [
+        {
+          "title": "Cost Crossover Point",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Threshold", "value": "1M", "subtitle": "Requests per month" },
+              { "label": "Savings", "value": "60-70%", "subtitle": "Dedicated above 1M" }
+            ]
+          }
+        },
+        {
+          "title": "The Hybrid Way",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Serverless for spiky, containers for steady",
+            "highlight": ["spiky", "steady"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

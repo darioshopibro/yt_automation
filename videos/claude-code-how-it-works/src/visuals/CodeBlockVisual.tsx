@@ -92,29 +92,54 @@ const CodeBlockVisual: React.FC<Props> = ({
           }}>{language}</span>
         )}
       </div>
-      {/* Code */}
+      {/* Code — typing animation */}
       <div style={{ padding: "12px 0" }}>
-        {lines.slice(0, visibleLines).map((line, i) => {
-          const lineNum = i + 1;
-          const hl = highlightLines.includes(lineNum);
-          return (
-            <div key={i} style={{
-              display: "flex", padding: "0 14px",
-              background: hl ? `${accentColor}15` : "transparent",
-              borderLeft: hl ? `3px solid ${accentColor}` : "3px solid transparent",
-            }}>
-              <span style={{
-                color: hl ? accentColor : "#4a4a5e", minWidth: 32, textAlign: "right",
-                marginRight: 16, userSelect: "none", fontSize: 11,
-              }}>{lineNum}</span>
-              <span style={{ whiteSpace: "pre" }}>
-                {tokenizeLine(line).map((tok, ti) => (
-                  <span key={ti} style={{ color: tok.color }}>{tok.text}</span>
-                ))}
-              </span>
-            </div>
-          );
-        })}
+        {(() => {
+          // Calculate total characters for typing effect
+          const totalChars = lines.slice(0, maxLines).reduce((sum, l) => sum + l.length + 1, 0);
+          const charsToShow = Math.floor(totalChars * progress);
+          let charCount = 0;
+
+          return lines.slice(0, maxLines).map((line, i) => {
+            const lineStart = charCount;
+            charCount += line.length + 1; // +1 for newline
+
+            // How much of this line to show
+            const lineCharsVisible = Math.max(0, Math.min(line.length, charsToShow - lineStart));
+            if (lineCharsVisible <= 0 && charsToShow < lineStart) return null;
+
+            const lineNum = i + 1;
+            const hl = highlightLines.includes(lineNum);
+            const visibleText = line.substring(0, lineCharsVisible);
+            const isTyping = lineCharsVisible > 0 && lineCharsVisible < line.length;
+
+            return (
+              <div key={i} style={{
+                display: "flex", padding: "0 14px",
+                background: hl ? `${accentColor}15` : "transparent",
+                borderLeft: hl ? `3px solid ${accentColor}` : "3px solid transparent",
+              }}>
+                <span style={{
+                  color: hl ? accentColor : "#4a4a5e", minWidth: 32, textAlign: "right",
+                  marginRight: 16, userSelect: "none", fontSize: 11,
+                }}>{lineNum}</span>
+                <span style={{ whiteSpace: "pre" }}>
+                  {tokenizeLine(visibleText).map((tok, ti) => (
+                    <span key={ti} style={{ color: tok.color }}>{tok.text}</span>
+                  ))}
+                  {/* Blinking cursor at typing position */}
+                  {isTyping && (
+                    <span style={{
+                      display: "inline-block", width: 7, height: 14,
+                      background: accentColor, opacity: 0.8, marginLeft: 1,
+                      verticalAlign: "middle",
+                    }} />
+                  )}
+                </span>
+              </div>
+            );
+          });
+        })()}
       </div>
     </div>
   );

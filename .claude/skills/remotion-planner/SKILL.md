@@ -91,61 +91,49 @@ const VOICE_ID = "IKne3meq5aSn9XLyUdCD"; // Charlie - Deep, Confident, Energetic
 
 ---
 
-### KORAK 2: Analiziraj Transcript → Struktura
+### KORAK 2: Pročitaj Visual Structure od Routera
+
+**Visual Router je VEĆ generisao strukturu vizuala.** Planner NE pravi strukturu sam — čita je iz `visual-structure.json` (ili `visual-structure-v2.json`).
+
+```bash
+# Pročitaj visual-structure
+cat workspace/{project-name}/visual-structure-v2.json
+# Ili ako nema v2:
+cat workspace/{project-name}/visual-structure.json
+```
+
+Ovaj fajl sadrži:
+- Koliko sticky-ja i njihove naslove
+- Svaku sekciju sa visualType + visualData ILI layout + nodes
+- Direction i connectionToNext za svaki sticky
+- SVE podatke koji idu u vizuale
+
+**Planner samo dodaje TIMING na ovu strukturu:**
+- `startFrame` za svaku sekciju (na osnovu voiceover timestamps)
+- Camera keyframes
+- Sound points
+
+**Planner NE MENJA vizuale, ne menja strukturu, ne menja podatke u vizualima!**
+
+### KORAK 2.5: Dodaj timing iz voiceover timestamps
+
+Za svaku sekciju u visual-structure.json:
+1. Nađi u voiceover timestamps KAD se prvi put pominje tema te sekcije
+2. `startFrame = Math.round(word.start * fps)` — frame kad se ta tema počne izgovarati
+3. Element appear = startFrame - 5 (pojavi se malo pre izgovaranja)
+
+```
+Primer:
+  Sekcija "Control Plane" — voiceover kaže "API server" na 18.5 sec
+  → startFrame = Math.round(18.5 * 30) = 555
+  → Sekcija se pojavi na frame 550 (555 - 5)
+```
+
+**KRITIČNO: Prođi REDOM kroz transcript i mapiraj svaku sekciju na odgovarajući deo voiceovera!**
 
 ---
 
-## ⚠️ VISUAL BALANCE RULES (OBAVEZNO!)
-
-**PRE kreiranja strukture, odredi vizualni balans:**
-
-### Sticky Count Formula:
-| Transcript dužina | Stickies | Sections po sticky |
-|-------------------|----------|-------------------|
-| < 60 sec | 2 | 2-3 |
-| 60-120 sec | 2-3 | 2-4 |
-| 120+ sec | 3-4 | 3-4 |
-
-### Pravila:
-1. **MAX 4 stickies** (nikad 5+!)
-2. **MIN 2 sekcije po sticky-ju** (nikad 1!)
-3. **Grupiši srodne teme** u isti sticky
-
-### Node Label Pravilo:
-```
-❌ "Test Frequently" (2 reči ali duge)
-❌ "Continuous Integration" (predugačko)
-✅ "Test Often" (kratko)
-✅ "CI" (acronym)
-
-PRAVILO: Max 2 kratke reči ILI 1 duža reč ILI acronym
-         Label MORA stati u 1 RED!
-```
-
-### Primer - CI/CD transcript (120+ sec):
-```
-❌ LOŠE: 5 stickies × 1 section = prazno, ružno
-
-✅ DOBRO: 2 stickies × 3 sections = popunjeno, balansirano
-
-Sticky 1: "The Problem"
-  ├── Section: Merge Issues (nodes: Code, Conflict, Break)
-  ├── Section: Code Freeze (nodes: Sprint End, Lock, Wait)
-  └── Section: Manual Deploy (nodes: Checkout, Build, Push)
-
-Sticky 2: "The Solution"
-  ├── Section: Test First (nodes: Branch, Test, Isolate)
-  └── Section: CI Way (nodes: Commit, Small, Often)
-```
-
-**UVEK proveri pre KORAK 3:**
-- [ ] Imam li 2-4 stickies? (ne više!)
-- [ ] Svaki sticky ima 2+ sekcija?
-- [ ] Svi labels staju u 1 red?
-
----
-
-**KRITIČNO:** Odredi tip hijerarhije!
+**Odredi tip hijerarhije iz visual-structure.json:**
 
 ```
 ┌─────────────────────────────────────────┐
@@ -331,6 +319,8 @@ Primer: voiceover = 45.5 sec → totalFrames = ceil(45.5 * 30) + 30 = 1395
         "step": 1,
         "title": "Retrieve",
         "color": "#a855f7",
+        "direction": "right",
+        "connectionToNext": "flow",
         "startFrame": 90,
         "sections": [
           {
@@ -339,9 +329,22 @@ Primer: voiceover = 45.5 sec → totalFrames = ceil(45.5 * 30) + 30 = 1395
             "layout": "flow",
             "startFrame": 95,
             "nodes": [
-              { "label": "Input", "icon": "terminal", "startFrame": 100 },
-              { "label": "Embed", "icon": "cube", "startFrame": 106 }
+              { "label": "Input", "icon": "Terminal", "startFrame": 100 },
+              { "label": "Embed", "icon": "Cube", "startFrame": 106 }
             ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Speed Stats",
+            "startFrame": 140,
+            "visualType": "stats",
+            "visualData": {
+              "items": [
+                { "label": "Latency", "value": "12ms" },
+                { "label": "Throughput", "value": "10K/s" }
+              ]
+            },
+            "nodes": []
           }
         ]
       }

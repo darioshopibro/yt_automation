@@ -55,25 +55,54 @@ const TerminalVisual: React.FC<Props> = ({
         </div>
         <span style={{ fontSize: 11, color: "#64748b", marginLeft: 8 }}>{title}</span>
       </div>
-      {/* Commands */}
+      {/* Commands — typing animation */}
       <div style={{ padding: "14px 18px" }}>
-        {visibleCommands.map(({ cmd, showCmd, showOutput }, i) => (
-          <React.Fragment key={i}>
-            {showCmd && (
-              <div style={{ display: "flex", gap: 8, marginBottom: 4 }}>
-                <span style={{ color: accentColor, fontWeight: 700 }}>{cmd.prompt || "$"}</span>
-                <span style={{ color: "#f8fafc" }}>{cmd.command}</span>
-              </div>
-            )}
-            {showOutput && cmd.output && (
-              <div style={{ color: "#94a3b8", marginBottom: 12, paddingLeft: 20, fontSize: 12 }}>
-                {cmd.output.split("\n").map((line, li) => (
-                  <div key={li}>{line}</div>
+        {(() => {
+          // Calculate total chars across all commands for typing
+          const allText = displayCommands.map(c => c.command + (c.output ? "\n" + c.output : "")).join("\n");
+          const totalChars = allText.length;
+          const charsToShow = Math.floor(totalChars * progress);
+          let charCount = 0;
+
+          return displayCommands.map((cmd, i) => {
+            const cmdStart = charCount;
+            const cmdChars = Math.max(0, Math.min(cmd.command.length, charsToShow - cmdStart));
+            charCount += cmd.command.length + 1;
+
+            const outputStart = charCount;
+            const outputChars = cmd.output ? Math.max(0, Math.min(cmd.output.length, charsToShow - outputStart)) : 0;
+            if (cmd.output) charCount += cmd.output.length + 1;
+
+            if (cmdChars <= 0 && charsToShow < cmdStart) return null;
+
+            const isTypingCmd = cmdChars > 0 && cmdChars < cmd.command.length;
+            const visibleCmd = cmd.command.substring(0, cmdChars);
+            const visibleOutput = cmd.output ? cmd.output.substring(0, outputChars) : "";
+
+            return (
+              <React.Fragment key={i}>
+                {cmdChars > 0 && (
+                  <div style={{ display: "flex", gap: 8, marginBottom: 4 }}>
+                    <span style={{ color: accentColor, fontWeight: 700 }}>{cmd.prompt || "$"}</span>
+                    <span style={{ color: "#f8fafc" }}>
+                      {visibleCmd}
+                      {isTypingCmd && (
+                        <span style={{ display: "inline-block", width: 7, height: 14, background: accentColor, opacity: 0.8, marginLeft: 1, verticalAlign: "middle" }} />
+                      )}
+                    </span>
+                  </div>
+                )}
+                {outputChars > 0 && cmd.output && (
+                  <div style={{ color: "#94a3b8", marginBottom: 12, paddingLeft: 20, fontSize: 12 }}>
+                    {visibleOutput.split("\n").map((line, li) => (
+                      <div key={li}>{line}</div>
                 ))}
               </div>
             )}
           </React.Fragment>
-        ))}
+            );
+          });
+        })()}
         {/* Blinking cursor */}
         {progress >= 1 && (
           <div style={{ display: "flex", gap: 8 }}>

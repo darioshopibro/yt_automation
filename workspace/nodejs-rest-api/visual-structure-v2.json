@@ -1,0 +1,97 @@
+{
+  "stickies": [
+    {
+      "id": "sticky-1",
+      "title": "Project Setup",
+      "sections": [
+        {
+          "id": "s1-sec1",
+          "label": "Install Dependencies",
+          "visualType": "terminal",
+          "visualData": {
+            "commands": [
+              { "prompt": "$", "command": "npm init -y", "output": "Created package.json" },
+              { "prompt": "$", "command": "npm install express cors helmet morgan" }
+            ],
+            "title": "bash — setup"
+          }
+        },
+        {
+          "id": "s1-sec2",
+          "label": "Core Packages",
+          "visualType": "logo-grid",
+          "visualData": {
+            "items": [
+              { "icon": "ArrowsOutCardinal", "label": "Express", "color": "#339933" },
+              { "icon": "ShieldCheck", "label": "Helmet", "color": "#4a90d9" },
+              { "icon": "Globe", "label": "CORS", "color": "#e5a00d" },
+              { "icon": "Notepad", "label": "Morgan", "color": "#8b5cf6" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "id": "sticky-2",
+      "title": "Server & Routes",
+      "sections": [
+        {
+          "id": "s2-sec1",
+          "label": "Express Server",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "server.js",
+            "code": "const express = require('express');\nconst cors = require('cors');\nconst helmet = require('helmet');\nconst morgan = require('morgan');\n\nconst app = express();\napp.use(cors());\napp.use(helmet());\napp.use(morgan('dev'));\n\napp.listen(3000);",
+            "highlightLines": [6, 7, 8, 9]
+          }
+        },
+        {
+          "id": "s2-sec2",
+          "label": "REST Endpoints",
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "GET /health — status check",
+              "GET /users — list all",
+              "POST /users — create new",
+              "PUT /users/:id — update",
+              "DELETE /users/:id — remove"
+            ],
+            "style": "bullet"
+          }
+        }
+      ]
+    },
+    {
+      "id": "sticky-3",
+      "title": "Database & Safety",
+      "sections": [
+        {
+          "id": "s3-sec1",
+          "label": "PostgreSQL Connection",
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "db.js",
+            "code": "const { Pool } = require('pg');\n\nconst pool = new Pool({\n  connectionString: process.env.DATABASE_URL\n});\n\nconst query = (sql, params) =>\n  pool.query(sql, params);",
+            "highlightLines": [3, 7, 8]
+          }
+        },
+        {
+          "id": "s3-sec2",
+          "label": "Production Checklist",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Error Middleware", "description": "Catch all exceptions" },
+              { "label": "404 Handler", "description": "Handle undefined routes" },
+              { "label": "Hide Internals", "description": "Clean JSON errors only" },
+              { "label": "Test API", "description": "curl localhost:3000/health" }
+            ]
+          }
+        }
+      ]
+    }
+  ]
+}

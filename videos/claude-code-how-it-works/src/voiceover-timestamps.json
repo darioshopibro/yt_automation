@@ -1,1438 +1,1201 @@
 {
-  "model": "eleven_multilingual_v2",
-  "voice_settings": {
-    "stability": 0.5,
-    "similarity_boost": 0.75,
-    "style": 0.0,
-    "use_speaker_boost": true
-  },
-  "duration": 128.126,
-  "wordCount": 285,
   "words": [
     {
-      "word": "Claude",
-      "start": 0.0,
-      "end": 0.372
-    },
-    {
-      "word": "Code",
-      "start": 0.406,
-      "end": 0.743
-    },
-    {
-      "word": "is",
-      "start": 0.789,
-      "end": 0.952
-    },
-    {
-      "word": "a",
-      "start": 0.998,
-      "end": 1.022
-    },
-    {
-      "word": "command-line",
-      "start": 1.08,
-      "end": 1.881
-    },
-    {
-      "word": "A",
-      "start": 1.962,
-      "end": 2.136
-    },
-    {
-      "word": "I",
-      "start": 2.31,
-      "end": 2.461
-    },
-    {
-      "word": "assistant",
-      "start": 2.577,
-      "end": 3.077
-    },
-    {
-      "word": "that",
-      "start": 3.251,
-      "end": 3.437
-    },
-    {
-      "word": "lives",
-      "start": 3.506,
-      "end": 3.75
-    },
-    {
-      "word": "in",
-      "start": 3.796,
-      "end": 3.855
-    },
-    {
-      "word": "your",
-      "start": 3.901,
-      "end": 3.994
-    },
-    {
-      "word": "terminal.",
-      "start": 4.029,
-      "end": 4.632
-    },
-    {
       "word": "You",
-      "start": 5.236,
-      "end": 5.375
-    },
-    {
-      "word": "type",
-      "start": 5.445,
-      "end": 5.677
-    },
-    {
-      "word": "a",
-      "start": 5.712,
-      "end": 5.735
-    },
-    {
-      "word": "question",
-      "start": 5.782,
-      "end": 6.2
-    },
-    {
-      "word": "or",
-      "start": 6.374,
-      "end": 6.536
-    },
-    {
-      "word": "task,",
-      "start": 6.594,
-      "end": 7.129
-    },
-    {
-      "word": "and",
-      "start": 7.338,
-      "end": 7.488
-    },
-    {
-      "word": "Claude",
-      "start": 7.546,
-      "end": 7.86
-    },
-    {
-      "word": "reads",
-      "start": 7.895,
-      "end": 8.081
-    },
-    {
-      "word": "your",
-      "start": 8.115,
-      "end": 8.208
-    },
-    {
-      "word": "codebase,",
-      "start": 8.255,
-      "end": 8.893
-    },
-    {
-      "word": "writes",
-      "start": 9.044,
-      "end": 9.346
-    },
-    {
-      "word": "code,",
-      "start": 9.404,
-      "end": 9.845
-    },
-    {
-      "word": "runs",
-      "start": 10.089,
-      "end": 10.379
-    },
-    {
-      "word": "commands,",
-      "start": 10.437,
-      "end": 11.088
-    },
-    {
-      "word": "and",
-      "start": 11.204,
-      "end": 11.378
-    },
-    {
-      "word": "commits",
-      "start": 11.447,
-      "end": 11.842
-    },
-    {
-      "word": "changes.",
-      "start": 11.9,
-      "end": 12.55
-    },
-    {
-      "word": "All",
-      "start": 12.934,
-      "end": 13.201
-    },
-    {
-      "word": "from",
-      "start": 13.259,
-      "end": 13.398
-    },
-    {
-      "word": "the",
-      "start": 13.433,
-      "end": 13.502
-    },
-    {
-      "word": "terminal.\n\nHere's",
-      "start": 13.549,
-      "end": 14.884
-    },
-    {
-      "word": "how",
-      "start": 14.919,
-      "end": 15.023
-    },
-    {
-      "word": "it",
-      "start": 15.081,
-      "end": 15.151
-    },
-    {
-      "word": "works",
-      "start": 15.197,
-      "end": 15.452
-    },
-    {
-      "word": "under",
-      "start": 15.487,
-      "end": 15.65
-    },
-    {
-      "word": "the",
-      "start": 15.685,
-      "end": 15.754
-    },
-    {
-      "word": "hood.",
-      "start": 15.789,
-      "end": 16.126
-    },
-    {
-      "word": "You",
-      "start": 16.637,
-      "end": 16.776
-    },
-    {
-      "word": "send",
-      "start": 16.846,
-      "end": 17.031
-    },
-    {
-      "word": "a",
-      "start": 17.078,
-      "end": 17.101
-    },
-    {
-      "word": "message.",
-      "start": 17.147,
-      "end": 17.728
-    },
-    {
-      "word": "Claude",
-      "start": 18.169,
-      "end": 18.541
-    },
-    {
-      "word": "Code",
-      "start": 18.576,
-      "end": 18.901
-    },
-    {
-      "word": "calls",
-      "start": 18.947,
-      "end": 19.272
-    },
-    {
-      "word": "the",
-      "start": 19.33,
-      "end": 19.493
-    },
-    {
-      "word": "an-thro-pic",
-      "start": 19.609,
-      "end": 20.433
-    },
-    {
-      "word": "A",
-      "start": 20.549,
-      "end": 20.7
-    },
-    {
-      "word": "P",
-      "start": 20.851,
-      "end": 20.944
-    },
-    {
-      "word": "I",
-      "start": 21.223,
-      "end": 21.397
-    },
-    {
-      "word": "with",
-      "start": 21.722,
-      "end": 21.919
-    },
-    {
-      "word": "your",
-      "start": 21.966,
-      "end": 22.082
-    },
-    {
-      "word": "prompt",
-      "start": 22.14,
-      "end": 22.453
-    },
-    {
-      "word": "plus",
-      "start": 22.604,
-      "end": 22.894
-    },
-    {
-      "word": "context",
-      "start": 22.976,
-      "end": 23.44
-    },
-    {
-      "word": "from",
-      "start": 23.475,
-      "end": 23.614
-    },
-    {
-      "word": "your",
-      "start": 23.661,
-      "end": 23.765
-    },
-    {
-      "word": "project.",
-      "start": 23.8,
-      "end": 24.439
-    },
-    {
-      "word": "The",
-      "start": 24.949,
-      "end": 25.077
-    },
-    {
-      "word": "model",
-      "start": 25.158,
-      "end": 25.425
-    },
-    {
-      "word": "processes",
-      "start": 25.495,
-      "end": 26.041
-    },
-    {
-      "word": "everything",
-      "start": 26.157,
-      "end": 26.644
-    },
-    {
-      "word": "with",
-      "start": 26.703,
-      "end": 26.842
-    },
-    {
-      "word": "a",
-      "start": 26.888,
-      "end": 26.923
-    },
-    {
-      "word": "200K",
-      "start": 27.016,
-      "end": 27.666
-    },
-    {
-      "word": "token",
-      "start": 27.817,
-      "end": 28.177
-    },
-    {
-      "word": "context",
-      "start": 28.27,
-      "end": 28.723
-    },
-    {
-      "word": "window.",
-      "start": 28.769,
-      "end": 29.28
-    },
-    {
-      "word": "That's",
-      "start": 29.791,
-      "end": 30.081
-    },
-    {
-      "word": "roughly",
-      "start": 30.162,
-      "end": 30.499
-    },
-    {
-      "word": "500",
-      "start": 30.615,
-      "end": 31.161
-    },
-    {
-      "word": "pages",
-      "start": 31.219,
-      "end": 31.544
-    },
-    {
-      "word": "of",
-      "start": 31.59,
-      "end": 31.648
-    },
-    {
-      "word": "code",
-      "start": 31.706,
-      "end": 32.066
-    },
-    {
-      "word": "it",
-      "start": 32.24,
-      "end": 32.415
-    },
-    {
-      "word": "can",
-      "start": 32.461,
-      "end": 32.589
-    },
-    {
-      "word": "read",
-      "start": 32.67,
-      "end": 32.845
-    },
-    {
-      "word": "at",
-      "start": 32.879,
-      "end": 32.949
-    },
-    {
-      "word": "once.\n\nThe",
-      "start": 33.03,
-      "end": 34.203
-    },
-    {
-      "word": "tool",
-      "start": 34.273,
-      "end": 34.505
-    },
-    {
-      "word": "system",
-      "start": 34.574,
-      "end": 34.946
-    },
-    {
-      "word": "is",
-      "start": 35.097,
-      "end": 35.259
-    },
-    {
-      "word": "what",
-      "start": 35.329,
-      "end": 35.503
-    },
-    {
-      "word": "makes",
-      "start": 35.561,
-      "end": 35.77
-    },
-    {
-      "word": "it",
-      "start": 35.817,
-      "end": 35.886
-    },
-    {
-      "word": "powerful.",
-      "start": 35.944,
-      "end": 36.56
-    },
-    {
-      "word": "Claude",
-      "start": 37.163,
-      "end": 37.5
-    },
-    {
-      "word": "can",
-      "start": 37.523,
-      "end": 37.639
-    },
-    {
-      "word": "read",
-      "start": 37.709,
-      "end": 37.883
-    },
-    {
-      "word": "files,",
-      "start": 37.953,
-      "end": 38.533
+      "start": 0,
+      "end": 0.163,
+      "startFrame": 0,
+      "endFrame": 5
     },
     {
       "word": "write",
-      "start": 38.742,
-      "end": 39.033
-    },
-    {
-      "word": "files,",
-      "start": 39.068,
-      "end": 39.671
-    },
-    {
-      "word": "run",
-      "start": 39.915,
-      "end": 40.112
-    },
-    {
-      "word": "bash",
-      "start": 40.182,
-      "end": 40.391
-    },
-    {
-      "word": "commands,",
-      "start": 40.426,
-      "end": 41.006
-    },
-    {
-      "word": "search",
-      "start": 41.25,
-      "end": 41.529
-    },
-    {
-      "word": "code",
-      "start": 41.587,
-      "end": 41.784
-    },
-    {
-      "word": "with",
-      "start": 41.807,
-      "end": 41.924
-    },
-    {
-      "word": "grep,",
-      "start": 41.958,
-      "end": 42.388
-    },
-    {
-      "word": "and",
-      "start": 42.562,
-      "end": 42.713
-    },
-    {
-      "word": "even",
-      "start": 42.783,
-      "end": 42.98
-    },
-    {
-      "word": "browse",
-      "start": 43.05,
-      "end": 43.398
-    },
-    {
-      "word": "the",
-      "start": 43.433,
-      "end": 43.503
-    },
-    {
-      "word": "web.",
-      "start": 43.549,
-      "end": 44.002
-    },
-    {
-      "word": "Each",
-      "start": 44.605,
-      "end": 44.861
-    },
-    {
-      "word": "tool",
-      "start": 44.919,
-      "end": 45.174
-    },
-    {
-      "word": "call",
-      "start": 45.244,
-      "end": 45.465
-    },
-    {
-      "word": "goes",
-      "start": 45.546,
-      "end": 45.79
-    },
-    {
-      "word": "through",
-      "start": 45.848,
-      "end": 46.15
+      "start": 0.221,
+      "end": 0.43,
+      "startFrame": 7,
+      "endFrame": 13
     },
     {
       "word": "a",
-      "start": 46.231,
-      "end": 46.312
+      "start": 0.453,
+      "end": 0.476,
+      "startFrame": 14,
+      "endFrame": 14
     },
     {
-      "word": "permission",
-      "start": 46.428,
-      "end": 46.904
+      "word": "text",
+      "start": 0.546,
+      "end": 0.813,
+      "startFrame": 16,
+      "endFrame": 24
     },
     {
-      "word": "system.",
-      "start": 46.974,
-      "end": 47.531
+      "word": "prompt",
+      "start": 0.859,
+      "end": 1.173,
+      "startFrame": 26,
+      "endFrame": 35
     },
     {
-      "word": "You",
-      "start": 48.042,
-      "end": 48.193
-    },
-    {
-      "word": "approve",
-      "start": 48.274,
-      "end": 48.727
-    },
-    {
-      "word": "or",
-      "start": 48.797,
-      "end": 48.959
-    },
-    {
-      "word": "deny",
-      "start": 49.017,
-      "end": 49.446
-    },
-    {
-      "word": "before",
-      "start": 49.597,
-      "end": 49.957
-    },
-    {
-      "word": "anything",
-      "start": 50.05,
-      "end": 50.549
-    },
-    {
-      "word": "executes.",
-      "start": 50.619,
-      "end": 51.339
-    },
-    {
-      "word": "No",
-      "start": 51.664,
-      "end": 51.815
-    },
-    {
-      "word": "surprises.\n\nThe",
-      "start": 51.873,
-      "end": 53.173
-    },
-    {
-      "word": "context",
-      "start": 53.231,
-      "end": 53.672
-    },
-    {
-      "word": "engine",
-      "start": 53.742,
-      "end": 53.986
-    },
-    {
-      "word": "is",
-      "start": 54.009,
-      "end": 54.079
-    },
-    {
-      "word": "smart.",
-      "start": 54.137,
-      "end": 54.694
-    },
-    {
-      "word": "It",
-      "start": 55.019,
-      "end": 55.159
-    },
-    {
-      "word": "reads",
-      "start": 55.228,
-      "end": 55.484
+      "word": "describing",
+      "start": 1.254,
+      "end": 1.753,
+      "startFrame": 38,
+      "endFrame": 53
     },
     {
       "word": "your",
-      "start": 55.542,
-      "end": 55.762
+      "start": 1.8,
+      "end": 1.892,
+      "startFrame": 54,
+      "endFrame": 57
     },
     {
-      "word": "C",
-      "start": 55.832,
-      "end": 55.948
+      "word": "video.",
+      "start": 1.927,
+      "end": 2.473,
+      "startFrame": 58,
+      "endFrame": 74
     },
     {
-      "word": "L",
-      "start": 56.192,
-      "end": 56.308
+      "word": "That",
+      "start": 2.984,
+      "end": 3.204,
+      "startFrame": 90,
+      "endFrame": 96
     },
     {
-      "word": "A",
-      "start": 56.424,
-      "end": 56.575
+      "word": "prompt",
+      "start": 3.274,
+      "end": 3.576,
+      "startFrame": 98,
+      "endFrame": 107
     },
     {
-      "word": "U",
-      "start": 56.726,
-      "end": 56.9
-    },
-    {
-      "word": "D",
-      "start": 56.993,
-      "end": 57.109
-    },
-    {
-      "word": "E.md",
-      "start": 57.283,
-      "end": 57.829
-    },
-    {
-      "word": "file",
-      "start": 57.98,
-      "end": 58.456
-    },
-    {
-      "word": "for",
-      "start": 58.549,
-      "end": 58.711
-    },
-    {
-      "word": "project",
-      "start": 58.769,
-      "end": 59.199
-    },
-    {
-      "word": "instructions.",
-      "start": 59.245,
-      "end": 60.012
-    },
-    {
-      "word": "It",
-      "start": 60.708,
-      "end": 60.847
-    },
-    {
-      "word": "scans",
-      "start": 60.905,
-      "end": 61.37
-    },
-    {
-      "word": "git",
-      "start": 61.451,
-      "end": 61.695
-    },
-    {
-      "word": "history.",
-      "start": 61.753,
-      "end": 62.275
-    },
-    {
-      "word": "It",
-      "start": 62.659,
-      "end": 62.798
-    },
-    {
-      "word": "uses",
-      "start": 62.868,
-      "end": 63.193
-    },
-    {
-      "word": "glob",
-      "start": 63.262,
-      "end": 63.518
-    },
-    {
-      "word": "patterns",
-      "start": 63.587,
-      "end": 63.912
+      "word": "goes",
+      "start": 3.657,
+      "end": 3.901,
+      "startFrame": 110,
+      "endFrame": 117
     },
     {
       "word": "to",
-      "start": 63.959,
-      "end": 64.017
-    },
-    {
-      "word": "find",
-      "start": 64.087,
-      "end": 64.307
-    },
-    {
-      "word": "relevant",
-      "start": 64.388,
-      "end": 64.795
-    },
-    {
-      "word": "files.",
-      "start": 64.853,
-      "end": 65.375
-    },
-    {
-      "word": "It",
-      "start": 65.7,
-      "end": 65.84
-    },
-    {
-      "word": "doesn't",
-      "start": 65.886,
-      "end": 66.188
-    },
-    {
-      "word": "dump",
-      "start": 66.234,
-      "end": 66.432
-    },
-    {
-      "word": "your",
-      "start": 66.478,
-      "end": 66.594
-    },
-    {
-      "word": "entire",
-      "start": 66.64,
-      "end": 67.012
-    },
-    {
-      "word": "codebase",
-      "start": 67.07,
-      "end": 67.581
-    },
-    {
-      "word": "into",
-      "start": 67.616,
-      "end": 67.755
+      "start": 3.947,
+      "end": 4.005,
+      "startFrame": 118,
+      "endFrame": 120
     },
     {
       "word": "the",
-      "start": 67.813,
-      "end": 67.883
+      "start": 4.063,
+      "end": 4.145,
+      "startFrame": 122,
+      "endFrame": 124
     },
     {
-      "word": "prompt.",
-      "start": 67.918,
-      "end": 68.347
-    },
-    {
-      "word": "It",
-      "start": 68.626,
-      "end": 68.765
-    },
-    {
-      "word": "selects",
-      "start": 68.823,
-      "end": 69.253
-    },
-    {
-      "word": "what",
-      "start": 69.311,
-      "end": 69.473
-    },
-    {
-      "word": "matters.\n\nClaude",
-      "start": 69.543,
-      "end": 70.82
-    },
-    {
-      "word": "Code",
-      "start": 70.843,
-      "end": 71.134
-    },
-    {
-      "word": "supports",
-      "start": 71.168,
-      "end": 71.586
-    },
-    {
-      "word": "three",
-      "start": 71.679,
-      "end": 71.935
-    },
-    {
-      "word": "models.",
-      "start": 71.969,
-      "end": 72.538
-    },
-    {
-      "word": "Opus",
-      "start": 72.979,
-      "end": 73.386
-    },
-    {
-      "word": "for",
-      "start": 73.455,
-      "end": 73.56
-    },
-    {
-      "word": "complex",
-      "start": 73.618,
-      "end": 74.048
-    },
-    {
-      "word": "tasks.",
-      "start": 74.106,
-      "end": 74.675
-    },
-    {
-      "word": "Deep",
-      "start": 75.116,
-      "end": 75.348
-    },
-    {
-      "word": "reasoning,",
-      "start": 75.429,
-      "end": 75.975
-    },
-    {
-      "word": "architecture",
-      "start": 76.184,
-      "end": 76.788
-    },
-    {
-      "word": "decisions,",
-      "start": 76.822,
-      "end": 77.496
-    },
-    {
-      "word": "large",
-      "start": 77.74,
-      "end": 77.995
-    },
-    {
-      "word": "refactors.",
-      "start": 78.03,
-      "end": 78.75
-    },
-    {
-      "word": "Sonnet",
-      "start": 79.191,
-      "end": 79.539
-    },
-    {
-      "word": "for",
-      "start": 79.586,
-      "end": 79.678
-    },
-    {
-      "word": "everyday",
-      "start": 79.736,
-      "end": 80.073
-    },
-    {
-      "word": "coding.",
-      "start": 80.131,
-      "end": 80.654
-    },
-    {
-      "word": "Fast,",
-      "start": 81.095,
-      "end": 81.641
-    },
-    {
-      "word": "capable,",
-      "start": 81.815,
-      "end": 82.441
-    },
-    {
-      "word": "cost-effective.",
-      "start": 82.685,
-      "end": 83.567
-    },
-    {
-      "word": "Haiku",
-      "start": 84.078,
-      "end": 84.531
-    },
-    {
-      "word": "for",
-      "start": 84.601,
-      "end": 84.705
-    },
-    {
-      "word": "simple",
-      "start": 84.752,
-      "end": 85.03
-    },
-    {
-      "word": "tasks.",
-      "start": 85.065,
-      "end": 85.564
-    },
-    {
-      "word": "Quick",
-      "start": 85.901,
-      "end": 86.11
-    },
-    {
-      "word": "edits,",
-      "start": 86.145,
-      "end": 86.551
-    },
-    {
-      "word": "formatting,",
-      "start": 86.621,
-      "end": 87.283
-    },
-    {
-      "word": "lookups.",
-      "start": 87.387,
-      "end": 87.991
-    },
-    {
-      "word": "You",
-      "start": 88.513,
-      "end": 88.629
-    },
-    {
-      "word": "pick",
-      "start": 88.687,
-      "end": 88.827
-    },
-    {
-      "word": "the",
-      "start": 88.873,
-      "end": 88.943
+      "word": "AI",
+      "start": 4.261,
+      "end": 4.679,
+      "startFrame": 128,
+      "endFrame": 140
     },
     {
       "word": "model",
-      "start": 88.989,
-      "end": 89.21
+      "start": 4.76,
+      "end": 4.992,
+      "startFrame": 143,
+      "endFrame": 150
     },
     {
-      "word": "that",
-      "start": 89.268,
-      "end": 89.372
+      "word": "for",
+      "start": 5.039,
+      "end": 5.143,
+      "startFrame": 151,
+      "endFrame": 154
     },
     {
-      "word": "fits",
-      "start": 89.43,
-      "end": 89.639
+      "word": "processing.",
+      "start": 5.201,
+      "end": 5.921,
+      "startFrame": 156,
+      "endFrame": 178
     },
     {
-      "word": "the",
-      "start": 89.686,
-      "end": 89.744
+      "word": "Let",
+      "start": 6.525,
+      "end": 6.687,
+      "startFrame": 196,
+      "endFrame": 201
     },
     {
-      "word": "job.\n\nPricing",
-      "start": 89.802,
-      "end": 91.102
+      "word": "me",
+      "start": 6.745,
+      "end": 6.815,
+      "startFrame": 202,
+      "endFrame": 204
     },
     {
-      "word": "is",
-      "start": 91.184,
-      "end": 91.323
-    },
-    {
-      "word": "usage-based.",
-      "start": 91.427,
-      "end": 92.194
-    },
-    {
-      "word": "Opus",
-      "start": 92.646,
-      "end": 92.983
-    },
-    {
-      "word": "costs",
-      "start": 93.041,
-      "end": 93.355
-    },
-    {
-      "word": "$15",
-      "start": 93.54,
-      "end": 94.353
-    },
-    {
-      "word": "per",
-      "start": 94.423,
-      "end": 94.539
-    },
-    {
-      "word": "million",
-      "start": 94.62,
-      "end": 95.084
-    },
-    {
-      "word": "input",
-      "start": 95.143,
-      "end": 95.398
-    },
-    {
-      "word": "tokens",
-      "start": 95.433,
-      "end": 95.828
-    },
-    {
-      "word": "and",
-      "start": 96.002,
-      "end": 96.187
-    },
-    {
-      "word": "$75",
-      "start": 96.257,
-      "end": 96.965
-    },
-    {
-      "word": "per",
-      "start": 97.023,
-      "end": 97.116
-    },
-    {
-      "word": "million",
-      "start": 97.174,
-      "end": 97.406
-    },
-    {
-      "word": "output",
-      "start": 97.465,
-      "end": 97.732
-    },
-    {
-      "word": "tokens.",
-      "start": 97.766,
-      "end": 98.266
-    },
-    {
-      "word": "Sonnet",
-      "start": 98.985,
-      "end": 99.311
-    },
-    {
-      "word": "is",
-      "start": 99.369,
-      "end": 99.508
-    },
-    {
-      "word": "$3",
-      "start": 99.554,
-      "end": 99.786
-    },
-    {
-      "word": "input",
-      "start": 100.042,
-      "end": 100.32
-    },
-    {
-      "word": "and",
-      "start": 100.378,
-      "end": 100.483
-    },
-    {
-      "word": "$15",
-      "start": 100.552,
-      "end": 100.901
-    },
-    {
-      "word": "output.",
-      "start": 101.145,
-      "end": 101.632
-    },
-    {
-      "word": "Haiku",
-      "start": 102.085,
-      "end": 102.456
-    },
-    {
-      "word": "is",
-      "start": 102.503,
-      "end": 102.573
-    },
-    {
-      "word": "the",
-      "start": 102.631,
-      "end": 102.689
-    },
-    {
-      "word": "cheapest",
-      "start": 102.735,
-      "end": 103.107
-    },
-    {
-      "word": "at",
-      "start": 103.153,
-      "end": 103.223
-    },
-    {
-      "word": "$0.25",
-      "start": 103.258,
-      "end": 104.221
-    },
-    {
-      "word": "input",
-      "start": 104.291,
-      "end": 104.581
-    },
-    {
-      "word": "and",
-      "start": 104.639,
-      "end": 104.755
-    },
-    {
-      "word": "$1.25",
-      "start": 104.813,
-      "end": 105.51
-    },
-    {
-      "word": "output.",
-      "start": 105.568,
-      "end": 106.032
-    },
-    {
-      "word": "A",
-      "start": 106.473,
-      "end": 106.543
-    },
-    {
-      "word": "typical",
-      "start": 106.659,
-      "end": 107.054
-    },
-    {
-      "word": "coding",
-      "start": 107.124,
-      "end": 107.414
-    },
-    {
-      "word": "session",
-      "start": 107.472,
-      "end": 107.727
-    },
-    {
-      "word": "with",
-      "start": 107.774,
-      "end": 107.902
-    },
-    {
-      "word": "Sonnet",
-      "start": 107.948,
-      "end": 108.227
-    },
-    {
-      "word": "costs",
-      "start": 108.285,
-      "end": 108.528
-    },
-    {
-      "word": "about",
-      "start": 108.563,
-      "end": 108.761
-    },
-    {
-      "word": "$2",
-      "start": 108.807,
-      "end": 109.051
-    },
-    {
-      "word": "to",
-      "start": 109.144,
-      "end": 109.202
-    },
-    {
-      "word": "$5.\n\nThe",
-      "start": 109.26,
-      "end": 110.978
-    },
-    {
-      "word": "workflow",
-      "start": 111.048,
-      "end": 111.489
-    },
-    {
-      "word": "is",
-      "start": 111.547,
-      "end": 111.617
-    },
-    {
-      "word": "simple.",
-      "start": 111.675,
-      "end": 112.151
-    },
-    {
-      "word": "Open",
-      "start": 112.464,
-      "end": 112.754
-    },
-    {
-      "word": "your",
-      "start": 112.789,
-      "end": 112.882
-    },
-    {
-      "word": "terminal.",
-      "start": 112.917,
-      "end": 113.416
-    },
-    {
-      "word": "Navigate",
-      "start": 113.846,
-      "end": 114.31
-    },
-    {
-      "word": "to",
-      "start": 114.333,
-      "end": 114.38
-    },
-    {
-      "word": "your",
-      "start": 114.426,
-      "end": 114.519
-    },
-    {
-      "word": "project.",
-      "start": 114.566,
-      "end": 115.1
-    },
-    {
-      "word": "Run",
-      "start": 115.529,
-      "end": 115.738
-    },
-    {
-      "word": "claude.",
-      "start": 115.796,
-      "end": 116.284
-    },
-    {
-      "word": "Describe",
-      "start": 116.713,
-      "end": 117.166
-    },
-    {
-      "word": "what",
-      "start": 117.201,
-      "end": 117.305
+      "word": "show",
+      "start": 6.85,
+      "end": 7.012,
+      "startFrame": 206,
+      "endFrame": 210
     },
     {
       "word": "you",
-      "start": 117.34,
-      "end": 117.421
+      "start": 7.059,
+      "end": 7.129,
+      "startFrame": 212,
+      "endFrame": 214
     },
     {
-      "word": "want.",
-      "start": 117.491,
-      "end": 117.874
+      "word": "how",
+      "start": 7.175,
+      "end": 7.291,
+      "startFrame": 215,
+      "endFrame": 219
     },
     {
-      "word": "Review",
-      "start": 118.385,
-      "end": 118.687
+      "word": "Kling,",
+      "start": 7.384,
+      "end": 7.825,
+      "startFrame": 222,
+      "endFrame": 235
+    },
+    {
+      "word": "Runway,",
+      "start": 7.999,
+      "end": 8.568,
+      "startFrame": 240,
+      "endFrame": 257
+    },
+    {
+      "word": "and",
+      "start": 8.615,
+      "end": 8.789,
+      "startFrame": 258,
+      "endFrame": 264
+    },
+    {
+      "word": "Sora",
+      "start": 8.858,
+      "end": 9.265,
+      "startFrame": 266,
+      "endFrame": 278
+    },
+    {
+      "word": "each",
+      "start": 9.706,
+      "end": 9.927,
+      "startFrame": 291,
+      "endFrame": 298
+    },
+    {
+      "word": "handle",
+      "start": 9.985,
+      "end": 10.287,
+      "startFrame": 300,
+      "endFrame": 309
+    },
+    {
+      "word": "this",
+      "start": 10.322,
+      "end": 10.449,
+      "startFrame": 310,
+      "endFrame": 313
+    },
+    {
+      "word": "differently.",
+      "start": 10.496,
+      "end": 11.076,
+      "startFrame": 315,
+      "endFrame": 332
+    },
+    {
+      "word": "Step",
+      "start": 11.68,
+      "end": 11.959,
+      "startFrame": 350,
+      "endFrame": 359
+    },
+    {
+      "word": "one,",
+      "start": 12.028,
+      "end": 12.423,
+      "startFrame": 361,
+      "endFrame": 373
+    },
+    {
+      "word": "Kling.",
+      "start": 12.667,
+      "end": 13.12,
+      "startFrame": 380,
+      "endFrame": 394
+    },
+    {
+      "word": "Your",
+      "start": 13.561,
+      "end": 13.747,
+      "startFrame": 407,
+      "endFrame": 412
+    },
+    {
+      "word": "prompt",
+      "start": 13.805,
+      "end": 14.095,
+      "startFrame": 414,
+      "endFrame": 423
+    },
+    {
+      "word": "enters",
+      "start": 14.176,
+      "end": 14.536,
+      "startFrame": 425,
+      "endFrame": 436
     },
     {
       "word": "the",
-      "start": 118.745,
-      "end": 118.815
+      "start": 14.582,
+      "end": 14.664,
+      "startFrame": 437,
+      "endFrame": 440
     },
     {
-      "word": "changes.",
-      "start": 118.861,
-      "end": 119.5
+      "word": "text",
+      "start": 14.722,
+      "end": 15,
+      "startFrame": 442,
+      "endFrame": 450
     },
     {
-      "word": "Approve",
-      "start": 119.941,
-      "end": 120.51
+      "word": "encoder.",
+      "start": 15.035,
+      "end": 15.546,
+      "startFrame": 451,
+      "endFrame": 466
     },
     {
-      "word": "or",
-      "start": 120.579,
-      "end": 120.73
+      "word": "The",
+      "start": 15.871,
+      "end": 15.999,
+      "startFrame": 476,
+      "endFrame": 480
     },
     {
-      "word": "deny.",
-      "start": 120.788,
-      "end": 121.311
+      "word": "encoder",
+      "start": 16.057,
+      "end": 16.498,
+      "startFrame": 482,
+      "endFrame": 495
     },
     {
-      "word": "Ship",
-      "start": 121.694,
-      "end": 121.961
+      "word": "transforms",
+      "start": 16.545,
+      "end": 17.183,
+      "startFrame": 496,
+      "endFrame": 515
     },
     {
-      "word": "it.",
-      "start": 122.019,
-      "end": 122.24
+      "word": "words",
+      "start": 17.241,
+      "end": 17.52,
+      "startFrame": 517,
+      "endFrame": 526
     },
     {
-      "word": "No",
-      "start": 122.681,
-      "end": 122.866
+      "word": "into",
+      "start": 17.555,
+      "end": 17.74,
+      "startFrame": 527,
+      "endFrame": 532
     },
     {
-      "word": "I",
-      "start": 122.983,
-      "end": 123.052
+      "word": "embeddings.",
+      "start": 17.81,
+      "end": 18.414,
+      "startFrame": 534,
+      "endFrame": 552
     },
     {
-      "word": "D",
-      "start": 123.168,
-      "end": 123.226
+      "word": "Those",
+      "start": 18.797,
+      "end": 19.087,
+      "startFrame": 564,
+      "endFrame": 573
     },
     {
-      "word": "E",
-      "start": 123.343,
-      "end": 123.424
+      "word": "embeddings",
+      "start": 19.122,
+      "end": 19.551,
+      "startFrame": 574,
+      "endFrame": 587
     },
     {
-      "word": "plugins",
-      "start": 123.482,
-      "end": 123.853
+      "word": "feed",
+      "start": 19.61,
+      "end": 19.888,
+      "startFrame": 588,
+      "endFrame": 597
     },
     {
-      "word": "needed.",
-      "start": 123.9,
-      "end": 124.318
+      "word": "into",
+      "start": 19.958,
+      "end": 20.144,
+      "startFrame": 599,
+      "endFrame": 604
     },
     {
-      "word": "No",
-      "start": 124.643,
-      "end": 124.829
+      "word": "the",
+      "start": 20.213,
+      "end": 20.283,
+      "startFrame": 606,
+      "endFrame": 608
     },
     {
-      "word": "cloud",
-      "start": 124.887,
-      "end": 125.13
+      "word": "diffusion",
+      "start": 20.329,
+      "end": 20.84,
+      "startFrame": 610,
+      "endFrame": 625
     },
     {
-      "word": "sync.",
-      "start": 125.177,
-      "end": 125.525
+      "word": "model.",
+      "start": 20.898,
+      "end": 21.305,
+      "startFrame": 627,
+      "endFrame": 639
     },
     {
-      "word": "Everything",
-      "start": 125.908,
-      "end": 126.373
+      "word": "The",
+      "start": 21.908,
+      "end": 22.024,
+      "startFrame": 657,
+      "endFrame": 661
     },
     {
-      "word": "runs",
-      "start": 126.431,
-      "end": 126.663
+      "word": "model",
+      "start": 22.094,
+      "end": 22.338,
+      "startFrame": 663,
+      "endFrame": 670
     },
     {
-      "word": "locally",
-      "start": 126.733,
-      "end": 127.058
+      "word": "generates",
+      "start": 22.396,
+      "end": 22.826,
+      "startFrame": 672,
+      "endFrame": 685
+    },
+    {
+      "word": "video",
+      "start": 22.884,
+      "end": 23.162,
+      "startFrame": 687,
+      "endFrame": 695
+    },
+    {
+      "word": "frames",
+      "start": 23.232,
+      "end": 23.534,
+      "startFrame": 697,
+      "endFrame": 706
+    },
+    {
+      "word": "iteratively.",
+      "start": 23.627,
+      "end": 24.439,
+      "startFrame": 709,
+      "endFrame": 733
+    },
+    {
+      "word": "Each",
+      "start": 24.95,
+      "end": 25.171,
+      "startFrame": 749,
+      "endFrame": 755
+    },
+    {
+      "word": "frame",
+      "start": 25.229,
+      "end": 25.554,
+      "startFrame": 757,
+      "endFrame": 767
+    },
+    {
+      "word": "builds",
+      "start": 25.612,
+      "end": 25.937,
+      "startFrame": 768,
+      "endFrame": 778
     },
     {
       "word": "on",
-      "start": 127.116,
-      "end": 127.185
+      "start": 25.972,
+      "end": 26.041,
+      "startFrame": 779,
+      "endFrame": 781
+    },
+    {
+      "word": "the",
+      "start": 26.076,
+      "end": 26.146,
+      "startFrame": 782,
+      "endFrame": 784
+    },
+    {
+      "word": "previous.",
+      "start": 26.192,
+      "end": 26.843,
+      "startFrame": 786,
+      "endFrame": 805
+    },
+    {
+      "word": "Kling",
+      "start": 27.446,
+      "end": 27.771,
+      "startFrame": 823,
+      "endFrame": 833
+    },
+    {
+      "word": "outputs",
+      "start": 27.853,
+      "end": 28.329,
+      "startFrame": 836,
+      "endFrame": 850
     },
     {
       "word": "your",
-      "start": 127.243,
-      "end": 127.36
+      "start": 28.364,
+      "end": 28.48,
+      "startFrame": 851,
+      "endFrame": 854
     },
     {
-      "word": "machine.",
-      "start": 127.394,
-      "end": 128.126
+      "word": "final",
+      "start": 28.549,
+      "end": 28.863,
+      "startFrame": 856,
+      "endFrame": 866
+    },
+    {
+      "word": "video",
+      "start": 28.921,
+      "end": 29.223,
+      "startFrame": 868,
+      "endFrame": 877
+    },
+    {
+      "word": "in",
+      "start": 29.281,
+      "end": 29.339,
+      "startFrame": 878,
+      "endFrame": 880
+    },
+    {
+      "word": "1080p.",
+      "start": 29.397,
+      "end": 30.372,
+      "startFrame": 882,
+      "endFrame": 911
+    },
+    {
+      "word": "Step",
+      "start": 30.813,
+      "end": 31.103,
+      "startFrame": 924,
+      "endFrame": 933
+    },
+    {
+      "word": "two,",
+      "start": 31.162,
+      "end": 31.568,
+      "startFrame": 935,
+      "endFrame": 947
+    },
+    {
+      "word": "Runway.",
+      "start": 31.812,
+      "end": 32.462,
+      "startFrame": 954,
+      "endFrame": 974
+    },
+    {
+      "word": "You",
+      "start": 32.903,
+      "end": 33.031,
+      "startFrame": 987,
+      "endFrame": 991
+    },
+    {
+      "word": "provide",
+      "start": 33.1,
+      "end": 33.507,
+      "startFrame": 993,
+      "endFrame": 1005
+    },
+    {
+      "word": "your",
+      "start": 33.542,
+      "end": 33.669,
+      "startFrame": 1006,
+      "endFrame": 1010
+    },
+    {
+      "word": "prompt",
+      "start": 33.716,
+      "end": 33.983,
+      "startFrame": 1011,
+      "endFrame": 1019
+    },
+    {
+      "word": "plus",
+      "start": 34.052,
+      "end": 34.296,
+      "startFrame": 1022,
+      "endFrame": 1029
+    },
+    {
+      "word": "an",
+      "start": 34.343,
+      "end": 34.424,
+      "startFrame": 1030,
+      "endFrame": 1033
+    },
+    {
+      "word": "optional",
+      "start": 34.517,
+      "end": 34.935,
+      "startFrame": 1036,
+      "endFrame": 1048
+    },
+    {
+      "word": "image.",
+      "start": 34.993,
+      "end": 35.446,
+      "startFrame": 1050,
+      "endFrame": 1063
+    },
+    {
+      "word": "Runway",
+      "start": 36.142,
+      "end": 36.549,
+      "startFrame": 1084,
+      "endFrame": 1096
+    },
+    {
+      "word": "uses",
+      "start": 36.641,
+      "end": 36.99,
+      "startFrame": 1099,
+      "endFrame": 1110
+    },
+    {
+      "word": "multi-modal",
+      "start": 37.106,
+      "end": 37.849,
+      "startFrame": 1113,
+      "endFrame": 1135
+    },
+    {
+      "word": "encoding.",
+      "start": 37.907,
+      "end": 38.569,
+      "startFrame": 1137,
+      "endFrame": 1157
+    },
+    {
+      "word": "The",
+      "start": 39.08,
+      "end": 39.23,
+      "startFrame": 1172,
+      "endFrame": 1177
+    },
+    {
+      "word": "encoder",
+      "start": 39.288,
+      "end": 39.741,
+      "startFrame": 1179,
+      "endFrame": 1192
+    },
+    {
+      "word": "processes",
+      "start": 39.788,
+      "end": 40.299,
+      "startFrame": 1194,
+      "endFrame": 1209
+    },
+    {
+      "word": "both",
+      "start": 40.38,
+      "end": 40.577,
+      "startFrame": 1211,
+      "endFrame": 1217
+    },
+    {
+      "word": "text",
+      "start": 40.647,
+      "end": 40.995,
+      "startFrame": 1219,
+      "endFrame": 1230
+    },
+    {
+      "word": "and",
+      "start": 41.169,
+      "end": 41.355,
+      "startFrame": 1235,
+      "endFrame": 1241
+    },
+    {
+      "word": "visual",
+      "start": 41.425,
+      "end": 41.727,
+      "startFrame": 1243,
+      "endFrame": 1252
+    },
+    {
+      "word": "input.",
+      "start": 41.796,
+      "end": 42.342,
+      "startFrame": 1254,
+      "endFrame": 1270
+    },
+    {
+      "word": "Gen-3",
+      "start": 42.946,
+      "end": 43.538,
+      "startFrame": 1288,
+      "endFrame": 1306
+    },
+    {
+      "word": "Alpha",
+      "start": 43.607,
+      "end": 43.874,
+      "startFrame": 1308,
+      "endFrame": 1316
+    },
+    {
+      "word": "runs",
+      "start": 43.932,
+      "end": 44.188,
+      "startFrame": 1318,
+      "endFrame": 1326
+    },
+    {
+      "word": "temporal",
+      "start": 44.258,
+      "end": 44.629,
+      "startFrame": 1328,
+      "endFrame": 1339
+    },
+    {
+      "word": "diffusion.",
+      "start": 44.687,
+      "end": 45.349,
+      "startFrame": 1341,
+      "endFrame": 1360
+    },
+    {
+      "word": "It",
+      "start": 45.79,
+      "end": 45.929,
+      "startFrame": 1374,
+      "endFrame": 1378
+    },
+    {
+      "word": "generates",
+      "start": 45.987,
+      "end": 46.429,
+      "startFrame": 1380,
+      "endFrame": 1393
+    },
+    {
+      "word": "motion",
+      "start": 46.498,
+      "end": 46.8,
+      "startFrame": 1395,
+      "endFrame": 1404
+    },
+    {
+      "word": "across",
+      "start": 46.847,
+      "end": 47.148,
+      "startFrame": 1405,
+      "endFrame": 1414
+    },
+    {
+      "word": "frames",
+      "start": 47.218,
+      "end": 47.659,
+      "startFrame": 1417,
+      "endFrame": 1430
+    },
+    {
+      "word": "simultaneously.",
+      "start": 47.81,
+      "end": 48.948,
+      "startFrame": 1434,
+      "endFrame": 1468
+    },
+    {
+      "word": "Runway",
+      "start": 49.645,
+      "end": 50.016,
+      "startFrame": 1489,
+      "endFrame": 1500
+    },
+    {
+      "word": "delivers",
+      "start": 50.074,
+      "end": 50.411,
+      "startFrame": 1502,
+      "endFrame": 1512
+    },
+    {
+      "word": "smooth,",
+      "start": 50.481,
+      "end": 51.038,
+      "startFrame": 1514,
+      "endFrame": 1531
+    },
+    {
+      "word": "cinematic",
+      "start": 51.166,
+      "end": 51.769,
+      "startFrame": 1535,
+      "endFrame": 1553
+    },
+    {
+      "word": "output.",
+      "start": 51.827,
+      "end": 52.443,
+      "startFrame": 1555,
+      "endFrame": 1573
+    },
+    {
+      "word": "Step",
+      "start": 52.884,
+      "end": 53.186,
+      "startFrame": 1587,
+      "endFrame": 1596
+    },
+    {
+      "word": "three,",
+      "start": 53.244,
+      "end": 53.731,
+      "startFrame": 1597,
+      "endFrame": 1612
+    },
+    {
+      "word": "Sora.",
+      "start": 53.905,
+      "end": 54.509,
+      "startFrame": 1617,
+      "endFrame": 1635
+    },
+    {
+      "word": "Your",
+      "start": 54.683,
+      "end": 54.845,
+      "startFrame": 1640,
+      "endFrame": 1645
+    },
+    {
+      "word": "prompt",
+      "start": 54.892,
+      "end": 55.217,
+      "startFrame": 1647,
+      "endFrame": 1657
+    },
+    {
+      "word": "describes",
+      "start": 55.298,
+      "end": 55.797,
+      "startFrame": 1659,
+      "endFrame": 1674
+    },
+    {
+      "word": "the",
+      "start": 55.855,
+      "end": 55.925,
+      "startFrame": 1676,
+      "endFrame": 1678
+    },
+    {
+      "word": "full",
+      "start": 55.983,
+      "end": 56.192,
+      "startFrame": 1679,
+      "endFrame": 1686
+    },
+    {
+      "word": "scene.",
+      "start": 56.25,
+      "end": 56.715,
+      "startFrame": 1688,
+      "endFrame": 1701
+    },
+    {
+      "word": "Sora",
+      "start": 57.318,
+      "end": 57.76,
+      "startFrame": 1720,
+      "endFrame": 1733
+    },
+    {
+      "word": "uses",
+      "start": 57.876,
+      "end": 58.177,
+      "startFrame": 1736,
+      "endFrame": 1745
+    },
+    {
+      "word": "a",
+      "start": 58.224,
+      "end": 58.259,
+      "startFrame": 1747,
+      "endFrame": 1748
+    },
+    {
+      "word": "transformer",
+      "start": 58.317,
+      "end": 58.99,
+      "startFrame": 1750,
+      "endFrame": 1770
+    },
+    {
+      "word": "architecture,",
+      "start": 59.048,
+      "end": 59.768,
+      "startFrame": 1771,
+      "endFrame": 1793
+    },
+    {
+      "word": "not",
+      "start": 59.919,
+      "end": 60.105,
+      "startFrame": 1798,
+      "endFrame": 1803
+    },
+    {
+      "word": "diffusion.",
+      "start": 60.151,
+      "end": 60.825,
+      "startFrame": 1805,
+      "endFrame": 1825
+    },
+    {
+      "word": "The",
+      "start": 61.521,
+      "end": 61.637,
+      "startFrame": 1846,
+      "endFrame": 1849
+    },
+    {
+      "word": "model",
+      "start": 61.707,
+      "end": 61.962,
+      "startFrame": 1851,
+      "endFrame": 1859
+    },
+    {
+      "word": "predicts",
+      "start": 62.02,
+      "end": 62.38,
+      "startFrame": 1861,
+      "endFrame": 1871
+    },
+    {
+      "word": "video",
+      "start": 62.438,
+      "end": 62.717,
+      "startFrame": 1873,
+      "endFrame": 1882
+    },
+    {
+      "word": "patches",
+      "start": 62.787,
+      "end": 63.135,
+      "startFrame": 1884,
+      "endFrame": 1894
+    },
+    {
+      "word": "directly.",
+      "start": 63.193,
+      "end": 63.785,
+      "startFrame": 1896,
+      "endFrame": 1914
+    },
+    {
+      "word": "It",
+      "start": 64.11,
+      "end": 64.261,
+      "startFrame": 1923,
+      "endFrame": 1928
+    },
+    {
+      "word": "understands",
+      "start": 64.319,
+      "end": 64.853,
+      "startFrame": 1930,
+      "endFrame": 1946
+    },
+    {
+      "word": "physics",
+      "start": 64.923,
+      "end": 65.341,
+      "startFrame": 1948,
+      "endFrame": 1960
+    },
+    {
+      "word": "and",
+      "start": 65.515,
+      "end": 65.701,
+      "startFrame": 1965,
+      "endFrame": 1971
+    },
+    {
+      "word": "object",
+      "start": 65.817,
+      "end": 66.223,
+      "startFrame": 1975,
+      "endFrame": 1987
+    },
+    {
+      "word": "permanence.",
+      "start": 66.27,
+      "end": 66.908,
+      "startFrame": 1988,
+      "endFrame": 2007
+    },
+    {
+      "word": "Sora",
+      "start": 67.721,
+      "end": 68.046,
+      "startFrame": 2032,
+      "endFrame": 2041
+    },
+    {
+      "word": "generates",
+      "start": 68.104,
+      "end": 68.522,
+      "startFrame": 2043,
+      "endFrame": 2056
+    },
+    {
+      "word": "longer,",
+      "start": 68.592,
+      "end": 69.033,
+      "startFrame": 2058,
+      "endFrame": 2071
+    },
+    {
+      "word": "more",
+      "start": 69.207,
+      "end": 69.404,
+      "startFrame": 2076,
+      "endFrame": 2082
+    },
+    {
+      "word": "coherent",
+      "start": 69.451,
+      "end": 69.915,
+      "startFrame": 2084,
+      "endFrame": 2097
+    },
+    {
+      "word": "videos.",
+      "start": 69.95,
+      "end": 70.6,
+      "startFrame": 2099,
+      "endFrame": 2118
+    },
+    {
+      "word": "The",
+      "start": 71.204,
+      "end": 71.366,
+      "startFrame": 2136,
+      "endFrame": 2141
+    },
+    {
+      "word": "output",
+      "start": 71.448,
+      "end": 71.889,
+      "startFrame": 2143,
+      "endFrame": 2157
+    },
+    {
+      "word": "maintains",
+      "start": 71.947,
+      "end": 72.4,
+      "startFrame": 2158,
+      "endFrame": 2172
+    },
+    {
+      "word": "consistency",
+      "start": 72.458,
+      "end": 73.131,
+      "startFrame": 2174,
+      "endFrame": 2194
+    },
+    {
+      "word": "across",
+      "start": 73.178,
+      "end": 73.468,
+      "startFrame": 2195,
+      "endFrame": 2204
+    },
+    {
+      "word": "frames.",
+      "start": 73.515,
+      "end": 74.095,
+      "startFrame": 2205,
+      "endFrame": 2223
+    },
+    {
+      "word": "Each",
+      "start": 74.536,
+      "end": 74.745,
+      "startFrame": 2236,
+      "endFrame": 2242
+    },
+    {
+      "word": "tool",
+      "start": 74.803,
+      "end": 75.059,
+      "startFrame": 2244,
+      "endFrame": 2252
+    },
+    {
+      "word": "has",
+      "start": 75.117,
+      "end": 75.256,
+      "startFrame": 2254,
+      "endFrame": 2258
+    },
+    {
+      "word": "its",
+      "start": 75.314,
+      "end": 75.43,
+      "startFrame": 2259,
+      "endFrame": 2263
+    },
+    {
+      "word": "strength.",
+      "start": 75.453,
+      "end": 75.999,
+      "startFrame": 2264,
+      "endFrame": 2280
+    },
+    {
+      "word": "Kling",
+      "start": 76.51,
+      "end": 76.789,
+      "startFrame": 2295,
+      "endFrame": 2304
+    },
+    {
+      "word": "excels",
+      "start": 76.858,
+      "end": 77.323,
+      "startFrame": 2306,
+      "endFrame": 2320
+    },
+    {
+      "word": "at",
+      "start": 77.369,
+      "end": 77.45,
+      "startFrame": 2321,
+      "endFrame": 2324
+    },
+    {
+      "word": "speed",
+      "start": 77.508,
+      "end": 77.868,
+      "startFrame": 2325,
+      "endFrame": 2336
+    },
+    {
+      "word": "and",
+      "start": 77.95,
+      "end": 78.089,
+      "startFrame": 2339,
+      "endFrame": 2343
+    },
+    {
+      "word": "accessibility.",
+      "start": 78.124,
+      "end": 79.076,
+      "startFrame": 2344,
+      "endFrame": 2372
+    },
+    {
+      "word": "Runway",
+      "start": 79.587,
+      "end": 79.97,
+      "startFrame": 2388,
+      "endFrame": 2399
+    },
+    {
+      "word": "delivers",
+      "start": 80.039,
+      "end": 80.411,
+      "startFrame": 2401,
+      "endFrame": 2412
+    },
+    {
+      "word": "professional",
+      "start": 80.469,
+      "end": 80.968,
+      "startFrame": 2414,
+      "endFrame": 2429
+    },
+    {
+      "word": "quality.",
+      "start": 81.038,
+      "end": 81.595,
+      "startFrame": 2431,
+      "endFrame": 2448
+    },
+    {
+      "word": "Sora",
+      "start": 82.036,
+      "end": 82.443,
+      "startFrame": 2461,
+      "endFrame": 2473
+    },
+    {
+      "word": "leads",
+      "start": 82.512,
+      "end": 82.756,
+      "startFrame": 2475,
+      "endFrame": 2483
+    },
+    {
+      "word": "in",
+      "start": 82.791,
+      "end": 82.861,
+      "startFrame": 2484,
+      "endFrame": 2486
+    },
+    {
+      "word": "understanding",
+      "start": 82.919,
+      "end": 83.569,
+      "startFrame": 2488,
+      "endFrame": 2507
+    },
+    {
+      "word": "and",
+      "start": 83.743,
+      "end": 83.917,
+      "startFrame": 2512,
+      "endFrame": 2518
+    },
+    {
+      "word": "coherence.",
+      "start": 83.998,
+      "end": 84.985,
+      "startFrame": 2520,
+      "endFrame": 2550
     }
   ]
 }

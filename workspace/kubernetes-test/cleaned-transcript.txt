@@ -1,0 +1,9 @@
+Kubernetes is a container orchestration platform. Let's break down how it actually works.
+
+Every Kubernetes cluster has two types of nodes: worker nodes and master nodes. Worker nodes do the actual work, running your application containers. Master nodes control everything.
+
+Each worker node runs three essential processes. First, a container runtime like Docker. Second, kubelet, which takes configurations and starts pods with containers inside. Third, kube-proxy, which handles networking between pods with intelligent forwarding.
+
+The master node runs four processes. The API server is your cluster gateway, handling all requests and authentication. The scheduler decides which worker node should run your new pod based on available resources. The controller manager detects when pods crash and triggers recovery. And etcd is the key-value store that acts as the cluster brain, storing all state data.
+
+In practice, you'll have multiple masters for high availability and many worker nodes. Adding new nodes is simple: install the required processes and join the cluster. This is what makes Kubernetes infinitely scalable.

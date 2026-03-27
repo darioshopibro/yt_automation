@@ -1,0 +1,184 @@
+{
+  "title": "GraphQL vs REST",
+  "fps": 30,
+  "totalFrames": 2311,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8"
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "REST API Basics",
+      "color": "#f97316",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 5,
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "REST Endpoints",
+          "startFrame": 10,
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "routes.js",
+            "code": "app.get('/users', getUsers);\napp.get('/users/:id', getUser);\napp.post('/orders', createOrder);\napp.get('/orders/:id', getOrder);",
+            "highlightLines": [1, 3]
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_1_2",
+          "title": "REST Pain Points",
+          "startFrame": 519,
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Over-fetching unused data",
+              "Under-fetching needs more requests",
+              "New feature, new endpoint"
+            ],
+            "style": "bullet"
+          },
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "GraphQL Approach",
+      "color": "#3b82f6",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 878,
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "REST vs GraphQL",
+          "startFrame": 888,
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "REST",
+              "items": ["Multiple endpoints", "Fixed data structure", "Server decides response"]
+            },
+            "right": {
+              "title": "GraphQL",
+              "items": ["Single endpoint", "Exact fields returned", "Client controls query"]
+            },
+            "leftColor": "#ef4444",
+            "rightColor": "#22c55e",
+            "dividerLabel": "vs"
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_2_2",
+          "title": "Schema Structure",
+          "startFrame": 1298,
+          "layout": "flow",
+          "nodes": [
+            { "label": "Queries", "icon": "MagnifyingGlass", "startFrame": 1404 },
+            { "label": "Mutations", "icon": "PencilSimple", "startFrame": 1445 },
+            { "label": "Subscriptions", "icon": "BellRinging", "startFrame": 1500 }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "When to Use What",
+      "color": "#22c55e",
+      "direction": "right",
+      "connectionToNext": "none",
+      "startFrame": 1677,
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Comparison",
+          "startFrame": 1687,
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Criteria", "REST", "GraphQL"],
+            "rows": [
+              ["Setup Speed", "Fast", "Slower"],
+              ["Caching", "Easy", "Complex"],
+              ["Data Fetching", "Fixed", "Flexible"],
+              ["Simple CRUD", "Yes", "Overkill"]
+            ],
+            "highlightCol": 2
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_3_2",
+          "title": "The Takeaway",
+          "startFrame": 2097,
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Choose based on your needs",
+            "highlight": ["Choose", "needs"],
+            "style": "impact"
+          },
+          "nodes": []
+        }
+      ]
+    }
+  ],
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 450, "scale": 0.55 },
+      { "frame": 5, "target": "sticky_1", "x": 350, "y": 450, "scale": 1.0 },
+      { "frame": 504, "target": "section_1_2", "x": 350, "y": 550, "scale": 0.95 },
+      { "frame": 863, "target": "sticky_2", "x": 960, "y": 450, "scale": 1.0 },
+      { "frame": 1283, "target": "section_2_2", "x": 960, "y": 550, "scale": 0.95 },
+      { "frame": 1662, "target": "sticky_3", "x": 1570, "y": 450, "scale": 1.0 },
+      { "frame": 2082, "target": "section_3_2", "x": 1570, "y": 550, "scale": 0.95 }
+    ]
+  },
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 502, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 861, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 895, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 },
+      { "frame": 1281, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1660, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1694, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.08 },
+      { "frame": 2080, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 }
+    ],
+    "totalCount": 9
+  }
+}

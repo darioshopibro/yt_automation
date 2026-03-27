@@ -22,12 +22,17 @@ interface Props {
 
 const defaultColors = ["#3b82f6", "#22c55e", "#f59e0b", "#a855f7", "#ef4444", "#06b6d4", "#f97316", "#ec4899"];
 
+// Ease-out curve — fills fast at start, slows at end (looks snappy)
+const easeOut = (t: number) => 1 - Math.pow(1 - t, 3);
+
 const BarChartVisual: React.FC<Props> = ({
   items, unit = "", maxValue, accentColor = "#3b82f6", progress = 1, shapeMode,
 }) => {
   const mode = shapeMode ?? "square";
   const isWide = mode === "wide";
   const max = maxValue || Math.max(...items.map(i => i.value)) * 1.1;
+  // Bars fill with ease-out curve — fast start, smooth finish
+  const easedProgress = easeOut(Math.min(progress * 1.5, 1)); // 1.5x speed = fills in first 66% of duration
 
   if (isWide) {
     // Horizontal row of vertical bars
@@ -39,8 +44,8 @@ const BarChartVisual: React.FC<Props> = ({
         <div style={{ display: "flex", gap: 12, alignItems: "flex-end", height: 160 }}>
           {items.map((item, i) => {
             const color = item.color || defaultColors[i % defaultColors.length];
-            const heightPct = (item.value / max) * 100 * progress;
-            const displayVal = Math.round(item.value * progress);
+            const heightPct = (item.value / max) * 100 * easedProgress;
+            const displayVal = Math.round(item.value * easedProgress);
 
             return (
               <div key={i} style={{
@@ -79,8 +84,8 @@ const BarChartVisual: React.FC<Props> = ({
       <div style={{ display: "flex", flexDirection: "column", gap: 14 }}>
         {items.map((item, i) => {
           const color = item.color || defaultColors[i % defaultColors.length];
-          const widthPct = (item.value / max) * 100 * progress;
-          const displayVal = Math.round(item.value * progress);
+          const widthPct = (item.value / max) * 100 * easedProgress;
+          const displayVal = Math.round(item.value * easedProgress);
 
           return (
             <div key={i}>

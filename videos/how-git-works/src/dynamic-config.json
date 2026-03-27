@@ -1,0 +1,208 @@
+{
+  "title": "How Git Works",
+  "fps": 30,
+  "totalFrames": 1903,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": [
+        "#f97316",
+        "#3b82f6",
+        "#22c55e",
+        "#a855f7"
+      ]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "How Git Stores Code",
+      "color": "#f97316",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 0,
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Snapshots, Not Diffs",
+          "startFrame": 5,
+          "layout": "negation",
+          "nodes": [
+            {
+              "label": "Diffs",
+              "icon": "GitDiff",
+              "startFrame": 10
+            },
+            {
+              "label": "Snapshots",
+              "icon": "Camera",
+              "startFrame": 16
+            }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Three Repo Areas",
+          "startFrame": 388,
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              {
+                "label": "Working Dir",
+                "description": "Edit your files"
+              },
+              {
+                "label": "Staging",
+                "description": "Prepare changes"
+              },
+              {
+                "label": "Commit",
+                "description": "Store permanently"
+              }
+            ]
+          },
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Branching & Merging",
+      "color": "#3b82f6",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 700,
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Lightweight Branches",
+          "startFrame": 705,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Main",
+              "icon": "GitCommit",
+              "startFrame": 710
+            },
+            {
+              "label": "Branch",
+              "icon": "GitBranch",
+              "startFrame": 716
+            },
+            {
+              "label": "Feature",
+              "icon": "Code",
+              "startFrame": 722
+            }
+          ]
+        },
+        {
+          "id": "section_2_2",
+          "title": "Merge Types",
+          "startFrame": 1066,
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Fast-Forward",
+              "items": [
+                "Clean merge",
+                "No conflicts",
+                "Linear history"
+              ]
+            },
+            "right": {
+              "title": "Conflict",
+              "items": [
+                "Same file changed",
+                "Manual resolve",
+                "Merge commit"
+              ]
+            },
+            "leftColor": "#22c55e",
+            "rightColor": "#ef4444",
+            "dividerLabel": "vs"
+          },
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Remote Collaboration",
+      "color": "#22c55e",
+      "direction": "right",
+      "startFrame": 1410,
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Team Workflow",
+          "startFrame": 1415,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Push",
+              "icon": "ArrowFatUp",
+              "startFrame": 1533
+            },
+            {
+              "label": "Review",
+              "icon": "ShieldCheck",
+              "startFrame": 1539
+            },
+            {
+              "label": "Pull",
+              "icon": "ArrowFatDown",
+              "startFrame": 1545
+            }
+          ]
+        },
+        {
+          "id": "section_3_2",
+          "title": "The Impact",
+          "startFrame": 1770,
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Powers millions of open source projects",
+            "highlight": [
+              "millions",
+              "open source"
+            ],
+            "style": "impact"
+          },
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

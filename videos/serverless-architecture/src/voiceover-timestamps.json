@@ -1,0 +1,803 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 74.211,
+  "wordCount": 158,
+  "words": [
+    {
+      "word": "Serverless",
+      "start": 0.0,
+      "end": 0.488
+    },
+    {
+      "word": "doesn't",
+      "start": 0.534,
+      "end": 0.755
+    },
+    {
+      "word": "mean",
+      "start": 0.789,
+      "end": 0.929
+    },
+    {
+      "word": "no",
+      "start": 0.998,
+      "end": 1.138
+    },
+    {
+      "word": "servers.",
+      "start": 1.207,
+      "end": 1.73
+    },
+    {
+      "word": "It",
+      "start": 1.939,
+      "end": 2.078
+    },
+    {
+      "word": "means",
+      "start": 2.148,
+      "end": 2.508
+    },
+    {
+      "word": "you",
+      "start": 2.752,
+      "end": 2.879
+    },
+    {
+      "word": "don't",
+      "start": 2.961,
+      "end": 3.193
+    },
+    {
+      "word": "manage",
+      "start": 3.262,
+      "end": 3.576
+    },
+    {
+      "word": "them.",
+      "start": 3.611,
+      "end": 3.947
+    },
+    {
+      "word": "The",
+      "start": 4.389,
+      "end": 4.516
+    },
+    {
+      "word": "cloud",
+      "start": 4.574,
+      "end": 4.853
+    },
+    {
+      "word": "provider",
+      "start": 4.899,
+      "end": 5.329
+    },
+    {
+      "word": "handles",
+      "start": 5.387,
+      "end": 5.724
+    },
+    {
+      "word": "provisioning,",
+      "start": 5.793,
+      "end": 6.502
+    },
+    {
+      "word": "scaling,",
+      "start": 6.653,
+      "end": 7.314
+    },
+    {
+      "word": "and",
+      "start": 7.407,
+      "end": 7.581
+    },
+    {
+      "word": "maintenance.",
+      "start": 7.651,
+      "end": 8.278
+    },
+    {
+      "word": "You",
+      "start": 8.789,
+      "end": 8.916
+    },
+    {
+      "word": "just",
+      "start": 8.986,
+      "end": 9.172
+    },
+    {
+      "word": "write",
+      "start": 9.207,
+      "end": 9.427
+    },
+    {
+      "word": "functions",
+      "start": 9.462,
+      "end": 9.857
+    },
+    {
+      "word": "that",
+      "start": 9.915,
+      "end": 10.054
+    },
+    {
+      "word": "run",
+      "start": 10.136,
+      "end": 10.356
+    },
+    {
+      "word": "when",
+      "start": 10.426,
+      "end": 10.6
+    },
+    {
+      "word": "triggered.\n\nA",
+      "start": 10.658,
+      "end": 11.819
+    },
+    {
+      "word": "W",
+      "start": 11.935,
+      "end": 12.26
+    },
+    {
+      "word": "S",
+      "start": 12.33,
+      "end": 12.446
+    },
+    {
+      "word": "Lambda",
+      "start": 12.527,
+      "end": 12.922
+    },
+    {
+      "word": "is",
+      "start": 13.096,
+      "end": 13.259
+    },
+    {
+      "word": "the",
+      "start": 13.317,
+      "end": 13.398
+    },
+    {
+      "word": "most",
+      "start": 13.514,
+      "end": 13.793
+    },
+    {
+      "word": "popular",
+      "start": 13.874,
+      "end": 14.28
+    },
+    {
+      "word": "serverless",
+      "start": 14.338,
+      "end": 14.756
+    },
+    {
+      "word": "platform.",
+      "start": 14.791,
+      "end": 15.406
+    },
+    {
+      "word": "Your",
+      "start": 15.917,
+      "end": 16.114
+    },
+    {
+      "word": "function",
+      "start": 16.184,
+      "end": 16.521
+    },
+    {
+      "word": "receives",
+      "start": 16.59,
+      "end": 16.997
+    },
+    {
+      "word": "an",
+      "start": 17.032,
+      "end": 17.09
+    },
+    {
+      "word": "event,",
+      "start": 17.136,
+      "end": 17.612
+    },
+    {
+      "word": "processes",
+      "start": 17.821,
+      "end": 18.402
+    },
+    {
+      "word": "it,",
+      "start": 18.46,
+      "end": 18.715
+    },
+    {
+      "word": "and",
+      "start": 18.889,
+      "end": 19.052
+    },
+    {
+      "word": "returns",
+      "start": 19.133,
+      "end": 19.528
+    },
+    {
+      "word": "a",
+      "start": 19.563,
+      "end": 19.586
+    },
+    {
+      "word": "result.",
+      "start": 19.632,
+      "end": 20.12
+    },
+    {
+      "word": "You",
+      "start": 20.724,
+      "end": 20.886
+    },
+    {
+      "word": "pay",
+      "start": 20.956,
+      "end": 21.153
+    },
+    {
+      "word": "only",
+      "start": 21.246,
+      "end": 21.583
+    },
+    {
+      "word": "for",
+      "start": 21.629,
+      "end": 21.734
+    },
+    {
+      "word": "the",
+      "start": 21.768,
+      "end": 21.838
+    },
+    {
+      "word": "milliseconds",
+      "start": 21.931,
+      "end": 22.558
+    },
+    {
+      "word": "your",
+      "start": 22.604,
+      "end": 22.732
+    },
+    {
+      "word": "code",
+      "start": 22.802,
+      "end": 23.08
+    },
+    {
+      "word": "actually",
+      "start": 23.15,
+      "end": 23.603
+    },
+    {
+      "word": "runs.",
+      "start": 23.649,
+      "end": 24.114
+    },
+    {
+      "word": "No",
+      "start": 24.717,
+      "end": 24.892
+    },
+    {
+      "word": "traffic",
+      "start": 24.95,
+      "end": 25.31
+    },
+    {
+      "word": "means",
+      "start": 25.379,
+      "end": 25.669
+    },
+    {
+      "word": "zero",
+      "start": 25.82,
+      "end": 26.215
+    },
+    {
+      "word": "cost.\n\nServerless",
+      "start": 26.285,
+      "end": 27.84
+    },
+    {
+      "word": "shines",
+      "start": 27.887,
+      "end": 28.27
+    },
+    {
+      "word": "for",
+      "start": 28.328,
+      "end": 28.433
+    },
+    {
+      "word": "event-driven",
+      "start": 28.491,
+      "end": 29.106
+    },
+    {
+      "word": "workloads.",
+      "start": 29.152,
+      "end": 29.849
+    },
+    {
+      "word": "A",
+      "start": 30.546,
+      "end": 30.638
+    },
+    {
+      "word": "P",
+      "start": 30.789,
+      "end": 30.906
+    },
+    {
+      "word": "I",
+      "start": 31.149,
+      "end": 31.277
+    },
+    {
+      "word": "endpoints,",
+      "start": 31.393,
+      "end": 32.09
+    },
+    {
+      "word": "file",
+      "start": 32.264,
+      "end": 32.601
+    },
+    {
+      "word": "processing,",
+      "start": 32.636,
+      "end": 33.321
+    },
+    {
+      "word": "scheduled",
+      "start": 33.495,
+      "end": 33.948
+    },
+    {
+      "word": "tasks,",
+      "start": 33.982,
+      "end": 34.551
+    },
+    {
+      "word": "and",
+      "start": 34.679,
+      "end": 34.83
+    },
+    {
+      "word": "web",
+      "start": 34.9,
+      "end": 35.062
+    },
+    {
+      "word": "hook",
+      "start": 35.12,
+      "end": 35.26
+    },
+    {
+      "word": "handlers",
+      "start": 35.306,
+      "end": 35.689
+    },
+    {
+      "word": "are",
+      "start": 35.805,
+      "end": 35.979
+    },
+    {
+      "word": "perfect",
+      "start": 36.072,
+      "end": 36.548
+    },
+    {
+      "word": "use",
+      "start": 36.606,
+      "end": 36.769
+    },
+    {
+      "word": "cases.",
+      "start": 36.804,
+      "end": 37.384
+    },
+    {
+      "word": "Each",
+      "start": 37.895,
+      "end": 38.104
+    },
+    {
+      "word": "function",
+      "start": 38.162,
+      "end": 38.534
+    },
+    {
+      "word": "does",
+      "start": 38.615,
+      "end": 38.835
+    },
+    {
+      "word": "one",
+      "start": 38.905,
+      "end": 39.079
+    },
+    {
+      "word": "thing",
+      "start": 39.114,
+      "end": 39.369
+    },
+    {
+      "word": "and",
+      "start": 39.613,
+      "end": 39.811
+    },
+    {
+      "word": "does",
+      "start": 39.869,
+      "end": 40.043
+    },
+    {
+      "word": "it",
+      "start": 40.089,
+      "end": 40.159
+    },
+    {
+      "word": "well.\n\nBut",
+      "start": 40.194,
+      "end": 41.25
+    },
+    {
+      "word": "serverless",
+      "start": 41.32,
+      "end": 41.877
+    },
+    {
+      "word": "has",
+      "start": 42.028,
+      "end": 42.191
+    },
+    {
+      "word": "limitations.",
+      "start": 42.272,
+      "end": 43.119
+    },
+    {
+      "word": "Cold",
+      "start": 43.63,
+      "end": 43.955
+    },
+    {
+      "word": "starts",
+      "start": 44.013,
+      "end": 44.397
+    },
+    {
+      "word": "add",
+      "start": 44.513,
+      "end": 44.733
+    },
+    {
+      "word": "latency",
+      "start": 44.815,
+      "end": 45.383
+    },
+    {
+      "word": "when",
+      "start": 45.662,
+      "end": 45.883
+    },
+    {
+      "word": "functions",
+      "start": 45.976,
+      "end": 46.393
+    },
+    {
+      "word": "haven't",
+      "start": 46.452,
+      "end": 46.672
+    },
+    {
+      "word": "run",
+      "start": 46.719,
+      "end": 46.858
+    },
+    {
+      "word": "recently.",
+      "start": 46.928,
+      "end": 47.543
+    },
+    {
+      "word": "There's",
+      "start": 48.054,
+      "end": 48.298
+    },
+    {
+      "word": "a",
+      "start": 48.321,
+      "end": 48.356
+    },
+    {
+      "word": "15-minute",
+      "start": 48.402,
+      "end": 49.052
+    },
+    {
+      "word": "execution",
+      "start": 49.087,
+      "end": 49.575
+    },
+    {
+      "word": "limit.",
+      "start": 49.633,
+      "end": 49.981
+    },
+    {
+      "word": "And",
+      "start": 50.422,
+      "end": 50.597
+    },
+    {
+      "word": "debugging",
+      "start": 50.713,
+      "end": 51.293
+    },
+    {
+      "word": "distributed",
+      "start": 51.351,
+      "end": 51.874
+    },
+    {
+      "word": "functions",
+      "start": 51.92,
+      "end": 52.384
+    },
+    {
+      "word": "is",
+      "start": 52.559,
+      "end": 52.733
+    },
+    {
+      "word": "harder",
+      "start": 52.826,
+      "end": 53.151
+    },
+    {
+      "word": "than",
+      "start": 53.197,
+      "end": 53.337
+    },
+    {
+      "word": "debugging",
+      "start": 53.429,
+      "end": 53.987
+    },
+    {
+      "word": "a",
+      "start": 54.08,
+      "end": 54.126
+    },
+    {
+      "word": "monolith.\n\nThe",
+      "start": 54.242,
+      "end": 55.612
+    },
+    {
+      "word": "cost",
+      "start": 55.682,
+      "end": 55.926
+    },
+    {
+      "word": "model",
+      "start": 55.984,
+      "end": 56.216
+    },
+    {
+      "word": "flips",
+      "start": 56.285,
+      "end": 56.564
+    },
+    {
+      "word": "at",
+      "start": 56.599,
+      "end": 56.68
+    },
+    {
+      "word": "scale.",
+      "start": 56.727,
+      "end": 57.237
+    },
+    {
+      "word": "Below",
+      "start": 57.679,
+      "end": 58.027
+    },
+    {
+      "word": "one",
+      "start": 58.143,
+      "end": 58.375
+    },
+    {
+      "word": "million",
+      "start": 58.433,
+      "end": 58.712
+    },
+    {
+      "word": "requests",
+      "start": 58.77,
+      "end": 59.176
+    },
+    {
+      "word": "per",
+      "start": 59.234,
+      "end": 59.35
+    },
+    {
+      "word": "month,",
+      "start": 59.397,
+      "end": 59.745
+    },
+    {
+      "word": "serverless",
+      "start": 59.919,
+      "end": 60.488
+    },
+    {
+      "word": "is",
+      "start": 60.57,
+      "end": 60.72
+    },
+    {
+      "word": "cheaper.",
+      "start": 60.778,
+      "end": 61.324
+    },
+    {
+      "word": "Above",
+      "start": 61.928,
+      "end": 62.288
+    },
+    {
+      "word": "that,",
+      "start": 62.323,
+      "end": 62.694
+    },
+    {
+      "word": "dedicated",
+      "start": 62.868,
+      "end": 63.402
+    },
+    {
+      "word": "servers",
+      "start": 63.46,
+      "end": 63.82
+    },
+    {
+      "word": "might",
+      "start": 63.89,
+      "end": 64.099
+    },
+    {
+      "word": "save",
+      "start": 64.157,
+      "end": 64.389
+    },
+    {
+      "word": "you",
+      "start": 64.424,
+      "end": 64.505
+    },
+    {
+      "word": "sixty",
+      "start": 64.586,
+      "end": 65.004
+    },
+    {
+      "word": "to",
+      "start": 65.155,
+      "end": 65.271
+    },
+    {
+      "word": "seventy",
+      "start": 65.364,
+      "end": 65.747
+    },
+    {
+      "word": "percent.",
+      "start": 65.805,
+      "end": 66.351
+    },
+    {
+      "word": "Companies",
+      "start": 67.048,
+      "end": 67.501
+    },
+    {
+      "word": "like",
+      "start": 67.559,
+      "end": 67.744
+    },
+    {
+      "word": "Netflix",
+      "start": 67.791,
+      "end": 68.278
+    },
+    {
+      "word": "use",
+      "start": 68.453,
+      "end": 68.662
+    },
+    {
+      "word": "a",
+      "start": 68.696,
+      "end": 68.72
+    },
+    {
+      "word": "hybrid",
+      "start": 68.801,
+      "end": 69.196
+    },
+    {
+      "word": "approach:",
+      "start": 69.219,
+      "end": 69.788
+    },
+    {
+      "word": "serverless",
+      "start": 70.299,
+      "end": 70.798
+    },
+    {
+      "word": "for",
+      "start": 70.856,
+      "end": 70.96
+    },
+    {
+      "word": "spiky",
+      "start": 71.018,
+      "end": 71.436
+    },
+    {
+      "word": "workloads,",
+      "start": 71.494,
+      "end": 72.121
+    },
+    {
+      "word": "containers",
+      "start": 72.295,
+      "end": 72.876
+    },
+    {
+      "word": "for",
+      "start": 72.934,
+      "end": 73.039
+    },
+    {
+      "word": "steady",
+      "start": 73.097,
+      "end": 73.398
+    },
+    {
+      "word": "traffic.",
+      "start": 73.445,
+      "end": 74.211
+    }
+  ]
+}

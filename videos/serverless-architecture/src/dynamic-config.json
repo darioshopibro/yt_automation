@@ -1,0 +1,149 @@
+{
+  "title": "Serverless Architecture",
+  "fps": 30,
+  "totalFrames": 2257,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": ["#f97316", "#3b82f6", "#22c55e", "#a855f7"]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "What is Serverless",
+      "color": "#f97316",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Serverless Concept",
+          "layout": "negation",
+          "startFrame": 0,
+          "nodes": [
+            { "label": "No Servers?", "icon": "Empty" },
+            { "label": "Cloud Manages", "icon": "Cloud" },
+            { "label": "You Write", "icon": "Function" }
+          ]
+        },
+        {
+          "id": "section_1_2",
+          "title": "Lambda Function",
+          "startFrame": 350,
+          "visualType": "code-block",
+          "visualData": {
+            "language": "javascript",
+            "filename": "handler.js",
+            "code": "exports.handler = async (event) => {\n  const result = process(event);\n  return {\n    statusCode: 200,\n    body: JSON.stringify(result)\n  };\n};",
+            "highlightLines": [1, 2]
+          },
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Use Cases & Limits",
+      "color": "#3b82f6",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Pros vs Cons",
+          "startFrame": 830,
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Use Cases",
+              "items": ["API endpoints", "File processing", "Scheduled tasks", "Webhook handlers"]
+            },
+            "right": {
+              "title": "Limitations",
+              "items": ["Cold start latency", "Execution time limit", "Distributed debugging", "Vendor lock-in"]
+            },
+            "leftColor": "#22c55e",
+            "rightColor": "#ef4444",
+            "dividerLabel": "vs"
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_2_2",
+          "title": "Event-Driven Model",
+          "layout": "flow",
+          "startFrame": 1132,
+          "nodes": [
+            { "label": "Event", "icon": "Notification" },
+            { "label": "Function", "icon": "Code" },
+            { "label": "Response", "icon": "KeyReturn" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Cost & Strategy",
+      "color": "#22c55e",
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Cost Crossover Point",
+          "startFrame": 1663,
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Threshold", "value": "1M", "subtitle": "Requests per month" },
+              { "label": "Savings", "value": "60-70%", "subtitle": "Dedicated above 1M" }
+            ]
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_3_2",
+          "title": "The Hybrid Way",
+          "startFrame": 2005,
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Serverless for spiky, containers for steady",
+            "highlight": ["spiky", "steady"],
+            "style": "impact"
+          },
+          "nodes": []
+        }
+      ]
+    }
+  ]
+}

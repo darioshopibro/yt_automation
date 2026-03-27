@@ -1,0 +1,1537 @@
+{
+  "meta": {
+    "title": "GraphQL vs REST",
+    "fps": 30,
+    "totalFrames": 2311,
+    "totalDuration": 77.03,
+    "hierarchyType": "sticky"
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 76.023,
+    "words": [
+      {
+        "word": "rest",
+        "start": 0.0,
+        "end": 0.325,
+        "startFrame": 0,
+        "endFrame": 10
+      },
+      {
+        "word": "has",
+        "start": 0.36,
+        "end": 0.464,
+        "startFrame": 11,
+        "endFrame": 14
+      },
+      {
+        "word": "been",
+        "start": 0.511,
+        "end": 0.662,
+        "startFrame": 15,
+        "endFrame": 20
+      },
+      {
+        "word": "the",
+        "start": 0.697,
+        "end": 0.766,
+        "startFrame": 21,
+        "endFrame": 23
+      },
+      {
+        "word": "standard",
+        "start": 0.801,
+        "end": 1.184,
+        "startFrame": 24,
+        "endFrame": 36
+      },
+      {
+        "word": "for",
+        "start": 1.219,
+        "end": 1.335,
+        "startFrame": 37,
+        "endFrame": 40
+      },
+      {
+        "word": "A",
+        "start": 1.428,
+        "end": 1.509,
+        "startFrame": 43,
+        "endFrame": 45
+      },
+      {
+        "word": "P",
+        "start": 1.66,
+        "end": 1.753,
+        "startFrame": 50,
+        "endFrame": 53
+      },
+      {
+        "word": "I",
+        "start": 1.95,
+        "end": 2.101,
+        "startFrame": 58,
+        "endFrame": 63
+      },
+      {
+        "word": "s",
+        "start": 2.218,
+        "end": 2.392,
+        "startFrame": 67,
+        "endFrame": 72
+      },
+      {
+        "word": "for",
+        "start": 2.531,
+        "end": 2.682,
+        "startFrame": 76,
+        "endFrame": 80
+      },
+      {
+        "word": "over",
+        "start": 2.798,
+        "end": 3.111,
+        "startFrame": 84,
+        "endFrame": 93
+      },
+      {
+        "word": "a",
+        "start": 3.17,
+        "end": 3.204,
+        "startFrame": 95,
+        "endFrame": 96
+      },
+      {
+        "word": "decade.",
+        "start": 3.251,
+        "end": 3.866,
+        "startFrame": 98,
+        "endFrame": 116
+      },
+      {
+        "word": "You",
+        "start": 4.365,
+        "end": 4.516,
+        "startFrame": 131,
+        "endFrame": 135
+      },
+      {
+        "word": "define",
+        "start": 4.586,
+        "end": 4.957,
+        "startFrame": 138,
+        "endFrame": 149
+      },
+      {
+        "word": "endpoints",
+        "start": 4.981,
+        "end": 5.387,
+        "startFrame": 149,
+        "endFrame": 162
+      },
+      {
+        "word": "like",
+        "start": 5.433,
+        "end": 5.654,
+        "startFrame": 163,
+        "endFrame": 170
+      },
+      {
+        "word": "G",
+        "start": 5.724,
+        "end": 5.898,
+        "startFrame": 172,
+        "endFrame": 177
+      },
+      {
+        "word": "E",
+        "start": 6.095,
+        "end": 6.269,
+        "startFrame": 183,
+        "endFrame": 188
+      },
+      {
+        "word": "T",
+        "start": 6.339,
+        "end": 6.49,
+        "startFrame": 190,
+        "endFrame": 195
+      },
+      {
+        "word": "/users",
+        "start": 6.861,
+        "end": 7.488,
+        "startFrame": 206,
+        "endFrame": 225
+      },
+      {
+        "word": "and",
+        "start": 7.651,
+        "end": 7.883,
+        "startFrame": 230,
+        "endFrame": 236
+      },
+      {
+        "word": "P",
+        "start": 7.999,
+        "end": 8.115,
+        "startFrame": 240,
+        "endFrame": 243
+      },
+      {
+        "word": "O",
+        "start": 8.313,
+        "end": 8.487,
+        "startFrame": 249,
+        "endFrame": 255
+      },
+      {
+        "word": "S",
+        "start": 8.661,
+        "end": 8.835,
+        "startFrame": 260,
+        "endFrame": 265
+      },
+      {
+        "word": "T",
+        "start": 8.916,
+        "end": 9.056,
+        "startFrame": 267,
+        "endFrame": 272
+      },
+      {
+        "word": "/orders.",
+        "start": 9.334,
+        "end": 10.194,
+        "startFrame": 280,
+        "endFrame": 306
+      },
+      {
+        "word": "Each",
+        "start": 10.879,
+        "end": 11.111,
+        "startFrame": 326,
+        "endFrame": 333
+      },
+      {
+        "word": "endpoint",
+        "start": 11.18,
+        "end": 11.668,
+        "startFrame": 335,
+        "endFrame": 350
+      },
+      {
+        "word": "returns",
+        "start": 11.726,
+        "end": 12.132,
+        "startFrame": 352,
+        "endFrame": 364
+      },
+      {
+        "word": "a",
+        "start": 12.179,
+        "end": 12.214,
+        "startFrame": 365,
+        "endFrame": 366
+      },
+      {
+        "word": "fixed",
+        "start": 12.33,
+        "end": 12.666,
+        "startFrame": 370,
+        "endFrame": 380
+      },
+      {
+        "word": "data",
+        "start": 12.748,
+        "end": 13.038,
+        "startFrame": 382,
+        "endFrame": 391
+      },
+      {
+        "word": "structure.",
+        "start": 13.084,
+        "end": 13.711,
+        "startFrame": 393,
+        "endFrame": 411
+      },
+      {
+        "word": "Simple,",
+        "start": 14.141,
+        "end": 14.71,
+        "startFrame": 424,
+        "endFrame": 441
+      },
+      {
+        "word": "predictable,",
+        "start": 14.826,
+        "end": 15.569,
+        "startFrame": 445,
+        "endFrame": 467
+      },
+      {
+        "word": "and",
+        "start": 15.743,
+        "end": 15.917,
+        "startFrame": 472,
+        "endFrame": 478
+      },
+      {
+        "word": "well",
+        "start": 15.975,
+        "end": 16.138,
+        "startFrame": 479,
+        "endFrame": 484
+      },
+      {
+        "word": "understood.\n\nBut",
+        "start": 16.173,
+        "end": 17.45,
+        "startFrame": 485,
+        "endFrame": 524
+      },
+      {
+        "word": "rest",
+        "start": 17.531,
+        "end": 17.763,
+        "startFrame": 526,
+        "endFrame": 533
+      },
+      {
+        "word": "has",
+        "start": 17.81,
+        "end": 17.972,
+        "startFrame": 534,
+        "endFrame": 539
+      },
+      {
+        "word": "problems.",
+        "start": 18.03,
+        "end": 18.657,
+        "startFrame": 541,
+        "endFrame": 560
+      },
+      {
+        "word": "Over-fetching",
+        "start": 19.249,
+        "end": 19.969,
+        "startFrame": 577,
+        "endFrame": 599
+      },
+      {
+        "word": "means",
+        "start": 20.05,
+        "end": 20.329,
+        "startFrame": 602,
+        "endFrame": 610
+      },
+      {
+        "word": "you",
+        "start": 20.398,
+        "end": 20.503,
+        "startFrame": 612,
+        "endFrame": 615
+      },
+      {
+        "word": "get",
+        "start": 20.584,
+        "end": 20.758,
+        "startFrame": 618,
+        "endFrame": 623
+      },
+      {
+        "word": "data",
+        "start": 20.816,
+        "end": 21.095,
+        "startFrame": 624,
+        "endFrame": 633
+      },
+      {
+        "word": "you",
+        "start": 21.165,
+        "end": 21.246,
+        "startFrame": 635,
+        "endFrame": 637
+      },
+      {
+        "word": "don't",
+        "start": 21.304,
+        "end": 21.513,
+        "startFrame": 639,
+        "endFrame": 645
+      },
+      {
+        "word": "need.",
+        "start": 21.571,
+        "end": 21.977,
+        "startFrame": 647,
+        "endFrame": 659
+      },
+      {
+        "word": "Under-fetching",
+        "start": 22.488,
+        "end": 23.115,
+        "startFrame": 675,
+        "endFrame": 693
+      },
+      {
+        "word": "means",
+        "start": 23.185,
+        "end": 23.487,
+        "startFrame": 696,
+        "endFrame": 705
+      },
+      {
+        "word": "you",
+        "start": 23.603,
+        "end": 23.73,
+        "startFrame": 708,
+        "endFrame": 712
+      },
+      {
+        "word": "need",
+        "start": 23.847,
+        "end": 24.114,
+        "startFrame": 715,
+        "endFrame": 723
+      },
+      {
+        "word": "multiple",
+        "start": 24.23,
+        "end": 24.694,
+        "startFrame": 727,
+        "endFrame": 741
+      },
+      {
+        "word": "requests.",
+        "start": 24.741,
+        "end": 25.379,
+        "startFrame": 742,
+        "endFrame": 761
+      },
+      {
+        "word": "And",
+        "start": 25.762,
+        "end": 25.948,
+        "startFrame": 773,
+        "endFrame": 778
+      },
+      {
+        "word": "every",
+        "start": 26.064,
+        "end": 26.354,
+        "startFrame": 782,
+        "endFrame": 791
+      },
+      {
+        "word": "new",
+        "start": 26.412,
+        "end": 26.54,
+        "startFrame": 792,
+        "endFrame": 796
+      },
+      {
+        "word": "feature",
+        "start": 26.61,
+        "end": 27.016,
+        "startFrame": 798,
+        "endFrame": 810
+      },
+      {
+        "word": "often",
+        "start": 27.144,
+        "end": 27.469,
+        "startFrame": 814,
+        "endFrame": 824
+      },
+      {
+        "word": "requires",
+        "start": 27.539,
+        "end": 27.991,
+        "startFrame": 826,
+        "endFrame": 840
+      },
+      {
+        "word": "a",
+        "start": 28.038,
+        "end": 28.073,
+        "startFrame": 841,
+        "endFrame": 842
+      },
+      {
+        "word": "new",
+        "start": 28.154,
+        "end": 28.293,
+        "startFrame": 845,
+        "endFrame": 849
+      },
+      {
+        "word": "endpoint.\n\ngraph",
+        "start": 28.351,
+        "end": 29.768,
+        "startFrame": 851,
+        "endFrame": 893
+      },
+      {
+        "word": "Q",
+        "start": 29.803,
+        "end": 29.861,
+        "startFrame": 894,
+        "endFrame": 896
+      },
+      {
+        "word": "L",
+        "start": 30.07,
+        "end": 30.22,
+        "startFrame": 902,
+        "endFrame": 907
+      },
+      {
+        "word": "solves",
+        "start": 30.546,
+        "end": 30.964,
+        "startFrame": 916,
+        "endFrame": 929
+      },
+      {
+        "word": "these",
+        "start": 31.01,
+        "end": 31.184,
+        "startFrame": 930,
+        "endFrame": 936
+      },
+      {
+        "word": "problems.",
+        "start": 31.219,
+        "end": 31.811,
+        "startFrame": 937,
+        "endFrame": 954
+      },
+      {
+        "word": "You",
+        "start": 32.252,
+        "end": 32.392,
+        "startFrame": 968,
+        "endFrame": 972
+      },
+      {
+        "word": "send",
+        "start": 32.461,
+        "end": 32.659,
+        "startFrame": 974,
+        "endFrame": 980
+      },
+      {
+        "word": "a",
+        "start": 32.705,
+        "end": 32.728,
+        "startFrame": 981,
+        "endFrame": 982
+      },
+      {
+        "word": "query",
+        "start": 32.786,
+        "end": 33.088,
+        "startFrame": 984,
+        "endFrame": 993
+      },
+      {
+        "word": "describing",
+        "start": 33.146,
+        "end": 33.622,
+        "startFrame": 994,
+        "endFrame": 1009
+      },
+      {
+        "word": "exactly",
+        "start": 33.692,
+        "end": 34.249,
+        "startFrame": 1011,
+        "endFrame": 1027
+      },
+      {
+        "word": "what",
+        "start": 34.33,
+        "end": 34.54,
+        "startFrame": 1030,
+        "endFrame": 1036
+      },
+      {
+        "word": "data",
+        "start": 34.609,
+        "end": 34.888,
+        "startFrame": 1038,
+        "endFrame": 1047
+      },
+      {
+        "word": "you",
+        "start": 34.958,
+        "end": 35.039,
+        "startFrame": 1049,
+        "endFrame": 1051
+      },
+      {
+        "word": "want.",
+        "start": 35.109,
+        "end": 35.503,
+        "startFrame": 1053,
+        "endFrame": 1065
+      },
+      {
+        "word": "One",
+        "start": 36.107,
+        "end": 36.339,
+        "startFrame": 1083,
+        "endFrame": 1090
+      },
+      {
+        "word": "endpoint,",
+        "start": 36.374,
+        "end": 36.931,
+        "startFrame": 1091,
+        "endFrame": 1108
+      },
+      {
+        "word": "one",
+        "start": 37.106,
+        "end": 37.303,
+        "startFrame": 1113,
+        "endFrame": 1119
+      },
+      {
+        "word": "request,",
+        "start": 37.338,
+        "end": 37.942,
+        "startFrame": 1120,
+        "endFrame": 1138
+      },
+      {
+        "word": "exactly",
+        "start": 38.151,
+        "end": 38.777,
+        "startFrame": 1145,
+        "endFrame": 1163
+      },
+      {
+        "word": "the",
+        "start": 38.836,
+        "end": 38.905,
+        "startFrame": 1165,
+        "endFrame": 1167
+      },
+      {
+        "word": "fields",
+        "start": 38.975,
+        "end": 39.277,
+        "startFrame": 1169,
+        "endFrame": 1178
+      },
+      {
+        "word": "you",
+        "start": 39.312,
+        "end": 39.393,
+        "startFrame": 1179,
+        "endFrame": 1182
+      },
+      {
+        "word": "need.",
+        "start": 39.451,
+        "end": 39.857,
+        "startFrame": 1184,
+        "endFrame": 1196
+      },
+      {
+        "word": "The",
+        "start": 40.298,
+        "end": 40.426,
+        "startFrame": 1209,
+        "endFrame": 1213
+      },
+      {
+        "word": "client's",
+        "start": 40.473,
+        "end": 40.809,
+        "startFrame": 1214,
+        "endFrame": 1224
+      },
+      {
+        "word": "in",
+        "start": 40.844,
+        "end": 40.914,
+        "startFrame": 1225,
+        "endFrame": 1227
+      },
+      {
+        "word": "control,",
+        "start": 40.972,
+        "end": 41.564,
+        "startFrame": 1229,
+        "endFrame": 1247
+      },
+      {
+        "word": "not",
+        "start": 41.715,
+        "end": 41.889,
+        "startFrame": 1251,
+        "endFrame": 1257
+      },
+      {
+        "word": "the",
+        "start": 41.924,
+        "end": 41.993,
+        "startFrame": 1258,
+        "endFrame": 1260
+      },
+      {
+        "word": "server.\n\ngraph",
+        "start": 42.051,
+        "end": 43.445,
+        "startFrame": 1262,
+        "endFrame": 1303
+      },
+      {
+        "word": "Q",
+        "start": 43.48,
+        "end": 43.549,
+        "startFrame": 1304,
+        "endFrame": 1306
+      },
+      {
+        "word": "L",
+        "start": 43.758,
+        "end": 43.874,
+        "startFrame": 1313,
+        "endFrame": 1316
+      },
+      {
+        "word": "uses",
+        "start": 43.99,
+        "end": 44.339,
+        "startFrame": 1320,
+        "endFrame": 1330
+      },
+      {
+        "word": "a",
+        "start": 44.397,
+        "end": 44.42,
+        "startFrame": 1332,
+        "endFrame": 1333
+      },
+      {
+        "word": "skee-ma",
+        "start": 44.49,
+        "end": 45.035,
+        "startFrame": 1335,
+        "endFrame": 1351
+      },
+      {
+        "word": "that",
+        "start": 45.082,
+        "end": 45.198,
+        "startFrame": 1352,
+        "endFrame": 1356
+      },
+      {
+        "word": "defines",
+        "start": 45.244,
+        "end": 45.651,
+        "startFrame": 1357,
+        "endFrame": 1370
+      },
+      {
+        "word": "your",
+        "start": 45.697,
+        "end": 45.79,
+        "startFrame": 1371,
+        "endFrame": 1374
+      },
+      {
+        "word": "data",
+        "start": 45.825,
+        "end": 46.057,
+        "startFrame": 1375,
+        "endFrame": 1382
+      },
+      {
+        "word": "types.",
+        "start": 46.115,
+        "end": 46.579,
+        "startFrame": 1383,
+        "endFrame": 1397
+      },
+      {
+        "word": "Queries",
+        "start": 46.962,
+        "end": 47.369,
+        "startFrame": 1409,
+        "endFrame": 1421
+      },
+      {
+        "word": "fetch",
+        "start": 47.427,
+        "end": 47.647,
+        "startFrame": 1423,
+        "endFrame": 1429
+      },
+      {
+        "word": "data,",
+        "start": 47.706,
+        "end": 48.182,
+        "startFrame": 1431,
+        "endFrame": 1445
+      },
+      {
+        "word": "mutations",
+        "start": 48.332,
+        "end": 48.936,
+        "startFrame": 1450,
+        "endFrame": 1468
+      },
+      {
+        "word": "change",
+        "start": 49.006,
+        "end": 49.319,
+        "startFrame": 1470,
+        "endFrame": 1480
+      },
+      {
+        "word": "data,",
+        "start": 49.366,
+        "end": 49.76,
+        "startFrame": 1481,
+        "endFrame": 1493
+      },
+      {
+        "word": "and",
+        "start": 49.935,
+        "end": 50.109,
+        "startFrame": 1498,
+        "endFrame": 1503
+      },
+      {
+        "word": "subscriptions",
+        "start": 50.167,
+        "end": 50.829,
+        "startFrame": 1505,
+        "endFrame": 1525
+      },
+      {
+        "word": "give",
+        "start": 50.887,
+        "end": 51.05,
+        "startFrame": 1527,
+        "endFrame": 1532
+      },
+      {
+        "word": "you",
+        "start": 51.084,
+        "end": 51.166,
+        "startFrame": 1533,
+        "endFrame": 1535
+      },
+      {
+        "word": "real-time",
+        "start": 51.282,
+        "end": 51.781,
+        "startFrame": 1538,
+        "endFrame": 1553
+      },
+      {
+        "word": "updates.",
+        "start": 51.816,
+        "end": 52.443,
+        "startFrame": 1554,
+        "endFrame": 1573
+      },
+      {
+        "word": "Tools",
+        "start": 53.047,
+        "end": 53.383,
+        "startFrame": 1591,
+        "endFrame": 1601
+      },
+      {
+        "word": "like",
+        "start": 53.43,
+        "end": 53.604,
+        "startFrame": 1603,
+        "endFrame": 1608
+      },
+      {
+        "word": "Apollo",
+        "start": 53.627,
+        "end": 53.952,
+        "startFrame": 1609,
+        "endFrame": 1619
+      },
+      {
+        "word": "make",
+        "start": 54.022,
+        "end": 54.196,
+        "startFrame": 1621,
+        "endFrame": 1626
+      },
+      {
+        "word": "it",
+        "start": 54.231,
+        "end": 54.289,
+        "startFrame": 1627,
+        "endFrame": 1629
+      },
+      {
+        "word": "easy",
+        "start": 54.335,
+        "end": 54.544,
+        "startFrame": 1630,
+        "endFrame": 1636
+      },
+      {
+        "word": "to",
+        "start": 54.602,
+        "end": 54.672,
+        "startFrame": 1638,
+        "endFrame": 1640
+      },
+      {
+        "word": "add",
+        "start": 54.753,
+        "end": 54.893,
+        "startFrame": 1643,
+        "endFrame": 1647
+      },
+      {
+        "word": "to",
+        "start": 54.927,
+        "end": 54.985,
+        "startFrame": 1648,
+        "endFrame": 1650
+      },
+      {
+        "word": "any",
+        "start": 55.055,
+        "end": 55.194,
+        "startFrame": 1652,
+        "endFrame": 1656
+      },
+      {
+        "word": "project.\n\nBut",
+        "start": 55.241,
+        "end": 56.402,
+        "startFrame": 1657,
+        "endFrame": 1692
+      },
+      {
+        "word": "graph",
+        "start": 56.471,
+        "end": 56.762,
+        "startFrame": 1694,
+        "endFrame": 1703
+      },
+      {
+        "word": "Q",
+        "start": 56.797,
+        "end": 56.913,
+        "startFrame": 1704,
+        "endFrame": 1707
+      },
+      {
+        "word": "L",
+        "start": 57.087,
+        "end": 57.238,
+        "startFrame": 1713,
+        "endFrame": 1717
+      },
+      {
+        "word": "isn't",
+        "start": 57.354,
+        "end": 57.656,
+        "startFrame": 1721,
+        "endFrame": 1730
+      },
+      {
+        "word": "always",
+        "start": 57.725,
+        "end": 58.167,
+        "startFrame": 1732,
+        "endFrame": 1745
+      },
+      {
+        "word": "better.",
+        "start": 58.236,
+        "end": 58.735,
+        "startFrame": 1747,
+        "endFrame": 1762
+      },
+      {
+        "word": "For",
+        "start": 59.246,
+        "end": 59.397,
+        "startFrame": 1777,
+        "endFrame": 1782
+      },
+      {
+        "word": "simple",
+        "start": 59.455,
+        "end": 59.815,
+        "startFrame": 1784,
+        "endFrame": 1794
+      },
+      {
+        "word": "A",
+        "start": 59.896,
+        "end": 60.013,
+        "startFrame": 1797,
+        "endFrame": 1800
+      },
+      {
+        "word": "P",
+        "start": 60.14,
+        "end": 60.256,
+        "startFrame": 1804,
+        "endFrame": 1808
+      },
+      {
+        "word": "I",
+        "start": 60.43,
+        "end": 60.547,
+        "startFrame": 1813,
+        "endFrame": 1816
+      },
+      {
+        "word": "s,",
+        "start": 60.663,
+        "end": 60.953,
+        "startFrame": 1820,
+        "endFrame": 1829
+      },
+      {
+        "word": "rest",
+        "start": 61.162,
+        "end": 61.452,
+        "startFrame": 1835,
+        "endFrame": 1844
+      },
+      {
+        "word": "is",
+        "start": 61.533,
+        "end": 61.684,
+        "startFrame": 1846,
+        "endFrame": 1851
+      },
+      {
+        "word": "faster",
+        "start": 61.766,
+        "end": 62.149,
+        "startFrame": 1853,
+        "endFrame": 1864
+      },
+      {
+        "word": "to",
+        "start": 62.184,
+        "end": 62.23,
+        "startFrame": 1866,
+        "endFrame": 1867
+      },
+      {
+        "word": "build.",
+        "start": 62.276,
+        "end": 62.729,
+        "startFrame": 1868,
+        "endFrame": 1882
+      },
+      {
+        "word": "graph",
+        "start": 63.333,
+        "end": 63.635,
+        "startFrame": 1900,
+        "endFrame": 1909
+      },
+      {
+        "word": "Q",
+        "start": 63.67,
+        "end": 63.786,
+        "startFrame": 1910,
+        "endFrame": 1914
+      },
+      {
+        "word": "L",
+        "start": 63.995,
+        "end": 64.169,
+        "startFrame": 1920,
+        "endFrame": 1925
+      },
+      {
+        "word": "adds",
+        "start": 64.285,
+        "end": 64.54,
+        "startFrame": 1929,
+        "endFrame": 1936
+      },
+      {
+        "word": "complexity",
+        "start": 64.587,
+        "end": 65.179,
+        "startFrame": 1938,
+        "endFrame": 1955
+      },
+      {
+        "word": "with",
+        "start": 65.225,
+        "end": 65.353,
+        "startFrame": 1957,
+        "endFrame": 1961
+      },
+      {
+        "word": "cashing,",
+        "start": 65.411,
+        "end": 65.992,
+        "startFrame": 1962,
+        "endFrame": 1980
+      },
+      {
+        "word": "error",
+        "start": 66.166,
+        "end": 66.444,
+        "startFrame": 1985,
+        "endFrame": 1993
+      },
+      {
+        "word": "handling,",
+        "start": 66.491,
+        "end": 67.083,
+        "startFrame": 1995,
+        "endFrame": 2012
+      },
+      {
+        "word": "and",
+        "start": 67.362,
+        "end": 67.629,
+        "startFrame": 2021,
+        "endFrame": 2029
+      },
+      {
+        "word": "the",
+        "start": 67.71,
+        "end": 67.838,
+        "startFrame": 2031,
+        "endFrame": 2035
+      },
+      {
+        "word": "N+1",
+        "start": 67.919,
+        "end": 68.592,
+        "startFrame": 2038,
+        "endFrame": 2058
+      },
+      {
+        "word": "query",
+        "start": 68.685,
+        "end": 68.999,
+        "startFrame": 2061,
+        "endFrame": 2070
+      },
+      {
+        "word": "problem.",
+        "start": 69.045,
+        "end": 69.556,
+        "startFrame": 2071,
+        "endFrame": 2087
+      },
+      {
+        "word": "Choose",
+        "start": 70.067,
+        "end": 70.403,
+        "startFrame": 2102,
+        "endFrame": 2112
+      },
+      {
+        "word": "based",
+        "start": 70.45,
+        "end": 70.705,
+        "startFrame": 2114,
+        "endFrame": 2121
+      },
+      {
+        "word": "on",
+        "start": 70.74,
+        "end": 70.81,
+        "startFrame": 2122,
+        "endFrame": 2124
+      },
+      {
+        "word": "your",
+        "start": 70.845,
+        "end": 70.938,
+        "startFrame": 2125,
+        "endFrame": 2128
+      },
+      {
+        "word": "needs:",
+        "start": 70.972,
+        "end": 71.437,
+        "startFrame": 2129,
+        "endFrame": 2143
+      },
+      {
+        "word": "rest",
+        "start": 71.762,
+        "end": 72.017,
+        "startFrame": 2153,
+        "endFrame": 2161
+      },
+      {
+        "word": "for",
+        "start": 72.075,
+        "end": 72.191,
+        "startFrame": 2162,
+        "endFrame": 2166
+      },
+      {
+        "word": "simple",
+        "start": 72.249,
+        "end": 72.563,
+        "startFrame": 2167,
+        "endFrame": 2177
+      },
+      {
+        "word": "crud,",
+        "start": 72.598,
+        "end": 73.051,
+        "startFrame": 2178,
+        "endFrame": 2192
+      },
+      {
+        "word": "graph",
+        "start": 73.376,
+        "end": 73.689,
+        "startFrame": 2201,
+        "endFrame": 2211
+      },
+      {
+        "word": "Q",
+        "start": 73.736,
+        "end": 73.852,
+        "startFrame": 2212,
+        "endFrame": 2216
+      },
+      {
+        "word": "L",
+        "start": 74.061,
+        "end": 74.177,
+        "startFrame": 2222,
+        "endFrame": 2225
+      },
+      {
+        "word": "for",
+        "start": 74.246,
+        "end": 74.351,
+        "startFrame": 2227,
+        "endFrame": 2231
+      },
+      {
+        "word": "complex",
+        "start": 74.409,
+        "end": 74.804,
+        "startFrame": 2232,
+        "endFrame": 2244
+      },
+      {
+        "word": "data",
+        "start": 74.862,
+        "end": 75.117,
+        "startFrame": 2246,
+        "endFrame": 2254
+      },
+      {
+        "word": "requirements.",
+        "start": 75.175,
+        "end": 76.023,
+        "startFrame": 2255,
+        "endFrame": 2281
+      }
+    ]
+  },
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "REST API Basics",
+        "color": "#f97316",
+        "direction": "right",
+        "connectionToNext": "flow",
+        "startFrame": 5,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "REST Endpoints",
+            "startFrame": 10,
+            "visualType": "code-block",
+            "visualData": {
+              "language": "javascript",
+              "filename": "routes.js",
+              "code": "app.get('/users', getUsers);\napp.get('/users/:id', getUser);\napp.post('/orders', createOrder);\napp.get('/orders/:id', getOrder);",
+              "highlightLines": [
+                1,
+                3
+              ]
+            },
+            "nodes": []
+          },
+          {
+            "id": "section_1_2",
+            "title": "REST Pain Points",
+            "startFrame": 519,
+            "visualType": "list",
+            "visualData": {
+              "items": [
+                "Over-fetching unused data",
+                "Under-fetching needs more requests",
+                "New feature, new endpoint"
+              ],
+              "style": "bullet"
+            },
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "GraphQL Approach",
+        "color": "#3b82f6",
+        "direction": "right",
+        "connectionToNext": "flow",
+        "startFrame": 878,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "REST vs GraphQL",
+            "startFrame": 888,
+            "visualType": "split-screen",
+            "visualData": {
+              "left": {
+                "title": "REST",
+                "items": [
+                  "Multiple endpoints",
+                  "Fixed data structure",
+                  "Server decides response"
+                ]
+              },
+              "right": {
+                "title": "GraphQL",
+                "items": [
+                  "Single endpoint",
+                  "Exact fields returned",
+                  "Client controls query"
+                ]
+              },
+              "leftColor": "#ef4444",
+              "rightColor": "#22c55e",
+              "dividerLabel": "vs"
+            },
+            "nodes": []
+          },
+          {
+            "id": "section_2_2",
+            "title": "Schema Structure",
+            "startFrame": 1298,
+            "layout": "flow",
+            "nodes": [
+              {
+                "label": "Queries",
+                "icon": "MagnifyingGlass",
+                "startFrame": 1404
+              },
+              {
+                "label": "Mutations",
+                "icon": "PencilSimple",
+                "startFrame": 1445
+              },
+              {
+                "label": "Subscriptions",
+                "icon": "BellRinging",
+                "startFrame": 1500
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "When to Use What",
+        "color": "#22c55e",
+        "direction": "right",
+        "connectionToNext": "none",
+        "startFrame": 1677,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Comparison",
+            "startFrame": 1687,
+            "visualType": "table",
+            "visualData": {
+              "headers": [
+                "Criteria",
+                "REST",
+                "GraphQL"
+              ],
+              "rows": [
+                [
+                  "Setup Speed",
+                  "Fast",
+                  "Slower"
+                ],
+                [
+                  "Caching",
+                  "Easy",
+                  "Complex"
+                ],
+                [
+                  "Data Fetching",
+                  "Fixed",
+                  "Flexible"
+                ],
+                [
+                  "Simple CRUD",
+                  "Yes",
+                  "Overkill"
+                ]
+              ],
+              "highlightCol": 2
+            },
+            "nodes": []
+          },
+          {
+            "id": "section_3_2",
+            "title": "The Takeaway",
+            "startFrame": 2097,
+            "visualType": "kinetic",
+            "visualData": {
+              "text": "Choose based on your needs",
+              "highlight": [
+                "Choose",
+                "needs"
+              ],
+              "style": "impact"
+            },
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+  "camera": {
+    "keyframes": [
+      {
+        "frame": 0,
+        "target": "overview",
+        "x": 960,
+        "y": 450,
+        "scale": 0.55
+      },
+      {
+        "frame": 5,
+        "target": "sticky_1",
+        "x": 350,
+        "y": 450,
+        "scale": 1.0
+      },
+      {
+        "frame": 504,
+        "target": "section_1_2",
+        "x": 350,
+        "y": 550,
+        "scale": 0.95
+      },
+      {
+        "frame": 863,
+        "target": "sticky_2",
+        "x": 960,
+        "y": 450,
+        "scale": 1.0
+      },
+      {
+        "frame": 1283,
+        "target": "section_2_2",
+        "x": 960,
+        "y": 550,
+        "scale": 0.95
+      },
+      {
+        "frame": 1662,
+        "target": "sticky_3",
+        "x": 1570,
+        "y": 450,
+        "scale": 1.0
+      },
+      {
+        "frame": 2082,
+        "target": "section_3_2",
+        "x": 1570,
+        "y": 550,
+        "scale": 0.95
+      }
+    ]
+  },
+  "sounds": {
+    "points": [
+      {
+        "frame": 0,
+        "type": "title",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.15
+      },
+      {
+        "frame": 3,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 502,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 861,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 895,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.08
+      },
+      {
+        "frame": 1281,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 1660,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      },
+      {
+        "frame": 1694,
+        "type": "section",
+        "file": "soft-whoosh.mp3",
+        "volume": 0.08
+      },
+      {
+        "frame": 2080,
+        "type": "camera",
+        "file": "medium-whoosh.mp3",
+        "volume": 0.25
+      }
+    ],
+    "totalCount": 9
+  }
+}

@@ -1,0 +1,89 @@
+{
+  "stickies": [
+    {
+      "title": "AI Video Pipeline",
+      "sections": [
+        {
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Write Prompt", "description": "Describe your video scene" },
+              { "label": "Encode Text", "description": "Words become embeddings" },
+              { "label": "Generate Frames", "description": "Model creates video" },
+              { "label": "Output Video", "description": "Final rendered result" }
+            ]
+          }
+        },
+        {
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Kling uses iterative diffusion",
+              "Runway adds image input",
+              "Sora predicts video patches",
+              "Each has unique architecture"
+            ],
+            "style": "bullet"
+          }
+        }
+      ]
+    },
+    {
+      "title": "How Each Tool Works",
+      "sections": [
+        {
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Feature", "Kling", "Runway", "Sora"],
+            "rows": [
+              ["Architecture", "Diffusion", "Multi-modal", "Transformer"],
+              ["Input", "Text only", "Text + Image", "Text only"],
+              ["Generation", "Iterative", "Simultaneous", "Patch prediction"],
+              ["Output", "1080p video", "Cinematic", "Long coherent"]
+            ],
+            "highlightCol": 3
+          }
+        },
+        {
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Kling", "value": "1080p", "subtitle": "Fast output" },
+              { "label": "Runway", "value": "Gen-3", "subtitle": "Alpha engine" },
+              { "label": "Sora", "value": "Long-form", "subtitle": "Coherent video" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "title": "Strengths Compared",
+      "sections": [
+        {
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Traditional (Kling)",
+              "items": ["Single text input", "Iterative frame gen", "Fast and accessible", "Standard diffusion"]
+            },
+            "right": {
+              "title": "Next-Gen (Sora)",
+              "items": ["Scene understanding", "Direct patch prediction", "Physics awareness", "Object permanence"]
+            },
+            "leftColor": "#6366f1",
+            "rightColor": "#22c55e",
+            "dividerLabel": "vs"
+          }
+        },
+        {
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Speed, quality, or coherence — pick your tool",
+            "highlight": ["Speed", "quality", "coherence"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

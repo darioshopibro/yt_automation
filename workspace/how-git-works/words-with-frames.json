@@ -1,0 +1,1108 @@
+[
+  {
+    "word": "Git",
+    "start": 0.0,
+    "end": 0.255,
+    "startFrame": 0,
+    "endFrame": 8
+  },
+  {
+    "word": "tracks",
+    "start": 0.302,
+    "end": 0.592,
+    "startFrame": 9,
+    "endFrame": 18
+  },
+  {
+    "word": "changes",
+    "start": 0.639,
+    "end": 1.01,
+    "startFrame": 19,
+    "endFrame": 30
+  },
+  {
+    "word": "to",
+    "start": 1.057,
+    "end": 1.103,
+    "startFrame": 32,
+    "endFrame": 33
+  },
+  {
+    "word": "your",
+    "start": 1.161,
+    "end": 1.265,
+    "startFrame": 35,
+    "endFrame": 38
+  },
+  {
+    "word": "code",
+    "start": 1.324,
+    "end": 1.591,
+    "startFrame": 40,
+    "endFrame": 48
+  },
+  {
+    "word": "using",
+    "start": 1.649,
+    "end": 1.881,
+    "startFrame": 49,
+    "endFrame": 56
+  },
+  {
+    "word": "snapshots,",
+    "start": 1.962,
+    "end": 2.81,
+    "startFrame": 59,
+    "endFrame": 84
+  },
+  {
+    "word": "not",
+    "start": 2.984,
+    "end": 3.204,
+    "startFrame": 90,
+    "endFrame": 96
+  },
+  {
+    "word": "diffs.",
+    "start": 3.274,
+    "end": 3.843,
+    "startFrame": 98,
+    "endFrame": 115
+  },
+  {
+    "word": "Every",
+    "start": 4.54,
+    "end": 4.83,
+    "startFrame": 136,
+    "endFrame": 145
+  },
+  {
+    "word": "commit",
+    "start": 4.888,
+    "end": 5.132,
+    "startFrame": 147,
+    "endFrame": 154
+  },
+  {
+    "word": "is",
+    "start": 5.178,
+    "end": 5.248,
+    "startFrame": 155,
+    "endFrame": 157
+  },
+  {
+    "word": "a",
+    "start": 5.294,
+    "end": 5.317,
+    "startFrame": 159,
+    "endFrame": 160
+  },
+  {
+    "word": "complete",
+    "start": 5.364,
+    "end": 5.817,
+    "startFrame": 161,
+    "endFrame": 175
+  },
+  {
+    "word": "snapshot",
+    "start": 5.84,
+    "end": 6.304,
+    "startFrame": 175,
+    "endFrame": 189
+  },
+  {
+    "word": "of",
+    "start": 6.351,
+    "end": 6.397,
+    "startFrame": 191,
+    "endFrame": 192
+  },
+  {
+    "word": "all",
+    "start": 6.444,
+    "end": 6.56,
+    "startFrame": 193,
+    "endFrame": 197
+  },
+  {
+    "word": "your",
+    "start": 6.618,
+    "end": 6.722,
+    "startFrame": 199,
+    "endFrame": 202
+  },
+  {
+    "word": "files",
+    "start": 6.769,
+    "end": 7.105,
+    "startFrame": 203,
+    "endFrame": 213
+  },
+  {
+    "word": "at",
+    "start": 7.163,
+    "end": 7.256,
+    "startFrame": 215,
+    "endFrame": 218
+  },
+  {
+    "word": "that",
+    "start": 7.314,
+    "end": 7.477,
+    "startFrame": 219,
+    "endFrame": 224
+  },
+  {
+    "word": "point",
+    "start": 7.535,
+    "end": 7.732,
+    "startFrame": 226,
+    "endFrame": 232
+  },
+  {
+    "word": "in",
+    "start": 7.767,
+    "end": 7.837,
+    "startFrame": 233,
+    "endFrame": 235
+  },
+  {
+    "word": "time.",
+    "start": 7.883,
+    "end": 8.301,
+    "startFrame": 236,
+    "endFrame": 249
+  },
+  {
+    "word": "This",
+    "start": 8.742,
+    "end": 8.94,
+    "startFrame": 262,
+    "endFrame": 268
+  },
+  {
+    "word": "is",
+    "start": 8.986,
+    "end": 9.067,
+    "startFrame": 270,
+    "endFrame": 272
+  },
+  {
+    "word": "what",
+    "start": 9.114,
+    "end": 9.276,
+    "startFrame": 273,
+    "endFrame": 278
+  },
+  {
+    "word": "makes",
+    "start": 9.334,
+    "end": 9.555,
+    "startFrame": 280,
+    "endFrame": 287
+  },
+  {
+    "word": "Git",
+    "start": 9.601,
+    "end": 9.81,
+    "startFrame": 288,
+    "endFrame": 294
+  },
+  {
+    "word": "so",
+    "start": 9.903,
+    "end": 10.101,
+    "startFrame": 297,
+    "endFrame": 303
+  },
+  {
+    "word": "fast",
+    "start": 10.194,
+    "end": 10.553,
+    "startFrame": 306,
+    "endFrame": 317
+  },
+  {
+    "word": "and",
+    "start": 10.67,
+    "end": 10.844,
+    "startFrame": 320,
+    "endFrame": 325
+  },
+  {
+    "word": "reliable.\n\nYour",
+    "start": 10.902,
+    "end": 12.249,
+    "startFrame": 327,
+    "endFrame": 367
+  },
+  {
+    "word": "repository",
+    "start": 12.283,
+    "end": 12.817,
+    "startFrame": 368,
+    "endFrame": 385
+  },
+  {
+    "word": "has",
+    "start": 12.864,
+    "end": 13.015,
+    "startFrame": 386,
+    "endFrame": 390
+  },
+  {
+    "word": "three",
+    "start": 13.108,
+    "end": 13.398,
+    "startFrame": 393,
+    "endFrame": 402
+  },
+  {
+    "word": "areas:",
+    "start": 13.444,
+    "end": 14.025,
+    "startFrame": 403,
+    "endFrame": 421
+  },
+  {
+    "word": "the",
+    "start": 14.303,
+    "end": 14.443,
+    "startFrame": 429,
+    "endFrame": 433
+  },
+  {
+    "word": "working",
+    "start": 14.524,
+    "end": 14.872,
+    "startFrame": 436,
+    "endFrame": 446
+  },
+  {
+    "word": "directory",
+    "start": 14.93,
+    "end": 15.406,
+    "startFrame": 448,
+    "endFrame": 462
+  },
+  {
+    "word": "where",
+    "start": 15.476,
+    "end": 15.673,
+    "startFrame": 464,
+    "endFrame": 470
+  },
+  {
+    "word": "you",
+    "start": 15.72,
+    "end": 15.801,
+    "startFrame": 472,
+    "endFrame": 474
+  },
+  {
+    "word": "edit",
+    "start": 15.882,
+    "end": 16.056,
+    "startFrame": 476,
+    "endFrame": 482
+  },
+  {
+    "word": "files,",
+    "start": 16.126,
+    "end": 16.73,
+    "startFrame": 484,
+    "endFrame": 502
+  },
+  {
+    "word": "the",
+    "start": 16.939,
+    "end": 17.043,
+    "startFrame": 508,
+    "endFrame": 511
+  },
+  {
+    "word": "staging",
+    "start": 17.101,
+    "end": 17.508,
+    "startFrame": 513,
+    "endFrame": 525
+  },
+  {
+    "word": "area",
+    "start": 17.566,
+    "end": 17.833,
+    "startFrame": 527,
+    "endFrame": 535
+  },
+  {
+    "word": "where",
+    "start": 17.902,
+    "end": 18.077,
+    "startFrame": 537,
+    "endFrame": 542
+  },
+  {
+    "word": "you",
+    "start": 18.111,
+    "end": 18.181,
+    "startFrame": 543,
+    "endFrame": 545
+  },
+  {
+    "word": "prepare",
+    "start": 18.239,
+    "end": 18.541,
+    "startFrame": 547,
+    "endFrame": 556
+  },
+  {
+    "word": "changes,",
+    "start": 18.576,
+    "end": 19.214,
+    "startFrame": 557,
+    "endFrame": 576
+  },
+  {
+    "word": "and",
+    "start": 19.389,
+    "end": 19.551,
+    "startFrame": 582,
+    "endFrame": 587
+  },
+  {
+    "word": "the",
+    "start": 19.597,
+    "end": 19.667,
+    "startFrame": 588,
+    "endFrame": 590
+  },
+  {
+    "word": "commit",
+    "start": 19.714,
+    "end": 20.004,
+    "startFrame": 591,
+    "endFrame": 600
+  },
+  {
+    "word": "history",
+    "start": 20.062,
+    "end": 20.468,
+    "startFrame": 602,
+    "endFrame": 614
+  },
+  {
+    "word": "where",
+    "start": 20.712,
+    "end": 20.956,
+    "startFrame": 621,
+    "endFrame": 629
+  },
+  {
+    "word": "snapshots",
+    "start": 21.002,
+    "end": 21.56,
+    "startFrame": 630,
+    "endFrame": 647
+  },
+  {
+    "word": "are",
+    "start": 21.594,
+    "end": 21.687,
+    "startFrame": 648,
+    "endFrame": 651
+  },
+  {
+    "word": "stored",
+    "start": 21.722,
+    "end": 22.152,
+    "startFrame": 652,
+    "endFrame": 665
+  },
+  {
+    "word": "permanently.\n\nBranches",
+    "start": 22.198,
+    "end": 24.021,
+    "startFrame": 666,
+    "endFrame": 721
+  },
+  {
+    "word": "let",
+    "start": 24.091,
+    "end": 24.241,
+    "startFrame": 723,
+    "endFrame": 727
+  },
+  {
+    "word": "you",
+    "start": 24.288,
+    "end": 24.369,
+    "startFrame": 729,
+    "endFrame": 731
+  },
+  {
+    "word": "work",
+    "start": 24.45,
+    "end": 24.659,
+    "startFrame": 734,
+    "endFrame": 740
+  },
+  {
+    "word": "on",
+    "start": 24.717,
+    "end": 24.787,
+    "startFrame": 742,
+    "endFrame": 744
+  },
+  {
+    "word": "features",
+    "start": 24.868,
+    "end": 25.252,
+    "startFrame": 746,
+    "endFrame": 758
+  },
+  {
+    "word": "without",
+    "start": 25.333,
+    "end": 25.681,
+    "startFrame": 760,
+    "endFrame": 770
+  },
+  {
+    "word": "touching",
+    "start": 25.728,
+    "end": 26.029,
+    "startFrame": 772,
+    "endFrame": 781
+  },
+  {
+    "word": "the",
+    "start": 26.076,
+    "end": 26.145,
+    "startFrame": 782,
+    "endFrame": 784
+  },
+  {
+    "word": "main",
+    "start": 26.18,
+    "end": 26.354,
+    "startFrame": 785,
+    "endFrame": 791
+  },
+  {
+    "word": "code.",
+    "start": 26.413,
+    "end": 26.819,
+    "startFrame": 792,
+    "endFrame": 805
+  },
+  {
+    "word": "Creating",
+    "start": 27.423,
+    "end": 27.852,
+    "startFrame": 823,
+    "endFrame": 836
+  },
+  {
+    "word": "a",
+    "start": 27.899,
+    "end": 27.922,
+    "startFrame": 837,
+    "endFrame": 838
+  },
+  {
+    "word": "branch",
+    "start": 27.98,
+    "end": 28.27,
+    "startFrame": 839,
+    "endFrame": 848
+  },
+  {
+    "word": "is",
+    "start": 28.317,
+    "end": 28.386,
+    "startFrame": 850,
+    "endFrame": 852
+  },
+  {
+    "word": "instant",
+    "start": 28.455,
+    "end": 28.827,
+    "startFrame": 854,
+    "endFrame": 865
+  },
+  {
+    "word": "because",
+    "start": 29.036,
+    "end": 29.349,
+    "startFrame": 871,
+    "endFrame": 880
+  },
+  {
+    "word": "Git",
+    "start": 29.408,
+    "end": 29.675,
+    "startFrame": 882,
+    "endFrame": 890
+  },
+  {
+    "word": "just",
+    "start": 29.791,
+    "end": 30.034,
+    "startFrame": 894,
+    "endFrame": 901
+  },
+  {
+    "word": "creates",
+    "start": 30.081,
+    "end": 30.429,
+    "startFrame": 902,
+    "endFrame": 913
+  },
+  {
+    "word": "a",
+    "start": 30.464,
+    "end": 30.487,
+    "startFrame": 914,
+    "endFrame": 915
+  },
+  {
+    "word": "pointer.",
+    "start": 30.545,
+    "end": 31.068,
+    "startFrame": 916,
+    "endFrame": 932
+  },
+  {
+    "word": "You",
+    "start": 31.579,
+    "end": 31.706,
+    "startFrame": 947,
+    "endFrame": 951
+  },
+  {
+    "word": "can",
+    "start": 31.764,
+    "end": 31.869,
+    "startFrame": 953,
+    "endFrame": 956
+  },
+  {
+    "word": "have",
+    "start": 31.927,
+    "end": 32.078,
+    "startFrame": 958,
+    "endFrame": 962
+  },
+  {
+    "word": "dozens",
+    "start": 32.171,
+    "end": 32.589,
+    "startFrame": 965,
+    "endFrame": 978
+  },
+  {
+    "word": "of",
+    "start": 32.635,
+    "end": 32.693,
+    "startFrame": 979,
+    "endFrame": 981
+  },
+  {
+    "word": "branches",
+    "start": 32.763,
+    "end": 33.169,
+    "startFrame": 983,
+    "endFrame": 995
+  },
+  {
+    "word": "without",
+    "start": 33.216,
+    "end": 33.529,
+    "startFrame": 996,
+    "endFrame": 1006
+  },
+  {
+    "word": "any",
+    "start": 33.61,
+    "end": 33.819,
+    "startFrame": 1008,
+    "endFrame": 1015
+  },
+  {
+    "word": "performance",
+    "start": 33.877,
+    "end": 34.353,
+    "startFrame": 1016,
+    "endFrame": 1031
+  },
+  {
+    "word": "cost.\n\nWhen",
+    "start": 34.377,
+    "end": 35.526,
+    "startFrame": 1031,
+    "endFrame": 1066
+  },
+  {
+    "word": "you",
+    "start": 35.561,
+    "end": 35.63,
+    "startFrame": 1067,
+    "endFrame": 1069
+  },
+  {
+    "word": "merge,",
+    "start": 35.7,
+    "end": 36.199,
+    "startFrame": 1071,
+    "endFrame": 1086
+  },
+  {
+    "word": "Git",
+    "start": 36.408,
+    "end": 36.675,
+    "startFrame": 1092,
+    "endFrame": 1100
+  },
+  {
+    "word": "combines",
+    "start": 36.757,
+    "end": 37.233,
+    "startFrame": 1103,
+    "endFrame": 1117
+  },
+  {
+    "word": "two",
+    "start": 37.291,
+    "end": 37.476,
+    "startFrame": 1119,
+    "endFrame": 1124
+  },
+  {
+    "word": "branches",
+    "start": 37.546,
+    "end": 37.918,
+    "startFrame": 1126,
+    "endFrame": 1138
+  },
+  {
+    "word": "together.",
+    "start": 37.964,
+    "end": 38.51,
+    "startFrame": 1139,
+    "endFrame": 1155
+  },
+  {
+    "word": "Fast-forward",
+    "start": 39.021,
+    "end": 39.671,
+    "startFrame": 1171,
+    "endFrame": 1190
+  },
+  {
+    "word": "merges",
+    "start": 39.717,
+    "end": 40.042,
+    "startFrame": 1192,
+    "endFrame": 1201
+  },
+  {
+    "word": "are",
+    "start": 40.089,
+    "end": 40.158,
+    "startFrame": 1203,
+    "endFrame": 1205
+  },
+  {
+    "word": "clean.",
+    "start": 40.182,
+    "end": 40.646,
+    "startFrame": 1205,
+    "endFrame": 1219
+  },
+  {
+    "word": "But",
+    "start": 41.087,
+    "end": 41.261,
+    "startFrame": 1233,
+    "endFrame": 1238
+  },
+  {
+    "word": "when",
+    "start": 41.296,
+    "end": 41.47,
+    "startFrame": 1239,
+    "endFrame": 1244
+  },
+  {
+    "word": "both",
+    "start": 41.54,
+    "end": 41.772,
+    "startFrame": 1246,
+    "endFrame": 1253
+  },
+  {
+    "word": "branches",
+    "start": 41.819,
+    "end": 42.19,
+    "startFrame": 1255,
+    "endFrame": 1266
+  },
+  {
+    "word": "changed",
+    "start": 42.248,
+    "end": 42.608,
+    "startFrame": 1267,
+    "endFrame": 1278
+  },
+  {
+    "word": "the",
+    "start": 42.678,
+    "end": 42.771,
+    "startFrame": 1280,
+    "endFrame": 1283
+  },
+  {
+    "word": "same",
+    "start": 42.829,
+    "end": 43.073,
+    "startFrame": 1285,
+    "endFrame": 1292
+  },
+  {
+    "word": "file,",
+    "start": 43.131,
+    "end": 43.63,
+    "startFrame": 1294,
+    "endFrame": 1309
+  },
+  {
+    "word": "you",
+    "start": 43.955,
+    "end": 44.048,
+    "startFrame": 1319,
+    "endFrame": 1321
+  },
+  {
+    "word": "get",
+    "start": 44.118,
+    "end": 44.234,
+    "startFrame": 1324,
+    "endFrame": 1327
+  },
+  {
+    "word": "a",
+    "start": 44.269,
+    "end": 44.292,
+    "startFrame": 1328,
+    "endFrame": 1329
+  },
+  {
+    "word": "merge",
+    "start": 44.373,
+    "end": 44.663,
+    "startFrame": 1331,
+    "endFrame": 1340
+  },
+  {
+    "word": "conflict",
+    "start": 44.71,
+    "end": 45.151,
+    "startFrame": 1341,
+    "endFrame": 1355
+  },
+  {
+    "word": "that",
+    "start": 45.197,
+    "end": 45.325,
+    "startFrame": 1356,
+    "endFrame": 1360
+  },
+  {
+    "word": "you",
+    "start": 45.36,
+    "end": 45.441,
+    "startFrame": 1361,
+    "endFrame": 1363
+  },
+  {
+    "word": "need",
+    "start": 45.511,
+    "end": 45.685,
+    "startFrame": 1365,
+    "endFrame": 1371
+  },
+  {
+    "word": "to",
+    "start": 45.72,
+    "end": 45.766,
+    "startFrame": 1372,
+    "endFrame": 1373
+  },
+  {
+    "word": "resolve",
+    "start": 45.824,
+    "end": 46.196,
+    "startFrame": 1375,
+    "endFrame": 1386
+  },
+  {
+    "word": "manually.\n\nRemote",
+    "start": 46.242,
+    "end": 47.728,
+    "startFrame": 1387,
+    "endFrame": 1432
+  },
+  {
+    "word": "repositories",
+    "start": 47.752,
+    "end": 48.344,
+    "startFrame": 1433,
+    "endFrame": 1450
+  },
+  {
+    "word": "like",
+    "start": 48.413,
+    "end": 48.588,
+    "startFrame": 1452,
+    "endFrame": 1458
+  },
+  {
+    "word": "git",
+    "start": 48.646,
+    "end": 48.82,
+    "startFrame": 1459,
+    "endFrame": 1465
+  },
+  {
+    "word": "hub",
+    "start": 48.866,
+    "end": 49.087,
+    "startFrame": 1466,
+    "endFrame": 1473
+  },
+  {
+    "word": "let",
+    "start": 49.365,
+    "end": 49.574,
+    "startFrame": 1481,
+    "endFrame": 1487
+  },
+  {
+    "word": "teams",
+    "start": 49.621,
+    "end": 49.911,
+    "startFrame": 1489,
+    "endFrame": 1497
+  },
+  {
+    "word": "collaborate.",
+    "start": 49.958,
+    "end": 50.619,
+    "startFrame": 1499,
+    "endFrame": 1519
+  },
+  {
+    "word": "You",
+    "start": 51.06,
+    "end": 51.188,
+    "startFrame": 1532,
+    "endFrame": 1536
+  },
+  {
+    "word": "push",
+    "start": 51.258,
+    "end": 51.444,
+    "startFrame": 1538,
+    "endFrame": 1543
+  },
+  {
+    "word": "your",
+    "start": 51.49,
+    "end": 51.606,
+    "startFrame": 1545,
+    "endFrame": 1548
+  },
+  {
+    "word": "commits",
+    "start": 51.653,
+    "end": 51.943,
+    "startFrame": 1550,
+    "endFrame": 1558
+  },
+  {
+    "word": "to",
+    "start": 51.978,
+    "end": 52.047,
+    "startFrame": 1559,
+    "endFrame": 1561
+  },
+  {
+    "word": "share",
+    "start": 52.105,
+    "end": 52.349,
+    "startFrame": 1563,
+    "endFrame": 1570
+  },
+  {
+    "word": "them.",
+    "start": 52.384,
+    "end": 52.663,
+    "startFrame": 1572,
+    "endFrame": 1580
+  },
+  {
+    "word": "You",
+    "start": 53.104,
+    "end": 53.232,
+    "startFrame": 1593,
+    "endFrame": 1597
+  },
+  {
+    "word": "pull",
+    "start": 53.29,
+    "end": 53.452,
+    "startFrame": 1599,
+    "endFrame": 1604
+  },
+  {
+    "word": "to",
+    "start": 53.51,
+    "end": 53.557,
+    "startFrame": 1605,
+    "endFrame": 1607
+  },
+  {
+    "word": "get",
+    "start": 53.603,
+    "end": 53.742,
+    "startFrame": 1608,
+    "endFrame": 1612
+  },
+  {
+    "word": "others'",
+    "start": 53.824,
+    "end": 54.172,
+    "startFrame": 1615,
+    "endFrame": 1625
+  },
+  {
+    "word": "changes.",
+    "start": 54.207,
+    "end": 54.845,
+    "startFrame": 1626,
+    "endFrame": 1645
+  },
+  {
+    "word": "Pull",
+    "start": 55.356,
+    "end": 55.565,
+    "startFrame": 1661,
+    "endFrame": 1667
+  },
+  {
+    "word": "requests",
+    "start": 55.635,
+    "end": 56.099,
+    "startFrame": 1669,
+    "endFrame": 1683
+  },
+  {
+    "word": "add",
+    "start": 56.192,
+    "end": 56.366,
+    "startFrame": 1686,
+    "endFrame": 1691
+  },
+  {
+    "word": "code",
+    "start": 56.424,
+    "end": 56.656,
+    "startFrame": 1693,
+    "endFrame": 1700
+  },
+  {
+    "word": "review",
+    "start": 56.691,
+    "end": 57.028,
+    "startFrame": 1701,
+    "endFrame": 1711
+  },
+  {
+    "word": "before",
+    "start": 57.237,
+    "end": 57.574,
+    "startFrame": 1717,
+    "endFrame": 1727
+  },
+  {
+    "word": "merging.",
+    "start": 57.62,
+    "end": 58.108,
+    "startFrame": 1729,
+    "endFrame": 1743
+  },
+  {
+    "word": "This",
+    "start": 58.804,
+    "end": 59.048,
+    "startFrame": 1764,
+    "endFrame": 1771
+  },
+  {
+    "word": "workflow",
+    "start": 59.164,
+    "end": 59.675,
+    "startFrame": 1775,
+    "endFrame": 1790
+  },
+  {
+    "word": "powers",
+    "start": 59.745,
+    "end": 60.07,
+    "startFrame": 1792,
+    "endFrame": 1802
+  },
+  {
+    "word": "millions",
+    "start": 60.186,
+    "end": 60.604,
+    "startFrame": 1806,
+    "endFrame": 1818
+  },
+  {
+    "word": "of",
+    "start": 60.65,
+    "end": 60.709,
+    "startFrame": 1820,
+    "endFrame": 1821
+  },
+  {
+    "word": "open",
+    "start": 60.778,
+    "end": 60.999,
+    "startFrame": 1823,
+    "endFrame": 1830
+  },
+  {
+    "word": "source",
+    "start": 61.057,
+    "end": 61.289,
+    "startFrame": 1832,
+    "endFrame": 1839
+  },
+  {
+    "word": "projects",
+    "start": 61.324,
+    "end": 61.73,
+    "startFrame": 1840,
+    "endFrame": 1852
+  },
+  {
+    "word": "today.",
+    "start": 61.777,
+    "end": 62.415,
+    "startFrame": 1853,
+    "endFrame": 1872
+  }
+]

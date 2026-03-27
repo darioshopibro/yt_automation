@@ -13,6 +13,22 @@ bo**Vreme po videu:** 30-60 min
 
 ## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
 
+### ⚡ #1 PRIORITET: Slobodan broj sekcija + linearni layout
+
+**Problem:** Svi testovi izgledaju slično — uvek 2 sekcije po sticky-ju, uvek isti pattern. I kinetic typography na kraju SVAKOG videa.
+
+**Fix:**
+- [ ] Ukloniti pravilo "idealno 2 sekcije po sticky-ju" — neka bude koliko god treba (1, 2, 3, 4, 5)
+- [ ] Ukloniti pravilo "max 3 sekcije" — neka content diktira broj
+- [ ] Sekcije UVEK idu linearno (levo → desno), NIKAD clockwise grid
+  - Trenutno: 4 sekcije = 2×2 grid (clockwise) → komplikovano za kameru
+  - Novo: 4 sekcije = horizontalni red ili vertikalni stack
+  - Kamera samo panuje levo→desno ili gore→dole — JEDNOSTAVNIJE
+- [ ] Ukloniti obavezan kinetic na kraju svakog videa — samo kad ima smisla
+- [ ] Update composition-rules.md — skinuti rigidna ograničenja
+- [ ] Update visual-generator agent — slobodniji u broju sekcija
+- [ ] Update DynamicPipeline.tsx — sekcije linearno umesto clockwise grid
+
 ### ⚡ #2 PRIORITET: Visual Proposal Agent — Predlaže NOVE vizuale po transcriptu
 
 **Ideja:** Pre nego što uopšte koristimo postojeće vizuale, agent čita transcript i PREDLAŽE koje NOVE vizuale bi bile dobre za taj specifičan content. Ovo je iterativan proces koji stalno generiše nove vizuale dok radimo.
@@ -183,9 +199,20 @@ bo**Vreme po videu:** 30-60 min
   - **Hierarchy:** branch expansion od root-a
   - **Split Screen:** leva strana → divider → desna strana
   - **Kinetic:** word-by-word reveal (već postoji u reveal modu)
-- [ ] Svaka animacija mora da se sinhronizuje sa voiceover timestamps
-- [ ] `progress` prop (0-1) koji kontroliše animaciju — Remotion ga vezuje za frame
+- [x] `progress` prop (0-1) koji kontroliše animaciju — ✅ VEĆ IMPLEMENTIRANO (DynamicPipeline linija 1624-1658)
+- [x] Progress se računa automatski: 0 na section.startFrame → 1 na sledeći startFrame
+- [x] Prosleđuje se svakom vizualu koji ga koristi za reveal (list stavke, table redovi, timeline tačke, bar rast)
 - [ ] Animacije moraju biti opcione (editor settings: animacija on/off)
+- [ ] **BONUS — Word-level sync** (nice to have, NIJE prioritet):
+  - Umesto ravnomernog progress-a, svaka stavka se pojavi kad voiceover izgovori ključnu reč
+  - Zahteva: word timestamps (imamo od ElevenLabs) + mapiranje reči na vizual stavke
+  - Problem: komplikovano mapiranje, edge cases (reč se ne poklapa sa stavkom)
+  - Trenutni ravnomerni progress je dovoljno dobar za 90% slučajeva
+- [x] **Code Block typing animacija** — ✅ karakter po karakter sa blinking cursor
+- [x] **Stats count-up** — ✅ broj raste od 0 sa ease-out (1.8x speed)
+- [x] **Terminal typing** — ✅ komanda se kuca, output fade-in posle
+- [x] **Bar Chart ease-out** — ✅ barovi se popune u prvih 66% trajanja
+- [x] **Pie Chart ease-out** — ✅ segmenti isto brzo sa cubic ease-out
 
 ### 2D Positioning & Camera ✅ PARTIALLY DONE
 - [x] Sticky 2D positioning — direction: right/below/left
@@ -270,6 +297,37 @@ bo**Vreme po videu:** 30-60 min
 - [ ] 9.4 Reaction vizual — 2-3 face-a sa reakcijama (thumbs up/down, shocked, happy)
   - Za "the community reacted..." ili "developers love/hate this" momente
 - [ ] 9.5 Integracija u Visual Router — kad transcript pominje poznatu osobu → predloži face vizual
+
+### FAZA 10: Video & GIF Vizuali 🎬
+- [ ] **Video/GIF kao vizual** — umesto statičnih komponenti, ubaciti kratke video klipove ili GIF-ove kao vizualne elemente
+  - Primer: za "Docker container" sekciju → kratki GIF animacije kontejnera
+  - Remotion podržava `<Video>` i `<Img>` (za GIF) — treba integrisati u visual pipeline
+  - Potrebno: library kratkih klipova ili generisanje pomoću AI (Runway, Pika, itd.)
+  - Asset management: gde se čuvaju, kako se referenciraju u config-u
+
+### FAZA 11: Website/App Screen Vizuali 🌐
+- [ ] **Prepoznatljivi sajtovi kao vizuali** — kad transcript pominje Google, YouTube, ChatGPT, Claude, itd.
+  - Google search bar — kucanje query-ja + rezultati
+  - YouTube search/player — kucanje, rezultati, video player
+  - ChatGPT/Claude interface — kucanje prompta, typing animacija odgovora
+  - GitHub repo page, npm install, terminal commands
+  - Browser chrome (URL bar, tabs) oko sajta za realizam
+- [ ] **Integracija u Visual Router** — kad transcript pominje poznati sajt/app → automatski predloži screen vizual
+- [ ] **Customizable** — user može menjati tekst koji se kuca, rezultate koji se prikazuju
+- [ ] Koristiti stvarne dizajne sajtova (screenshot-based ili CSS replika)
+
+### FAZA 12: Custom AI-Generated Vizuali (na osnovu transkripta) 🤖
+- [ ] **Visual Proposer agent** — ovo VEĆ POSTOJI kao koncept (videti FAZA 0 gore)
+  - Agent čita transcript → predlaže 2-3 NOVA vizuala koja ne postoje u biblioteci
+  - Agent GENERIŠE React komponente za svaki predloženi vizual
+  - User review → approve/reject → approved vizuali idu u `src/visuals/`
+- [ ] **Interactive flow** — AI pita usera za vizuale TOKOM pipeline-a:
+  - Posle Visual Router-a, pre Planner-a: "Za ovu sekciju nemam dobar vizual. Predlažem: [X]. OK?"
+  - User kaže OK → AI generiše komponentu → nastavlja pipeline
+  - User kaže NE → AI predloži alternativu ili user opiše šta želi
+- [ ] **Vizual gap detection** — automatski detektuje sekcije gde postojeći vizuali ne pokrivaju dobro
+  - "Ova sekcija priča o X ali nemamo vizual za to" → predloži kreiranje
+- [ ] Ovo je KLJUČNO za skaliranje — ne možemo ručno praviti vizual za svaki mogući topic
 
 ### CLEANUP (kad stignemo)
 - [ ] Obriši nepotrebne test foldere (test-output/*, test-sticky-1, etc.)

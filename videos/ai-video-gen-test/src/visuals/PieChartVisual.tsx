@@ -41,10 +41,12 @@ const PieChartVisual: React.FC<Props> = ({
   const total = items.reduce((s, i) => s + i.value, 0);
   const cx = 100, cy = 100, r = 80;
   const innerR = donut ? 50 : 0;
+  // Fast ease-out for pie fill
+  const easedProgress = 1 - Math.pow(1 - Math.min(progress * 1.5, 1), 3);
 
   let currentAngle = 0;
   const segments = items.map((item, i) => {
-    const angle = (item.value / total) * 360 * progress;
+    const angle = (item.value / total) * 360 * easedProgress;
     const startAngle = currentAngle;
     const endAngle = currentAngle + angle;
     currentAngle = endAngle;

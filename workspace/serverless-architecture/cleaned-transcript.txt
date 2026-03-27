@@ -1,0 +1,9 @@
+Serverless doesn't mean no servers. It means you don't manage them. The cloud provider handles provisioning, scaling, and maintenance. You just write functions that run when triggered.
+
+AWS Lambda is the most popular serverless platform. Your function receives an event, processes it, and returns a result. You pay only for the milliseconds your code actually runs. No traffic means zero cost.
+
+Serverless shines for event-driven workloads. API endpoints, file processing, scheduled tasks, and webhook handlers are perfect use cases. Each function does one thing and does it well.
+
+But serverless has limitations. Cold starts add latency when functions haven't run recently. There's a 15-minute execution limit. And debugging distributed functions is harder than debugging a monolith.
+
+The cost model flips at scale. Below one million requests per month, serverless is cheaper. Above that, dedicated servers might save you sixty to seventy percent. Companies like Netflix use a hybrid approach: serverless for spiky workloads, containers for steady traffic.

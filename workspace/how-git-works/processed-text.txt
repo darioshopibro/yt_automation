@@ -1,0 +1,9 @@
+Git tracks changes to your code using snapshots, not diffs. Every commit is a complete snapshot of all your files at that point in time. This is what makes Git so fast and reliable.
+
+Your repository has three areas: the working directory where you edit files, the staging area where you prepare changes, and the commit history where snapshots are stored permanently.
+
+Branches let you work on features without touching the main code. Creating a branch is instant because Git just creates a pointer. You can have dozens of branches without any performance cost.
+
+When you merge, Git combines two branches together. Fast-forward merges are clean. But when both branches changed the same file, you get a merge conflict that you need to resolve manually.
+
+Remote repositories like git hub let teams collaborate. You push your commits to share them. You pull to get others' changes. Pull requests add code review before merging. This workflow powers millions of open source projects today.

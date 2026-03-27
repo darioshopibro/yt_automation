@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "title": "Serverless Architecture",
+    "fps": 30,
+    "totalFrames": 2257,
+    "totalDuration": 75.23,
+    "hierarchyType": "sticky"
+  },
+
+  "brand": {
+    "file": "brands/default/brand.json",
+    "stickyColors": ["#f97316", "#3b82f6", "#22c55e"]
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 74.211,
+    "words": [
+      { "word": "Serverless", "start": 0.0, "end": 0.488, "startFrame": 0, "endFrame": 15 },
+      { "word": "doesn't", "start": 0.534, "end": 0.755, "startFrame": 16, "endFrame": 23 },
+      { "word": "mean", "start": 0.789, "end": 0.929, "startFrame": 24, "endFrame": 28 },
+      { "word": "no", "start": 0.998, "end": 1.138, "startFrame": 30, "endFrame": 34 },
+      { "word": "servers.", "start": 1.207, "end": 1.73, "startFrame": 36, "endFrame": 52 },
+      { "word": "It", "start": 1.939, "end": 2.078, "startFrame": 58, "endFrame": 62 },
+      { "word": "means", "start": 2.148, "end": 2.508, "startFrame": 64, "endFrame": 75 },
+      { "word": "you", "start": 2.752, "end": 2.879, "startFrame": 83, "endFrame": 86 },
+      { "word": "don't", "start": 2.961, "end": 3.193, "startFrame": 89, "endFrame": 96 },
+      { "word": "manage", "start": 3.262, "end": 3.576, "startFrame": 98, "endFrame": 107 },
+      { "word": "them.", "start": 3.611, "end": 3.947, "startFrame": 108, "endFrame": 118 },
+      { "word": "The", "start": 4.389, "end": 4.516, "startFrame": 132, "endFrame": 135 },
+      { "word": "cloud", "start": 4.574, "end": 4.853, "startFrame": 137, "endFrame": 146 },
+      { "word": "provider", "start": 4.899, "end": 5.329, "startFrame": 147, "endFrame": 160 },
+      { "word": "handles", "start": 5.387, "end": 5.724, "startFrame": 162, "endFrame": 172 },
+      { "word": "provisioning,", "start": 5.793, "end": 6.502, "startFrame": 174, "endFrame": 195 },
+      { "word": "scaling,", "start": 6.653, "end": 7.314, "startFrame": 200, "endFrame": 219 },
+      { "word": "and", "start": 7.407, "end": 7.581, "startFrame": 222, "endFrame": 227 },
+      { "word": "maintenance.", "start": 7.651, "end": 8.278, "startFrame": 230, "endFrame": 248 },
+      { "word": "You", "start": 8.789, "end": 8.916, "startFrame": 264, "endFrame": 267 },
+      { "word": "just", "start": 8.986, "end": 9.172, "startFrame": 270, "endFrame": 275 },
+      { "word": "write", "start": 9.207, "end": 9.427, "startFrame": 276, "endFrame": 283 },
+      { "word": "functions", "start": 9.462, "end": 9.857, "startFrame": 284, "endFrame": 296 },
+      { "word": "that", "start": 9.915, "end": 10.054, "startFrame": 297, "endFrame": 302 },
+      { "word": "run", "start": 10.136, "end": 10.356, "startFrame": 304, "endFrame": 311 },
+      { "word": "when", "start": 10.426, "end": 10.6, "startFrame": 313, "endFrame": 318 },
+      { "word": "triggered.", "start": 10.658, "end": 11.819, "startFrame": 320, "endFrame": 355 },
+      { "word": "AWS", "start": 11.819, "end": 12.446, "startFrame": 355, "endFrame": 373 },
+      { "word": "Lambda", "start": 12.527, "end": 12.922, "startFrame": 376, "endFrame": 388 },
+      { "word": "is", "start": 13.096, "end": 13.259, "startFrame": 393, "endFrame": 398 },
+      { "word": "the", "start": 13.317, "end": 13.398, "startFrame": 400, "endFrame": 402 },
+      { "word": "most", "start": 13.514, "end": 13.793, "startFrame": 405, "endFrame": 414 },
+      { "word": "popular", "start": 13.874, "end": 14.28, "startFrame": 416, "endFrame": 428 },
+      { "word": "serverless", "start": 14.338, "end": 14.756, "startFrame": 430, "endFrame": 443 },
+      { "word": "platform.", "start": 14.791, "end": 15.406, "startFrame": 444, "endFrame": 462 },
+      { "word": "Your", "start": 15.917, "end": 16.114, "startFrame": 478, "endFrame": 483 },
+      { "word": "function", "start": 16.184, "end": 16.521, "startFrame": 486, "endFrame": 496 },
+      { "word": "receives", "start": 16.59, "end": 16.997, "startFrame": 498, "endFrame": 510 },
+      { "word": "an", "start": 17.032, "end": 17.09, "startFrame": 511, "endFrame": 513 },
+      { "word": "event,", "start": 17.136, "end": 17.612, "startFrame": 514, "endFrame": 528 },
+      { "word": "processes", "start": 17.821, "end": 18.402, "startFrame": 535, "endFrame": 552 },
+      { "word": "it,", "start": 18.46, "end": 18.715, "startFrame": 554, "endFrame": 561 },
+      { "word": "and", "start": 18.889, "end": 19.052, "startFrame": 567, "endFrame": 572 },
+      { "word": "returns", "start": 19.133, "end": 19.528, "startFrame": 574, "endFrame": 586 },
+      { "word": "a", "start": 19.563, "end": 19.586, "startFrame": 587, "endFrame": 588 },
+      { "word": "result.", "start": 19.632, "end": 20.12, "startFrame": 589, "endFrame": 604 },
+      { "word": "You", "start": 20.724, "end": 20.886, "startFrame": 622, "endFrame": 627 },
+      { "word": "pay", "start": 20.956, "end": 21.153, "startFrame": 629, "endFrame": 635 },
+      { "word": "only", "start": 21.246, "end": 21.583, "startFrame": 637, "endFrame": 647 },
+      { "word": "for", "start": 21.629, "end": 21.734, "startFrame": 649, "endFrame": 652 },
+      { "word": "the", "start": 21.768, "end": 21.838, "startFrame": 653, "endFrame": 655 },
+      { "word": "milliseconds", "start": 21.931, "end": 22.558, "startFrame": 658, "endFrame": 677 },
+      { "word": "your", "start": 22.604, "end": 22.732, "startFrame": 678, "endFrame": 682 },
+      { "word": "code", "start": 22.802, "end": 23.08, "startFrame": 684, "endFrame": 692 },
+      { "word": "actually", "start": 23.15, "end": 23.603, "startFrame": 695, "endFrame": 708 },
+      { "word": "runs.", "start": 23.649, "end": 24.114, "startFrame": 709, "endFrame": 724 },
+      { "word": "No", "start": 24.717, "end": 24.892, "startFrame": 742, "endFrame": 747 },
+      { "word": "traffic", "start": 24.95, "end": 25.31, "startFrame": 749, "endFrame": 759 },
+      { "word": "means", "start": 25.379, "end": 25.669, "startFrame": 761, "endFrame": 770 },
+      { "word": "zero", "start": 25.82, "end": 26.215, "startFrame": 775, "endFrame": 786 },
+      { "word": "cost.", "start": 26.285, "end": 27.84, "startFrame": 789, "endFrame": 835 },
+      { "word": "Serverless", "start": 27.84, "end": 28.27, "startFrame": 835, "endFrame": 848 },
+      { "word": "shines", "start": 27.887, "end": 28.27, "startFrame": 837, "endFrame": 848 },
+      { "word": "for", "start": 28.328, "end": 28.433, "startFrame": 850, "endFrame": 853 },
+      { "word": "event-driven", "start": 28.491, "end": 29.106, "startFrame": 855, "endFrame": 873 },
+      { "word": "workloads.", "start": 29.152, "end": 29.849, "startFrame": 875, "endFrame": 895 },
+      { "word": "API", "start": 30.546, "end": 31.277, "startFrame": 916, "endFrame": 938 },
+      { "word": "endpoints,", "start": 31.393, "end": 32.09, "startFrame": 942, "endFrame": 963 },
+      { "word": "file", "start": 32.264, "end": 32.601, "startFrame": 968, "endFrame": 978 },
+      { "word": "processing,", "start": 32.636, "end": 33.321, "startFrame": 979, "endFrame": 1000 },
+      { "word": "scheduled", "start": 33.495, "end": 33.948, "startFrame": 1005, "endFrame": 1018 },
+      { "word": "tasks,", "start": 33.982, "end": 34.551, "startFrame": 1019, "endFrame": 1037 },
+      { "word": "and", "start": 34.679, "end": 34.83, "startFrame": 1040, "endFrame": 1045 },
+      { "word": "webhook", "start": 34.9, "end": 35.26, "startFrame": 1047, "endFrame": 1058 },
+      { "word": "handlers", "start": 35.306, "end": 35.689, "startFrame": 1059, "endFrame": 1071 },
+      { "word": "are", "start": 35.805, "end": 35.979, "startFrame": 1074, "endFrame": 1079 },
+      { "word": "perfect", "start": 36.072, "end": 36.548, "startFrame": 1082, "endFrame": 1096 },
+      { "word": "use", "start": 36.606, "end": 36.769, "startFrame": 1098, "endFrame": 1103 },
+      { "word": "cases.", "start": 36.804, "end": 37.384, "startFrame": 1104, "endFrame": 1122 },
+      { "word": "Each", "start": 37.895, "end": 38.104, "startFrame": 1137, "endFrame": 1143 },
+      { "word": "function", "start": 38.162, "end": 38.534, "startFrame": 1145, "endFrame": 1156 },
+      { "word": "does", "start": 38.615, "end": 38.835, "startFrame": 1158, "endFrame": 1165 },
+      { "word": "one", "start": 38.905, "end": 39.079, "startFrame": 1167, "endFrame": 1172 },
+      { "word": "thing", "start": 39.114, "end": 39.369, "startFrame": 1173, "endFrame": 1181 },
+      { "word": "and", "start": 39.613, "end": 39.811, "startFrame": 1188, "endFrame": 1194 },
+      { "word": "does", "start": 39.869, "end": 40.043, "startFrame": 1196, "endFrame": 1201 },
+      { "word": "it", "start": 40.089, "end": 40.159, "startFrame": 1203, "endFrame": 1205 },
+      { "word": "well.", "start": 40.194, "end": 41.25, "startFrame": 1206, "endFrame": 1238 },
+      { "word": "But", "start": 41.25, "end": 41.32, "startFrame": 1238, "endFrame": 1240 },
+      { "word": "serverless", "start": 41.32, "end": 41.877, "startFrame": 1240, "endFrame": 1256 },
+      { "word": "has", "start": 42.028, "end": 42.191, "startFrame": 1261, "endFrame": 1266 },
+      { "word": "limitations.", "start": 42.272, "end": 43.119, "startFrame": 1268, "endFrame": 1294 },
+      { "word": "Cold", "start": 43.63, "end": 43.955, "startFrame": 1309, "endFrame": 1319 },
+      { "word": "starts", "start": 44.013, "end": 44.397, "startFrame": 1320, "endFrame": 1332 },
+      { "word": "add", "start": 44.513, "end": 44.733, "startFrame": 1335, "endFrame": 1342 },
+      { "word": "latency", "start": 44.815, "end": 45.383, "startFrame": 1344, "endFrame": 1361 },
+      { "word": "when", "start": 45.662, "end": 45.883, "startFrame": 1370, "endFrame": 1376 },
+      { "word": "functions", "start": 45.976, "end": 46.393, "startFrame": 1379, "endFrame": 1392 },
+      { "word": "haven't", "start": 46.452, "end": 46.672, "startFrame": 1394, "endFrame": 1400 },
+      { "word": "run", "start": 46.719, "end": 46.858, "startFrame": 1402, "endFrame": 1406 },
+      { "word": "recently.", "start": 46.928, "end": 47.543, "startFrame": 1408, "endFrame": 1426 },
+      { "word": "There's", "start": 48.054, "end": 48.298, "startFrame": 1442, "endFrame": 1449 },
+      { "word": "a", "start": 48.321, "end": 48.356, "startFrame": 1450, "endFrame": 1451 },
+      { "word": "15-minute", "start": 48.402, "end": 49.052, "startFrame": 1452, "endFrame": 1472 },
+      { "word": "execution", "start": 49.087, "end": 49.575, "startFrame": 1473, "endFrame": 1487 },
+      { "word": "limit.", "start": 49.633, "end": 49.981, "startFrame": 1489, "endFrame": 1499 },
+      { "word": "And", "start": 50.422, "end": 50.597, "startFrame": 1513, "endFrame": 1518 },
+      { "word": "debugging", "start": 50.713, "end": 51.293, "startFrame": 1521, "endFrame": 1539 },
+      { "word": "distributed", "start": 51.351, "end": 51.874, "startFrame": 1541, "endFrame": 1556 },
+      { "word": "functions", "start": 51.92, "end": 52.384, "startFrame": 1558, "endFrame": 1572 },
+      { "word": "is", "start": 52.559, "end": 52.733, "startFrame": 1577, "endFrame": 1582 },
+      { "word": "harder", "start": 52.826, "end": 53.151, "startFrame": 1585, "endFrame": 1595 },
+      { "word": "than", "start": 53.197, "end": 53.337, "startFrame": 1596, "endFrame": 1600 },
+      { "word": "debugging", "start": 53.429, "end": 53.987, "startFrame": 1603, "endFrame": 1620 },
+      { "word": "a", "start": 54.08, "end": 54.126, "startFrame": 1622, "endFrame": 1624 },
+      { "word": "monolith.", "start": 54.242, "end": 55.612, "startFrame": 1627, "endFrame": 1668 },
+      { "word": "The", "start": 55.612, "end": 55.682, "startFrame": 1668, "endFrame": 1670 },
+      { "word": "cost", "start": 55.682, "end": 55.926, "startFrame": 1670, "endFrame": 1678 },
+      { "word": "model", "start": 55.984, "end": 56.216, "startFrame": 1680, "endFrame": 1687 },
+      { "word": "flips", "start": 56.285, "end": 56.564, "startFrame": 1689, "endFrame": 1697 },
+      { "word": "at", "start": 56.599, "end": 56.68, "startFrame": 1698, "endFrame": 1700 },
+      { "word": "scale.", "start": 56.727, "end": 57.237, "startFrame": 1702, "endFrame": 1717 },
+      { "word": "Below", "start": 57.679, "end": 58.027, "startFrame": 1730, "endFrame": 1741 },
+      { "word": "one", "start": 58.143, "end": 58.375, "startFrame": 1744, "endFrame": 1751 },
+      { "word": "million", "start": 58.433, "end": 58.712, "startFrame": 1753, "endFrame": 1761 },
+      { "word": "requests", "start": 58.77, "end": 59.176, "startFrame": 1763, "endFrame": 1775 },
+      { "word": "per", "start": 59.234, "end": 59.35, "startFrame": 1777, "endFrame": 1781 },
+      { "word": "month,", "start": 59.397, "end": 59.745, "startFrame": 1782, "endFrame": 1792 },
+      { "word": "serverless", "start": 59.919, "end": 60.488, "startFrame": 1798, "endFrame": 1815 },
+      { "word": "is", "start": 60.57, "end": 60.72, "startFrame": 1817, "endFrame": 1822 },
+      { "word": "cheaper.", "start": 60.778, "end": 61.324, "startFrame": 1823, "endFrame": 1840 },
+      { "word": "Above", "start": 61.928, "end": 62.288, "startFrame": 1858, "endFrame": 1869 },
+      { "word": "that,", "start": 62.323, "end": 62.694, "startFrame": 1870, "endFrame": 1881 },
+      { "word": "dedicated", "start": 62.868, "end": 63.402, "startFrame": 1886, "endFrame": 1902 },
+      { "word": "servers", "start": 63.46, "end": 63.82, "startFrame": 1904, "endFrame": 1915 },
+      { "word": "might", "start": 63.89, "end": 64.099, "startFrame": 1917, "endFrame": 1923 },
+      { "word": "save", "start": 64.157, "end": 64.389, "startFrame": 1925, "endFrame": 1932 },
+      { "word": "you", "start": 64.424, "end": 64.505, "startFrame": 1933, "endFrame": 1935 },
+      { "word": "sixty", "start": 64.586, "end": 65.004, "startFrame": 1938, "endFrame": 1950 },
+      { "word": "to", "start": 65.155, "end": 65.271, "startFrame": 1955, "endFrame": 1958 },
+      { "word": "seventy", "start": 65.364, "end": 65.747, "startFrame": 1961, "endFrame": 1972 },
+      { "word": "percent.", "start": 65.805, "end": 66.351, "startFrame": 1974, "endFrame": 1990 },
+      { "word": "Companies", "start": 67.048, "end": 67.501, "startFrame": 2011, "endFrame": 2025 },
+      { "word": "like", "start": 67.559, "end": 67.744, "startFrame": 2027, "endFrame": 2032 },
+      { "word": "Netflix", "start": 67.791, "end": 68.278, "startFrame": 2034, "endFrame": 2048 },
+      { "word": "use", "start": 68.453, "end": 68.662, "startFrame": 2054, "endFrame": 2060 },
+      { "word": "a", "start": 68.696, "end": 68.72, "startFrame": 2061, "endFrame": 2062 },
+      { "word": "hybrid", "start": 68.801, "end": 69.196, "startFrame": 2064, "endFrame": 2076 },
+      { "word": "approach:", "start": 69.219, "end": 69.788, "startFrame": 2077, "endFrame": 2094 },
+      { "word": "serverless", "start": 70.299, "end": 70.798, "startFrame": 2109, "endFrame": 2124 },
+      { "word": "for", "start": 70.856, "end": 70.96, "startFrame": 2126, "endFrame": 2129 },
+      { "word": "spiky", "start": 71.018, "end": 71.436, "startFrame": 2131, "endFrame": 2143 },
+      { "word": "workloads,", "start": 71.494, "end": 72.121, "startFrame": 2145, "endFrame": 2164 },
+      { "word": "containers", "start": 72.295, "end": 72.876, "startFrame": 2169, "endFrame": 2186 },
+      { "word": "for", "start": 72.934, "end": 73.039, "startFrame": 2188, "endFrame": 2191 },
+      { "word": "steady", "start": 73.097, "end": 73.398, "startFrame": 2193, "endFrame": 2202 },
+      { "word": "traffic.", "start": 73.445, "end": 74.211, "startFrame": 2203, "endFrame": 2226 }
+    ]
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "What is Serverless",
+        "color": "#f97316",
+        "direction": "right",
+        "connectionToNext": "flow",
+        "startFrame": 0,
+        "sections": [
+          {
+            "id": "section_1_1",
+            "title": "Serverless Concept",
+            "layout": "negation",
+            "startFrame": 0,
+            "nodes": [
+              { "label": "No Servers?", "icon": "Empty", "startFrame": 5 },
+              { "label": "Cloud Manages", "icon": "Cloud", "startFrame": 30 },
+              { "label": "You Write", "icon": "Function", "startFrame": 55 }
+            ]
+          },
+          {
+            "id": "section_1_2",
+            "title": "Lambda Function",
+            "startFrame": 350,
+            "visualType": "code-block",
+            "visualData": {
+              "language": "javascript",
+              "filename": "handler.js",
+              "code": "exports.handler = async (event) => {\n  const result = process(event);\n  return {\n    statusCode: 200,\n    body: JSON.stringify(result)\n  };\n};",
+              "highlightLines": [1, 2]
+            },
+            "nodes": []
+          }
+        ]
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "Use Cases & Limits",
+        "color": "#3b82f6",
+        "direction": "right",
+        "connectionToNext": "flow",
+        "startFrame": 820,
+        "sections": [
+          {
+            "id": "section_2_1",
+            "title": "Pros vs Cons",
+            "startFrame": 830,
+            "visualType": "split-screen",
+            "visualData": {
+              "left": {
+                "title": "Use Cases",
+                "items": ["API endpoints", "File processing", "Scheduled tasks", "Webhook handlers"]
+              },
+              "right": {
+                "title": "Limitations",
+                "items": ["Cold start latency", "Execution time limit", "Distributed debugging", "Vendor lock-in"]
+              },
+              "leftColor": "#22c55e",
+              "rightColor": "#ef4444",
+              "dividerLabel": "vs"
+            },
+            "nodes": []
+          },
+          {
+            "id": "section_2_2",
+            "title": "Event-Driven Model",
+            "layout": "flow",
+            "startFrame": 1132,
+            "nodes": [
+              { "label": "Event", "icon": "Notification", "startFrame": 1137 },
+              { "label": "Function", "icon": "Code", "startFrame": 1150 },
+              { "label": "Response", "icon": "KeyReturn", "startFrame": 1163 }
+            ]
+          }
+        ]
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "Cost & Strategy",
+        "color": "#22c55e",
+        "startFrame": 1653,
+        "sections": [
+          {
+            "id": "section_3_1",
+            "title": "Cost Crossover Point",
+            "startFrame": 1663,
+            "visualType": "stats",
+            "visualData": {
+              "items": [
+                { "label": "Threshold", "value": "1M", "subtitle": "Requests per month" },
+                { "label": "Savings", "value": "60-70%", "subtitle": "Dedicated above 1M" }
+              ]
+            },
+            "nodes": []
+          },
+          {
+            "id": "section_3_2",
+            "title": "The Hybrid Way",
+            "startFrame": 2005,
+            "visualType": "kinetic",
+            "visualData": {
+              "text": "Serverless for spiky, containers for steady",
+              "highlight": ["spiky", "steady"],
+              "style": "impact"
+            },
+            "nodes": []
+          }
+        ]
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "overview", "x": 960, "y": 540, "scale": 0.6 },
+      { "frame": 5, "target": "sticky_1", "x": 400, "y": 400, "scale": 1.0 },
+      { "frame": 335, "target": "section_1_2", "x": 500, "y": 500, "scale": 1.1 },
+      { "frame": 805, "target": "sticky_2", "x": 960, "y": 400, "scale": 1.0 },
+      { "frame": 1117, "target": "section_2_2", "x": 1060, "y": 500, "scale": 1.1 },
+      { "frame": 1638, "target": "sticky_3", "x": 1520, "y": 400, "scale": 1.0 },
+      { "frame": 1990, "target": "section_3_2", "x": 1620, "y": 500, "scale": 1.1 },
+      { "frame": 2200, "target": "overview", "x": 960, "y": 540, "scale": 0.6 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 3, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 333, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 355, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 803, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 835, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1115, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 1636, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 1988, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.20 },
+      { "frame": 2010, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 }
+    ],
+    "totalCount": 10
+  }
+}

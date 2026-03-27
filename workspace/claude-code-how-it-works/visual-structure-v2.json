@@ -1,0 +1,106 @@
+{
+  "title": "How Claude Code Works",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "The Engine",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "How It Works",
+          "subtitle": "Under the hood",
+          "visualType": "terminal",
+          "visualData": {
+            "commands": [
+              { "prompt": "$", "command": "claude", "output": "Claude Code v1.0 ready" },
+              { "prompt": "$", "command": "claude 'refactor auth module'", "output": "Reading 12 files..." },
+              { "prompt": "$", "command": "claude commit", "output": "Changes committed." }
+            ],
+            "title": "bash — claude-code"
+          }
+        },
+        {
+          "title": "Context Window",
+          "subtitle": "What it can process",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Tokens", "value": "200K", "subtitle": "Context window" },
+              { "label": "Pages", "value": "500+", "subtitle": "Of code at once" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Tools & Context",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Tool System",
+          "subtitle": "Built-in capabilities",
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Read & write files",
+              "Run bash commands",
+              "Search code with grep",
+              "Browse the web",
+              "Permission before execution"
+            ],
+            "style": "checklist"
+          }
+        },
+        {
+          "title": "Smart Context",
+          "subtitle": "Selects what matters",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Read CLAUDE.md", "description": "Project instructions" },
+              { "label": "Scan Git History", "description": "Recent changes" },
+              { "label": "Glob Files", "description": "Find relevant code" },
+              { "label": "Build Prompt", "description": "Only what matters" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Models & Pricing",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Pricing",
+          "subtitle": "Per million tokens",
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Model", "Input", "Output", "Best For"],
+            "rows": [
+              ["Opus", "$15", "$75", "Complex tasks"],
+              ["Sonnet", "$3", "$15", "Daily coding"],
+              ["Haiku", "$0.25", "$1.25", "Quick edits"]
+            ],
+            "highlightCol": 3
+          }
+        },
+        {
+          "title": "The Takeaway",
+          "subtitle": "Why it works",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "No IDE needed, everything runs locally",
+            "highlight": ["No IDE", "locally"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

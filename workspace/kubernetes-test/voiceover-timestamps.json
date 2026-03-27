@@ -1,207 +1,1138 @@
 {
   "words": [
     {
-      "word": "Overview",
-      "start": 0.5,
-      "end": 0.8,
-      "startFrame": 15,
-      "endFrame": 24
+      "word": "Kubernetes",
+      "start": 0.0,
+      "end": 0.778,
+      "startFrame": 0,
+      "endFrame": 23
     },
     {
-      "word": "Master",
-      "start": 0.85,
-      "end": 1.15,
-      "startFrame": 25,
-      "endFrame": 34
+      "word": "is",
+      "start": 0.871,
+      "end": 1.01,
+      "startFrame": 26,
+      "endFrame": 30
     },
     {
-      "word": "vs",
-      "start": 1.2,
-      "end": 1.5,
-      "startFrame": 36,
-      "endFrame": 45
+      "word": "a",
+      "start": 1.045,
+      "end": 1.08,
+      "startFrame": 31,
+      "endFrame": 32
     },
     {
-      "word": "Worker",
-      "start": 1.55,
-      "end": 1.85,
-      "startFrame": 46,
-      "endFrame": 55
+      "word": "container",
+      "start": 1.138,
+      "end": 1.625,
+      "startFrame": 34,
+      "endFrame": 49
     },
     {
-      "word": "Cluster",
-      "start": 1.9,
-      "end": 2.2,
-      "startFrame": 57,
-      "endFrame": 65
+      "word": "orchestration",
+      "start": 1.695,
+      "end": 2.241,
+      "startFrame": 51,
+      "endFrame": 67
     },
     {
-      "word": "Setup",
-      "start": 2.25,
-      "end": 2.55,
-      "startFrame": 67,
-      "endFrame": 76
-    },
-    {
-      "word": "Table",
-      "start": 2.6,
-      "end": 2.9,
-      "startFrame": 78,
+      "word": "platform.",
+      "start": 2.299,
+      "end": 2.914,
+      "startFrame": 69,
       "endFrame": 87
     },
     {
-      "word": "Three",
-      "start": 2.95,
-      "end": 3.25,
-      "startFrame": 88,
-      "endFrame": 97
+      "word": "Let's",
+      "start": 3.518,
+      "end": 3.727,
+      "startFrame": 106,
+      "endFrame": 112
     },
     {
-      "word": "Worker",
-      "start": 3.3,
-      "end": 3.6,
-      "startFrame": 99,
-      "endFrame": 108
+      "word": "break",
+      "start": 3.762,
+      "end": 3.959,
+      "startFrame": 113,
+      "endFrame": 119
     },
     {
-      "word": "Processes",
-      "start": 3.65,
-      "end": 3.95,
-      "startFrame": 109,
-      "endFrame": 118
+      "word": "down",
+      "start": 4.017,
+      "end": 4.249,
+      "startFrame": 121,
+      "endFrame": 127
     },
     {
-      "word": "Pod",
-      "start": 4.0,
-      "end": 4.3,
-      "startFrame": 120,
-      "endFrame": 129
+      "word": "how",
+      "start": 4.365,
+      "end": 4.54,
+      "startFrame": 131,
+      "endFrame": 136
     },
     {
-      "word": "Lifecycle",
-      "start": 4.35,
-      "end": 4.65,
-      "startFrame": 130,
-      "endFrame": 139
+      "word": "it",
+      "start": 4.609,
+      "end": 4.667,
+      "startFrame": 138,
+      "endFrame": 140
     },
     {
-      "word": "Smart",
-      "start": 4.7,
-      "end": 5.0,
-      "startFrame": 140,
+      "word": "actually",
+      "start": 4.702,
+      "end": 4.981,
+      "startFrame": 141,
       "endFrame": 149
     },
     {
-      "word": "Routing",
-      "start": 5.05,
-      "end": 5.35,
+      "word": "works.\n\nEvery",
+      "start": 5.039,
+      "end": 6.455,
       "startFrame": 151,
-      "endFrame": 160
+      "endFrame": 194
     },
     {
-      "word": "Control",
-      "start": 5.4,
-      "end": 5.7,
-      "startFrame": 161,
-      "endFrame": 170
+      "word": "Kubernetes",
+      "start": 6.513,
+      "end": 7.036,
+      "startFrame": 195,
+      "endFrame": 211
     },
     {
-      "word": "Plane",
-      "start": 5.75,
-      "end": 6.05,
-      "startFrame": 172,
-      "endFrame": 181
+      "word": "cluster",
+      "start": 7.082,
+      "end": 7.512,
+      "startFrame": 212,
+      "endFrame": 225
+    },
+    {
+      "word": "has",
+      "start": 7.686,
+      "end": 7.872,
+      "startFrame": 231,
+      "endFrame": 236
+    },
+    {
+      "word": "two",
+      "start": 7.964,
+      "end": 8.197,
+      "startFrame": 239,
+      "endFrame": 246
+    },
+    {
+      "word": "types",
+      "start": 8.278,
+      "end": 8.58,
+      "startFrame": 248,
+      "endFrame": 257
+    },
+    {
+      "word": "of",
+      "start": 8.615,
+      "end": 8.684,
+      "startFrame": 258,
+      "endFrame": 261
+    },
+    {
+      "word": "nodes:",
+      "start": 8.742,
+      "end": 9.207,
+      "startFrame": 262,
+      "endFrame": 276
+    },
+    {
+      "word": "worker",
+      "start": 9.416,
+      "end": 9.729,
+      "startFrame": 282,
+      "endFrame": 292
+    },
+    {
+      "word": "nodes",
+      "start": 9.776,
+      "end": 10.066,
+      "startFrame": 293,
+      "endFrame": 302
+    },
+    {
+      "word": "and",
+      "start": 10.217,
+      "end": 10.391,
+      "startFrame": 307,
+      "endFrame": 312
+    },
+    {
+      "word": "master",
+      "start": 10.472,
+      "end": 10.809,
+      "startFrame": 314,
+      "endFrame": 324
+    },
+    {
+      "word": "nodes.",
+      "start": 10.844,
+      "end": 11.32,
+      "startFrame": 325,
+      "endFrame": 340
+    },
+    {
+      "word": "Worker",
+      "start": 11.924,
+      "end": 12.26,
+      "startFrame": 358,
+      "endFrame": 368
+    },
+    {
+      "word": "nodes",
+      "start": 12.307,
+      "end": 12.574,
+      "startFrame": 369,
+      "endFrame": 377
+    },
+    {
+      "word": "do",
+      "start": 12.643,
+      "end": 12.783,
+      "startFrame": 379,
+      "endFrame": 383
+    },
+    {
+      "word": "the",
+      "start": 12.841,
+      "end": 12.922,
+      "startFrame": 385,
+      "endFrame": 388
+    },
+    {
+      "word": "actual",
+      "start": 12.968,
+      "end": 13.317,
+      "startFrame": 389,
+      "endFrame": 400
+    },
+    {
+      "word": "work,",
+      "start": 13.386,
+      "end": 13.793,
+      "startFrame": 402,
+      "endFrame": 414
+    },
+    {
+      "word": "running",
+      "start": 13.967,
+      "end": 14.222,
+      "startFrame": 419,
+      "endFrame": 427
+    },
+    {
+      "word": "your",
+      "start": 14.257,
+      "end": 14.362,
+      "startFrame": 428,
+      "endFrame": 431
+    },
+    {
+      "word": "application",
+      "start": 14.385,
+      "end": 14.884,
+      "startFrame": 432,
+      "endFrame": 447
+    },
+    {
+      "word": "containers.",
+      "start": 14.954,
+      "end": 15.674,
+      "startFrame": 449,
+      "endFrame": 470
+    },
+    {
+      "word": "Master",
+      "start": 16.277,
+      "end": 16.637,
+      "startFrame": 488,
+      "endFrame": 499
+    },
+    {
+      "word": "nodes",
+      "start": 16.684,
+      "end": 16.951,
+      "startFrame": 501,
+      "endFrame": 509
+    },
+    {
+      "word": "control",
+      "start": 17.067,
+      "end": 17.485,
+      "startFrame": 512,
+      "endFrame": 525
+    },
+    {
+      "word": "everything.\n\nEach",
+      "start": 17.636,
+      "end": 19.11,
+      "startFrame": 529,
+      "endFrame": 573
+    },
+    {
+      "word": "worker",
+      "start": 19.168,
+      "end": 19.447,
+      "startFrame": 575,
+      "endFrame": 583
+    },
+    {
+      "word": "node",
+      "start": 19.493,
+      "end": 19.714,
+      "startFrame": 585,
+      "endFrame": 591
+    },
+    {
+      "word": "runs",
+      "start": 19.749,
+      "end": 19.981,
+      "startFrame": 592,
+      "endFrame": 599
+    },
+    {
+      "word": "three",
+      "start": 20.062,
+      "end": 20.376,
+      "startFrame": 602,
+      "endFrame": 611
+    },
+    {
+      "word": "essential",
+      "start": 20.422,
+      "end": 20.817,
+      "startFrame": 613,
+      "endFrame": 625
+    },
+    {
+      "word": "processes.",
+      "start": 20.875,
+      "end": 21.606,
+      "startFrame": 626,
+      "endFrame": 648
+    },
+    {
+      "word": "First,",
+      "start": 21.815,
+      "end": 22.28,
+      "startFrame": 654,
+      "endFrame": 668
+    },
+    {
+      "word": "a",
+      "start": 22.489,
+      "end": 22.57,
+      "startFrame": 675,
+      "endFrame": 677
+    },
+    {
+      "word": "container",
+      "start": 22.64,
+      "end": 23.069,
+      "startFrame": 679,
+      "endFrame": 692
+    },
+    {
+      "word": "runtime",
+      "start": 23.116,
+      "end": 23.626,
+      "startFrame": 693,
+      "endFrame": 709
+    },
+    {
+      "word": "like",
+      "start": 23.719,
+      "end": 23.94,
+      "startFrame": 712,
+      "endFrame": 718
+    },
+    {
+      "word": "Docker.",
+      "start": 23.998,
+      "end": 24.544,
+      "startFrame": 720,
+      "endFrame": 736
+    },
+    {
+      "word": "Second,",
+      "start": 25.054,
+      "end": 25.6,
+      "startFrame": 752,
+      "endFrame": 768
+    },
+    {
+      "word": "kubelet,",
+      "start": 25.751,
+      "end": 26.331,
+      "startFrame": 773,
+      "endFrame": 790
+    },
+    {
+      "word": "which",
+      "start": 26.54,
+      "end": 26.749,
+      "startFrame": 796,
+      "endFrame": 802
+    },
+    {
+      "word": "takes",
+      "start": 26.796,
+      "end": 27.039,
+      "startFrame": 804,
+      "endFrame": 811
+    },
+    {
+      "word": "configurations",
+      "start": 27.097,
+      "end": 27.829,
+      "startFrame": 813,
+      "endFrame": 835
+    },
+    {
+      "word": "and",
+      "start": 27.875,
+      "end": 27.956,
+      "startFrame": 836,
+      "endFrame": 839
+    },
+    {
+      "word": "starts",
+      "start": 28.014,
+      "end": 28.351,
+      "startFrame": 840,
+      "endFrame": 851
+    },
+    {
+      "word": "pods",
+      "start": 28.398,
+      "end": 28.665,
+      "startFrame": 852,
+      "endFrame": 860
+    },
+    {
+      "word": "with",
+      "start": 28.699,
+      "end": 28.839,
+      "startFrame": 861,
+      "endFrame": 865
+    },
+    {
+      "word": "containers",
+      "start": 28.885,
+      "end": 29.431,
+      "startFrame": 867,
+      "endFrame": 883
+    },
+    {
+      "word": "inside.",
+      "start": 29.489,
+      "end": 30.139,
+      "startFrame": 885,
+      "endFrame": 904
+    },
+    {
+      "word": "Third,",
+      "start": 30.65,
+      "end": 31.196,
+      "startFrame": 920,
+      "endFrame": 936
+    },
+    {
+      "word": "kube-proxy,",
+      "start": 31.347,
+      "end": 32.357,
+      "startFrame": 940,
+      "endFrame": 971
+    },
+    {
+      "word": "which",
+      "start": 32.438,
+      "end": 32.647,
+      "startFrame": 973,
+      "endFrame": 979
+    },
+    {
+      "word": "handles",
+      "start": 32.705,
+      "end": 33.065,
+      "startFrame": 981,
+      "endFrame": 992
+    },
+    {
+      "word": "networking",
+      "start": 33.158,
+      "end": 33.657,
+      "startFrame": 995,
+      "endFrame": 1010
+    },
+    {
+      "word": "between",
+      "start": 33.703,
+      "end": 34.028,
+      "startFrame": 1011,
+      "endFrame": 1021
+    },
+    {
+      "word": "pods",
+      "start": 34.086,
+      "end": 34.388,
+      "startFrame": 1023,
+      "endFrame": 1032
+    },
+    {
+      "word": "with",
+      "start": 34.597,
+      "end": 34.783,
+      "startFrame": 1038,
+      "endFrame": 1043
+    },
+    {
+      "word": "intelligent",
+      "start": 34.83,
+      "end": 35.398,
+      "startFrame": 1045,
+      "endFrame": 1062
+    },
+    {
+      "word": "forwarding.\n\nThe",
+      "start": 35.456,
+      "end": 36.699,
+      "startFrame": 1064,
+      "endFrame": 1101
+    },
+    {
+      "word": "master",
+      "start": 36.78,
+      "end": 37.128,
+      "startFrame": 1103,
+      "endFrame": 1114
+    },
+    {
+      "word": "node",
+      "start": 37.175,
+      "end": 37.372,
+      "startFrame": 1115,
+      "endFrame": 1121
+    },
+    {
+      "word": "runs",
+      "start": 37.407,
+      "end": 37.686,
+      "startFrame": 1122,
+      "endFrame": 1131
+    },
+    {
+      "word": "four",
+      "start": 37.86,
+      "end": 38.104,
+      "startFrame": 1136,
+      "endFrame": 1143
+    },
+    {
+      "word": "processes.",
+      "start": 38.162,
+      "end": 38.986,
+      "startFrame": 1145,
+      "endFrame": 1170
+    },
+    {
+      "word": "The",
+      "start": 39.497,
+      "end": 39.648,
+      "startFrame": 1185,
+      "endFrame": 1189
     },
     {
       "word": "API",
-      "start": 6.1,
-      "end": 6.4,
-      "startFrame": 182,
-      "endFrame": 191
+      "start": 39.729,
+      "end": 40.182,
+      "startFrame": 1192,
+      "endFrame": 1205
     },
     {
-      "word": "Server",
-      "start": 6.45,
-      "end": 6.75,
-      "startFrame": 193,
-      "endFrame": 202
+      "word": "server",
+      "start": 40.275,
+      "end": 40.658,
+      "startFrame": 1208,
+      "endFrame": 1220
     },
     {
-      "word": "Flow",
-      "start": 6.8,
-      "end": 7.1,
-      "startFrame": 203,
-      "endFrame": 212
+      "word": "is",
+      "start": 40.832,
+      "end": 40.994,
+      "startFrame": 1225,
+      "endFrame": 1230
     },
     {
-      "word": "Self",
-      "start": 7.15,
-      "end": 7.45,
-      "startFrame": 214,
-      "endFrame": 223
+      "word": "your",
+      "start": 41.052,
+      "end": 41.157,
+      "startFrame": 1232,
+      "endFrame": 1235
     },
     {
-      "word": "Healing",
-      "start": 7.5,
-      "end": 7.8,
-      "startFrame": 224,
-      "endFrame": 233
+      "word": "cluster",
+      "start": 41.192,
+      "end": 41.505,
+      "startFrame": 1236,
+      "endFrame": 1245
     },
     {
-      "word": "Cluster",
-      "start": 7.85,
-      "end": 8.15,
-      "startFrame": 235,
-      "endFrame": 244
+      "word": "gateway,",
+      "start": 41.552,
+      "end": 42.097,
+      "startFrame": 1247,
+      "endFrame": 1263
     },
     {
-      "word": "Brain",
-      "start": 8.2,
-      "end": 8.5,
-      "startFrame": 245,
-      "endFrame": 254
+      "word": "handling",
+      "start": 42.248,
+      "end": 42.655,
+      "startFrame": 1267,
+      "endFrame": 1280
+    },
+    {
+      "word": "all",
+      "start": 42.771,
+      "end": 42.991,
+      "startFrame": 1283,
+      "endFrame": 1290
+    },
+    {
+      "word": "requests",
+      "start": 43.061,
+      "end": 43.525,
+      "startFrame": 1292,
+      "endFrame": 1306
+    },
+    {
+      "word": "and",
+      "start": 43.595,
+      "end": 43.758,
+      "startFrame": 1308,
+      "endFrame": 1313
+    },
+    {
+      "word": "authentication.",
+      "start": 43.816,
+      "end": 44.849,
+      "startFrame": 1314,
+      "endFrame": 1345
+    },
+    {
+      "word": "The",
+      "start": 45.546,
+      "end": 45.685,
+      "startFrame": 1366,
+      "endFrame": 1371
+    },
+    {
+      "word": "scheduler",
+      "start": 45.743,
+      "end": 46.196,
+      "startFrame": 1372,
+      "endFrame": 1386
+    },
+    {
+      "word": "decides",
+      "start": 46.242,
+      "end": 46.66,
+      "startFrame": 1387,
+      "endFrame": 1400
+    },
+    {
+      "word": "which",
+      "start": 46.718,
+      "end": 46.915,
+      "startFrame": 1402,
+      "endFrame": 1407
+    },
+    {
+      "word": "worker",
+      "start": 46.962,
+      "end": 47.241,
+      "startFrame": 1409,
+      "endFrame": 1417
+    },
+    {
+      "word": "node",
+      "start": 47.287,
+      "end": 47.496,
+      "startFrame": 1419,
+      "endFrame": 1425
+    },
+    {
+      "word": "should",
+      "start": 47.519,
+      "end": 47.705,
+      "startFrame": 1426,
+      "endFrame": 1431
+    },
+    {
+      "word": "run",
+      "start": 47.763,
+      "end": 47.926,
+      "startFrame": 1433,
+      "endFrame": 1438
+    },
+    {
+      "word": "your",
+      "start": 47.995,
+      "end": 48.135,
+      "startFrame": 1440,
+      "endFrame": 1444
+    },
+    {
+      "word": "new",
+      "start": 48.204,
+      "end": 48.355,
+      "startFrame": 1446,
+      "endFrame": 1451
+    },
+    {
+      "word": "pod",
+      "start": 48.402,
+      "end": 48.645,
+      "startFrame": 1452,
+      "endFrame": 1459
+    },
+    {
+      "word": "based",
+      "start": 48.854,
+      "end": 49.179,
+      "startFrame": 1466,
+      "endFrame": 1475
+    },
+    {
+      "word": "on",
+      "start": 49.237,
+      "end": 49.307,
+      "startFrame": 1477,
+      "endFrame": 1479
+    },
+    {
+      "word": "available",
+      "start": 49.354,
+      "end": 49.772,
+      "startFrame": 1481,
+      "endFrame": 1493
+    },
+    {
+      "word": "resources.",
+      "start": 49.83,
+      "end": 50.573,
+      "startFrame": 1495,
+      "endFrame": 1517
+    },
+    {
+      "word": "The",
+      "start": 51.084,
+      "end": 51.223,
+      "startFrame": 1533,
+      "endFrame": 1537
+    },
+    {
+      "word": "controller",
+      "start": 51.293,
+      "end": 51.792,
+      "startFrame": 1539,
+      "endFrame": 1554
+    },
+    {
+      "word": "manager",
+      "start": 51.838,
+      "end": 52.152,
+      "startFrame": 1555,
+      "endFrame": 1565
+    },
+    {
+      "word": "detects",
+      "start": 52.21,
+      "end": 52.57,
+      "startFrame": 1566,
+      "endFrame": 1577
+    },
+    {
+      "word": "when",
+      "start": 52.605,
+      "end": 52.779,
+      "startFrame": 1578,
+      "endFrame": 1583
+    },
+    {
+      "word": "pods",
+      "start": 52.86,
+      "end": 53.139,
+      "startFrame": 1586,
+      "endFrame": 1594
+    },
+    {
+      "word": "crash",
+      "start": 53.197,
+      "end": 53.533,
+      "startFrame": 1596,
+      "endFrame": 1606
+    },
+    {
+      "word": "and",
+      "start": 53.684,
+      "end": 53.847,
+      "startFrame": 1611,
+      "endFrame": 1615
+    },
+    {
+      "word": "triggers",
+      "start": 53.905,
+      "end": 54.277,
+      "startFrame": 1617,
+      "endFrame": 1628
+    },
+    {
+      "word": "recovery.",
+      "start": 54.346,
+      "end": 55.054,
+      "startFrame": 1630,
+      "endFrame": 1652
+    },
+    {
+      "word": "And",
+      "start": 55.565,
+      "end": 55.739,
+      "startFrame": 1667,
+      "endFrame": 1672
     },
     {
       "word": "etcd",
-      "start": 8.55,
-      "end": 8.85,
-      "startFrame": 256,
-      "endFrame": 265
+      "start": 55.855,
+      "end": 56.436,
+      "startFrame": 1676,
+      "endFrame": 1693
     },
     {
-      "word": "How",
-      "start": 8.9,
-      "end": 9.2,
-      "startFrame": 266,
-      "endFrame": 275
+      "word": "is",
+      "start": 56.761,
+      "end": 56.924,
+      "startFrame": 1703,
+      "endFrame": 1708
     },
     {
-      "word": "to",
-      "start": 9.25,
-      "end": 9.55,
-      "startFrame": 277,
-      "endFrame": 286
+      "word": "the",
+      "start": 56.97,
+      "end": 57.04,
+      "startFrame": 1709,
+      "endFrame": 1711
     },
     {
-      "word": "Scale",
-      "start": 9.6,
-      "end": 9.9,
-      "startFrame": 287,
-      "endFrame": 296
+      "word": "key-value",
+      "start": 57.109,
+      "end": 57.701,
+      "startFrame": 1713,
+      "endFrame": 1731
     },
     {
-      "word": "Key",
-      "start": 9.95,
-      "end": 10.25,
-      "startFrame": 298,
-      "endFrame": 307
+      "word": "store",
+      "start": 57.725,
+      "end": 58.015,
+      "startFrame": 1732,
+      "endFrame": 1740
     },
     {
-      "word": "Takeaway",
-      "start": 10.3,
-      "end": 10.6,
-      "startFrame": 308,
-      "endFrame": 317
+      "word": "that",
+      "start": 58.05,
+      "end": 58.189,
+      "startFrame": 1742,
+      "endFrame": 1746
+    },
+    {
+      "word": "acts",
+      "start": 58.259,
+      "end": 58.514,
+      "startFrame": 1748,
+      "endFrame": 1755
+    },
+    {
+      "word": "as",
+      "start": 58.561,
+      "end": 58.642,
+      "startFrame": 1757,
+      "endFrame": 1759
+    },
+    {
+      "word": "the",
+      "start": 58.7,
+      "end": 58.77,
+      "startFrame": 1761,
+      "endFrame": 1763
+    },
+    {
+      "word": "cluster",
+      "start": 58.816,
+      "end": 59.188,
+      "startFrame": 1764,
+      "endFrame": 1776
+    },
+    {
+      "word": "brain,",
+      "start": 59.211,
+      "end": 59.652,
+      "startFrame": 1776,
+      "endFrame": 1790
+    },
+    {
+      "word": "storing",
+      "start": 59.826,
+      "end": 60.232,
+      "startFrame": 1795,
+      "endFrame": 1807
+    },
+    {
+      "word": "all",
+      "start": 60.349,
+      "end": 60.581,
+      "startFrame": 1810,
+      "endFrame": 1817
+    },
+    {
+      "word": "state",
+      "start": 60.662,
+      "end": 60.987,
+      "startFrame": 1820,
+      "endFrame": 1830
+    },
+    {
+      "word": "data.\n\nIn",
+      "start": 61.034,
+      "end": 62.369,
+      "startFrame": 1831,
+      "endFrame": 1871
+    },
+    {
+      "word": "practice,",
+      "start": 62.427,
+      "end": 62.996,
+      "startFrame": 1873,
+      "endFrame": 1890
+    },
+    {
+      "word": "you'll",
+      "start": 63.147,
+      "end": 63.344,
+      "startFrame": 1894,
+      "endFrame": 1900
+    },
+    {
+      "word": "have",
+      "start": 63.39,
+      "end": 63.541,
+      "startFrame": 1902,
+      "endFrame": 1906
+    },
+    {
+      "word": "multiple",
+      "start": 63.611,
+      "end": 64.006,
+      "startFrame": 1908,
+      "endFrame": 1920
+    },
+    {
+      "word": "masters",
+      "start": 64.04,
+      "end": 64.458,
+      "startFrame": 1921,
+      "endFrame": 1934
+    },
+    {
+      "word": "for",
+      "start": 64.516,
+      "end": 64.633,
+      "startFrame": 1935,
+      "endFrame": 1939
+    },
+    {
+      "word": "high",
+      "start": 64.714,
+      "end": 64.888,
+      "startFrame": 1941,
+      "endFrame": 1947
+    },
+    {
+      "word": "availability",
+      "start": 64.923,
+      "end": 65.561,
+      "startFrame": 1948,
+      "endFrame": 1967
+    },
+    {
+      "word": "and",
+      "start": 65.736,
+      "end": 65.886,
+      "startFrame": 1972,
+      "endFrame": 1977
+    },
+    {
+      "word": "many",
+      "start": 65.968,
+      "end": 66.165,
+      "startFrame": 1979,
+      "endFrame": 1985
+    },
+    {
+      "word": "worker",
+      "start": 66.223,
+      "end": 66.513,
+      "startFrame": 1987,
+      "endFrame": 1995
+    },
+    {
+      "word": "nodes.",
+      "start": 66.56,
+      "end": 67.082,
+      "startFrame": 1997,
+      "endFrame": 2012
+    },
+    {
+      "word": "Adding",
+      "start": 67.686,
+      "end": 67.988,
+      "startFrame": 2031,
+      "endFrame": 2040
+    },
+    {
+      "word": "new",
+      "start": 68.057,
+      "end": 68.208,
+      "startFrame": 2042,
+      "endFrame": 2046
+    },
+    {
+      "word": "nodes",
+      "start": 68.278,
+      "end": 68.557,
+      "startFrame": 2048,
+      "endFrame": 2057
+    },
+    {
+      "word": "is",
+      "start": 68.603,
+      "end": 68.673,
+      "startFrame": 2058,
+      "endFrame": 2060
+    },
+    {
+      "word": "simple:",
+      "start": 68.731,
+      "end": 69.265,
+      "startFrame": 2062,
+      "endFrame": 2078
+    },
+    {
+      "word": "install",
+      "start": 69.648,
+      "end": 70.101,
+      "startFrame": 2089,
+      "endFrame": 2103
+    },
+    {
+      "word": "the",
+      "start": 70.159,
+      "end": 70.228,
+      "startFrame": 2105,
+      "endFrame": 2107
+    },
+    {
+      "word": "required",
+      "start": 70.286,
+      "end": 70.681,
+      "startFrame": 2109,
+      "endFrame": 2120
+    },
+    {
+      "word": "processes",
+      "start": 70.728,
+      "end": 71.308,
+      "startFrame": 2122,
+      "endFrame": 2139
+    },
+    {
+      "word": "and",
+      "start": 71.482,
+      "end": 71.656,
+      "startFrame": 2144,
+      "endFrame": 2150
+    },
+    {
+      "word": "join",
+      "start": 71.738,
+      "end": 71.958,
+      "startFrame": 2152,
+      "endFrame": 2159
+    },
+    {
+      "word": "the",
+      "start": 72.005,
+      "end": 72.074,
+      "startFrame": 2160,
+      "endFrame": 2162
+    },
+    {
+      "word": "cluster.",
+      "start": 72.109,
+      "end": 72.725,
+      "startFrame": 2163,
+      "endFrame": 2182
+    },
+    {
+      "word": "This",
+      "start": 73.108,
+      "end": 73.34,
+      "startFrame": 2193,
+      "endFrame": 2200
+    },
+    {
+      "word": "is",
+      "start": 73.41,
+      "end": 73.491,
+      "startFrame": 2202,
+      "endFrame": 2205
+    },
+    {
+      "word": "what",
+      "start": 73.537,
+      "end": 73.677,
+      "startFrame": 2206,
+      "endFrame": 2210
+    },
+    {
+      "word": "makes",
+      "start": 73.746,
+      "end": 73.967,
+      "startFrame": 2212,
+      "endFrame": 2219
+    },
+    {
+      "word": "Kubernetes",
+      "start": 74.025,
+      "end": 74.571,
+      "startFrame": 2221,
+      "endFrame": 2237
+    },
+    {
+      "word": "infinitely",
+      "start": 74.698,
+      "end": 75.232,
+      "startFrame": 2241,
+      "endFrame": 2257
+    },
+    {
+      "word": "scalable.",
+      "start": 75.267,
+      "end": 76.161,
+      "startFrame": 2258,
+      "endFrame": 2285
     }
   ]
 }

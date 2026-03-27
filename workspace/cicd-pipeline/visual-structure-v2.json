@@ -1,0 +1,86 @@
+{
+  "stickies": [
+    {
+      "title": "How CI/CD Works",
+      "sections": [
+        {
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Build", "description": "Compile & create artifact" },
+              { "label": "Test", "description": "Unit, integration, E2E" },
+              { "label": "Stage", "description": "Mirror production env" },
+              { "label": "Deploy", "description": "Blue-green switch" }
+            ]
+          }
+        },
+        {
+          "visualType": "terminal",
+          "visualData": {
+            "commands": [
+              { "prompt": "$", "command": "git push origin feature-branch" },
+              { "prompt": ">", "command": "Webhook triggered...", "output": "Pipeline started" },
+              { "prompt": "$", "command": "npm run build", "output": "Build artifact created" }
+            ],
+            "title": "bash — pipeline"
+          }
+        }
+      ]
+    },
+    {
+      "title": "Testing & Deployment",
+      "sections": [
+        {
+          "visualType": "table",
+          "visualData": {
+            "headers": ["Test Type", "Scope", "Catches"],
+            "rows": [
+              ["Unit", "Single function", "Logic bugs"],
+              ["Integration", "Service comms", "API failures"],
+              ["E2E", "User behavior", "Flow breaks"]
+            ]
+          }
+        },
+        {
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Blue (Current)",
+              "items": ["Running live traffic", "Stable version", "Rollback target"]
+            },
+            "right": {
+              "title": "Green (New)",
+              "items": ["Receives new deploy", "Load balancer switch", "Zero downtime"]
+            },
+            "leftColor": "#3b82f6",
+            "rightColor": "#22c55e",
+            "dividerLabel": "→"
+          }
+        }
+      ]
+    },
+    {
+      "title": "The Result",
+      "sections": [
+        {
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "Deploy Time", "value": "15 min", "subtitle": "Push to production" },
+              { "label": "Rollback", "value": "<30s", "subtitle": "Instant flip back" },
+              { "label": "Downtime", "value": "0", "subtitle": "Blue-green swap" }
+            ]
+          }
+        },
+        {
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Automation is not optional anymore",
+            "highlight": ["not optional"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}

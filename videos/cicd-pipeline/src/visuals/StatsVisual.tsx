@@ -21,6 +21,25 @@ interface Props {
 
 const defaultColors = ["#3b82f6", "#22c55e", "#f59e0b", "#a855f7", "#ef4444", "#06b6d4"];
 
+// Count-up effect for stat values — reveals characters with ease-out
+const countUpValue = (value: string, progress: number): string => {
+  if (progress >= 1) return value;
+  // Extract numeric part and suffix
+  const match = value.match(/^([\d,.]+)(.*)/);
+  if (match) {
+    const num = parseFloat(match[1].replace(/,/g, ''));
+    const suffix = match[2]; // "M+", "%", "ms", etc.
+    const eased = 1 - Math.pow(1 - Math.min(progress * 1.8, 1), 3); // fast ease-out
+    const current = Math.round(num * eased);
+    // Format with commas if original had them
+    const formatted = match[1].includes(',') ? current.toLocaleString() : String(current);
+    return formatted + suffix;
+  }
+  // Non-numeric: just reveal chars
+  const chars = Math.ceil(value.length * progress);
+  return value.substring(0, chars);
+};
+
 const StatsVisual: React.FC<Props> = ({
   items, accentColor = "#3b82f6", progress = 1, shapeMode,
 }) => {
@@ -54,7 +73,7 @@ const StatsVisual: React.FC<Props> = ({
               textShadow: `0 0 30px ${color}30`,
               lineHeight: 1,
             }}>
-              {item.value}
+              {countUpValue(item.value, progress)}
             </span>
             {/* Label */}
             <span style={{

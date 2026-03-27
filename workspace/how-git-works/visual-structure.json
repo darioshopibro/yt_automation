@@ -1,0 +1,92 @@
+{
+  "title": "How Git Works",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "How Git Stores Code",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Snapshots, Not Diffs",
+          "layout": "negation",
+          "nodes": [
+            { "label": "Diffs", "icon": "FileDiffs" },
+            { "label": "Snapshots", "icon": "Camera" }
+          ]
+        },
+        {
+          "title": "Three Repo Areas",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Working Dir", "description": "Edit your files" },
+              { "label": "Staging", "description": "Prepare changes" },
+              { "label": "Commit", "description": "Store permanently" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Branching & Merging",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Lightweight Branches",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Main", "icon": "GitCommit" },
+            { "label": "Branch", "icon": "GitBranch" },
+            { "label": "Feature", "icon": "Code" }
+          ]
+        },
+        {
+          "title": "Merge Types",
+          "visualType": "split-screen",
+          "visualData": {
+            "left": {
+              "title": "Fast-Forward",
+              "items": ["Clean merge", "No conflicts", "Linear history"]
+            },
+            "right": {
+              "title": "Conflict",
+              "items": ["Same file changed", "Manual resolve", "Merge commit"]
+            },
+            "leftColor": "#22c55e",
+            "rightColor": "#ef4444",
+            "dividerLabel": "vs"
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Remote Collaboration",
+      "direction": "right",
+      "sections": [
+        {
+          "title": "Team Workflow",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Push", "icon": "ArrowFatUp" },
+            { "label": "Review", "icon": "ShieldCheck" },
+            { "label": "Pull", "icon": "ArrowFatDown" }
+          ]
+        },
+        {
+          "title": "The Impact",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "Powers millions of open source projects",
+            "highlight": ["millions", "open source"],
+            "style": "impact"
+          }
+        }
+      ]
+    }
+  ]
+}
