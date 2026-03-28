@@ -145,12 +145,44 @@ bo**Vreme po videu:** 30-60 min
 - [x] 4.5 Planner integracija — planner čita visual-structure.json
 - [x] 4.6 Orchestrator update — Router → Planner → Builder workflow u remotion-motion
 
-### FAZA 5: Research & Content Pipeline
-- [ ] 5.1 YT niša monitoring — prati kanale, nalazi videe koji performuju
-- [ ] 5.2 Video scoring — ranira po views/engagement/relevance
-- [ ] 5.3 Transcript extraction — skida i čisti transcript
-- [ ] 5.4 Content processing — preformuliše u originalan tekst (NE plagijat)
-- [ ] 5.5 User review — prikazuje kandidate, user bira/odobrava
+### FAZA 5: Research & Content Pipeline ✅ DONE (core)
+
+**Urađeno:**
+- [x] 5.1 YT niša monitoring — 7 izvora (YT 11 kanala, Reddit 4 suba, HN, GitHub, Dev.to, News RSS, Google Trends)
+- [x] 5.2 Video scoring — LLM topic clustering + engagement × freshness × opportunity formula
+- [x] 5.3 Transcript extraction — yt-dlp + transcript.py per-video
+- [x] 5.4 Content processing — angle detection (gap analysis) → script writing (Fireship 5min) → plagiarism check (<30%)
+- [x] 5.5 User review — Telegram bot (@yt_scanner_agent_bot) sa inline buttons + Dashboard Research tab
+- [x] 5.6 Adaptive Learning — uči iz approve/reject odluka, cold start (20 decisions)
+- [x] 5.7 Self-Improvement Engine — skenira trendove za unapređenje celog projekta
+- [x] 5.8 Script variety — gleda prethodnih 5 skripti, ne ponavlja iste patterne/primere
+- [x] 5.9 Auto-update dictionary — nepoznati acronymi se automatski dodaju u tech-terms-dictionary.json
+- [x] 5.10 Topic history — detektuje slične već obrađene teme, prikazuje ⚠️ warning
+- [x] 5.11 TTS optimizacija — prompt (stil) + preprocess-tts.py (tehnika) razdvojeni, 200+ tech termina
+
+**Lokacija:** `tools/content-pipeline/`
+**Plan:** `.claude/plans/nested-wobbling-hartmanis.md`
+
+**Preostalo za FAZU 5:**
+
+**🔴 HIGH PRIORITY:**
+- [ ] 5.12 Cron setup — daily automatski scan u 8:00 (Claude Code scheduled trigger)
+- [ ] 5.13 Telegram always-on (PM2) — bot sluša non-stop, ne samo kad pokrenemo poll
+- [ ] 5.14 Rewrite feedback buttons — kad klikneš Rewrite, iskočE dugmad "šta ti se nije svidelo?" (hook, primeri, struktura, analogija, predugačko) pa generiše novu skriptu na osnovu feedback-a
+- [ ] 5.15 Visual Proposer integracija — kad sistem obradi temu, prepozna gde može novi vizual i predloži/generiše (spoj sa postojećim `.claude/skills/visual-proposer/`, ne praviti ponovo)
+- [ ] 5.16 research.py batch transcript fix — transcripti prazni u batch modu, radi samo per-video
+
+**🟡 MEDIUM PRIORITY:**
+- [ ] 5.17 Dashboard testiranje — otvoriti localhost:3002, proveriti Research tab radi
+- [ ] 5.18 Channel average caching — računati pravi prosek views-a po kanalu (weekly refresh)
+- [ ] 5.19 Script dužina testiranje — testirati novu 5-min / 750-850 word skriptu
+- [ ] 5.20 Duplicate detection — ako pipeline radi 2x isti dan, ne duplira teme
+
+**🟢 LOW PRIORITY / LATER:**
+- [ ] 5.21 TikTok scanner — yt-dlp za TikTok tech kanale
+- [ ] 5.22 Dashboard filters/search — filter po statusu, search po nazivu
+- [ ] 5.23 Error monitoring — lepši prikaz kad scanner failuje, retry logic
+- [ ] 5.24 Telegram Channels istraživanje — Claude Code native Telegram integracija umesto polling
 
 ### FAZA 6: Branding skill ✅ DONE
 - [x] 6.1 Brand config — `brands/default/brand.json` (boje, font, logo, style, glass, intro/outro)

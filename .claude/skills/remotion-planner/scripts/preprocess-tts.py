@@ -186,21 +186,64 @@ def detect_unknown_acronyms(text: str, dictionary: dict) -> list:
 
     return sorted(unknown)
 
-def auto_fix_unknown_acronyms(text: str, dictionary: dict) -> str:
+def auto_fix_unknown_acronyms(text: str, dictionary: dict, save_to_dict: bool = True) -> str:
     """
     Automatski dodaj razmake u nepoznate acronyme.
     npr. "CORS" -> "C O R S"
+    Ako save_to_dict=True, čuva nove termine u dictionary fajl.
     """
+    # Skip common English words that are ALL CAPS but not acronyms
+    SKIP_WORDS = {"AM", "PM", "OK", "IT", "OR", "AN", "AS", "AT", "BE", "BY",
+                  "DO", "GO", "IF", "IN", "IS", "ME", "MY", "NO", "OF", "ON",
+                  "SO", "TO", "UP", "US", "WE", "BUT", "THE", "AND", "FOR",
+                  "NOT", "YOU", "ALL", "CAN", "HER", "WAS", "ONE", "OUR",
+                  "OUT", "HAS", "HIS", "HOW", "ITS", "MAY", "NEW", "NOW",
+                  "OLD", "SEE", "WAY", "WHO", "DID", "GET", "LET", "SAY",
+                  "SHE", "TOO", "USE", "THEN", "THAN", "THEM", "THEY",
+                  "THIS", "WILL", "WITH", "HAVE", "FROM", "HERE", "JUST"}
+
     unknown = detect_unknown_acronyms(text, dictionary)
+    unknown = [a for a in unknown if a not in SKIP_WORDS]
     processed = text
 
+    new_entries = {}
     for acronym in unknown:
-        # Dodaj razmake između slova
         spaced = ' '.join(list(acronym))
         pattern = r'\b' + re.escape(acronym) + r'\b'
         processed = re.sub(pattern, spaced, processed)
+        new_entries[acronym] = spaced
+
+    # Save new entries to dictionary file
+    if save_to_dict and new_entries:
+        _save_new_terms(new_entries)
 
     return processed
+
+
+def _save_new_terms(new_entries: dict):
+    """Append new terms to tech-terms-dictionary.json."""
+    dict_path = os.path.join(os.path.dirname(os.path.dirname(os.path.dirname(
+        os.path.dirname(os.path.abspath(__file__))))), 'research', 'tech-terms-dictionary.json')
+
+    if not os.path.exists(dict_path):
+        return
+
+    try:
+        with open(dict_path, 'r') as f:
+            data = json.load(f)
+
+        added = []
+        for term, phonetic in new_entries.items():
+            if term not in data.get("acronyms", {}):
+                data.setdefault("acronyms", {})[term] = phonetic
+                added.append(f"{term} → {phonetic}")
+
+        if added:
+            with open(dict_path, 'w') as f:
+                json.dump(data, f, indent=2, ensure_ascii=False)
+            print(f"📚 Auto-added to dictionary: {', '.join(added)}")
+    except Exception as e:
+        print(f"⚠️ Could not update dictionary: {e}")
 
 def main():
     # Parse arguments

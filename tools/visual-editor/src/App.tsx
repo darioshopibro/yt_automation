@@ -5,6 +5,7 @@ import Canvas from './Canvas';
 import BottomPanel from './BottomPanel';
 import BrandingPage from './BrandingPage';
 import VisualPreview from './VisualPreview';
+import ResearchDashboard from './ResearchDashboard';
 import VisualSettingsPanel from './editors/VisualSettingsPanel';
 import { getColorSchemeForSection } from './types';
 
@@ -29,7 +30,7 @@ export default function App() {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [projects, setProjects] = useState<string[]>([]);
   const [dirty, setDirty] = useState(false);
-  const [activeTab, setActiveTab] = useState<'editor' | 'branding' | 'visuals'>('editor');
+  const [activeTab, setActiveTab] = useState<'editor' | 'branding' | 'visuals' | 'research'>('editor');
 
   // Preview panel state
   const [showPreview, setShowPreview] = useState(false);
@@ -243,6 +244,24 @@ export default function App() {
         >
           Visuals
         </button>
+        <button
+          onClick={() => setActiveTab('research')}
+          style={{
+            background: activeTab === 'research' ? '#818cf820' : 'transparent',
+            border: `1px solid ${activeTab === 'research' ? '#818cf8' : 'transparent'}`,
+            borderRadius: 6,
+            padding: '3px 10px',
+            color: activeTab === 'research' ? '#818cf8' : '#64748b',
+            fontSize: 12,
+            fontWeight: 700,
+            cursor: 'pointer',
+            letterSpacing: '-0.02em',
+            whiteSpace: 'nowrap',
+            transition: 'all 0.15s',
+          }}
+        >
+          Research
+        </button>
         <span style={{ color: '#1a1a2e', fontSize: 14 }}>|</span>
 
         {/* Project dropdown — auto-loads on select (editor tab only) */}
@@ -403,6 +422,10 @@ export default function App() {
       ) : activeTab === 'visuals' ? (
         <div style={{ flex: 1, overflow: 'auto' }}>
           <VisualPreview />
+        </div>
+      ) : activeTab === 'research' ? (
+        <div style={{ flex: 1, overflow: 'auto', background: '#0f172a' }}>
+          <ResearchDashboard />
         </div>
       ) : (
         <div style={{

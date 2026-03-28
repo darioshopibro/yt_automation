@@ -449,6 +449,152 @@ app.post('/api/regenerate', async (req, res) => {
   }
 });
 
+// ==========================================
+// Research Pipeline API (SQLite)
+// ==========================================
+
+import Database from 'better-sqlite3';
+
+const PIPELINE_DB = path.join(BASE_PATH, 'tools', 'content-pipeline', 'data', 'pipeline.db');
+
+function getDb() {
+  const db = new Database(PIPELINE_DB, { readonly: false });
+  db.pragma('journal_mode = WAL');
+  return db;
+}
+
+// GET /api/research/candidates — top scored topics
+app.get('/api/research/candidates', (req, res) => {
+  try {
+    const limit = parseInt(req.query.limit as string) || 15;
+    const db = getDb();
+    const topics = db.prepare(
+      'SELECT * FROM topics WHERE status = ? ORDER BY final_score DESC LIMIT ?'
+    ).all('new', limit);
+
+    // Attach sources to each topic
+    const result = topics.map((t: any) => ({
+      ...t,
+      sources: db.prepare('SELECT * FROM topic_sources WHERE topic_id = ?').all(t.id)
+    }));
+    db.close();
+    res.json(result);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/research/all — all topics with any status
+app.get('/api/research/all', (req, res) => {
+  try {
+    const status = req.query.status as string;
+    const limit = parseInt(req.query.limit as string) || 50;
+    const db = getDb();
+    let topics;
+    if (status) {
+      topics = db.prepare('SELECT * FROM topics WHERE status = ? ORDER BY final_score DESC LIMIT ?').all(status, limit);
+    } else {
+      topics = db.prepare('SELECT * FROM topics ORDER BY created_at DESC LIMIT ?').all(limit);
+    }
+    db.close();
+    res.json(topics);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/research/topic/:id/status — change topic status
+app.post('/api/research/topic/:id/status', (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+    if (!['new', 'approved', 'rejected', 'queued', 'processed'].includes(status)) {
+      return res.status(400).json({ error: 'Invalid status' });
+    }
+    const db = getDb();
+    const now = new Date().toISOString();
+    if (status === 'approved') {
+      db.prepare('UPDATE topics SET status = ?, reviewed_at = ? WHERE id = ?').run(status, now, id);
+    } else if (status === 'processed') {
+      db.prepare('UPDATE topics SET status = ?, processed_at = ? WHERE id = ?').run(status, now, id);
+    } else {
+      db.prepare('UPDATE topics SET status = ? WHERE id = ?').run(status, id);
+    }
+    db.close();
+    res.json({ success: true });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/research/improvements — self-improvement suggestions
+app.get('/api/research/improvements', (req, res) => {
+  try {
+    const status = req.query.status as string || 'suggested';
+    const db = getDb();
+    const improvements = db.prepare(
+      'SELECT * FROM improvements WHERE status = ? ORDER BY id DESC'
+    ).all(status);
+    db.close();
+    res.json(improvements);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/research/improvement/:id/status — change improvement status
+app.post('/api/research/improvement/:id/status', (req, res) => {
+  try {
+    const { id } = req.params;
+    const { status } = req.body;
+    if (!['suggested', 'accepted', 'rejected', 'implemented'].includes(status)) {
+      return res.status(400).json({ error: 'Invalid status' });
+    }
+    const db = getDb();
+    db.prepare('UPDATE improvements SET status = ? WHERE id = ?').run(status, id);
+    db.close();
+    res.json({ success: true });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/research/stats — pipeline stats
+app.get('/api/research/stats', (req, res) => {
+  try {
+    const db = getDb();
+    const stats = {
+      total_topics: db.prepare('SELECT COUNT(*) as cnt FROM topics').get() as any,
+      by_status: db.prepare('SELECT status, COUNT(*) as cnt FROM topics GROUP BY status').all(),
+      total_improvements: db.prepare('SELECT COUNT(*) as cnt FROM improvements').get() as any,
+      improvements_by_status: db.prepare('SELECT status, COUNT(*) as cnt FROM improvements GROUP BY status').all(),
+      total_decisions: db.prepare("SELECT COUNT(*) as cnt FROM topics WHERE status IN ('approved', 'rejected')").get() as any,
+      last_scan: db.prepare('SELECT * FROM scan_runs ORDER BY id DESC LIMIT 1').get(),
+      learning_threshold: 20,
+    };
+    db.close();
+    res.json(stats);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/research/scripts — generated scripts
+app.get('/api/research/scripts', (req, res) => {
+  try {
+    const db = getDb();
+    const scripts = db.prepare(`
+      SELECT s.*, t.title as topic_title, t.proposed_angle, t.proposed_hook
+      FROM scripts s JOIN topics t ON s.topic_id = t.id
+      ORDER BY s.id DESC LIMIT 20
+    `).all();
+    db.close();
+    res.json(scripts);
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
 app.listen(PORT, () => {
   console.log(`Visual Editor API running at http://localhost:${PORT}`);
 });

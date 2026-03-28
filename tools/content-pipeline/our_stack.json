@@ -1,0 +1,40 @@
+{
+  "tools": {
+    "yt-dlp": {"version": "2026.03.17", "purpose": "YouTube video/transcript downloading"},
+    "remotion": {"version": "4.x", "purpose": "Video rendering — React-based animated explainers with 14 visual types"},
+    "elevenlabs": {"version": "API v1", "purpose": "Text-to-speech voiceover with word-level timestamps"},
+    "claude-api": {"version": "claude-sonnet-4", "purpose": "LLM for content processing, angle detection, script writing"},
+    "claude-code": {"version": "current", "purpose": "AI coding assistant, skill/agent orchestration, scheduled triggers"},
+    "feedparser": {"version": "6.0.12", "purpose": "RSS feed parsing for news sources"},
+    "telegram-bot": {"version": "urllib-based", "purpose": "Telegram bot for daily digest + user input"},
+    "sqlite3": {"version": "built-in", "purpose": "Local database for pipeline data, topics, preferences"},
+    "react": {"version": "18", "purpose": "Visual editor dashboard UI with canvas, branding, visuals tabs"},
+    "express": {"version": "4.x", "purpose": "API server for editor dashboard"},
+    "vite": {"version": "5.x", "purpose": "Frontend build tool for editor"},
+    "phosphor-icons": {"version": "2.x", "purpose": "Icon library (8000+ icons) for visual editor"}
+  },
+  "services": {
+    "elevenlabs": {"plan": "$22/mo", "purpose": "TTS voiceover generation"},
+    "claude": {"plan": "$20/mo + ~$5/mo API", "purpose": "AI coding + API calls for pipeline"},
+    "youtube": {"plan": "free", "purpose": "Content source + publishing target"}
+  },
+  "project_areas": {
+    "content_pipeline": "Automated topic discovery: 7 sources → LLM clustering → scoring → Telegram digest → approve → angle detection → script writing → plagiarism check",
+    "video_production": "Animated explainer videos: voiceover (ElevenLabs) → Visual Router (13 visual types) → Planner (timing/camera) → Builder (Remotion render)",
+    "visual_system": "14 visual types (Table, CodeBlock, Terminal, List, BarChart, PieChart, Stats, Timeline, ProcessSteps, LogoGrid, Hierarchy, SplitScreen, Kinetic, ServiceMesh) with shape modes and animations",
+    "editor": "React app (localhost:3002) — Figma-style canvas, icon picker, color picker, live preview, branding, inline editing",
+    "branding": "Per-brand theming (colors, fonts, glass, borders, logo) — brand.json config",
+    "voice_correction": "Regenerate full voiceover, splice segments, TTS preprocessing with 500+ tech terms dictionary",
+    "self_learning": "Adaptive scoring from approve/reject decisions, Telegram bot input learning"
+  },
+  "gaps_and_wishes": [
+    "Automated thumbnail generation (currently manual)",
+    "YouTube upload automation (currently manual)",
+    "Video transcript overlay / captions (planned, not implemented)",
+    "Per-visual animation controls in editor (planned)",
+    "Multi-template support for different brand styles",
+    "TikTok/Shorts repurposing from long-form content",
+    "A/B testing different angles or hooks",
+    "Analytics tracking (which videos perform best, why)"
+  ]
+}
