@@ -10,6 +10,20 @@ Ovaj skill koristi **2 specijalizovana agenta** koji rade ZAJEDNO:
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
+│                    VISUAL-PROPOSER                               │
+│  Čita transcript, detektuje gap u vizualima, predlaže nove      │
+│  Output: 0-2 nova vizuala u src/visuals/ (ako ima gap)          │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
+│                    VISUAL-ROUTER                                 │
+│  Segmentira transcript, bira vizuale, generiše strukturu        │
+│  Output: visual-structure.json                                   │
+└─────────────────────────────────────────────────────────────────┘
+                              │
+                              ▼
+┌─────────────────────────────────────────────────────────────────┐
 │                    REMOTION-PLANNER                              │
 │  Planira SVE zajedno: voiceover, structure, camera, sounds      │
 │  Output: master-plan.json                                        │
@@ -26,7 +40,9 @@ Ovaj skill koristi **2 specijalizovana agenta** koji rade ZAJEDNO:
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**ZAŠTO 2 AGENTA:**
+**ZAŠTO OVAJ REDOSLED:**
+- Proposer PRVO obogati biblioteku vizuala (ako fali nešto)
+- Router ONDA koristi obogaćen katalog za bolji routing
 - Planner ima FOKUS na koordinaciju (camera + sounds + timing)
 - Builder ima FOKUS na implementaciju (kod)
 - Greške se lakše pronalaze (koji agent je zajebao?)
@@ -35,6 +51,37 @@ Ovaj skill koristi **2 specijalizovana agenta** koji rade ZAJEDNO:
 ---
 
 ## WORKFLOW
+
+### KORAK 0: Pokreni VISUAL PROPOSER
+
+```
+Koristi: visual-proposer skill
+Input: Transcript tekst
+Output: 0-2 nova vizuala u src/visuals/ (ako ima gap)
+```
+
+**Proposer radi:**
+1. Čita transcript + postojeći katalog (13+ vizuala)
+2. Gap analysis — da li fali vizual za neki koncept?
+3. Ako DA → predloži, generiše, user approve → dodaje u biblioteku
+4. Ako NE → preskoči, nastavi na Router
+
+**BITNO:** Ovaj korak je OPCIONI — ako nema gap-a, odmah ide na Korak 1.
+
+### KORAK 0.5: Pokreni VISUAL ROUTER
+
+```
+Koristi: remotion-visual-router skill
+Input: Transcript tekst
+Output: visual-structure.json
+```
+
+**Router radi:**
+1. Segmentira transcript u sekcije
+2. Bira vizuale za svaku sekciju (iz OBOGAĆENOG kataloga)
+3. Izvlači podatke iz teksta
+4. Grupiše u sticky-je
+5. Validira composition
 
 ### KORAK 1: Pokreni PLANNER
 

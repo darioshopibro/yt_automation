@@ -1,0 +1,19 @@
+The way large language models actually work is fascinating. You give it a prompt, and it predicts the next token, one at a time. It doesn't think or reason. It's doing math, multiplying matrices across billions of parameters.
+
+Training starts with a massive dataset. Books, websites, code repositories, research papers. The model reads all of it and learns patterns. Not facts, patterns. Which words tend to follow which other words in what context.
+
+The transformer architecture is what makes it possible. Self-attention lets the model look at every word in relation to every other word. Before transformers, models processed text sequentially. Now they process everything in parallel, which is why training on thousands of GPUs actually works.
+
+Fine-tuning takes a pre-trained model and specializes it. You feed it examples of the behavior you want. ChatGPT was fine-tuned with reinforcement learning from human feedback. Humans ranked different outputs, and the model learned which responses people prefer.
+
+The context window determines how much text the model can see at once. GPT-4 started at 8,000 tokens. Claude now handles over a million. Bigger context means the model can work with entire codebases, long documents, and complex multi-step reasoning without losing track.
+
+Prompting is an art. Zero-shot means you just ask. Few-shot means you give examples first. Chain of thought means you ask the model to explain its reasoning step by step. Each technique dramatically changes the quality of output.
+
+The cost equation is shifting fast. GPT-4 cost 30 dollars per million tokens at launch. Today similar quality costs under 1 dollar. Inference is getting cheaper by 10x every year. This means AI features that were too expensive last year are now practically free.
+
+The real bottleneck isn't intelligence, it's latency. A model that takes 10 seconds to respond feels broken. Streaming helps, but the first token delay still matters. Companies are building custom chips specifically to reduce this latency.
+
+RAG, retrieval augmented generation, is how you give models access to your own data. Instead of fine-tuning, you search your documents, find relevant chunks, and include them in the prompt. The model generates answers grounded in your actual data, not its training set.
+
+Agents are the next frontier. Instead of one prompt and one response, agents plan, use tools, browse the web, write code, and iterate. They break complex tasks into steps and execute them autonomously. This is where AI stops being a chatbot and starts being a coworker.

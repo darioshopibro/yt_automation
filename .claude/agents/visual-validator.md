@@ -36,9 +36,9 @@ Ovi fajlovi sadrže:
 
 ### A. COMPOSITION (Sticky-Level)
 - [ ] Max 2 HEAVY vizuala po sticky-ju (code-block, table, hierarchy, split-screen su HEAVY)
-- [ ] 2-3 sekcije po sticky-ju (idealno 2, max 3, nikad 4!)
-- [ ] Min 1 vizual (ne sve ikone) po sticky-ju
-- [ ] 70-80% vizual sekcija, 20-30% icon sekcija ukupno
+- [ ] Slobodan broj sekcija — koliko god transcript zahteva (1, 2, 3, 4, 5+)
+- [ ] Sekcije linearno (levo → desno), NIKAD grid
+- [ ] Vizuali nisu obavezni — sticky sa sve ikonama je validan ako content to zahteva
 
 ### B. SHAPE COMPATIBILITY
 - [ ] Svaki sticky ima konzistentan shape mode
@@ -60,25 +60,21 @@ Ovi fajlovi sadrže:
 
 ### E. VARIETY
 - [ ] Isti vizual tip max 2× po videu
-- [ ] Kinetic max 1 (samo u zadnjem sticky-ju)
-- [ ] Susedni sticky-ji NE vode istim vizual tipom
-- [ ] Min 4 različita vizual tipa korišćeno u celom videu
+- [ ] Kinetic max 1 po videu — prioritetno za PRVI sticky ako nema adekvatan vizual (animacija mora krenuti odmah)
+- [ ] Susedni sticky-ji — soft preporuka za raznovrsnost (ali content pobeđuje)
 
 ### F. DIRECTION
-- [ ] Default "right", "below" samo za drill-down
-- [ ] Max 1 "below" transition po videu
+- [ ] UVEK "right" — linearno levo → desno, nema "below", nema grid
 
 ## Kako popravljaš greške
 
 Kad nađeš grešku:
 
-1. **Previše sekcija (4):** Spoji 2 slične u jednu ili premesti u drugi sticky
-2. **Shape konflikt:** Zameni vizual sa shape-kompatibilnim (vidi matrix)
-3. **Previše ikona:** Zameni ikone sa odgovarajućim vizualom (list, stats, logo-grid)
-4. **Item count disbalans:** Skrati duži vizual ili produlji kraći
-5. **Predug tekst:** Skrati na 4-5 reči po stavci
-6. **Ponovljen vizual 3×:** Zameni treći sa alternativom
-7. **Nema variety (< 4 tipa):** Zameni neke ikone sa vizualima
+1. **Shape konflikt:** Zameni vizual sa shape-kompatibilnim (vidi matrix)
+2. **Item count disbalans:** Skrati duži vizual ili produlji kraći
+3. **Predug tekst:** Skrati na 4-5 reči po stavci
+4. **Ponovljen vizual 3×:** Zameni treći sa alternativom
+5. **Nema animacije na startu:** Ako prvi sticky nema vizual koji odmah animira — dodaj kinetic
 
 ## Output
 

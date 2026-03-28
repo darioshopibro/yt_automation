@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <title>ServiceMeshVisual — Preview</title>
+  <style>
+    @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap');
+    * { margin: 0; padding: 0; box-sizing: border-box; }
+    body { background: #080810; color: #e2e8f0; font-family: 'Inter', system-ui, sans-serif; padding: 40px; }
+    h1 { font-size: 20px; margin-bottom: 8px; }
+    .subtitle { font-size: 13px; color: #94a3b8; margin-bottom: 32px; }
+    .controls { display: flex; gap: 16px; margin-bottom: 32px; align-items: center; flex-wrap: wrap; }
+    .controls label { font-size: 12px; color: #94a3b8; }
+    .controls input[type=range] { width: 200px; accent-color: #3b82f6; }
+    .controls button { padding: 6px 16px; border-radius: 6px; border: 1px solid #1a1a2e; background: #12121f; color: #e2e8f0; font-size: 12px; cursor: pointer; font-family: inherit; transition: all 0.15s; }
+    .controls button:hover { border-color: #3b82f6; }
+    .controls button.active { background: #3b82f620; border-color: #3b82f6; color: #3b82f6; }
+    .progress-val { font-size: 12px; color: #f59e0b; font-family: 'SF Mono', monospace; margin-left: 8px; }
+    .section-title { font-size: 13px; color: #3b82f6; margin-bottom: 12px; font-weight: 600; letter-spacing: 0.5px; text-transform: uppercase; }
+    .preview-wrap { margin-bottom: 48px; }
+  </style>
+</head>
+<body>
+  <h1>ServiceMeshVisual — Preview</h1>
+  <p class="subtitle">Design: LogoGrid node boxes + Hierarchy connector lines + SVG labeled connections</p>
+
+  <div class="controls">
+    <label>Progress: <input type="range" id="progress" min="0" max="100" value="100" />
+      <span class="progress-val" id="progress-val">1.00</span>
+    </label>
+    <div>
+      <button id="btn-square" class="active" onclick="setShape('square')">Square</button>
+      <button id="btn-wide" onclick="setShape('wide')">Wide</button>
+    </div>
+    <button onclick="animate()">&#9654; Animate</button>
+  </div>
+
+  <div class="preview-wrap">
+    <div class="section-title">Microservices Architecture (6 nodes)</div>
+    <div id="c1"></div>
+  </div>
+  <div class="preview-wrap">
+    <div class="section-title">Client &rarr; Server &rarr; DB (3 nodes)</div>
+    <div id="c2"></div>
+  </div>
+  <div class="preview-wrap">
+    <div class="section-title">Event-Driven (4 nodes, dashed events)</div>
+    <div id="c3"></div>
+  </div>
+
+<script>
+// ── Design tokens ────────────────────────────────
+const C = ["#3b82f6","#22c55e","#f59e0b","#a855f7","#ef4444","#06b6d4","#f97316","#ec4899"];
+const easeOut = t => 1 - Math.pow(1-t,3);
+
+// ── Phosphor-style SVG icons (duotone look) ──────
+const ICONS = {
+  ShieldCheck: `<svg width="24" height="24" viewBox="0 0 256 256"><path d="M40,114.79V56a8,8,0,0,1,8-8H208a8,8,0,0,1,8,8v58.79c0,89.09-75.89,119.16-82.18,121.41a7.77,7.77,0,0,1-5.64,0C121.89,233.95,40,203.88,40,114.79Z" fill="currentColor" opacity="0.2"/><path d="M208,40H48A16,16,0,0,0,32,56v58.79c0,89.09,75.89,119.16,89.52,123.57a15.46,15.46,0,0,0,4.48.66,15.51,15.51,0,0,0,4.48-.66C144.11,234,224,203.88,224,114.79V56A16,16,0,0,0,208,40Zm0,74.79c0,78.42-66.35,104.62-80,109.18-13.53-4.51-80-30.67-80-109.18V56H208Z" fill="currentColor"/><polyline points="88 136 112 160 168 104" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>`,
+  User: `<svg width="24" height="24" viewBox="0 0 256 256"><circle cx="128" cy="96" r="64" fill="currentColor" opacity="0.2"/><circle cx="128" cy="96" r="64" fill="none" stroke="currentColor" stroke-width="16"/><path d="M31,216a112,112,0,0,1,194,0" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>`,
+  Lock: `<svg width="24" height="24" viewBox="0 0 256 256"><rect x="40" y="88" width="176" height="128" rx="8" fill="currentColor" opacity="0.2"/><rect x="40" y="88" width="176" height="128" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="128" cy="152" r="12" fill="currentColor"/><path d="M88,88V56a40,40,0,0,1,80,0V88" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>`,
+  ShoppingCart: `<svg width="24" height="24" viewBox="0 0 256 256"><path d="M216,64l-12.16,66.86A16,16,0,0,1,188.1,144H84.07L64,32H32" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><circle cx="80" cy="200" r="16" fill="currentColor" opacity="0.4"/><circle cx="192" cy="200" r="16" fill="currentColor" opacity="0.4"/></svg>`,
+  CreditCard: `<svg width="24" height="24" viewBox="0 0 256 256"><rect x="24" y="56" width="208" height="144" rx="8" fill="currentColor" opacity="0.2"/><rect x="24" y="56" width="208" height="144" rx="8" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><line x1="24" y1="100" x2="232" y2="100" fill="none" stroke="currentColor" stroke-width="16"/><line x1="64" y1="140" x2="96" y2="140" fill="none" stroke="currentColor" stroke-linecap="round" stroke-width="16"/></svg>`,
+  Package: `<svg width="24" height="24" viewBox="0 0 256 256"><path d="M128,129.09V232l-88-48.18V80.18Z" fill="currentColor" opacity="0.2"/><path d="M128,129.09V232l88-48.18V80.18Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M128,129.09V232l-88-48.18V80.18Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="40 80.18 128 129.09 216 80.18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><polyline points="84 52.18 128 24 216 80.18" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>`,
+  Cube: `<svg width="24" height="24" viewBox="0 0 256 256"><path d="M128,129.09V232l-88-48.18V80.18Z" fill="currentColor" opacity="0.2"/><path d="M128,129.09,40,80.18l88-56.36,88,56.36Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M128,129.09V232l88-48.18V80.18Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M128,129.09V232l-88-48.18V80.18Z" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>`,
+  Database: `<svg width="24" height="24" viewBox="0 0 256 256"><ellipse cx="128" cy="80" rx="88" ry="48" fill="currentColor" opacity="0.2"/><ellipse cx="128" cy="80" rx="88" ry="48" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40,80v48c0,26.51,39.4,48,88,48s88-21.49,88-48V80" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/><path d="M40,128v48c0,26.51,39.4,48,88,48s88-21.49,88-48V128" fill="none" stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="16"/></svg>`,
+  Queue: `<svg width="24" height="24" viewBox="0 0 256 256"><rect x="40" y="40" width="176" height="176" rx="8" fill="currentColor" opacity="0.2"/><rect x="40" y="40" width="176" height="176" rx="8" fill="none" stroke="currentColor" stroke-width="16"/><line x1="128" y1="40" x2="128" y2="216" stroke="currentColor" stroke-width="16"/><line x1="40" y1="128" x2="216" y2="128" stroke="currentColor" stroke-width="16"/></svg>`,
+};
+
+const defaultRoleIcon = { gateway: 'ShieldCheck', service: 'Cube', database: 'Database', queue: 'Queue' };
+
+// ── Data ─────────────────────────────────────────
+const data1 = {
+  nodes: [
+    { label: "API Gateway", icon: "ShieldCheck", color: "#f59e0b", role: "gateway" },
+    { label: "User Service", icon: "User", color: "#3b82f6", role: "service" },
+    { label: "Auth Service", icon: "Lock", color: "#22c55e", role: "service" },
+    { label: "Order Service", icon: "ShoppingCart", color: "#a855f7", role: "service" },
+    { label: "Payment", icon: "CreditCard", color: "#ef4444", role: "service" },
+    { label: "Inventory", icon: "Package", color: "#06b6d4", role: "database" },
+  ],
+  connections: [
+    { from: "API Gateway", to: "User Service", label: "REST" },
+    { from: "API Gateway", to: "Order Service", label: "REST" },
+    { from: "User Service", to: "Auth Service", label: "gRPC" },
+    { from: "Order Service", to: "Payment", label: "event", style: "dashed" },
+    { from: "Order Service", to: "Inventory", label: "event", style: "dashed" },
+  ],
+};
+
+const data2 = {
+  nodes: [
+    { label: "Client", icon: "User", color: "#3b82f6", role: "service" },
+    { label: "Server", icon: "Cube", color: "#22c55e", role: "service" },
+    { label: "Database", icon: "Database", color: "#f59e0b", role: "database" },
+  ],
+  connections: [
+    { from: "Client", to: "Server", label: "HTTPS" },
+    { from: "Server", to: "Database", label: "SQL" },
+  ],
+};
+
+const data3 = {
+  nodes: [
+    { label: "Producer", icon: "Cube", color: "#3b82f6", role: "service" },
+    { label: "Kafka", icon: "Queue", color: "#f59e0b", role: "queue" },
+    { label: "Consumer A", icon: "Cube", color: "#22c55e", role: "service" },
+    { label: "Consumer B", icon: "Cube", color: "#a855f7", role: "service" },
+  ],
+  connections: [
+    { from: "Producer", to: "Kafka", label: "publish" },
+    { from: "Kafka", to: "Consumer A", label: "subscribe", style: "dashed" },
+    { from: "Kafka", to: "Consumer B", label: "subscribe", style: "dashed" },
+  ],
+};
+
+// ── State ────────────────────────────────────────
+let shape = "square", prog = 1;
+
+// ── Renderer ─────────────────────────────────────
+function render(id, data) {
+  const isWide = shape === "wide";
+  const ep = easeOut(Math.min(prog * 1.5, 1));
+  const visN = Math.ceil(data.nodes.length * Math.min(ep * 1.4, 1));
+  const visC = Math.ceil(data.connections.length * Math.max((ep - 0.3) / 0.7, 0));
+  const nodes = data.nodes;
+  const conns = data.connections;
+  const cols = isWide ? Math.min(nodes.length, nodes.length <= 4 ? nodes.length : 4) : Math.min(nodes.length, 3);
+
+  // Build node grid HTML
+  let nodesHTML = '';
+  for (let i = 0; i < Math.min(visN, nodes.length); i++) {
+    const n = nodes[i];
+    const c = n.color || C[i % C.length];
+    const isGw = n.role === 'gateway';
+    const iconKey = n.icon || defaultRoleIcon[n.role || 'service'];
+    const iconSvg = (ICONS[iconKey] || ICONS.Cube).replace(/currentColor/g, c);
+
+    nodesHTML += `
+      <div data-node="${n.label}" style="
+        display:flex; flex-direction:column; align-items:center; gap:8px;
+        padding:14px 8px; border-radius:10px;
+        background:${c}${isGw ? '12' : '08'};
+        border:${isGw ? '2' : '1'}px solid ${c}${isGw ? '40' : '15'};
+        ${isGw ? `box-shadow:0 0 20px ${c}20;` : ''}
+      ">
+        <div style="
+          width:44px; height:44px; border-radius:12px;
+          background:linear-gradient(135deg, ${c}20, ${c}08);
+          border:1.5px solid ${c}30;
+          display:flex; align-items:center; justify-content:center;
+          box-shadow:0 0 15px ${c}15;
+          color:${c};
+        ">
+          <div style="filter:drop-shadow(0 0 8px ${c}60);">${iconSvg}</div>
+        </div>
+        <span style="
+          font-size:10px; font-weight:600; color:#94a3b8;
+          text-align:center; line-height:1.2;
+        ">${n.label}</span>
+        ${isGw ? `<span style="
+          font-size:7px; font-weight:800; color:${c};
+          text-transform:uppercase; letter-spacing:1px;
+          opacity:0.6; margin-top:-4px;
+        ">GATEWAY</span>` : ''}
+      </div>`;
+  }
+
+  const el = document.getElementById(id);
+  el.innerHTML = `
+    <div style="
+      background:#0f0f1a; border-radius:12px; border:1px solid #1a1a2e;
+      padding:20px; font-family:'Inter',system-ui,sans-serif;
+      width:100%; position:relative;
+    ">
+      <svg id="${id}-svg" style="
+        position:absolute; top:0; left:0; width:100%; height:100%;
+        pointer-events:none; overflow:visible; z-index:1;
+      "></svg>
+      <div id="${id}-grid" style="
+        display:grid;
+        grid-template-columns:repeat(${cols}, 1fr);
+        gap:14px;
+        position:relative; z-index:2;
+      ">${nodesHTML}</div>
+    </div>`;
+
+  // Compute connections after layout
+  requestAnimationFrame(() => {
+    const wrapper = el.querySelector('[style*="background:#0f0f1a"]');
+    const svgEl = document.getElementById(`${id}-svg`);
+    if (!wrapper || !svgEl) return;
+    const wr = wrapper.getBoundingClientRect();
+    const nodeEls = wrapper.querySelectorAll('[data-node]');
+    const rects = {};
+    nodeEls.forEach(n => {
+      const r = n.getBoundingClientRect();
+      rects[n.dataset.node] = {
+        cx: r.left - wr.left + r.width/2,
+        cy: r.top - wr.top + r.height/2,
+        w: r.width, h: r.height,
+      };
+    });
+
+    let svg = '';
+    for (let i = 0; i < Math.min(visC, conns.length); i++) {
+      const conn = conns[i];
+      const fr = rects[conn.from], tr = rects[conn.to];
+      if (!fr || !tr) continue;
+      const c = nodes.find(n => n.label === conn.from)?.color || '#94a3b8';
+      const dx = tr.cx - fr.cx, dy = tr.cy - fr.cy;
+      const dist = Math.sqrt(dx*dx + dy*dy);
+      if (!dist) continue;
+      const oF = Math.min(fr.w, fr.h)/2 + 4;
+      const oT = Math.min(tr.w, tr.h)/2 + 4;
+      const sx = fr.cx + (dx/dist)*oF, sy = fr.cy + (dy/dist)*oF;
+      const ex = tr.cx - (dx/dist)*oT, ey = tr.cy - (dy/dist)*oT;
+      const dash = conn.style === 'dashed' ? ' stroke-dasharray="6,4"' : '';
+
+      // Glow
+      svg += `<line x1="${sx}" y1="${sy}" x2="${ex}" y2="${ey}" stroke="${c}" stroke-width="4" stroke-opacity="0.06"${dash}/>`;
+      // Line
+      svg += `<line x1="${sx}" y1="${sy}" x2="${ex}" y2="${ey}" stroke="${c}40" stroke-width="1.5"${dash}/>`;
+      // Arrow
+      const a = Math.atan2(ey-sy, ex-sx);
+      const ax = ex-7*Math.cos(a-0.4), ay = ey-7*Math.sin(a-0.4);
+      const bx = ex-7*Math.cos(a+0.4), by = ey-7*Math.sin(a+0.4);
+      svg += `<polygon points="${ex},${ey} ${ax},${ay} ${bx},${by}" fill="${c}50"/>`;
+      // Label pill
+      if (conn.label) {
+        const mx = (sx+ex)/2, my = (sy+ey)/2;
+        const lw = conn.label.length * 6.5 + 16;
+        svg += `<rect x="${mx-lw/2}" y="${my-9}" width="${lw}" height="18" rx="9" fill="#0f0f1a" stroke="${c}30" stroke-width="1"/>`;
+        svg += `<text x="${mx}" y="${my+3.5}" text-anchor="middle" fill="${c}" font-size="9" font-weight="600" font-family="'SF Mono',monospace" opacity="0.7">${conn.label}</text>`;
+      }
+    }
+    svgEl.innerHTML = svg;
+  });
+}
+
+function renderAll() { render('c1', data1); render('c2', data2); render('c3', data3); }
+
+// ── Controls ─────────────────────────────────────
+document.getElementById('progress').addEventListener('input', e => {
+  prog = e.target.value / 100;
+  document.getElementById('progress-val').textContent = prog.toFixed(2);
+  renderAll();
+});
+
+function setShape(s) {
+  shape = s;
+  document.getElementById('btn-square').className = s === 'square' ? 'active' : '';
+  document.getElementById('btn-wide').className = s === 'wide' ? 'active' : '';
+  renderAll();
+}
+
+function animate() {
+  prog = 0;
+  const slider = document.getElementById('progress');
+  const valSpan = document.getElementById('progress-val');
+  const start = performance.now();
+  function step(ts) {
+    const t = Math.min((ts - start) / 2000, 1);
+    prog = t;
+    slider.value = t * 100;
+    valSpan.textContent = t.toFixed(2);
+    renderAll();
+    if (t < 1) requestAnimationFrame(step);
+  }
+  requestAnimationFrame(step);
+}
+
+renderAll();
+</script>
+</body>
+</html>

@@ -47,7 +47,7 @@ Za svaki vizualni tip, pročitaj segment transcripta i izvuci TAČNE podatke. Ne
    ❌ Lista 5 stavki + Steps 2 koraka (razlika 3)
    ✅ Lista 4 stavki + Steps 3 koraka (razlika 1)
 
-2. KINETIC: max 1 po celom videu, samo za finale/punchline
+2. KINETIC: max 1 po videu — prioritetno za PRVI sticky ako nema adekvatan vizual (animacija mora krenuti odmah od starta)
 
 3. VARIETY: isti vizual tip max 2× po videu (vidi composition-rules.md E)
 
@@ -412,7 +412,7 @@ Redis=#dc382d, PostgreSQL=#336791, MongoDB=#47a248, Nginx=#009639
 - `text`: TAČAN citat ili parafraza iz transcripta (3-10 reči)
 - `highlight`: 1-3 ključne reči
 - `style`: "impact" (default, big + glow), "stack" (vertikalno, dramatično), "reveal" (word-by-word)
-- Koristi RETKO — max 1 kinetic po videu. Za finale/punchline.
+- Max 1 kinetic po videu. Prioritetno za PRVI sticky ako nema bolji vizual za početak — animacija MORA krenuti odmah (unutar 0.5s). Može i za finale/punchline ako nije iskorišćen na početku.
 
 ---
 

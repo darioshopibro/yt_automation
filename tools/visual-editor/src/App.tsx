@@ -1,10 +1,12 @@
 import React, { useState, useEffect, useCallback, useRef } from 'react';
-import { DynamicConfig } from './types';
+import { DynamicConfig, Section } from './types';
 import { loadConfig, saveConfig, listProjects } from './api';
 import Canvas from './Canvas';
 import BottomPanel from './BottomPanel';
 import BrandingPage from './BrandingPage';
 import VisualPreview from './VisualPreview';
+import VisualSettingsPanel from './editors/VisualSettingsPanel';
+import { getColorSchemeForSection } from './types';
 
 // Deep clone helper
 function clone<T>(obj: T): T {
@@ -37,6 +39,9 @@ export default function App() {
   // Player / active section state
   const [activeSection, setActiveSection] = useState<{ stickyIdx: number; sectionIdx: number } | null>(null);
   const [audioVersion, setAudioVersion] = useState(0);
+
+  // Visual editing selection state
+  const [selectedSection, setSelectedSection] = useState<{ stickyIdx: number; sectionIdx: number } | null>(null);
 
   // Show toast notification (slides from top-right)
   const showToast = useCallback((message: string, type: Toast['type'] = 'info') => {
@@ -407,7 +412,44 @@ export default function App() {
           transition: 'flex 0.2s ease',
         }}>
           {config ? (
-            <Canvas config={config} onChange={updateConfig} activeSection={activeSection} />
+            <>
+              <Canvas
+                config={config}
+                onChange={updateConfig}
+                activeSection={activeSection}
+                selectedSection={selectedSection}
+                onSelectSection={(stickyIdx, sectionIdx) => {
+                  setSelectedSection({ stickyIdx, sectionIdx });
+                }}
+              />
+              {selectedSection && config.stickies[selectedSection.stickyIdx]?.sections[selectedSection.sectionIdx] && (() => {
+                const sec = config.stickies[selectedSection.stickyIdx].sections[selectedSection.sectionIdx];
+                let globalIdx = 0;
+                for (let i = 0; i < selectedSection.stickyIdx; i++) {
+                  globalIdx += config.stickies[i].sections.length;
+                }
+                globalIdx += selectedSection.sectionIdx;
+                const cs = getColorSchemeForSection(globalIdx, sec.colorKey);
+                return (
+                  <VisualSettingsPanel
+                    section={sec}
+                    accentColor={cs.accent}
+                    onChange={updated => {
+                      updateConfig(cfg => {
+                        const stickies = [...cfg.stickies];
+                        const sticky = { ...stickies[selectedSection.stickyIdx] };
+                        const sections = [...sticky.sections];
+                        sections[selectedSection.sectionIdx] = updated;
+                        sticky.sections = sections;
+                        stickies[selectedSection.stickyIdx] = sticky;
+                        return { ...cfg, stickies };
+                      });
+                    }}
+                    onClose={() => setSelectedSection(null)}
+                  />
+                );
+              })()}
+            </>
           ) : (
             <div style={{
               flex: 1,

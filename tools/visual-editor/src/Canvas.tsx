@@ -7,6 +7,8 @@ interface CanvasProps {
   config: DynamicConfig;
   onChange: (updater: (cfg: DynamicConfig) => DynamicConfig) => void;
   activeSection?: { stickyIdx: number; sectionIdx: number } | null;
+  selectedSection?: { stickyIdx: number; sectionIdx: number } | null;
+  onSelectSection?: (stickyIdx: number, sectionIdx: number) => void;
 }
 
 // Matching DynamicPipeline.tsx positioning
@@ -14,7 +16,7 @@ const START_X = 80;
 const STICKY_Y = 150;
 const STICKY_GAP = 50;
 
-const Canvas: React.FC<CanvasProps> = ({ config, onChange, activeSection }) => {
+const Canvas: React.FC<CanvasProps> = ({ config, onChange, activeSection, selectedSection, onSelectSection }) => {
   const containerRef = useRef<HTMLDivElement>(null);
 
   // Pan & zoom state (Figma-style)
@@ -245,10 +247,12 @@ const Canvas: React.FC<CanvasProps> = ({ config, onChange, activeSection }) => {
           {stickyPositions.slice(0, -1).map((pos, i) => {
             const nextPos = stickyPositions[i + 1];
             const stickyColor = config.stickies[i].color;
+            // Content area starts 28px down from sticky top, so center = top + 28 + height/2
+            const badgeOffset = 28;
             const x1 = pos.x + pos.width;
-            const y1 = pos.y + pos.height / 2;
+            const y1 = pos.y + badgeOffset + pos.height / 2;
             const x2 = nextPos.x;
-            const y2 = nextPos.y + nextPos.height / 2;
+            const y2 = nextPos.y + badgeOffset + nextPos.height / 2;
             return (
               <g key={`sticky-line-${i}`}>
                 <line x1={x1} y1={y1} x2={x2} y2={y2}
@@ -283,6 +287,8 @@ const Canvas: React.FC<CanvasProps> = ({ config, onChange, activeSection }) => {
                 onChange={updated => updateSticky(idx, updated)}
                 onRemove={() => removeSticky(idx)}
                 activeSectionIdx={activeSection?.stickyIdx === idx ? activeSection.sectionIdx : undefined}
+                selectedSectionIdx={selectedSection?.stickyIdx === idx ? selectedSection.sectionIdx : undefined}
+                onSelectSection={sectionIdx => onSelectSection?.(idx, sectionIdx)}
               />
             </div>
           );

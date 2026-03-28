@@ -1,6 +1,6 @@
 import React, { useState } from 'react';
 import { Sticky, Section, getColorSchemeForSection, colorRotation } from './types';
-import { getStickyDimensions, getClockwiseGridPos, getSectionBoxSize, SECTION_GAP } from './styles';
+import { getStickyDimensions, getClockwiseGridPos, getSectionBoxSize, getVisualBoxSize, SECTION_GAP } from './styles';
 import SectionBox from './SectionBox';
 import InlineEdit from './InlineEdit';
 import ColorPicker from './ColorPicker';
@@ -13,10 +13,13 @@ interface StickyNoteProps {
   onChange: (updated: Sticky) => void;
   onRemove: () => void;
   activeSectionIdx?: number; // which section is currently active (player)
+  selectedSectionIdx?: number; // which section is selected for editing
+  onSelectSection?: (sectionIdx: number) => void;
 }
 
 const StickyNote: React.FC<StickyNoteProps> = ({
   sticky, stickyIndex, globalSectionOffset, showStepPrefix, onChange, onRemove, activeSectionIdx,
+  selectedSectionIdx, onSelectSection,
 }) => {
   const [hovered, setHovered] = useState(false);
   const { width, height, cols, rows, boxW, boxH } = getStickyDimensions(sticky.sections);
@@ -47,7 +50,12 @@ const StickyNote: React.FC<StickyNoteProps> = ({
   // Calculate section positions
   const gap = SECTION_GAP;
   const padding = 24;
-  const boxSizes = sticky.sections.map(s => getSectionBoxSize(s.nodes.length, s.layout));
+  const boxSizes = sticky.sections.map(s => {
+    if (s.visualType && s.visualData) {
+      return getVisualBoxSize(s.visualType, s.visualData);
+    }
+    return getSectionBoxSize(s.nodes.length, s.layout);
+  });
   const contentW = width - padding * 2;
   const contentH = height - padding * 2;
   const gridW = (cols * boxW) + ((cols - 1) * gap);
@@ -239,6 +247,8 @@ const StickyNote: React.FC<StickyNoteProps> = ({
                 colorScheme={colorScheme}
                 onChange={updated => updateSection(idx, updated)}
                 onRemove={() => removeSection(idx)}
+                isSelected={selectedSectionIdx === idx}
+                onSelect={() => onSelectSection?.(idx)}
               />
             </div>
           );

@@ -35,13 +35,13 @@ Za svaku sekciju pitaj: "Ima li KONKRETNIH podataka?"
 IKONE SU PODRAZUMEVANO. Vizuali samo kad ima PRAVIH podataka.
 ```
 
-### 0.3. Preporuke za sekcije i nodove (SOFT — content uvek pobeđuje!)
+### 0.3. Slobodan broj sekcija — content diktira strukturu
 
 ```
 Sekcije po sticky-ju:
-  Preferiraj 2 ili 4 (najčistiji layout)
-  3 je OK ako content to zahteva
+  NEMA LIMITA — koliko god transcript zahteva (1, 2, 3, 4, 5+)
   Nikad ne dodavaj fake sekciju samo za uniformnost
+  Nikad ne merge-uj sekcije samo da bi imao "lep" broj
 
 Node count po sekciji:
   Preferiraj 2 ili 3 noda
@@ -50,12 +50,11 @@ Node count po sekciji:
   Preferiraj isti count unutar sticky-ja ali content > uniformnost
 
 Sticky height:
-  Preferiraj iste visine (2+2+2 ili 4+4+4)
-  Ali content je bitniji — nikad ne forsiraj strukturu zarad izgleda
-
+  Preferiraj iste visine ali content je bitniji
+  Nikad ne forsiraj strukturu zarad izgleda
 ```
 
-**KLJUČNO: Ova pravila su PREPORUKE. Ako ih forsiraš i dobiješ loš content — content pobeđuje.**
+**KLJUČNO: Content UVEK pobeđuje. Transcript diktira koliko sekcija treba, ne layout pravila.**
 
 ---
 
@@ -71,15 +70,7 @@ Transcript: "PostgreSQL 85%, Redis 43%, MongoDB 21%"
 PRAVILO: 2+ konkretna broja u segmentu = VIZUAL, ne ikone. Bez izuzetka.
 ```
 
-### Greška 2: 3 sekcije u sticky-ju
-```
-Transcript poredi 3 baze: Redis, PostgreSQL, MongoDB
-❌ 3 sekcije: [Redis] [PostgreSQL] [MongoDB] — asimetričan L-shape
-✅ 2 sekcije: [Redis (caching)] [SQL Databases] — merge PG+Mongo u jednu
-✅ 4 sekcije: [Redis] [PostgreSQL] [MongoDB] [Summary] — dodaj 4.
-```
-
-### Greška 3: Kod/komande kao flow ikone umesto terminal/code-block
+### Greška 2: Kod/komande kao flow ikone umesto terminal/code-block
 ```
 Transcript: "Run npm init, then npm install express typescript"
 ❌ [flow] npm init → Install  (2 ikone — gubi informaciju!)
@@ -134,11 +125,11 @@ Vizuali po "težini":
 ❌ code-block + hierarchy + table  (3 heavy = sticky prevelik za kameru)
 ```
 
-### A2. Sekcije po sticky-ju
+### A2. Sekcije po sticky-ju — SLOBODAN BROJ
 
-- **2-4 sekcije** po sticky-ju (prati koliko pod-tema transcript ima za taj korak)
-- **4 sekcije** rade odlično sa icon-only sekcijama (mali footprint, čist 2x2 grid)
-- **2 sekcije** rade odlično sa vizualima (side-by-side)
+- **Koliko god transcript zahteva** (1, 2, 3, 4, 5+) — content diktira, ne layout
+- Sekcije UVEK idu linearno (levo → desno), NIKAD grid
+- Akcenat na tome da se transcript što bolje objasni i podeli
 
 ### A3. Vizuali nisu obavezni
 
@@ -371,9 +362,20 @@ Ako transcript zahteva treću instancu istog tipa:
 
 **Izuzetak:** Icon sekcije nemaju repeat limit.
 
-### E2. Kinetic: max 1 po videu
+### E2. Kinetic: max 1 po videu — PRIORITETNO za početak!
 
-Kinetic typography ide SAMO u zadnji sticky kao finale/punchline/takeaway. Nikad za regularan sadržaj.
+```
+PRAVILO: Animacija MORA da krene odmah (unutar 0.5 sekundi od početka videa).
+
+Ako prvi sticky NEMA adekvatan vizual ili ikone koje odmah kreću animaciju:
+  → Stavi kinetic u PRVI sticky kao intro/hook
+  → Kinetic odmah pokreće animaciju — gledalac vidi motion od frame 1
+
+Kinetic NIJE obavezan za kraj videa. Koristi ga gde ima smisla:
+  - Kao intro/hook (prvi sticky) — kad nema bolji vizual za početak
+  - Kao punchline/finale (zadnji sticky) — kad transcript ima jak završetak
+  - NIKAD oboje u istom videu (max 1 kinetic po videu)
+```
 
 ### E3. Susedni sticky-ji — soft preporuka za raznovrsnost
 
@@ -394,15 +396,12 @@ Poželjno ali NE obavezno:
 
 ## F. DIRECTION & CONNECTION
 
-### F1. Direction izbor
+### F1. Direction — UVEK "right"
 
 ```
-Sledeći sticky je DUBLJE u istu temu?
-  ├─ DA → direction: "below" (drill-down)
-  └─ NE: Nova faza/topic?
-      ├─ DA → direction: "right" (horizontalna progresija)
-      └─ NE: Kontrast/poređenje?
-          └─ DA → direction: "right" + connectionToNext: "vs"
+Svi sticky-ji idu linearno levo → desno. UVEK direction: "right".
+Nema "below", nema grid, nema clockwise.
+Kamera samo panuje u jednom smeru — jednostavno, glatko, profesionalno.
 ```
 
 ### F2. Connection type izbor
@@ -413,10 +412,6 @@ Sledeći sticky je DUBLJE u istu temu?
 | `bidirectional` | Dvosmerna komunikacija | API ↔ Database |
 | `vs` | Direktno poređenje (trigger group camera zoom-out) | Monolith vs Microservices |
 | `none` | Bez vizuelne veze (zadnji sticky, ili nepovezani) | Conclusion |
-
-### F3. Below sticky — nikad širi od parent-a
-
-Kad koristiš direction: "below", donji sticky ne sme biti širi od gornjeg. Iste širine ili uži — vizuelna hijerarhija.
 
 ---
 

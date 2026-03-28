@@ -51,7 +51,7 @@ Za svaki segment, proveri od vrha ka dnu (uzmi PRVI koji matchuje):
 6. TUTORIAL/KORACI? → process-steps
 7. TECH STACK? → logo-grid
 8. HIJERARHIJA? → hierarchy
-9. KEY QUOTE? → kinetic (MAX 1 po videu!)
+9. KEY QUOTE ili INTRO BEZ VIZUALA? → kinetic (MAX 1 po videu! Prioritetno za prvi sticky ako nema bolji vizual — animacija MORA krenuti odmah)
 10. NIŠTA → ikone sa layout-om (flow/vs/combine/negation/if-else/merge/bidirectional/filter)
 
 ### Korak 3: Ekstrakcija
@@ -64,13 +64,14 @@ echo '["concept1", "concept2"]' | python3 /Users/dario61/Desktop/YT\ automation/
 ```
 
 ### Korak 4: Grupisanje u sticky-je
-- MAX 4 stickies, MIN 2 sekcije po sticky-ju
+- Koliko god sticky-ja transcript zahteva — NEMA LIMITA
+- Koliko god sekcija po sticky-ju treba — NEMA LIMITA (1, 2, 3, 4, 5+)
 - Grupiši SRODNE segmente u isti sticky
-- Idealno 2 sekcije po sticky-ju (ne 4!)
+- Akcenat na tome da se transcript što bolje objasni i podeli
 
 ### Korak 5: Direction + Connections
-- direction: "right" (default) ili "below"
-- connectionToNext: "flow" (default) ili "bidirectional"
+- direction: UVEK "right" — linearno levo → desno, NIKAD grid ili below
+- connectionToNext: "flow" (default), "bidirectional", "vs", ili "none"
 
 ## Output format
 
@@ -113,5 +114,5 @@ Sačuvaj kao JSON u workspace/{project-name}/visual-structure.json:
 - Max 5 items po vizualu (vidi extraction-rules za tačne limite po tipu)
 - Min 2 items po vizualu
 - NIKAD isti icon dva puta u celom videu
-- Kinetic max 1 po videu (finale/punchline)
+- Kinetic max 1 po videu — PRIORITETNO za prvi sticky ako nema adekvatan vizual (animacija mora krenuti odmah od starta, unutar 0.5s)
 - Podaci izvučeni iz transcripta, NE izmišljeni

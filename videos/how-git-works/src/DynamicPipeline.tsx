@@ -528,11 +528,12 @@ const getSectionBoxSize = (nodeCount: number, layout?: string, visualType?: stri
   return getContainerSize(nodeCount);
 };
 
-// Sticky size based on sections — each section has its OWN size
-const getStickyDimensions = (sections: SectionConfig[]) => {
+// Sticky size based on sections — uses globalMaxH for uniform height
+// LINEAR LAYOUT: all sections in a single row (left → right)
+const getStickyDimensions = (sections: SectionConfig[], globalMaxH?: number) => {
   const sectionCount = sections.length;
-  const cols = sectionCount <= 2 ? sectionCount : sectionCount <= 4 ? 2 : 3;
-  const rows = Math.ceil(sectionCount / cols);
+  const cols = sectionCount; // Always single row — linear layout
+  const rows = 1;
   const gap = 16;
   const paddingX = 24;
   const paddingY = 16;
@@ -551,64 +552,34 @@ const getStickyDimensions = (sections: SectionConfig[]) => {
     }
     colWidths.push(maxW);
   }
-  // Use GLOBAL max for uniform sizing — all sections same width and height
-  const globalMaxW = Math.max(...boxSizes.map(b => b.width));
-  const globalMaxH = Math.max(...boxSizes.map(b => b.height));
+  // Use provided global max height or calculate from this sticky's sections
+  const maxW = Math.max(...boxSizes.map(b => b.width));
+  const maxH = globalMaxH || Math.max(...boxSizes.map(b => b.height));
 
-  const width = paddingX + (globalMaxW * cols) + ((cols - 1) * gap);
-  const height = (paddingY * 2) + (globalMaxH * rows) + ((rows - 1) * gap);
+  const width = paddingX + (maxW * cols) + ((cols - 1) * gap);
+  const height = (paddingY * 2) + (maxH * rows) + ((rows - 1) * gap);
 
-  return { width, height, cols, rows, boxW: globalMaxW, boxH: globalMaxH };
+  return { width, height, cols, rows, boxW: maxW, boxH: maxH };
 };
 
-// Get clockwise grid position for section index
-// For 4 sections: 0=top-left, 1=top-right, 2=bottom-right, 3=bottom-left
-// For 3 sections: 0=top-left, 1=top-right, 2=bottom-right
-const getClockwiseGridPos = (index: number, total: number, cols: number): { row: number; col: number } => {
-  if (total <= 2) {
-    return { row: 0, col: index };
-  }
-
-  if (total === 3) {
-    // 0 -- 1
-    //      |
-    //      2
-    const positions = [
-      { row: 0, col: 0 },
-      { row: 0, col: 1 },
-      { row: 1, col: 1 },
-    ];
-    return positions[index];
-  }
-
-  if (total === 4) {
-    // 0 -- 1
-    // |    |
-    // 3 -- 2
-    const positions = [
-      { row: 0, col: 0 },
-      { row: 0, col: 1 },
-      { row: 1, col: 1 },
-      { row: 1, col: 0 },
-    ];
-    return positions[index];
-  }
-
-  // Fallback for 5+
-  return { row: Math.floor(index / cols), col: index % cols };
+// LINEAR layout: all sections in a single row (left → right)
+// No grid, no clockwise — just horizontal progression
+const getLinearPos = (index: number, _total: number, _cols: number): { row: number; col: number } => {
+  return { row: 0, col: index };
 };
 
 // Calculate section box positions within a sticky
-// CLOCKWISE order: [0]→[1]→[2]→[3] visually goes around the square
+// LINEAR layout: all sections left → right in a single row
 const getSectionPositions = (
   sections: SectionConfig[],
   stickyWidth: number,
   stickyHeight: number,
-  centerVertically: boolean
+  centerVertically: boolean,
+  overrideMaxH?: number
 ) => {
   const sectionCount = sections.length;
-  const cols = sectionCount <= 2 ? sectionCount : 2;
-  const rows = Math.ceil(sectionCount / cols);
+  const cols = sectionCount; // Always single row — linear layout
+  const rows = 1;
   const gap = 16;
   const padding = 16;
 
@@ -618,7 +589,7 @@ const getSectionPositions = (
 
   // GLOBAL max — all sections same size for uniform grid
   const globalMaxW = Math.max(...boxSizes.map(b => b.width));
-  const globalMaxH = Math.max(...boxSizes.map(b => b.height));
+  const globalMaxH = overrideMaxH || Math.max(...boxSizes.map(b => b.height));
   const colWidths = Array(cols).fill(globalMaxW);
   const rowHeights = Array(rows).fill(globalMaxH);
 
@@ -646,7 +617,7 @@ const getSectionPositions = (
   const positions: { x: number; y: number; cx: number; cy: number; right: number; bottom: number; w: number; h: number }[] = [];
 
   for (let i = 0; i < sectionCount; i++) {
-    const { row, col } = getClockwiseGridPos(i, sectionCount, cols);
+    const { row, col } = getLinearPos(i, sectionCount, cols);
 
     // Use GLOBAL max dimensions so ALL sections in sticky are uniform
     const maxW = Math.max(...colWidths);
@@ -1150,9 +1121,19 @@ export const DynamicPipeline: React.FC = () => {
   const startY = 150;
   const BADGE_H = 38;
 
+  // PRE-PASS: Calculate global max section height across ALL stickies
+  let prePassMaxH = 0;
+  for (const sticky of cfg.stickies) {
+    const sm = getStickyShapeMode(sticky.sections);
+    for (const sec of sticky.sections) {
+      const size = getSectionBoxSize((sec.nodes?.length || 0), sec.layout, sec.visualType, sec.visualData, sm);
+      prePassMaxH = Math.max(prePassMaxH, size.height);
+    }
+  }
+
   const stickyLayouts: { width: number; height: number; cols: number; rows: number; boxW: number; boxH: number; x: number; y: number }[] = [];
   for (let i = 0; i < cfg.stickies.length; i++) {
-    const dims = getStickyDimensions(cfg.stickies[i].sections);
+    const dims = getStickyDimensions(cfg.stickies[i].sections, prePassMaxH);
     if (i === 0) {
       stickyLayouts.push({ ...dims, x: startX, y: startY });
     } else {
@@ -1177,6 +1158,9 @@ export const DynamicPipeline: React.FC = () => {
       stickyLayouts.push({ ...dims, x: Math.max(20, x), y });
     }
   }
+
+  // Global max section height — already computed in pre-pass
+  const globalMaxSectionHeight = prePassMaxH;
 
   // Canvas size = bounding box of ALL stickies (2D)
   const allLeft = Math.min(...stickyLayouts.map(s => s.x));
@@ -1218,7 +1202,7 @@ export const DynamicPipeline: React.FC = () => {
     }
 
     // For 3+ sections, pan toward active section while keeping scale
-    const { positions } = getSectionPositions(sticky.sections, layout.width, layout.height, sticky.sections.length <= 2);
+    const { positions } = getSectionPositions(sticky.sections, layout.width, layout.height, sticky.sections.length <= 2, globalMaxSectionHeight);
     const pos = positions[sectionIdx];
     if (!pos) return { x: stickyCenterX, y: stickyCenterY, scale: stickyScale };
 
@@ -1517,7 +1501,8 @@ export const DynamicPipeline: React.FC = () => {
             sticky.sections,
             layout.width,
             layout.height,
-            centerVertically
+            centerVertically,
+            globalMaxSectionHeight
           );
 
           return (
@@ -1558,35 +1543,11 @@ export const DynamicPipeline: React.FC = () => {
                   const color1 = getColorSchemeForSection(i, section.nodes?.[0]?.icon);
                   const color2 = getColorSchemeForSection(i + 1, nextSection.nodes?.[0]?.icon);
 
-                  // Get CLOCKWISE grid positions
-                  const gridPos1 = getClockwiseGridPos(i, sectionCount, cols);
-                  const gridPos2 = getClockwiseGridPos(i + 1, sectionCount, cols);
-
-                  let x1: number, y1: number, x2: number, y2: number;
-
-                  if (gridPos1.row === gridPos2.row) {
-                    // Same row - horizontal line
-                    if (gridPos2.col > gridPos1.col) {
-                      // Going right: 0→1
-                      x1 = pos1.right; y1 = pos1.cy;
-                      x2 = pos2.x; y2 = pos2.cy;
-                    } else {
-                      // Going left: 2→3
-                      x1 = pos1.x; y1 = pos1.cy;
-                      x2 = pos2.right; y2 = pos2.cy;
-                    }
-                  } else {
-                    // Different rows - vertical line (90° angle, NOT diagonal!)
-                    if (gridPos2.row > gridPos1.row) {
-                      // Going down: 1→2
-                      x1 = pos1.cx; y1 = pos1.bottom;
-                      x2 = pos2.cx; y2 = pos2.y;
-                    } else {
-                      // Going up: 3→0 (if looping)
-                      x1 = pos1.cx; y1 = pos1.y;
-                      x2 = pos2.cx; y2 = pos2.bottom;
-                    }
-                  }
+                  // LINEAR layout: always horizontal lines (left → right)
+                  const x1 = pos1.right;
+                  const y1 = pos1.cy;
+                  const x2 = pos2.x;
+                  const y2 = pos2.cy;
 
                   return (
                     <AnimatedLine
@@ -1657,7 +1618,7 @@ export const DynamicPipeline: React.FC = () => {
                     shapeMode={stickyShape}
                     progress={visualProgress}
                     overrideWidth={pos.w}
-                    overrideHeight={pos.h}
+                    overrideHeight={globalMaxSectionHeight}
                   >
                     {/* Fallback: render NodeItems if no layout specified */}
                     {!section.visualType && (!section.layout || section.layout === "grid") && (section.nodes || []).map((node, nodeIndex) => {

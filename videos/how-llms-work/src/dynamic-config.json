@@ -1,0 +1,323 @@
+{
+  "title": "How LLMs Actually Work",
+  "fps": 30,
+  "totalFrames": 5496,
+  "showStepPrefix": true,
+  "brand": {
+    "colors": {
+      "primary": "#3b82f6",
+      "secondary": "#06b6d4",
+      "accent": "#f59e0b",
+      "background": "#030305",
+      "backgroundGradient": "radial-gradient(ellipse at 50% 0%, #0a1628 0%, #030305 70%)",
+      "text": "#f8fafc",
+      "textMuted": "#94a3b8",
+      "stickyColors": [
+        "#f97316",
+        "#3b82f6",
+        "#22c55e",
+        "#a855f7"
+      ]
+    },
+    "font": {
+      "heading": "SF Mono, Fira Code, monospace",
+      "body": "Inter, system-ui, sans-serif",
+      "code": "JetBrains Mono, Fira Code, monospace"
+    },
+    "style": {
+      "stickyBorder": true,
+      "stickyBorderRadius": 20,
+      "stickyBorderWidth": 1.5,
+      "stickyBorderStyle": "solid",
+      "sectionBorder": true,
+      "sectionBorderRadius": 20,
+      "glass": {
+        "enabled": true,
+        "blur": 16,
+        "borderOpacity": 0.37,
+        "glowIntensity": 1.0
+      },
+      "nodeShape": "rounded",
+      "nodeIconSize": 56,
+      "connectorStyle": "arrow",
+      "shadow": true,
+      "backgroundPattern": "none"
+    }
+  },
+  "stickies": [
+    {
+      "step": 1,
+      "title": "What LLMs Are",
+      "color": "#f97316",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 0,
+      "sections": [
+        {
+          "id": "section_1_1",
+          "title": "Token Prediction Engine",
+          "startFrame": 5,
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "It doesn't think. It does math.",
+            "highlight": [
+              "think",
+              "math"
+            ],
+            "style": "impact"
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_1_2",
+          "title": "Training on Data",
+          "startFrame": 427,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Dataset",
+              "icon": "Database"
+            },
+            {
+              "label": "Patterns",
+              "icon": "GridFour"
+            },
+            {
+              "label": "Parameters",
+              "icon": "Stairs"
+            }
+          ]
+        },
+        {
+          "id": "section_1_3",
+          "title": "Transformer Architecture",
+          "startFrame": 970,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Attention",
+              "icon": "Brain"
+            },
+            {
+              "label": "Parallel",
+              "icon": "Rows"
+            },
+            {
+              "label": "GPUs",
+              "icon": "GraphicsCard"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Training & Tuning",
+      "color": "#3b82f6",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 1536,
+      "sections": [
+        {
+          "id": "section_2_1",
+          "title": "Fine-Tuning with RLHF",
+          "startFrame": 1546,
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              {
+                "label": "Pre-train",
+                "description": "Base model learns patterns"
+              },
+              {
+                "label": "Feed Examples",
+                "description": "Show desired behavior"
+              },
+              {
+                "label": "Human Ranking",
+                "description": "Rank different outputs"
+              },
+              {
+                "label": "Learn Preference",
+                "description": "Model adapts to feedback"
+              }
+            ]
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_2_2",
+          "title": "Context Window Growth",
+          "startFrame": 2131,
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              {
+                "label": "GPT-4 Start",
+                "value": "8K",
+                "subtitle": "tokens"
+              },
+              {
+                "label": "GPT-4 Turbo",
+                "value": "128K",
+                "subtitle": "tokens"
+              },
+              {
+                "label": "Claude Now",
+                "value": "1M+",
+                "subtitle": "tokens"
+              }
+            ]
+          },
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Prompting & Cost",
+      "color": "#22c55e",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 2688,
+      "sections": [
+        {
+          "id": "section_3_1",
+          "title": "Prompting Techniques",
+          "startFrame": 2698,
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Zero-shot: just ask",
+              "Few-shot: give examples",
+              "Chain of thought: step-by-step"
+            ],
+            "style": "numbered"
+          },
+          "nodes": []
+        },
+        {
+          "id": "section_3_2",
+          "title": "Cost Dropping Fast",
+          "startFrame": 3238,
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              {
+                "label": "GPT-4 Launch",
+                "value": 30
+              },
+              {
+                "label": "Today Similar",
+                "value": 1
+              }
+            ],
+            "unit": "$",
+            "maxValue": 35
+          },
+          "nodes": []
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Latency & RAG",
+      "color": "#a855f7",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "startFrame": 3823,
+      "sections": [
+        {
+          "id": "section_4_1",
+          "title": "The Latency Problem",
+          "startFrame": 3833,
+          "layout": "negation",
+          "nodes": [
+            {
+              "label": "Slow",
+              "icon": "Timer"
+            },
+            {
+              "label": "Streaming",
+              "icon": "Screencast"
+            },
+            {
+              "label": "Custom Chips",
+              "icon": "Cpu"
+            }
+          ]
+        },
+        {
+          "id": "section_4_2",
+          "title": "RAG Pipeline",
+          "startFrame": 4293,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Documents",
+              "icon": "FileText"
+            },
+            {
+              "label": "Search",
+              "icon": "MagnifyingGlass"
+            },
+            {
+              "label": "Prompt",
+              "icon": "TerminalWindow"
+            },
+            {
+              "label": "Answer",
+              "icon": "Target"
+            }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Agents: Next Frontier",
+      "color": "#f97316",
+      "direction": "right",
+      "connectionToNext": "none",
+      "startFrame": 4858,
+      "sections": [
+        {
+          "id": "section_5_1",
+          "title": "Agent Capabilities",
+          "startFrame": 4868,
+          "layout": "flow",
+          "nodes": [
+            {
+              "label": "Plan",
+              "icon": "Strategy"
+            },
+            {
+              "label": "Use Tools",
+              "icon": "Wrench"
+            },
+            {
+              "label": "Execute",
+              "icon": "Rocket"
+            }
+          ]
+        },
+        {
+          "id": "section_5_2",
+          "title": "Chatbot to Coworker",
+          "startFrame": 5338,
+          "layout": "negation",
+          "nodes": [
+            {
+              "label": "Chatbot",
+              "icon": "Chat"
+            },
+            {
+              "label": "Coworker",
+              "icon": "Robot"
+            }
+          ]
+        }
+      ]
+    }
+  ]
+}

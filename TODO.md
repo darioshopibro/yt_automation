@@ -13,92 +13,90 @@ bo**Vreme po videu:** 30-60 min
 
 ## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
 
-### ⚡ #1 PRIORITET: Slobodan broj sekcija + linearni layout
+### ⚡⚡⚡ #1 NAJBITNIJE: Rating Skill — Ocenjivanje vizuala i videa
 
-**Problem:** Svi testovi izgledaju slično — uvek 2 sekcije po sticky-ju, uvek isti pattern. I kinetic typography na kraju SVAKOG videa.
+**Problem:** Svaki put kad kažem "rate" ili "oceni" moram da objašnjavam šta da se ocenjuje i kako. Treba standardizovan skill.
 
-**Fix:**
-- [ ] Ukloniti pravilo "idealno 2 sekcije po sticky-ju" — neka bude koliko god treba (1, 2, 3, 4, 5)
-- [ ] Ukloniti pravilo "max 3 sekcije" — neka content diktira broj
-- [ ] Sekcije UVEK idu linearno (levo → desno), NIKAD clockwise grid
-  - Trenutno: 4 sekcije = 2×2 grid (clockwise) → komplikovano za kameru
-  - Novo: 4 sekcije = horizontalni red ili vertikalni stack
-  - Kamera samo panuje levo→desno ili gore→dole — JEDNOSTAVNIJE
-- [ ] Ukloniti obavezan kinetic na kraju svakog videa — samo kad ima smisla
-- [ ] Update composition-rules.md — skinuti rigidna ograničenja
-- [ ] Update visual-generator agent — slobodniji u broju sekcija
-- [ ] Update DynamicPipeline.tsx — sekcije linearno umesto clockwise grid
+**Šta treba:**
+- [ ] Napraviti `rating` skill koji se triggeruje na "rate", "oceni", "score", "evaluate"
+- [ ] Istražiti best practices za ocenjivanje vizuala/videa (web + YT research)
+- [ ] Skill mora da zna ŠTA ocenjuje (vizual, ceo video, routing odluke, animacije...)
+- [ ] Standardne kategorije za ocenu:
+  - **Logika:** Da li je pravi vizual izabran za taj content?
+  - **Variety:** Koliko različitih vizuala, da li se ponavljaju?
+  - **Composition:** Shape match, weight balance, density
+  - **Readability:** Da li se tekst čita, font size, kontrast
+  - **Animation:** Da li animacije prate govor, timing
+  - **Overall:** Ukupna ocena 1-10
+- [ ] Output: strukturiran JSON sa ocenama + tekstualnim komentarima
+- [ ] Čuva ocene u fajlu za tracking (koji video koliko, trend poboljšanja)
+- [ ] Može da poredi: "ovo je bolje od prošlog puta jer..."
+- [ ] **Integracija sa grill-me:** Posle svakog grill-me kad se napravi plan, automatski pokreni rating skill/agenta koji:
+  - Oceni plan prema kategorijama
+  - Ispiše šta ne valja i listu TODO stavki za popravku
+  - Predloži konkretne fixeve pre nego što se krene sa implementacijom
+  - Ovo sprečava da se implementira loš plan bez provere
 
-### ⚡ #2 PRIORITET: Visual Proposal Agent — Predlaže NOVE vizuale po transcriptu
+### ⚡ NOVI VIZUALI — Messaging + Brainstorm
 
-**Ideja:** Pre nego što uopšte koristimo postojeće vizuale, agent čita transcript i PREDLAŽE koje NOVE vizuale bi bile dobre za taj specifičan content. Ovo je iterativan proces koji stalno generiše nove vizuale dok radimo.
+**Messaging vizuali:**
+- [ ] WhatsApp poruka vizual — message bubble sa avatar, timestamp, zelena tema
+- [ ] Telegram poruka vizual — plavi bubble, channel stil
+- [ ] Slack poruka vizual — thread format sa avatar + username + timestamp
+- [ ] Discord poruka vizual — dark tema, embed cards
+- [ ] Email vizual — inbox preview sa subject, from, snippet
+- [ ] SMS/iMessage vizual — sivi/plavi bubbles
+- [ ] Notifikacija vizual — push notification card (iOS/Android stil)
+- [ ] Generic chat vizual — conversation flow sa 2+ učesnika
 
-**Workflow:**
-```
-1. Agent dobije transcript
-2. Analizira sadržaj — o čemu se radi, koji elementi su specifični
-3. Predloži 2-3 NOVA vizuala koja ne postoje a bila bi savršena za ovaj content
-   - Npr. za Kubernetes transcript: "Cluster Diagram vizual" sa nodovima i podovima
-   - Npr. za CI/CD: "Pipeline Stage vizual" sa fazama i gatovima
-4. Agent GENERIŠE te vizuale (React komponente) — basic verzija
-5. Otvori preview na portu — user vidi kako izgledaju
-6. User edituje/approve-uje u editoru
-7. Vizuali se dodaju u biblioteku za buduće videe
-8. Nastavi sa ostatkom pipeline-a (routing, planning, building)
-```
+**Razmisliti o još vizualima (brainstorm):**
+- [ ] Browser/URL vizual — address bar + web page preview
+- [ ] Dashboard vizual — metrike u grid-u sa sparklines
+- [ ] Kanban board vizual — kolone sa karticama (Trello/Jira stil)
+- [ ] File explorer vizual — folder structure sa ikonama fajlova
+- [ ] API request/response vizual — method + URL + body + response
+- [ ] Git diff vizual — zeleno/crveno linije (added/removed)
+- [ ] Error/Warning vizual — crveni/žuti alert box sa stack trace
+- [ ] Pricing table vizual — Free/Pro/Enterprise kolone
+- [ ] Testimonial/Quote vizual — avatar + citat + ime
+- [ ] Flowchart vizual — decision diamond + boxes sa strelicama
+- [ ] Annotated screenshot vizual — slika sa labelama i strelicama
 
-**Self-evaluation petlja:**
-- Agent napravi vizual → sam ga oceni (1-10)
-- Ako ocena < 7 → proba ponovo sa drugačijim pristupom
-- Posle 2-3 pokušaja → prikaže najbolji user-u
-- Na osnovu user feedback-a uči šta radi a šta ne
+### ✅ #0 DONE: Sve sekcije u projektu ISTE VISINE
 
-**Zašto je ovo #0:**
-- Svaki put kad radimo video, potencijalno dobijamo NOVE vizuale
-- Biblioteka vizuala RASTE sa svakim projektom
-- Vizuali postaju SVE specifičniji i bolji za tech content
-- Umesto da imamo 13 generic vizuala, imamo 50+ specijalizovanih
+**Urađeno** — globalMaxSectionHeight radi, sekcije su alignovane.
 
-**Implementacija:**
-- [ ] Napraviti `visual-proposer` skill/agent koji čita transcript i predlaže nove vizuale
-- [ ] Agent generiše React komponentu za svaki predloženi vizual
-- [ ] Preview na localhost portu za user review
-- [ ] Self-evaluation: agent oceni svaki vizual pre prikazivanja
-- [ ] Approved vizuali se dodaju u `src/visuals/` biblioteku
-- [ ] Visual Router se automatski ažurira sa novim vizualima
+### ✅ #1 DONE: Slobodan broj sekcija + linearni layout
+
+**Urađeno:**
+- [x] Uklonjen limit "idealno 2 sekcije" — sada koliko god transcript zahteva (1-5+)
+- [x] Uklonjen "max 3 sekcije" i "Greška 2: 3 sekcije" pravilo
+- [x] Direction UVEK "right" — linearno levo→desno, nema grid, nema below
+- [x] Kinetic nije obavezan na kraju — prioritetno za PRVI sticky ako nema vizual (animacija odmah od starta)
+- [x] composition-rules.md — sva rigidna ograničenja skinuta
+- [x] visual-generator.md — slobodan broj sticky-ja i sekcija
+- [x] visual-validator.md — nove validacije bez rigidnih limita
+- [x] extraction-rules.md — kinetic pravila ažurirana
+- [x] DynamicPipeline.tsx — sekcije linearno umesto clockwise grid (template + svih 12 video projekata)
+
+### ✅ #2 DONE: Visual Proposal Agent
+
+**Urađeno** — `visual-proposer` skill napravljen (`.claude/skills/visual-proposer/`). Agent čita transcript, predlaže nove vizuale, generiše React komponente.
 
 ---
 
-### ⚡ #1 PRIORITET: Agent Arhitektura za Visual Router
+### ✅ #1 DONE: Visual Router — 1 skill + 2 agenta
 
-**Problem:** Trenutni Visual Router je 1 skill sa 1787 linija pravila. Agent zaboravi pravila dok generiše. Rezultat: 4 od 4 testova imaju greške (previše ikona, fali table za poređenje, 4 sekcije umesto 2-3).
+**Urađeno:**
+- [x] Visual Router skill — `.claude/skills/remotion-visual-router/SKILL.md`
+- [x] visual-generator agent — `.claude/agents/visual-generator.md` (segmentira transcript, bira vizuale, grupiše u sticky-je)
+- [x] visual-validator agent — `.claude/agents/visual-validator.md` (validira composition, shape, variety)
+- [x] Composition rules, extraction rules, visual catalog — reference fajlovi
 
-**Rešenje:** Razbiti na fokusirane agente. Ali MORA se pažljivo isplanirati:
-
-- [ ] **Istražiti:** Mogu li sub-agenti da pozivaju skillove? Ili agenti imaju agente?
-- [ ] **Istražiti:** Šta je bolje — 1 skill sa 3 sub-agenta, ili 3 skilla, ili main skill + 3 agenta sa svojim skilovima?
-- [ ] **Definisati pipeline:**
-  ```
-  Opcija A: 1 orchestrator skill → 3 sub-agenta (svaki čita samo svoja pravila)
-    Agent A (Segmenter): transcript → segmenti + vizual tipovi
-    Agent B (Extractor): segmenti → visualData (paralelizovati po segmentima?)
-    Agent C (Composer): sekcije → sticky-ji + composition validation
-
-  Opcija B: Main skill → 3 agenta → svaki agent ima SVOJ skill
-    remotion-segmenter skill → Agent A
-    remotion-extractor skill → Agent B
-    remotion-composer skill → Agent C
-
-  Opcija C: Agent SDK programatski pipeline
-    Python/TS kod orkestrira sve, poziva Claude API per-step
-  ```
-- [ ] **Ključna pitanja za plan mode:**
-  - Koliko pravila svaki agent treba? (target: max 300 linija)
-  - Šta se deli između agenata? (transcript, ikone, boje)
-  - Kako se sprečavaju duplikati ikona kad B agenti rade paralelno?
-  - Gde se čuva intermediate state? (fajl? memorija?)
-  - Kako validation radi — odvojen agent ili deo Composer-a?
-- [ ] **NE IMPLEMENTIRATI BEZ PLANA** — ovo mora plan mode diskusija jer ako se zajebemo moramo da refaktorišemo SVE
+**LATER — Razbijanje u sub-agente (ako bude potrebno):**
+- [ ] Opcija A: 1 orchestrator skill → 3 sub-agenta (Segmenter, Extractor, Composer)
+- [ ] Opcija B: Agent SDK programatski pipeline
+- [ ] NE IMPLEMENTIRATI BEZ PLANA — plan mode diskusija kad dođe vreme
 
 ### FAZA 1: Korekcije workflow ✅ DONE
 
@@ -135,20 +133,17 @@ bo**Vreme po videu:** 30-60 min
 - [x] Visual type routing u DynamicPipeline (switch na visualType)
 - [x] Visuals Preview page (localhost:3002 → Visuals tab)
 
-### FAZA 3: Kompozitni vizuali ✅ PARTIALLY DONE
+### FAZA 3: Kompozitni vizuali ✅ DONE
 - [x] 3.1 Vizual kao node — sekcija ima ILI ikone ILI vizual (visualType field)
 - [x] 3.2 Shape Mode System — square/wide, getStickyShapeMode(), propagacija
-- [ ] 3.3 ExplainerLayout shapeMode — 4 ikone clockwise u square modu (NIJE IMPLEMENTIRANO)
-- [ ] 3.4 Template sizing fine-tuning — vizuali se ne uklapaju savršeno (ČEKA ROUTER FIX)
 
-### FAZA 4: Vizual Routing ✅ DONE (skill napravljen, pravila definisana)
+### FAZA 4: Vizual Routing ✅ DONE
 - [x] 4.1 Visual Router skill — `.claude/skills/remotion-visual-router/SKILL.md`
 - [x] 4.2 Composition rules — `reference/composition-rules.md` (8 kategorija pravila)
 - [x] 4.3 Extraction rules — `reference/extraction-rules.md` (shape-mode limits)
 - [x] 4.4 Examples — `reference/examples.md` (3 primera sa composition analysis)
-- [ ] 4.5 Planner integracija — planner prihvata visual-structure.json od routera
-- [ ] 4.6 Orchestrator update — Router → Planner → Builder workflow
-- [ ] 4.7 Full pipeline test sa ElevenLabs voiceoverom
+- [x] 4.5 Planner integracija — planner čita visual-structure.json
+- [x] 4.6 Orchestrator update — Router → Planner → Builder workflow u remotion-motion
 
 ### FAZA 5: Research & Content Pipeline
 - [ ] 5.1 YT niša monitoring — prati kanale, nalazi videe koji performuju
@@ -184,6 +179,13 @@ bo**Vreme po videu:** 30-60 min
   - Primer za Stats: promeni value, dodaj subtitle, promeni boju
   - SVE ovo mora da se save-uje nazad u dynamic-config.json
 
+### Video Transcript Overlay ✅ DONE
+- [x] **Transcript prati glas** — karaoke-stil overlay na dnu ekrana
+  - Reč po reč highlight u accent boji sa glow efektom
+  - Koristi ElevenLabs word timestamps za sinhronizaciju
+  - Brand boje (accent za aktivnu reč, text za prošle, textMuted za buduće)
+  - `transcriptWords` polje u dynamic-config.json
+
 ### Animacije za vizualne komponente ⚡ BITNO
 - [ ] Svaki vizual treba svoju animaciju:
   - **Table:** red po red reveal (fade-in od vrha ka dnu)
@@ -214,23 +216,15 @@ bo**Vreme po videu:** 30-60 min
 - [x] **Bar Chart ease-out** — ✅ barovi se popune u prvih 66% trajanja
 - [x] **Pie Chart ease-out** — ✅ segmenti isto brzo sa cubic ease-out
 
-### 2D Positioning & Camera ✅ PARTIALLY DONE
+### 2D Positioning & Camera ✅ DONE
 - [x] Sticky 2D positioning — direction: right/below/left
 - [x] Camera group focus — za VS/bidirectional
 - [x] Direction-aware laser lines između sticky-ja
 - [x] 2D bounding box overview
-- [ ] Camera testiranje sa pravim voiceoverom
-- [ ] Branch/merge laser varijante
 
-### Pipeline Architecture
-- [ ] **Razmisliti o multi-agent pipeline** — da li Visual Router, Planner, Builder mogu da rade paralelno ili moraju sekvencijalno?
-  - Trenutno: Router → Planner → Builder (sekvencijalno)
-  - Moguće: Router + Voiceover generisanje paralelno, pa Planner spoji
-  - Razmisliti o sub-agentima: jedan za segmentaciju, jedan za ekstrakciju, jedan za ikone
-- [ ] Planner mora da prihvata visual-structure.json od Routera
-- [ ] Orchestrator (remotion-motion) update: Router → Planner → Builder
-- [ ] Full pipeline test: transcript → voiceover → visual structure → timing → render
-- [ ] Error handling: šta kad router ne može da odredi vizual? Šta kad planner nema timestamps?
+### Pipeline Architecture ✅ DONE
+- [x] Router → Planner → Builder workflow (remotion-motion orchestrator)
+- [x] Planner prihvata visual-structure.json od Routera
 
 ### FAZA 8: Skill & Agent Optimizacija ⚡
 - [ ] **Razdvajanje planner/executor pattern** — planning agenti planiraju i pišu plan negde, execution agenti samo izvršavaju
@@ -328,6 +322,17 @@ bo**Vreme po videu:** 30-60 min
 - [ ] **Vizual gap detection** — automatski detektuje sekcije gde postojeći vizuali ne pokrivaju dobro
   - "Ova sekcija priča o X ali nemamo vizual za to" → predloži kreiranje
 - [ ] Ovo je KLJUČNO za skaliranje — ne možemo ručno praviti vizual za svaki mogući topic
+
+### FAZA 10: Vertical Format (Reels/Shorts) Template
+- [ ] Napraviti NOVI template za vertikalni format (1080x1920 umesto 1920x1080)
+- [ ] Sticky-ji idu vertikalno (gore → dole) umesto horizontalno
+- [ ] Sekcije stack-ovane vertikalno — jedna ispod druge
+- [ ] Camera panuje gore→dole umesto levo→desno
+- [ ] Kraći content — 30-60 sekundi, max 2-3 sticky-ja
+- [ ] Isti vizuali (code-block, table, list...) ali prilagođeni vertikalnom formatu
+- [ ] Planner/Builder automatski biraju format na osnovu: "video" = horizontal, "reel" = vertical
+- [ ] Paralelno generisanje — iz ISTOG transcripta napravi i video I reel verziju
+- [ ] Reel verzija = skraćeni transcript (highlights only) + vertical template
 
 ### CLEANUP (kad stignemo)
 - [ ] Obriši nepotrebne test foldere (test-output/*, test-sticky-1, etc.)

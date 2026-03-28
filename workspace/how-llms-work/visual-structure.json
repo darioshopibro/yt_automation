@@ -1,0 +1,156 @@
+{
+  "title": "How LLMs Actually Work",
+  "hierarchyType": "sticky",
+  "stickies": [
+    {
+      "step": 1,
+      "title": "What LLMs Are",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Token Prediction Engine",
+          "visualType": "kinetic",
+          "visualData": {
+            "text": "It doesn't think. It does math.",
+            "highlight": ["think", "math"],
+            "style": "impact"
+          }
+        },
+        {
+          "title": "Training on Data",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Dataset", "icon": "Books" },
+            { "label": "Patterns", "icon": "PuzzlePiece" },
+            { "label": "Parameters", "icon": "MatrixLogo" }
+          ]
+        },
+        {
+          "title": "Transformer Architecture",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Attention", "icon": "Memory" },
+            { "label": "Parallel", "icon": "Parallelogram" },
+            { "label": "GPUs", "icon": "GraphicsCard" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 2,
+      "title": "Training & Tuning",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Fine-Tuning with RLHF",
+          "visualType": "process-steps",
+          "visualData": {
+            "steps": [
+              { "label": "Pre-train", "description": "Base model learns patterns" },
+              { "label": "Feed Examples", "description": "Show desired behavior" },
+              { "label": "Human Ranking", "description": "Rank different outputs" },
+              { "label": "Learn Preference", "description": "Model adapts to feedback" }
+            ]
+          }
+        },
+        {
+          "title": "Context Window Growth",
+          "visualType": "stats",
+          "visualData": {
+            "items": [
+              { "label": "GPT-4 Start", "value": "8K", "subtitle": "tokens" },
+              { "label": "GPT-4 Turbo", "value": "128K", "subtitle": "tokens" },
+              { "label": "Claude Now", "value": "1M+", "subtitle": "tokens" }
+            ]
+          }
+        }
+      ]
+    },
+    {
+      "step": 3,
+      "title": "Prompting & Cost",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "Prompting Techniques",
+          "visualType": "list",
+          "visualData": {
+            "items": [
+              "Zero-shot: just ask",
+              "Few-shot: give examples",
+              "Chain of thought: step-by-step"
+            ],
+            "style": "numbered"
+          }
+        },
+        {
+          "title": "Cost Dropping Fast",
+          "visualType": "bar-chart",
+          "visualData": {
+            "items": [
+              { "label": "GPT-4 Launch", "value": 30 },
+              { "label": "Today Similar", "value": 1 }
+            ],
+            "unit": "$",
+            "maxValue": 35
+          }
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "title": "Latency & RAG",
+      "direction": "right",
+      "connectionToNext": "flow",
+      "sections": [
+        {
+          "title": "The Latency Problem",
+          "layout": "negation",
+          "nodes": [
+            { "label": "Slow Response", "icon": "Timer" },
+            { "label": "Streaming", "icon": "Screencast" },
+            { "label": "Custom Chips", "icon": "Lightning" }
+          ]
+        },
+        {
+          "title": "RAG Pipeline",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Documents", "icon": "FileDoc" },
+            { "label": "Search", "icon": "MagnifyingGlass" },
+            { "label": "Prompt", "icon": "Terminal" },
+            { "label": "Answer", "icon": "Target" }
+          ]
+        }
+      ]
+    },
+    {
+      "step": 5,
+      "title": "Agents: The Next Frontier",
+      "direction": "right",
+      "connectionToNext": "none",
+      "sections": [
+        {
+          "title": "Agent Capabilities",
+          "layout": "flow",
+          "nodes": [
+            { "label": "Plan", "icon": "Strategy" },
+            { "label": "Use Tools", "icon": "Wrench" },
+            { "label": "Execute", "icon": "Rocket" }
+          ]
+        },
+        {
+          "title": "From Chatbot to Coworker",
+          "layout": "negation",
+          "nodes": [
+            { "label": "Chatbot", "icon": "Chat" },
+            { "label": "Coworker", "icon": "Robot" }
+          ]
+        }
+      ]
+    }
+  ]
+}

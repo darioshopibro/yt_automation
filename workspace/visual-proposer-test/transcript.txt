@@ -1,0 +1,31 @@
+Microservices sound great in theory. But in practice, they can turn into an absolute nightmare if you don't understand how the pieces fit together.
+
+Let me break it down.
+
+A monolith is simple. One codebase, one database, one deployment. Your User Service, Order Service, Payment Service — they all live in the same application. When User Service needs order data, it just calls a function. Easy.
+
+But here's the problem. As your app grows to millions of users, that monolith becomes a bottleneck. One team's deployment breaks everyone else's code. One slow query in payments takes down the entire application.
+
+So you split it up. Each service gets its own codebase, its own database, and its own deployment pipeline. The User Service talks to the Auth Service through REST APIs. The Order Service publishes events to a message queue. The Payment Service subscribes to those events and processes transactions independently.
+
+Now here's where it gets interesting. You need a service mesh to manage all this communication. An API Gateway sits at the front — it handles routing, rate limiting, and authentication. Behind it, services discover each other through a Service Registry like Consul or Eureka. When the Order Service needs to talk to Inventory Service, it doesn't hardcode the URL. It asks the registry: "Where is Inventory right now?"
+
+The numbers tell the story. Netflix runs over 1000 microservices. Amazon deploys code every 11.7 seconds. Uber processes 14 million trips per day across hundreds of services. But here's the catch — Uber's microservice architecture has over 4000 services now, and they've actually started merging some back together because the complexity got out of hand.
+
+Let's look at the actual setup. First, you containerize each service with Docker. Here's a typical Dockerfile:
+
+FROM node:18-alpine
+WORKDIR /app
+COPY package*.json ./
+RUN npm ci --production
+COPY . .
+EXPOSE 3000
+CMD ["node", "server.js"]
+
+Then you orchestrate with Kubernetes. Each service gets its own deployment, service, and ingress config. Your cluster might look like this: 3 nodes in production, each running 10-15 pods, with horizontal pod autoscaling based on CPU and memory.
+
+The communication patterns matter too. Synchronous calls with REST or gRPC for real-time requests. Asynchronous messaging with Kafka or RabbitMQ for event-driven flows. The Order Service fires an "order.created" event, and three other services — Payment, Inventory, and Notification — all react independently.
+
+Monitoring is critical. You need distributed tracing with Jaeger or Zipkin to follow a request as it bounces between 5 different services. You need centralized logging with the ELK stack. And you need a health dashboard showing latency, error rates, and throughput for every single service.
+
+The bottom line? Microservices aren't about making things simpler. They're about making things scalable. Start with a monolith, split when you actually need to, and always — always — invest in observability before you split.

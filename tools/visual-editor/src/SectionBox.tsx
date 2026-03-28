@@ -1,25 +1,36 @@
 import React, { useState, useRef } from 'react';
 import { createPortal } from 'react-dom';
 import { Section, NodeItem as NodeItemType, ColorScheme, getColorValue } from './types';
-import { glassStyle, getSectionBoxSize, ICON_SIZE } from './styles';
+import { glassStyle, getSectionBoxSize, getVisualBoxSize, ICON_SIZE } from './styles';
 import NodeItemComponent from './NodeItem';
 import InlineEdit from './InlineEdit';
 import LayoutStrip from './LayoutStrip';
 import { ConnectorSymbol, EqualsSymbol } from './LayoutConnector';
 import { RenderIcon } from './IconPopover';
+import VisualTypePicker from './editors/VisualTypePicker';
+import { getVisualInfo, getDefaultData, VisualType } from './editors/VisualTypeRegistry';
+import { renderVisualPreview } from './editors/VisualRenderers';
 
 interface SectionBoxProps {
   section: Section;
   colorScheme: ColorScheme;
   onChange: (updated: Section) => void;
   onRemove: () => void;
+  isSelected?: boolean;
+  onSelect?: () => void;
 }
 
-const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange, onRemove }) => {
+const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange, onRemove, isSelected, onSelect }) => {
   const [hovered, setHovered] = useState(false);
   const [stripAnchor, setStripAnchor] = useState<DOMRect | null>(null);
+  const [pickerAnchor, setPickerAnchor] = useState<DOMRect | null>(null);
+
+  const hasVisual = section.visualType && section.visualType !== 'nodes' && section.visualData;
+  const visualInfo = hasVisual ? getVisualInfo(section.visualType!) : null;
 
   const autoSize = getSectionBoxSize(section.nodes.length, section.layout);
+  // Override size for visual sections — they need more space to render the actual visual
+  const visualSize = hasVisual ? getVisualBoxSize(section.visualType!, section.visualData) : autoSize;
 
   const updateNode = (idx: number, updated: NodeItemType) => {
     const nodes = [...section.nodes];
@@ -220,12 +231,27 @@ const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange,
     }
   };
 
+  // Handle visual type switch
+  const handleVisualTypeSelect = (type: VisualType | null) => {
+    if (type === null) {
+      // Switch back to nodes
+      onChange({ ...section, visualType: undefined, visualData: undefined });
+    } else {
+      onChange({
+        ...section,
+        visualType: type,
+        visualData: section.visualType === type ? section.visualData : getDefaultData(type),
+      });
+    }
+    setPickerAnchor(null);
+  };
+
   return (
     <>
       <div
         style={{
-          width: autoSize.width,
-          height: autoSize.height,
+          width: visualSize.width,
+          height: visualSize.height,
           background: colorScheme.bg,
           ...glassStyle(colorScheme.border, colorScheme.glow),
           padding: '24px 24px 12px 24px',
@@ -234,9 +260,18 @@ const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange,
           flexShrink: 0,
           position: 'relative',
           transition: 'box-shadow 0.3s ease-out',
+          outline: isSelected ? `2px solid ${colorScheme.accent}` : 'none',
+          outlineOffset: 2,
+          cursor: 'pointer',
         }}
         onMouseEnter={() => setHovered(true)}
         onMouseLeave={() => setHovered(false)}
+        onClick={e => {
+          if (onSelect) {
+            e.stopPropagation();
+            onSelect();
+          }
+        }}
       >
         {/* Delete section button */}
         {hovered && (
@@ -268,6 +303,41 @@ const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange,
           </button>
         )}
 
+        {/* Visual type picker button (top-left, next to delete) */}
+        {hovered && (
+          <button
+            onClick={e => {
+              e.stopPropagation();
+              const rect = e.currentTarget.getBoundingClientRect();
+              setPickerAnchor(prev => prev ? null : rect);
+            }}
+            onMouseDown={e => e.stopPropagation()}
+            style={{
+              position: 'absolute',
+              top: 8,
+              right: hovered ? 34 : 8,
+              height: 20,
+              borderRadius: 10,
+              background: hasVisual ? `${colorScheme.accent}20` : 'rgba(255,255,255,0.06)',
+              border: `1px solid ${hasVisual ? colorScheme.accent + '40' : '#2a2a3e'}`,
+              color: hasVisual ? colorScheme.accent : '#64748b',
+              fontSize: 9,
+              fontWeight: 700,
+              cursor: 'pointer',
+              display: 'flex',
+              alignItems: 'center',
+              gap: 4,
+              padding: '0 8px',
+              zIndex: 10,
+              transition: 'all 0.12s',
+              whiteSpace: 'nowrap',
+            }}
+            title="Change visual type"
+          >
+            {visualInfo ? visualInfo.symbol : '\u25A3'} {visualInfo ? visualInfo.label : 'Visual'}
+          </button>
+        )}
+
         {/* Header */}
         <div style={{ display: 'flex', alignItems: 'center', gap: 10, marginBottom: 8 }}>
           <div style={{
@@ -293,6 +363,21 @@ const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange,
               maxWidth: 160,
             }}
           />
+          {/* Visual type badge */}
+          {hasVisual && visualInfo && (
+            <span style={{
+              fontSize: 9,
+              fontWeight: 700,
+              color: colorScheme.accent,
+              background: `${colorScheme.accent}15`,
+              border: `1px solid ${colorScheme.accent}30`,
+              borderRadius: 6,
+              padding: '2px 6px',
+              fontFamily: "'SF Mono', monospace",
+            }}>
+              {visualInfo.symbol} {visualInfo.label}
+            </span>
+          )}
           <div style={{
             flex: 1,
             height: 1,
@@ -312,18 +397,34 @@ const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange,
           </div>
         )}
 
-        {/* Content */}
+        {/* Content: visual preview OR nodes */}
         <div style={{
           flex: 1,
           display: 'flex',
           alignItems: 'center',
           justifyContent: 'center',
         }}>
-          {renderNodes()}
+          {hasVisual ? (
+            <div
+              style={{
+                width: '100%',
+                overflow: 'hidden',
+                cursor: 'pointer',
+              }}
+              onClick={e => {
+                e.stopPropagation();
+                if (onSelect) onSelect();
+              }}
+            >
+              {renderVisualPreview(section.visualType!, section.visualData, colorScheme.accent)}
+            </div>
+          ) : (
+            renderNodes()
+          )}
         </div>
 
-        {/* Add node button */}
-        {hovered && (
+        {/* Add node button (only for nodes mode) */}
+        {hovered && !hasVisual && (
           <button
             onClick={e => { e.stopPropagation(); addNode(); }}
             style={{
@@ -368,6 +469,26 @@ const SectionBox: React.FC<SectionBoxProps> = ({ section, colorScheme, onChange,
               currentLayout={section.layout}
               accentColor={defaultColor}
               onSelect={l => { console.log('Layout change:', section.layout, '→', l); onChange({ ...section, layout: l }); setStripAnchor(null); }}
+            />
+          </div>
+        </div>,
+        document.body
+      )}
+
+      {/* Visual type picker portal */}
+      {pickerAnchor && createPortal(
+        <div onMouseDown={e => e.stopPropagation()} onClick={e => e.stopPropagation()}>
+          <div style={{ position: 'fixed', inset: 0, zIndex: 1999 }} onClick={() => setPickerAnchor(null)} />
+          <div style={{
+            position: 'fixed',
+            top: pickerAnchor.bottom + 6,
+            left: Math.max(8, pickerAnchor.left - 120),
+            zIndex: 2000,
+          }}>
+            <VisualTypePicker
+              currentType={section.visualType}
+              accentColor={defaultColor}
+              onSelect={handleVisualTypeSelect}
             />
           </div>
         </div>,

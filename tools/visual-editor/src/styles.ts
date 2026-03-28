@@ -114,8 +114,77 @@ function getLayoutSize(layout: string, nodeCount: number) {
   }
 }
 
+// Visual section sizing — returns appropriate w/h based on visual type and data
+export function getVisualBoxSize(visualType: string, visualData: any): { width: number; height: number } {
+  const pad = PADDING_X;
+  const hdr = HEADER_HEIGHT + 12; // header + subtitle room
+
+  switch (visualType) {
+    case 'code-block': {
+      const lines = (visualData?.code || '').split('\n').length;
+      const h = Math.min(lines, 10) * 14 + 50; // line height + chrome
+      return { width: Math.max(300, pad + 260), height: Math.max(180, hdr + h) };
+    }
+    case 'terminal': {
+      const cmds = (visualData?.commands || []).length;
+      return { width: Math.max(280, pad + 240), height: Math.max(160, hdr + cmds * 40 + 30) };
+    }
+    case 'table': {
+      const rows = (visualData?.rows || []).length;
+      const cols = (visualData?.headers || []).length;
+      return { width: Math.max(280, pad + cols * 70), height: Math.max(160, hdr + (rows + 1) * 24 + 20) };
+    }
+    case 'list': {
+      const items = (visualData?.items || []).length;
+      return { width: Math.max(260, pad + 200), height: Math.max(160, hdr + items * 28 + 20) };
+    }
+    case 'bar-chart': {
+      const items = (visualData?.items || []).length;
+      return { width: Math.max(280, pad + 220), height: Math.max(160, hdr + items * 32 + 20) };
+    }
+    case 'pie-chart':
+      return { width: Math.max(300, pad + 260), height: Math.max(180, hdr + 110) };
+    case 'stats': {
+      const items = (visualData?.items || []).length;
+      const rows = Math.ceil(items / 2);
+      return { width: Math.max(280, pad + 220), height: Math.max(160, hdr + rows * 70 + 20) };
+    }
+    case 'timeline': {
+      const items = (visualData?.items || []).length;
+      if (visualData?.direction === 'vertical') {
+        return { width: Math.max(240, pad + 180), height: Math.max(160, hdr + items * 36 + 20) };
+      }
+      return { width: Math.max(280, pad + items * 55), height: Math.max(160, hdr + 80) };
+    }
+    case 'process-steps': {
+      const steps = (visualData?.steps || []).length;
+      return { width: Math.max(260, pad + 200), height: Math.max(160, hdr + steps * 36 + 20) };
+    }
+    case 'logo-grid': {
+      const items = (visualData?.items || []).length;
+      const c = visualData?.cols || (items <= 3 ? items : items <= 6 ? 3 : 4);
+      const r = Math.ceil(items / c);
+      return { width: Math.max(240, pad + c * 55), height: Math.max(160, hdr + r * 55 + 20) };
+    }
+    case 'hierarchy':
+      return { width: Math.max(300, pad + 280), height: Math.max(180, hdr + 120) };
+    case 'split-screen': {
+      const maxItems = Math.max((visualData?.left?.items || []).length, (visualData?.right?.items || []).length);
+      return { width: Math.max(300, pad + 260), height: Math.max(160, hdr + maxItems * 22 + 30) };
+    }
+    case 'kinetic':
+      return { width: Math.max(280, pad + 240), height: Math.max(160, hdr + 80) };
+    case 'service-mesh': {
+      const nodes = (visualData?.nodes || []).length;
+      return { width: Math.max(280, pad + 220), height: Math.max(160, hdr + Math.ceil(nodes / 3) * 60 + 30) };
+    }
+    default:
+      return { width: 280, height: 200 };
+  }
+}
+
 // Sticky dimensions from sections
-export function getStickyDimensions(sections: { nodes: { length: number }; layout?: string }[]) {
+export function getStickyDimensions(sections: { nodes: { length: number }; layout?: string; visualType?: string; visualData?: any }[]) {
   const sectionCount = sections.length;
   const cols = sectionCount <= 2 ? sectionCount : sectionCount <= 4 ? 2 : 3;
   const rows = Math.ceil(sectionCount / cols);
@@ -123,7 +192,12 @@ export function getStickyDimensions(sections: { nodes: { length: number }; layou
   const paddingX = 48;
   const paddingY = 24;
 
-  const boxSizes = sections.map(s => getSectionBoxSize(s.nodes.length, s.layout));
+  const boxSizes = sections.map(s => {
+    if (s.visualType && s.visualData) {
+      return getVisualBoxSize(s.visualType, s.visualData);
+    }
+    return getSectionBoxSize(s.nodes.length, s.layout);
+  });
   const maxBoxW = Math.max(...boxSizes.map(s => s.width));
   const maxBoxH = Math.max(...boxSizes.map(s => s.height));
 
