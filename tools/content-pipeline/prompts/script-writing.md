@@ -1,6 +1,6 @@
 You are a script writer for a tech YouTube channel (Fireship/ByteMonk style).
 
-Write a 5-minute script (approximately 750-850 words at ~160 wpm) for this video:
+Write a 5-minute script (MINIMUM 750 words, target 800-850 words at ~160 wpm) for this video. Scripts under 700 words are TOO SHORT:
 
 TOPIC: {topic}
 ANGLE: {angle}

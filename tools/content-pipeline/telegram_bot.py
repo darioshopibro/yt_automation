@@ -398,11 +398,15 @@ def _handle_callback(chat_id, message_id, data, callback_id):
         edit_message(chat_id, message_id, text, markup)
         return
 
-    # Parse action_topicId
-    parts = data.split("_", 1)
-    if len(parts) != 2:
+    # Parse action_topicId (topic_id is always the LAST segment after _)
+    last_underscore = data.rfind("_")
+    if last_underscore == -1:
         return
-    action, topic_id = parts[0], int(parts[1])
+    try:
+        topic_id = int(data[last_underscore + 1:])
+        action = data[:last_underscore]
+    except ValueError:
+        return
 
     if action == "detail":
         text, markup = _build_detail(topic_id)
@@ -463,14 +467,56 @@ def _handle_callback(chat_id, message_id, data, callback_id):
         edit_message(chat_id, message_id, text, markup)
 
     elif action == "rewrite":
+        # Show feedback selection — buttons + free text
         conn = db.get_connection()
         t = conn.execute("SELECT title FROM topics WHERE id=?", (topic_id,)).fetchone()["title"]
         conn.close()
-        edit_message(chat_id, message_id, f"✏️ <b>Rewriting:</b> {t}\n⏳ New angle + script... (2-3 min)", {"inline_keyboard": []})
-        from content_processor import process_topic
-        process_topic(topic_id)
-        text, markup = _build_script(topic_id)
-        edit_message(chat_id, message_id, text, markup)
+        buttons = [
+            [
+                {"text": "🎯 Bad Angle", "callback_data": f"rwfb_angle_{topic_id}"},
+                {"text": "🪝 Bad Hook", "callback_data": f"rwfb_hook_{topic_id}"},
+            ],
+            [
+                {"text": "📖 Too Generic", "callback_data": f"rwfb_generic_{topic_id}"},
+                {"text": "🏢 Bad Examples", "callback_data": f"rwfb_examples_{topic_id}"},
+            ],
+            [
+                {"text": "📏 Too Long", "callback_data": f"rwfb_long_{topic_id}"},
+                {"text": "📏 Too Short", "callback_data": f"rwfb_short_{topic_id}"},
+            ],
+            [
+                {"text": "🔄 Same Pattern", "callback_data": f"rwfb_pattern_{topic_id}"},
+                {"text": "😐 No Personality", "callback_data": f"rwfb_boring_{topic_id}"},
+            ],
+            [
+                {"text": "🎯 New Angle Entirely", "callback_data": f"rwfb_newangle_{topic_id}"},
+            ],
+            [{"text": "◀️ Back", "callback_data": f"script_{topic_id}"}],
+        ]
+        text = (
+            f"✏️ <b>Rewrite: {t}</b>\n\n"
+            f"What didn't you like? Click a button or type your feedback directly."
+        )
+        # Store that we're waiting for feedback for this topic
+        db.set_preference("rewrite_pending_topic", topic_id)
+        send_message(chat_id, text, {"inline_keyboard": buttons})
+
+    elif action.startswith("rwfb"):
+        # Handle rewrite feedback button click
+        feedback_map = {
+            "rwfb_angle": "The angle is not interesting or unique enough. Find a completely different, more compelling angle.",
+            "rwfb_hook": "The hook is weak. Make the first sentence much more attention-grabbing and specific.",
+            "rwfb_generic": "The script is too generic and reads like a blog post. Add specific real-world incidents, names, numbers.",
+            "rwfb_examples": "The examples are bad or overused. Use completely different, more surprising real-world examples.",
+            "rwfb_long": "The script is too long. Make it more concise, cut filler, get to the point faster.",
+            "rwfb_short": "The script is too short. Add more depth, more examples, more technical detail.",
+            "rwfb_pattern": "This follows the same structure as previous scripts. Use a completely different narrative structure.",
+            "rwfb_boring": "The script has no personality. Add unexpected analogies, opinionated takes, surprising comparisons.",
+            "rwfb_newangle": "Forget the current angle entirely. Find a completely new, different angle for this topic.",
+        }
+        feedback = feedback_map.get(action, "Improve the script overall.")
+
+        _do_rewrite_with_feedback(chat_id, message_id, topic_id, feedback)
 
     elif action == "research":
         edit_message(chat_id, message_id, "🔍 <b>Researching...</b>", {"inline_keyboard": []})
@@ -482,8 +528,51 @@ def _handle_callback(chat_id, message_id, data, callback_id):
 # Text Message Handler
 # ==========================================
 
+def _do_rewrite_with_feedback(chat_id, message_id, topic_id, feedback):
+    """Rewrite script with specific feedback."""
+    conn = db.get_connection()
+    t = conn.execute("SELECT title FROM topics WHERE id=?", (topic_id,)).fetchone()["title"]
+    old_script = conn.execute("SELECT script_text FROM scripts WHERE topic_id=? ORDER BY id DESC LIMIT 1", (topic_id,)).fetchone()
+    conn.close()
+
+    edit_message(chat_id, message_id,
+                 f"✏️ <b>Rewriting:</b> {t}\n\n💬 Feedback: <i>{feedback[:100]}</i>\n\n⏳ Generating new script... (2-3 min)",
+                 {"inline_keyboard": []})
+
+    from content_processor import process_topic_with_feedback
+    result = process_topic_with_feedback(topic_id, feedback, old_script["script_text"] if old_script else None)
+
+    if result.get("error"):
+        edit_message(chat_id, message_id, f"❌ Error: {result['error']}",
+                     {"inline_keyboard": [[{"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}]]})
+    else:
+        text, markup = _build_script(topic_id)
+        edit_message(chat_id, message_id, text, markup)
+
+    # Clear pending state
+    db.set_preference("rewrite_pending_topic", None)
+
+
 def _handle_text(chat_id, text):
     text = text.strip()
+
+    # Check if we're waiting for rewrite feedback (free text)
+    pending_topic = db.get_preference("rewrite_pending_topic")
+    if pending_topic and not text.startswith("/"):
+        # User typed free text feedback for rewrite
+        send_message(chat_id, f"✏️ <b>Got your feedback:</b> <i>{text[:100]}</i>\n⏳ Rewriting... (2-3 min)")
+        from content_processor import process_topic_with_feedback
+        conn = db.get_connection()
+        old_script = conn.execute("SELECT script_text FROM scripts WHERE topic_id=? ORDER BY id DESC LIMIT 1", (pending_topic,)).fetchone()
+        conn.close()
+        result = process_topic_with_feedback(pending_topic, text, old_script["script_text"] if old_script else None)
+        db.set_preference("rewrite_pending_topic", None)
+        if result.get("error"):
+            send_message(chat_id, f"❌ Error: {result['error']}")
+        else:
+            t, m = _build_script(pending_topic)
+            send_message(chat_id, t, m)
+        return
 
     if text in ("/start", "/help"):
         send_message(chat_id, "\n".join([

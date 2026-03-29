@@ -1,0 +1,22 @@
+{
+  "name": "tiktok-test",
+  "version": "1.0.0",
+  "scripts": {
+    "start": "remotion studio",
+    "build": "remotion render TikTokVideo out/video.mp4",
+    "preview": "remotion preview"
+  },
+  "dependencies": {
+    "@remotion/cli": "4.0.441",
+    "@remotion/google-fonts": "4.0.441",
+    "@remotion/player": "4.0.441",
+    "@remotion/transitions": "4.0.441",
+    "react": "^18.3.1",
+    "react-dom": "^18.3.1",
+    "remotion": "4.0.441"
+  },
+  "devDependencies": {
+    "@types/react": "^18.3.1",
+    "typescript": "^5.5.0"
+  }
+}

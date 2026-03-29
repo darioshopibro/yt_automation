@@ -25,7 +25,7 @@ def _call_claude(prompt, model=None):
     model = model or config.SONNET_MODEL
     result = subprocess.run(
         ["claude", "-p", prompt, "--model", model, "--output-format", "text"],
-        capture_output=True, text=True, timeout=180
+        capture_output=True, text=True, timeout=300
     )
     return result.stdout.strip()
 
@@ -308,6 +308,95 @@ def process_topic(topic_id):
     print(f"   Script: {word_count} words")
     print(f"   Plagiarism: {plagiarism.get('overall_similarity_percent', '?')}% — {plagiarism.get('verdict', '?')}")
     print(f"{'='*60}")
+
+    return result
+
+
+def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
+    """Rewrite a script with specific user feedback.
+
+    Uses the existing angle but rewrites the script incorporating feedback.
+    """
+    conn = db.get_connection()
+    topic = dict(conn.execute("SELECT * FROM topics WHERE id=?", (topic_id,)).fetchone())
+    conn.close()
+
+    print(f"\n✏️ Rewriting: {topic['title']}")
+    print(f"   Feedback: {feedback[:100]}")
+
+    result = {"topic_id": topic_id, "topic_title": topic["title"]}
+
+    # Get existing angle or detect new one
+    angle = None
+    if "angle" in feedback.lower() or "new angle" in feedback.lower():
+        # User wants new angle — re-detect
+        print("   🎯 Detecting new angle...")
+        transcripts = fetch_transcripts(topic["title"])
+        if transcripts:
+            angle = detect_angle(topic["title"], transcripts)
+    else:
+        # Keep existing angle
+        angle = {
+            "proposed_angle": topic.get("proposed_angle", ""),
+            "angle_type": topic.get("angle_type", ""),
+            "proposed_hook": topic.get("proposed_hook", ""),
+            "key_differentiators": [],
+        }
+
+    if not angle:
+        result["error"] = "Could not determine angle"
+        return result
+
+    # Build rewrite prompt with feedback
+    template = _load_prompt("script-writing")
+    prompt = (
+        template
+        .replace("{topic}", topic["title"])
+        .replace("{angle}", angle.get("proposed_angle", ""))
+        .replace("{angle_type}", angle.get("angle_type", ""))
+        .replace("{hook}", angle.get("proposed_hook", ""))
+        .replace("{differentiators}", "\n".join(f"- {d}" for d in angle.get("key_differentiators", [])))
+    )
+
+    # Add feedback block
+    prompt += f"\n\nUSER FEEDBACK ON PREVIOUS SCRIPT (MUST address this):\n{feedback}\n"
+
+    if old_script_text:
+        prompt += f"\nPREVIOUS SCRIPT (rewrite this, addressing the feedback above):\n{old_script_text[:2000]}\n"
+
+    # Add variety block
+    variety_block = _build_variety_block()
+    if variety_block:
+        prompt += variety_block
+
+    # Generate
+    print("   ✍️ Writing new script...")
+    script = _call_claude(prompt, config.SONNET_MODEL)
+    if script:
+        script = _preprocess_for_tts(script)
+
+    if not script or len(script) < 100:
+        result["error"] = "Script generation failed"
+        return result
+
+    result["script"] = script
+    result["angle"] = angle
+    word_count = len(script.split())
+    print(f"   ✅ New script: {word_count} words")
+
+    # Store
+    conn = db.get_connection()
+    conn.execute(
+        "INSERT INTO scripts (topic_id, script_text, status) VALUES (?, ?, 'draft')",
+        (topic_id, script)
+    )
+    if angle.get("proposed_angle"):
+        conn.execute(
+            "UPDATE topics SET proposed_angle=?, proposed_hook=?, angle_type=? WHERE id=?",
+            (angle.get("proposed_angle"), angle.get("proposed_hook"), angle.get("angle_type"), topic_id)
+        )
+    conn.commit()
+    conn.close()
 
     return result
 

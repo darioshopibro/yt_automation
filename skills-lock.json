@@ -1,0 +1,45 @@
+{
+  "version": 1,
+  "skills": {
+    "content-strategy": {
+      "source": "coreyhaines31/marketingskills",
+      "sourceType": "github",
+      "computedHash": "be124f3733b037fb8d859f275454ecd1c590759ef9ab184bea35ba1a0a38e14c"
+    },
+    "deep-research": {
+      "source": "199-biotechnologies/claude-deep-research-skill",
+      "sourceType": "github",
+      "computedHash": "a0561360b02969d2ed1646a195e27f6b69365a28f0d3a28c0a7528e06b4be333"
+    },
+    "elevenlabs-music": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "1c5e90ff78fb564cd97a1c381d96f78dcbdf708307b6f4a7d124b57e629a5698"
+    },
+    "elevenlabs-tts": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "d4f43c5fa865590bf0b8f70994b1901022ce21cba1f45ff373bf60ed96a5433c"
+    },
+    "remotion-best-practices": {
+      "source": "remotion-dev/skills",
+      "sourceType": "github",
+      "computedHash": "2f673b7710813ac07c71c0a54657f740078aec6585f15edf351494499e1f9ac3"
+    },
+    "tiktok-captions": {
+      "source": "kostja94/marketing-skills",
+      "sourceType": "github",
+      "computedHash": "ba7179c15c73045ced538e25e02af9f10f5a4638df6ca728d40b0fba7389d5c9"
+    },
+    "tiktok-research": {
+      "source": "bradautomates/head-of-content",
+      "sourceType": "github",
+      "computedHash": "b1d1372f93a44247fedeb2e6fa7c5bef1f9857fa91c8a81aa39d61811c2e6cd2"
+    },
+    "youtube-thumbnail-design": {
+      "source": "inferen-sh/skills",
+      "sourceType": "github",
+      "computedHash": "1a4d4ca9b66da93aa7f43ce366ba92f3b1d33d4c7edf7906f93cb99ee1ce054e"
+    }
+  }
+}

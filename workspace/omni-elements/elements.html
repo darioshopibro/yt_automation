@@ -1,0 +1,292 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style>
+  * { margin: 0; padding: 0; box-sizing: border-box; }
+
+  body {
+    background: #f0f0f0;
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', sans-serif;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 60px;
+    padding: 40px;
+  }
+
+  h2 {
+    color: #1E3A2F;
+    font-size: 14px;
+    text-transform: uppercase;
+    letter-spacing: 2px;
+    margin-bottom: -40px;
+  }
+
+  .element-frame {
+    background: white;
+    width: 500px;
+    height: 500px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    border: 1px solid #e0e0e0;
+  }
+
+  /* PILL BADGE */
+  .pill {
+    background: #1E3A2F;
+    color: white;
+    padding: 12px 28px;
+    border-radius: 50px;
+    font-size: 18px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    box-shadow: 0 8px 24px rgba(0,0,0,0.18);
+    white-space: nowrap;
+  }
+
+  .pill .icon {
+    width: 20px;
+    height: 20px;
+    background: rgba(255,255,255,0.3);
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 12px;
+  }
+
+  /* PILL GRID */
+  .pill-grid {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 16px;
+  }
+
+  /* BIG CARD */
+  .big-card {
+    background: #1E3A2F;
+    border-radius: 16px;
+    padding: 32px;
+    width: 300px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+
+  .big-card .card-icon {
+    width: 40px;
+    height: 40px;
+    background: rgba(255,255,255,0.15);
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    font-size: 20px;
+  }
+
+  .big-card .card-title {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+  }
+
+  .big-card .divider {
+    height: 1px;
+    background: rgba(255,255,255,0.15);
+  }
+
+  .big-card .skeleton-line {
+    height: 10px;
+    background: rgba(255,255,255,0.12);
+    border-radius: 5px;
+  }
+
+  .big-card .skeleton-line:nth-child(2) { width: 85%; }
+  .big-card .skeleton-line:nth-child(3) { width: 65%; }
+
+  /* FEATURE PILL (mint) */
+  .feature-pill {
+    background: #80C2A0;
+    color: #1E3A2F;
+    padding: 10px 22px;
+    border-radius: 50px;
+    font-size: 15px;
+    font-weight: 600;
+    display: inline-flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 6px 18px rgba(0,0,0,0.12);
+  }
+
+  .feature-pill .fp-icon {
+    font-size: 14px;
+  }
+
+  /* BIG CARD WITH FEATURES INSIDE */
+  .big-card-features {
+    background: #1E3A2F;
+    border-radius: 16px;
+    padding: 32px;
+    width: 300px;
+    box-shadow: 0 12px 32px rgba(0,0,0,0.2);
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+  }
+
+  .big-card-features .card-title {
+    color: white;
+    font-size: 22px;
+    font-weight: 700;
+    margin-bottom: 8px;
+  }
+
+  .inner-feature-pill {
+    background: #80C2A0;
+    color: #1E3A2F;
+    padding: 10px 20px;
+    border-radius: 50px;
+    font-size: 14px;
+    font-weight: 600;
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+  }
+
+  /* DOTTED LINE CONNECTOR */
+  .connector-scene {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .dotted-line {
+    border-left: 3px dashed #1E3A2F;
+    height: 60px;
+  }
+
+  .dotted-branch {
+    display: flex;
+    align-items: flex-start;
+    gap: 40px;
+  }
+
+  .branch-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0;
+  }
+
+  .branch-line {
+    border-left: 3px dashed #1E3A2F;
+    height: 30px;
+  }
+
+  .horizontal-line {
+    width: 200px;
+    border-top: 3px dashed #1E3A2F;
+  }
+</style>
+</head>
+<body>
+
+<!-- ============ ELEMENT 1: @MainPill ============ -->
+
+<h2>@MainPill — Slika 1: Pojedinacni pill</h2>
+<div class="element-frame">
+  <div class="pill">
+    <div class="icon">⚙</div>
+    AI Toolkit
+  </div>
+</div>
+
+<h2>@MainPill — Slika 2: Pill sa perspektivom</h2>
+<div class="element-frame">
+  <div class="pill" style="transform: perspective(600px) rotateY(-8deg) rotateX(3deg); font-size: 20px; padding: 14px 32px;">
+    <div class="icon">⚙</div>
+    AI Toolkit
+  </div>
+</div>
+
+<h2>@MainPill — Slika 3: Cetiri pill-a u gridu</h2>
+<div class="element-frame">
+  <div class="pill-grid">
+    <div class="pill"><div class="icon">🔄</div> Workflows</div>
+    <div class="pill"><div class="icon">🤖</div> Agents</div>
+    <div class="pill"><div class="icon">🎙</div> Voice AI</div>
+    <div class="pill"><div class="icon">💬</div> Chatbots</div>
+  </div>
+</div>
+
+<!-- ============ ELEMENT 2: @BigCard ============ -->
+
+<h2>@BigCard — Slika 1: Kartica sa skeleton content-om</h2>
+<div class="element-frame">
+  <div class="big-card">
+    <div class="card-icon">⚙</div>
+    <div class="card-title">AI Toolkit</div>
+    <div class="divider"></div>
+    <div class="skeleton-line" style="width: 100%;"></div>
+    <div class="skeleton-line"></div>
+    <div class="skeleton-line"></div>
+  </div>
+</div>
+
+<h2>@BigCard — Slika 2: Kartica sa feature pill-ovima unutra</h2>
+<div class="element-frame">
+  <div class="big-card-features">
+    <div class="card-title">AI Toolkit</div>
+    <div class="inner-feature-pill"><span>⚡</span> Automate</div>
+    <div class="inner-feature-pill"><span>📈</span> Scale</div>
+    <div class="inner-feature-pill"><span>🚀</span> Deploy</div>
+  </div>
+</div>
+
+<!-- ============ ELEMENT 3: @FeaturePill ============ -->
+
+<h2>@FeaturePill — Slika 1: Tri feature pill-a</h2>
+<div class="element-frame">
+  <div style="display: flex; flex-direction: column; gap: 14px;">
+    <div class="feature-pill"><span class="fp-icon">⚡</span> Automate</div>
+    <div class="feature-pill"><span class="fp-icon">📈</span> Scale</div>
+    <div class="feature-pill"><span class="fp-icon">🚀</span> Deploy</div>
+  </div>
+</div>
+
+<h2>@FeaturePill — Slika 2: Pojedinacni feature pill</h2>
+<div class="element-frame">
+  <div class="feature-pill" style="font-size: 18px; padding: 14px 28px;">
+    <span class="fp-icon">⚡</span> Automate
+  </div>
+</div>
+
+<!-- ============ BONUS: Kompletna scena za reference ============ -->
+
+<h2>BONUS — Kompletna scena (za reference ako treba)</h2>
+<div class="element-frame" style="width: 500px; height: 700px; flex-direction: column; gap: 0; background: #F0F0F0; background-image: radial-gradient(circle, #ddd 1px, transparent 1px); background-size: 20px 20px;">
+  <div class="connector-scene">
+    <div class="pill" style="margin-bottom: 0;">
+      <div class="icon">⚙</div>
+      AI Toolkit
+    </div>
+    <div class="dotted-line"></div>
+    <div class="big-card-features" style="width: 260px; padding: 24px;">
+      <div class="card-title" style="font-size: 18px;">AI Toolkit</div>
+      <div class="inner-feature-pill" style="font-size: 13px;"><span>⚡</span> Automate</div>
+      <div class="inner-feature-pill" style="font-size: 13px;"><span>📈</span> Scale</div>
+      <div class="inner-feature-pill" style="font-size: 13px;"><span>🚀</span> Deploy</div>
+    </div>
+  </div>
+</div>
+
+</body>
+</html>

@@ -98,6 +98,28 @@ bo**Vreme po videu:** 30-60 min
 - [ ] Opcija B: Agent SDK programatski pipeline
 - [ ] NE IMPLEMENTIRATI BEZ PLANA — plan mode diskusija kad dođe vreme
 
+### 🔴 NAJBITNIJE: Remotion Official Skill Integracija
+**remotion-dev/skills** (instalirano u `.agents/skills/remotion-best-practices/`) — 41 fajl sa best practices za:
+transitions, animations, text-animations, 3d, lottie, light-leaks, captions, subtitles, voiceover, charts, maps, audio, sfx, tailwind, fonts, images, videos, gifs, transparent-videos, compositions, sequencing, timing...
+
+**Zadatak:** Uporediti detaljno sa NAŠIM remotion skills (remotion-planner, remotion-builder, remotion-visual-router, remotion-motion, remotion-correction) i odlučiti:
+- [ ] Opcija A: MERGE — uzeti njihove best practices + naš branding/visual system
+- [ ] Opcija B: REPLACE — prebaciti se na njihov skill, dodati naš branding layer
+- [ ] Opcija C: HYBRID — njihov skill za rendering/efekte, naš za content pipeline/visual routing
+
+**Cilj:** Naš branding (boje, fontovi, glass, borders) + njihovi efekti (transitions, 3d, lottie, captions) = profesionalni videi
+
+**AI Slike/Video za efekte (istražiti):**
+- [ ] AI image generation (Flux/fal.ai ~$0.01, Midjourney $10/mo, DALL-E 3 ~$0.04) — generisati slike po sekciji videa
+- [ ] Image-to-video (Kling AI $6.99/mo, Runway $12/mo) — animirati AI slike (zoom, pan, rotate)
+- [ ] Lottie animacije (free, Remotion plugin) — vektorske animacije umesto statičnih ikona
+- [ ] Playwright screenshots — screenshot sajtova/appova za demo sekcije
+- [ ] Kako uklopiti: AI slika → animacija → Remotion `<Video>` ili `<Img>` sa CSS transforms
+
+**Takođe iz skills.sh:**
+- [ ] YouTube Thumbnail design rules — izvući safe zones, 120px test, color psychology
+- [ ] Deep Research quality gates — source credibility scoring + validation retry loop
+
 ### FAZA 1: Korekcije workflow ✅ DONE
 
 **1A: AI Correction Skill** ✅
