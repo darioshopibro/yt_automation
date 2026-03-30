@@ -3,6 +3,9 @@ import { ShortVideo } from "./ShortVideo";
 import { KlingFrames } from "./KlingFrames";
 import { GregTest } from "./GregTest";
 import { GregV2 } from "./GregV2";
+import { CurvedTextTest } from "./CurvedTextTest";
+import { StreakTest } from "./StreakTest";
+import { ParticleSwarmTest } from "./ParticleSwarmTest";
 
 export const RemotionRoot: React.FC = () => {
   return (
@@ -35,6 +38,30 @@ export const RemotionRoot: React.FC = () => {
         id="GregV2"
         component={GregV2}
         durationInFrames={900}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="ParticleSwarmTest"
+        component={ParticleSwarmTest}
+        durationInFrames={540}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="CurvedTextTest"
+        component={CurvedTextTest}
+        durationInFrames={600}
+        fps={30}
+        width={1080}
+        height={1920}
+      />
+      <Composition
+        id="StreakTest"
+        component={StreakTest}
+        durationInFrames={450}
         fps={30}
         width={1080}
         height={1920}

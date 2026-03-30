@@ -1,0 +1,567 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.45,
+    "similarity_boost": 0.7,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 53.174,
+  "words": [
+    {
+      "word": "Race",
+      "start": 0.0,
+      "end": 0.337
+    },
+    {
+      "word": "conditions",
+      "start": 0.372,
+      "end": 0.882
+    },
+    {
+      "word": "are",
+      "start": 0.94,
+      "end": 1.08
+    },
+    {
+      "word": "one",
+      "start": 1.126,
+      "end": 1.242
+    },
+    {
+      "word": "of",
+      "start": 1.265,
+      "end": 1.324
+    },
+    {
+      "word": "the",
+      "start": 1.382,
+      "end": 1.451
+    },
+    {
+      "word": "trickiest",
+      "start": 1.521,
+      "end": 2.02
+    },
+    {
+      "word": "bugs",
+      "start": 2.09,
+      "end": 2.403
+    },
+    {
+      "word": "in",
+      "start": 2.45,
+      "end": 2.519
+    },
+    {
+      "word": "concurrent",
+      "start": 2.589,
+      "end": 3.03
+    },
+    {
+      "word": "programming.",
+      "start": 3.077,
+      "end": 3.82
+    },
+    {
+      "word": "Imagine",
+      "start": 4.331,
+      "end": 4.865
+    },
+    {
+      "word": "two",
+      "start": 4.911,
+      "end": 5.12
+    },
+    {
+      "word": "threads",
+      "start": 5.19,
+      "end": 5.573
+    },
+    {
+      "word": "trying",
+      "start": 5.631,
+      "end": 5.886
+    },
+    {
+      "word": "to",
+      "start": 5.933,
+      "end": 5.979
+    },
+    {
+      "word": "increment",
+      "start": 6.06,
+      "end": 6.525
+    },
+    {
+      "word": "the",
+      "start": 6.56,
+      "end": 6.629
+    },
+    {
+      "word": "same",
+      "start": 6.676,
+      "end": 6.92
+    },
+    {
+      "word": "counter.",
+      "start": 6.978,
+      "end": 7.616
+    },
+    {
+      "word": "Thread",
+      "start": 7.999,
+      "end": 8.313
+    },
+    {
+      "word": "A",
+      "start": 8.382,
+      "end": 8.626
+    },
+    {
+      "word": "reads",
+      "start": 8.835,
+      "end": 9.091
+    },
+    {
+      "word": "the",
+      "start": 9.137,
+      "end": 9.207
+    },
+    {
+      "word": "value",
+      "start": 9.253,
+      "end": 9.752
+    },
+    {
+      "word": "\u2014",
+      "start": 9.845,
+      "end": 9.927
+    },
+    {
+      "word": "it's",
+      "start": 9.996,
+      "end": 10.182
+    },
+    {
+      "word": "5.",
+      "start": 10.252,
+      "end": 10.82
+    },
+    {
+      "word": "Thread",
+      "start": 11.262,
+      "end": 11.552
+    },
+    {
+      "word": "B",
+      "start": 11.61,
+      "end": 11.761
+    },
+    {
+      "word": "also",
+      "start": 11.97,
+      "end": 12.341
+    },
+    {
+      "word": "reads",
+      "start": 12.434,
+      "end": 12.759
+    },
+    {
+      "word": "\u2014",
+      "start": 12.852,
+      "end": 12.922
+    },
+    {
+      "word": "still",
+      "start": 12.98,
+      "end": 13.259
+    },
+    {
+      "word": "5.",
+      "start": 13.351,
+      "end": 13.92
+    },
+    {
+      "word": "Thread",
+      "start": 14.362,
+      "end": 14.675
+    },
+    {
+      "word": "A",
+      "start": 14.745,
+      "end": 14.954
+    },
+    {
+      "word": "writes",
+      "start": 15.07,
+      "end": 15.36
+    },
+    {
+      "word": "6.",
+      "start": 15.453,
+      "end": 16.01
+    },
+    {
+      "word": "Thread",
+      "start": 16.254,
+      "end": 16.544
+    },
+    {
+      "word": "B",
+      "start": 16.614,
+      "end": 16.765
+    },
+    {
+      "word": "writes",
+      "start": 17.009,
+      "end": 17.311
+    },
+    {
+      "word": "6.",
+      "start": 17.404,
+      "end": 18.007
+    },
+    {
+      "word": "You",
+      "start": 18.332,
+      "end": 18.46
+    },
+    {
+      "word": "lost",
+      "start": 18.53,
+      "end": 18.797
+    },
+    {
+      "word": "an",
+      "start": 18.843,
+      "end": 18.913
+    },
+    {
+      "word": "increment.",
+      "start": 18.983,
+      "end": 19.656
+    },
+    {
+      "word": "The",
+      "start": 19.981,
+      "end": 20.074
+    },
+    {
+      "word": "counter",
+      "start": 20.12,
+      "end": 20.411
+    },
+    {
+      "word": "should",
+      "start": 20.457,
+      "end": 20.608
+    },
+    {
+      "word": "be",
+      "start": 20.643,
+      "end": 20.724
+    },
+    {
+      "word": "7",
+      "start": 20.805,
+      "end": 21.061
+    },
+    {
+      "word": "but",
+      "start": 21.223,
+      "end": 21.351
+    },
+    {
+      "word": "it's",
+      "start": 21.386,
+      "end": 21.49
+    },
+    {
+      "word": "6.",
+      "start": 21.548,
+      "end": 22.071
+    },
+    {
+      "word": "The",
+      "start": 22.198,
+      "end": 22.303
+    },
+    {
+      "word": "fix?",
+      "start": 22.361,
+      "end": 22.93
+    },
+    {
+      "word": "Use",
+      "start": 23.278,
+      "end": 23.545
+    },
+    {
+      "word": "a",
+      "start": 23.592,
+      "end": 23.626
+    },
+    {
+      "word": "mutex",
+      "start": 23.708,
+      "end": 24.195
+    },
+    {
+      "word": "lock.",
+      "start": 24.3,
+      "end": 24.741
+    },
+    {
+      "word": "Before",
+      "start": 25.031,
+      "end": 25.356
+    },
+    {
+      "word": "reading,",
+      "start": 25.414,
+      "end": 25.844
+    },
+    {
+      "word": "acquire",
+      "start": 25.867,
+      "end": 26.297
+    },
+    {
+      "word": "the",
+      "start": 26.332,
+      "end": 26.39
+    },
+    {
+      "word": "lock.",
+      "start": 26.448,
+      "end": 26.866
+    },
+    {
+      "word": "Other",
+      "start": 27.156,
+      "end": 27.411
+    },
+    {
+      "word": "threads",
+      "start": 27.446,
+      "end": 27.771
+    },
+    {
+      "word": "wait.",
+      "start": 27.841,
+      "end": 28.305
+    },
+    {
+      "word": "Read,",
+      "start": 28.596,
+      "end": 29.164
+    },
+    {
+      "word": "increment,",
+      "start": 29.42,
+      "end": 30.116
+    },
+    {
+      "word": "write,",
+      "start": 30.279,
+      "end": 30.79
+    },
+    {
+      "word": "release.",
+      "start": 30.941,
+      "end": 31.544
+    },
+    {
+      "word": "Now",
+      "start": 31.835,
+      "end": 32.113
+    },
+    {
+      "word": "it's",
+      "start": 32.253,
+      "end": 32.404
+    },
+    {
+      "word": "thread-safe.",
+      "start": 32.485,
+      "end": 33.367
+    },
+    {
+      "word": "In",
+      "start": 33.658,
+      "end": 33.832
+    },
+    {
+      "word": "Go,",
+      "start": 33.901,
+      "end": 34.366
+    },
+    {
+      "word": "you'd",
+      "start": 34.586,
+      "end": 34.772
+    },
+    {
+      "word": "use",
+      "start": 34.819,
+      "end": 34.992
+    },
+    {
+      "word": "sync.Mutex",
+      "start": 35.027,
+      "end": 36.397
+    },
+    {
+      "word": "\u2014",
+      "start": 36.502,
+      "end": 36.56
+    },
+    {
+      "word": "just",
+      "start": 36.606,
+      "end": 36.792
+    },
+    {
+      "word": "two",
+      "start": 36.815,
+      "end": 36.955
+    },
+    {
+      "word": "lines:",
+      "start": 37.024,
+      "end": 37.523
+    },
+    {
+      "word": "mu.Lock()",
+      "start": 37.814,
+      "end": 39.184
+    },
+    {
+      "word": "before",
+      "start": 39.3,
+      "end": 39.567
+    },
+    {
+      "word": "the",
+      "start": 39.602,
+      "end": 39.671
+    },
+    {
+      "word": "critical",
+      "start": 39.694,
+      "end": 39.985
+    },
+    {
+      "word": "section",
+      "start": 40.031,
+      "end": 40.426
+    },
+    {
+      "word": "and",
+      "start": 40.542,
+      "end": 40.89
+    },
+    {
+      "word": "mu.Unlock()",
+      "start": 41.134,
+      "end": 42.701
+    },
+    {
+      "word": "after.",
+      "start": 42.736,
+      "end": 43.317
+    },
+    {
+      "word": "Or",
+      "start": 43.921,
+      "end": 44.048
+    },
+    {
+      "word": "even",
+      "start": 44.106,
+      "end": 44.292
+    },
+    {
+      "word": "better,",
+      "start": 44.338,
+      "end": 44.733
+    },
+    {
+      "word": "use",
+      "start": 44.884,
+      "end": 45.093
+    },
+    {
+      "word": "atomic",
+      "start": 45.14,
+      "end": 45.546
+    },
+    {
+      "word": "operations",
+      "start": 45.604,
+      "end": 46.277
+    },
+    {
+      "word": "\u2014",
+      "start": 46.451,
+      "end": 46.498
+    },
+    {
+      "word": "atomic.AddInt64",
+      "start": 46.614,
+      "end": 48.843
+    },
+    {
+      "word": "is",
+      "start": 48.994,
+      "end": 49.133
+    },
+    {
+      "word": "lock-free",
+      "start": 49.215,
+      "end": 49.865
+    },
+    {
+      "word": "and",
+      "start": 49.923,
+      "end": 50.074
+    },
+    {
+      "word": "10x",
+      "start": 50.132,
+      "end": 50.666
+    },
+    {
+      "word": "faster",
+      "start": 50.747,
+      "end": 51.165
+    },
+    {
+      "word": "than",
+      "start": 51.212,
+      "end": 51.328
+    },
+    {
+      "word": "mutex",
+      "start": 51.386,
+      "end": 51.85
+    },
+    {
+      "word": "for",
+      "start": 51.92,
+      "end": 52.024
+    },
+    {
+      "word": "simple",
+      "start": 52.071,
+      "end": 52.338
+    },
+    {
+      "word": "counters.",
+      "start": 52.373,
+      "end": 53.174
+    }
+  ]
+}

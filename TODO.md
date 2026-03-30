@@ -37,6 +37,42 @@ bo**Vreme po videu:** 30-60 min
   - Predloži konkretne fixeve pre nego što se krene sa implementacijom
   - Ovo sprečava da se implementira loš plan bez provere
 
+### ⚡⚡ NAJBITNIJE: Visual Generator — AI generise .tsx od nule za svaki transcript
+
+**Problem:** Nasi vizuali su iz kataloga (15 tipova). Kad transcript treba nesto custom (evolving diagram, interactive process, custom layout) — nemamo resenje. Template pristup (InteractiveDiagram.tsx) je POGRESAN — hardkodirani tipovi ne pokrivaju sve.
+
+**Resenje:** Skill/agent koji PISE celu .tsx komponentu od nule za svaki transcript. Ne popunjava template, ne koristi katalog. Svaki put potpuno nova komponenta skrojena za taj tekst.
+
+**Kako radi:**
+1. Agent cita transcript
+2. Agent PISE novu .tsx — bira elemente, layout, animacije, timeline
+3. Postuje: dizajn sistem (component-skeleton.md), Remotion rules (remotion-coding-rules.md), nikad preklapanje
+4. Dva moda: fullScreen (1920x1080) i nodeMode (u sticky sekciji)
+5. Props: progress (0-1), shapeMode, accentColor, fullScreen
+
+**Pravila za generisanje:**
+- CSS Grid/Flexbox UVEK, absolute positioning NIKAD (nauceno iz testiranja)
+- Elementi: BILO STA — progress bar, score circle, code snippet, card, tabela, status dot, mini chart
+- Timeline events: appear, highlight, connect, eliminate — sinhronizovano sa progress-om
+- Remotion: useCurrentFrame, clamp, spring, Img — SVE iz remotion-coding-rules.md
+- Dizajn: #0f0f1a, glass, glow, Inter/SF Mono — SVE iz component-skeleton.md
+- Labele na linijama NIKAD — voiceover objasnjava, strelica pokazuje smer
+
+**Integracija u pipeline (kad proradi):**
+- Visual Router dobija novi tip: `visualType: "generated"` — kad nijedan katalog vizual ne odgovara
+- Visual Proposer se prosiruje da generise one-off komponente (ne samo reusable za katalog)
+- Builder ucitava generisanu komponentu kao svaki drugi vizual
+- DynamicPipeline: `fullScreen: true` → renderuje bez sticky chrome-a, ceo ekran
+- Editor (port 3002): "Re-generate" dugme na sekcijama sa generated vizualima
+
+**Status:**
+- [ ] Napraviti skill koji generise .tsx od nule (istraziti + napisati)
+- [ ] Testirati na 2-3 transcripta (Serverless, K8s Scheduler, nesto drugacije)
+- [ ] Kad radi — integrisati u Proposer/Router/Builder pipeline
+- [ ] Dodati Re-generate u editor
+
+**Session log:** `docs/session-interactive-diagram.md` — kompletna istorija, sta radi/ne radi, grill-me rezultati
+
 ### ⚡ NOVI VIZUALI — Messaging + Brainstorm
 
 **Messaging vizuali:**

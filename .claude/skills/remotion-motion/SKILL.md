@@ -155,6 +155,8 @@ Output: Funkcionalan Remotion projekat
 | Design details | `reference/design.md` |
 | Voiceover details | `reference/voiceover.md` |
 | Full legacy (backup) | `SKILL-FULL.md` |
+| **Remotion coding rules** | `reference/remotion-coding-rules.md` |
+| **Future upgrades** | `reference/future-upgrades.md` |
 
 ---
 

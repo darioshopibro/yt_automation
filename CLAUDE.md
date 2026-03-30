@@ -1,5 +1,73 @@
 ## GLAVNO PRAVILO
 
+## Project Map — Gde je šta
+
+**NE TRAŽI grep-om. Pogledaj ovde prvo.**
+
+### Root
+```
+CLAUDE.md          — ovo
+TODO.md            — aktivni task-ovi
+```
+
+### `docs/` — Dokumentacija, strategija, session logovi
+```
+greg-v2-session-log.md            — Evolucija GregV2 (7 verzija), šta radi/ne radi
+AGENT-ARCHITECTURE-RESEARCH.md    — Agent arhitektura research
+AI-VIDEO-TOOLS-RESEARCH.md        — AI video alati pregled
+ANIMATED-EXPLAINER-WORKFLOW.md    — Workflow za animirane explainer videe
+VIDEO-QUALITY-RULES.md            — Pravila za kvalitet videa
+YT-MONETIZATION-STRATEGY.md      — YT monetizacija strategija
+infographic-conditions.md         — Uslovi za infografike
+infographic-types.md              — Tipovi infografika
+video-analysis.md                 — Analiza videa
+```
+
+### `research/` — Istraživanja, guide-ovi, reference
+```
+element-transitions-guide.md      — ★ SVE o tranzicijama (pravila, SVG efekti, spring presets)
+motion-physics-guide.md            — ★ Spring physics, 12 animation principi, Remotion specifično
+greg-v2-feedback.md                — Originalni Greg feedback
+greg-analysis/                     — Greg Isenberg video breakdown
+elevenlabs-voice-optimization.md   — ElevenLabs voice tuning
+prompt-playbook.md                 — Prompt engineering
+```
+
+### `workspace/short-poc/src/` — Vertical short-form tranzicije (port 3005)
+```
+GregV2.tsx              — ★ MAIN: blob + gooey + grain + glow (NE DIRATI)
+StreakTest.tsx           — Motion streak / speed blur rainbow
+CurvedTextTest.tsx      — Typewriter text na bezier krivoj
+ParticleSwarmTest.tsx   — Particle cloud (sličan blob-u)
+GregTest.tsx            — Stari Greg test
+ShortVideo.tsx          — Stari short video
+KlingFrames.tsx         — Kling frame generator
+Root.tsx                — Sve kompozicije registrovane
+```
+
+### `plans/` — Planovi i research za pipeline
+```
+01-stari-plan-remotion.md
+02-novi-plan-kling-pipeline.md
+research-*.md                      — 3D mockupi, AI slike, video, canvas, SFX
+```
+
+### `.claude/skills/element-transitions/` — Skill za tranzicije
+```
+SKILL.md                           — Workflow: research → implement → rules
+reference/transition-types.md      — Lista poznatih tipova tranzicija
+reference/svg-effects.md           — Gooey, grain, glow, distortion kod
+```
+
+### Ostali key folderi
+```
+templates/         — Remotion template-ovi za kopiranje
+tools/             — Content pipeline (telegram bot, processor)
+brands/            — Branding assets
+workspace/         — 20+ Remotion projekata (test kompozicije)
+```
+
+---
 
 # About Me
 

@@ -27,6 +27,7 @@ import ProcessStepsVisual from "./visuals/ProcessStepsVisual";
 import LogoGridVisual from "./visuals/LogoGridVisual";
 import SplitScreenVisual from "./visuals/SplitScreenVisual";
 import ServiceMeshVisual from "./visuals/ServiceMeshVisual";
+import InteractiveDiagram from "./visuals/InteractiveDiagram";
 import * as PhosphorIcons from "@phosphor-icons/react";
 import { Cube, type Icon as PhosphorIcon } from "@phosphor-icons/react";
 
@@ -478,6 +479,12 @@ const getVisualContentSize = (visualType: string, visualData: any, shapeMode?: "
       if (S === "wide") return { width: Math.max(350, meshCols * 154), height: Math.max(140, meshRows * 120) };
       return { width: Math.max(280, meshCols * 130), height: Math.max(200, meshRows * 126) };
     }
+    case "interactive-diagram": {
+      // Interactive diagram needs more space — elements must not overlap
+      const elCount = visualData?.elements?.length || 4;
+      if (S === "wide") return { width: Math.max(500, elCount * 100), height: 300 };
+      return { width: Math.max(380, elCount * 70), height: Math.max(350, elCount * 60) };
+    }
     default:
       return { width: 0, height: 0 };
   }
@@ -489,6 +496,7 @@ const getDefaultShape = (section: SectionConfig): "square" | "wide" => {
     switch (section.visualType) {
       case "code-block": case "terminal": case "list": case "bar-chart":
       case "process-steps": case "logo-grid": case "hierarchy": case "service-mesh":
+      case "interactive-diagram":
         return "square";
       case "timeline": case "table": case "split-screen": case "kinetic":
       case "pie-chart":
@@ -868,6 +876,7 @@ const SectionBox: React.FC<{
           {visualType === "logo-grid" && <LogoGridVisual {...visualData} accentColor={colorScheme.border} shapeMode={shapeMode} progress={progress} />}
           {visualType === "split-screen" && <SplitScreenVisual {...visualData} shapeMode={shapeMode} progress={progress} />}
           {visualType === "service-mesh" && <ServiceMeshVisual {...visualData} accentColor={colorScheme.border} shapeMode={shapeMode} progress={progress} />}
+          {visualType === "interactive-diagram" && <InteractiveDiagram {...visualData} accentColor={colorScheme.border} shapeMode={shapeMode} progress={progress} />}
           </div>
         </div>
       ) : useExplainer ? (

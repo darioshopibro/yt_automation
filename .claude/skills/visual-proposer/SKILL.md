@@ -116,7 +116,8 @@ Ako user odobri nakon preview-a:
 ## REFERENCE
 
 - `reference/visual-ideas.md` — inspiracija za vizuale koji bi mogli da postoje
-- `reference/component-skeleton.md` — template za nove React komponente
+- `reference/component-skeleton.md` — template za nove React komponente (dizajn + Remotion API pravila)
+- **`.claude/skills/remotion-motion/reference/remotion-coding-rules.md`** — OBAVEZNO kad vizual koristi slike, video, Lottie, napredne animacije, SVG paths
 - Visual katalog (postojeći): `.claude/skills/remotion-visual-router/reference/visual-catalog.md`
 - Extraction rules (postojeći): `.claude/skills/remotion-visual-router/reference/extraction-rules.md`
 

@@ -6,7 +6,24 @@ Svaki novi vizual MORA pratiti isti dizajn kao postojeći. Pre pisanja, PROČITA
 
 ## OBAVEZNO pročitaj pre generisanja
 
-Pročitaj minimum 2 od ovih fajlova da vidiš TAČAN dizajn pattern:
+### Remotion API pravila (OBAVEZNO za napredne vizuale!)
+
+Ako vizual koristi BILO STA od ovoga — PRVO procitaj:
+**`.claude/skills/remotion-motion/reference/remotion-coding-rules.md`**
+
+- **Slike** → `<Img>` iz Remotion-a, NIKAD HTML `<img>` ili CSS background-image
+- **Video embed** → `<Video>` sa trimBefore/trimAfter, volume callback
+- **GIF/animirane slike** → `<AnimatedImage>` sa playbackRate i loop
+- **Lottie animacije** → `delayRender()`/`continueRender()` pattern, `premountFor`
+- **SVG path animacije** → `evolvePath()` iz `@remotion/paths`
+- **Text fitting** → `fitText()` iz `@remotion/layout-utils` za auto-sizing
+- **Audio vizualizacija** → `visualizeAudio()` za beat-reactive efekte
+- **Spring animacije** → `spring()` za poziciju/scale, `interpolate()` za opacity
+- **UVEK** `extrapolateLeft: "clamp", extrapolateRight: "clamp"` na interpolate
+
+Bez tog fajla, vizual moze imati flickering, broken renderovanje, ili CSS animacije koje ne rade u renderovanju.
+
+### Postojece komponente (procitaj 2+ za dizajn pattern)
 
 ```
 templates/ai-video-gen-pipeline/src/visuals/LogoGridVisual.tsx    — grid layout, icon boxes, Phosphor ikone

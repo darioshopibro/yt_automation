@@ -10,6 +10,7 @@
     "@phosphor-icons/react": "^2.1.10",
     "@remotion/bundler": "^4.0.0",
     "@remotion/cli": "^4.0.0",
+    "@remotion/paths": "^4.0.438",
     "lucide-react": "^1.6.0",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
