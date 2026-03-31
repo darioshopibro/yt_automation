@@ -66,12 +66,45 @@ bo**Vreme po videu:** 30-60 min
 - Editor (port 3002): "Re-generate" dugme na sekcijama sa generated vizualima
 
 **Status:**
-- [ ] Napraviti skill koji generise .tsx od nule (istraziti + napisati)
-- [ ] Testirati na 2-3 transcripta (Serverless, K8s Scheduler, nesto drugacije)
+- [x] Napraviti skill koji generise .tsx od nule — `.claude/skills/visual-generator/`
+- [x] Testirati na 20 transcripta (prosek layout+prikaz: 8.1/10)
+- [x] Pravila iterirana: motion designer princip, progresivno gradjenje, vise scena, SVG zabrana, layout shift fix
+- [ ] **Vizuelna hijerarhija** — bitniji element = VECI, manje bitan = manji. Sad su svi elementi iste velicine. Dodati u generation-rules.md
 - [ ] Kad radi — integrisati u Proposer/Router/Builder pipeline
 - [ ] Dodati Re-generate u editor
 
+**Test promptovi:** `.claude/skills/visual-generator/reference/test-prompts.md` (27 testova)
 **Session log:** `docs/session-interactive-diagram.md` — kompletna istorija, sta radi/ne radi, grill-me rezultati
+
+### ⚡⚡ Asset Sourcing — AI trazi/predlaze slike, screenshotove, video klipove
+
+**Problem:** Nasi vizuali su 100% generisani kodom. Kad transcript prica o konkretnom proizvodu, sajtu, app-u — fali KONTEKST. Screenshot Google-a, slika Docker loga, video demo — to bi vizual ucinilo 10x boljim.
+
+**Sta treba:**
+- [ ] AI analizira transcript i prepozna gde bi slika/screenshot/video klip bio bolji od generisanog koda
+- [ ] AI trazi odgovarajuce grafike (stock, screenshot, logo) ili predlaze sta da se nabavi
+- [ ] Integracija u pipeline — asset se ubacuje u komponentu (Remotion `<Img>` / `<Video>`)
+- [ ] Odluciti GDE u flow-u ovo ide — da li Visual Generator sam trazi, ili poseban agent pre njega
+- [ ] Odluciti KAKO nabavlja — AI generise (DALL-E/Flux), screenshot (Playwright), stock (Unsplash API), ili predlaze useru da uploaduje
+
+### ⚡⚡ Research Validation — Metrike i proof za teme
+
+**Problem:** Nas research pipeline nalazi teme sa YT i weba ali nema DOKAZ da je tema zaista u trendu. "Ovo je dobro" — odakle znas? Gde je proof?
+
+**Sta treba:**
+- [ ] Pristup pravim metrikama — Google Trends API, search volume (Ahrefs/SEMrush API ili alternativa), Reddit upvote count, HN points
+- [ ] SEO signali — koliko ljudi zapravo TRAZI ovu temu? Search volume, keyword difficulty, trending score
+- [ ] Social proof — koliko engagement-a tema dobija na Reddit/HN/Twitter zadnjih 7 dana
+- [ ] Competitor analysis — koliko YT videa vec postoji na tu temu, koliko views imaju, kad su postavljeni
+- [ ] Agent koristi ove metrike da POTVRDI ili ODBACI temu pre nego sto je predlozi — ne samo "izgleda zanimljivo" nego "evo brojeva"
+- [ ] Integrisati u content pipeline — posle topic discovery, pre script writing, agent proverava metrike i daje confidence score sa izvorima
+- [ ] **YT Channel Stats tracking** — pratiti kanale iz nase nise (Fireship, ByteMonk, NetworkChuck, ThePrimeagen itd):
+  - Prosecni views po videu poslednjih 30 dana vs prosek kanala — da li im ova tema NADMASUJE prosek?
+  - Ako Fireship napravi video o "X" i dobije 3x vise views od proseka — to je SIGNAL da je tema vrela
+  - Views/subscriber ratio — koliko % subscribera zapravo gleda (engagement rate)
+  - Upload frequency na temu — ako 3+ kanala uploaduju o istoj temi u 7 dana = trending
+  - yt-dlp moze da izvuce view count, like count, upload date — sve sto treba
+  - Napraviti bazu/JSON sa kanalima i njihovim prosecima, updejt weekly
 
 ### ⚡ NOVI VIZUALI — Messaging + Brainstorm
 

@@ -19,7 +19,7 @@ import {
   X,
   Check,
   ArrowsLeftRight,
-  Server,
+  HardDrives,
   Browser,
 } from "@phosphor-icons/react";
 
@@ -301,7 +301,7 @@ const UpgradeScene: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) 
           boxShadow: `0 0 ${morphGlow}px ${morphColor}40`,
           display: "flex", alignItems: "center", gap: 12,
         }}>
-          <Server size={32} color={morphColor} weight="duotone" />
+          <HardDrives size={32} color={morphColor} weight="duotone" />
           <span style={{ fontSize: 18, fontWeight: 600, color: "#e2e8f0", fontFamily: "'Inter', system-ui, sans-serif" }}>Server</span>
         </div>
       </div>
@@ -402,7 +402,7 @@ const PayoffScene: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) =
         background: `${colors.ws}08`, borderRadius: 12, padding: "14px 28px",
         border: `1px solid ${colors.ws}15`,
       }}>
-        <Server size={28} color={colors.ws} weight="duotone" />
+        <HardDrives size={28} color={colors.ws} weight="duotone" />
         <div style={{
           width: 80, height: 2, background: `${colors.ws}30`, position: "relative",
         }}>
