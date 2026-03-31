@@ -366,7 +366,66 @@ Tvoj posao je da nadjes nacin koji ce LEPSE i JASNIJE vizuelno komunicirati vezu
 
 ---
 
-## 8. CHECKLIST PRE ZAVRSAVANJA
+## 8. CONTEXT PANEL — KAD TRANSCRIPT OPISUJE KONKRETAN FAJL, TERMINAL, ILI UI
+
+Kad transcript opisuje šta se dešava **unutar** ili **oko** nekog konkretnog izvora (fajl, terminal output, browser URL, API response) — koristi **Context Panel layout** umesto punog fullscreen-a.
+
+### Kad da prepoznaš ovaj slučaj
+
+Pitaj se: "Da li transcript **čita**, **prati**, ili **objašnjava** nešto što gledalac može da vidi na ekranu?"
+
+- Narator čita fajl liniju po liniju → levo Dockerfile/config fajl
+- Narator prati šta se dešava posle komande → levo terminal output
+- Narator objašnjava redirect flow → levo browser sa URL barom koji se menja
+- Narator opisuje API response headere → levo HTTP response
+- Narator prolazi kroz kod koji gledalac verovatno piše → levo code block
+
+Ako odgovor je DA — koristi Context Panel. Ako ne — ostani na fullscreen.
+
+### Struktura
+
+```
+┌──────────────────────────────────────────────────────┐
+│  LEVO (40%)              │  DESNO (60%)              │
+│  Context Panel           │  Vizual objašnjenje       │
+└──────────────────────────────────────────────────────┘
+```
+
+**Leva strana** je kontekst koji gledalac prepoznaje — fajl, terminal, browser, API response. Sadrži:
+- Header zona: ikonica + naziv (npr. file icon + "Dockerfile", terminal icon + "bash")
+- Placeholder linije: sive bar-ove različitih dužina koje imitiraju tekst — **ne pravi tekst**. Gledalac vidi "ovo izgleda kao fajl/kod" bez potrebe da čita.
+- Highlight zona: jedan ili više redova koji se osvetljavaju (accent boja, glow) tačno u trenutku kad narator priča o toj liniji
+
+**Desna strana** je vizualno objašnjenje — šta se ZAPRAVO dešava. Animacije, metafori, transformacije. Sve što bi inače bio fullscreen vizual.
+
+### Sinhronizacija — najvažniji deo
+
+Leva i desna strana moraju biti **vizuelno u paru** u svakom trenutku:
+- Kad highlight skače na sledeći red levo → desno se pojavi ili promeni element koji objašnjava TU liniju
+- Kad desno animacija dođe do kraja faze → highlight levo pređe na sledeći blok
+- Nikad ne sme da se desi da levo prikazuje jednu stvar a desno objašnjava drugu
+
+Highlight nije samo dekoracija — on je **kursor** koji govori gledaocu "ovo je ono o čemu pričamo sada".
+
+### Placeholder linije
+
+Leva strana koristi divove koji **izgledaju kao linije koda/teksta** ali nisu pravi tekst:
+- Kratke/srednje/duge grey bar-ove (`background: #ffffff15`, `height: 10-12px`, `borderRadius: 4px`)
+- Grupisane u blokove (kao paragrafi ili funkcije u kodu)
+- 1-2 "prepoznatljive" linije mogu imati pravi tekst ako su ključne za kontekst (`FROM node:18`, `git push origin main`)
+
+**Zašto placeholder:** Gledalac ne treba da čita levi panel — samo treba da prepozna "ovo je fajl/terminal". Pravi tekst bi odvukao pažnju od desnog vizuala.
+
+### Dizajn levih panela
+
+Levi panel ima isti dark background ali drugačiji karakter zavisno od tipa:
+- **Fajl/kod:** monospace font, indent linije, line numbers sa strane (dimovane)
+- **Terminal:** crna pozadina sa zelenim headerom, `$` prompt, output linije
+- **Browser:** URL bar na vrhu, napredak konekcije, status kod
+
+---
+
+## 9. CHECKLIST PRE ZAVRSAVANJA
 
 - [ ] Importi: useCurrentFrame, useVideoConfig, interpolate, spring, Easing iz "remotion"
 - [ ] Fullscreen: 1920x1080, padding 80px

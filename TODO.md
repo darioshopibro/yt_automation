@@ -70,6 +70,8 @@ bo**Vreme po videu:** 30-60 min
 - [x] Testirati na 20 transcripta (prosek layout+prikaz: 8.1/10)
 - [x] Pravila iterirana: motion designer princip, progresivno gradjenje, vise scena, SVG zabrana, layout shift fix
 - [ ] **Vizuelna hijerarhija** — bitniji element = VECI, manje bitan = manji. Sad su svi elementi iste velicine. Dodati u generation-rules.md
+- [ ] **Context Panel layout mode** — levo (40%) kontekst (fajl/terminal/browser sa placeholder linijama + highlight), desno (60%) vizual objašnjenje. Testirati na promptovima: 9 (Dockerfile), 12 (V8 JS), 17 (git push), 18 (Redis), 19 (OAuth2 browser), 20 (WebSocket headers), 26 (rate limiting code). Kad radi — dodati u generation-rules.md
+- [ ] **Logika kad šta koristiti:** context panel (transcript opisuje konkretan fajl/terminal/UI) vs full screen (apstraktan koncept) vs canvas (tutorial/step-by-step)
 - [ ] Kad radi — integrisati u Proposer/Router/Builder pipeline
 - [ ] Dodati Re-generate u editor
 

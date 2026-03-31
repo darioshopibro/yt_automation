@@ -42,6 +42,7 @@ Kad dobis transcript, razmisljaj OVIM REDOM. Ne preskaci korake.
 - Kako da tu sustinu vizuelno OBJASNIM?
 - Kakav pokret/transformacija prenosi ideju?
 - NE "kutije sa labelama" — nego metafor koji OBJASNJAVA
+- Da li transcript opisuje konkretan fajl/terminal/browser/UI? → razmisli o **Context Panel** (levo kontekst, desno vizual) — vidi `reference/generation-rules.md` sekcija 8
 
 ### 3. LAYOUT — KAKO RASPOREDITI?
 - Koji raspored INTUITIVNO pokazuje strukturu?

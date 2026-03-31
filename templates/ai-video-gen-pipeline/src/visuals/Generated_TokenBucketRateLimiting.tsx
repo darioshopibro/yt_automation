@@ -6,743 +6,841 @@ import {
   spring,
   Easing,
 } from "remotion";
-import { ShieldCheck, Lightning, Warning, Drop, Timer, Database, ArrowRight, XCircle, CheckCircle, Funnel } from "@phosphor-icons/react";
+import * as PhosphorIcons from "@phosphor-icons/react";
+import { Cube } from "@phosphor-icons/react";
 
-// ─── Helpers ──────────────────────────────────────────────
-const clamp = { extrapolateLeft: "clamp" as const, extrapolateRight: "clamp" as const };
-const easeOutCubic = Easing.out(Easing.cubic);
-const easeInQuad = Easing.in(Easing.quad);
-
-const fadeIn = (frame: number, start: number, dur = 15) =>
-  interpolate(frame, [start, start + dur], [0, 1], { ...clamp, easing: easeOutCubic });
-
-const slideUp = (frame: number, start: number, dur = 15) =>
-  interpolate(frame, [start, start + dur], [24, 0], { ...clamp, easing: easeOutCubic });
-
-const fadeOut = (frame: number, start: number, dur = 20) =>
-  interpolate(frame, [start, start + dur], [1, 0], { ...clamp, easing: easeInQuad });
-
-// ─── Colors ───────────────────────────────────────────────
-const BG = "#0f0f1a";
-const BLUE = "#3b82f6";
-const GREEN = "#22c55e";
-const AMBER = "#f59e0b";
-const RED = "#ef4444";
-const PURPLE = "#a855f7";
-const CYAN = "#06b6d4";
-const TEXT_PRIMARY = "#e2e8f0";
-const TEXT_SECONDARY = "#94a3b8";
-const TEXT_DIM = "#64748b";
-const BORDER = "#1a1a2e";
-
-/*
- * ═══════════════════════════════════════════════════════════
- * TIMELINE (30fps)
- * ═══════════════════════════════════════════════════════════
- * SCENE 1: THE PROBLEM (0-300)
- *   0-30:    Title fade in
- *   30-90:   Requests flooding animation
- *   90-150:  "10,000 req/s" — server overwhelmed
- *   150-210: Server crashes / goes red
- *   210-270: "Rate Limiting = Your Bouncer"
- *   270-300: Fade out
- *
- * SCENE 2: TOKEN BUCKET (300-930)
- *   300-360: "Token Bucket Algorithm" title
- *   360-420: Bucket appears with fill gauge
- *   420-480: Fill to 100 tokens (liquid rises)
- *   480-540: "10 tokens/sec drip in" — drip animation
- *   540-600: Request → token consumed (99)
- *   600-660: More requests → drops to 90, 80...
- *   660-720: Bucket empty → 429 Too Many Requests
- *   720-810: Burst: 100 instant, then 10/s refill
- *   810-870: Stripe: 100/s test, 10,000/s live
- *   870-930: Retry-After header
- *
- * SCENE 3: SLIDING WINDOW + REDIS (930-1350)
- *   930-990:  "Sliding Window" title
- *   990-1080: Window visualization — 60s window
- *   1080-1140: Counter hits 600 → blocked
- *   1140-1200: "No bursting, but predictable"
- *   1200-1260: Redis appears
- *   1260-1350: INCR + EXPIRE commands
- */
-
-// ═══════════════════════════════════════════════════════════
-// SCENE 1: THE PROBLEM
-// ═══════════════════════════════════════════════════════════
-const Scene1: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const titleOp = fadeIn(frame, 0);
-  const titleY = slideUp(frame, 0);
-
-  // Server appears
-  const serverOp = fadeIn(frame, 30);
-  const serverY = slideUp(frame, 30);
-  const serverScale = spring({ frame: Math.max(0, frame - 30), fps, config: { damping: 20, stiffness: 200 } });
-
-  // Flooding requests (animated dots)
-  const floodStart = 50;
-  const numRequests = Math.min(12, Math.floor(Math.max(0, frame - floodStart) / 4));
-
-  // Server turns red when overwhelmed
-  const overwhelmProgress = interpolate(frame, [100, 150], [0, 1], { ...clamp });
-  const serverBorderColor = interpolate(overwhelmProgress, [0, 1], [0, 1], { ...clamp });
-  const serverGlow = `0 0 ${20 + overwhelmProgress * 30}px ${overwhelmProgress > 0.5 ? RED : BLUE}${Math.round(20 + overwhelmProgress * 30).toString(16).padStart(2, "0")}`;
-
-  // "10,000 req/s" counter
-  const counterOp = fadeIn(frame, 90);
-  const counterY = slideUp(frame, 90);
-  const reqCount = Math.round(interpolate(frame, [90, 130], [0, 10000], { ...clamp }));
-
-  // Crash effect
-  const crashOp = fadeIn(frame, 150);
-  const crashShake = frame > 150 && frame < 170 ? Math.sin(frame * 2.5) * 4 : 0;
-
-  // Bouncer section
-  const bouncerOp = fadeIn(frame, 210);
-  const bouncerY = slideUp(frame, 210);
-  const bouncerScale = spring({ frame: Math.max(0, frame - 215), fps, config: { damping: 20, stiffness: 180 } });
-
-  return (
-    <div style={{ opacity: frame > 270 ? fadeOut(frame, 270) : 1, width: "100%", height: "100%", display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 48 }}>
-      {/* Title */}
-      <div style={{ opacity: titleOp, transform: `translateY(${titleY}px)`, fontSize: 28, fontWeight: 700, color: TEXT_PRIMARY, fontFamily: "'Inter', system-ui, sans-serif", letterSpacing: -0.5 }}>
-        API Rate Limiting
-      </div>
-
-      {/* Main area */}
-      <div style={{ display: "flex", alignItems: "center", gap: 80, transform: `translateX(${crashShake}px)` }}>
-        {/* Request flood */}
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 12, width: 200 }}>
-          <div style={{ opacity: counterOp, transform: `translateY(${counterY}px)`, fontFamily: "'SF Mono', monospace", fontSize: 22, fontWeight: 700, color: RED, textShadow: `0 0 20px ${RED}40` }}>
-            {reqCount.toLocaleString()} req/s
-          </div>
-          <div style={{ display: "flex", flexWrap: "wrap", gap: 6, justifyContent: "center", width: 160 }}>
-            {Array.from({ length: numRequests }).map((_, i) => {
-              const dotOp = fadeIn(frame, floodStart + i * 4, 8);
-              const dotX = interpolate(frame, [floodStart + i * 4, floodStart + i * 4 + 20], [60, 0], { ...clamp, easing: easeOutCubic });
-              return (
-                <div key={i} style={{
-                  opacity: dotOp,
-                  transform: `translateX(${dotX}px)`,
-                  width: 14, height: 14, borderRadius: "50%",
-                  background: i < 6 ? BLUE : RED,
-                  boxShadow: `0 0 8px ${i < 6 ? BLUE : RED}50`,
-                }} />
-              );
-            })}
-          </div>
-          {numRequests > 0 && (
-            <div style={{ opacity: fadeIn(frame, 60), fontSize: 13, color: TEXT_DIM, fontFamily: "'Inter', system-ui, sans-serif" }}>
-              Incoming Requests
-            </div>
-          )}
-        </div>
-
-        {/* Arrow */}
-        <div style={{ opacity: fadeIn(frame, 45) }}>
-          <ArrowRight size={32} color={TEXT_DIM} weight="bold" />
-        </div>
-
-        {/* Server */}
-        <div style={{
-          opacity: serverOp,
-          transform: `translateY(${serverY}px) scale(${serverScale})`,
-          display: "flex", flexDirection: "column", alignItems: "center", gap: 16,
-        }}>
-          <div style={{
-            width: 140, height: 140, borderRadius: 20,
-            background: `linear-gradient(135deg, ${serverBorderColor > 0.5 ? RED : BLUE}15, ${serverBorderColor > 0.5 ? RED : BLUE}05)`,
-            border: `2px solid ${serverBorderColor > 0.5 ? RED : BLUE}40`,
-            display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 8,
-            boxShadow: serverGlow,
-          }}>
-            <Lightning size={40} color={serverBorderColor > 0.5 ? RED : BLUE} weight="duotone" style={{ filter: `drop-shadow(0 0 10px ${serverBorderColor > 0.5 ? RED : BLUE}60)` }} />
-            <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 13, fontWeight: 600, color: serverBorderColor > 0.5 ? RED : TEXT_PRIMARY }}>
-              YOUR API
-            </span>
-          </div>
-
-          {/* Crash text */}
-          {frame > 150 && (
-            <div style={{ opacity: crashOp, display: "flex", alignItems: "center", gap: 8 }}>
-              <Warning size={20} color={RED} weight="duotone" />
-              <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 14, fontWeight: 600, color: RED }}>
-                SERVICE DOWN
-              </span>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Bouncer section */}
-      {frame > 210 && (
-        <div style={{
-          opacity: bouncerOp,
-          transform: `translateY(${bouncerY}px) scale(${bouncerScale})`,
-          display: "flex", alignItems: "center", gap: 16,
-          padding: "20px 36px", borderRadius: 12,
-          background: `${GREEN}08`, border: `1.5px solid ${GREEN}25`,
-          boxShadow: `0 0 20px ${GREEN}10`,
-        }}>
-          <ShieldCheck size={36} color={GREEN} weight="duotone" style={{ filter: `drop-shadow(0 0 10px ${GREEN}60)` }} />
-          <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 20, fontWeight: 600, color: TEXT_PRIMARY }}>
-            Rate Limiting = Your Bouncer at the Door
-          </span>
-        </div>
-      )}
-    </div>
-  );
+const getIcon = (name: string): React.FC<any> => {
+  const I = (PhosphorIcons as Record<string, unknown>)[name];
+  return (I && typeof I === "function" ? I : Cube) as React.FC<any>;
 };
 
-// ═══════════════════════════════════════════════════════════
-// SCENE 2: TOKEN BUCKET
-// ═══════════════════════════════════════════════════════════
-const Bucket: React.FC<{
-  fillPercent: number;
-  color: string;
-  tokenCount: number;
-  showDrip: boolean;
-  rejected: boolean;
-  frame: number;
-}> = ({ fillPercent, color, tokenCount, showDrip, rejected, frame }) => {
-  const bucketWidth = 260;
-  const bucketHeight = 340;
-  const fillHeight = (bucketHeight - 40) * Math.min(1, Math.max(0, fillPercent / 100));
+// ─── SCENE 1: Token Bucket Core ──────────────────────────────────────────────
 
-  // Drip animation
-  const dripY = showDrip ? interpolate(frame % 30, [0, 29], [0, 40], { ...clamp }) : 0;
-  const dripOp = showDrip ? interpolate(frame % 30, [0, 20, 29], [1, 1, 0], { ...clamp }) : 0;
-
-  // Wave effect on fill
-  const waveOffset = Math.sin(frame * 0.08) * 3;
-
-  return (
-    <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 16, position: "relative" }}>
-      {/* Drip indicator */}
-      {showDrip && (
-        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 4, height: 50 }}>
-          <div style={{ fontFamily: "'SF Mono', monospace", fontSize: 13, color: CYAN, fontWeight: 600, letterSpacing: 0.5 }}>
-            +10 tokens/sec
-          </div>
-          <div style={{
-            opacity: dripOp,
-            transform: `translateY(${dripY}px)`,
-            width: 8, height: 8, borderRadius: "50%",
-            background: CYAN,
-            boxShadow: `0 0 10px ${CYAN}60`,
-          }} />
-        </div>
-      )}
-      {!showDrip && <div style={{ height: 50 }} />}
-
-      {/* Bucket container */}
-      <div style={{
-        width: bucketWidth, height: bucketHeight,
-        borderRadius: "12px 12px 24px 24px",
-        border: `2px solid ${rejected ? RED : color}40`,
-        background: `${rejected ? RED : color}06`,
-        overflow: "hidden",
-        display: "flex", flexDirection: "column", justifyContent: "flex-end",
-        boxShadow: `0 0 20px ${rejected ? RED : color}15`,
-      }}>
-        {/* Fill level */}
-        <div style={{
-          width: "100%",
-          height: fillHeight + waveOffset,
-          background: `linear-gradient(180deg, ${rejected ? RED : color}35, ${rejected ? RED : color}18)`,
-          borderRadius: "0 0 22px 22px",
-          transition: "none",
-        }} />
-      </div>
-
-      {/* Token counter */}
-      <div style={{
-        display: "flex", alignItems: "baseline", gap: 6,
-      }}>
-        <span style={{
-          fontFamily: "'SF Mono', monospace", fontSize: 36, fontWeight: 700,
-          color: rejected ? RED : tokenCount > 50 ? GREEN : tokenCount > 20 ? AMBER : RED,
-          textShadow: `0 0 20px ${rejected ? RED : tokenCount > 50 ? GREEN : tokenCount > 20 ? AMBER : RED}30`,
-          letterSpacing: -1,
-        }}>
-          {tokenCount}
-        </span>
-        <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 16, color: TEXT_DIM, fontWeight: 600 }}>
-          / 100 tokens
-        </span>
-      </div>
-    </div>
-  );
-};
-
-const Scene2: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  // Normalize frame to scene-local (scene starts at 300)
-  const f = frame - 300;
-
-  const titleOp = fadeIn(f, 0, 0);
-  const titleY = slideUp(f, 0, 0);
-
-  // Bucket appears
-  const bucketOp = fadeIn(f, 60);
-  const bucketScale = spring({ frame: Math.max(0, f - 60), fps, config: { damping: 22, stiffness: 180 } });
-
-  // Fill to 100 tokens (120-180)
-  const initialFill = interpolate(f, [120, 180], [0, 100], { ...clamp, easing: easeOutCubic });
-
-  // Drip starts at 180
-  const showDrip = f > 180;
-
-  // Requests consume tokens (240-360)
-  const consumePhase = interpolate(f, [240, 360], [0, 100], { ...clamp, easing: easeOutCubic });
-
-  // 429 rejection zone (360-420)
-  const isRejected = f > 360 && f < 450;
-
-  // Refill / burst demo (420-540)
-  const burstRefill = f > 420 ? interpolate(f, [420, 450, 510], [0, 100, 30], { ...clamp }) : 0;
-
-  // Calculate token count
-  let tokenCount: number;
-  let fillPercent: number;
-  if (f < 120) {
-    tokenCount = 0; fillPercent = 0;
-  } else if (f < 240) {
-    tokenCount = Math.round(initialFill); fillPercent = initialFill;
-  } else if (f < 420) {
-    const consumed = consumePhase;
-    tokenCount = Math.max(0, Math.round(100 - consumed));
-    fillPercent = Math.max(0, 100 - consumed);
-  } else {
-    tokenCount = Math.round(burstRefill);
-    fillPercent = burstRefill;
-  }
-
-  // Request indicators
-  const reqPhases = [
-    { start: 240, label: "GET /api/users", status: "ok" as const },
-    { start: 270, label: "POST /api/data", status: "ok" as const },
-    { start: 300, label: "GET /api/items", status: "ok" as const },
-    { start: 330, label: "PUT /api/update", status: "ok" as const },
-    { start: 370, label: "GET /api/users", status: "rejected" as const },
-    { start: 390, label: "POST /api/data", status: "rejected" as const },
-  ];
-
-  // Stripe example (510-570)
-  const stripeOp = fadeIn(f, 510);
-  const stripeY = slideUp(f, 510);
-
-  // Retry-After (570-630)
-  const retryOp = fadeIn(f, 570);
-  const retryY = slideUp(f, 570);
-
-  return (
-    <div style={{
-      opacity: f < 0 ? 0 : f > 600 ? fadeOut(f, 600) : 1,
-      width: "100%", height: "100%",
-      display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 32,
-    }}>
-      {/* Title */}
-      <div style={{
-        opacity: titleOp, transform: `translateY(${titleY}px)`,
-        fontSize: 26, fontWeight: 700, color: TEXT_PRIMARY,
-        fontFamily: "'Inter', system-ui, sans-serif", letterSpacing: -0.5,
-        display: "flex", alignItems: "center", gap: 12,
-      }}>
-        <Funnel size={28} color={BLUE} weight="duotone" />
-        Token Bucket Algorithm
-      </div>
-
-      {/* Main content: Requests | Bucket | Status */}
-      <div style={{
-        display: "flex", alignItems: "flex-start", gap: 60,
-        opacity: bucketOp, transform: `scale(${bucketScale})`,
-      }}>
-        {/* Request list */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 10, width: 240, paddingTop: 80 }}>
-          {reqPhases.map((req, i) => {
-            const op = fadeIn(f, req.start, 12);
-            const x = interpolate(f, [req.start, req.start + 12], [30, 0], { ...clamp, easing: easeOutCubic });
-            return (
-              <div key={i} style={{
-                opacity: op, transform: `translateX(${x}px)`,
-                display: "flex", alignItems: "center", gap: 10,
-                padding: "10px 14px", borderRadius: 10,
-                background: req.status === "rejected" ? `${RED}10` : `${BLUE}08`,
-                border: `1px solid ${req.status === "rejected" ? RED : BLUE}20`,
-              }}>
-                {req.status === "ok" ? (
-                  <CheckCircle size={18} color={GREEN} weight="duotone" />
-                ) : (
-                  <XCircle size={18} color={RED} weight="duotone" />
-                )}
-                <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 12, color: req.status === "rejected" ? RED : TEXT_SECONDARY, fontWeight: 500 }}>
-                  {req.label}
-                </span>
-                {req.status === "rejected" && (
-                  <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 11, color: RED, fontWeight: 700, marginLeft: "auto" }}>
-                    429
-                  </span>
-                )}
-              </div>
-            );
-          })}
-        </div>
-
-        {/* Bucket */}
-        <Bucket
-          fillPercent={fillPercent}
-          color={BLUE}
-          tokenCount={tokenCount}
-          showDrip={showDrip}
-          rejected={isRejected}
-          frame={frame}
-        />
-
-        {/* Right side info */}
-        <div style={{ display: "flex", flexDirection: "column", gap: 20, width: 320, paddingTop: 80 }}>
-          {/* How it works */}
-          {f > 120 && (
-            <div style={{
-              opacity: fadeIn(f, 120), transform: `translateY(${slideUp(f, 120)}px)`,
-              padding: "16px 20px", borderRadius: 12,
-              background: `${BLUE}08`, border: `1px solid ${BLUE}15`,
-            }}>
-              <div style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 13, fontWeight: 600, color: BLUE, marginBottom: 10, textTransform: "uppercase", letterSpacing: 1.5 }}>
-                How It Works
-              </div>
-              <div style={{ display: "flex", flexDirection: "column", gap: 8 }}>
-                {[
-                  { text: "Bucket holds 100 tokens", icon: "bucket", start: 120 },
-                  { text: "10 new tokens drip in / sec", icon: "drip", start: 180 },
-                  { text: "Each request costs 1 token", icon: "req", start: 240 },
-                ].map((item, i) => (
-                  <div key={i} style={{
-                    opacity: fadeIn(f, item.start),
-                    display: "flex", alignItems: "center", gap: 8,
-                  }}>
-                    <div style={{ width: 6, height: 6, borderRadius: "50%", background: BLUE, flexShrink: 0 }} />
-                    <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 13, color: TEXT_SECONDARY }}>
-                      {item.text}
-                    </span>
-                  </div>
-                ))}
-              </div>
-            </div>
-          )}
-
-          {/* Burst OK */}
-          {f > 420 && (
-            <div style={{
-              opacity: fadeIn(f, 420), transform: `translateY(${slideUp(f, 420)}px)`,
-              padding: "16px 20px", borderRadius: 12,
-              background: `${GREEN}08`, border: `1px solid ${GREEN}15`,
-            }}>
-              <div style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 13, fontWeight: 600, color: GREEN, marginBottom: 8 }}>
-                Burst Traffic? No Problem.
-              </div>
-              <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 13, color: TEXT_SECONDARY }}>
-                Send 100 requests instantly — empties the bucket. Then limited to 10/sec as tokens refill.
-              </span>
-            </div>
-          )}
-
-          {/* Stripe example */}
-          {f > 510 && (
-            <div style={{
-              opacity: stripeOp, transform: `translateY(${stripeY}px)`,
-              padding: "16px 20px", borderRadius: 12,
-              background: `${PURPLE}08`, border: `1px solid ${PURPLE}15`,
-            }}>
-              <div style={{ fontFamily: "'SF Mono', monospace", fontSize: 13, fontWeight: 600, color: PURPLE, marginBottom: 10, letterSpacing: 0.5 }}>
-                Stripe's Rate Limits
-              </div>
-              <div style={{ display: "flex", gap: 24 }}>
-                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                  <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 11, color: TEXT_DIM, textTransform: "uppercase", letterSpacing: 1 }}>Test Mode</span>
-                  <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 20, fontWeight: 700, color: AMBER }}>100/s</span>
-                </div>
-                <div style={{ width: 1, background: `${BORDER}` }} />
-                <div style={{ display: "flex", flexDirection: "column", gap: 4 }}>
-                  <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 11, color: TEXT_DIM, textTransform: "uppercase", letterSpacing: 1 }}>Live Mode</span>
-                  <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 20, fontWeight: 700, color: GREEN }}>10,000/s</span>
-                </div>
-              </div>
-            </div>
-          )}
-
-          {/* Retry-After */}
-          {f > 570 && (
-            <div style={{
-              opacity: retryOp, transform: `translateY(${retryY}px)`,
-              padding: "12px 16px", borderRadius: 10,
-              background: `${AMBER}08`, border: `1px solid ${AMBER}15`,
-              display: "flex", alignItems: "center", gap: 10,
-            }}>
-              <Timer size={20} color={AMBER} weight="duotone" />
-              <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 13, color: AMBER, fontWeight: 600 }}>
-                Retry-After: 2
-              </span>
-              <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 12, color: TEXT_DIM }}>
-                seconds to wait
-              </span>
-            </div>
-          )}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════
-// SCENE 3: SLIDING WINDOW + REDIS
-// ═══════════════════════════════════════════════════════════
-const Scene3: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const f = frame - 930;
-
-  const titleOp = fadeIn(f, 0);
-  const titleY = slideUp(f, 0);
-
-  // Window visualization
-  const windowOp = fadeIn(f, 60);
-  const windowScale = spring({ frame: Math.max(0, f - 60), fps, config: { damping: 22, stiffness: 180 } });
-
-  // Timeline bar with 60 second marks
-  const timelineWidth = 800;
-  const windowWidth = timelineWidth * 0.4; // 60s out of ~150s visible
-
-  // Window slides right
-  const windowSlide = interpolate(f, [90, 200], [0, timelineWidth - windowWidth], { ...clamp, easing: Easing.inOut(Easing.cubic) });
-
-  // Request count fills up
-  const reqInWindow = Math.round(interpolate(f, [90, 180], [0, 600], { ...clamp }));
-  const isBlocked = reqInWindow >= 600;
-
-  // Blocked flash
-  const blockedOp = isBlocked ? fadeIn(f, 180) : 0;
-
-  // Comparison panel
-  const compOp = fadeIn(f, 210);
-  const compY = slideUp(f, 210);
-
-  // Redis section
-  const redisOp = fadeIn(f, 270);
-  const redisY = slideUp(f, 270);
-
-  // Redis commands appear one by one
-  const cmd1Op = fadeIn(f, 300);
-  const cmd2Op = fadeIn(f, 330);
-  const cmd3Op = fadeIn(f, 360);
-
-  return (
-    <div style={{
-      opacity: f < 0 ? 0 : 1,
-      width: "100%", height: "100%",
-      display: "flex", flexDirection: "column", alignItems: "center", justifyContent: "center", gap: 40,
-    }}>
-      {/* Title */}
-      <div style={{
-        opacity: titleOp, transform: `translateY(${titleY}px)`,
-        fontSize: 26, fontWeight: 700, color: TEXT_PRIMARY,
-        fontFamily: "'Inter', system-ui, sans-serif", letterSpacing: -0.5,
-        display: "flex", alignItems: "center", gap: 12,
-      }}>
-        <Timer size={28} color={CYAN} weight="duotone" />
-        Sliding Window Approach
-      </div>
-
-      {/* Window visualization */}
-      <div style={{
-        opacity: windowOp, transform: `scale(${windowScale})`,
-        display: "flex", flexDirection: "column", alignItems: "center", gap: 20,
-      }}>
-        {/* Timeline bar */}
-        <div style={{ position: "relative", width: timelineWidth, height: 80 }}>
-          {/* Background bar */}
-          <div style={{
-            position: "absolute", top: 20, left: 0, right: 0, height: 40,
-            background: `${BORDER}`, borderRadius: 10, overflow: "hidden",
-          }}>
-            {/* Filled portion showing requests */}
-            <div style={{
-              position: "absolute", top: 0, left: windowSlide, width: windowWidth, height: "100%",
-              background: isBlocked ? `${RED}30` : `${CYAN}20`,
-              borderRadius: 10,
-              border: `2px solid ${isBlocked ? RED : CYAN}40`,
-              boxShadow: `0 0 15px ${isBlocked ? RED : CYAN}20`,
-            }} />
-          </div>
-
-          {/* Time labels */}
-          {[0, 15, 30, 45, 60, 75, 90].map((sec, i) => (
-            <div key={i} style={{
-              position: "absolute", top: 66, left: `${(i / 6) * 100}%`,
-              transform: "translateX(-50%)",
-              fontFamily: "'SF Mono', monospace", fontSize: 11, color: TEXT_DIM, fontWeight: 500,
-            }}>
-              {sec}s
-            </div>
-          ))}
-
-          {/* Window label */}
-          <div style={{
-            position: "absolute", top: -8,
-            left: windowSlide + windowWidth / 2,
-            transform: "translateX(-50%)",
-            fontFamily: "'SF Mono', monospace", fontSize: 12, color: CYAN, fontWeight: 600,
-            whiteSpace: "nowrap",
-          }}>
-            60-second window
-          </div>
-        </div>
-
-        {/* Request counter */}
-        <div style={{ display: "flex", alignItems: "baseline", gap: 10 }}>
-          <span style={{
-            fontFamily: "'SF Mono', monospace", fontSize: 40, fontWeight: 700,
-            color: isBlocked ? RED : CYAN,
-            textShadow: `0 0 20px ${isBlocked ? RED : CYAN}30`,
-            letterSpacing: -1,
-          }}>
-            {reqInWindow}
-          </span>
-          <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 16, color: TEXT_DIM, fontWeight: 600 }}>
-            / 600 requests in window
-          </span>
-          {isBlocked && (
-            <div style={{
-              opacity: blockedOp,
-              display: "flex", alignItems: "center", gap: 6,
-              padding: "6px 14px", borderRadius: 8,
-              background: `${RED}15`, border: `1px solid ${RED}30`,
-              marginLeft: 16,
-            }}>
-              <Warning size={18} color={RED} weight="duotone" />
-              <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 13, color: RED, fontWeight: 700 }}>
-                BLOCKED
-              </span>
-            </div>
-          )}
-        </div>
-      </div>
-
-      {/* Comparison: No bursting, but predictable */}
-      <div style={{
-        opacity: compOp, transform: `translateY(${compY}px)`,
-        display: "flex", gap: 40, alignItems: "stretch",
-      }}>
-        <div style={{
-          padding: "16px 24px", borderRadius: 12,
-          background: `${BLUE}08`, border: `1px solid ${BLUE}15`,
-          display: "flex", flexDirection: "column", gap: 6, width: 260,
-        }}>
-          <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 14, fontWeight: 600, color: BLUE }}>
-            Token Bucket
-          </span>
-          <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 13, color: TEXT_SECONDARY }}>
-            Allows burst traffic, flexible
-          </span>
-        </div>
-        <div style={{
-          padding: "16px 24px", borderRadius: 12,
-          background: `${CYAN}08`, border: `1px solid ${CYAN}15`,
-          display: "flex", flexDirection: "column", gap: 6, width: 260,
-        }}>
-          <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 14, fontWeight: 600, color: CYAN }}>
-            Sliding Window
-          </span>
-          <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 13, color: TEXT_SECONDARY }}>
-            No bursting, but predictable
-          </span>
-        </div>
-      </div>
-
-      {/* Redis section */}
-      <div style={{
-        opacity: redisOp, transform: `translateY(${redisY}px)`,
-        display: "flex", flexDirection: "column", alignItems: "center", gap: 16,
-      }}>
-        <div style={{ display: "flex", alignItems: "center", gap: 10 }}>
-          <Database size={24} color={RED} weight="duotone" style={{ filter: `drop-shadow(0 0 8px ${RED}60)` }} />
-          <span style={{ fontFamily: "'Inter', system-ui, sans-serif", fontSize: 18, fontWeight: 600, color: TEXT_PRIMARY }}>
-            Redis — Perfect for This
-          </span>
-        </div>
-
-        {/* Commands */}
-        <div style={{
-          display: "flex", gap: 20,
-        }}>
-          {[
-            { cmd: "INCR", desc: "rate:user:123", op: cmd1Op, color: GREEN },
-            { cmd: "EXPIRE", desc: "60 seconds", op: cmd2Op, color: AMBER },
-          ].map((item, i) => (
-            <div key={i} style={{
-              opacity: item.op,
-              padding: "14px 20px", borderRadius: 10,
-              background: `${item.color}08`, border: `1px solid ${item.color}15`,
-              display: "flex", alignItems: "center", gap: 10,
-            }}>
-              <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 16, fontWeight: 700, color: item.color }}>
-                {item.cmd}
-              </span>
-              <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 13, color: TEXT_DIM }}>
-                {item.desc}
-              </span>
-            </div>
-          ))}
-        </div>
-
-        {/* Performance note */}
-        <div style={{
-          opacity: cmd3Op,
-          display: "flex", gap: 24, alignItems: "center",
-        }}>
-          {[
-            { label: "2 commands", color: CYAN },
-            { label: "Sub-millisecond", color: GREEN },
-            { label: "Millions of keys", color: PURPLE },
-          ].map((item, i) => (
-            <div key={i} style={{
-              display: "flex", alignItems: "center", gap: 6,
-            }}>
-              <div style={{ width: 6, height: 6, borderRadius: "50%", background: item.color }} />
-              <span style={{ fontFamily: "'SF Mono', monospace", fontSize: 12, color: TEXT_SECONDARY, fontWeight: 500 }}>
-                {item.label}
-              </span>
-            </div>
-          ))}
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// ═══════════════════════════════════════════════════════════
-// MAIN COMPONENT
-// ═══════════════════════════════════════════════════════════
-const Generated_TokenBucketRateLimiting: React.FC = () => {
-  const frame = useCurrentFrame();
+const Scene1TokenBucket: React.FC<{ f: number }> = ({ f }) => {
   const { fps } = useVideoConfig();
 
-  // Scene visibility
-  const scene1Visible = frame < 330;
-  const scene2Visible = frame >= 270 && frame < 960;
-  const scene3Visible = frame >= 900;
+  // Phase markers (localFrame)
+  const TITLE = 0;
+  const BUCKET_IN = 25;
+  const FILL_START = 60;
+  const FILL_END = 100;
+  const STATS_START = 105;
+  const DRIP_START = 120;
+  const REQUESTS_START = 190;
+  const DRAIN_END = 340;
+  const BADGE_START = 348;
+  const BURST_LABEL = 390;
+
+  // Title
+  const titleOp = interpolate(f, [TITLE, TITLE + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const titleY = interpolate(f, [TITLE, TITLE + 20], [24, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  // Bucket container
+  const bucketOp = interpolate(f, [BUCKET_IN, BUCKET_IN + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  const bucketScale = spring({ frame: f - BUCKET_IN, fps, config: { damping: 22, stiffness: 200 } });
+
+  // Token fill level 0–100
+  let tokenLevel: number;
+  if (f < FILL_START) tokenLevel = 0;
+  else if (f < FILL_END) {
+    tokenLevel = interpolate(f, [FILL_START, FILL_END], [0, 100], {
+      extrapolateLeft: "clamp", extrapolateRight: "clamp",
+      easing: Easing.out(Easing.cubic),
+    });
+  } else if (f < REQUESTS_START) tokenLevel = 100;
+  else if (f < DRAIN_END) {
+    tokenLevel = interpolate(f, [REQUESTS_START, DRAIN_END], [100, 0], {
+      extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    });
+  } else tokenLevel = 0;
+
+  const tokenCount = Math.round(tokenLevel);
+  const fillColor =
+    tokenLevel > 50 ? "#22c55e" : tokenLevel > 20 ? "#f59e0b" : "#ef4444";
+
+  // Drip pulse every 30 frames
+  const dripPulse =
+    f >= DRIP_START && f < DRAIN_END
+      ? interpolate((f - DRIP_START) % 30, [0, 8, 30], [0, 1, 0], {
+          extrapolateLeft: "clamp", extrapolateRight: "clamp",
+        })
+      : 0;
+
+  // Stats panel
+  const statsOp = interpolate(f, [STATS_START, STATS_START + 25], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  // Requests underway
+  const isRequesting = f >= REQUESTS_START && f < DRAIN_END;
+  const reqOp = interpolate(f, [REQUESTS_START, REQUESTS_START + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  // 429 badge
+  const badgeOp = interpolate(f, [BADGE_START, BADGE_START + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  const badgeScale = spring({ frame: f - BADGE_START, fps, config: { damping: 18, stiffness: 260 } });
+
+  // Burst label
+  const burstOp = interpolate(f, [BURST_LABEL, BURST_LABEL + 25], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  const DropIcon = getIcon("Drop");
+  const ArrowDownIcon = getIcon("ArrowDown");
+  const CursorClick = getIcon("CursorClick");
+  const CheckCircle = getIcon("CheckCircle");
+  const XCircle = getIcon("XCircle");
+  const Lightning = getIcon("Lightning");
+
+  const statCard = (
+    icon: React.FC<any>,
+    color: string,
+    label: string,
+    value: string,
+    delay: number
+  ) => {
+    const op = interpolate(f, [STATS_START + delay, STATS_START + delay + 20], [0, 1], {
+      extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    });
+    const tx = interpolate(f, [STATS_START + delay, STATS_START + delay + 20], [20, 0], {
+      extrapolateLeft: "clamp", extrapolateRight: "clamp",
+      easing: Easing.out(Easing.cubic),
+    });
+    const Icon = icon;
+    return (
+      <div key={label} style={{
+        opacity: op,
+        transform: `translateX(${tx}px)`,
+        background: `${color}08`,
+        border: `1px solid ${color}20`,
+        borderRadius: 12,
+        padding: "16px 20px",
+        display: "flex", alignItems: "center", gap: 16,
+      }}>
+        <div style={{
+          width: 44, height: 44, borderRadius: 11,
+          background: `linear-gradient(135deg, ${color}20, ${color}08)`,
+          border: `1.5px solid ${color}30`,
+          display: "flex", alignItems: "center", justifyContent: "center",
+          flexShrink: 0,
+        }}>
+          <Icon size={24} color={color} weight="duotone" />
+        </div>
+        <div>
+          <div style={{ fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase" }}>{label}</div>
+          <div style={{ fontSize: 20, fontWeight: 700, color: "#e2e8f0", fontFamily: "'SF Mono', monospace", marginTop: 2 }}>{value}</div>
+        </div>
+      </div>
+    );
+  };
 
   return (
     <div style={{
       width: 1920, height: 1080,
-      padding: 80,
-      background: BG,
+      background: "#0f0f1a",
       fontFamily: "'Inter', system-ui, sans-serif",
       display: "flex", flexDirection: "column",
-      justifyContent: "center", alignItems: "center",
-      overflow: "hidden",
+      alignItems: "center", justifyContent: "center",
+      gap: 36, padding: 80,
     }}>
-      {scene1Visible && <Scene1 frame={frame} fps={fps} />}
-      {scene2Visible && !scene1Visible && <Scene2 frame={frame} fps={fps} />}
-      {scene3Visible && !scene2Visible && <Scene3 frame={frame} fps={fps} />}
+      {/* Title */}
+      <div style={{ opacity: titleOp, transform: `translateY(${titleY}px)`, textAlign: "center" }}>
+        <div style={{
+          fontSize: 12, fontWeight: 700, letterSpacing: 3, color: "#3b82f6",
+          textTransform: "uppercase", marginBottom: 10,
+        }}>
+          API Protection
+        </div>
+        <div style={{ fontSize: 46, fontWeight: 700, color: "#e2e8f0" }}>
+          Token Bucket Algorithm
+        </div>
+      </div>
+
+      {/* Bucket + Stats */}
+      <div style={{
+        display: "flex", gap: 80, alignItems: "center",
+        opacity: bucketOp,
+        transform: `scale(${Math.min(bucketScale, 1)})`,
+      }}>
+
+        {/* ── Bucket visualization ── */}
+        <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 0 }}>
+
+          {/* Drip indicator */}
+          <div style={{
+            height: 50, display: "flex", alignItems: "center", justifyContent: "center",
+            opacity: f >= DRIP_START && f < DRAIN_END ? 1 : 0,
+          }}>
+            <div style={{
+              background: `#22c55e${Math.round(dripPulse * 25 + 8).toString(16).padStart(2, "0")}`,
+              border: "1px solid #22c55e30",
+              borderRadius: 8, padding: "6px 18px",
+              color: "#22c55e", fontSize: 14, fontWeight: 700,
+              boxShadow: `0 0 ${dripPulse * 20}px #22c55e40`,
+            }}>
+              +10 tokens / second
+            </div>
+          </div>
+
+          {/* The bucket */}
+          <div style={{
+            width: 280, height: 400,
+            borderRadius: "10px 10px 36px 36px",
+            border: `2px solid ${fillColor}35`,
+            background: "#08081a",
+            overflow: "hidden",
+            position: "relative",
+            boxShadow: `0 0 50px ${fillColor}18`,
+          }}>
+            {/* Fill level */}
+            <div style={{
+              position: "absolute", bottom: 0, left: 0, right: 0,
+              height: `${tokenLevel}%`,
+              background: `linear-gradient(180deg, ${fillColor}28 0%, ${fillColor}65 100%)`,
+              borderTop: `2px solid ${fillColor}70`,
+            }} />
+
+            {/* Token count */}
+            <div style={{
+              position: "absolute", top: "50%", left: "50%",
+              transform: "translate(-50%, -50%)",
+              textAlign: "center",
+            }}>
+              <div style={{
+                fontSize: 76, fontWeight: 800, fontFamily: "'SF Mono', monospace",
+                letterSpacing: -2,
+                color: tokenLevel > 0 ? "#e2e8f0" : "#3a3a4e",
+                textShadow: tokenLevel > 0 ? `0 0 40px ${fillColor}50` : "none",
+              }}>
+                {tokenCount}
+              </div>
+              <div style={{
+                fontSize: 12, fontWeight: 700, letterSpacing: 2,
+                textTransform: "uppercase",
+                color: tokenLevel > 0 ? "#64748b" : "#2a2a3e",
+              }}>
+                tokens
+              </div>
+            </div>
+
+            {/* 429 badge */}
+            {f >= BADGE_START && (
+              <div style={{
+                position: "absolute", top: "32%", left: "50%",
+                transform: `translate(-50%, -50%) scale(${Math.min(badgeScale, 1)})`,
+                opacity: badgeOp,
+                background: "#ef444412",
+                border: "2px solid #ef4444",
+                borderRadius: 14, padding: "14px 28px",
+                textAlign: "center",
+                boxShadow: "0 0 40px #ef444455",
+                zIndex: 10,
+              }}>
+                <div style={{ fontSize: 34, fontWeight: 800, color: "#ef4444" }}>429</div>
+                <div style={{ fontSize: 11, color: "#ef4444", fontWeight: 700, letterSpacing: 1.5, textTransform: "uppercase" }}>
+                  Too Many Requests
+                </div>
+              </div>
+            )}
+          </div>
+
+          {/* Request cost label */}
+          <div style={{
+            height: 44, display: "flex", alignItems: "center", justifyContent: "center",
+            opacity: isRequesting ? reqOp : 0,
+          }}>
+            {isRequesting && (
+              <div style={{
+                display: "flex", alignItems: "center", gap: 8,
+                color: f >= BADGE_START ? "#ef4444" : "#f59e0b",
+                fontSize: 14, fontWeight: 600,
+              }}>
+                {f >= BADGE_START
+                  ? <XCircle size={16} color="#ef4444" weight="duotone" />
+                  : <CheckCircle size={16} color="#f59e0b" weight="duotone" />
+                }
+                {f >= BADGE_START ? "Bucket empty — request rejected" : "−1 token per request"}
+              </div>
+            )}
+          </div>
+        </div>
+
+        {/* ── Stats panel ── */}
+        <div style={{ opacity: statsOp, display: "flex", flexDirection: "column", gap: 16, width: 380 }}>
+          {statCard(DropIcon, "#3b82f6", "Bucket Capacity", "100 tokens", 0)}
+          {statCard(ArrowDownIcon, "#22c55e", "Refill Rate", "+10 / second", 14)}
+          {statCard(CursorClick, "#f59e0b", "Cost per Request", "1 token", 28)}
+
+          {/* Dynamic status card */}
+          {f >= REQUESTS_START && (
+            <div style={{
+              opacity: reqOp,
+              background: f >= BADGE_START ? "#ef444410" : "#22c55e10",
+              border: `1px solid ${f >= BADGE_START ? "#ef444440" : "#22c55e40"}`,
+              borderRadius: 12, padding: "16px 20px",
+              display: "flex", alignItems: "center", gap: 16,
+              boxShadow: f >= BADGE_START ? "0 0 20px #ef444420" : "0 0 20px #22c55e20",
+            }}>
+              <div style={{
+                width: 44, height: 44, borderRadius: 11,
+                background: f >= BADGE_START
+                  ? "linear-gradient(135deg, #ef444420, #ef444408)"
+                  : "linear-gradient(135deg, #22c55e20, #22c55e08)",
+                border: f >= BADGE_START ? "1.5px solid #ef444430" : "1.5px solid #22c55e30",
+                display: "flex", alignItems: "center", justifyContent: "center", flexShrink: 0,
+              }}>
+                {f >= BADGE_START
+                  ? <XCircle size={24} color="#ef4444" weight="duotone" />
+                  : <CheckCircle size={24} color="#22c55e" weight="duotone" />
+                }
+              </div>
+              <div>
+                <div style={{ fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: 1.5, textTransform: "uppercase" }}>Request Status</div>
+                <div style={{
+                  fontSize: 20, fontWeight: 700, fontFamily: "'SF Mono', monospace", marginTop: 2,
+                  color: f >= BADGE_START ? "#ef4444" : "#22c55e",
+                }}>
+                  {f >= BADGE_START ? "REJECTED" : "ACCEPTED"}
+                </div>
+              </div>
+            </div>
+          )}
+        </div>
+      </div>
+
+      {/* Burst label */}
+      {f >= BURST_LABEL && (
+        <div style={{
+          opacity: burstOp,
+          background: "#3b82f610", border: "1px solid #3b82f630",
+          borderRadius: 10, padding: "12px 28px",
+          display: "flex", alignItems: "center", gap: 10,
+          color: "#3b82f6", fontSize: 15, fontWeight: 600,
+        }}>
+          <Lightning size={20} color="#3b82f6" weight="duotone" />
+          Burst traffic is fine — use all 100 tokens instantly, then limited to 10/sec as tokens refill
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ─── SCENE 2: Stripe Rate Limits ─────────────────────────────────────────────
+
+const Scene2Stripe: React.FC<{ f: number }> = ({ f }) => {
+  const { fps } = useVideoConfig();
+
+  const TITLE = 0;
+  const COLS = 35;
+  const LIMIT_HIT = 130;
+  const RETRY_HEADER = 195;
+
+  const titleOp = interpolate(f, [TITLE, TITLE + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const titleY = interpolate(f, [TITLE, TITLE + 20], [20, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const testOp = interpolate(f, [COLS, COLS + 25], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const testY = interpolate(f, [COLS, COLS + 25], [30, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const liveOp = interpolate(f, [COLS + 20, COLS + 45], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const liveY = interpolate(f, [COLS + 20, COLS + 45], [30, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const limitOp = interpolate(f, [LIMIT_HIT, LIMIT_HIT + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  const limitScale = spring({ frame: f - LIMIT_HIT, fps, config: { damping: 20, stiffness: 240 } });
+
+  const retryOp = interpolate(f, [RETRY_HEADER, RETRY_HEADER + 25], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const retryY = interpolate(f, [RETRY_HEADER, RETRY_HEADER + 25], [20, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const Buildings = getIcon("Buildings");
+  const Warning = getIcon("Warning");
+  const Clock = getIcon("Clock");
+
+  return (
+    <div style={{
+      width: 1920, height: 1080,
+      background: "#0f0f1a",
+      fontFamily: "'Inter', system-ui, sans-serif",
+      display: "flex", flexDirection: "column",
+      alignItems: "center", justifyContent: "center",
+      gap: 44, padding: 80,
+    }}>
+      {/* Title */}
+      <div style={{ opacity: titleOp, transform: `translateY(${titleY}px)`, textAlign: "center" }}>
+        <div style={{
+          fontSize: 12, fontWeight: 700, letterSpacing: 3, color: "#a855f7",
+          textTransform: "uppercase", marginBottom: 10,
+        }}>
+          Real World Example
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center" }}>
+          <Buildings size={38} color="#a855f7" weight="duotone" />
+          <div style={{ fontSize: 44, fontWeight: 700, color: "#e2e8f0" }}>Stripe API Rate Limits</div>
+        </div>
+      </div>
+
+      {/* TEST vs LIVE columns */}
+      <div style={{ display: "flex", gap: 48, alignItems: "stretch" }}>
+        {/* Test Mode */}
+        <div style={{
+          opacity: testOp, transform: `translateY(${testY}px)`,
+          background: "#3b82f608", border: "1.5px solid #3b82f625",
+          borderRadius: 16, padding: "36px 52px",
+          textAlign: "center", width: 360,
+        }}>
+          <div style={{
+            fontSize: 11, fontWeight: 700, letterSpacing: 2,
+            color: "#3b82f6", textTransform: "uppercase", marginBottom: 20,
+          }}>
+            Test Mode
+          </div>
+          <div style={{
+            fontSize: 70, fontWeight: 800, color: "#3b82f6",
+            fontFamily: "'SF Mono', monospace", letterSpacing: -2,
+            textShadow: "0 0 40px #3b82f640",
+          }}>
+            100
+          </div>
+          <div style={{ fontSize: 16, color: "#94a3b8", fontWeight: 600, marginTop: 10 }}>requests / second</div>
+          <div style={{ fontSize: 12, color: "#4a4a5e", marginTop: 6 }}>per API key</div>
+        </div>
+
+        {/* Divider */}
+        <div style={{ width: 1, background: "#1a1a2e", alignSelf: "stretch" }} />
+
+        {/* Live Mode */}
+        <div style={{
+          opacity: liveOp, transform: `translateY(${liveY}px)`,
+          background: "#22c55e08", border: "1.5px solid #22c55e25",
+          borderRadius: 16, padding: "36px 52px",
+          textAlign: "center", width: 360,
+        }}>
+          <div style={{
+            fontSize: 11, fontWeight: 700, letterSpacing: 2,
+            color: "#22c55e", textTransform: "uppercase", marginBottom: 20,
+          }}>
+            Live Mode
+          </div>
+          <div style={{
+            fontSize: 70, fontWeight: 800, color: "#22c55e",
+            fontFamily: "'SF Mono', monospace", letterSpacing: -2,
+            textShadow: "0 0 40px #22c55e40",
+          }}>
+            10,000
+          </div>
+          <div style={{ fontSize: 16, color: "#94a3b8", fontWeight: 600, marginTop: 10 }}>requests / second</div>
+          <div style={{ fontSize: 12, color: "#4a4a5e", marginTop: 6 }}>per API key</div>
+        </div>
+      </div>
+
+      {/* Limit hit alert */}
+      {f >= LIMIT_HIT && (
+        <div style={{
+          opacity: limitOp,
+          transform: `scale(${Math.min(limitScale, 1)})`,
+          display: "flex", alignItems: "center", gap: 12,
+          background: "#ef444410", border: "1px solid #ef444430",
+          borderRadius: 12, padding: "12px 28px",
+        }}>
+          <Warning size={20} color="#ef4444" weight="duotone" />
+          <span style={{ color: "#ef4444", fontWeight: 700, fontSize: 15 }}>Hit the limit?</span>
+          <span style={{ color: "#94a3b8", fontSize: 15, marginLeft: 4 }}>HTTP 429 — plus a Retry-After header</span>
+        </div>
+      )}
+
+      {/* Retry-After HTTP response */}
+      {f >= RETRY_HEADER && (
+        <div style={{
+          opacity: retryOp, transform: `translateY(${retryY}px)`,
+          background: "#12121f", border: "1px solid #1a1a2e",
+          borderRadius: 14, padding: "22px 32px", width: 580,
+          fontFamily: "'SF Mono', monospace",
+        }}>
+          <div style={{
+            fontSize: 11, color: "#64748b", fontWeight: 600, letterSpacing: 2,
+            textTransform: "uppercase", marginBottom: 16,
+            display: "flex", alignItems: "center", gap: 8,
+          }}>
+            <Clock size={14} color="#64748b" weight="duotone" />
+            HTTP Response Headers
+          </div>
+          <div style={{ display: "flex", flexDirection: "column", gap: 9 }}>
+            <div>
+              <span style={{ color: "#f59e0b", fontSize: 14, fontWeight: 600 }}>HTTP/1.1 </span>
+              <span style={{ color: "#ef4444", fontSize: 14, fontWeight: 700 }}>429 Too Many Requests</span>
+            </div>
+            <div>
+              <span style={{ color: "#94a3b8", fontSize: 14 }}>Retry-After: </span>
+              <span style={{ color: "#22c55e", fontSize: 14, fontWeight: 700 }}>5</span>
+              <span style={{ color: "#64748b", fontSize: 14 }}> seconds</span>
+            </div>
+            <div>
+              <span style={{ color: "#94a3b8", fontSize: 14 }}>X-RateLimit-Limit: </span>
+              <span style={{ color: "#3b82f6", fontSize: 14, fontWeight: 700 }}>100</span>
+            </div>
+            <div>
+              <span style={{ color: "#94a3b8", fontSize: 14 }}>X-RateLimit-Remaining: </span>
+              <span style={{ color: "#ef4444", fontSize: 14, fontWeight: 700 }}>0</span>
+            </div>
+          </div>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ─── SCENE 3: Sliding Window + Redis ─────────────────────────────────────────
+
+const Scene3SlidingWindow: React.FC<{ f: number }> = ({ f }) => {
+  const { fps } = useVideoConfig();
+
+  const TITLE = 0;
+  const WINDOW_IN = 35;
+  const COUNT_START = 80;
+  const HIT_LIMIT = 210;
+  const REDIS_START = 265;
+  const REDIS_CMD2 = 315;
+  const PERF_START = 340;
+  const FINAL = 385;
+
+  const titleOp = interpolate(f, [TITLE, TITLE + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const titleY = interpolate(f, [TITLE, TITLE + 20], [20, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const windowOp = interpolate(f, [WINDOW_IN, WINDOW_IN + 25], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  // Request count 0 → 600 → 673
+  let requestCount: number;
+  if (f < COUNT_START) requestCount = 0;
+  else if (f < HIT_LIMIT) {
+    requestCount = Math.round(
+      interpolate(f, [COUNT_START, HIT_LIMIT], [0, 600], {
+        extrapolateLeft: "clamp", extrapolateRight: "clamp",
+        easing: Easing.out(Easing.quad),
+      })
+    );
+  } else {
+    requestCount = Math.round(
+      interpolate(f, [HIT_LIMIT, HIT_LIMIT + 40], [600, 673], {
+        extrapolateLeft: "clamp", extrapolateRight: "clamp",
+      })
+    );
+  }
+
+  const isOverLimit = f >= HIT_LIMIT;
+  const fillPct = Math.min(requestCount / 600, 1.12);
+  const barColor =
+    fillPct < 0.55 ? "#3b82f6" : fillPct < 0.85 ? "#f59e0b" : "#ef4444";
+
+  const blockedOp = interpolate(f, [HIT_LIMIT, HIT_LIMIT + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  const blockedScale = spring({ frame: f - HIT_LIMIT, fps, config: { damping: 18, stiffness: 250 } });
+
+  const noburstOp = interpolate(f, [HIT_LIMIT + 10, HIT_LIMIT + 30], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  const redisOp = interpolate(f, [REDIS_START, REDIS_START + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const redisY = interpolate(f, [REDIS_START, REDIS_START + 20], [20, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const cmd2Op = interpolate(f, [REDIS_CMD2, REDIS_CMD2 + 18], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+  const cmd2Y = interpolate(f, [REDIS_CMD2, REDIS_CMD2 + 18], [14, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+    easing: Easing.out(Easing.cubic),
+  });
+
+  const perfOp = interpolate(f, [PERF_START, PERF_START + 20], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  const finalOp = interpolate(f, [FINAL, FINAL + 25], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  const ChartBar = getIcon("ChartBar");
+  const Database = getIcon("Database");
+  const ClockCC = getIcon("ClockCounterClockwise");
+  const Lightning = getIcon("Lightning");
+
+  return (
+    <div style={{
+      width: 1920, height: 1080,
+      background: "#0f0f1a",
+      fontFamily: "'Inter', system-ui, sans-serif",
+      display: "flex", flexDirection: "column",
+      alignItems: "center", justifyContent: "center",
+      gap: 36, padding: 80,
+    }}>
+      {/* Title */}
+      <div style={{ opacity: titleOp, transform: `translateY(${titleY}px)`, textAlign: "center" }}>
+        <div style={{
+          fontSize: 12, fontWeight: 700, letterSpacing: 3, color: "#06b6d4",
+          textTransform: "uppercase", marginBottom: 10,
+        }}>
+          Alternative Approach
+        </div>
+        <div style={{ display: "flex", alignItems: "center", gap: 16, justifyContent: "center" }}>
+          <ChartBar size={36} color="#06b6d4" weight="duotone" />
+          <div style={{ fontSize: 44, fontWeight: 700, color: "#e2e8f0" }}>Sliding Window</div>
+        </div>
+      </div>
+
+      {/* Window bar */}
+      <div style={{ opacity: windowOp, width: 860 }}>
+        <div style={{ display: "flex", justifyContent: "space-between", marginBottom: 10 }}>
+          <div style={{
+            fontSize: 12, color: "#64748b", fontWeight: 600,
+            display: "flex", alignItems: "center", gap: 6,
+          }}>
+            <ClockCC size={14} color="#64748b" weight="duotone" />
+            Last 60 seconds
+          </div>
+          <div style={{ fontSize: 12, color: "#64748b", fontWeight: 600 }}>Limit: 600 requests</div>
+        </div>
+
+        {/* Track */}
+        <div style={{
+          width: 860, height: 28,
+          background: "#12121f", border: "1px solid #1a1a2e",
+          borderRadius: 8, overflow: "hidden",
+          position: "relative",
+        }}>
+          <div style={{
+            position: "absolute", top: 0, left: 0, bottom: 0,
+            width: `${Math.min(fillPct, 1) * 100}%`,
+            background: `linear-gradient(90deg, ${barColor}55, ${barColor}85)`,
+            borderRadius: "8px 0 0 8px",
+            boxShadow: isOverLimit ? `0 0 20px ${barColor}60` : "none",
+          }} />
+        </div>
+
+        {/* Counter row */}
+        <div style={{
+          display: "flex", justifyContent: "space-between", alignItems: "center", marginTop: 14,
+        }}>
+          <div style={{ display: "flex", alignItems: "baseline", gap: 8 }}>
+            <span style={{
+              fontSize: 52, fontWeight: 800, fontFamily: "'SF Mono', monospace",
+              letterSpacing: -1,
+              color: isOverLimit ? "#ef4444" : "#e2e8f0",
+              textShadow: isOverLimit ? "0 0 30px #ef444440" : "none",
+            }}>
+              {requestCount}
+            </span>
+            <span style={{ fontSize: 18, color: "#64748b", fontWeight: 600 }}>/ 600 requests</span>
+          </div>
+
+          {/* Status badge */}
+          {isOverLimit ? (
+            <div style={{
+              opacity: blockedOp,
+              transform: `scale(${Math.min(blockedScale, 1)})`,
+              background: "#ef444410", border: "2px solid #ef4444",
+              borderRadius: 10, padding: "10px 24px",
+              color: "#ef4444", fontWeight: 700, fontSize: 16, letterSpacing: 1,
+              boxShadow: "0 0 30px #ef444430",
+            }}>
+              BLOCKED
+            </div>
+          ) : f >= COUNT_START ? (
+            <div style={{
+              background: "#22c55e10", border: "1px solid #22c55e30",
+              borderRadius: 10, padding: "10px 24px",
+              color: "#22c55e", fontWeight: 700, fontSize: 16,
+            }}>
+              ALLOWED
+            </div>
+          ) : null}
+        </div>
+      </div>
+
+      {/* No burst note */}
+      {f >= HIT_LIMIT && (
+        <div style={{
+          opacity: noburstOp,
+          background: "#06b6d410", border: "1px solid #06b6d430",
+          borderRadius: 10, padding: "10px 28px",
+          color: "#06b6d4", fontSize: 14, fontWeight: 600,
+        }}>
+          No bursting allowed — more predictable, counts every request in the last 60 seconds
+        </div>
+      )}
+
+      {/* Redis section */}
+      {f >= REDIS_START && (
+        <div style={{
+          opacity: redisOp, transform: `translateY(${redisY}px)`,
+          display: "flex", gap: 24, alignItems: "flex-start",
+        }}>
+          {/* Commands panel */}
+          <div style={{
+            background: "#12121f", border: "1px solid #1a1a2e",
+            borderRadius: 14, padding: "22px 28px", width: 520,
+          }}>
+            <div style={{
+              display: "flex", alignItems: "center", gap: 10, marginBottom: 16,
+              fontSize: 11, fontWeight: 700, letterSpacing: 2,
+              color: "#ef4444", textTransform: "uppercase",
+            }}>
+              <Database size={15} color="#ef4444" weight="duotone" />
+              Redis — 2 Commands
+            </div>
+
+            {/* INCR */}
+            <div style={{
+              fontFamily: "'SF Mono', monospace",
+              padding: "10px 16px", background: "#0a0a18",
+              borderRadius: 8, marginBottom: 10, fontSize: 15,
+            }}>
+              <span style={{ color: "#f59e0b", fontWeight: 700 }}>INCR </span>
+              <span style={{ color: "#a855f7" }}>{`rate:{userId}:{window}`}</span>
+            </div>
+
+            {/* EXPIRE */}
+            <div style={{
+              opacity: cmd2Op, transform: `translateY(${cmd2Y}px)`,
+              fontFamily: "'SF Mono', monospace",
+              padding: "10px 16px", background: "#0a0a18",
+              borderRadius: 8, fontSize: 15,
+            }}>
+              <span style={{ color: "#f59e0b", fontWeight: 700 }}>EXPIRE </span>
+              <span style={{ color: "#a855f7" }}>{`rate:{userId}:{window} `}</span>
+              <span style={{ color: "#22c55e", fontWeight: 700 }}>60</span>
+            </div>
+          </div>
+
+          {/* Performance badges */}
+          {f >= PERF_START && (
+            <div style={{ opacity: perfOp, display: "flex", flexDirection: "column", gap: 12 }}>
+              <div style={{
+                background: "#22c55e08", border: "1px solid #22c55e25",
+                borderRadius: 12, padding: "18px 24px", textAlign: "center", minWidth: 160,
+              }}>
+                <div style={{ fontSize: 11, color: "#64748b", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>Latency</div>
+                <div style={{ fontSize: 28, fontWeight: 800, color: "#22c55e", fontFamily: "'SF Mono', monospace" }}>{"<"}1ms</div>
+              </div>
+              <div style={{
+                background: "#3b82f608", border: "1px solid #3b82f625",
+                borderRadius: 12, padding: "18px 24px", textAlign: "center", minWidth: 160,
+              }}>
+                <div style={{ fontSize: 11, color: "#64748b", letterSpacing: 1.5, textTransform: "uppercase", marginBottom: 6 }}>Scale</div>
+                <div style={{ fontSize: 28, fontWeight: 800, color: "#3b82f6", fontFamily: "'SF Mono', monospace" }}>M+ keys</div>
+              </div>
+            </div>
+          )}
+        </div>
+      )}
+
+      {/* Final summary */}
+      {f >= FINAL && (
+        <div style={{
+          opacity: finalOp,
+          display: "flex", gap: 10, alignItems: "center",
+          background: "#ef444410", border: "1px solid #ef444430",
+          borderRadius: 12, padding: "12px 28px",
+        }}>
+          <Lightning size={18} color="#ef4444" weight="duotone" />
+          <span style={{ color: "#ef4444", fontWeight: 700, fontFamily: "'SF Mono', monospace", fontSize: 14 }}>INCR</span>
+          <span style={{ color: "#94a3b8", fontSize: 14 }}>+</span>
+          <span style={{ color: "#ef4444", fontWeight: 700, fontFamily: "'SF Mono', monospace", fontSize: 14 }}>EXPIRE</span>
+          <span style={{ color: "#94a3b8", fontSize: 14 }}>— two Redis commands, sub-millisecond, handles millions of keys</span>
+        </div>
+      )}
+    </div>
+  );
+};
+
+// ─── MAIN COMPONENT ───────────────────────────────────────────────────────────
+
+// Scene timing (global frames):
+// Scene 1: 0–500   (fade out 470–500)
+// Scene 2: 480–860 (fade in 480–510, fade out 830–860)
+// Scene 3: 840–1280 (fade in 840–870)
+// Total: 1280 frames
+
+const Generated_TokenBucketRateLimiting: React.FC = () => {
+  const frame = useCurrentFrame();
+
+  const s1Op = interpolate(frame, [0, 10, 470, 500], [0, 1, 1, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  const s2Op = interpolate(frame, [480, 510, 830, 860], [0, 1, 1, 0], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+  const s3Op = interpolate(frame, [840, 870], [0, 1], {
+    extrapolateLeft: "clamp", extrapolateRight: "clamp",
+  });
+
+  return (
+    <div style={{ width: 1920, height: 1080, position: "relative", background: "#0f0f1a" }}>
+      {s1Op > 0 && (
+        <div style={{ position: "absolute", inset: 0, opacity: s1Op }}>
+          <Scene1TokenBucket f={frame} />
+        </div>
+      )}
+      {s2Op > 0 && (
+        <div style={{ position: "absolute", inset: 0, opacity: s2Op }}>
+          <Scene2Stripe f={frame - 480} />
+        </div>
+      )}
+      {s3Op > 0 && (
+        <div style={{ position: "absolute", inset: 0, opacity: s3Op }}>
+          <Scene3SlidingWindow f={frame - 840} />
+        </div>
+      )}
     </div>
   );
 };

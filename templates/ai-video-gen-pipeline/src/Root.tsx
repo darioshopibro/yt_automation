@@ -7,21 +7,16 @@ import Generated_MicroservicesArch from "./visuals/Generated_MicroservicesArch";
 import Generated_RaceConditions from "./visuals/Generated_RaceConditions";
 import Generated_StripePaymentFlow from "./visuals/Generated_StripePaymentFlow";
 import Generated_NetflixPlayClick from "./visuals/Generated_NetflixPlayClick";
-import Generated_DockerContainerLifecycle from "./visuals/Generated_DockerContainerLifecycle";
 import Generated_GoogleSearchRanking from "./visuals/Generated_GoogleSearchRanking";
 import Generated_GoogleAutocomplete from "./visuals/Generated_GoogleAutocomplete";
-import Generated_GitPushJourney from "./visuals/Generated_GitPushJourney";
 import Generated_GoogleDocsKeystroke from "./visuals/Generated_GoogleDocsKeystroke";
-import Generated_V8EnginePipeline from "./visuals/Generated_V8EnginePipeline";
 import Generated_WhatsAppMessageFlow from "./visuals/Generated_WhatsAppMessageFlow";
 import Generated_GarbageCollection from "./visuals/Generated_GarbageCollection";
-import Generated_OAuth2GoogleFlow from "./visuals/Generated_OAuth2GoogleFlow";
-import Generated_HTTPvsWebSocket from "./visuals/Generated_HTTPvsWebSocket";
 import Generated_CDNLatency from "./visuals/Generated_CDNLatency";
-import Generated_LoadBalancing from "./visuals/Generated_LoadBalancing";
 import Generated_YouTubeAdaptiveStreaming from "./visuals/Generated_YouTubeAdaptiveStreaming";
 import Generated_TLSHandshake from "./visuals/Generated_TLSHandshake";
 import Generated_TokenBucketRateLimiting from "./visuals/Generated_TokenBucketRateLimiting";
+import Generated_DockerContainerLifecycle from "./visuals/Generated_DockerContainerLifecycle";
 import config from "./dynamic-config.json";
 
 // Old hardcoded version:
@@ -119,14 +114,7 @@ export const RemotionRoot: React.FC = () => (
       height={1080}
     />
     {/* Docker Container Lifecycle — layers → image → container → volumes */}
-    <Composition
-      id="DockerContainerLifecycle"
-      component={Generated_DockerContainerLifecycle}
-      durationInFrames={420}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
+
     {/* Google Autocomplete — search bar + predictions + re-ranking */}
     <Composition
       id="GoogleAutocomplete"
@@ -155,23 +143,9 @@ export const RemotionRoot: React.FC = () => (
       height={1080}
     />
     {/* V8 Engine Pipeline — Source → AST → Bytecode → Machine Code → Deopt cycle */}
-    <Composition
-      id="V8EnginePipeline"
-      component={Generated_V8EnginePipeline}
-      durationInFrames={1350}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
+
     {/* Git Push Journey — compression → SSH → hooks → atomic update */}
-    <Composition
-      id="GitPushJourney"
-      component={Generated_GitPushJourney}
-      durationInFrames={450}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
+
     {/* WhatsApp Message Flow — encrypt → relay → deliver/queue → receipts → scale */}
     <Composition
       id="WhatsAppMessageFlow"
@@ -191,14 +165,7 @@ export const RemotionRoot: React.FC = () => (
       height={1080}
     />
     {/* HTTP vs WebSocket — upgrade process, overhead comparison */}
-    <Composition
-      id="HTTPvsWebSocket"
-      component={Generated_HTTPvsWebSocket}
-      durationInFrames={600}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
+
     {/* CDN Latency — distance problem → edge caching → Netflix OCA */}
     <Composition
       id="CDNLatency"
@@ -209,23 +176,9 @@ export const RemotionRoot: React.FC = () => (
       height={1080}
     />
     {/* OAuth2 Google Flow — redirect dance, token exchange, delegated auth */}
-    <Composition
-      id="OAuth2GoogleFlow"
-      component={Generated_OAuth2GoogleFlow}
-      durationInFrames={540}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
+  
     {/* Load Balancing — Round Robin → Least Connections → Weighted RR → Health Checks */}
-    <Composition
-      id="LoadBalancing"
-      component={Generated_LoadBalancing}
-      durationInFrames={1350}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
+  
     {/* TLS Handshake — 5-step browser↔server key exchange before encryption */}
     <Composition
       id="TLSHandshake"
@@ -248,7 +201,16 @@ export const RemotionRoot: React.FC = () => (
     <Composition
       id="TokenBucketRateLimiting"
       component={Generated_TokenBucketRateLimiting}
-      durationInFrames={1350}
+      durationInFrames={1280}
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+    {/* Docker Container Lifecycle — Dockerfile layers → image → container → volumes */}
+    <Composition
+      id="DockerContainerLifecycle"
+      component={Generated_DockerContainerLifecycle}
+      durationInFrames={720}
       fps={30}
       width={1920}
       height={1080}
