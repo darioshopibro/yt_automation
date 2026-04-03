@@ -1,6 +1,6 @@
-What is docker? docker's a software development platform and virtualization technology that makes it easy to develop and deploy apps inside neatly packaged virtual containerized environments. This means apps run the same no matter where they are or what machine they're running on.
+What is docker? docker's a software development platform and a virtualization technology that makes it easy for us to develop and deploy apps inside of neatly packaged virtual containerized environments. This means apps run the same no matter where they are or what machine they're running on.
 
-docker containers can be deployed to just about any machine without compatibility issues, so your software stays system agnostic. That makes software simpler to use, less work to develop, and easier to maintain and deploy.
+docker containers can be deployed to just about any machine without compatibility issues, so your software stays system agnostic. This makes software simpler to use, less work to develop, and easier to maintain and deploy.
 
 These containers running on your computer or server act like little micro computers, each with very specific jobs, each with their own operating system, their own isolated C P U processes, memory, and network resources. Because of this, they can be easily added, removed, stopped, and started again without affecting each other or the host machine.
 
@@ -8,18 +8,18 @@ Containers usually run one specific task, such as a my S Q L database or a node 
 
 A developer will usually start by accessing the docker Hub, an online cloud repository of docker containers, and pull one containing a pre-configured environment for their specific programming language, such as Ruby or node J S, with all the files and frameworks needed to get started.
 
-docker's a form of virtualization, but unlike virtual machines, the resources are shared directly with the host. This allows you to run many docker containers where you might only be able to run a few virtual machines. A virtual machine has to quarantine off a set amount of resources, hard drive space, memory, and processing power, emulate hardware, and then boot an entire operating system. The V M then communicates with the host computer via a translator application running on the host operating system called a hypervisor.
+docker's a form of virtualization, but unlike virtual machines, the resources are shared directly with the host. This allows you to run many docker containers where you may only be able to run a few virtual machines. A virtual machine has to quarantine off a set amount of hard drive space, memory, and processing power, emulate hardware, and then boot an entire operating system. The V M then communicates with the host computer via a translator application on the host operating system called a hypervisor.
 
 docker communicates natively with the system kernel, bypassing the middleman on Linux machines, and even Windows 10 and Windows Server 2016 and above. This means you can run any version of Linux in a container and it'll run natively.
 
-docker also uses less disk space, as it reuses files efficiently through a layered file system. If you have multiple docker images using the same base image, docker only keeps a single copy of the files needed and shares them with each container.
+docker also uses less disk space, as it's able to reuse files efficiently by using a layered file system. If you have multiple docker images using the same base image, docker will only keep a single copy of the files needed and share them with each container.
 
 So how do we use docker? You begin with a Dockerfile, which can be built into a docker image, which can be run as a docker container.
 
 The Dockerfile is a surprisingly simple text document that instructs how the docker image will be built, like a blueprint. You first select a base image to start with using the F R O M keyword, which you can find from the docker Hub. Ubuntu and Alpine Linux are popular choices. From there you can run commands such as downloading, installing, and running your software.
 
-Once the Dockerfile's complete, we can build it using docker build followed by the -t flag so we can name our image, and pass the command the location of the Dockerfile. Once complete, you can verify your image's existence with docker images.
+Once your Dockerfile is complete, you can build it using docker build followed by the -t flag so you can name your image, and pass your command the location of the Dockerfile. Once complete, you can verify your image's existence with docker images.
 
-Now your built image can run a container of that image, or you can push it to the cloud to share with others. If you don't create your own docker image and just want to use a pre-made one, you can pull one from the docker Hub using docker pull and the image name. You may also include a tag if one's available, which may specify a version or variant of the software.
+Now your built image can run a container, or you can push it to the cloud to share with others. If you don't create your own docker image and you just want to use a pre-made one, you can pull one from the docker Hub using docker pull and the image name. You may also include a tag if one's available, which may specify a version or variant of the software.
 
-To run a container, pull it down from the docker Hub or build the image, then enter docker run followed by the image name. There are many options available, such as running it in detached mode with -d, or assigning ports for web services. You can view your running containers with docker container ls.
+To run a container, pull it down from the docker Hub or build the image, and then enter docker run followed by the image name. There are many options available, such as running it in detached mode with -d, or assigning ports for web services. You can view your running containers with docker container ls.

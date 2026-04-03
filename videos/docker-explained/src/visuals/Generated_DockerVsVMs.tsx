@@ -14,1239 +14,1117 @@ const getIcon = (name: string): React.FC<any> => {
   return (I && typeof I === "function" ? I : Cube) as React.FC<any>;
 };
 
-// ─── CONSTANTS ──────────────────────────────────────────────
-const SEGMENT_START = 2550;
-const SEGMENT_END = 4501;
-
-const SCENE_1_START = 2550;
-const SCENE_1_END = 3100;
-const SCENE_2_START = 3100;
-const SCENE_2_END = 3400;
-const SCENE_3_START = 3400;
-const SCENE_3_END = 4501;
-
-const colors = {
-  blue: "#3b82f6",
-  green: "#22c55e",
-  amber: "#f59e0b",
-  purple: "#a855f7",
-  red: "#ef4444",
-  cyan: "#06b6d4",
-  orange: "#f97316",
-  pink: "#ec4899",
+// Brand colors
+const BRAND = {
+  primary: "#3b82f6",
+  secondary: "#06b6d4",
+  accent: "#f59e0b",
+  bg: "#030305",
+  text: "#f8fafc",
 };
 
-const clamp = {
-  extrapolateLeft: "clamp" as const,
-  extrapolateRight: "clamp" as const,
+// Design system colors
+const BG = "#0f0f1a";
+const TEXT_PRIMARY = "#e2e8f0";
+const TEXT_SECONDARY = "#94a3b8";
+const TEXT_DIM = "#64748b";
+const BORDER = "#1a1a2e";
+
+// VM color = warm/heavy (orange-red)
+const VM_COLOR = "#ef4444";
+// Docker color = cool/light (blue-cyan)
+const DOCKER_COLOR = BRAND.primary;
+// Kernel color
+const KERNEL_COLOR = "#22c55e";
+// Hypervisor color
+const HYPERVISOR_COLOR = "#f59e0b";
+// Layer color
+const LAYER_COLOR = "#a855f7";
+
+/**
+ * Estimated word-level timestamps (seconds from video start).
+ * Segment: frames 2536–4574 @ 30fps = seconds 84.53–152.47
+ * Total duration: ~67.9s
+ *
+ * These are estimated from natural speech pacing.
+ * Each key moment is mapped to the approximate time the narrator says that word.
+ */
+const T = {
+  // "Docker's a form of virtualization"
+  dockerVirtualization: 84.5,
+  // "but unlike virtual machines"
+  unlikeVMs: 86.0,
+  // "resources are shared directly with the host"
+  sharedWithHost: 88.0,
+  // "run many Docker containers"
+  manyContainers: 91.0,
+  // "only a few virtual machines"
+  fewVMs: 93.5,
+  // "A virtual machine has to quarantine off"
+  vmQuarantine: 95.5,
+  // "hard drive space, memory, and processing power"
+  vmResources: 98.0,
+  // "emulate hardware"
+  emulateHardware: 100.5,
+  // "boot an entire operating system"
+  bootOS: 102.0,
+  // "VM communicates with the host computer"
+  vmCommunicates: 104.5,
+  // "translator application... called a hypervisor"
+  hypervisor: 107.5,
+  // "Docker communicates natively with the system kernel"
+  dockerKernel: 110.5,
+  // "bypassing the middleman"
+  bypassMiddleman: 113.0,
+  // "Linux machines"
+  linuxMachines: 114.5,
+  // "Windows 10 and Windows Server 2016"
+  windowsSupport: 116.5,
+  // "run any version of Linux in a container"
+  anyLinux: 119.5,
+  // "run natively"
+  runNatively: 121.0,
+  // "Docker also uses less disk space"
+  lessDiskSpace: 123.0,
+  // "reuse files efficiently"
+  reuseFiles: 125.5,
+  // "layered file system"
+  layeredFS: 127.0,
+  // "multiple Docker images using the same base image"
+  multipleImages: 129.5,
+  // "single copy of the files"
+  singleCopy: 132.0,
+  // "share them with each container"
+  shareContainers: 134.5,
 };
 
-// ─── TIMESTAMPS ─────────────────────────────────────────────
-const timestamps = [
-  { word: "virtualization,", start: 86.32 },
-  { word: "virtual", start: 88.294 },
-  { word: "machines,", start: 88.724 },
-  { word: "resources", start: 89.549 },
-  { word: "shared", start: 89.934 },
-  { word: "host.", start: 90.41 },
-  { word: "many", start: 91.596 },
-  { word: "Docker", start: 91.794 },
-  { word: "containers", start: 92.189 },
-  { word: "few", start: 93.352 },
-  { word: "virtual2", start: 93.539 },
-  { word: "quarantine", start: 95.378 },
-  { word: "hard", start: 97.147 },
-  { word: "drive", start: 97.38 },
-  { word: "memory,", start: 98.078 },
-  { word: "processing", start: 98.497 },
-  { word: "emulate", start: 99.497 },
-  { word: "hardware,", start: 99.904 },
-  { word: "boot", start: 100.846 },
-  { word: "operating", start: 101.427 },
-  { word: "system.", start: 101.904 },
-  { word: "hypervisor.", start: 106.38 },
-  { word: "Docker2", start: 107.461 },
-  { word: "kernel,", start: 108.868 },
-  { word: "bypassing", start: 109.484 },
-  { word: "middleman", start: 109.937 },
-  { word: "Linux", start: 110.775 },
-  { word: "Windows", start: 112.032 },
-  { word: "natively.", start: 117.891 },
-  { word: "disk", start: 119.607 },
-  { word: "space,", start: 119.827 },
-  { word: "layered", start: 121.543 },
-  { word: "file", start: 121.821 },
-  { word: "system2.", start: 122.029 },
-  { word: "base", start: 124.373 },
-  { word: "image,", start: 124.732 },
-  { word: "single", start: 125.57 },
-  { word: "copy", start: 125.93 },
-  { word: "shares", start: 149.037 },
-];
+// Convert seconds to frame number
+const fps = 30;
+const f = (seconds: number) => Math.round(seconds * fps);
 
-// ─── HELPERS ────────────────────────────────────────────────
-const fadeIn = (frame: number, start: number, dur = 15) =>
-  interpolate(frame, [start, start + dur], [0, 1], {
-    ...clamp,
+// ============================================================
+// SCENE DEFINITIONS
+// Scene 1: VM Architecture (heavy, layered) — frames ~2536-3300
+// Scene 2: Docker Architecture (light, direct) — frames ~3300-3750
+// Scene 3: Layered File System — frames ~3750-4574
+// ============================================================
+
+const SCENE1_END = f(T.dockerKernel) - 15;
+const SCENE2_END = f(T.lessDiskSpace) - 15;
+
+// Helper: smooth appearance
+const appear = (
+  frame: number,
+  startFrame: number,
+  duration: number = 15
+) => {
+  const opacity = interpolate(frame, [startFrame, startFrame + duration], [0, 1], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
     easing: Easing.out(Easing.cubic),
   });
+  const translateY = interpolate(
+    frame,
+    [startFrame, startFrame + duration],
+    [20, 0],
+    {
+      extrapolateLeft: "clamp",
+      extrapolateRight: "clamp",
+      easing: Easing.out(Easing.cubic),
+    }
+  );
+  return { opacity, translateY };
+};
 
-const fadeOut = (frame: number, start: number, dur = 15) =>
-  interpolate(frame, [start, start + dur], [1, 0], {
-    ...clamp,
+// Helper: fade out
+const fadeOut = (frame: number, startFrame: number, duration: number = 20) => {
+  return interpolate(frame, [startFrame, startFrame + duration], [1, 0], {
+    extrapolateLeft: "clamp",
+    extrapolateRight: "clamp",
     easing: Easing.in(Easing.quad),
   });
+};
 
-const slideUp = (frame: number, start: number, dur = 15, dist = 25) =>
-  interpolate(frame, [start, start + dur], [dist, 0], {
-    ...clamp,
-    easing: Easing.out(Easing.cubic),
-  });
-
+// Helper: scene transition (cross-fade)
 const sceneOpacity = (
   frame: number,
   sceneStart: number,
   sceneEnd: number,
-  fi = 15,
-  fo = 15
+  fadeIn: number = 20,
+  fadeOutDuration: number = 20
 ) => {
-  const inOp = interpolate(frame, [sceneStart, sceneStart + fi], [0, 1], clamp);
-  const outOp = interpolate(frame, [sceneEnd - fo, sceneEnd], [1, 0], clamp);
-  return Math.min(inOp, outOp);
-};
-
-const f = (keyword: string, fps: number): number => {
-  const w = timestamps.find((t) =>
-    t.word.toLowerCase().includes(keyword.toLowerCase())
-  );
-  return w ? Math.round(w.start * fps) : SEGMENT_START;
-};
-
-// ─── SCENE 1: Split Screen VM vs Docker ────────────────────
-const Scene1: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const sOp = sceneOpacity(frame, SCENE_1_START, SCENE_1_END);
-  if (sOp <= 0) return null;
-
-  const virtFrame = f("virtualization", fps) - 4;
-  const vmFrame = f("machines,", fps) - 4;
-  const resourcesFrame = f("resources", fps) - 4;
-  const sharedFrame = f("shared", fps) - 4;
-  const hostFrame = f("host.", fps) - 4;
-  const manyFrame = f("many", fps) - 4;
-  const containersFrame = f("containers", fps) - 4;
-  const fewFrame = f("few", fps) - 4;
-  const quarantineFrame = f("quarantine", fps) - 4;
-  const hardFrame = f("hard", fps) - 4;
-  const memoryFrame = f("memory,", fps) - 4;
-  const processingFrame = f("processing", fps) - 4;
-  const emulateFrame = f("emulate", fps) - 4;
-  const bootFrame = f("boot", fps) - 4;
-  const osFrame = f("operating", fps) - 4;
-
-  // Title
-  const titleOp = fadeIn(frame, virtFrame, 18);
-  const titleSlide = slideUp(frame, virtFrame, 18);
-
-  // VM side label
-  const vmLabelOp = fadeIn(frame, vmFrame, 15);
-
-  // Docker side label
-  const dockerLabelOp = fadeIn(frame, sharedFrame, 15);
-
-  // VM stack layers
-  const vmLayers = [
-    { label: "App", color: colors.blue, appearAt: vmFrame + 10 },
-    { label: "Bins/Libs", color: colors.blue, appearAt: vmFrame + 18 },
-    { label: "Guest OS", color: colors.orange, appearAt: bootFrame - 4 },
-    { label: "Hypervisor", color: colors.red, appearAt: emulateFrame - 4 },
-    { label: "Host OS", color: colors.amber, appearAt: osFrame - 4 },
-    { label: "Hardware", color: "#64748b", appearAt: osFrame + 10 },
-  ];
-
-  // Docker stack layers
-  const dockerLayers = [
-    { label: "App", color: colors.green, appearAt: containersFrame },
-    { label: "App", color: colors.green, appearAt: containersFrame + 8 },
-    { label: "App", color: colors.green, appearAt: containersFrame + 16 },
-    { label: "Docker Engine", color: colors.cyan, appearAt: sharedFrame },
-    { label: "Host OS", color: colors.amber, appearAt: hostFrame },
-    { label: "Hardware", color: "#64748b", appearAt: hostFrame + 10 },
-  ];
-
-  // Resource bars (quarantine visual)
-  const resourceItems = [
-    { label: "HDD", value: 80, color: colors.red, appearAt: hardFrame },
-    { label: "RAM", value: 65, color: colors.orange, appearAt: memoryFrame },
-    { label: "CPU", value: 70, color: colors.amber, appearAt: processingFrame },
-  ];
-
-  // "many containers" vs "few VMs" counter
-  const manyOp = fadeIn(frame, manyFrame, 12);
-  const fewOp = fadeIn(frame, fewFrame, 12);
-  const dockerCount = Math.round(
-    interpolate(frame, [manyFrame, manyFrame + 30], [0, 8], clamp)
-  );
-  const vmCount = Math.round(
-    interpolate(frame, [fewFrame, fewFrame + 20], [0, 2], clamp)
-  );
-
-  const DesktopIcon = getIcon("DesktopTower");
-  const CubeIcon = getIcon("Cube");
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        inset: 0,
-        opacity: sOp,
-        padding: 80,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        gap: 30,
-      }}
-    >
-      {/* Title */}
-      <div
-        style={{
-          opacity: titleOp,
-          transform: `translateY(${titleSlide}px)`,
-          fontSize: 28,
-          fontWeight: 700,
-          color: "#e2e8f0",
-          letterSpacing: 1.5,
-          textTransform: "uppercase",
-          fontFamily: "'SF Mono', monospace",
-        }}
-      >
-        Virtualization Comparison
-      </div>
-
-      {/* Split screen */}
-      <div
-        style={{
-          display: "flex",
-          width: "100%",
-          gap: 40,
-          flex: 1,
-          alignItems: "stretch",
-        }}
-      >
-        {/* ── VM Side (Left) ── */}
-        <div
-          style={{
-            flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 14,
-          }}
-        >
-          <div
-            style={{
-              opacity: vmLabelOp,
-              fontSize: 20,
-              fontWeight: 700,
-              color: colors.red,
-              fontFamily: "'SF Mono', monospace",
-              display: "flex",
-              alignItems: "center",
-              gap: 10,
-            }}
-          >
-            <DesktopIcon size={24} color={colors.red} weight="duotone" />
-            Virtual Machines
-          </div>
-
-          {/* VM Stack */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 4,
-              width: "100%",
-              maxWidth: 360,
-            }}
-          >
-            {vmLayers.map((layer, i) => {
-              const layerOp = fadeIn(frame, layer.appearAt, 12);
-              const layerScale = spring({
-                frame: Math.max(0, frame - layer.appearAt),
-                fps,
-                config: { damping: 22, stiffness: 180 },
-              });
-              return (
-                <div
-                  key={`vm-${i}`}
-                  style={{
-                    opacity: layerOp,
-                    transform: `scaleX(${Math.min(layerScale, 1)})`,
-                    padding: "14px 20px",
-                    borderRadius: 10,
-                    background: `linear-gradient(135deg, ${layer.color}18, ${layer.color}06)`,
-                    border: `1px solid ${layer.color}35`,
-                    textAlign: "center",
-                    fontSize: 14,
-                    fontWeight: 600,
-                    color: "#e2e8f0",
-                    fontFamily: "'SF Mono', monospace",
-                  }}
-                >
-                  {layer.label}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Resources quarantined */}
-          <div
-            style={{
-              opacity: fadeIn(frame, quarantineFrame, 15),
-              display: "flex",
-              flexDirection: "column",
-              gap: 8,
-              width: "100%",
-              maxWidth: 360,
-              padding: "12px 16px",
-              borderRadius: 10,
-              border: `1px solid ${colors.red}25`,
-              background: `${colors.red}08`,
-            }}
-          >
-            <div
-              style={{
-                fontSize: 12,
-                fontWeight: 600,
-                color: colors.red,
-                fontFamily: "'SF Mono', monospace",
-                textTransform: "uppercase",
-                letterSpacing: 1,
-              }}
-            >
-              Quarantined Resources
-            </div>
-            {resourceItems.map((res) => {
-              const barOp = fadeIn(frame, res.appearAt, 12);
-              const barWidth = interpolate(
-                frame,
-                [res.appearAt, res.appearAt + 25],
-                [0, res.value],
-                { ...clamp, easing: Easing.out(Easing.cubic) }
-              );
-              return (
-                <div
-                  key={res.label}
-                  style={{
-                    opacity: barOp,
-                    display: "flex",
-                    alignItems: "center",
-                    gap: 10,
-                  }}
-                >
-                  <span
-                    style={{
-                      fontSize: 11,
-                      color: "#94a3b8",
-                      fontFamily: "'SF Mono', monospace",
-                      width: 30,
-                    }}
-                  >
-                    {res.label}
-                  </span>
-                  <div
-                    style={{
-                      flex: 1,
-                      height: 8,
-                      borderRadius: 4,
-                      background: "#1a1a2e",
-                      overflow: "hidden",
-                    }}
-                  >
-                    <div
-                      style={{
-                        width: `${barWidth}%`,
-                        height: "100%",
-                        borderRadius: 4,
-                        background: `linear-gradient(90deg, ${res.color}, ${res.color}80)`,
-                        boxShadow: `0 0 8px ${res.color}40`,
-                      }}
-                    />
-                  </div>
-                  <span
-                    style={{
-                      fontSize: 11,
-                      color: "#64748b",
-                      fontFamily: "'SF Mono', monospace",
-                      width: 35,
-                    }}
-                  >
-                    {Math.round(barWidth)}%
-                  </span>
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Few VMs count */}
-          <div
-            style={{
-              opacity: fewOp,
-              fontSize: 36,
-              fontWeight: 700,
-              color: colors.red,
-              fontFamily: "'SF Mono', monospace",
-              textShadow: `0 0 20px ${colors.red}30`,
-            }}
-          >
-            {vmCount} VMs
-          </div>
-        </div>
-
-        {/* ── Center Divider ── */}
-        <div
-          style={{
-            width: 2,
-            background: `linear-gradient(180deg, transparent, #1a1a2e, transparent)`,
-            opacity: fadeIn(frame, vmFrame, 20),
-          }}
-        />
-
-        {/* ── Docker Side (Right) ── */}
-        <div
-          style={{
-            flex: 1,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 14,
-          }}
-        >
-          <div
-            style={{
-              opacity: dockerLabelOp,
-              fontSize: 20,
-              fontWeight: 700,
-              color: colors.cyan,
-              fontFamily: "'SF Mono', monospace",
-              display: "flex",
-              alignItems: "center",
-              gap: 10,
-            }}
-          >
-            <CubeIcon size={24} color={colors.cyan} weight="duotone" />
-            Docker Containers
-          </div>
-
-          {/* Docker Stack */}
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 4,
-              width: "100%",
-              maxWidth: 360,
-            }}
-          >
-            {dockerLayers.map((layer, i) => {
-              const layerOp = fadeIn(frame, layer.appearAt, 12);
-              const layerScale = spring({
-                frame: Math.max(0, frame - layer.appearAt),
-                fps,
-                config: { damping: 22, stiffness: 180 },
-              });
-              const isApp = layer.label === "App" && i < 3;
-              return (
-                <div
-                  key={`docker-${i}`}
-                  style={{
-                    opacity: layerOp,
-                    transform: `scaleX(${Math.min(layerScale, 1)})`,
-                    padding: isApp ? "10px 20px" : "14px 20px",
-                    borderRadius: 10,
-                    background: `linear-gradient(135deg, ${layer.color}18, ${layer.color}06)`,
-                    border: `1px solid ${layer.color}35`,
-                    textAlign: "center",
-                    fontSize: isApp ? 13 : 14,
-                    fontWeight: 600,
-                    color: "#e2e8f0",
-                    fontFamily: "'SF Mono', monospace",
-                  }}
-                >
-                  {isApp ? `Container ${i + 1}` : layer.label}
-                </div>
-              );
-            })}
-          </div>
-
-          {/* Shared resources label */}
-          <div
-            style={{
-              opacity: fadeIn(frame, resourcesFrame, 15),
-              padding: "10px 16px",
-              borderRadius: 10,
-              border: `1px solid ${colors.green}25`,
-              background: `${colors.green}08`,
-              fontSize: 13,
-              color: colors.green,
-              fontFamily: "'SF Mono', monospace",
-              fontWeight: 600,
-            }}
-          >
-            Resources shared with host
-          </div>
-
-          {/* Many containers count */}
-          <div
-            style={{
-              opacity: manyOp,
-              fontSize: 36,
-              fontWeight: 700,
-              color: colors.green,
-              fontFamily: "'SF Mono', monospace",
-              textShadow: `0 0 20px ${colors.green}30`,
-            }}
-          >
-            {dockerCount} Containers
-          </div>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// ─── SCENE 2: Docker → Kernel Direct Connection ────────────
-const Scene2: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const sOp = sceneOpacity(frame, SCENE_2_START, SCENE_2_END);
-  if (sOp <= 0) return null;
-
-  const kernelFrame = f("kernel,", fps) - 4;
-  const bypassFrame = f("bypassing", fps) - 4;
-  const middlemanFrame = f("middleman", fps) - 4;
-  const linuxFrame = f("Linux", fps) - 4;
-  const windowsFrame = f("Windows", fps) - 4;
-  const dockerFrame = f("Docker2", fps) - 4;
-  const hypervisorFrame = f("hypervisor.", fps) - 4;
-
-  const CpuIcon = getIcon("Cpu");
-  const CubeIcon = getIcon("Cube");
-  const LightningIcon = getIcon("Lightning");
-  const ProhibitIcon = getIcon("Prohibit");
-  const LinuxIcon = getIcon("LinuxLogo");
-  const WindowsIcon = getIcon("WindowsLogo");
-  const ShieldIcon = getIcon("ShieldCheck");
-
-  // Docker box
-  const dockerOp = fadeIn(frame, dockerFrame, 18);
-  const dockerSlide = slideUp(frame, dockerFrame, 18);
-
-  // Kernel box
-  const kernelOp = fadeIn(frame, kernelFrame, 18);
-  const kernelSlide = slideUp(frame, kernelFrame, 18);
-
-  // Connection glow pulse between Docker and Kernel
-  const connectionOp = fadeIn(frame, kernelFrame + 10, 15);
-  const glowPulse =
-    frame > kernelFrame + 10
-      ? 0.6 + 0.4 * Math.sin((frame - kernelFrame) * 0.15)
-      : 0;
-
-  // Hypervisor (faded / crossed out)
-  const hyperOp = fadeIn(frame, hypervisorFrame, 15);
-  const hyperFade = interpolate(
+  const enterOpacity = interpolate(
     frame,
-    [middlemanFrame, middlemanFrame + 20],
-    [1, 0.25],
-    clamp
+    [sceneStart, sceneStart + fadeIn],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
   );
+  const exitOpacity = interpolate(
+    frame,
+    [sceneEnd - fadeOutDuration, sceneEnd],
+    [1, 0],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+  return Math.min(enterOpacity, exitOpacity);
+};
 
-  // "Bypassing the middleman" label
-  const bypassOp = fadeIn(frame, bypassFrame, 12);
-  const bypassSlide = slideUp(frame, bypassFrame, 12);
+// ============================================================
+// Layer Block component (reusable for architecture stacks)
+// ============================================================
+type LayerBlockProps = {
+  label: string;
+  color: string;
+  width: number;
+  height: number;
+  opacity: number;
+  translateY: number;
+  glow?: boolean;
+  icon?: string;
+  sublabel?: string;
+};
 
-  // Linux logo
-  const linuxOp = fadeIn(frame, linuxFrame, 15);
-  const linuxScale = spring({
-    frame: Math.max(0, frame - linuxFrame),
-    fps,
-    config: { damping: 22, stiffness: 180 },
-  });
-
-  // Windows logo
-  const windowsOp = fadeIn(frame, windowsFrame, 15);
-  const windowsScale = spring({
-    frame: Math.max(0, frame - windowsFrame),
-    fps,
-    config: { damping: 22, stiffness: 180 },
-  });
-
+const LayerBlock: React.FC<LayerBlockProps> = ({
+  label,
+  color,
+  width,
+  height,
+  opacity,
+  translateY,
+  glow = false,
+  icon,
+  sublabel,
+}) => {
+  const IconComp = icon ? getIcon(icon) : null;
   return (
     <div
       style={{
-        position: "absolute",
-        inset: 0,
-        opacity: sOp,
-        padding: 80,
+        width,
+        height,
+        borderRadius: 10,
+        background: `${color}15`,
+        border: `1.5px solid ${color}30`,
         display: "flex",
         flexDirection: "column",
         alignItems: "center",
         justifyContent: "center",
-        gap: 30,
+        gap: 4,
+        opacity,
+        transform: `translateY(${translateY}px)`,
+        boxShadow: glow ? `0 0 20px ${color}30` : "none",
+        position: "relative",
       }}
     >
-      {/* Title */}
-      <div
-        style={{
-          opacity: fadeIn(frame, SCENE_2_START + 5, 18),
-          transform: `translateY(${slideUp(frame, SCENE_2_START + 5, 18)}px)`,
-          fontSize: 28,
-          fontWeight: 700,
-          color: "#e2e8f0",
-          letterSpacing: 1.5,
-          textTransform: "uppercase",
-          fontFamily: "'SF Mono', monospace",
-        }}
-      >
-        Native Kernel Access
-      </div>
-
-      {/* Main connection diagram */}
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-          gap: 50,
-        }}
-      >
-        {/* Docker box */}
-        <div
-          style={{
-            opacity: dockerOp,
-            transform: `translateY(${dockerSlide}px)`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 12,
-          }}
-        >
-          <div
-            style={{
-              width: 120,
-              height: 120,
-              borderRadius: 28,
-              background: `linear-gradient(135deg, ${colors.cyan}25, ${colors.cyan}08)`,
-              border: `1.5px solid ${colors.cyan}50`,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              boxShadow: `0 0 35px ${colors.cyan}20`,
-            }}
-          >
-            <CubeIcon size={60} color={colors.cyan} weight="duotone" />
-          </div>
-          <span
-            style={{
-              fontSize: 18,
-              fontWeight: 700,
-              color: "#e2e8f0",
-            }}
-          >
-            Docker
-          </span>
-        </div>
-
-        {/* Connection indicator */}
-        <div
-          style={{
-            opacity: connectionOp,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 8,
-          }}
-        >
-          <LightningIcon
-            size={36}
-            color={colors.green}
-            weight="fill"
-            style={{
-              filter: `drop-shadow(0 0 ${10 + glowPulse * 15}px ${colors.green}70)`,
-            }}
-          />
-          <span
-            style={{
-              fontSize: 12,
-              fontWeight: 600,
-              color: colors.green,
-              fontFamily: "'SF Mono', monospace",
-            }}
-          >
-            DIRECT
-          </span>
-        </div>
-
-        {/* Kernel box */}
-        <div
-          style={{
-            opacity: kernelOp,
-            transform: `translateY(${kernelSlide}px)`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 12,
-          }}
-        >
-          <div
-            style={{
-              width: 120,
-              height: 120,
-              borderRadius: 28,
-              background: `linear-gradient(135deg, ${colors.green}25, ${colors.green}08)`,
-              border: `1.5px solid ${colors.green}50`,
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              boxShadow: `0 0 ${20 + glowPulse * 20}px ${colors.green}${Math.round(20 + glowPulse * 20).toString(16).padStart(2, "0")}`,
-            }}
-          >
-            <CpuIcon size={60} color={colors.green} weight="duotone" />
-          </div>
-          <span
-            style={{
-              fontSize: 18,
-              fontWeight: 700,
-              color: "#e2e8f0",
-            }}
-          >
-            System Kernel
-          </span>
-        </div>
-      </div>
-
-      {/* Hypervisor (faded with strikethrough) */}
-      <div
-        style={{
-          opacity: hyperOp * hyperFade,
-          display: "flex",
-          alignItems: "center",
-          gap: 12,
-          padding: "12px 24px",
-          borderRadius: 12,
-          background: `${colors.red}08`,
-          border: `1px solid ${colors.red}20`,
-        }}
-      >
-        <ProhibitIcon
+      {IconComp && (
+        <IconComp
           size={22}
-          color={colors.red}
-          weight="bold"
-          style={{
-            opacity: fadeIn(frame, middlemanFrame, 10),
-          }}
+          color={color}
+          weight="duotone"
+          style={{ filter: `drop-shadow(0 0 6px ${color}50)` }}
         />
-        <span
-          style={{
-            fontSize: 16,
-            fontWeight: 600,
-            color: `#e2e8f0${Math.round(hyperFade * 255).toString(16).padStart(2, "0")}`,
-            fontFamily: "'SF Mono', monospace",
-            textDecoration: hyperFade < 0.5 ? "line-through" : "none",
-          }}
-        >
-          Hypervisor
-        </span>
-        <span
-          style={{
-            fontSize: 13,
-            color: "#64748b",
-            opacity: bypassOp,
-          }}
-        >
-          (middleman bypassed)
-        </span>
-      </div>
-
-      {/* Bypass label */}
-      <div
+      )}
+      <span
         style={{
-          opacity: bypassOp,
-          transform: `translateY(${bypassSlide}px)`,
-          fontSize: 15,
-          color: colors.green,
+          fontFamily: "'Inter', system-ui, sans-serif",
+          fontSize: 14,
           fontWeight: 600,
-          fontFamily: "'SF Mono', monospace",
-          display: "flex",
-          alignItems: "center",
-          gap: 8,
+          color: TEXT_PRIMARY,
+          textAlign: "center",
         }}
       >
-        <ShieldIcon size={18} color={colors.green} weight="duotone" />
-        Bypassing the middleman
-      </div>
-
-      {/* OS Logos */}
-      <div
-        style={{
-          display: "flex",
-          gap: 30,
-          alignItems: "center",
-        }}
-      >
-        <div
-          style={{
-            opacity: linuxOp,
-            transform: `scale(${Math.min(linuxScale, 1)})`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 8,
-            padding: "16px 28px",
-            borderRadius: 12,
-            background: `${colors.amber}08`,
-            border: `1px solid ${colors.amber}25`,
-          }}
-        >
-          <LinuxIcon size={36} color={colors.amber} weight="duotone" />
-          <span
-            style={{
-              fontSize: 14,
-              fontWeight: 600,
-              color: "#e2e8f0",
-              fontFamily: "'SF Mono', monospace",
-            }}
-          >
-            Linux
-          </span>
-          <span style={{ fontSize: 11, color: colors.green }}>
-            Native
-          </span>
-        </div>
-
-        <div
-          style={{
-            opacity: windowsOp,
-            transform: `scale(${Math.min(windowsScale, 1)})`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 8,
-            padding: "16px 28px",
-            borderRadius: 12,
-            background: `${colors.blue}08`,
-            border: `1px solid ${colors.blue}25`,
-          }}
-        >
-          <WindowsIcon size={36} color={colors.blue} weight="duotone" />
-          <span
-            style={{
-              fontSize: 14,
-              fontWeight: 600,
-              color: "#e2e8f0",
-              fontFamily: "'SF Mono', monospace",
-            }}
-          >
-            Windows 10+
-          </span>
-          <span style={{ fontSize: 11, color: colors.green }}>
-            Supported
-          </span>
-        </div>
-      </div>
-    </div>
-  );
-};
-
-// ─── SCENE 3: Layered File System ──────────────────────────
-const Scene3: React.FC<{ frame: number; fps: number }> = ({ frame, fps }) => {
-  const sOp = sceneOpacity(frame, SCENE_3_START, SCENE_3_END);
-  if (sOp <= 0) return null;
-
-  const diskFrame = f("disk", fps) - 4;
-  const layeredFrame = f("layered", fps) - 4;
-  const fileFrame = f("file", fps) - 4;
-  const baseFrame = f("base", fps) - 4;
-  const imageFrame = f("image,", fps) - 4;
-  const singleFrame = f("single", fps) - 4;
-  const copyFrame = f("copy", fps) - 4;
-  const sharesFrame = f("shares", fps) - 4;
-
-  const StackIcon = getIcon("Stack");
-  const HardDriveIcon = getIcon("HardDrives");
-  const CopyIcon = getIcon("CopySimple");
-  const ShareIcon = getIcon("ShareNetwork");
-  const FileIcon = getIcon("File");
-  const CubeIcon = getIcon("Cube");
-
-  // Title
-  const titleOp = fadeIn(frame, SCENE_3_START + 5, 18);
-  const titleSlide = slideUp(frame, SCENE_3_START + 5, 18);
-
-  // "Less disk space" badge
-  const diskOp = fadeIn(frame, diskFrame, 15);
-  const diskSlide = slideUp(frame, diskFrame, 15);
-
-  // Layer stack visual
-  const layers = [
-    { label: "Application Code", color: colors.blue, appearAt: layeredFrame + 20 },
-    { label: "npm packages", color: colors.cyan, appearAt: layeredFrame + 30 },
-    { label: "Node.js Runtime", color: colors.green, appearAt: layeredFrame + 40 },
-    { label: "Ubuntu Base Image", color: colors.amber, appearAt: baseFrame - 4, isBase: true },
-  ];
-
-  // Second image stack (shares base)
-  const image2Layers = [
-    { label: "API Server Code", color: colors.purple, appearAt: imageFrame },
-    { label: "pip packages", color: colors.pink, appearAt: imageFrame + 10 },
-    { label: "Python Runtime", color: colors.orange, appearAt: imageFrame + 20 },
-    { label: "Ubuntu Base Image", color: colors.amber, appearAt: imageFrame + 30, isBase: true },
-  ];
-
-  // "Single copy" highlight
-  const singleOp = fadeIn(frame, singleFrame, 15);
-  const singleScale = spring({
-    frame: Math.max(0, frame - singleFrame),
-    fps,
-    config: { damping: 20, stiffness: 160 },
-  });
-
-  // Shares indicator
-  const sharesOp = fadeIn(frame, sharesFrame, 15);
-  const sharesGlow =
-    frame > sharesFrame
-      ? 0.5 + 0.5 * Math.sin((frame - sharesFrame) * 0.12)
-      : 0;
-
-  // Base image highlight glow
-  const baseHighlight = fadeIn(frame, singleFrame, 20);
-
-  return (
-    <div
-      style={{
-        position: "absolute",
-        inset: 0,
-        opacity: sOp,
-        padding: 80,
-        display: "flex",
-        flexDirection: "column",
-        alignItems: "center",
-        justifyContent: "center",
-        gap: 30,
-      }}
-    >
-      {/* Title */}
-      <div
-        style={{
-          opacity: titleOp,
-          transform: `translateY(${titleSlide}px)`,
-          fontSize: 28,
-          fontWeight: 700,
-          color: "#e2e8f0",
-          letterSpacing: 1.5,
-          textTransform: "uppercase",
-          fontFamily: "'SF Mono', monospace",
-        }}
-      >
-        Layered File System
-      </div>
-
-      {/* Less disk space badge */}
-      <div
-        style={{
-          opacity: diskOp,
-          transform: `translateY(${diskSlide}px)`,
-          display: "flex",
-          alignItems: "center",
-          gap: 10,
-          padding: "8px 20px",
-          borderRadius: 20,
-          background: `${colors.green}12`,
-          border: `1px solid ${colors.green}30`,
-        }}
-      >
-        <HardDriveIcon size={18} color={colors.green} weight="duotone" />
+        {label}
+      </span>
+      {sublabel && (
         <span
           style={{
-            fontSize: 14,
-            fontWeight: 600,
-            color: colors.green,
             fontFamily: "'SF Mono', monospace",
+            fontSize: 10,
+            fontWeight: 500,
+            color: TEXT_DIM,
+            textTransform: "uppercase",
+            letterSpacing: 1,
           }}
         >
-          Less Disk Space
+          {sublabel}
         </span>
-      </div>
-
-      {/* Two image stacks side by side */}
-      <div
-        style={{
-          display: "flex",
-          gap: 80,
-          alignItems: "flex-end",
-          justifyContent: "center",
-        }}
-      >
-        {/* Image 1 */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 6,
-          }}
-        >
-          <div
-            style={{
-              opacity: fadeIn(frame, layeredFrame, 15),
-              fontSize: 15,
-              fontWeight: 600,
-              color: "#e2e8f0",
-              marginBottom: 10,
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-            }}
-          >
-            <CubeIcon size={18} color={colors.blue} weight="duotone" />
-            Web App Image
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 3,
-            }}
-          >
-            {layers.map((layer, i) => {
-              const layerOp = fadeIn(frame, layer.appearAt, 14);
-              const layerScale = spring({
-                frame: Math.max(0, frame - layer.appearAt),
-                fps,
-                config: { damping: 24, stiffness: 200 },
-              });
-              const isBaseHighlighted = layer.isBase && baseHighlight > 0;
-              return (
-                <div
-                  key={`l1-${i}`}
-                  style={{
-                    opacity: layerOp,
-                    transform: `scaleX(${Math.min(layerScale, 1)})`,
-                    width: 300,
-                    padding: "14px 20px",
-                    borderRadius: 10,
-                    background: `linear-gradient(135deg, ${layer.color}${isBaseHighlighted ? "25" : "15"}, ${layer.color}06)`,
-                    border: `1.5px solid ${layer.color}${isBaseHighlighted ? "60" : "30"}`,
-                    textAlign: "center",
-                    fontSize: 13,
-                    fontWeight: 600,
-                    color: "#e2e8f0",
-                    fontFamily: "'SF Mono', monospace",
-                    boxShadow: isBaseHighlighted
-                      ? `0 0 20px ${layer.color}30`
-                      : "none",
-                  }}
-                >
-                  {layer.label}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-
-        {/* Shared indicator between stacks */}
-        <div
-          style={{
-            opacity: singleOp,
-            transform: `scale(${Math.min(singleScale, 1)})`,
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 12,
-            alignSelf: "center",
-          }}
-        >
-          <ShareIcon
-            size={40}
-            color={colors.amber}
-            weight="duotone"
-            style={{
-              filter: `drop-shadow(0 0 ${8 + sharesGlow * 12}px ${colors.amber}60)`,
-              opacity: sharesOp > 0 ? 1 : 0.7,
-            }}
-          />
-          <div
-            style={{
-              fontSize: 14,
-              fontWeight: 700,
-              color: colors.amber,
-              fontFamily: "'SF Mono', monospace",
-              textAlign: "center",
-            }}
-          >
-            Single
-            <br />
-            Copy
-          </div>
-          <div
-            style={{
-              fontSize: 11,
-              color: "#64748b",
-              textAlign: "center",
-              maxWidth: 100,
-            }}
-          >
-            Base shared across containers
-          </div>
-        </div>
-
-        {/* Image 2 */}
-        <div
-          style={{
-            display: "flex",
-            flexDirection: "column",
-            alignItems: "center",
-            gap: 6,
-          }}
-        >
-          <div
-            style={{
-              opacity: fadeIn(frame, imageFrame, 15),
-              fontSize: 15,
-              fontWeight: 600,
-              color: "#e2e8f0",
-              marginBottom: 10,
-              display: "flex",
-              alignItems: "center",
-              gap: 8,
-            }}
-          >
-            <CubeIcon size={18} color={colors.purple} weight="duotone" />
-            API Server Image
-          </div>
-          <div
-            style={{
-              display: "flex",
-              flexDirection: "column",
-              gap: 3,
-            }}
-          >
-            {image2Layers.map((layer, i) => {
-              const layerOp = fadeIn(frame, layer.appearAt, 14);
-              const layerScale = spring({
-                frame: Math.max(0, frame - layer.appearAt),
-                fps,
-                config: { damping: 24, stiffness: 200 },
-              });
-              const isBaseHighlighted = layer.isBase && baseHighlight > 0;
-              return (
-                <div
-                  key={`l2-${i}`}
-                  style={{
-                    opacity: layerOp,
-                    transform: `scaleX(${Math.min(layerScale, 1)})`,
-                    width: 300,
-                    padding: "14px 20px",
-                    borderRadius: 10,
-                    background: `linear-gradient(135deg, ${layer.color}${isBaseHighlighted ? "25" : "15"}, ${layer.color}06)`,
-                    border: `1.5px solid ${layer.color}${isBaseHighlighted ? "60" : "30"}`,
-                    textAlign: "center",
-                    fontSize: 13,
-                    fontWeight: 600,
-                    color: "#e2e8f0",
-                    fontFamily: "'SF Mono', monospace",
-                    boxShadow: isBaseHighlighted
-                      ? `0 0 20px ${layer.color}30`
-                      : "none",
-                  }}
-                >
-                  {layer.label}
-                </div>
-              );
-            })}
-          </div>
-        </div>
-      </div>
-
-      {/* Efficiency summary */}
-      <div
-        style={{
-          opacity: fadeIn(frame, copyFrame, 18),
-          transform: `translateY(${slideUp(frame, copyFrame, 18)}px)`,
-          display: "flex",
-          gap: 30,
-          alignItems: "center",
-          padding: "14px 28px",
-          borderRadius: 12,
-          background: "#1a1a2e40",
-          border: "1px solid #1a1a2e",
-        }}
-      >
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-          }}
-        >
-          <CopyIcon size={18} color={colors.green} weight="duotone" />
-          <span
-            style={{
-              fontSize: 14,
-              color: "#e2e8f0",
-              fontWeight: 600,
-              fontFamily: "'SF Mono', monospace",
-            }}
-          >
-            Deduplication
-          </span>
-        </div>
-        <div
-          style={{
-            width: 1,
-            height: 20,
-            background: "#1a1a2e",
-          }}
-        />
-        <div
-          style={{
-            display: "flex",
-            alignItems: "center",
-            gap: 8,
-          }}
-        >
-          <StackIcon size={18} color={colors.cyan} weight="duotone" />
-          <span
-            style={{
-              fontSize: 14,
-              color: "#94a3b8",
-            }}
-          >
-            Layers reused efficiently
-          </span>
-        </div>
-      </div>
+      )}
     </div>
   );
 };
 
-// ─── MAIN COMPONENT ────────────────────────────────────────
+// ============================================================
+// Main Component
+// ============================================================
 const Generated_DockerVsVMs: React.FC = () => {
   const frame = useCurrentFrame();
-  const { fps } = useVideoConfig();
+  const { fps: videoFps } = useVideoConfig();
+
+  // ── SCENE 1: VM Architecture ──────────────────────────────
+  // "Docker's a form of virtualization, but unlike VMs..."
+  // Build up VM stack: Host OS → Hypervisor → VMs (each with Guest OS)
+  const scene1Opacity = sceneOpacity(frame, f(T.dockerVirtualization) - 5, SCENE1_END);
+
+  // Title appears first
+  const titleAnim = appear(frame, f(T.dockerVirtualization));
+
+  // "shared directly with host" → show host hardware/OS base
+  const hostAnim = appear(frame, f(T.sharedWithHost) - 5);
+
+  // "run many containers vs few VMs" → show count comparison
+  const countAnim = appear(frame, f(T.manyContainers) - 3);
+
+  // "quarantine off resources" → VM resource blocks appear
+  const vmResourceAnim = appear(frame, f(T.vmQuarantine) - 3);
+
+  // "emulate hardware, boot entire OS" → Guest OS layers
+  const vmGuestAnim = appear(frame, f(T.emulateHardware) - 3);
+
+  // "hypervisor" → hypervisor layer highlights
+  const hypervisorAnim = appear(frame, f(T.hypervisor) - 5);
+  const hypervisorGlow = interpolate(
+    frame,
+    [f(T.hypervisor), f(T.hypervisor) + 20],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+
+  // ── SCENE 2: Docker Architecture ─────────────────────────
+  const scene2Opacity = sceneOpacity(frame, SCENE1_END - 10, SCENE2_END);
+
+  const dockerTitleAnim = appear(frame, f(T.dockerKernel) - 10);
+  const kernelAnim = appear(frame, f(T.dockerKernel) - 3);
+  const bypassAnim = appear(frame, f(T.bypassMiddleman) - 3);
+
+  // "any version of Linux" → multiple container icons appear
+  const linuxAnim = appear(frame, f(T.anyLinux) - 3);
+  const nativelyAnim = appear(frame, f(T.runNatively) - 3);
+
+  // Strikethrough hypervisor (bypassing middleman)
+  const strikethroughProgress = interpolate(
+    frame,
+    [f(T.bypassMiddleman), f(T.bypassMiddleman) + 15],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
+
+  // ── SCENE 3: Layered File System ──────────────────────────
+  const scene3Opacity = sceneOpacity(
+    frame,
+    SCENE2_END - 10,
+    f(T.shareContainers) + 90,
+    20,
+    30
+  );
+
+  const layerTitleAnim = appear(frame, f(T.lessDiskSpace) - 3);
+  const layeredFSAnim = appear(frame, f(T.layeredFS) - 3);
+  const multiImageAnim = appear(frame, f(T.multipleImages) - 3);
+  const singleCopyAnim = appear(frame, f(T.singleCopy) - 3);
+  const shareAnim = appear(frame, f(T.shareContainers) - 3);
+
+  // Shared base layer highlight
+  const sharedGlow = interpolate(
+    frame,
+    [f(T.singleCopy), f(T.singleCopy) + 20],
+    [0, 1],
+    { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+  );
 
   return (
     <div
       style={{
         width: 1920,
         height: 1080,
-        background: "#0f0f1a",
+        background: BG,
         fontFamily: "'Inter', system-ui, sans-serif",
+        display: "flex",
+        flexDirection: "column",
+        justifyContent: "center",
+        alignItems: "center",
+        padding: 80,
         position: "relative",
         overflow: "hidden",
       }}
     >
-      <Scene1 frame={frame} fps={fps} />
-      <Scene2 frame={frame} fps={fps} />
-      <Scene3 frame={frame} fps={fps} />
+      {/* ═══════════════════════════════════════════════════
+          SCENE 1: VM Architecture — Heavy Stacked Layers
+          ═══════════════════════════════════════════════════ */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: 80,
+          opacity: scene1Opacity,
+        }}
+      >
+        {/* Title */}
+        <div
+          style={{
+            opacity: titleAnim.opacity,
+            transform: `translateY(${titleAnim.translateY}px)`,
+            marginBottom: 50,
+            textAlign: "center",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "'SF Mono', monospace",
+              fontSize: 12,
+              fontWeight: 700,
+              color: TEXT_DIM,
+              textTransform: "uppercase",
+              letterSpacing: 2,
+            }}
+          >
+            Virtual Machine Architecture
+          </span>
+          <div
+            style={{
+              fontSize: 28,
+              fontWeight: 700,
+              color: TEXT_PRIMARY,
+              marginTop: 8,
+            }}
+          >
+            Why VMs Are{" "}
+            <span style={{ color: VM_COLOR }}>Heavy</span>
+          </div>
+        </div>
+
+        {/* VM Architecture Stack — bottom to top */}
+        <div
+          style={{
+            display: "flex",
+            flexDirection: "column-reverse",
+            alignItems: "center",
+            gap: 8,
+            width: 800,
+          }}
+        >
+          {/* Hardware Layer */}
+          <div style={{ opacity: hostAnim.opacity, transform: `translateY(${hostAnim.translateY}px)` }}>
+            <LayerBlock
+              label="Hardware"
+              color={TEXT_DIM}
+              width={760}
+              height={50}
+              opacity={1}
+              translateY={0}
+              icon="Cpu"
+              sublabel="Physical Machine"
+            />
+          </div>
+
+          {/* Host OS */}
+          <div style={{ opacity: hostAnim.opacity, transform: `translateY(${hostAnim.translateY}px)` }}>
+            <LayerBlock
+              label="Host Operating System"
+              color={BRAND.secondary}
+              width={760}
+              height={50}
+              opacity={1}
+              translateY={0}
+              icon="Desktop"
+            />
+          </div>
+
+          {/* Hypervisor (translator) */}
+          <div style={{ opacity: hypervisorAnim.opacity, transform: `translateY(${hypervisorAnim.translateY}px)` }}>
+            <LayerBlock
+              label="Hypervisor"
+              color={HYPERVISOR_COLOR}
+              width={760}
+              height={55}
+              opacity={1}
+              translateY={0}
+              glow={hypervisorGlow > 0.5}
+              icon="Translate"
+              sublabel="Translator / Middleman"
+            />
+          </div>
+
+          {/* VMs Row */}
+          <div
+            style={{
+              display: "flex",
+              gap: 16,
+              justifyContent: "center",
+              opacity: vmResourceAnim.opacity,
+              transform: `translateY(${vmResourceAnim.translateY}px)`,
+            }}
+          >
+            {/* VM 1 */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column-reverse",
+                alignItems: "center",
+                gap: 4,
+                padding: 12,
+                borderRadius: 12,
+                background: `${VM_COLOR}08`,
+                border: `1px solid ${VM_COLOR}20`,
+              }}
+            >
+              <LayerBlock
+                label="Guest OS"
+                color={VM_COLOR}
+                width={220}
+                height={42}
+                opacity={vmGuestAnim.opacity}
+                translateY={vmGuestAnim.translateY}
+                icon="LinuxLogo"
+              />
+              <LayerBlock
+                label="Bins/Libs"
+                color={VM_COLOR}
+                width={220}
+                height={36}
+                opacity={vmGuestAnim.opacity}
+                translateY={vmGuestAnim.translateY}
+              />
+              <LayerBlock
+                label="App 1"
+                color={BRAND.primary}
+                width={220}
+                height={40}
+                opacity={vmGuestAnim.opacity}
+                translateY={vmGuestAnim.translateY}
+                icon="Package"
+              />
+              <div
+                style={{
+                  fontFamily: "'SF Mono', monospace",
+                  fontSize: 10,
+                  fontWeight: 600,
+                  color: TEXT_DIM,
+                  textTransform: "uppercase",
+                  letterSpacing: 1.5,
+                  marginTop: 4,
+                }}
+              >
+                Virtual Machine 1
+              </div>
+            </div>
+
+            {/* VM 2 */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column-reverse",
+                alignItems: "center",
+                gap: 4,
+                padding: 12,
+                borderRadius: 12,
+                background: `${VM_COLOR}08`,
+                border: `1px solid ${VM_COLOR}20`,
+              }}
+            >
+              <LayerBlock
+                label="Guest OS"
+                color={VM_COLOR}
+                width={220}
+                height={42}
+                opacity={vmGuestAnim.opacity}
+                translateY={vmGuestAnim.translateY}
+                icon="WindowsLogo"
+              />
+              <LayerBlock
+                label="Bins/Libs"
+                color={VM_COLOR}
+                width={220}
+                height={36}
+                opacity={vmGuestAnim.opacity}
+                translateY={vmGuestAnim.translateY}
+              />
+              <LayerBlock
+                label="App 2"
+                color={BRAND.primary}
+                width={220}
+                height={40}
+                opacity={vmGuestAnim.opacity}
+                translateY={vmGuestAnim.translateY}
+                icon="Package"
+              />
+              <div
+                style={{
+                  fontFamily: "'SF Mono', monospace",
+                  fontSize: 10,
+                  fontWeight: 600,
+                  color: TEXT_DIM,
+                  textTransform: "uppercase",
+                  letterSpacing: 1.5,
+                  marginTop: 4,
+                }}
+              >
+                Virtual Machine 2
+              </div>
+            </div>
+
+            {/* Resource cost indicator */}
+            <div
+              style={{
+                display: "flex",
+                flexDirection: "column",
+                justifyContent: "center",
+                gap: 10,
+                padding: "12px 20px",
+                opacity: countAnim.opacity,
+                transform: `translateY(${countAnim.translateY}px)`,
+              }}
+            >
+              {[
+                { label: "CPU", icon: "Cpu", value: "Dedicated" },
+                { label: "RAM", icon: "Memory", value: "Reserved" },
+                { label: "Disk", icon: "HardDrive", value: "Quarantined" },
+              ].map((res, i) => {
+                const ResIcon = getIcon(res.icon);
+                const resAppear = appear(frame, f(T.vmResources) + i * 8);
+                return (
+                  <div
+                    key={res.label}
+                    style={{
+                      display: "flex",
+                      alignItems: "center",
+                      gap: 8,
+                      opacity: resAppear.opacity,
+                      transform: `translateY(${resAppear.translateY}px)`,
+                    }}
+                  >
+                    <ResIcon size={18} color={VM_COLOR} weight="duotone" />
+                    <span
+                      style={{
+                        fontFamily: "'SF Mono', monospace",
+                        fontSize: 11,
+                        color: VM_COLOR,
+                        fontWeight: 600,
+                      }}
+                    >
+                      {res.value}
+                    </span>
+                  </div>
+                );
+              })}
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {/* ═══════════════════════════════════════════════════
+          SCENE 2: Docker Architecture — Lightweight
+          Split screen: VM (faded) vs Docker (highlighted)
+          ═══════════════════════════════════════════════════ */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: 80,
+          gap: 60,
+          opacity: scene2Opacity,
+        }}
+      >
+        {/* LEFT: VM (dimmed, crossed out hypervisor) */}
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 8,
+            opacity: 0.4,
+            filter: "grayscale(0.6)",
+          }}
+        >
+          <div
+            style={{
+              fontFamily: "'SF Mono', monospace",
+              fontSize: 12,
+              fontWeight: 700,
+              color: TEXT_DIM,
+              textTransform: "uppercase",
+              letterSpacing: 2,
+              marginBottom: 12,
+            }}
+          >
+            Virtual Machine
+          </div>
+          <LayerBlock label="App" color={TEXT_DIM} width={320} height={40} opacity={1} translateY={0} icon="Package" />
+          <LayerBlock label="Guest OS" color={TEXT_DIM} width={320} height={40} opacity={1} translateY={0} icon="Desktop" />
+          <LayerBlock label="Bins/Libs" color={TEXT_DIM} width={320} height={32} opacity={1} translateY={0} />
+          {/* Hypervisor with strikethrough */}
+          <div style={{ position: "relative" }}>
+            <LayerBlock
+              label="Hypervisor"
+              color={HYPERVISOR_COLOR}
+              width={320}
+              height={44}
+              opacity={0.5}
+              translateY={0}
+              icon="Translate"
+              sublabel="Middleman"
+            />
+            {/* Strikethrough line */}
+            <div
+              style={{
+                position: "absolute",
+                top: "50%",
+                left: 0,
+                height: 3,
+                width: `${strikethroughProgress * 100}%`,
+                background: VM_COLOR,
+                borderRadius: 2,
+                boxShadow: `0 0 10px ${VM_COLOR}60`,
+              }}
+            />
+          </div>
+          <LayerBlock label="Host OS" color={TEXT_DIM} width={320} height={40} opacity={1} translateY={0} icon="Desktop" />
+          <LayerBlock label="Hardware" color={TEXT_DIM} width={320} height={36} opacity={1} translateY={0} icon="Cpu" />
+        </div>
+
+        {/* CENTER DIVIDER */}
+        <div
+          style={{
+            width: 2,
+            height: 500,
+            background: `linear-gradient(transparent, ${BORDER}, transparent)`,
+            opacity: dockerTitleAnim.opacity,
+          }}
+        />
+
+        {/* RIGHT: Docker (bright, direct kernel connection) */}
+        <div
+          style={{
+            flex: 1,
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            gap: 8,
+            opacity: dockerTitleAnim.opacity,
+            transform: `translateY(${dockerTitleAnim.translateY}px)`,
+          }}
+        >
+          <div
+            style={{
+              fontFamily: "'SF Mono', monospace",
+              fontSize: 12,
+              fontWeight: 700,
+              color: DOCKER_COLOR,
+              textTransform: "uppercase",
+              letterSpacing: 2,
+              marginBottom: 12,
+            }}
+          >
+            Docker
+          </div>
+
+          {/* Multiple containers (lightweight) */}
+          <div
+            style={{
+              display: "flex",
+              gap: 8,
+              opacity: linuxAnim.opacity,
+              transform: `translateY(${linuxAnim.translateY}px)`,
+            }}
+          >
+            {["App 1", "App 2", "App 3", "App 4"].map((app, i) => {
+              const containerAppear = appear(frame, f(T.dockerKernel) + 5 + i * 8);
+              return (
+                <div
+                  key={app}
+                  style={{
+                    display: "flex",
+                    flexDirection: "column",
+                    alignItems: "center",
+                    gap: 4,
+                    padding: "8px 12px",
+                    borderRadius: 10,
+                    background: `${DOCKER_COLOR}10`,
+                    border: `1px solid ${DOCKER_COLOR}25`,
+                    opacity: containerAppear.opacity,
+                    transform: `translateY(${containerAppear.translateY}px)`,
+                  }}
+                >
+                  {(() => {
+                    const DockerIcon = getIcon("Package");
+                    return (
+                      <DockerIcon
+                        size={20}
+                        color={DOCKER_COLOR}
+                        weight="duotone"
+                        style={{ filter: `drop-shadow(0 0 4px ${DOCKER_COLOR}40)` }}
+                      />
+                    );
+                  })()}
+                  <span style={{ fontSize: 11, fontWeight: 600, color: TEXT_PRIMARY }}>
+                    {app}
+                  </span>
+                </div>
+              );
+            })}
+          </div>
+
+          {/* Direct arrow to kernel */}
+          <div
+            style={{
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 0,
+              opacity: kernelAnim.opacity,
+            }}
+          >
+            <div
+              style={{
+                width: 2,
+                height: 30,
+                background: `${KERNEL_COLOR}50`,
+              }}
+            />
+            {(() => {
+              const ArrowIcon = getIcon("ArrowDown");
+              return (
+                <ArrowIcon size={16} color={KERNEL_COLOR} weight="bold" />
+              );
+            })()}
+            <span
+              style={{
+                fontFamily: "'SF Mono', monospace",
+                fontSize: 10,
+                color: KERNEL_COLOR,
+                fontWeight: 600,
+                textTransform: "uppercase",
+                letterSpacing: 1,
+                marginTop: 2,
+              }}
+            >
+              Direct Access
+            </span>
+          </div>
+
+          {/* Kernel */}
+          <div style={{ opacity: kernelAnim.opacity, transform: `translateY(${kernelAnim.translateY}px)` }}>
+            <LayerBlock
+              label="System Kernel"
+              color={KERNEL_COLOR}
+              width={340}
+              height={50}
+              opacity={1}
+              translateY={0}
+              glow={bypassAnim.opacity > 0.5}
+              icon="Terminal"
+              sublabel="No Middleman"
+            />
+          </div>
+
+          <div style={{ opacity: kernelAnim.opacity, transform: `translateY(${kernelAnim.translateY}px)` }}>
+            <LayerBlock label="Host OS" color={BRAND.secondary} width={340} height={40} opacity={1} translateY={0} icon="Desktop" />
+          </div>
+          <div style={{ opacity: kernelAnim.opacity, transform: `translateY(${kernelAnim.translateY}px)` }}>
+            <LayerBlock label="Hardware" color={TEXT_DIM} width={340} height={36} opacity={1} translateY={0} icon="Cpu" />
+          </div>
+
+          {/* "Runs natively" badge */}
+          <div
+            style={{
+              marginTop: 12,
+              padding: "6px 16px",
+              borderRadius: 20,
+              background: `${KERNEL_COLOR}15`,
+              border: `1px solid ${KERNEL_COLOR}30`,
+              opacity: nativelyAnim.opacity,
+              transform: `translateY(${nativelyAnim.translateY}px)`,
+            }}
+          >
+            <span
+              style={{
+                fontFamily: "'SF Mono', monospace",
+                fontSize: 11,
+                fontWeight: 700,
+                color: KERNEL_COLOR,
+                textTransform: "uppercase",
+                letterSpacing: 1.5,
+              }}
+            >
+              Runs Natively on Linux
+            </span>
+          </div>
+        </div>
+      </div>
+
+      {/* ═══════════════════════════════════════════════════
+          SCENE 3: Layered File System — Shared Base Layers
+          ═══════════════════════════════════════════════════ */}
+      <div
+        style={{
+          position: "absolute",
+          inset: 0,
+          display: "flex",
+          flexDirection: "column",
+          justifyContent: "center",
+          alignItems: "center",
+          padding: 80,
+          opacity: scene3Opacity,
+        }}
+      >
+        {/* Title */}
+        <div
+          style={{
+            opacity: layerTitleAnim.opacity,
+            transform: `translateY(${layerTitleAnim.translateY}px)`,
+            marginBottom: 40,
+            textAlign: "center",
+          }}
+        >
+          <span
+            style={{
+              fontFamily: "'SF Mono', monospace",
+              fontSize: 12,
+              fontWeight: 700,
+              color: TEXT_DIM,
+              textTransform: "uppercase",
+              letterSpacing: 2,
+            }}
+          >
+            Layered File System
+          </span>
+          <div
+            style={{
+              fontSize: 24,
+              fontWeight: 700,
+              color: TEXT_PRIMARY,
+              marginTop: 8,
+            }}
+          >
+            Docker Reuses{" "}
+            <span style={{ color: LAYER_COLOR }}>Shared Layers</span>
+          </div>
+        </div>
+
+        {/* Three images sharing a base */}
+        <div
+          style={{
+            display: "flex",
+            gap: 40,
+            alignItems: "flex-end",
+            opacity: layeredFSAnim.opacity,
+            transform: `translateY(${layeredFSAnim.translateY}px)`,
+          }}
+        >
+          {[
+            { name: "Image A", appColor: BRAND.primary, layers: ["App Layer A", "Deps A"] },
+            { name: "Image B", appColor: BRAND.secondary, layers: ["App Layer B", "Deps B"] },
+            { name: "Image C", appColor: BRAND.accent, layers: ["App Layer C", "Deps C"] },
+          ].map((img, imgIdx) => {
+            const imgAppear = appear(frame, f(T.multipleImages) + imgIdx * 12);
+            return (
+              <div
+                key={img.name}
+                style={{
+                  display: "flex",
+                  flexDirection: "column",
+                  alignItems: "center",
+                  gap: 6,
+                  opacity: imgAppear.opacity,
+                  transform: `translateY(${imgAppear.translateY}px)`,
+                }}
+              >
+                <div
+                  style={{
+                    fontFamily: "'SF Mono', monospace",
+                    fontSize: 11,
+                    fontWeight: 600,
+                    color: img.appColor,
+                    textTransform: "uppercase",
+                    letterSpacing: 1,
+                    marginBottom: 6,
+                  }}
+                >
+                  {img.name}
+                </div>
+                {/* Unique layers (per image) */}
+                {img.layers.map((layer, layerIdx) => (
+                  <div
+                    key={layer}
+                    style={{
+                      width: 200,
+                      height: 36,
+                      borderRadius: 8,
+                      background: `${img.appColor}12`,
+                      border: `1px solid ${img.appColor}25`,
+                      display: "flex",
+                      alignItems: "center",
+                      justifyContent: "center",
+                    }}
+                  >
+                    <span
+                      style={{
+                        fontSize: 11,
+                        fontWeight: 600,
+                        color: TEXT_SECONDARY,
+                      }}
+                    >
+                      {layer}
+                    </span>
+                  </div>
+                ))}
+                {/* Connector to shared base */}
+                <div
+                  style={{
+                    width: 2,
+                    height: 20,
+                    background: `${LAYER_COLOR}30`,
+                    opacity: singleCopyAnim.opacity,
+                  }}
+                />
+              </div>
+            );
+          })}
+        </div>
+
+        {/* Shared Base Layer — ONE copy */}
+        <div
+          style={{
+            marginTop: 8,
+            opacity: singleCopyAnim.opacity,
+            transform: `translateY(${singleCopyAnim.translateY}px)`,
+          }}
+        >
+          <div
+            style={{
+              width: 740,
+              padding: "16px 24px",
+              borderRadius: 12,
+              background: `${LAYER_COLOR}12`,
+              border: `1.5px solid ${LAYER_COLOR}${sharedGlow > 0.5 ? "40" : "20"}`,
+              boxShadow: sharedGlow > 0.5 ? `0 0 25px ${LAYER_COLOR}25` : "none",
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              gap: 6,
+            }}
+          >
+            {(() => {
+              const LayersIcon = getIcon("Stack");
+              return (
+                <LayersIcon
+                  size={28}
+                  color={LAYER_COLOR}
+                  weight="duotone"
+                  style={{ filter: `drop-shadow(0 0 8px ${LAYER_COLOR}50)` }}
+                />
+              );
+            })()}
+            <span
+              style={{
+                fontSize: 16,
+                fontWeight: 700,
+                color: TEXT_PRIMARY,
+              }}
+            >
+              Shared Base Image
+            </span>
+            <span
+              style={{
+                fontFamily: "'SF Mono', monospace",
+                fontSize: 11,
+                color: LAYER_COLOR,
+                fontWeight: 600,
+              }}
+            >
+              Single Copy — Shared Across All Containers
+            </span>
+          </div>
+        </div>
+
+        {/* "Less disk space" indicator */}
+        <div
+          style={{
+            marginTop: 30,
+            display: "flex",
+            gap: 40,
+            opacity: shareAnim.opacity,
+            transform: `translateY(${shareAnim.translateY}px)`,
+          }}
+        >
+          {/* Without Docker (wasteful) */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+            <span
+              style={{
+                fontFamily: "'SF Mono', monospace",
+                fontSize: 10,
+                color: TEXT_DIM,
+                textTransform: "uppercase",
+                letterSpacing: 1,
+              }}
+            >
+              Without Sharing
+            </span>
+            <div style={{ display: "flex", gap: 4 }}>
+              {[1, 2, 3].map((i) => (
+                <div
+                  key={i}
+                  style={{
+                    width: 50,
+                    height: 24,
+                    borderRadius: 6,
+                    background: `${VM_COLOR}20`,
+                    border: `1px solid ${VM_COLOR}25`,
+                  }}
+                />
+              ))}
+            </div>
+            <span style={{ fontSize: 11, color: VM_COLOR, fontWeight: 600 }}>
+              3x Disk Space
+            </span>
+          </div>
+
+          {/* VS */}
+          <div
+            style={{
+              display: "flex",
+              alignItems: "center",
+              fontSize: 14,
+              color: TEXT_DIM,
+              fontWeight: 700,
+            }}
+          >
+            vs
+          </div>
+
+          {/* With Docker (efficient) */}
+          <div style={{ display: "flex", flexDirection: "column", alignItems: "center", gap: 6 }}>
+            <span
+              style={{
+                fontFamily: "'SF Mono', monospace",
+                fontSize: 10,
+                color: TEXT_DIM,
+                textTransform: "uppercase",
+                letterSpacing: 1,
+              }}
+            >
+              With Docker Layers
+            </span>
+            <div
+              style={{
+                width: 50,
+                height: 24,
+                borderRadius: 6,
+                background: `${KERNEL_COLOR}20`,
+                border: `1px solid ${KERNEL_COLOR}25`,
+              }}
+            />
+            <span style={{ fontSize: 11, color: KERNEL_COLOR, fontWeight: 600 }}>
+              1x Disk Space
+            </span>
+          </div>
+        </div>
+      </div>
     </div>
   );
 };

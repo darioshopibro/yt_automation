@@ -11,5 +11,6 @@
     "resolveJsonModule": true,
     "outDir": "./dist"
   },
-  "include": ["src/**/*", "remotion.config.ts"]
+  "include": ["src/**/*"],
+  "exclude": ["node_modules"]
 }

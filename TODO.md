@@ -94,6 +94,12 @@ bo**Vreme po videu:** 30-60 min
 - [ ] Integracija u pipeline — asset se ubacuje u komponentu (Remotion `<Img>` / `<Video>`)
 - [ ] Odluciti GDE u flow-u ovo ide — da li Visual Generator sam trazi, ili poseban agent pre njega
 - [ ] Odluciti KAKO nabavlja — AI generise (DALL-E/Flux), screenshot (Playwright), stock (Unsplash API), ili predlaze useru da uploaduje
+- [ ] **Pipeline korak: Asset Planner** — pre Visual Generator-a, novi korak koji:
+  - Čita transcript/temu i razmišlja: "šta bi gledalac hteo da VIDI?" (logo, screenshot sajta, UI demo, dijagram, slika proizvoda)
+  - Za svaki segment predlaže: "ovde bi screenshot Docker Hub-a bio 10x bolji od generisanog koda"
+  - Ako može sam da nabavi (Playwright screenshot, stock API, AI generisana slika) → nabavi
+  - Ako NE može → ispiše listu: "Treba mi: 1) Docker Hub screenshot 2) Terminal sa docker pull output" → user uploaduje
+  - Asset-i se sačuvaju u `videos/{project-name}/public/assets/` i Visual Generator ih koristi sa `<Img>`
 
 ### ⚡⚡ Research Validation — Metrike i proof za teme
 

@@ -29,15 +29,28 @@ cp workspace/{project-name}/voiceover.mp3 videos/{project-name}/public/
 cp workspace/{project-name}/master-plan.json videos/{project-name}/src/
 ```
 
-### KORAK 3: Proveri da Generated_*.tsx postoje
+### KORAK 3: Generiši vizuale sa visual-generator SKILL-om
 
-Visual Generator skill je VEĆ kreirao .tsx za svaki segment u `videos/{project-name}/src/visuals/`. Proveri:
+Za SVAKI segment iz master-plan.json, pokreni `visual-generator` skill:
 
-```bash
-ls videos/{project-name}/src/visuals/Generated_*.tsx
+```
+Stikni visual-generator skill.
+
+Transcript: [transcriptSegment iz master-plan.json]
+Timestamps: [timestamps niz iz master-plan.json za taj segment]
+fps: 30
+Sačuvaj u: videos/{project-name}/src/visuals/Generated_{SegmentName}.tsx
 ```
 
-Ako fale — VRATI SE na Planner i pokreni visual-generator skill za segmente koji fale. **NE piši .tsx sam!**
+**POKRENI SKILL ZA SVAKI SEGMENT.** Ne piši .tsx sam. Ne improvizuj. Ne čitaj pravila i sam implementiraj. POKRENI SKILL.
+
+```
+❌ ZABRANJENO: Write Generated_Segment1.tsx (sam pišeš fajl)
+❌ ZABRANJENO: Čitaš generation-rules.md i sam implementiraš
+❌ ZABRANJENO: "Već znam pravila, napisaću sam"
+
+✅ JEDINO ISPRAVNO: Stikni visual-generator skill → skill piše fajl
+```
 
 ### KORAK 4: Generiši Root.tsx
 
@@ -78,7 +91,46 @@ export const RemotionRoot: React.FC = () => (
 - Komponente koriste `useCurrentFrame()` koji vraća GLOBALNI frame
 - Timestamps su apsolutni (frame 975 = 32.5s od početka videa)
 - Sequence bi resetovao frame na 0 i sve bi se pokvarilo
-- Svaka komponenta SAMA kontroliše kad se pojavi/nestane kroz opacity interpolaciju
+
+**KRITIČNO — SVAKI SEGMENT MORA IMATI OPACITY KONTROLU!**
+Bez toga se svi segmenti vide istovremeno jedan preko drugog = haos.
+
+```tsx
+const FullVideo: React.FC = () => {
+  const frame = useCurrentFrame();
+  const segments = [
+    { Component: Generated_Seg1, startFrame: 0, endFrame: 1050 },
+    { Component: Generated_Seg2, startFrame: 1050, endFrame: 2100 },
+    // ...
+  ];
+  return (
+    <AbsoluteFill style={{ background: "#0f0f1a" }}>
+      <Audio src={staticFile("voiceover.mp3")} />
+      {segments.map(({ Component, startFrame, endFrame }, i) => {
+        // Ne renderuj ako nije aktivan
+        if (frame < startFrame - 1 || frame > endFrame + 1) return null;
+        // Crossfade: fade in 15 frames, fade out 15 frames
+        const fadeIn = i === 0 ? 1 : interpolate(frame, [startFrame, startFrame + 15], [0, 1], {
+          extrapolateLeft: "clamp", extrapolateRight: "clamp",
+        });
+        const fadeOut = i === segments.length - 1 ? 1 : interpolate(frame, [endFrame - 15, endFrame], [1, 0], {
+          extrapolateLeft: "clamp", extrapolateRight: "clamp",
+        });
+        return (
+          <div key={i} style={{
+            position: "absolute", top: 0, left: 0, width: 1920, height: 1080,
+            opacity: fadeIn * fadeOut,
+          }}>
+            <Component />
+          </div>
+        );
+      })}
+    </AbsoluteFill>
+  );
+};
+```
+
+**BEZ OVE LOGIKE VIDEO NE RADI** — segmenti se vide svi odjednom.
 
 ### KORAK 5: Generiši remotion.config.ts i index.ts
 
