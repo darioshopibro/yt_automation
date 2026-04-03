@@ -16,7 +16,7 @@ import Generated_CDNLatency from "./visuals/Generated_CDNLatency";
 import Generated_YouTubeAdaptiveStreaming from "./visuals/Generated_YouTubeAdaptiveStreaming";
 import Generated_TLSHandshake from "./visuals/Generated_TLSHandshake";
 import Generated_TokenBucketRateLimiting from "./visuals/Generated_TokenBucketRateLimiting";
-import Generated_DockerContainerLifecycle from "./visuals/Generated_DockerContainerLifecycle";
+
 import config from "./dynamic-config.json";
 
 // Old hardcoded version:
@@ -202,15 +202,6 @@ export const RemotionRoot: React.FC = () => (
       id="TokenBucketRateLimiting"
       component={Generated_TokenBucketRateLimiting}
       durationInFrames={1280}
-      fps={30}
-      width={1920}
-      height={1080}
-    />
-    {/* Docker Container Lifecycle — Dockerfile layers → image → container → volumes */}
-    <Composition
-      id="DockerContainerLifecycle"
-      component={Generated_DockerContainerLifecycle}
-      durationInFrames={720}
       fps={30}
       width={1920}
       height={1080}

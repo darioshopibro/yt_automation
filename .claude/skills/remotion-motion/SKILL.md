@@ -4,49 +4,38 @@ Pravi animirane motion graphics u Remotion-u (React). Premium dark theme stil, g
 
 ---
 
-## DVA AGENTA, JEDNA KOMPOZICIJA
-
-Ovaj skill koristi **2 specijalizovana agenta** koji rade ZAJEDNO:
+## PIPELINE — SVE FULLSCREEN, BEZ CANVAS
 
 ```
 ┌─────────────────────────────────────────────────────────────────┐
-│                    VISUAL-PROPOSER                               │
-│  Čita transcript, detektuje gap u vizualima, predlaže nove      │
-│  Output: 0-2 nova vizuala u src/visuals/ (ako ima gap)          │
-└─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-┌─────────────────────────────────────────────────────────────────┐
 │                    VISUAL-ROUTER                                 │
-│  Segmentira transcript, bira vizuale, generiše strukturu        │
-│  Output: visual-structure.json                                   │
+│  Segmentira transcript na logičke celine                         │
+│  Output: visual-structure.json (lista segmenata)                 │
 └─────────────────────────────────────────────────────────────────┘
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    REMOTION-PLANNER                              │
-│  Planira SVE zajedno: voiceover, structure, camera, sounds      │
-│  Output: master-plan.json                                        │
+│  Voiceover + timestamps (ElevenLabs)                             │
+│  Za SVAKI segment: pokreni visual-generator SKILL                │
+│  Output: master-plan.json + Generated_*.tsx                      │
 └─────────────────────────────────────────────────────────────────┘
-                              │
-                              ▼
-                      master-plan.json
                               │
                               ▼
 ┌─────────────────────────────────────────────────────────────────┐
 │                    REMOTION-BUILDER                              │
-│  Implementira prema planu: React/Remotion kod                    │
+│  Root.tsx sa Sequence chain + voiceover Audio                    │
+│  NEMA DynamicPipeline, NEMA canvas, NEMA sticky notes            │
 │  Output: Funkcionalan video projekat                             │
 └─────────────────────────────────────────────────────────────────┘
 ```
 
-**ZAŠTO OVAJ REDOSLED:**
-- Proposer PRVO obogati biblioteku vizuala (ako fali nešto)
-- Router ONDA koristi obogaćen katalog za bolji routing
-- Planner ima FOKUS na koordinaciju (camera + sounds + timing)
-- Builder ima FOKUS na implementaciju (kod)
-- Greške se lakše pronalaze (koji agent je zajebao?)
-- Manji context = bolji fokus = manje grešaka
+**Ključno:**
+- SVE je fullscreen — Visual Generator piše .tsx od nule za svaki segment
+- Planner MORA koristiti visual-generator skill (ne improvizovati)
+- Builder pravi čist Root.tsx sa Sequence chain + Audio voiceover
+- NEMA DynamicPipeline, NEMA canvas, NEMA sticky notes
+- Animacije su sinhronizovane sa voiceoverom na milisekundu
 
 ---
 

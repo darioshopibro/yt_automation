@@ -1,10 +1,10 @@
 ---
-name: visual-generator
-description: Generates visual structure from transcript — segments text, picks visual types, extracts data, groups into stickies. Use when orchestrator needs visual-structure.json draft.
+name: canvas-generator
+description: Generates CANVAS visual structure from transcript — segments text, picks visual types from catalog, extracts data, groups into stickies. Use for canvas/sticky-note mode segments only.
 tools: Read, Glob, Grep, Bash
 ---
 
-# Visual Generator Agent
+# Canvas Generator Agent
 
 Ti generiše vizualnu strukturu za tech explainer video na osnovu transcripta.
 

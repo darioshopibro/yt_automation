@@ -5,6 +5,24 @@ Komponenta je FULLSCREEN — 1920x1080, zauzima ceo ekran.
 
 ---
 
+## FRAME CONTRACT — KRITIČNO
+
+**`useCurrentFrame()` UVEK vraća GLOBALNI frame.** Komponenta NE koristi Sequence wrapper. Timestamps iz voiceover-a su APSOLUTNI (npr. frame 975 = 32.5 sekundi od početka videa).
+
+```tsx
+// ✅ ISPRAVNO — koristi timestamps direktno
+const DOCKER_HUB = 2107;  // frame iz voiceover timestamps-a
+const opacity = interpolate(frame, [DOCKER_HUB, DOCKER_HUB + 15], [0, 1], ...);
+
+// ❌ ZABRANJENO — ne dodavaj OFFSET
+const OFFSET = 975;
+const f = frame + OFFSET;  // NIKAD OVO — frame je VEĆ globalan
+```
+
+**NIKAD ne dodavaj OFFSET na frame.** NIKAD ne konvertuj lokalno u globalno. Frame koji dobiješ od `useCurrentFrame()` JE globalni.
+
+---
+
 ## 0. CORE PRINCIP — VIZUELNO OBJASNJAVANJE, NE PRIKAZIVANJE PODATAKA
 
 **Ti si motion designer.** Ne pravis "kutije sa podacima". Pravis animaciju koja OBJASNJAVA koncept.
@@ -88,6 +106,48 @@ Razmisli o metaforu pre nego sto razmislis o layoutu:
 - Kompleksna arhitektura → podeli u vise scena, svaka pokriva deo
 
 **NIKAD nemoj default da bude "icon box + label + strelica".** To je POSLEDNJI izbor kad nista pametnije ne mozes da smislis.
+
+---
+
+## 0.5. TIMESTAMP SYNC — ANIMACIJE NA TAČAN FRAME
+
+Komponenta DOBIJA word-level timestamps iz voiceover-a. Svaki element se pojavi TAČNO kad narator izgovori ključnu reč.
+
+### Kako koristiti timestamps
+
+```tsx
+// Timestamps dolaze kao niz (iz voiceover-timestamps.json)
+const timestamps = [
+  { word: "Docker", start: 0.52, end: 0.85 },
+  { word: "container", start: 0.88, end: 1.35 },
+  { word: "FROM", start: 4.23, end: 4.55 },
+  // ...
+];
+const fps = 30;
+
+// Helper: nađi frame za ključnu reč
+const frameFor = (keyword: string): number => {
+  const w = timestamps.find(t => t.word.toLowerCase().includes(keyword.toLowerCase()));
+  return w ? Math.round(w.start * fps) : 0;
+};
+
+// Koristi u animacijama
+const FROM_HL = frameFor("FROM");        // tačan frame kad narator kaže "FROM"
+const COPY_HL = frameFor("COPY");        // tačan frame kad narator kaže "COPY"
+const RUN_HL = frameFor("install");      // tačan frame kad narator kaže "install"
+```
+
+### Pravila
+
+- **NIKAD hardkodirati frameove** (`const X = 42` je ZABRANJENO)
+- Svaki startFrame MORA doći iz timestamps-a
+- Element se pojavi 3-5 frameova PRE reči (anticipacija) — gledalac vidi element TAMO kad narator kaže reč
+- Ako ključna reč ne postoji u timestamps — traži najbližu alternativu
+- fps je UVEK 30
+
+### Zašto
+
+Bez timestamp sync-a, animacije su "otprilike" tačne. Sa timestamp sync-om, animacije su na MILISEKUNDU tačne — kao da narator crta na tabli dok priča. Ovo je razlika između amaterskog i profesionalnog videa.
 
 ---
 

@@ -1,0 +1,412 @@
+[
+  {
+    "word": "deploy.  These",
+    "start": 31.521,
+    "end": 33.17
+  },
+  {
+    "word": "containers",
+    "start": 33.216,
+    "end": 33.727
+  },
+  {
+    "word": "running",
+    "start": 33.796,
+    "end": 34.04
+  },
+  {
+    "word": "on",
+    "start": 34.087,
+    "end": 34.156
+  },
+  {
+    "word": "your",
+    "start": 34.203,
+    "end": 34.307
+  },
+  {
+    "word": "computer",
+    "start": 34.342,
+    "end": 34.76
+  },
+  {
+    "word": "or",
+    "start": 34.818,
+    "end": 34.888
+  },
+  {
+    "word": "server",
+    "start": 34.957,
+    "end": 35.352
+  },
+  {
+    "word": "act",
+    "start": 35.677,
+    "end": 35.909
+  },
+  {
+    "word": "like",
+    "start": 35.968,
+    "end": 36.142
+  },
+  {
+    "word": "little",
+    "start": 36.2,
+    "end": 36.432
+  },
+  {
+    "word": "micro",
+    "start": 36.49,
+    "end": 36.861
+  },
+  {
+    "word": "computers,",
+    "start": 36.92,
+    "end": 37.593
+  },
+  {
+    "word": "each",
+    "start": 37.802,
+    "end": 37.999
+  },
+  {
+    "word": "with",
+    "start": 38.046,
+    "end": 38.197
+  },
+  {
+    "word": "very",
+    "start": 38.278,
+    "end": 38.545
+  },
+  {
+    "word": "specific",
+    "start": 38.591,
+    "end": 39.033
+  },
+  {
+    "word": "jobs,",
+    "start": 39.079,
+    "end": 39.543
+  },
+  {
+    "word": "each",
+    "start": 39.868,
+    "end": 40.066
+  },
+  {
+    "word": "with",
+    "start": 40.101,
+    "end": 40.24
+  },
+  {
+    "word": "their",
+    "start": 40.275,
+    "end": 40.437
+  },
+  {
+    "word": "own",
+    "start": 40.507,
+    "end": 40.728
+  },
+  {
+    "word": "operating",
+    "start": 40.786,
+    "end": 41.18
+  },
+  {
+    "word": "system,",
+    "start": 41.238,
+    "end": 41.749
+  },
+  {
+    "word": "their",
+    "start": 41.958,
+    "end": 42.19
+  },
+  {
+    "word": "own",
+    "start": 42.26,
+    "end": 42.516
+  },
+  {
+    "word": "isolated",
+    "start": 42.574,
+    "end": 43.154
+  },
+  {
+    "word": "C",
+    "start": 43.201,
+    "end": 43.317
+  },
+  {
+    "word": "P",
+    "start": 43.491,
+    "end": 43.607
+  },
+  {
+    "word": "U",
+    "start": 43.781,
+    "end": 43.897
+  },
+  {
+    "word": "processes,",
+    "start": 43.979,
+    "end": 44.629
+  },
+  {
+    "word": "memory,",
+    "start": 44.803,
+    "end": 45.348
+  },
+  {
+    "word": "and",
+    "start": 45.465,
+    "end": 45.627
+  },
+  {
+    "word": "network",
+    "start": 45.697,
+    "end": 46.045
+  },
+  {
+    "word": "resources.",
+    "start": 46.115,
+    "end": 46.869
+  },
+  {
+    "word": "Because",
+    "start": 47.38,
+    "end": 47.705
+  },
+  {
+    "word": "of",
+    "start": 47.74,
+    "end": 47.787
+  },
+  {
+    "word": "this,",
+    "start": 47.833,
+    "end": 48.181
+  },
+  {
+    "word": "they",
+    "start": 48.332,
+    "end": 48.495
+  },
+  {
+    "word": "can",
+    "start": 48.541,
+    "end": 48.657
+  },
+  {
+    "word": "be",
+    "start": 48.715,
+    "end": 48.82
+  },
+  {
+    "word": "easily",
+    "start": 48.936,
+    "end": 49.377
+  },
+  {
+    "word": "added,",
+    "start": 49.447,
+    "end": 49.865
+  },
+  {
+    "word": "removed,",
+    "start": 50.039,
+    "end": 50.643
+  },
+  {
+    "word": "stopped,",
+    "start": 50.794,
+    "end": 51.304
+  },
+  {
+    "word": "and",
+    "start": 51.432,
+    "end": 51.595
+  },
+  {
+    "word": "started",
+    "start": 51.664,
+    "end": 52.071
+  },
+  {
+    "word": "again",
+    "start": 52.106,
+    "end": 52.442
+  },
+  {
+    "word": "without",
+    "start": 52.686,
+    "end": 53.046
+  },
+  {
+    "word": "affecting",
+    "start": 53.081,
+    "end": 53.475
+  },
+  {
+    "word": "each",
+    "start": 53.534,
+    "end": 53.708
+  },
+  {
+    "word": "other",
+    "start": 53.754,
+    "end": 53.986
+  },
+  {
+    "word": "or",
+    "start": 54.16,
+    "end": 54.393
+  },
+  {
+    "word": "the",
+    "start": 54.462,
+    "end": 54.544
+  },
+  {
+    "word": "host",
+    "start": 54.613,
+    "end": 54.845
+  },
+  {
+    "word": "machine.  Containers",
+    "start": 54.903,
+    "end": 56.796
+  },
+  {
+    "word": "usually",
+    "start": 56.877,
+    "end": 57.214
+  },
+  {
+    "word": "run",
+    "start": 57.272,
+    "end": 57.446
+  },
+  {
+    "word": "one",
+    "start": 57.527,
+    "end": 57.701
+  },
+  {
+    "word": "specific",
+    "start": 57.736,
+    "end": 58.189
+  },
+  {
+    "word": "task,",
+    "start": 58.247,
+    "end": 58.723
+  },
+  {
+    "word": "such",
+    "start": 59.002,
+    "end": 59.246
+  },
+  {
+    "word": "as",
+    "start": 59.292,
+    "end": 59.397
+  },
+  {
+    "word": "a",
+    "start": 59.466,
+    "end": 59.64
+  },
+  {
+    "word": "my",
+    "start": 59.815,
+    "end": 60.024
+  },
+  {
+    "word": "S",
+    "start": 60.093,
+    "end": 60.209
+  },
+  {
+    "word": "Q",
+    "start": 60.291,
+    "end": 60.337
+  },
+  {
+    "word": "L",
+    "start": 60.511,
+    "end": 60.627
+  },
+  {
+    "word": "database",
+    "start": 60.709,
+    "end": 61.336
+  },
+  {
+    "word": "or",
+    "start": 61.487,
+    "end": 61.661
+  },
+  {
+    "word": "a",
+    "start": 61.719,
+    "end": 61.742
+  },
+  {
+    "word": "node",
+    "start": 61.835,
+    "end": 62.114
+  },
+  {
+    "word": "J",
+    "start": 62.195,
+    "end": 62.439
+  },
+  {
+    "word": "S",
+    "start": 62.473,
+    "end": 62.624
+  },
+  {
+    "word": "application,",
+    "start": 62.694,
+    "end": 63.483
+  },
+  {
+    "word": "and",
+    "start": 63.762,
+    "end": 63.936
+  },
+  {
+    "word": "then",
+    "start": 64.006,
+    "end": 64.18
+  },
+  {
+    "word": "they're",
+    "start": 64.227,
+    "end": 64.424
+  },
+  {
+    "word": "networked",
+    "start": 64.459,
+    "end": 64.912
+  },
+  {
+    "word": "together",
+    "start": 64.981,
+    "end": 65.434
+  },
+  {
+    "word": "and",
+    "start": 65.608,
+    "end": 65.805
+  },
+  {
+    "word": "potentially",
+    "start": 65.864,
+    "end": 66.398
+  }
+]

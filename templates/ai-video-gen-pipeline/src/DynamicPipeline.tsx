@@ -28,6 +28,11 @@ import LogoGridVisual from "./visuals/LogoGridVisual";
 import SplitScreenVisual from "./visuals/SplitScreenVisual";
 import ServiceMeshVisual from "./visuals/ServiceMeshVisual";
 import InteractiveDiagram from "./visuals/InteractiveDiagram";
+
+// Fullscreen components registry — Builder adds imports here when copying Generated_*.tsx
+// Example: import Generated_Docker from "./visuals/Generated_DockerContainerLifecycle";
+// fullscreenComponents["src/visuals/Generated_DockerContainerLifecycle.tsx"] = Generated_Docker;
+const fullscreenComponents: Record<string, React.FC> = {};
 import * as PhosphorIcons from "@phosphor-icons/react";
 import { Cube, type Icon as PhosphorIcon } from "@phosphor-icons/react";
 
@@ -1258,6 +1263,7 @@ export const DynamicPipeline: React.FC = () => {
   // PRE-PASS: Calculate global max section height across ALL stickies
   let prePassMaxH = 0;
   for (const sticky of cfg.stickies) {
+    if ((sticky as any).mode === "fullscreen" || !sticky.sections || sticky.sections.length === 0) continue;
     const sm = getStickyShapeMode(sticky.sections);
     for (const sec of sticky.sections) {
       const size = getSectionBoxSize((sec.nodes?.length || 0), sec.layout, sec.visualType, sec.visualData, sm);
@@ -1267,6 +1273,11 @@ export const DynamicPipeline: React.FC = () => {
 
   const stickyLayouts: { width: number; height: number; cols: number; rows: number; boxW: number; boxH: number; x: number; y: number }[] = [];
   for (let i = 0; i < cfg.stickies.length; i++) {
+    // Fullscreen segments get zero-size layout (not rendered as stickies)
+    if ((cfg.stickies[i] as any).mode === "fullscreen" || !cfg.stickies[i].sections || cfg.stickies[i].sections.length === 0) {
+      stickyLayouts.push({ width: 0, height: 0, cols: 0, rows: 0, boxW: 0, boxH: 0, x: 0, y: 0 });
+      continue;
+    }
     const dims = getStickyDimensions(cfg.stickies[i].sections, prePassMaxH);
     if (i === 0) {
       stickyLayouts.push({ ...dims, x: startX, y: startY });
@@ -1384,6 +1395,9 @@ export const DynamicPipeline: React.FC = () => {
 
   // One keyframe per section + group overview keyframes
   cfg.stickies.forEach((sticky, stickyIdx) => {
+    // Skip fullscreen segments — no camera keyframes needed
+    if ((sticky as any).mode === "fullscreen" || !sticky.sections || sticky.sections.length === 0) return;
+
     // If this sticky is the FIRST in a group (VS/bidirectional), add group overview before it
     const prevConn = stickyIdx > 0 ? cfg.stickies[stickyIdx - 1].connectionToNext : undefined;
     if (prevConn === "vs" || prevConn === "bidirectional" || prevConn === "combine") {
@@ -1463,6 +1477,7 @@ export const DynamicPipeline: React.FC = () => {
   // Collect ALL sections across all stickies into flat array with their startFrames
   const allSections: { startFrame: number; stickyIndex: number; sectionIndex: number }[] = [];
   cfg.stickies.forEach((sticky, stickyIdx) => {
+    if ((sticky as any).mode === "fullscreen" || !sticky.sections) return;
     sticky.sections.forEach((section, sectionIdx) => {
       allSections.push({ startFrame: section.startFrame, stickyIndex: stickyIdx, sectionIndex: sectionIdx });
     });
@@ -1529,6 +1544,7 @@ export const DynamicPipeline: React.FC = () => {
 
   // Camera moves + sticky appears
   cfg.stickies.forEach((sticky, i) => {
+    if ((sticky as any).mode === "fullscreen" || !sticky.sections || sticky.sections.length === 0) return;
     const firstSection = sticky.sections[0];
     const cameraFrame = firstSection.startFrame - 15;
     soundEvents.push({ frame: cameraFrame, type: "medium" }); // camera
@@ -1574,9 +1590,13 @@ export const DynamicPipeline: React.FC = () => {
           </defs>
 
           {cfg.stickies.slice(0, -1).map((sticky, i) => {
+            // Skip fullscreen segments for inter-sticky lines
+            const nextSticky = cfg.stickies[i + 1];
+            if ((sticky as any).mode === "fullscreen" || (nextSticky as any).mode === "fullscreen") return null;
+            if (!sticky.sections?.length || !nextSticky.sections?.length) return null;
+
             const curr = stickyLayouts[i];
             const next = stickyLayouts[i + 1];
-            const nextSticky = cfg.stickies[i + 1];
             const lineStartFrame = nextSticky.sections[0].startFrame - 10;
             const dir = sticky.direction || "right";
             const conn = sticky.connectionToNext || "flow";
@@ -1620,9 +1640,31 @@ export const DynamicPipeline: React.FC = () => {
           })}
         </svg>
 
-        {/* Render stickies dynamically */}
+        {/* Render fullscreen segments */}
+        {cfg.stickies.filter((s: any) => s.mode === "fullscreen").map((segment: any) => {
+          const FullscreenComponent = fullscreenComponents[segment.componentPath];
+          if (!FullscreenComponent) return null;
+          const segmentOpacity = interpolate(
+            frame,
+            [segment.startFrame, segment.startFrame + 15, segment.endFrame - 15, segment.endFrame],
+            [0, 1, 1, 0],
+            { extrapolateLeft: "clamp", extrapolateRight: "clamp" }
+          );
+          return (
+            <div key={`fullscreen-${segment.step}`} style={{
+              position: "absolute", top: 0, left: 0, width: 1920, height: 1080,
+              opacity: segmentOpacity, zIndex: 100,
+            }}>
+              <FullscreenComponent />
+            </div>
+          );
+        })}
+
+        {/* Render stickies dynamically (canvas mode only) */}
         {cfg.stickies.map((sticky, stickyIndex) => {
+          if (sticky.mode === "fullscreen") return null;
           const layout = stickyLayouts[stickyIndex];
+          if (!sticky.sections || sticky.sections.length === 0) return null;
           const firstSectionFrame = sticky.sections[0].startFrame;
           const stickyAppearFrame = firstSectionFrame - 5;
           const centerVertically = sticky.sections.length <= 2;

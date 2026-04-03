@@ -1,120 +1,99 @@
 # Remotion Builder Skill
 
-Implementira video prema `master-plan.json` koji je generisao `remotion-planner`.
+Implementira video prema `master-plan.json`. **NE koristi DynamicPipeline/canvas.** Svaki segment je fullscreen Generated_*.tsx komponenta, chain-ovani sa Sequence + voiceover.
 
-**Input:** `master-plan.json` (iz planner-a)
+**Input:** `master-plan.json` (iz planner-a) + Generated_*.tsx (iz visual-generator skill-a)
 **Output:** Funkcionalan Remotion projekat
 
 **⚠️ OUTPUT LOKACIJE:**
-- **Finalni projekti** → `videos/{project-name}/` (gotovi video projekti)
-- **Privremeni fajlovi** → `workspace/{project-name}/` (voiceover, timestamps, master-plan dok se radi)
+- **Finalni projekti** → `videos/{project-name}/`
 - **NIKAD u root, NIKAD u skills folder, NIKAD u templates!**
-
----
-
-## ⚠️ KRITIČNO: NE MENJAJ TEMPLATE KOD!
-
-**NIKAD ne edituj DynamicPipeline.tsx, ExplainerLayout.tsx, Root.tsx ili bilo koji .tsx fajl!**
-
-Template već ima SVE ugrađeno:
-- **Camera** — auto-generiše keyframes iz sticky pozicija (zoom po sticky-ju, pan po sekcijama)
-- **Sounds** — auto-generiše whoosh zvukove na camera/section tranzicijama
-- **Animacije** — spring-based fade-in, scale-in, stagger po nodovima
-- **Layouts** — 9 ExplainerLayout tipova (flow, vs, combine, if-else, merge, negation, bidirectional, filter, arrow)
-- **Ikone** — 1512 Phosphor ikona, dinamički lookup, fallback Cube
-
-**Builder samo:**
-1. Kopira template
-2. Kopira assets (voiceover, timestamps)
-3. Generiše `dynamic-config.json`
-4. Pokrene server
-
-```
-❌ POGREŠNO: Editovati DynamicPipeline.tsx da dodaš camera keyframes
-❌ POGREŠNO: Pisati custom sound logic
-❌ POGREŠNO: Menjati bilo koji .tsx fajl
-
-✅ ISPRAVNO: Samo generiši dynamic-config.json i pusti template da radi
-```
 
 ---
 
 ## WORKFLOW
 
-### KORAK 1: Kopiraj Template + npm install
+### KORAK 1: Napravi projekat
 
 ```bash
-cp -r "/Users/dario61/Desktop/YT automation/templates/ai-video-gen-pipeline"/* ./videos/{project-name}/
-cd ./videos/{project-name} && npm install
+mkdir -p videos/{project-name}/src/visuals videos/{project-name}/public
+cd videos/{project-name}
+npm init -y
+npm install remotion @remotion/cli @phosphor-icons/react react react-dom
 ```
 
-### KORAK 2: Kopiraj Assets
+### KORAK 2: Kopiraj assets
 
 ```bash
-cp workspace/{project-name}/voiceover.mp3 ./videos/{project-name}/public/
-cp workspace/{project-name}/voiceover-timestamps.json ./videos/{project-name}/src/
-cp workspace/{project-name}/master-plan.json ./videos/{project-name}/src/
+cp workspace/{project-name}/voiceover.mp3 videos/{project-name}/public/
+cp workspace/{project-name}/master-plan.json videos/{project-name}/src/
 ```
 
-Sounds su VEĆ u templateu (`public/sounds/whooshes/`).
+### KORAK 3: Proveri da Generated_*.tsx postoje
 
-### KORAK 2.5: Kopiraj Brand Config (AKO POSTOJI)
+Visual Generator skill je VEĆ kreirao .tsx za svaki segment u `videos/{project-name}/src/visuals/`. Proveri:
 
 ```bash
-# Proveri da li postoji aktivan brend
-ls brands/*/brand.json
-# Ako postoji, čitaj ga — brand.json se embeduje u dynamic-config.json (KORAK 3)
+ls videos/{project-name}/src/visuals/Generated_*.tsx
 ```
 
-### KORAK 3: Generiši `dynamic-config.json`
+Ako fale — VRATI SE na Planner i pokreni visual-generator skill za segmente koji fale. **NE piši .tsx sam!**
 
-Jedini fajl koji builder KREIRA. Transformacija iz master-plan.json:
+### KORAK 4: Generiši Root.tsx
 
-```json
-{
-  "title": "Video Title",
-  "fps": 30,
-  "totalFrames": 1395,
-  "showStepPrefix": true,
-  "brand": {
-    "colors": { "primary": "#3b82f6", "background": "#030305", "text": "#f8fafc" },
-    "font": { "heading": "SF Mono, monospace", "body": "Inter, sans-serif" },
-    "style": { "stickyBorder": true, "stickyBorderRadius": 20, "glass": { "enabled": true, "blur": 16 } }
-  },
-  "stickies": [
-    {
-      "step": 1,
-      "title": "Retrieve",
-      "color": "#a855f7",
-      "sections": [
-        {
-          "id": "section_1_1",
-          "title": "Query",
-          "layout": "flow",
-          "startFrame": 95,
-          "nodes": [
-            { "label": "Input", "icon": "Terminal" },
-            { "label": "Embed", "icon": "Cube" }
-          ]
-        }
-      ]
-    }
-  ]
-}
+Root.tsx renderuje sve segmente DIREKTNO (BEZ Sequence wrapper-a) + voiceover:
+
+```tsx
+import { Composition, AbsoluteFill, Audio, staticFile } from "remotion";
+import Generated_Segment1 from "./visuals/Generated_Segment1";
+import Generated_Segment2 from "./visuals/Generated_Segment2";
+// ... svi segmenti
+
+const FullVideo: React.FC = () => {
+  return (
+    <AbsoluteFill style={{ background: "#0f0f1a" }}>
+      <Audio src={staticFile("voiceover.mp3")} />
+      <Generated_Segment1 />
+      <Generated_Segment2 />
+      {/* ... ostali segmenti */}
+    </AbsoluteFill>
+  );
+};
+
+export const RemotionRoot: React.FC = () => (
+  <>
+    <Composition
+      id="FullVideo"
+      component={FullVideo}
+      durationInFrames={totalFrames}  // iz master-plan.json
+      fps={30}
+      width={1920}
+      height={1080}
+    />
+  </>
+);
 ```
 
-**Brand Integration:**
-- Ako `brands/` folder ima brend → čitaj `brand.json` i dodaj kao `brand` field u config
-- Ako nema brenda → ne dodaj `brand` field (template koristi default vrednosti)
-- Sticky boje: koristi `brand.colors.stickyColors[]` za rotaciju, ili default
+**KRITIČNO — NE koristi Sequence!**
+- Komponente koriste `useCurrentFrame()` koji vraća GLOBALNI frame
+- Timestamps su apsolutni (frame 975 = 32.5s od početka videa)
+- Sequence bi resetovao frame na 0 i sve bi se pokvarilo
+- Svaka komponenta SAMA kontroliše kad se pojavi/nestane kroz opacity interpolaciju
 
-**Config Options:**
-- `showStepPrefix: true` → "STEP 1: RETRIEVE"
-- `showStepPrefix: false` → just "RETRIEVE"
+### KORAK 5: Generiši remotion.config.ts i index.ts
 
-**Sticky Colors (default):** `#ef4444` (red), `#3b82f6` (blue), `#06b6d4` (cyan), `#22c55e` (green), `#a855f7` (purple), `#f97316` (orange)
+```ts
+// remotion.config.ts
+import { Config } from "@remotion/cli/config";
+Config.setVideoImageFormat("jpeg");
 
-### KORAK 4: Pokreni
+// src/index.ts
+import { registerRoot } from "remotion";
+import { RemotionRoot } from "./Root";
+registerRoot(RemotionRoot);
+```
+
+### KORAK 6: Pokreni
 
 ```bash
 cd videos/{project-name} && npx remotion studio --port 3001
@@ -122,65 +101,26 @@ cd videos/{project-name} && npx remotion studio --port 3001
 
 ---
 
-## STRUKTURA STICKY-JA
+## NEMA CANVAS. NEMA DYNAMICPIPELINE.
 
 ```
-❌ POGREŠNO: 1 sticky sa 5 sekcija
-✅ ISPRAVNO: 3 sticky-ja (Step 1, Step 2, Step 3), svaki ima 2-4 sekcije, svaka 2-3 noda
+❌ ZABRANJENO: DynamicPipeline.tsx, ExplainerLayout.tsx, sticky notes, canvas
+❌ ZABRANJENO: dynamic-config.json, camera keyframes, sticky layouts
+❌ ZABRANJENO: Kopirati template iz templates/ai-video-gen-pipeline
+
+✅ ISPRAVNO: Čist projekat sa Root.tsx → Sequence chain → Generated_*.tsx + voiceover
+✅ ISPRAVNO: Svaki segment je fullscreen 1920x1080 komponenta
+✅ ISPRAVNO: Animacije su u .tsx fajlovima (Visual Generator ih je napravio)
 ```
 
 ---
 
-## DOSTUPNI LAYOUT-I (9)
+## CHECKLIST
 
-| Layout | Vizual | Kad se koristi |
-|--------|--------|----------------|
-| `flow` | A → B → C | sekvenca, pipeline |
-| `arrow` | A → B | jednostavna veza |
-| `vs` | A vs B | poređenje |
-| `combine` | A + B = C | kombinacija |
-| `negation` | ✗A → B | loše → dobro |
-| `if-else` | A → [B, C] | split/branch |
-| `merge` | [A, B] → C | spajanje |
-| `bidirectional` | A ↔ B | dvosmerna veza |
-| `filter` | A ▷ B | filtriranje |
-
----
-
-## IKONICE
-
-1512 Phosphor ikona, dinamički lookup. Planner bira via `batch_icons.py`.
-Fallback = `Cube`. Ikone su PascalCase (npr. `GitMerge`, `Database`, `Brain`).
-
----
-
-## CHECKLIST PRE POKRETANJA
-
-- [ ] Template kopiran u `videos/{project-name}/`
-- [ ] `npm install` urađen
-- [ ] `voiceover.mp3` u `public/`
-- [ ] `sounds/whooshes/` postoji (medium-whoosh + soft-whoosh)
-- [ ] `dynamic-config.json` generisan u `src/`
-- [ ] **NIJEDAN .tsx fajl NIJE editovan**
-
----
-
-## COMMON ERRORS
-
-| Simptom | Uzrok | Fix |
-|---------|-------|-----|
-| Elementi levo | Flexbox bug | Proveri template verziju |
-| Camera bugged | Agent editovao DynamicPipeline.tsx | **VRATI ORIGINAL** — template auto-generiše kameru |
-| Nema zvuka | Sounds folder fali | Proveri `public/sounds/whooshes/` |
-| Crn ekran | Frame 0 nema content | **BUG U PLANU** — vrati planner-u |
-| Pogrešne ikone | Planner dao loše nazive | Proveri da su PascalCase Phosphor nazivi |
-
----
-
-## VALIDACIJA
-
-- [ ] Frame 0 ima content (NE crn ekran!)
-- [ ] Camera smooth prati sticky-je automatski
-- [ ] Sounds se čuju
-- [ ] Svi layouti renderuju ispravno (strelice, vs, if-else, combine)
-- [ ] Voiceover sync OK
+- [ ] `videos/{project-name}/` postoji
+- [ ] `public/voiceover.mp3` postoji
+- [ ] `src/visuals/Generated_*.tsx` za svaki segment
+- [ ] `src/Root.tsx` sa Sequence chain-om
+- [ ] `npx remotion studio` radi bez errora
+- [ ] Svaki segment renderuje fullscreen animacije
+- [ ] Voiceover se čuje i sinhronizovan je sa vizualima

@@ -103,33 +103,58 @@ cat workspace/{project-name}/visual-structure.json
 ```
 
 Ovaj fajl sadrži:
-- Koliko sticky-ja i njihove naslove
-- Svaku sekciju sa visualType + visualData ILI layout + nodes
-- Direction i connectionToNext za svaki sticky
-- SVE podatke koji idu u vizuale
+- Sticky-je sa `mode` poljem: `"fullscreen"` ili `"canvas"`
+- Za canvas: sekcije sa visualType + visualData ILI layout + nodes
+- Za fullscreen: `transcriptSegment` (tekst koji pokriva taj segment)
+- Direction i connectionToNext za canvas sticky-je
 
-**Planner samo dodaje TIMING na ovu strukturu:**
-- `startFrame` za svaku sekciju (na osnovu voiceover timestamps)
-- Camera keyframes
+**Planner dodaje TIMING na ovu strukturu:**
+- `startFrame` / `endFrame` za svaki segment
+- Camera keyframes (samo za canvas segmente)
 - Sound points
+- Za fullscreen segmente: timestamps niz za Visual Generator
 
 **Planner NE MENJA vizuale, ne menja strukturu, ne menja podatke u vizualima!**
 
 ### KORAK 2.5: Dodaj timing iz voiceover timestamps
 
-Za svaku sekciju u visual-structure.json:
-1. Nađi u voiceover timestamps KAD se prvi put pominje tema te sekcije
-2. `startFrame = Math.round(word.start * fps)` — frame kad se ta tema počne izgovarati
-3. Element appear = startFrame - 5 (pojavi se malo pre izgovaranja)
+Za SVAKI segment (i canvas i fullscreen):
+1. Nađi u voiceover timestamps KAD počinje tema tog segmenta
+2. `startFrame = Math.round(word.start * fps)`
+3. `endFrame` = startFrame sledećeg segmenta (ili kraj videa)
 
 ```
 Primer:
-  Sekcija "Control Plane" — voiceover kaže "API server" na 18.5 sec
-  → startFrame = Math.round(18.5 * 30) = 555
-  → Sekcija se pojavi na frame 550 (555 - 5)
+  Segment 1 (fullscreen) — narator počinje sa "Here's how Docker..." na 0.5 sec
+  → startFrame = 15, endFrame = 450
+
+  Segment 2 (canvas) — narator kaže "Now let's install..." na 15.2 sec
+  → startFrame = 456, endFrame = 900
 ```
 
-**KRITIČNO: Prođi REDOM kroz transcript i mapiraj svaku sekciju na odgovarajući deo voiceovera!**
+### KORAK 2.6: Generiši fullscreen .tsx za SVAKI segment — KORISTI SKILL!
+
+**Za svaki segment pokreni `visual-generator` skill.** NE piši .tsx sam. NE improvizuj. KORISTI SKILL.
+
+```
+Za svaki segment:
+1. Stikni visual-generator skill
+2. Daj mu: transcript segment + timestamps za taj segment + fps + startFrame
+3. Skill SAM piše .tsx prema generation-rules.md (motion designer princip, 5 koraka razmišljanja, progresivno građenje)
+4. Skill sačuva fajl u videos/{project-name}/src/visuals/Generated_{SegmentName}.tsx
+```
+
+**ZABRANJENO:**
+- Pisati .tsx bez skill-a — rezultat je UVEK lošiji
+- Improvizovati layout/animacije — skill ima pravila iterirana kroz 20+ testova
+- Preskočiti skill "da uštediš vreme" — skill JE pipeline
+
+**OBAVEZNO:**
+- Svaki segment = jedan poziv visual-generator skill-a
+- Skill dobija TAČNE timestamps iz voiceover-a
+- Rezultat: profesionalan fullscreen vizual sa animacijama sinhronizovanim na milisekundu
+
+**KRITIČNO: Prođi REDOM kroz transcript i mapiraj svaki segment na odgovarajući deo voiceovera!**
 
 ---
 
@@ -315,36 +340,38 @@ Primer: voiceover = 45.5 sec → totalFrames = ceil(45.5 * 30) + 30 = 1395
   "structure": {
     "stickies": [
       {
-        "id": "sticky_1",
+        "id": "segment_1",
+        "mode": "fullscreen",
         "step": 1,
-        "title": "Retrieve",
+        "title": "How Docker Works",
+        "startFrame": 0,
+        "endFrame": 450,
+        "componentPath": "src/visuals/Generated_DockerContainerLifecycle.tsx",
+        "transcriptSegment": "Here's how a Docker container is born...",
+        "timestamps": [
+          { "word": "Docker", "start": 0.52, "startFrame": 16 },
+          { "word": "FROM", "start": 4.23, "startFrame": 127 }
+        ]
+      },
+      {
+        "id": "segment_2",
+        "mode": "canvas",
+        "step": 2,
+        "title": "Install Steps",
         "color": "#a855f7",
         "direction": "right",
         "connectionToNext": "flow",
-        "startFrame": 90,
+        "startFrame": 460,
         "sections": [
           {
-            "id": "section_1_1",
+            "id": "section_2_1",
             "title": "Query",
             "layout": "flow",
-            "startFrame": 95,
+            "startFrame": 465,
             "nodes": [
-              { "label": "Input", "icon": "Terminal", "startFrame": 100 },
-              { "label": "Embed", "icon": "Cube", "startFrame": 106 }
+              { "label": "Input", "icon": "Terminal", "startFrame": 470 },
+              { "label": "Embed", "icon": "Cube", "startFrame": 476 }
             ]
-          },
-          {
-            "id": "section_1_2",
-            "title": "Speed Stats",
-            "startFrame": 140,
-            "visualType": "stats",
-            "visualData": {
-              "items": [
-                { "label": "Latency", "value": "12ms" },
-                { "label": "Throughput", "value": "10K/s" }
-              ]
-            },
-            "nodes": []
           }
         ]
       }

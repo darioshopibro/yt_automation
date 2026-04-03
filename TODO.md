@@ -72,6 +72,12 @@ bo**Vreme po videu:** 30-60 min
 - [ ] **Vizuelna hijerarhija** — bitniji element = VECI, manje bitan = manji. Sad su svi elementi iste velicine. Dodati u generation-rules.md
 - [ ] **Context Panel layout mode** — levo (40%) kontekst (fajl/terminal/browser sa placeholder linijama + highlight), desno (60%) vizual objašnjenje. Testirati na promptovima: 9 (Dockerfile), 12 (V8 JS), 17 (git push), 18 (Redis), 19 (OAuth2 browser), 20 (WebSocket headers), 26 (rate limiting code). Kad radi — dodati u generation-rules.md
 - [ ] **Logika kad šta koristiti:** context panel (transcript opisuje konkretan fajl/terminal/UI) vs full screen (apstraktan koncept) vs canvas (tutorial/step-by-step)
+- [ ] **Transcript segmentacija za Visual Generator** — ceo video je dugačak transcript (2-5 min, 500-1000 reči). Visual Generator sad radi na kratkim isečcima (1 koncept = 1 komponenta). Treba odlučiti:
+  - Ko deli transcript na segmente? (novi Decision agent pre svega, ili Router proširiti?)
+  - Kako deliti? Po konceptima? Po pauzama u naraciji? Po promenama teme?
+  - Svaki segment može biti drugačiji mod (fullscreen, context-panel, canvas) — mešan video
+  - Kako se segmenti spajaju u finalni video? Tranzicije između modova?
+  - Voiceover sync — Visual Generator mora da zna tačno KOJI deo transcripta pokriva i timestamps za taj deo
 - [ ] Kad radi — integrisati u Proposer/Router/Builder pipeline
 - [ ] Dodati Re-generate u editor
 
@@ -107,6 +113,22 @@ bo**Vreme po videu:** 30-60 min
   - Upload frequency na temu — ako 3+ kanala uploaduju o istoj temi u 7 dana = trending
   - yt-dlp moze da izvuce view count, like count, upload date — sve sto treba
   - Napraviti bazu/JSON sa kanalima i njihovim prosecima, updejt weekly
+
+### ⚡ Video Layout — Outline Sidebar + Transcript
+
+**Ideja:** Ceo video ekran podeliti na 3 zone:
+- **Centar (glavno):** fullscreen vizual / canvas / context panel — glavni content
+- **Desno (outline sidebar):** Google Docs stil progress tracker — lista sekcija videa, highlight na trenutnoj. Automatski iz visual-structure.json naslova, pomera se po timestamps-u
+- **Dole (transcript):** karaoke-stil word highlight (već imamo sistem)
+
+**Šta treba:**
+- [ ] Outline sidebar komponenta — lista sekcija sa dot/bullet, active highlight + glow, progresivno pojavljivanje
+- [ ] Automatsko generisanje iz visual-structure.json (naslovi segmenata)
+- [ ] Sync sa voiceover timestamps — active section se menja kad narator pređe na sledeći segment
+- [ ] `showOutline: true/false` u dynamic-config.json (opciono, ne uvek)
+- [ ] Prilagoditi main content width kad je outline aktivan (~1600px umesto 1920px)
+- [ ] Razmisliti: da li outline radi za pure fullscreen (1 koncept) ili samo za mešane videe?
+- [ ] Transcript overlay integracija sa outline-om — oba prate isti timing
 
 ### ⚡ NOVI VIZUALI — Messaging + Brainstorm
 
@@ -259,8 +281,8 @@ transitions, animations, text-animations, 3d, lottie, light-leaks, captions, sub
 **Preostalo za FAZU 5:**
 
 **🔴 HIGH PRIORITY:**
-- [ ] 5.12 Cron setup — daily automatski scan u 8:00 (Claude Code scheduled trigger)
-- [ ] 5.13 Telegram always-on (PM2) — bot sluša non-stop, ne samo kad pokrenemo poll
+- [x] 5.12 Cron setup — daily automatski scan u 8:00 (Claude Code scheduled trigger)
+- [x] 5.13 Telegram always-on (PM2) — bot sluša non-stop, ne samo kad pokrenemo poll
 - [ ] 5.14 Rewrite feedback buttons — kad klikneš Rewrite, iskočE dugmad "šta ti se nije svidelo?" (hook, primeri, struktura, analogija, predugačko) pa generiše novu skriptu na osnovu feedback-a
 - [ ] 5.15 Visual Proposer integracija — kad sistem obradi temu, prepozna gde može novi vizual i predloži/generiše (spoj sa postojećim `.claude/skills/visual-proposer/`, ne praviti ponovo)
 - [ ] 5.16 research.py batch transcript fix — transcripti prazni u batch modu, radi samo per-video
@@ -464,6 +486,7 @@ transitions, animations, text-animations, 3d, lottie, light-leaks, captions, sub
 - [ ] Obriši backup fajlove (.backup.md)
 - [ ] Očisti root MD fajlove — konsoliduj/obriši zastarele docs
 - [ ] Obriši stare template-ove koji se više ne koriste
+- [ ] **Proveriti duplikate u `.claude/` folderu** — komentari i template folderi koji se ponavljaju, očistiti
 
 
 

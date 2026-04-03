@@ -1,0 +1,3143 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 241.209,
+  "wordCount": 626,
+  "words": [
+    {
+      "word": "What",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "word": "is",
+      "start": 0.325,
+      "end": 0.453
+    },
+    {
+      "word": "docker?",
+      "start": 0.534,
+      "end": 1.045
+    },
+    {
+      "word": "docker's",
+      "start": 1.556,
+      "end": 1.95
+    },
+    {
+      "word": "a",
+      "start": 2.02,
+      "end": 2.055
+    },
+    {
+      "word": "software",
+      "start": 2.171,
+      "end": 2.682
+    },
+    {
+      "word": "development",
+      "start": 2.74,
+      "end": 3.181
+    },
+    {
+      "word": "platform",
+      "start": 3.216,
+      "end": 3.68
+    },
+    {
+      "word": "and",
+      "start": 3.796,
+      "end": 3.994
+    },
+    {
+      "word": "virtualization",
+      "start": 4.087,
+      "end": 4.934
+    },
+    {
+      "word": "technology",
+      "start": 4.992,
+      "end": 5.526
+    },
+    {
+      "word": "that",
+      "start": 5.584,
+      "end": 5.724
+    },
+    {
+      "word": "makes",
+      "start": 5.782,
+      "end": 6.002
+    },
+    {
+      "word": "it",
+      "start": 6.049,
+      "end": 6.118
+    },
+    {
+      "word": "easy",
+      "start": 6.235,
+      "end": 6.536
+    },
+    {
+      "word": "to",
+      "start": 6.594,
+      "end": 6.653
+    },
+    {
+      "word": "develop",
+      "start": 6.722,
+      "end": 7.082
+    },
+    {
+      "word": "and",
+      "start": 7.256,
+      "end": 7.454
+    },
+    {
+      "word": "deploy",
+      "start": 7.512,
+      "end": 7.848
+    },
+    {
+      "word": "apps",
+      "start": 7.941,
+      "end": 8.278
+    },
+    {
+      "word": "inside",
+      "start": 8.452,
+      "end": 8.986
+    },
+    {
+      "word": "neatly",
+      "start": 9.067,
+      "end": 9.427
+    },
+    {
+      "word": "packaged",
+      "start": 9.485,
+      "end": 9.868
+    },
+    {
+      "word": "virtual",
+      "start": 9.95,
+      "end": 10.391
+    },
+    {
+      "word": "containerized",
+      "start": 10.461,
+      "end": 11.18
+    },
+    {
+      "word": "environments.",
+      "start": 11.215,
+      "end": 11.947
+    },
+    {
+      "word": "This",
+      "start": 12.899,
+      "end": 13.096
+    },
+    {
+      "word": "means",
+      "start": 13.166,
+      "end": 13.444
+    },
+    {
+      "word": "apps",
+      "start": 13.595,
+      "end": 13.886
+    },
+    {
+      "word": "run",
+      "start": 13.944,
+      "end": 14.106
+    },
+    {
+      "word": "the",
+      "start": 14.153,
+      "end": 14.222
+    },
+    {
+      "word": "same",
+      "start": 14.28,
+      "end": 14.582
+    },
+    {
+      "word": "no",
+      "start": 14.663,
+      "end": 14.814
+    },
+    {
+      "word": "matter",
+      "start": 14.907,
+      "end": 15.151
+    },
+    {
+      "word": "where",
+      "start": 15.197,
+      "end": 15.383
+    },
+    {
+      "word": "they",
+      "start": 15.418,
+      "end": 15.557
+    },
+    {
+      "word": "are",
+      "start": 15.627,
+      "end": 15.824
+    },
+    {
+      "word": "or",
+      "start": 15.894,
+      "end": 16.056
+    },
+    {
+      "word": "what",
+      "start": 16.126,
+      "end": 16.288
+    },
+    {
+      "word": "machine",
+      "start": 16.347,
+      "end": 16.66
+    },
+    {
+      "word": "they're",
+      "start": 16.683,
+      "end": 16.846
+    },
+    {
+      "word": "running",
+      "start": 16.869,
+      "end": 17.09
+    },
+    {
+      "word": "on.\n\ndocker",
+      "start": 17.148,
+      "end": 18.436
+    },
+    {
+      "word": "containers",
+      "start": 18.471,
+      "end": 18.959
+    },
+    {
+      "word": "can",
+      "start": 18.994,
+      "end": 19.098
+    },
+    {
+      "word": "be",
+      "start": 19.145,
+      "end": 19.226
+    },
+    {
+      "word": "deployed",
+      "start": 19.272,
+      "end": 19.69
+    },
+    {
+      "word": "to",
+      "start": 19.737,
+      "end": 19.818
+    },
+    {
+      "word": "just",
+      "start": 19.934,
+      "end": 20.189
+    },
+    {
+      "word": "about",
+      "start": 20.236,
+      "end": 20.491
+    },
+    {
+      "word": "any",
+      "start": 20.573,
+      "end": 20.816
+    },
+    {
+      "word": "machine",
+      "start": 20.874,
+      "end": 21.269
+    },
+    {
+      "word": "without",
+      "start": 21.316,
+      "end": 21.652
+    },
+    {
+      "word": "compatibility",
+      "start": 21.71,
+      "end": 22.419
+    },
+    {
+      "word": "issues,",
+      "start": 22.477,
+      "end": 22.987
+    },
+    {
+      "word": "so",
+      "start": 23.196,
+      "end": 23.324
+    },
+    {
+      "word": "your",
+      "start": 23.394,
+      "end": 23.568
+    },
+    {
+      "word": "software",
+      "start": 23.626,
+      "end": 24.172
+    },
+    {
+      "word": "stays",
+      "start": 24.218,
+      "end": 24.636
+    },
+    {
+      "word": "system",
+      "start": 24.81,
+      "end": 25.158
+    },
+    {
+      "word": "agnostic.",
+      "start": 25.205,
+      "end": 25.89
+    },
+    {
+      "word": "That",
+      "start": 26.331,
+      "end": 26.552
+    },
+    {
+      "word": "makes",
+      "start": 26.61,
+      "end": 26.807
+    },
+    {
+      "word": "software",
+      "start": 26.854,
+      "end": 27.295
+    },
+    {
+      "word": "simpler",
+      "start": 27.353,
+      "end": 27.678
+    },
+    {
+      "word": "to",
+      "start": 27.724,
+      "end": 27.782
+    },
+    {
+      "word": "use,",
+      "start": 27.875,
+      "end": 28.374
+    },
+    {
+      "word": "less",
+      "start": 28.618,
+      "end": 28.839
+    },
+    {
+      "word": "work",
+      "start": 28.885,
+      "end": 29.083
+    },
+    {
+      "word": "to",
+      "start": 29.129,
+      "end": 29.187
+    },
+    {
+      "word": "develop,",
+      "start": 29.245,
+      "end": 29.768
+    },
+    {
+      "word": "and",
+      "start": 29.977,
+      "end": 30.163
+    },
+    {
+      "word": "easier",
+      "start": 30.313,
+      "end": 30.708
+    },
+    {
+      "word": "to",
+      "start": 30.755,
+      "end": 30.813
+    },
+    {
+      "word": "maintain",
+      "start": 30.871,
+      "end": 31.335
+    },
+    {
+      "word": "and",
+      "start": 31.393,
+      "end": 31.474
+    },
+    {
+      "word": "deploy.\n\nThese",
+      "start": 31.521,
+      "end": 33.17
+    },
+    {
+      "word": "containers",
+      "start": 33.216,
+      "end": 33.727
+    },
+    {
+      "word": "running",
+      "start": 33.796,
+      "end": 34.04
+    },
+    {
+      "word": "on",
+      "start": 34.087,
+      "end": 34.156
+    },
+    {
+      "word": "your",
+      "start": 34.203,
+      "end": 34.307
+    },
+    {
+      "word": "computer",
+      "start": 34.342,
+      "end": 34.76
+    },
+    {
+      "word": "or",
+      "start": 34.818,
+      "end": 34.888
+    },
+    {
+      "word": "server",
+      "start": 34.957,
+      "end": 35.352
+    },
+    {
+      "word": "act",
+      "start": 35.677,
+      "end": 35.909
+    },
+    {
+      "word": "like",
+      "start": 35.968,
+      "end": 36.142
+    },
+    {
+      "word": "little",
+      "start": 36.2,
+      "end": 36.432
+    },
+    {
+      "word": "micro",
+      "start": 36.49,
+      "end": 36.861
+    },
+    {
+      "word": "computers,",
+      "start": 36.92,
+      "end": 37.593
+    },
+    {
+      "word": "each",
+      "start": 37.802,
+      "end": 37.999
+    },
+    {
+      "word": "with",
+      "start": 38.046,
+      "end": 38.197
+    },
+    {
+      "word": "very",
+      "start": 38.278,
+      "end": 38.545
+    },
+    {
+      "word": "specific",
+      "start": 38.591,
+      "end": 39.033
+    },
+    {
+      "word": "jobs,",
+      "start": 39.079,
+      "end": 39.543
+    },
+    {
+      "word": "each",
+      "start": 39.868,
+      "end": 40.066
+    },
+    {
+      "word": "with",
+      "start": 40.101,
+      "end": 40.24
+    },
+    {
+      "word": "their",
+      "start": 40.275,
+      "end": 40.437
+    },
+    {
+      "word": "own",
+      "start": 40.507,
+      "end": 40.728
+    },
+    {
+      "word": "operating",
+      "start": 40.786,
+      "end": 41.18
+    },
+    {
+      "word": "system,",
+      "start": 41.238,
+      "end": 41.749
+    },
+    {
+      "word": "their",
+      "start": 41.958,
+      "end": 42.19
+    },
+    {
+      "word": "own",
+      "start": 42.26,
+      "end": 42.516
+    },
+    {
+      "word": "isolated",
+      "start": 42.574,
+      "end": 43.154
+    },
+    {
+      "word": "C",
+      "start": 43.201,
+      "end": 43.317
+    },
+    {
+      "word": "P",
+      "start": 43.491,
+      "end": 43.607
+    },
+    {
+      "word": "U",
+      "start": 43.781,
+      "end": 43.897
+    },
+    {
+      "word": "processes,",
+      "start": 43.979,
+      "end": 44.629
+    },
+    {
+      "word": "memory,",
+      "start": 44.803,
+      "end": 45.348
+    },
+    {
+      "word": "and",
+      "start": 45.465,
+      "end": 45.627
+    },
+    {
+      "word": "network",
+      "start": 45.697,
+      "end": 46.045
+    },
+    {
+      "word": "resources.",
+      "start": 46.115,
+      "end": 46.869
+    },
+    {
+      "word": "Because",
+      "start": 47.38,
+      "end": 47.705
+    },
+    {
+      "word": "of",
+      "start": 47.74,
+      "end": 47.787
+    },
+    {
+      "word": "this,",
+      "start": 47.833,
+      "end": 48.181
+    },
+    {
+      "word": "they",
+      "start": 48.332,
+      "end": 48.495
+    },
+    {
+      "word": "can",
+      "start": 48.541,
+      "end": 48.657
+    },
+    {
+      "word": "be",
+      "start": 48.715,
+      "end": 48.82
+    },
+    {
+      "word": "easily",
+      "start": 48.936,
+      "end": 49.377
+    },
+    {
+      "word": "added,",
+      "start": 49.447,
+      "end": 49.865
+    },
+    {
+      "word": "removed,",
+      "start": 50.039,
+      "end": 50.643
+    },
+    {
+      "word": "stopped,",
+      "start": 50.794,
+      "end": 51.304
+    },
+    {
+      "word": "and",
+      "start": 51.432,
+      "end": 51.595
+    },
+    {
+      "word": "started",
+      "start": 51.664,
+      "end": 52.071
+    },
+    {
+      "word": "again",
+      "start": 52.106,
+      "end": 52.442
+    },
+    {
+      "word": "without",
+      "start": 52.686,
+      "end": 53.046
+    },
+    {
+      "word": "affecting",
+      "start": 53.081,
+      "end": 53.475
+    },
+    {
+      "word": "each",
+      "start": 53.534,
+      "end": 53.708
+    },
+    {
+      "word": "other",
+      "start": 53.754,
+      "end": 53.986
+    },
+    {
+      "word": "or",
+      "start": 54.16,
+      "end": 54.393
+    },
+    {
+      "word": "the",
+      "start": 54.462,
+      "end": 54.544
+    },
+    {
+      "word": "host",
+      "start": 54.613,
+      "end": 54.845
+    },
+    {
+      "word": "machine.\n\nContainers",
+      "start": 54.903,
+      "end": 56.796
+    },
+    {
+      "word": "usually",
+      "start": 56.877,
+      "end": 57.214
+    },
+    {
+      "word": "run",
+      "start": 57.272,
+      "end": 57.446
+    },
+    {
+      "word": "one",
+      "start": 57.527,
+      "end": 57.701
+    },
+    {
+      "word": "specific",
+      "start": 57.736,
+      "end": 58.189
+    },
+    {
+      "word": "task,",
+      "start": 58.247,
+      "end": 58.723
+    },
+    {
+      "word": "such",
+      "start": 59.002,
+      "end": 59.246
+    },
+    {
+      "word": "as",
+      "start": 59.292,
+      "end": 59.397
+    },
+    {
+      "word": "a",
+      "start": 59.466,
+      "end": 59.64
+    },
+    {
+      "word": "my",
+      "start": 59.815,
+      "end": 60.024
+    },
+    {
+      "word": "S",
+      "start": 60.093,
+      "end": 60.209
+    },
+    {
+      "word": "Q",
+      "start": 60.291,
+      "end": 60.337
+    },
+    {
+      "word": "L",
+      "start": 60.511,
+      "end": 60.627
+    },
+    {
+      "word": "database",
+      "start": 60.709,
+      "end": 61.336
+    },
+    {
+      "word": "or",
+      "start": 61.487,
+      "end": 61.661
+    },
+    {
+      "word": "a",
+      "start": 61.719,
+      "end": 61.742
+    },
+    {
+      "word": "node",
+      "start": 61.835,
+      "end": 62.114
+    },
+    {
+      "word": "J",
+      "start": 62.195,
+      "end": 62.439
+    },
+    {
+      "word": "S",
+      "start": 62.473,
+      "end": 62.624
+    },
+    {
+      "word": "application,",
+      "start": 62.694,
+      "end": 63.483
+    },
+    {
+      "word": "and",
+      "start": 63.762,
+      "end": 63.936
+    },
+    {
+      "word": "then",
+      "start": 64.006,
+      "end": 64.18
+    },
+    {
+      "word": "they're",
+      "start": 64.227,
+      "end": 64.424
+    },
+    {
+      "word": "networked",
+      "start": 64.459,
+      "end": 64.912
+    },
+    {
+      "word": "together",
+      "start": 64.981,
+      "end": 65.434
+    },
+    {
+      "word": "and",
+      "start": 65.608,
+      "end": 65.805
+    },
+    {
+      "word": "potentially",
+      "start": 65.864,
+      "end": 66.398
+    },
+    {
+      "word": "scaled.\n\nA",
+      "start": 66.456,
+      "end": 67.71
+    },
+    {
+      "word": "developer",
+      "start": 67.791,
+      "end": 68.232
+    },
+    {
+      "word": "will",
+      "start": 68.267,
+      "end": 68.418
+    },
+    {
+      "word": "usually",
+      "start": 68.499,
+      "end": 68.847
+    },
+    {
+      "word": "start",
+      "start": 68.905,
+      "end": 69.23
+    },
+    {
+      "word": "by",
+      "start": 69.277,
+      "end": 69.393
+    },
+    {
+      "word": "accessing",
+      "start": 69.451,
+      "end": 69.892
+    },
+    {
+      "word": "the",
+      "start": 69.939,
+      "end": 70.008
+    },
+    {
+      "word": "docker",
+      "start": 70.043,
+      "end": 70.31
+    },
+    {
+      "word": "Hub,",
+      "start": 70.345,
+      "end": 70.716
+    },
+    {
+      "word": "an",
+      "start": 70.995,
+      "end": 71.123
+    },
+    {
+      "word": "online",
+      "start": 71.193,
+      "end": 71.564
+    },
+    {
+      "word": "cloud",
+      "start": 71.61,
+      "end": 71.889
+    },
+    {
+      "word": "repository",
+      "start": 71.947,
+      "end": 72.504
+    },
+    {
+      "word": "of",
+      "start": 72.551,
+      "end": 72.597
+    },
+    {
+      "word": "docker",
+      "start": 72.655,
+      "end": 72.922
+    },
+    {
+      "word": "containers,",
+      "start": 72.957,
+      "end": 73.642
+    },
+    {
+      "word": "and",
+      "start": 73.967,
+      "end": 74.141
+    },
+    {
+      "word": "pull",
+      "start": 74.223,
+      "end": 74.432
+    },
+    {
+      "word": "one",
+      "start": 74.525,
+      "end": 74.722
+    },
+    {
+      "word": "containing",
+      "start": 74.768,
+      "end": 75.256
+    },
+    {
+      "word": "a",
+      "start": 75.349,
+      "end": 75.407
+    },
+    {
+      "word": "pre-configured",
+      "start": 75.523,
+      "end": 76.255
+    },
+    {
+      "word": "environment",
+      "start": 76.289,
+      "end": 76.835
+    },
+    {
+      "word": "for",
+      "start": 76.881,
+      "end": 76.986
+    },
+    {
+      "word": "their",
+      "start": 77.021,
+      "end": 77.16
+    },
+    {
+      "word": "specific",
+      "start": 77.195,
+      "end": 77.729
+    },
+    {
+      "word": "programming",
+      "start": 77.799,
+      "end": 78.309
+    },
+    {
+      "word": "language,",
+      "start": 78.379,
+      "end": 78.855
+    },
+    {
+      "word": "such",
+      "start": 79.006,
+      "end": 79.262
+    },
+    {
+      "word": "as",
+      "start": 79.308,
+      "end": 79.424
+    },
+    {
+      "word": "Ruby",
+      "start": 79.575,
+      "end": 79.97
+    },
+    {
+      "word": "or",
+      "start": 80.179,
+      "end": 80.341
+    },
+    {
+      "word": "node",
+      "start": 80.422,
+      "end": 80.69
+    },
+    {
+      "word": "J",
+      "start": 80.771,
+      "end": 80.98
+    },
+    {
+      "word": "S,",
+      "start": 81.096,
+      "end": 81.549
+    },
+    {
+      "word": "with",
+      "start": 81.723,
+      "end": 81.897
+    },
+    {
+      "word": "all",
+      "start": 81.955,
+      "end": 82.164
+    },
+    {
+      "word": "the",
+      "start": 82.21,
+      "end": 82.28
+    },
+    {
+      "word": "files",
+      "start": 82.35,
+      "end": 82.71
+    },
+    {
+      "word": "and",
+      "start": 82.744,
+      "end": 82.826
+    },
+    {
+      "word": "frameworks",
+      "start": 82.895,
+      "end": 83.383
+    },
+    {
+      "word": "needed",
+      "start": 83.453,
+      "end": 83.731
+    },
+    {
+      "word": "to",
+      "start": 83.766,
+      "end": 83.813
+    },
+    {
+      "word": "get",
+      "start": 83.859,
+      "end": 83.998
+    },
+    {
+      "word": "started.\n\ndocker's",
+      "start": 84.045,
+      "end": 85.659
+    },
+    {
+      "word": "a",
+      "start": 85.693,
+      "end": 85.728
+    },
+    {
+      "word": "form",
+      "start": 85.81,
+      "end": 86.111
+    },
+    {
+      "word": "of",
+      "start": 86.169,
+      "end": 86.227
+    },
+    {
+      "word": "virtualization,",
+      "start": 86.32,
+      "end": 87.435
+    },
+    {
+      "word": "but",
+      "start": 87.714,
+      "end": 87.864
+    },
+    {
+      "word": "unlike",
+      "start": 87.923,
+      "end": 88.236
+    },
+    {
+      "word": "virtual",
+      "start": 88.294,
+      "end": 88.654
+    },
+    {
+      "word": "machines,",
+      "start": 88.712,
+      "end": 89.304
+    },
+    {
+      "word": "the",
+      "start": 89.478,
+      "end": 89.594
+    },
+    {
+      "word": "resources",
+      "start": 89.687,
+      "end": 90.268
+    },
+    {
+      "word": "are",
+      "start": 90.337,
+      "end": 90.465
+    },
+    {
+      "word": "shared",
+      "start": 90.5,
+      "end": 90.79
+    },
+    {
+      "word": "directly",
+      "start": 90.86,
+      "end": 91.394
+    },
+    {
+      "word": "with",
+      "start": 91.429,
+      "end": 91.568
+    },
+    {
+      "word": "the",
+      "start": 91.603,
+      "end": 91.672
+    },
+    {
+      "word": "host.",
+      "start": 91.719,
+      "end": 92.183
+    },
+    {
+      "word": "This",
+      "start": 92.694,
+      "end": 92.88
+    },
+    {
+      "word": "allows",
+      "start": 92.926,
+      "end": 93.217
+    },
+    {
+      "word": "you",
+      "start": 93.263,
+      "end": 93.344
+    },
+    {
+      "word": "to",
+      "start": 93.402,
+      "end": 93.46
+    },
+    {
+      "word": "run",
+      "start": 93.542,
+      "end": 93.716
+    },
+    {
+      "word": "many",
+      "start": 93.809,
+      "end": 94.064
+    },
+    {
+      "word": "docker",
+      "start": 94.122,
+      "end": 94.389
+    },
+    {
+      "word": "containers",
+      "start": 94.424,
+      "end": 94.993
+    },
+    {
+      "word": "where",
+      "start": 95.167,
+      "end": 95.376
+    },
+    {
+      "word": "you",
+      "start": 95.411,
+      "end": 95.481
+    },
+    {
+      "word": "might",
+      "start": 95.539,
+      "end": 95.748
+    },
+    {
+      "word": "only",
+      "start": 95.817,
+      "end": 96.177
+    },
+    {
+      "word": "be",
+      "start": 96.247,
+      "end": 96.351
+    },
+    {
+      "word": "able",
+      "start": 96.409,
+      "end": 96.63
+    },
+    {
+      "word": "to",
+      "start": 96.665,
+      "end": 96.734
+    },
+    {
+      "word": "run",
+      "start": 96.816,
+      "end": 96.967
+    },
+    {
+      "word": "a",
+      "start": 97.001,
+      "end": 97.036
+    },
+    {
+      "word": "few",
+      "start": 97.118,
+      "end": 97.35
+    },
+    {
+      "word": "virtual",
+      "start": 97.466,
+      "end": 97.872
+    },
+    {
+      "word": "machines.",
+      "start": 97.93,
+      "end": 98.557
+    },
+    {
+      "word": "A",
+      "start": 99.254,
+      "end": 99.335
+    },
+    {
+      "word": "virtual",
+      "start": 99.416,
+      "end": 99.788
+    },
+    {
+      "word": "machine",
+      "start": 99.857,
+      "end": 100.357
+    },
+    {
+      "word": "has",
+      "start": 100.473,
+      "end": 100.659
+    },
+    {
+      "word": "to",
+      "start": 100.717,
+      "end": 100.786
+    },
+    {
+      "word": "quarantine",
+      "start": 100.868,
+      "end": 101.413
+    },
+    {
+      "word": "off",
+      "start": 101.448,
+      "end": 101.553
+    },
+    {
+      "word": "a",
+      "start": 101.611,
+      "end": 101.634
+    },
+    {
+      "word": "set",
+      "start": 101.703,
+      "end": 101.901
+    },
+    {
+      "word": "amount",
+      "start": 101.936,
+      "end": 102.156
+    },
+    {
+      "word": "of",
+      "start": 102.191,
+      "end": 102.238
+    },
+    {
+      "word": "resources,",
+      "start": 102.296,
+      "end": 103.015
+    },
+    {
+      "word": "hard",
+      "start": 103.294,
+      "end": 103.515
+    },
+    {
+      "word": "drive",
+      "start": 103.55,
+      "end": 103.805
+    },
+    {
+      "word": "space,",
+      "start": 103.828,
+      "end": 104.304
+    },
+    {
+      "word": "memory,",
+      "start": 104.513,
+      "end": 105.013
+    },
+    {
+      "word": "and",
+      "start": 105.129,
+      "end": 105.268
+    },
+    {
+      "word": "processing",
+      "start": 105.338,
+      "end": 105.837
+    },
+    {
+      "word": "power,",
+      "start": 105.895,
+      "end": 106.301
+    },
+    {
+      "word": "emulate",
+      "start": 106.51,
+      "end": 106.952
+    },
+    {
+      "word": "hardware,",
+      "start": 106.986,
+      "end": 107.532
+    },
+    {
+      "word": "and",
+      "start": 107.706,
+      "end": 107.857
+    },
+    {
+      "word": "then",
+      "start": 107.915,
+      "end": 108.078
+    },
+    {
+      "word": "boot",
+      "start": 108.147,
+      "end": 108.345
+    },
+    {
+      "word": "an",
+      "start": 108.414,
+      "end": 108.484
+    },
+    {
+      "word": "entire",
+      "start": 108.542,
+      "end": 109.053
+    },
+    {
+      "word": "operating",
+      "start": 109.123,
+      "end": 109.587
+    },
+    {
+      "word": "system.",
+      "start": 109.645,
+      "end": 110.109
+    },
+    {
+      "word": "The",
+      "start": 110.62,
+      "end": 110.748
+    },
+    {
+      "word": "V",
+      "start": 110.818,
+      "end": 110.887
+    },
+    {
+      "word": "M",
+      "start": 111.061,
+      "end": 111.236
+    },
+    {
+      "word": "then",
+      "start": 111.329,
+      "end": 111.514
+    },
+    {
+      "word": "communicates",
+      "start": 111.584,
+      "end": 112.153
+    },
+    {
+      "word": "with",
+      "start": 112.176,
+      "end": 112.292
+    },
+    {
+      "word": "the",
+      "start": 112.327,
+      "end": 112.397
+    },
+    {
+      "word": "host",
+      "start": 112.455,
+      "end": 112.687
+    },
+    {
+      "word": "computer",
+      "start": 112.745,
+      "end": 113.221
+    },
+    {
+      "word": "via",
+      "start": 113.395,
+      "end": 113.697
+    },
+    {
+      "word": "a",
+      "start": 113.743,
+      "end": 113.778
+    },
+    {
+      "word": "translator",
+      "start": 113.825,
+      "end": 114.359
+    },
+    {
+      "word": "application",
+      "start": 114.394,
+      "end": 114.951
+    },
+    {
+      "word": "running",
+      "start": 115.229,
+      "end": 115.508
+    },
+    {
+      "word": "on",
+      "start": 115.555,
+      "end": 115.624
+    },
+    {
+      "word": "the",
+      "start": 115.671,
+      "end": 115.74
+    },
+    {
+      "word": "host",
+      "start": 115.81,
+      "end": 116.065
+    },
+    {
+      "word": "operating",
+      "start": 116.123,
+      "end": 116.541
+    },
+    {
+      "word": "system",
+      "start": 116.599,
+      "end": 116.936
+    },
+    {
+      "word": "called",
+      "start": 117.18,
+      "end": 117.528
+    },
+    {
+      "word": "a",
+      "start": 117.644,
+      "end": 117.76
+    },
+    {
+      "word": "hypervisor.\n\ndocker",
+      "start": 117.853,
+      "end": 119.722
+    },
+    {
+      "word": "communicates",
+      "start": 119.792,
+      "end": 120.361
+    },
+    {
+      "word": "natively",
+      "start": 120.43,
+      "end": 120.837
+    },
+    {
+      "word": "with",
+      "start": 120.895,
+      "end": 121.034
+    },
+    {
+      "word": "the",
+      "start": 121.069,
+      "end": 121.139
+    },
+    {
+      "word": "system",
+      "start": 121.197,
+      "end": 121.522
+    },
+    {
+      "word": "kernel,",
+      "start": 121.591,
+      "end": 122.044
+    },
+    {
+      "word": "bypassing",
+      "start": 122.218,
+      "end": 122.868
+    },
+    {
+      "word": "the",
+      "start": 122.915,
+      "end": 122.985
+    },
+    {
+      "word": "middleman",
+      "start": 123.031,
+      "end": 123.461
+    },
+    {
+      "word": "on",
+      "start": 123.553,
+      "end": 123.716
+    },
+    {
+      "word": "Linux",
+      "start": 123.809,
+      "end": 124.111
+    },
+    {
+      "word": "machines,",
+      "start": 124.169,
+      "end": 124.749
+    },
+    {
+      "word": "and",
+      "start": 124.923,
+      "end": 125.074
+    },
+    {
+      "word": "even",
+      "start": 125.144,
+      "end": 125.341
+    },
+    {
+      "word": "Windows",
+      "start": 125.411,
+      "end": 125.783
+    },
+    {
+      "word": "10",
+      "start": 125.852,
+      "end": 126.108
+    },
+    {
+      "word": "and",
+      "start": 126.386,
+      "end": 126.607
+    },
+    {
+      "word": "Windows",
+      "start": 126.688,
+      "end": 127.048
+    },
+    {
+      "word": "Server",
+      "start": 127.095,
+      "end": 127.408
+    },
+    {
+      "word": "2016",
+      "start": 127.489,
+      "end": 128.232
+    },
+    {
+      "word": "and",
+      "start": 128.348,
+      "end": 128.569
+    },
+    {
+      "word": "above.",
+      "start": 128.627,
+      "end": 129.08
+    },
+    {
+      "word": "This",
+      "start": 129.893,
+      "end": 130.136
+    },
+    {
+      "word": "means",
+      "start": 130.206,
+      "end": 130.496
+    },
+    {
+      "word": "you",
+      "start": 130.566,
+      "end": 130.67
+    },
+    {
+      "word": "can",
+      "start": 130.717,
+      "end": 130.833
+    },
+    {
+      "word": "run",
+      "start": 130.891,
+      "end": 131.077
+    },
+    {
+      "word": "any",
+      "start": 131.193,
+      "end": 131.46
+    },
+    {
+      "word": "version",
+      "start": 131.53,
+      "end": 131.843
+    },
+    {
+      "word": "of",
+      "start": 131.889,
+      "end": 131.936
+    },
+    {
+      "word": "Linux",
+      "start": 131.994,
+      "end": 132.249
+    },
+    {
+      "word": "in",
+      "start": 132.331,
+      "end": 132.435
+    },
+    {
+      "word": "a",
+      "start": 132.482,
+      "end": 132.505
+    },
+    {
+      "word": "container",
+      "start": 132.551,
+      "end": 133.074
+    },
+    {
+      "word": "and",
+      "start": 133.248,
+      "end": 133.445
+    },
+    {
+      "word": "it'll",
+      "start": 133.503,
+      "end": 133.677
+    },
+    {
+      "word": "run",
+      "start": 133.723,
+      "end": 133.898
+    },
+    {
+      "word": "natively.\n\ndocker",
+      "start": 133.979,
+      "end": 135.558
+    },
+    {
+      "word": "also",
+      "start": 135.651,
+      "end": 136.057
+    },
+    {
+      "word": "uses",
+      "start": 136.138,
+      "end": 136.429
+    },
+    {
+      "word": "less",
+      "start": 136.51,
+      "end": 136.719
+    },
+    {
+      "word": "disk",
+      "start": 136.777,
+      "end": 137.032
+    },
+    {
+      "word": "space,",
+      "start": 137.09,
+      "end": 137.566
+    },
+    {
+      "word": "as",
+      "start": 137.694,
+      "end": 137.845
+    },
+    {
+      "word": "it",
+      "start": 137.903,
+      "end": 137.973
+    },
+    {
+      "word": "reuses",
+      "start": 138.042,
+      "end": 138.553
+    },
+    {
+      "word": "files",
+      "start": 138.623,
+      "end": 138.983
+    },
+    {
+      "word": "efficiently",
+      "start": 139.029,
+      "end": 139.633
+    },
+    {
+      "word": "through",
+      "start": 139.784,
+      "end": 140.051
+    },
+    {
+      "word": "a",
+      "start": 140.086,
+      "end": 140.109
+    },
+    {
+      "word": "layered",
+      "start": 140.19,
+      "end": 140.527
+    },
+    {
+      "word": "file",
+      "start": 140.585,
+      "end": 140.875
+    },
+    {
+      "word": "system.",
+      "start": 140.91,
+      "end": 141.444
+    },
+    {
+      "word": "If",
+      "start": 142.048,
+      "end": 142.176
+    },
+    {
+      "word": "you",
+      "start": 142.222,
+      "end": 142.303
+    },
+    {
+      "word": "have",
+      "start": 142.361,
+      "end": 142.501
+    },
+    {
+      "word": "multiple",
+      "start": 142.57,
+      "end": 143.035
+    },
+    {
+      "word": "docker",
+      "start": 143.081,
+      "end": 143.36
+    },
+    {
+      "word": "images",
+      "start": 143.406,
+      "end": 143.801
+    },
+    {
+      "word": "using",
+      "start": 143.882,
+      "end": 144.138
+    },
+    {
+      "word": "the",
+      "start": 144.184,
+      "end": 144.254
+    },
+    {
+      "word": "same",
+      "start": 144.347,
+      "end": 144.683
+    },
+    {
+      "word": "base",
+      "start": 144.741,
+      "end": 145.008
+    },
+    {
+      "word": "image,",
+      "start": 145.043,
+      "end": 145.484
+    },
+    {
+      "word": "docker",
+      "start": 145.809,
+      "end": 146.169
+    },
+    {
+      "word": "only",
+      "start": 146.239,
+      "end": 146.425
+    },
+    {
+      "word": "keeps",
+      "start": 146.471,
+      "end": 146.727
+    },
+    {
+      "word": "a",
+      "start": 146.761,
+      "end": 146.796
+    },
+    {
+      "word": "single",
+      "start": 146.889,
+      "end": 147.237
+    },
+    {
+      "word": "copy",
+      "start": 147.284,
+      "end": 147.563
+    },
+    {
+      "word": "of",
+      "start": 147.609,
+      "end": 147.667
+    },
+    {
+      "word": "the",
+      "start": 147.702,
+      "end": 147.772
+    },
+    {
+      "word": "files",
+      "start": 147.83,
+      "end": 148.213
+    },
+    {
+      "word": "needed",
+      "start": 148.271,
+      "end": 148.596
+    },
+    {
+      "word": "and",
+      "start": 148.747,
+      "end": 148.967
+    },
+    {
+      "word": "shares",
+      "start": 149.037,
+      "end": 149.362
+    },
+    {
+      "word": "them",
+      "start": 149.409,
+      "end": 149.525
+    },
+    {
+      "word": "with",
+      "start": 149.571,
+      "end": 149.711
+    },
+    {
+      "word": "each",
+      "start": 149.792,
+      "end": 150.001
+    },
+    {
+      "word": "container.\n\nSo",
+      "start": 150.047,
+      "end": 151.533
+    },
+    {
+      "word": "how",
+      "start": 151.603,
+      "end": 151.719
+    },
+    {
+      "word": "do",
+      "start": 151.754,
+      "end": 151.812
+    },
+    {
+      "word": "we",
+      "start": 151.858,
+      "end": 151.928
+    },
+    {
+      "word": "use",
+      "start": 151.998,
+      "end": 152.16
+    },
+    {
+      "word": "docker?",
+      "start": 152.207,
+      "end": 152.741
+    },
+    {
+      "word": "You",
+      "start": 153.124,
+      "end": 153.263
+    },
+    {
+      "word": "begin",
+      "start": 153.344,
+      "end": 153.635
+    },
+    {
+      "word": "with",
+      "start": 153.704,
+      "end": 153.832
+    },
+    {
+      "word": "a",
+      "start": 153.867,
+      "end": 153.902
+    },
+    {
+      "word": "Dockerfile,",
+      "start": 153.995,
+      "end": 154.831
+    },
+    {
+      "word": "which",
+      "start": 154.912,
+      "end": 155.109
+    },
+    {
+      "word": "can",
+      "start": 155.144,
+      "end": 155.248
+    },
+    {
+      "word": "be",
+      "start": 155.295,
+      "end": 155.388
+    },
+    {
+      "word": "built",
+      "start": 155.446,
+      "end": 155.69
+    },
+    {
+      "word": "into",
+      "start": 155.759,
+      "end": 155.968
+    },
+    {
+      "word": "a",
+      "start": 156.05,
+      "end": 156.073
+    },
+    {
+      "word": "docker",
+      "start": 156.154,
+      "end": 156.468
+    },
+    {
+      "word": "image,",
+      "start": 156.526,
+      "end": 156.955
+    },
+    {
+      "word": "which",
+      "start": 157.164,
+      "end": 157.373
+    },
+    {
+      "word": "can",
+      "start": 157.42,
+      "end": 157.536
+    },
+    {
+      "word": "be",
+      "start": 157.582,
+      "end": 157.675
+    },
+    {
+      "word": "run",
+      "start": 157.756,
+      "end": 158.012
+    },
+    {
+      "word": "as",
+      "start": 158.105,
+      "end": 158.267
+    },
+    {
+      "word": "a",
+      "start": 158.325,
+      "end": 158.348
+    },
+    {
+      "word": "docker",
+      "start": 158.43,
+      "end": 158.743
+    },
+    {
+      "word": "container.\n\nThe",
+      "start": 158.79,
+      "end": 160.357
+    },
+    {
+      "word": "Dockerfile",
+      "start": 160.438,
+      "end": 161.123
+    },
+    {
+      "word": "is",
+      "start": 161.181,
+      "end": 161.332
+    },
+    {
+      "word": "a",
+      "start": 161.39,
+      "end": 161.413
+    },
+    {
+      "word": "surprisingly",
+      "start": 161.471,
+      "end": 162.203
+    },
+    {
+      "word": "simple",
+      "start": 162.273,
+      "end": 162.598
+    },
+    {
+      "word": "text",
+      "start": 162.632,
+      "end": 162.923
+    },
+    {
+      "word": "document",
+      "start": 162.969,
+      "end": 163.434
+    },
+    {
+      "word": "that",
+      "start": 163.643,
+      "end": 163.84
+    },
+    {
+      "word": "instructs",
+      "start": 163.887,
+      "end": 164.374
+    },
+    {
+      "word": "how",
+      "start": 164.444,
+      "end": 164.63
+    },
+    {
+      "word": "the",
+      "start": 164.688,
+      "end": 164.757
+    },
+    {
+      "word": "docker",
+      "start": 164.815,
+      "end": 165.094
+    },
+    {
+      "word": "image",
+      "start": 165.141,
+      "end": 165.373
+    },
+    {
+      "word": "will",
+      "start": 165.396,
+      "end": 165.547
+    },
+    {
+      "word": "be",
+      "start": 165.605,
+      "end": 165.686
+    },
+    {
+      "word": "built,",
+      "start": 165.744,
+      "end": 166.174
+    },
+    {
+      "word": "like",
+      "start": 166.325,
+      "end": 166.534
+    },
+    {
+      "word": "a",
+      "start": 166.557,
+      "end": 166.592
+    },
+    {
+      "word": "blueprint.",
+      "start": 166.627,
+      "end": 167.265
+    },
+    {
+      "word": "You",
+      "start": 167.869,
+      "end": 168.008
+    },
+    {
+      "word": "first",
+      "start": 168.124,
+      "end": 168.415
+    },
+    {
+      "word": "select",
+      "start": 168.484,
+      "end": 168.833
+    },
+    {
+      "word": "a",
+      "start": 168.879,
+      "end": 168.902
+    },
+    {
+      "word": "base",
+      "start": 168.983,
+      "end": 169.262
+    },
+    {
+      "word": "image",
+      "start": 169.297,
+      "end": 169.576
+    },
+    {
+      "word": "to",
+      "start": 169.622,
+      "end": 169.703
+    },
+    {
+      "word": "start",
+      "start": 169.785,
+      "end": 170.086
+    },
+    {
+      "word": "with",
+      "start": 170.133,
+      "end": 170.261
+    },
+    {
+      "word": "using",
+      "start": 170.33,
+      "end": 170.586
+    },
+    {
+      "word": "the",
+      "start": 170.644,
+      "end": 170.76
+    },
+    {
+      "word": "F",
+      "start": 170.876,
+      "end": 171.05
+    },
+    {
+      "word": "R",
+      "start": 171.224,
+      "end": 171.433
+    },
+    {
+      "word": "O",
+      "start": 171.584,
+      "end": 171.758
+    },
+    {
+      "word": "M",
+      "start": 171.909,
+      "end": 172.083
+    },
+    {
+      "word": "keyword,",
+      "start": 172.165,
+      "end": 172.78
+    },
+    {
+      "word": "which",
+      "start": 172.954,
+      "end": 173.14
+    },
+    {
+      "word": "you",
+      "start": 173.175,
+      "end": 173.244
+    },
+    {
+      "word": "can",
+      "start": 173.279,
+      "end": 173.395
+    },
+    {
+      "word": "find",
+      "start": 173.465,
+      "end": 173.744
+    },
+    {
+      "word": "from",
+      "start": 173.813,
+      "end": 173.964
+    },
+    {
+      "word": "the",
+      "start": 174.011,
+      "end": 174.08
+    },
+    {
+      "word": "docker",
+      "start": 174.138,
+      "end": 174.44
+    },
+    {
+      "word": "Hub.",
+      "start": 174.487,
+      "end": 174.881
+    },
+    {
+      "word": "Ubuntu",
+      "start": 175.578,
+      "end": 176.135
+    },
+    {
+      "word": "and",
+      "start": 176.228,
+      "end": 176.379
+    },
+    {
+      "word": "Alpine",
+      "start": 176.449,
+      "end": 176.878
+    },
+    {
+      "word": "Linux",
+      "start": 176.913,
+      "end": 177.227
+    },
+    {
+      "word": "are",
+      "start": 177.436,
+      "end": 177.61
+    },
+    {
+      "word": "popular",
+      "start": 177.644,
+      "end": 178.016
+    },
+    {
+      "word": "choices.",
+      "start": 178.062,
+      "end": 178.666
+    },
+    {
+      "word": "From",
+      "start": 179.177,
+      "end": 179.386
+    },
+    {
+      "word": "there",
+      "start": 179.444,
+      "end": 179.711
+    },
+    {
+      "word": "you",
+      "start": 179.781,
+      "end": 179.862
+    },
+    {
+      "word": "can",
+      "start": 179.908,
+      "end": 180.036
+    },
+    {
+      "word": "run",
+      "start": 180.117,
+      "end": 180.303
+    },
+    {
+      "word": "commands",
+      "start": 180.361,
+      "end": 180.791
+    },
+    {
+      "word": "such",
+      "start": 180.965,
+      "end": 181.197
+    },
+    {
+      "word": "as",
+      "start": 181.232,
+      "end": 181.325
+    },
+    {
+      "word": "downloading,",
+      "start": 181.441,
+      "end": 182.184
+    },
+    {
+      "word": "installing,",
+      "start": 182.253,
+      "end": 182.973
+    },
+    {
+      "word": "and",
+      "start": 183.089,
+      "end": 183.264
+    },
+    {
+      "word": "running",
+      "start": 183.38,
+      "end": 183.658
+    },
+    {
+      "word": "your",
+      "start": 183.716,
+      "end": 183.821
+    },
+    {
+      "word": "software.\n\nOnce",
+      "start": 183.856,
+      "end": 185.272
+    },
+    {
+      "word": "the",
+      "start": 185.319,
+      "end": 185.4
+    },
+    {
+      "word": "Dockerfile's",
+      "start": 185.469,
+      "end": 186.05
+    },
+    {
+      "word": "complete,",
+      "start": 186.108,
+      "end": 186.665
+    },
+    {
+      "word": "we",
+      "start": 186.874,
+      "end": 187.002
+    },
+    {
+      "word": "can",
+      "start": 187.06,
+      "end": 187.188
+    },
+    {
+      "word": "build",
+      "start": 187.257,
+      "end": 187.478
+    },
+    {
+      "word": "it",
+      "start": 187.524,
+      "end": 187.594
+    },
+    {
+      "word": "using",
+      "start": 187.664,
+      "end": 187.966
+    },
+    {
+      "word": "docker",
+      "start": 188.058,
+      "end": 188.36
+    },
+    {
+      "word": "build",
+      "start": 188.407,
+      "end": 188.674
+    },
+    {
+      "word": "followed",
+      "start": 188.918,
+      "end": 189.278
+    },
+    {
+      "word": "by",
+      "start": 189.312,
+      "end": 189.428
+    },
+    {
+      "word": "the",
+      "start": 189.486,
+      "end": 189.556
+    },
+    {
+      "word": "-t",
+      "start": 189.591,
+      "end": 189.8
+    },
+    {
+      "word": "flag",
+      "start": 189.916,
+      "end": 190.264
+    },
+    {
+      "word": "so",
+      "start": 190.392,
+      "end": 190.555
+    },
+    {
+      "word": "we",
+      "start": 190.613,
+      "end": 190.682
+    },
+    {
+      "word": "can",
+      "start": 190.729,
+      "end": 190.845
+    },
+    {
+      "word": "name",
+      "start": 190.926,
+      "end": 191.158
+    },
+    {
+      "word": "our",
+      "start": 191.193,
+      "end": 191.309
+    },
+    {
+      "word": "image,",
+      "start": 191.367,
+      "end": 191.739
+    },
+    {
+      "word": "and",
+      "start": 191.89,
+      "end": 192.041
+    },
+    {
+      "word": "pass",
+      "start": 192.11,
+      "end": 192.342
+    },
+    {
+      "word": "the",
+      "start": 192.388,
+      "end": 192.458
+    },
+    {
+      "word": "command",
+      "start": 192.505,
+      "end": 192.934
+    },
+    {
+      "word": "the",
+      "start": 193.05,
+      "end": 193.143
+    },
+    {
+      "word": "location",
+      "start": 193.201,
+      "end": 193.654
+    },
+    {
+      "word": "of",
+      "start": 193.7,
+      "end": 193.747
+    },
+    {
+      "word": "the",
+      "start": 193.782,
+      "end": 193.851
+    },
+    {
+      "word": "Dockerfile.",
+      "start": 193.886,
+      "end": 194.583
+    },
+    {
+      "word": "Once",
+      "start": 195.279,
+      "end": 195.558
+    },
+    {
+      "word": "complete,",
+      "start": 195.604,
+      "end": 196.127
+    },
+    {
+      "word": "you",
+      "start": 196.278,
+      "end": 196.371
+    },
+    {
+      "word": "can",
+      "start": 196.429,
+      "end": 196.556
+    },
+    {
+      "word": "verify",
+      "start": 196.638,
+      "end": 197.102
+    },
+    {
+      "word": "your",
+      "start": 197.183,
+      "end": 197.3
+    },
+    {
+      "word": "image's",
+      "start": 197.346,
+      "end": 197.648
+    },
+    {
+      "word": "existence",
+      "start": 197.706,
+      "end": 198.17
+    },
+    {
+      "word": "with",
+      "start": 198.193,
+      "end": 198.333
+    },
+    {
+      "word": "docker",
+      "start": 198.402,
+      "end": 198.716
+    },
+    {
+      "word": "images.\n\nNow",
+      "start": 198.774,
+      "end": 200.144
+    },
+    {
+      "word": "your",
+      "start": 200.225,
+      "end": 200.411
+    },
+    {
+      "word": "built",
+      "start": 200.469,
+      "end": 200.655
+    },
+    {
+      "word": "image",
+      "start": 200.701,
+      "end": 200.91
+    },
+    {
+      "word": "can",
+      "start": 200.945,
+      "end": 201.061
+    },
+    {
+      "word": "run",
+      "start": 201.119,
+      "end": 201.259
+    },
+    {
+      "word": "a",
+      "start": 201.293,
+      "end": 201.317
+    },
+    {
+      "word": "container",
+      "start": 201.363,
+      "end": 201.839
+    },
+    {
+      "word": "of",
+      "start": 201.874,
+      "end": 201.92
+    },
+    {
+      "word": "that",
+      "start": 201.967,
+      "end": 202.094
+    },
+    {
+      "word": "image,",
+      "start": 202.141,
+      "end": 202.501
+    },
+    {
+      "word": "or",
+      "start": 202.779,
+      "end": 202.907
+    },
+    {
+      "word": "you",
+      "start": 202.965,
+      "end": 203.035
+    },
+    {
+      "word": "can",
+      "start": 203.07,
+      "end": 203.186
+    },
+    {
+      "word": "push",
+      "start": 203.255,
+      "end": 203.441
+    },
+    {
+      "word": "it",
+      "start": 203.488,
+      "end": 203.546
+    },
+    {
+      "word": "to",
+      "start": 203.569,
+      "end": 203.627
+    },
+    {
+      "word": "the",
+      "start": 203.685,
+      "end": 203.755
+    },
+    {
+      "word": "cloud",
+      "start": 203.789,
+      "end": 204.103
+    },
+    {
+      "word": "to",
+      "start": 204.184,
+      "end": 204.312
+    },
+    {
+      "word": "share",
+      "start": 204.405,
+      "end": 204.695
+    },
+    {
+      "word": "with",
+      "start": 204.718,
+      "end": 204.846
+    },
+    {
+      "word": "others.",
+      "start": 204.904,
+      "end": 205.369
+    },
+    {
+      "word": "If",
+      "start": 205.88,
+      "end": 206.007
+    },
+    {
+      "word": "you",
+      "start": 206.042,
+      "end": 206.112
+    },
+    {
+      "word": "don't",
+      "start": 206.182,
+      "end": 206.379
+    },
+    {
+      "word": "create",
+      "start": 206.425,
+      "end": 206.751
+    },
+    {
+      "word": "your",
+      "start": 206.785,
+      "end": 206.936
+    },
+    {
+      "word": "own",
+      "start": 207.018,
+      "end": 207.25
+    },
+    {
+      "word": "docker",
+      "start": 207.308,
+      "end": 207.586
+    },
+    {
+      "word": "image",
+      "start": 207.633,
+      "end": 207.946
+    },
+    {
+      "word": "and",
+      "start": 208.028,
+      "end": 208.202
+    },
+    {
+      "word": "just",
+      "start": 208.248,
+      "end": 208.422
+    },
+    {
+      "word": "want",
+      "start": 208.469,
+      "end": 208.608
+    },
+    {
+      "word": "to",
+      "start": 208.631,
+      "end": 208.678
+    },
+    {
+      "word": "use",
+      "start": 208.747,
+      "end": 208.945
+    },
+    {
+      "word": "a",
+      "start": 208.968,
+      "end": 209.003
+    },
+    {
+      "word": "pre-made",
+      "start": 209.084,
+      "end": 209.549
+    },
+    {
+      "word": "one,",
+      "start": 209.583,
+      "end": 209.874
+    },
+    {
+      "word": "you",
+      "start": 210.083,
+      "end": 210.175
+    },
+    {
+      "word": "can",
+      "start": 210.234,
+      "end": 210.361
+    },
+    {
+      "word": "pull",
+      "start": 210.442,
+      "end": 210.663
+    },
+    {
+      "word": "one",
+      "start": 210.733,
+      "end": 210.884
+    },
+    {
+      "word": "from",
+      "start": 210.93,
+      "end": 211.069
+    },
+    {
+      "word": "the",
+      "start": 211.116,
+      "end": 211.186
+    },
+    {
+      "word": "docker",
+      "start": 211.244,
+      "end": 211.534
+    },
+    {
+      "word": "Hub",
+      "start": 211.569,
+      "end": 211.789
+    },
+    {
+      "word": "using",
+      "start": 211.998,
+      "end": 212.288
+    },
+    {
+      "word": "docker",
+      "start": 212.37,
+      "end": 212.66
+    },
+    {
+      "word": "pull",
+      "start": 212.695,
+      "end": 212.927
+    },
+    {
+      "word": "and",
+      "start": 213.055,
+      "end": 213.275
+    },
+    {
+      "word": "the",
+      "start": 213.333,
+      "end": 213.415
+    },
+    {
+      "word": "image",
+      "start": 213.496,
+      "end": 213.786
+    },
+    {
+      "word": "name.",
+      "start": 213.833,
+      "end": 214.239
+    },
+    {
+      "word": "You",
+      "start": 214.843,
+      "end": 214.97
+    },
+    {
+      "word": "may",
+      "start": 215.028,
+      "end": 215.168
+    },
+    {
+      "word": "also",
+      "start": 215.226,
+      "end": 215.458
+    },
+    {
+      "word": "include",
+      "start": 215.539,
+      "end": 215.888
+    },
+    {
+      "word": "a",
+      "start": 215.911,
+      "end": 215.946
+    },
+    {
+      "word": "tag",
+      "start": 216.015,
+      "end": 216.375
+    },
+    {
+      "word": "if",
+      "start": 216.445,
+      "end": 216.584
+    },
+    {
+      "word": "one's",
+      "start": 216.654,
+      "end": 216.851
+    },
+    {
+      "word": "available,",
+      "start": 216.874,
+      "end": 217.49
+    },
+    {
+      "word": "which",
+      "start": 217.699,
+      "end": 217.908
+    },
+    {
+      "word": "may",
+      "start": 217.954,
+      "end": 218.082
+    },
+    {
+      "word": "specify",
+      "start": 218.128,
+      "end": 218.651
+    },
+    {
+      "word": "a",
+      "start": 218.709,
+      "end": 218.732
+    },
+    {
+      "word": "version",
+      "start": 218.79,
+      "end": 219.139
+    },
+    {
+      "word": "or",
+      "start": 219.22,
+      "end": 219.371
+    },
+    {
+      "word": "variant",
+      "start": 219.464,
+      "end": 219.905
+    },
+    {
+      "word": "of",
+      "start": 219.94,
+      "end": 219.998
+    },
+    {
+      "word": "the",
+      "start": 220.033,
+      "end": 220.102
+    },
+    {
+      "word": "software.\n\nTo",
+      "start": 220.137,
+      "end": 221.414
+    },
+    {
+      "word": "run",
+      "start": 221.496,
+      "end": 221.647
+    },
+    {
+      "word": "a",
+      "start": 221.681,
+      "end": 221.705
+    },
+    {
+      "word": "container,",
+      "start": 221.751,
+      "end": 222.459
+    },
+    {
+      "word": "pull",
+      "start": 222.668,
+      "end": 222.854
+    },
+    {
+      "word": "it",
+      "start": 222.912,
+      "end": 222.982
+    },
+    {
+      "word": "down",
+      "start": 223.028,
+      "end": 223.237
+    },
+    {
+      "word": "from",
+      "start": 223.295,
+      "end": 223.435
+    },
+    {
+      "word": "the",
+      "start": 223.469,
+      "end": 223.539
+    },
+    {
+      "word": "docker",
+      "start": 223.585,
+      "end": 223.864
+    },
+    {
+      "word": "Hub",
+      "start": 223.899,
+      "end": 224.143
+    },
+    {
+      "word": "or",
+      "start": 224.526,
+      "end": 224.688
+    },
+    {
+      "word": "build",
+      "start": 224.758,
+      "end": 225.025
+    },
+    {
+      "word": "the",
+      "start": 225.072,
+      "end": 225.141
+    },
+    {
+      "word": "image,",
+      "start": 225.211,
+      "end": 225.687
+    },
+    {
+      "word": "then",
+      "start": 226.012,
+      "end": 226.256
+    },
+    {
+      "word": "enter",
+      "start": 226.372,
+      "end": 226.639
+    },
+    {
+      "word": "docker",
+      "start": 226.72,
+      "end": 227.022
+    },
+    {
+      "word": "run",
+      "start": 227.068,
+      "end": 227.335
+    },
+    {
+      "word": "followed",
+      "start": 227.579,
+      "end": 227.974
+    },
+    {
+      "word": "by",
+      "start": 228.032,
+      "end": 228.148
+    },
+    {
+      "word": "the",
+      "start": 228.206,
+      "end": 228.287
+    },
+    {
+      "word": "image",
+      "start": 228.369,
+      "end": 228.659
+    },
+    {
+      "word": "name.",
+      "start": 228.705,
+      "end": 229.1
+    },
+    {
+      "word": "There",
+      "start": 229.913,
+      "end": 230.122
+    },
+    {
+      "word": "are",
+      "start": 230.157,
+      "end": 230.273
+    },
+    {
+      "word": "many",
+      "start": 230.342,
+      "end": 230.575
+    },
+    {
+      "word": "options",
+      "start": 230.644,
+      "end": 230.969
+    },
+    {
+      "word": "available,",
+      "start": 231.004,
+      "end": 231.608
+    },
+    {
+      "word": "such",
+      "start": 231.782,
+      "end": 232.003
+    },
+    {
+      "word": "as",
+      "start": 232.049,
+      "end": 232.154
+    },
+    {
+      "word": "running",
+      "start": 232.281,
+      "end": 232.548
+    },
+    {
+      "word": "it",
+      "start": 232.595,
+      "end": 232.653
+    },
+    {
+      "word": "in",
+      "start": 232.688,
+      "end": 232.746
+    },
+    {
+      "word": "detached",
+      "start": 232.804,
+      "end": 233.199
+    },
+    {
+      "word": "mode",
+      "start": 233.257,
+      "end": 233.628
+    },
+    {
+      "word": "with",
+      "start": 233.779,
+      "end": 234.011
+    },
+    {
+      "word": "-d,",
+      "start": 234.069,
+      "end": 234.708
+    },
+    {
+      "word": "or",
+      "start": 234.917,
+      "end": 235.068
+    },
+    {
+      "word": "assigning",
+      "start": 235.126,
+      "end": 235.52
+    },
+    {
+      "word": "ports",
+      "start": 235.59,
+      "end": 235.845
+    },
+    {
+      "word": "for",
+      "start": 235.88,
+      "end": 235.985
+    },
+    {
+      "word": "web",
+      "start": 236.054,
+      "end": 236.229
+    },
+    {
+      "word": "services.",
+      "start": 236.298,
+      "end": 236.96
+    },
+    {
+      "word": "You",
+      "start": 237.657,
+      "end": 237.784
+    },
+    {
+      "word": "can",
+      "start": 237.842,
+      "end": 237.958
+    },
+    {
+      "word": "view",
+      "start": 238.016,
+      "end": 238.191
+    },
+    {
+      "word": "your",
+      "start": 238.249,
+      "end": 238.376
+    },
+    {
+      "word": "running",
+      "start": 238.434,
+      "end": 238.667
+    },
+    {
+      "word": "containers",
+      "start": 238.701,
+      "end": 239.189
+    },
+    {
+      "word": "with",
+      "start": 239.235,
+      "end": 239.386
+    },
+    {
+      "word": "docker",
+      "start": 239.468,
+      "end": 239.828
+    },
+    {
+      "word": "container",
+      "start": 239.874,
+      "end": 240.338
+    },
+    {
+      "word": "ls.",
+      "start": 240.455,
+      "end": 241.209
+    }
+  ]
+}

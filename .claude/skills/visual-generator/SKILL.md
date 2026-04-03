@@ -6,8 +6,13 @@ Komponenta je FULLSCREEN (1920x1080). Zauzima ceo ekran. Animacija prati govor �
 
 **Trigger:** "generisi vizual", "generate visual", "napravi komponentu za transcript", "visual from scratch"
 
-**Input:** Transcript (tekst ili fajl)
-**Output:** Nova .tsx datoteka u `templates/ai-video-gen-pipeline/src/visuals/Generated_{name}.tsx`
+**Input:**
+- Transcript segment (tekst)
+- Word-level timestamps iz voiceover-timestamps.json (niz `{ word, start, end }`)
+- fps (default 30)
+- startFrame — frame od kog počinje ovaj segment u celom videu
+
+**Output:** Nova .tsx datoteka u `videos/{project-name}/src/visuals/Generated_{name}.tsx`
 
 ---
 
@@ -67,9 +72,14 @@ TEK POSLE ovog razmisljanja — pisi kod.
 
 ## WORKFLOW
 
-### KORAK 1: Procitaj transcript
+### KORAK 1: Procitaj transcript + timestamps
 
-Procitaj transcript iz fajla ili od usera.
+Procitaj transcript segment i word-level timestamps. Timestamps dolaze iz voiceover-timestamps.json:
+```json
+{ "words": [{ "word": "Docker", "start": 4.23, "end": 4.55 }, ...] }
+```
+
+Ovi timestamps su OBAVEZNI — bez njih ne možeš sinhronizovati animacije sa glasom.
 
 ### KORAK 2: Procitaj pravila
 
@@ -88,14 +98,30 @@ Pisi CELU komponentu od nule. Svaki element, svaki stil, svaka animacija — sve
 
 Komponenta je 1920x1080 fullscreen. Koristi useCurrentFrame() za animacije.
 
-**Timeline:** Svaki element ima startFrame koji odgovara MOMENTU kad narator prica o njemu. Elementi se pojavljuju postepeno tokom celog trajanja naracije, ne svi odjednom.
+**TIMESTAMP SYNC — OBAVEZNO:**
+Svaki element ima startFrame koji se računa iz voiceover timestamps:
+```tsx
+// Nađi reč u timestamps nizu
+const findWord = (word: string) => timestamps.find(w => w.word.toLowerCase().includes(word.toLowerCase()));
+
+// Frame kad narator kaže "FROM"
+const FROM_HL = Math.round(findWord("FROM").start * fps);
+// Frame kad narator kaže "COPY"  
+const COPY_HL = Math.round(findWord("COPY").start * fps);
+```
+
+**NIKAD hardkodirati frameove napamet!** Svaki frame MORA doći iz timestamps-a. Element se pojavi TAČNO kad narator izgovori ključnu reč — na milisekundu tačno.
+
+**FRAME CONTRACT:** `useCurrentFrame()` vraća GLOBALNI frame. NE dodavaj OFFSET. Timestamps su apsolutni. Vidi `reference/generation-rules.md` FRAME CONTRACT sekciju.
+
+Ako timestamp niz dolazi kao prop ili se čita iz fajla, definiši ga na vrhu komponente.
 
 **Komponenta MORA pratiti pravila iz `reference/generation-rules.md`.**
 
 ### KORAK 5: Sacuvaj fajl
 
 ```
-templates/ai-video-gen-pipeline/src/visuals/Generated_{ImeKoncepta}.tsx
+videos/{project-name}/src/visuals/Generated_{ImeKoncepta}.tsx
 ```
 
 ### KORAK 6: Prikazi korisniku

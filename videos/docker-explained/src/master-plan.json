@@ -1,0 +1,108 @@
+{
+  "meta": {
+    "title": "What is Docker?",
+    "fps": 30,
+    "totalFrames": 7267,
+    "totalDuration": 242.2,
+    "hierarchyType": "fullscreen"
+  },
+
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 241.209,
+    "wordCount": 626
+  },
+
+  "structure": {
+    "stickies": [
+      {
+        "id": "segment_1",
+        "mode": "fullscreen",
+        "step": 1,
+        "title": "What is Docker",
+        "startFrame": 0,
+        "endFrame": 945,
+        "componentPath": "src/visuals/Generated_WhatIsDocker.tsx",
+        "transcriptSegment": "What is Docker? Docker's a software development platform and virtualization technology that makes it easy to develop and deploy apps inside neatly packaged virtual containerized environments. This means apps run the same no matter where they are or what machine they're running on. Docker containers can be deployed to just about any machine without compatibility issues, so your software stays system agnostic. That makes software simpler to use, less work to develop, and easier to maintain and deploy."
+      },
+      {
+        "id": "segment_2",
+        "mode": "fullscreen",
+        "step": 2,
+        "title": "Containers as Micro Computers",
+        "startFrame": 975,
+        "endFrame": 1993,
+        "componentPath": "src/visuals/Generated_ContainersMicroComputers.tsx",
+        "transcriptSegment": "These containers running on your computer or server act like little micro computers, each with very specific jobs, each with their own operating system, their own isolated CPU processes, memory, and network resources. Because of this, they can be easily added, removed, stopped, and started again without affecting each other or the host machine. Containers usually run one specific task, such as a MySQL database or a Node.js application, and then they're networked together and potentially scaled."
+      },
+      {
+        "id": "segment_3",
+        "mode": "fullscreen",
+        "step": 3,
+        "title": "Docker Hub",
+        "startFrame": 2010,
+        "endFrame": 2521,
+        "componentPath": "src/visuals/Generated_DockerHub.tsx",
+        "transcriptSegment": "A developer will usually start by accessing the Docker Hub, an online cloud repository of Docker containers, and pull one containing a pre-configured environment for their specific programming language, such as Ruby or Node.js, with all the files and frameworks needed to get started."
+      },
+      {
+        "id": "segment_4",
+        "mode": "fullscreen",
+        "step": 4,
+        "title": "Docker vs Virtual Machines",
+        "startFrame": 2550,
+        "endFrame": 4501,
+        "componentPath": "src/visuals/Generated_DockerVsVMs.tsx",
+        "transcriptSegment": "Docker's a form of virtualization, but unlike virtual machines, the resources are shared directly with the host. This allows you to run many Docker containers where you might only be able to run a few virtual machines. A virtual machine has to quarantine off a set amount of resources, hard drive space, memory, and processing power, emulate hardware, and then boot an entire operating system. The VM then communicates with the host computer via a translator application running on the host operating system called a hypervisor. Docker communicates natively with the system kernel, bypassing the middleman on Linux machines, and even Windows 10 and Windows Server 2016 and above. This means you can run any version of Linux in a container and it'll run natively. Docker also uses less disk space, as it reuses files efficiently through a layered file system. If you have multiple Docker images using the same base image, Docker only keeps a single copy of the files needed and shares them with each container."
+      },
+      {
+        "id": "segment_5",
+        "mode": "fullscreen",
+        "step": 5,
+        "title": "Dockerfile to Container",
+        "startFrame": 4530,
+        "endFrame": 5515,
+        "componentPath": "src/visuals/Generated_DockerfileToContainer.tsx",
+        "transcriptSegment": "So how do we use Docker? You begin with a Dockerfile, which can be built into a Docker image, which can be run as a Docker container. The Dockerfile is a surprisingly simple text document that instructs how the Docker image will be built, like a blueprint. You first select a base image to start with using the FROM keyword, which you can find from the Docker Hub. Ubuntu and Alpine Linux are popular choices. From there you can run commands such as downloading, installing, and running your software."
+      },
+      {
+        "id": "segment_6",
+        "mode": "fullscreen",
+        "step": 6,
+        "title": "Docker Commands",
+        "startFrame": 5550,
+        "endFrame": 7236,
+        "componentPath": "src/visuals/Generated_DockerCommands.tsx",
+        "transcriptSegment": "Once the Dockerfile's complete, we can build it using docker build followed by the -t flag so we can name our image, and pass the command the location of the Dockerfile. Once complete, you can verify your image's existence with docker images. Now your built image can run a container of that image, or you can push it to the cloud to share with others. If you don't create your own Docker image and just want to use a pre-made one, you can pull one from the Docker Hub using docker pull and the image name. You may also include a tag if one's available, which may specify a version or variant of the software. To run a container, pull it down from the Docker Hub or build the image, then enter docker run followed by the image name. There are many options available, such as running it in detached mode with -d, or assigning ports for web services. You can view your running containers with docker container ls."
+      }
+    ]
+  },
+
+  "camera": {
+    "keyframes": [
+      { "frame": 0, "target": "segment_1", "x": 960, "y": 540, "scale": 1.0 },
+      { "frame": 960, "target": "segment_2", "x": 960, "y": 540, "scale": 1.0 },
+      { "frame": 1995, "target": "segment_3", "x": 960, "y": 540, "scale": 1.0 },
+      { "frame": 2535, "target": "segment_4", "x": 960, "y": 540, "scale": 1.0 },
+      { "frame": 4515, "target": "segment_5", "x": 960, "y": 540, "scale": 1.0 },
+      { "frame": 5535, "target": "segment_6", "x": 960, "y": 540, "scale": 1.0 }
+    ]
+  },
+
+  "sounds": {
+    "points": [
+      { "frame": 0, "type": "title", "file": "soft-whoosh.mp3", "volume": 0.15 },
+      { "frame": 958, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 985, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 1993, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2020, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 2533, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 2560, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 4513, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 4540, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 },
+      { "frame": 5533, "type": "camera", "file": "medium-whoosh.mp3", "volume": 0.25 },
+      { "frame": 5560, "type": "section", "file": "soft-whoosh.mp3", "volume": 0.12 }
+    ],
+    "totalCount": 11
+  }
+}
