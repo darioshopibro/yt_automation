@@ -34,10 +34,11 @@ RSS_FEEDS = {
 
 # Scoring weights (default, before adaptive learning kicks in)
 # Engagement is king — a topic nobody cares about isn't worth covering
-# even if it's fresh. Freshness is secondary signal.
+# even if it's fresh. Demand measures if people are actually searching for it.
 DEFAULT_WEIGHTS = {
-    "engagement": 0.50,
-    "freshness": 0.25,
+    "engagement": 0.40,
+    "freshness": 0.20,
+    "demand": 0.15,
     "opportunity": 0.25,
 }
 

@@ -86,30 +86,121 @@ def multi_source_boost(sources):
     return config.MULTI_SOURCE_BOOST.get(count, config.MULTI_SOURCE_BOOST_MAX)
 
 
-def score_topic(sources):
-    """Calculate final score for a topic.
+def demand_score(demand_data):
+    """Calculate demand score from YouTube Search Suggest data.
+
+    Args:
+        demand_data: dict from demand_scanner.check_demand() or None
 
     Returns:
-        dict with engagement, freshness, opportunity, boost, final_score
+        float 0-1 representing search demand
+    """
+    if not demand_data:
+        return 0.3  # neutral default when no demand data available
+
+    return demand_data.get("demand_signal", 0.3)
+
+
+def outlier_boost(sources):
+    """Extra boost for topics that contain outlier videos.
+
+    An outlier video (3x+ channel average) is strong proof of demand.
+    """
+    for s in sources:
+        raw = s.get("raw_data", {})
+        if raw.get("is_outlier") and raw.get("outlier_ratio", 0) >= 3:
+            ratio = raw["outlier_ratio"]
+            # 3x = 0.10 boost, 5x = 0.15, 10x+ = 0.20 (capped)
+            return min(0.05 + (ratio - 3) * 0.02, 0.20)
+    return 0.0
+
+
+def velocity_score(velocity_data):
+    """Score based on topic growth between scans.
+
+    Args:
+        velocity_data: list of velocity records from db.get_velocity()
+
+    Returns:
+        float 0-1 representing growth velocity
+    """
+    if not velocity_data or len(velocity_data) < 2:
+        return 0.5  # neutral when not enough history
+
+    latest = velocity_data[0]
+    previous = velocity_data[1]
+
+    # Compare source count growth
+    source_growth = 0
+    if previous["source_count"] > 0:
+        source_growth = (latest["source_count"] - previous["source_count"]) / previous["source_count"]
+
+    # Compare engagement growth
+    eng_growth = 0
+    if previous["total_engagement"] > 0:
+        eng_growth = (latest["total_engagement"] - previous["total_engagement"]) / previous["total_engagement"]
+
+    # Combined velocity: weighted avg of source and engagement growth
+    velocity = (source_growth * 0.4 + eng_growth * 0.6)
+
+    # Map to 0-1 scale: -50% decline = 0, stable = 0.5, +100% growth = 1.0
+    normalized = min(max((velocity + 0.5) / 1.5, 0), 1.0)
+
+    return round(normalized, 3)
+
+
+def score_topic(sources, demand_data=None, velocity_data=None):
+    """Calculate final score for a topic.
+
+    Now includes:
+    - demand_score: YouTube search suggest data (are people searching for this?)
+    - outlier_boost: bonus for topics with viral videos (3x+ channel avg)
+    - velocity_score: is this topic growing between scans?
+
+    Returns:
+        dict with all scores and final_score
     """
     eng = engagement_score(sources)
     fresh = freshness_score(sources)
     boost = multi_source_boost(sources)
+    demand = demand_score(demand_data)
+    outlier = outlier_boost(sources)
+    velocity = velocity_score(velocity_data)
 
-    # Opportunity = placeholder 0.5 (competition check is expensive, done later for top candidates)
+    # Opportunity = placeholder 0.5
     opp = 0.5
 
     # Get weights (adaptive or default)
     weights = _get_weights()
 
-    base = (eng * weights["engagement"]) + (fresh * weights["freshness"]) + (opp * weights["opportunity"])
-    final = base * (1 + boost)
+    # New formula: engagement + freshness + demand + opportunity
+    # demand replaces some of opportunity's weight
+    demand_weight = weights.get("demand", 0.15)
+    opp_weight = max(weights["opportunity"] - demand_weight, 0.10)
+
+    base = (
+        eng * weights["engagement"]
+        + fresh * weights["freshness"]
+        + demand * demand_weight
+        + opp * opp_weight
+    )
+
+    # Apply boosts
+    total_boost = boost + outlier
+    final = base * (1 + total_boost)
+
+    # Velocity modifier: topics growing fast get up to 10% extra
+    velocity_modifier = (velocity - 0.5) * 0.2  # -0.1 to +0.1
+    final = final * (1 + velocity_modifier)
 
     return {
         "engagement": round(eng, 3),
         "freshness": round(fresh, 3),
+        "demand": round(demand, 3),
+        "velocity": round(velocity, 3),
         "competition": round(1 - opp, 3),
         "boost": round(boost, 2),
+        "outlier_boost": round(outlier, 3),
         "final_score": round(final, 4),
         "multi_source_count": len(set(s.get("source_type", "") for s in sources)),
     }

@@ -1,0 +1,61 @@
+{
+  "run_id": 1,
+  "total_steps": 6,
+  "ok": 5,
+  "failed": 0,
+  "partial": 1,
+  "total_duration_s": 249.2,
+  "overall_status": "ok",
+  "steps": [
+    {
+      "step": "scan_sources",
+      "status": "partial",
+      "duration_ms": 21488,
+      "items_in": 0,
+      "items_out": 236,
+      "errors": [
+        "tiktok: @tabortime: yt-dlp failed for @tabortime (TikTok user extractor is flaky \u2014 known issue); @iamcoreyt: yt-dlp failed for @iamcoreyt (TikTok user extractor is flaky \u2014 known issue); @techbytim: yt-dlp failed for @techbytim (TikTok user extractor is flaky \u2014 known issue); @firikiapp: yt-dlp failed for @firikiapp (TikTok user extractor is flaky \u2014 known issue)"
+      ]
+    },
+    {
+      "step": "cluster_topics",
+      "status": "ok",
+      "duration_ms": 141269,
+      "items_in": 236,
+      "items_out": 51,
+      "errors": []
+    },
+    {
+      "step": "check_demand",
+      "status": "ok",
+      "duration_ms": 32129,
+      "items_in": 51,
+      "items_out": 51,
+      "errors": []
+    },
+    {
+      "step": "score_and_store",
+      "status": "ok",
+      "duration_ms": 339,
+      "items_in": 51,
+      "items_out": 51,
+      "errors": []
+    },
+    {
+      "step": "self_improvement",
+      "status": "ok",
+      "duration_ms": 53960,
+      "items_in": 236,
+      "items_out": 6,
+      "errors": []
+    },
+    {
+      "step": "adaptive_learning",
+      "status": "ok",
+      "duration_ms": 4,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    }
+  ]
+}

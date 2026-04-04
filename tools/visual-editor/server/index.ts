@@ -595,6 +595,596 @@ app.get('/api/research/scripts', (req, res) => {
   }
 });
 
+// ============================================================
+// REVIEW API — Video Review Editor
+// ============================================================
+
+// GET /api/review/projects — list video projects with Generated_*.tsx files
+app.get('/api/review/projects', (_req, res) => {
+  const videosDir = path.join(BASE_PATH, 'videos');
+  if (!fs.existsSync(videosDir)) return res.json({ projects: [] });
+
+  const projects: string[] = [];
+  try {
+    for (const entry of fs.readdirSync(videosDir, { withFileTypes: true })) {
+      if (!entry.isDirectory() || entry.name.startsWith('.') || entry.name === 'node_modules' || entry.name === 'good-examples') continue;
+      const visualsDir = path.join(videosDir, entry.name, 'src', 'visuals');
+      if (fs.existsSync(visualsDir)) {
+        const hasGenerated = fs.readdirSync(visualsDir).some(f => f.startsWith('Generated_') && f.endsWith('.tsx'));
+        if (hasGenerated) projects.push(entry.name);
+      }
+    }
+  } catch { /* ignore */ }
+  res.json({ projects });
+});
+
+// GET /api/review/segments?project=api-keys — parse Root.tsx for segment info
+app.get('/api/review/segments', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  const rootPath = path.join(BASE_PATH, 'videos', sanitized, 'src', 'Root.tsx');
+  if (!fs.existsSync(rootPath)) return res.status(404).json({ error: 'Root.tsx not found' });
+
+  try {
+    const rootContent = fs.readFileSync(rootPath, 'utf-8');
+
+    // Parse segments from Root.tsx: { Component: Generated_X, startFrame: 0, endFrame: 633 }
+    const segmentRegex = /\{\s*Component:\s*(\w+),\s*startFrame:\s*(\d+),\s*endFrame:\s*(\d+)\s*\}/g;
+    const segments: any[] = [];
+    let match;
+    while ((match = segmentRegex.exec(rootContent)) !== null) {
+      const componentName = match[1];
+      const fileName = `${componentName}.tsx`;
+      const filePath = path.join(BASE_PATH, 'videos', sanitized, 'src', 'visuals', fileName);
+      segments.push({
+        id: `segment_${segments.length + 1}`,
+        componentName,
+        file: fileName,
+        startFrame: parseInt(match[2]),
+        endFrame: parseInt(match[3]),
+        title: componentName.replace('Generated_', '').replace(/([A-Z])/g, ' $1').trim(),
+        exists: fs.existsSync(filePath),
+      });
+    }
+
+    // Parse composition info: durationInFrames, fps, width, height
+    const durationMatch = rootContent.match(/durationInFrames=\{(\d+)\}/);
+    const fpsMatch = rootContent.match(/fps=\{(\d+)\}/);
+    const widthMatch = rootContent.match(/width=\{(\d+)\}/);
+    const heightMatch = rootContent.match(/height=\{(\d+)\}/);
+
+    res.json({
+      segments,
+      composition: {
+        durationInFrames: durationMatch ? parseInt(durationMatch[1]) : 0,
+        fps: fpsMatch ? parseInt(fpsMatch[1]) : 30,
+        width: widthMatch ? parseInt(widthMatch[1]) : 1920,
+        height: heightMatch ? parseInt(heightMatch[1]) : 1080,
+      }
+    });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/review?project=api-keys — read review.json
+app.get('/api/review', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+  const reviewPath = path.join(BASE_PATH, 'videos', sanitized, 'review.json');
+
+  if (!fs.existsSync(reviewPath)) {
+    return res.json({ review: null });
+  }
+
+  try {
+    res.json({ review: JSON.parse(fs.readFileSync(reviewPath, 'utf-8')) });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/review?project=api-keys — save review.json
+app.post('/api/review', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+  const reviewPath = path.join(BASE_PATH, 'videos', sanitized, 'review.json');
+
+  try {
+    fs.writeFileSync(reviewPath, JSON.stringify(req.body, null, 2));
+    res.json({ ok: true });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/review/regenerate — create queue request for segment regeneration
+app.post('/api/review/regenerate', (req, res) => {
+  const { project, segmentId, file, comment, transcriptSegment, timestamps, startFrame, endFrame } = req.body;
+  if (!project || !segmentId || !file) return res.status(400).json({ error: 'Missing required fields' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  const queueDir = path.join(BASE_PATH, 'videos', sanitized, 'queue');
+  if (!fs.existsSync(queueDir)) fs.mkdirSync(queueDir, { recursive: true });
+
+  // Backup current file before regeneration
+  const versionsDir = path.join(BASE_PATH, 'videos', sanitized, 'versions');
+  if (!fs.existsSync(versionsDir)) fs.mkdirSync(versionsDir, { recursive: true });
+
+  const currentFile = path.join(BASE_PATH, 'videos', sanitized, 'src', 'visuals', file);
+  if (fs.existsSync(currentFile)) {
+    const baseName = file.replace('.tsx', '');
+    const existing = fs.readdirSync(versionsDir).filter(f => f.startsWith(baseName + '_v'));
+    const nextVersion = existing.length + 1;
+    const backupName = `${baseName}_v${nextVersion}.tsx`;
+    fs.copyFileSync(currentFile, path.join(versionsDir, backupName));
+  }
+
+  const id = `req-${Date.now()}`;
+  const request = {
+    id,
+    status: 'pending',
+    createdAt: new Date().toISOString(),
+    project: sanitized,
+    segmentId,
+    action: 'regenerate',
+    file,
+    comment: comment || '',
+    transcriptSegment: transcriptSegment || '',
+    timestamps: timestamps || [],
+    startFrame: startFrame || 0,
+    endFrame: endFrame || 0,
+  };
+
+  fs.writeFileSync(path.join(queueDir, `${id}.json`), JSON.stringify(request, null, 2));
+  res.json({ id, status: 'pending' });
+});
+
+// GET /api/review/queue/:id?project=X — poll queue status
+app.get('/api/review/queue/:id', (req, res) => {
+  const project = req.query.project as string;
+  const id = req.params.id;
+  if (!project || !id) return res.status(400).json({ error: 'Missing project or id' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  const queueDir = path.join(BASE_PATH, 'videos', sanitized, 'queue');
+  const resultPath = path.join(queueDir, `${id}-result.json`);
+  const requestPath = path.join(queueDir, `${id}.json`);
+
+  if (fs.existsSync(resultPath)) {
+    try {
+      return res.json({ status: 'done', result: JSON.parse(fs.readFileSync(resultPath, 'utf-8')) });
+    } catch { /* fall through */ }
+  }
+
+  if (fs.existsSync(requestPath)) {
+    return res.json({ status: 'pending' });
+  }
+
+  res.status(404).json({ error: 'Queue request not found' });
+});
+
+// GET /api/review/versions?project=X&file=Generated_X.tsx — list versions
+app.get('/api/review/versions', (req, res) => {
+  const project = req.query.project as string;
+  const file = req.query.file as string;
+  if (!project || !file) return res.status(400).json({ error: 'Missing project or file' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  const versionsDir = path.join(BASE_PATH, 'videos', sanitized, 'versions');
+  if (!fs.existsSync(versionsDir)) return res.json({ versions: [] });
+
+  const baseName = (file as string).replace('.tsx', '');
+  const versions = fs.readdirSync(versionsDir)
+    .filter(f => f.startsWith(baseName + '_v') && f.endsWith('.tsx'))
+    .sort()
+    .map(f => ({
+      name: f,
+      path: path.join(versionsDir, f),
+      created: fs.statSync(path.join(versionsDir, f)).mtime.toISOString(),
+    }));
+
+  res.json({ versions });
+});
+
+// POST /api/review/save-example — copy a segment file to good-examples
+app.post('/api/review/save-example', (req, res) => {
+  const { project, file } = req.body;
+  if (!project || !file) return res.status(400).json({ error: 'Missing project or file' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  const sourcePath = path.join(BASE_PATH, 'videos', sanitized, 'src', 'visuals', file);
+  if (!fs.existsSync(sourcePath)) return res.status(404).json({ error: 'Source file not found' });
+
+  const examplesDir = path.join(BASE_PATH, '.claude', 'skills', 'visual-generator', 'reference', 'good-examples');
+  if (!fs.existsSync(examplesDir)) fs.mkdirSync(examplesDir, { recursive: true });
+
+  // Enforce max 10 examples — remove oldest if needed
+  const existing = fs.readdirSync(examplesDir).filter(f => f.endsWith('.tsx'));
+  if (existing.length >= 10) {
+    const oldest = existing
+      .map(f => ({ name: f, mtime: fs.statSync(path.join(examplesDir, f)).mtime.getTime() }))
+      .sort((a, b) => a.mtime - b.mtime)[0];
+    if (oldest) fs.unlinkSync(path.join(examplesDir, oldest.name));
+  }
+
+  fs.copyFileSync(sourcePath, path.join(examplesDir, file));
+  res.json({ ok: true, path: path.join(examplesDir, file) });
+});
+
+// GET /api/review/transcript?project=X — get transcript for review
+app.get('/api/review/transcript', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  // Try workspace first (has full transcript), then videos
+  const workspacePath = path.join(BASE_PATH, 'workspace', sanitized, 'transcript.txt');
+  const videosPath = path.join(BASE_PATH, 'videos', sanitized, 'TRANSCRIPT.md');
+
+  let transcript = '';
+  if (fs.existsSync(workspacePath)) {
+    transcript = fs.readFileSync(workspacePath, 'utf-8');
+  } else if (fs.existsSync(videosPath)) {
+    transcript = fs.readFileSync(videosPath, 'utf-8');
+  }
+
+  // Also try voiceover timestamps for word-level data
+  // Check workspace first, then videos/src
+  const tsPaths = [
+    path.join(BASE_PATH, 'workspace', sanitized, 'voiceover-timestamps.json'),
+    path.join(BASE_PATH, 'videos', sanitized, 'src', 'voiceover-timestamps.json'),
+  ];
+  let timestamps: any[] = [];
+  for (const tsPath of tsPaths) {
+    if (fs.existsSync(tsPath)) {
+      try {
+        const data = JSON.parse(fs.readFileSync(tsPath, 'utf-8'));
+        timestamps = data.words || data;
+        break;
+      } catch { /* ignore */ }
+    }
+  }
+
+  res.json({ transcript, timestamps });
+});
+
+// GET /api/review/video-status?project=X — check if rendered video exists
+app.get('/api/review/video-status', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  // Check multiple possible locations
+  const locations = [
+    path.join(BASE_PATH, 'videos', sanitized, 'out', 'video.mp4'),
+    path.join(BASE_PATH, 'videos', sanitized, 'out', 'DynamicPipeline.mp4'),
+    path.join(BASE_PATH, 'videos', sanitized, 'output.mp4'),
+  ];
+
+  // Also check for any .mp4 in out/
+  const outDir = path.join(BASE_PATH, 'videos', sanitized, 'out');
+  if (fs.existsSync(outDir)) {
+    const mp4s = fs.readdirSync(outDir).filter(f => f.endsWith('.mp4'));
+    if (mp4s.length > 0) {
+      const fullPath = path.join(outDir, mp4s[0]);
+      const stat = fs.statSync(fullPath);
+      return res.json({ exists: true, path: fullPath, filename: mp4s[0], size: stat.size });
+    }
+  }
+
+  for (const loc of locations) {
+    if (fs.existsSync(loc)) {
+      const stat = fs.statSync(loc);
+      return res.json({ exists: true, path: loc, filename: path.basename(loc), size: stat.size });
+    }
+  }
+
+  res.json({ exists: false });
+});
+
+// GET /api/review/video?project=X — serve rendered video
+app.get('/api/review/video', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  // Find video file
+  const outDir = path.join(BASE_PATH, 'videos', sanitized, 'out');
+  let videoPath = '';
+
+  if (fs.existsSync(outDir)) {
+    const mp4s = fs.readdirSync(outDir).filter(f => f.endsWith('.mp4'));
+    if (mp4s.length > 0) videoPath = path.join(outDir, mp4s[0]);
+  }
+
+  if (!videoPath) {
+    const fallbacks = [
+      path.join(BASE_PATH, 'videos', sanitized, 'output.mp4'),
+    ];
+    for (const fb of fallbacks) {
+      if (fs.existsSync(fb)) { videoPath = fb; break; }
+    }
+  }
+
+  if (!videoPath) return res.status(404).json({ error: 'No rendered video found' });
+
+  const stat = fs.statSync(videoPath);
+  const range = req.headers.range;
+
+  if (range) {
+    const parts = range.replace(/bytes=/, '').split('-');
+    const start = parseInt(parts[0], 10);
+    const end = parts[1] ? parseInt(parts[1], 10) : stat.size - 1;
+    res.writeHead(206, {
+      'Content-Range': `bytes ${start}-${end}/${stat.size}`,
+      'Accept-Ranges': 'bytes',
+      'Content-Length': end - start + 1,
+      'Content-Type': 'video/mp4',
+    });
+    fs.createReadStream(videoPath, { start, end }).pipe(res);
+  } else {
+    res.writeHead(200, {
+      'Content-Length': stat.size,
+      'Content-Type': 'video/mp4',
+    });
+    fs.createReadStream(videoPath).pipe(res);
+  }
+});
+
+// POST /api/review/render?project=X — render video with Remotion
+app.post('/api/review/render', async (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+  const sanitized = project.replace(/\.\./g, '');
+
+  const projectDir = path.join(BASE_PATH, 'videos', sanitized);
+  const rootPath = path.join(projectDir, 'src', 'Root.tsx');
+  if (!fs.existsSync(rootPath)) return res.status(404).json({ error: 'Root.tsx not found' });
+
+  // Parse composition ID from Root.tsx
+  const rootContent = fs.readFileSync(rootPath, 'utf-8');
+  const idMatch = rootContent.match(/id="([^"]+)"/);
+  if (!idMatch) return res.status(400).json({ error: 'Could not find composition ID in Root.tsx' });
+  const compositionId = idMatch[1];
+
+  const outDir = path.join(projectDir, 'out');
+  if (!fs.existsSync(outDir)) fs.mkdirSync(outDir, { recursive: true });
+  const outputPath = path.join(outDir, 'video.mp4');
+
+  // Return immediately, render in background
+  res.json({ status: 'rendering', compositionId, outputPath });
+
+  const { exec } = await import('child_process');
+  exec(
+    `cd "${projectDir}" && npx remotion render src/index.ts "${compositionId}" out/video.mp4 --codec h264`,
+    { timeout: 600000 },
+    (err, stdout, stderr) => {
+      if (err) {
+        console.error('Render failed:', err.message);
+        console.error(stderr);
+      } else {
+        console.log('Render complete:', outputPath);
+      }
+    }
+  );
+});
+
+// ========== Generated Visual Editor Endpoints ==========
+
+import { parseTsx, applyEdits, EditOperation, ParsedComponent } from './tsx-parser.js';
+
+// GET /api/generated/projects — list projects that have Generated_*.tsx files
+app.get('/api/generated/projects', (_req, res) => {
+  const videosDir = path.join(BASE_PATH, 'videos');
+  const projects: string[] = [];
+
+  if (!fs.existsSync(videosDir)) return res.json({ projects: [] });
+
+  try {
+    const entries = fs.readdirSync(videosDir, { withFileTypes: true });
+    for (const entry of entries) {
+      if (!entry.isDirectory() || entry.name.startsWith('.')) continue;
+      const visualsDir = path.join(videosDir, entry.name, 'src', 'visuals');
+      if (!fs.existsSync(visualsDir)) continue;
+      const files = fs.readdirSync(visualsDir);
+      if (files.some(f => f.startsWith('Generated_') && f.endsWith('.tsx'))) {
+        projects.push(entry.name);
+      }
+    }
+    res.json({ projects });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/generated/:project/files — list Generated_*.tsx files in a project
+app.get('/api/generated/:project/files', (req, res) => {
+  const project = req.params.project.replace(/\.\./g, '');
+  const visualsDir = path.join(BASE_PATH, 'videos', project, 'src', 'visuals');
+
+  if (!fs.existsSync(visualsDir)) return res.status(404).json({ error: 'Visuals dir not found' });
+
+  try {
+    const files = fs.readdirSync(visualsDir)
+      .filter(f => f.startsWith('Generated_') && f.endsWith('.tsx'))
+      .sort();
+    res.json({ files });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/generated/:project/:file/parse — parse a Generated_*.tsx and return editable elements
+app.get('/api/generated/:project/:file/parse', (req, res) => {
+  const project = req.params.project.replace(/\.\./g, '');
+  const file = req.params.file.replace(/\.\./g, '');
+  const filePath = path.join(BASE_PATH, 'videos', project, 'src', 'visuals', file);
+
+  if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'File not found' });
+
+  try {
+    const source = fs.readFileSync(filePath, 'utf-8');
+    const parsed = parseTsx(source, file);
+    res.json({ parsed, source });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/generated/:project/:file/edit — apply edits to a Generated_*.tsx
+app.post('/api/generated/:project/:file/edit', (req, res) => {
+  const project = req.params.project.replace(/\.\./g, '');
+  const file = req.params.file.replace(/\.\./g, '');
+  const filePath = path.join(BASE_PATH, 'videos', project, 'src', 'visuals', file);
+
+  if (!fs.existsSync(filePath)) return res.status(404).json({ error: 'File not found' });
+
+  const { edits, parsed } = req.body as { edits: EditOperation[]; parsed: ParsedComponent };
+
+  if (!edits || !parsed) {
+    return res.status(400).json({ error: 'Missing edits or parsed data' });
+  }
+
+  try {
+    const source = fs.readFileSync(filePath, 'utf-8');
+
+    // Backup before editing
+    const timestamp = new Date().toISOString().replace(/[:.]/g, '-');
+    const backupPath = filePath.replace('.tsx', `.backup.${timestamp}.tsx`);
+    fs.copyFileSync(filePath, backupPath);
+
+    const newSource = applyEdits(source, parsed, edits);
+    fs.writeFileSync(filePath, newSource, 'utf-8');
+
+    // Re-parse to return fresh state
+    const newParsed = parseTsx(newSource, file);
+
+    console.log(`Generated visual edited: ${filePath} (${edits.length} edits, backup: ${path.basename(backupPath)})`);
+    res.json({ success: true, parsed: newParsed, source: newSource });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// ============================================================
+// IMPROVEMENTS API — System Learning Dashboard
+// ============================================================
+
+// GET /api/improvements — read improvements.json
+app.get('/api/improvements', (_req, res) => {
+  const improvPath = path.join(BASE_PATH, 'workspace', 'improvements.json');
+  if (!fs.existsSync(improvPath)) return res.json({ improvements: null });
+  try {
+    res.json({ improvements: JSON.parse(fs.readFileSync(improvPath, 'utf-8')) });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// POST /api/improvements — save improvements.json (used by skill or UI)
+app.post('/api/improvements', (req, res) => {
+  const improvPath = path.join(BASE_PATH, 'workspace', 'improvements.json');
+  try {
+    fs.writeFileSync(improvPath, JSON.stringify(req.body, null, 2));
+    res.json({ ok: true });
+  } catch (err: any) {
+    res.status(500).json({ error: err.message });
+  }
+});
+
+// GET /api/improvements/summary — aggregate all review.json markers with categorization
+app.get('/api/improvements/summary', (_req, res) => {
+  const videosDir = path.join(BASE_PATH, 'videos');
+  if (!fs.existsSync(videosDir)) return res.json({ projects: [], totals: { good: 0, bad: 0, missing: 0 }, categories: [], allBadMarkers: [] });
+
+  const projects: any[] = [];
+  const totals = { good: 0, bad: 0, missing: 0 };
+  const allBadMarkers: any[] = [];
+
+  // Category keyword detection
+  const categoryKeywords: Record<string, string[]> = {
+    animation: ['static', 'no movement', 'boring', 'still', 'frozen', 'no animation', 'just appears', 'no motion', 'doesnt move', 'animacija', 'statick', 'staticn'],
+    layout: ['too many', 'crowded', 'cluttered', 'overlapping', 'small', 'messy', 'kutija', 'previse', 'raspored', 'layout'],
+    timing: ['too fast', 'too slow', 'sync', 'early', 'late', 'timing', 'brzo', 'sporo', 'kasni'],
+    'visual-type': ['wrong type', 'should be', 'doesnt fit', 'wrong visual', 'tip vizuala', 'pogresan'],
+    content: ['missing info', 'wrong data', 'unclear', 'confusing', 'fali', 'nejasno', 'pogresno'],
+    style: ['ugly', 'colors', 'font', 'looks bad', 'inconsistent', 'ruzno', 'boje', 'stil'],
+  };
+
+  function categorize(comment: string): string {
+    const lower = (comment || '').toLowerCase();
+    for (const [cat, keywords] of Object.entries(categoryKeywords)) {
+      if (keywords.some(kw => lower.includes(kw))) return cat;
+    }
+    return 'other';
+  }
+
+  try {
+    for (const entry of fs.readdirSync(videosDir, { withFileTypes: true })) {
+      if (!entry.isDirectory() || entry.name.startsWith('.') || entry.name === 'good-examples' || entry.name === 'node_modules') continue;
+      const reviewPath = path.join(videosDir, entry.name, 'review.json');
+      if (!fs.existsSync(reviewPath)) continue;
+
+      try {
+        const data = JSON.parse(fs.readFileSync(reviewPath, 'utf-8'));
+        const markers = data.markers || [];
+        const counts = { good: 0, bad: 0, missing: 0 };
+        markers.forEach((m: any) => {
+          if (m.type === 'good') { counts.good++; totals.good++; }
+          if (m.type === 'bad') { counts.bad++; totals.bad++; }
+          if (m.type === 'missing') { counts.missing++; totals.missing++; }
+          if (m.type === 'bad' || m.type === 'missing') {
+            allBadMarkers.push({
+              project: entry.name,
+              type: m.type,
+              comment: m.comment || '',
+              category: categorize(m.comment),
+              startFrame: m.startFrame,
+              endFrame: m.endFrame,
+            });
+          }
+        });
+        projects.push({
+          name: entry.name,
+          markers: markers.length,
+          counts,
+          updatedAt: data.updatedAt || null,
+        });
+      } catch { /* skip bad json */ }
+    }
+  } catch { /* ignore */ }
+
+  // Aggregate categories ranked by frequency
+  const catCounts: Record<string, { count: number; comments: string[] }> = {};
+  allBadMarkers.forEach(m => {
+    if (!catCounts[m.category]) catCounts[m.category] = { count: 0, comments: [] };
+    catCounts[m.category].count++;
+    if (m.comment && catCounts[m.category].comments.length < 5) {
+      catCounts[m.category].comments.push(`${m.project}: ${m.comment}`);
+    }
+  });
+  const categories = Object.entries(catCounts)
+    .map(([name, data]) => ({ name, ...data }))
+    .sort((a, b) => b.count - a.count);
+
+  // Sort projects by bad marker count (worst first)
+  projects.sort((a, b) => (b.counts.bad + b.counts.missing) - (a.counts.bad + a.counts.missing));
+
+  // Read improvements.json
+  const improvPath = path.join(BASE_PATH, 'workspace', 'improvements.json');
+  let improvements = null;
+  if (fs.existsSync(improvPath)) {
+    try { improvements = JSON.parse(fs.readFileSync(improvPath, 'utf-8')); } catch {}
+  }
+
+  res.json({ projects, totals, categories, allBadMarkers, improvements });
+});
+
 app.listen(PORT, () => {
   console.log(`Visual Editor API running at http://localhost:${PORT}`);
 });

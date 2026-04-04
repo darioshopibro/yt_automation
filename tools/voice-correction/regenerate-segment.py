@@ -22,7 +22,7 @@ from pydub import AudioSegment
 ROOT = Path("/Users/dario61/Desktop/YT automation")
 
 API_KEY = "sk_05502b179071a5af73848098c52b3b556ac144e89fe35998"
-VOICE_ID = "21m00Tcm4TlvDq8ikWAM"
+VOICE_ID = "iP95p4xoKVk53GoZ742B"
 API_URL = f"https://api.elevenlabs.io/v1/text-to-speech/{VOICE_ID}/with-timestamps"
 MODEL_ID = "eleven_turbo_v2_5"
 FPS = 30

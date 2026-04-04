@@ -99,10 +99,20 @@ def _build_digest(page=0):
         sources = db.get_topic_sources(c["id"])
         source_types = sorted(set(s["source_type"] for s in sources))
 
+        # Check demand data
+        demand = db.get_demand(c["id"])
+        demand_str = ""
+        if demand:
+            demand_str = f" | 🔍 {demand['demand_signal']:.2f}"
+            if demand['has_tutorial_demand']:
+                demand_str += " [tut]"
+            if demand['has_comparison_demand']:
+                demand_str += " [vs]"
+
         lines.append(f"<b>{num}. {c['title']}</b> ({c['final_score']:.2f})")
         lines.append(
             f"   📈 {c['engagement_score']:.2f} | ⏰ {c['freshness_score']:.2f} | "
-            f"🔗 {len(sources)} ({', '.join(source_types)})"
+            f"🔗 {len(sources)} ({', '.join(source_types)}){demand_str}"
         )
         if c.get("proposed_angle"):
             lines.append(f"   🎯 {c['proposed_angle'][:80]}")
@@ -187,9 +197,23 @@ def _build_detail(topic_id):
         lines.append(f"\n🎯 <b>Angle:</b> {topic['proposed_angle']}")
     if topic.get("proposed_hook"):
         lines.append(f"💬 <i>\"{topic['proposed_hook'][:120]}\"</i>")
+    # Show demand data
+    demand = db.get_demand(topic_id)
+    if demand:
+        demand_tags = []
+        if demand['has_tutorial_demand']:
+            demand_tags.append("tutorial")
+        if demand['has_comparison_demand']:
+            demand_tags.append("vs")
+        tags_str = f" [{', '.join(demand_tags)}]" if demand_tags else ""
+        lines.append(f"\n🔍 <b>Demand:</b> {demand['demand_signal']:.2f}{tags_str}")
+        if demand.get('suggestion_count'):
+            lines.append(f"   {demand['suggestion_count']} YouTube suggestions")
+
     if script:
         script = dict(script)
-        lines.append(f"\n📝 Script: {len(script['script_text'].split())} words | Plagiarism: {script.get('similarity_score', '?')}%")
+        quality_score = script.get('similarity_score', '?')
+        lines.append(f"\n📝 Script: {len(script['script_text'].split())} words | Quality: {quality_score}/10")
 
     lines.append(f"\n🖥 <a href=\"{config.DASHBOARD_URL}\">Open in Dashboard</a>")
 
@@ -236,7 +260,7 @@ def _build_script(topic_id):
         f"📝 <b>{script['title']}</b>\n",
         f"🎯 {script.get('proposed_angle', 'N/A')}\n",
         f"<pre>{script_text}</pre>",
-        f"\n📊 {len(script['script_text'].split())} words | Plagiarism: {script.get('similarity_score', '?')}%",
+        f"\n📊 {len(script['script_text'].split())} words | Quality: {script.get('similarity_score', '?')}/10",
     ]
 
     buttons = [
@@ -449,11 +473,14 @@ def _handle_callback(chat_id, message_id, data, callback_id):
         else:
             angle = result.get("angle", {})
             script = result.get("script", "")
-            plag = result.get("plagiarism", {})
+            quality = result.get("quality", {})
+            quality_score = quality.get("overall_score", "?") if quality else "?"
             text = (
                 f"✅ <b>Done: {t}</b>\n\n"
                 f"🎯 {angle.get('proposed_angle', 'N/A')}\n"
-                f"📝 {len(script.split())} words | Plagiarism: {plag.get('overall_similarity_percent', '?')}%\n\n"
+                f"📝 {len(script.split())} words | Quality: {quality_score}/10\n"
+                f"📊 Research: {result.get('transcripts_count', 0)} transcripts, "
+                f"{result.get('reddit_threads', 0)} Reddit threads\n\n"
                 f"💬 <i>\"{angle.get('proposed_hook', '')}\"</i>"
             )
             buttons = [

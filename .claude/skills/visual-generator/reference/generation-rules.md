@@ -5,6 +5,20 @@ Komponenta je FULLSCREEN — 1920x1080, zauzima ceo ekran.
 
 ---
 
+## KVALITET — PROČITAJ good-examples PRE PISANJA
+
+Pre pisanja koda, pročitaj BAR 2 fajla iz `reference/good-examples/`. To je standard kvaliteta — 9+/10. Tvoj kod mora biti na tom nivou.
+
+**Pravila iz analize dobrih vs loših komponenti:**
+
+- **Max 700-800 linija** — ako je duže, imaš previše statičnog sadržaja (kutije, labele). Skrati.
+- **Min 3 animacije na 100 linija koda** — ako je manje, previše statičnog, premalo pokreta.
+- **Više scena sa crossfade** — ne stoji na jednom ekranu ceo segment. Podeli na 2-3 scene.
+- **Animiraj KONCEPT** — Netflix primer animira play button klik, fan-out ka servisima, convergence. NE pravi kutije sa labelama.
+- **Kraće i gušće** — svaka linija koda radi nešto korisno. Nema filler koda.
+
+---
+
 ## FRAME CONTRACT — KRITIČNO
 
 **`useCurrentFrame()` UVEK vraća GLOBALNI frame.** Komponenta NE koristi Sequence wrapper. Timestamps iz voiceover-a su APSOLUTNI (npr. frame 975 = 32.5 sekundi od početka videa).

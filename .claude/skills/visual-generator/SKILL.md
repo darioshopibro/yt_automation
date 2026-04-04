@@ -138,5 +138,6 @@ Reci: "Pokreni `npx remotion studio` da vidis preview. Ako ne valja — reci sta
 ## REFERENCE
 
 - `reference/generation-rules.md` — layout, animacije, dizajn sistem, anti-patterns
+- `reference/good-examples/` — 6 DOBRIH komponenti (9+/10). PROČITAJ BAR 2 PRE PISANJA KODA. Ovi fajlovi su standard kvaliteta.
 - `.claude/skills/visual-proposer/reference/component-skeleton.md` — dizajn sistem (boje, fontovi, spacing)
 - `.claude/skills/remotion-motion/reference/remotion-coding-rules.md` — Remotion API pravila

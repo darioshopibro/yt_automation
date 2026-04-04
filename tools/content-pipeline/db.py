@@ -117,9 +117,32 @@ def init_db():
             created_at TEXT DEFAULT (datetime('now'))
         );
 
+        CREATE TABLE IF NOT EXISTS topic_demand (
+            id INTEGER PRIMARY KEY,
+            topic_id INTEGER REFERENCES topics(id),
+            keyword TEXT,
+            suggestion_count INTEGER DEFAULT 0,
+            has_tutorial_demand INTEGER DEFAULT 0,
+            has_comparison_demand INTEGER DEFAULT 0,
+            demand_signal REAL DEFAULT 0,
+            suggestions TEXT,
+            created_at TEXT DEFAULT (datetime('now'))
+        );
+
+        CREATE TABLE IF NOT EXISTS topic_velocity (
+            id INTEGER PRIMARY KEY,
+            topic_slug TEXT NOT NULL,
+            scan_run_id INTEGER,
+            source_count INTEGER DEFAULT 0,
+            total_engagement INTEGER DEFAULT 0,
+            created_at TEXT DEFAULT (datetime('now'))
+        );
+
         CREATE INDEX IF NOT EXISTS idx_topics_status ON topics(status);
         CREATE INDEX IF NOT EXISTS idx_topics_score ON topics(final_score DESC);
         CREATE INDEX IF NOT EXISTS idx_topic_sources_topic ON topic_sources(topic_id);
+        CREATE INDEX IF NOT EXISTS idx_topic_demand_topic ON topic_demand(topic_id);
+        CREATE INDEX IF NOT EXISTS idx_topic_velocity_slug ON topic_velocity(topic_slug);
     """)
     conn.commit()
     conn.close()
@@ -271,6 +294,52 @@ def set_channel_stats(channel_name, avg_views, avg_likes=0, sample_size=0):
     )
     conn.commit()
     conn.close()
+
+
+# --- Demand helpers ---
+
+def insert_demand(topic_id, keyword, suggestion_count, has_tutorial, has_comparison, demand_signal, suggestions=None):
+    conn = get_connection()
+    conn.execute(
+        """INSERT INTO topic_demand (topic_id, keyword, suggestion_count, has_tutorial_demand,
+           has_comparison_demand, demand_signal, suggestions) VALUES (?, ?, ?, ?, ?, ?, ?)""",
+        (topic_id, keyword, suggestion_count, int(has_tutorial), int(has_comparison),
+         demand_signal, json.dumps(suggestions or []))
+    )
+    conn.commit()
+    conn.close()
+
+
+def get_demand(topic_id):
+    conn = get_connection()
+    row = conn.execute("SELECT * FROM topic_demand WHERE topic_id=?", (topic_id,)).fetchone()
+    conn.close()
+    return dict(row) if row else None
+
+
+# --- Velocity helpers ---
+
+def insert_velocity(topic_slug, scan_run_id, source_count, total_engagement):
+    conn = get_connection()
+    conn.execute(
+        """INSERT INTO topic_velocity (topic_slug, scan_run_id, source_count, total_engagement)
+           VALUES (?, ?, ?, ?)""",
+        (topic_slug, scan_run_id, source_count, total_engagement)
+    )
+    conn.commit()
+    conn.close()
+
+
+def get_velocity(topic_slug, lookback=3):
+    """Get velocity data for a topic over last N scans."""
+    conn = get_connection()
+    rows = conn.execute(
+        """SELECT * FROM topic_velocity WHERE topic_slug=?
+           ORDER BY created_at DESC LIMIT ?""",
+        (topic_slug, lookback)
+    ).fetchall()
+    conn.close()
+    return [dict(r) for r in rows]
 
 
 # Initialize on import

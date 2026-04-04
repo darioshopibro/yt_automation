@@ -1,0 +1,13 @@
+Every time you use an app that pulls data from another service, there's an API key working behind the scenes. An API key is basically a secret password that identifies your application to a server. When you sign up for a service like Google Maps or OpenAI, they give you a unique string of characters. That string is your API key.
+
+Here's how it works. Your app sends a request to the server with the API key attached, usually in a header. The server receives the request, checks the key against its database, and asks three questions. Is this key valid? Is it active, or has it been revoked? And does this key have permission to access this specific endpoint?
+
+If all three checks pass, the server processes your request and sends back the data. If any check fails, you get a 401 Unauthorized or 403 Forbidden error. The whole process takes about 5 milliseconds.
+
+But API keys have a major problem. They're not secure for authentication. An API key is sent with every request, usually in plain text in the header. If someone intercepts that request, they have your key. And unlike passwords, API keys don't expire by default. A leaked key could be used for months before anyone notices.
+
+That's why modern APIs use a layered approach. API keys for identification, OAuth tokens for authorization, and rate limiting to prevent abuse. The API key says who you are. The OAuth token says what you're allowed to do. And rate limiting says how much you can do. Stripe processes 500 million API requests per day using exactly this pattern.
+
+So where should you store your API key? Never in your frontend code. Never in a GitHub repository. Never hardcoded in your source files. Use environment variables. Your server reads the key from a .env file that's listed in .gitignore. The key never touches your codebase, never gets committed, never gets deployed to the client.
+
+One more thing. Always rotate your keys. Most services let you generate a new key and revoke the old one instantly. If you suspect a leak, rotate immediately. It takes 10 seconds and could save you thousands of dollars in unauthorized API calls.

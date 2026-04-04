@@ -10,7 +10,7 @@ import fs from "fs";
 import path from "path";
 
 const ELEVENLABS_API_KEY = process.env.ELEVENLABS_API_KEY || "sk_05502b179071a5af73848098c52b3b556ac144e89fe35998";
-const VOICE_ID = "21m00Tcm4TlvDq8ikWAM"; // Rachel
+const VOICE_ID = "iP95p4xoKVk53GoZ742B"; // Chris - American, Casual
 
 // AI Video Generation - Kling vs Runway vs Sora
 const SCRIPT = `

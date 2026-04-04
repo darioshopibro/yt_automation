@@ -1,4 +1,12 @@
-"""Content processor — chain: research → angle → script → plagiarism check."""
+"""Content processor — full pipeline from approved topic to finished script.
+
+Upgraded pipeline:
+1. PARALLEL RESEARCH — transcripts + YT comments + Reddit threads
+2. ANGLE DETECTION — uses all 3 sources for better gap finding
+3. OUTLINE — 8-12 beat outline before full script (review gate)
+4. SCRIPT WRITING — from outline, not from scratch
+5. QUALITY SCORING — readability + pacing + TTS check (replaces LLM plagiarism)
+"""
 
 import subprocess
 import json
@@ -9,9 +17,11 @@ import sys
 sys.path.insert(0, os.path.dirname(__file__))
 import config
 import db
+from research_helpers import research_topic
+from quality_scorer import score_script
+from pipeline_logger import PipelineLogger
 
 PROMPTS_DIR = os.path.join(os.path.dirname(__file__), "prompts")
-RESEARCH_SCRIPT = os.path.join(os.path.dirname(__file__), "..", "..", ".claude", "skills", "research", "scripts")
 
 
 def _load_prompt(name):
@@ -32,7 +42,6 @@ def _call_claude(prompt, model=None):
 
 def _extract_json(text):
     """Extract JSON object or array from response text."""
-    # Try to find JSON block
     json_match = re.search(r'(\{[\s\S]*\}|\[[\s\S]*\])', text)
     if not json_match:
         return None
@@ -42,135 +51,308 @@ def _extract_json(text):
         return None
 
 
-def fetch_transcripts(topic_title, count=3):
-    """Fetch YouTube transcripts for a topic using research scripts."""
-    transcript_script = os.path.join(RESEARCH_SCRIPT, "transcript.py")
-    search_script = os.path.join(RESEARCH_SCRIPT, "search.py")
+# === STEP 1: RESEARCH (parallel) ===
 
-    # Search for videos on this topic
-    result = subprocess.run(
-        ["python3", search_script, topic_title],
-        capture_output=True, text=True, timeout=30
-    )
-    if not result.stdout:
-        return []
+def run_research(topic_title, logger):
+    """Run parallel research: transcripts + YT comments + Reddit."""
+    logger.start_step("research")
 
     try:
-        search_data = json.loads(result.stdout)
-        videos = search_data.get("results", search_data.get("videos", []))
-    except json.JSONDecodeError:
-        return []
+        data = research_topic(topic_title)
 
-    # Fetch transcripts for top videos
-    transcripts = []
-    for v in videos[:count + 2]:  # fetch extra in case some fail
-        if len(transcripts) >= count:
-            break
-        url = v.get("url", v.get("webpage_url", ""))
-        if not url:
-            continue
+        transcripts = data["transcripts"]
+        yt_comments = data["yt_comments"]
+        reddit_data = data["reddit_data"]
 
-        result = subprocess.run(
-            ["python3", transcript_script, url],
-            capture_output=True, text=True, timeout=30
-        )
-        if result.stdout:
-            try:
-                data = json.loads(result.stdout)
-                text = data.get("transcript", "")
-                if text and len(text) > 100:
-                    transcripts.append({
-                        "title": data.get("title", url),
-                        "text": text[:3000],  # cap at 3000 chars per transcript
-                        "url": url,
-                    })
-            except json.JSONDecodeError:
-                continue
+        details = {
+            "transcripts": len(transcripts),
+            "yt_comments_analyzed": yt_comments["total_comments_analyzed"],
+            "yt_questions": len(yt_comments["questions"]),
+            "yt_requests": len(yt_comments["requests"]),
+            "reddit_threads": reddit_data["total_threads"],
+            "reddit_questions": len(reddit_data["questions"]),
+            "sub_steps": data["step_log"],
+        }
 
-    return transcripts
+        if not transcripts:
+            logger.fail_step("No transcripts found", details=details)
+        else:
+            logger.complete_step(items_in=0, items_out=len(transcripts), details=details)
+
+        return data
+
+    except Exception as e:
+        logger.fail_step(str(e))
+        return {
+            "transcripts": [],
+            "yt_comments": {"questions": [], "requests": [], "pain_points": [], "total_comments_analyzed": 0},
+            "reddit_data": {"threads": [], "questions": [], "total_threads": 0, "total_comments": 0},
+            "step_log": [],
+        }
 
 
-def detect_angle(topic_title, transcripts):
-    """Run angle detection on competitor transcripts.
+# === STEP 2: ANGLE DETECTION ===
 
-    Returns: dict with proposed_angle, angle_type, etc. or None on failure.
-    """
+def run_angle_detection(topic_title, research_data, logger):
+    """Detect unique angle using transcripts + comments + Reddit data."""
+    logger.start_step("angle_detection")
+
+    transcripts = research_data["transcripts"]
+    yt_comments = research_data["yt_comments"]
+    reddit_data = research_data["reddit_data"]
+
     if not transcripts:
+        logger.fail_step("No transcripts to analyze")
         return None
 
-    transcript_text = ""
-    for i, t in enumerate(transcripts):
-        transcript_text += f"\n--- VIDEO {i+1}: {t['title']} ---\n{t['text']}\n"
+    try:
+        # Build transcript block (cap per transcript to keep prompt manageable)
+        max_per_transcript = 2500 if len(transcripts) > 5 else 3500
+        transcript_text = ""
+        for i, t in enumerate(transcripts[:7]):
+            transcript_text += f"\n--- VIDEO {i+1}: {t['title']} ---\n{t['text'][:max_per_transcript]}\n"
 
-    template = _load_prompt("angle-detection")
-    prompt = template.replace("{topic}", topic_title).replace("{transcripts}", transcript_text)
+        # Build pain points block (from comments + reddit)
+        pain_points = []
 
-    response = _call_claude(prompt, config.SONNET_MODEL)
-    return _extract_json(response)
+        if yt_comments["questions"]:
+            pain_points.append("VIEWER QUESTIONS (from YouTube comments):")
+            for q in yt_comments["questions"][:10]:
+                pain_points.append(f"  - {q}")
 
+        if yt_comments["requests"]:
+            pain_points.append("\nVIEWER REQUESTS:")
+            for r in yt_comments["requests"][:5]:
+                pain_points.append(f"  - {r}")
 
-def write_script(topic_title, angle_data):
-    """Generate a script based on the detected angle.
+        if yt_comments["pain_points"]:
+            pain_points.append("\nCONFUSION POINTS:")
+            for p in yt_comments["pain_points"][:5]:
+                pain_points.append(f"  - {p}")
 
-    Loads past scripts to avoid repeating patterns, examples, analogies.
-    Returns: script text string or None.
-    """
-    if not angle_data:
+        if reddit_data["questions"]:
+            pain_points.append("\nREDDIT QUESTIONS (unanswered or debated):")
+            for q in reddit_data["questions"][:10]:
+                pain_points.append(f"  - {q}")
+
+        pain_points_text = "\n".join(pain_points) if pain_points else "No audience data available."
+
+        # Build full prompt
+        template = _load_prompt("angle-detection")
+        prompt = template.replace("{topic}", topic_title).replace("{transcripts}", transcript_text)
+
+        # Append pain points as extra context
+        prompt += f"""
+
+AUDIENCE PAIN POINTS (from YouTube comments and Reddit discussions):
+{pain_points_text}
+
+Use these pain points to find angles that directly address what real people are confused about or asking for.
+An angle that answers a real question is ALWAYS better than a clever gap-fill."""
+
+        response = _call_claude(prompt, config.SONNET_MODEL)
+        angle = _extract_json(response)
+
+        # If JSON parsing failed, try a simpler extraction
+        if not angle or not angle.get("proposed_angle"):
+            # Try to salvage — ask Claude to just give the angle as text
+            fallback_prompt = f"""Based on this analysis, give me a JSON with proposed_angle, angle_type, proposed_hook, and key_differentiators for a video about "{topic_title}".
+
+Previous analysis:
+{response[:2000]}
+
+Return ONLY valid JSON."""
+            fallback_response = _call_claude(fallback_prompt, config.HAIKU_MODEL)
+            angle = _extract_json(fallback_response)
+
+        if angle and angle.get("proposed_angle"):
+            logger.complete_step(details={
+                "angle": angle["proposed_angle"],
+                "type": angle.get("angle_type", "?"),
+                "hook": angle.get("proposed_hook", "?"),
+                "pain_points_fed": len(pain_points),
+            })
+        else:
+            logger.fail_step("Angle detection returned invalid JSON")
+
+        return angle
+
+    except Exception as e:
+        logger.fail_step(str(e))
         return None
 
-    template = _load_prompt("script-writing")
-    prompt = (
-        template
-        .replace("{topic}", topic_title)
-        .replace("{angle}", angle_data.get("proposed_angle", ""))
-        .replace("{angle_type}", angle_data.get("angle_type", ""))
-        .replace("{hook}", angle_data.get("proposed_hook", ""))
-        .replace("{differentiators}", "\n".join(f"- {d}" for d in angle_data.get("key_differentiators", [])))
-    )
 
-    # Load past scripts to avoid repetition
-    variety_block = _build_variety_block()
-    if variety_block:
-        prompt += variety_block
+# === STEP 3: OUTLINE ===
 
-    raw_script = _call_claude(prompt, config.SONNET_MODEL)
+def run_outline(topic_title, angle, research_data, logger):
+    """Generate outline from angle + pain points."""
+    logger.start_step("outline")
 
-    # Run through TTS preprocessing (tech terms, fillers, contractions)
-    if raw_script:
-        raw_script = _preprocess_for_tts(raw_script)
+    if not angle:
+        logger.fail_step("No angle to build outline from")
+        return None
 
-    return raw_script
+    try:
+        yt_comments = research_data["yt_comments"]
+        reddit_data = research_data["reddit_data"]
 
+        # Build pain points summary for outline prompt
+        pain_points_lines = []
+        for q in yt_comments["questions"][:5]:
+            pain_points_lines.append(f"- YT comment: {q}")
+        for r in yt_comments["requests"][:3]:
+            pain_points_lines.append(f"- YT request: {r}")
+        for q in reddit_data["questions"][:5]:
+            pain_points_lines.append(f"- Reddit: {q}")
+
+        pain_points_text = "\n".join(pain_points_lines) if pain_points_lines else "None collected."
+
+        template = _load_prompt("outline")
+        prompt = (
+            template
+            .replace("{topic}", topic_title)
+            .replace("{angle}", angle.get("proposed_angle", ""))
+            .replace("{hook}", angle.get("proposed_hook", ""))
+            .replace("{differentiators}", "\n".join(f"- {d}" for d in angle.get("key_differentiators", [])))
+            .replace("{pain_points}", pain_points_text)
+        )
+
+        response = _call_claude(prompt, config.SONNET_MODEL)
+        outline = _extract_json(response)
+
+        if outline and outline.get("outline"):
+            beats = outline["outline"]
+            logger.complete_step(details={
+                "beats": len(beats),
+                "estimated_duration": outline.get("estimated_duration_seconds", "?"),
+                "tension_arc": outline.get("tension_arc", "?"),
+                "outline_preview": [b["beat"][:60] for b in beats[:4]],
+            })
+        else:
+            logger.fail_step("Outline generation returned invalid JSON")
+
+        return outline
+
+    except Exception as e:
+        logger.fail_step(str(e))
+        return None
+
+
+# === STEP 4: SCRIPT WRITING ===
+
+def run_script_writing(topic_title, angle, outline, logger):
+    """Write full script from outline."""
+    logger.start_step("script_writing")
+
+    if not angle or not outline:
+        logger.fail_step("Missing angle or outline")
+        return None
+
+    try:
+        # Build outline text for the script prompt
+        outline_text = ""
+        for i, beat in enumerate(outline.get("outline", [])):
+            outline_text += f"{i+1}. [{beat.get('type', '?')}] {beat['beat']}\n"
+
+        template = _load_prompt("script-writing")
+        prompt = (
+            template
+            .replace("{topic}", topic_title)
+            .replace("{angle}", angle.get("proposed_angle", ""))
+            .replace("{angle_type}", angle.get("angle_type", ""))
+            .replace("{hook}", angle.get("proposed_hook", ""))
+            .replace("{differentiators}", "\n".join(f"- {d}" for d in angle.get("key_differentiators", [])))
+        )
+
+        # Add outline as structure guide
+        prompt += f"""
+
+OUTLINE (follow this structure beat-by-beat):
+{outline_text}
+
+Tension arc: {outline.get('tension_arc', 'build problem, then reveal solution')}
+Target: {outline.get('target_word_count', 800)} words
+
+Write the script following this outline. Each beat should become 1-3 sentences."""
+
+        # Add variety block
+        variety_block = _build_variety_block()
+        if variety_block:
+            prompt += variety_block
+
+        raw_script = _call_claude(prompt, config.SONNET_MODEL)
+
+        if raw_script:
+            raw_script = _preprocess_for_tts(raw_script)
+
+        if raw_script and len(raw_script) > 100:
+            word_count = len(raw_script.split())
+            logger.complete_step(details={"word_count": word_count})
+        else:
+            logger.fail_step("Script too short or empty")
+
+        return raw_script
+
+    except Exception as e:
+        logger.fail_step(str(e))
+        return None
+
+
+# === STEP 5: QUALITY SCORING ===
+
+def run_quality_check(script, logger):
+    """Run quality scoring on the script."""
+    logger.start_step("quality_check")
+
+    if not script:
+        logger.fail_step("No script to check")
+        return None
+
+    try:
+        result = score_script(script)
+
+        logger.complete_step(details={
+            "overall_score": result["overall_score"],
+            "verdict": result["verdict"],
+            "word_count": result["pacing"]["word_count"],
+            "readability_grade": result["readability"]["grade"],
+            "avg_sentence_length": result["pacing"]["avg_sentence_length"],
+            "issues": result["issues"],
+        })
+
+        return result
+
+    except Exception as e:
+        logger.fail_step(str(e))
+        return None
+
+
+# === HELPERS ===
 
 def _preprocess_for_tts(text):
-    """Run text through existing preprocess-tts.py pipeline."""
+    """Run text through TTS preprocessing if available."""
     preprocess_script = os.path.join(
         os.path.dirname(__file__), "..", "..", ".claude", "skills",
         "remotion-planner", "scripts", "preprocess-tts.py"
     )
     if not os.path.exists(preprocess_script):
-        return text  # fallback: return as-is
+        return text
 
-    result = subprocess.run(
-        ["python3", preprocess_script, "--text", text, "--auto-fix"],
-        capture_output=True, text=True, timeout=10
-    )
-    if result.stdout.strip():
-        return result.stdout.strip()
+    try:
+        result = subprocess.run(
+            ["python3", preprocess_script, "--text", text, "--auto-fix"],
+            capture_output=True, text=True, timeout=10
+        )
+        if result.stdout.strip():
+            return result.stdout.strip()
+    except Exception:
+        pass
 
-    # If --text flag doesn't work, try stdin
-    result = subprocess.run(
-        ["python3", preprocess_script],
-        input=text, capture_output=True, text=True, timeout=10
-    )
-    if result.stdout.strip():
-        return result.stdout.strip()
-
-    return text  # fallback
+    return text
 
 
 def _build_variety_block():
-    """Load past scripts and build a 'DO NOT REPEAT' block for the prompt."""
+    """Load past scripts and build a 'DO NOT REPEAT' block."""
     conn = db.get_connection()
     past_scripts = conn.execute(
         "SELECT s.script_text, t.title FROM scripts s JOIN topics t ON s.topic_id = t.id ORDER BY s.id DESC LIMIT 5"
@@ -181,133 +363,128 @@ def _build_variety_block():
         return ""
 
     lines = ["\n\nSCRIPT VARIETY — CRITICAL (do NOT repeat patterns from past scripts):"]
-    lines.append("Below are summaries of our recent scripts. Your new script MUST differ in:")
-    lines.append("- Different STRUCTURE (if past scripts used problem→solution, try story→reveal)")
-    lines.append("- Different EXAMPLES (if past used Klarna, use a different company)")
-    lines.append("- Different ANALOGIES (if past used 'hoarding', use a completely different metaphor)")
-    lines.append("- Different HOOK STYLE (if past started with a statistic, start with a scenario)")
-    lines.append("- Different CLOSING STYLE (if past ended with 'one line config change', end differently)")
+    lines.append("Your new script MUST differ in structure, examples, analogies, hook style, and closing style.")
     lines.append("")
 
     for i, s in enumerate(past_scripts):
         script = s["script_text"]
-        # Extract key elements for comparison (first 200 chars + last 100 chars)
         hook = script.split('.')[0] if script else ""
         closing = script.strip().split('.')[-1] if script else ""
         lines.append(f"PAST SCRIPT {i+1} ({s['title']}):")
         lines.append(f"  Hook: \"{hook[:100]}\"")
         lines.append(f"  Closing: \"{closing[:100]}\"")
-        lines.append(f"  Full preview: \"{script[:300]}...\"")
         lines.append("")
 
-    lines.append("Make your script FEEL DIFFERENT from all of the above. Same quality, different execution.")
     return "\n".join(lines)
 
 
-def check_plagiarism(script_text, transcripts):
-    """Check script originality against source transcripts.
-
-    Returns: dict with overall_similarity_percent, verdict, etc. or None.
-    """
-    if not script_text or not transcripts:
-        return None
-
-    source_text = ""
-    for i, t in enumerate(transcripts):
-        source_text += f"\n--- SOURCE {i+1}: {t['title']} ---\n{t['text']}\n"
-
-    template = _load_prompt("plagiarism-check")
-    prompt = template.replace("{script}", script_text).replace("{sources}", source_text)
-
-    response = _call_claude(prompt, config.HAIKU_MODEL)
-    return _extract_json(response)
-
+# === MAIN PIPELINE ===
 
 def process_topic(topic_id):
     """Full content processing pipeline for an approved topic.
 
-    Chain: fetch transcripts → detect angle → write script → check plagiarism
-    Returns: dict with all results or error info.
+    Chain:
+    1. Parallel research (transcripts + YT comments + Reddit)
+    2. Angle detection (all sources combined)
+    3. Outline generation
+    4. Script writing (from outline)
+    5. Quality scoring
+
+    Every step is logged. Returns full result dict.
     """
-    # Get topic from DB
     conn = db.get_connection()
     topic = dict(conn.execute("SELECT * FROM topics WHERE id=?", (topic_id,)).fetchone())
     conn.close()
 
     print(f"\n{'='*60}")
-    print(f"Processing: {topic['title']}")
+    print(f"CONTENT PROCESSOR — {topic['title']}")
     print(f"{'='*60}")
 
+    logger = PipelineLogger(run_id=topic_id * 1000)  # Use topic_id * 1000 to avoid conflicts with scan runs
     result = {"topic_id": topic_id, "topic_title": topic["title"]}
 
-    # Step 1: Fetch transcripts
-    print("\n📥 Fetching competitor transcripts...")
-    transcripts = fetch_transcripts(topic["title"])
-    result["transcripts_count"] = len(transcripts)
-    if not transcripts:
-        result["error"] = "No transcripts found"
-        print("  ❌ No transcripts found")
-        return result
-    print(f"  ✅ {len(transcripts)} transcripts fetched")
+    # 1. Research (parallel)
+    research_data = run_research(topic["title"], logger)
+    result["transcripts_count"] = len(research_data["transcripts"])
+    result["comments_analyzed"] = research_data["yt_comments"]["total_comments_analyzed"]
+    result["reddit_threads"] = research_data["reddit_data"]["total_threads"]
 
-    # Step 2: Angle detection
-    print("\n🎯 Detecting unique angle...")
-    angle = detect_angle(topic["title"], transcripts)
+    if not research_data["transcripts"]:
+        result["error"] = "No transcripts found"
+        logger.print_report()
+        return result
+
+    # 2. Angle detection
+    angle = run_angle_detection(topic["title"], research_data, logger)
     result["angle"] = angle
+
     if not angle or not angle.get("proposed_angle"):
         result["error"] = "Angle detection failed"
-        print("  ❌ Angle detection failed")
+        logger.print_report()
         return result
-    print(f"  ✅ Angle: {angle['proposed_angle']}")
+
+    print(f"\n  🎯 Angle: {angle['proposed_angle']}")
     print(f"     Type: {angle.get('angle_type', 'N/A')}")
     print(f"     Hook: {angle.get('proposed_hook', 'N/A')}")
 
-    # Step 3: Script writing
-    print("\n✍️  Writing script...")
-    script = write_script(topic["title"], angle)
+    # 3. Outline
+    outline = run_outline(topic["title"], angle, research_data, logger)
+    result["outline"] = outline
+
+    if not outline:
+        result["error"] = "Outline generation failed"
+        logger.print_report()
+        return result
+
+    print(f"\n  📋 Outline ({len(outline.get('outline', []))} beats):")
+    for beat in outline.get("outline", [])[:5]:
+        print(f"     [{beat.get('type', '?'):12s}] {beat['beat'][:60]}")
+    if len(outline.get("outline", [])) > 5:
+        print(f"     ... and {len(outline['outline']) - 5} more beats")
+
+    # 4. Script writing
+    script = run_script_writing(topic["title"], angle, outline, logger)
     result["script"] = script
+
     if not script or len(script) < 100:
         result["error"] = "Script writing failed"
-        print("  ❌ Script writing failed")
+        logger.print_report()
         return result
+
     word_count = len(script.split())
-    print(f"  ✅ Script: {word_count} words")
+    print(f"\n  ✍️  Script: {word_count} words")
 
-    # Step 4: Plagiarism check
-    print("\n🔍 Checking plagiarism...")
-    plagiarism = check_plagiarism(script, transcripts)
-    result["plagiarism"] = plagiarism
-    if plagiarism:
-        sim = plagiarism.get("overall_similarity_percent", "?")
-        verdict = plagiarism.get("verdict", "?")
-        print(f"  {'✅' if verdict == 'PASS' else '❌'} Similarity: {sim}% — {verdict}")
-    else:
-        print("  ⚠️  Plagiarism check returned no result")
+    # 5. Quality scoring
+    quality = run_quality_check(script, logger)
+    result["quality"] = quality
 
-    # Step 5: Store in DB
-    similarity = plagiarism.get("overall_similarity_percent", 0) if plagiarism else None
+    if quality:
+        print(f"\n  📊 Quality: {quality['overall_score']}/10 — {quality['verdict']}")
+        if quality["issues"]:
+            for issue in quality["issues"][:3]:
+                print(f"     ⚠️ {issue}")
+
+    # Store in DB
+    similarity = quality.get("overall_score", 0) if quality else None
     conn = db.get_connection()
     conn.execute(
         """INSERT INTO scripts (topic_id, script_text, similarity_score, similarity_report, status)
            VALUES (?, ?, ?, ?, ?)""",
         (topic_id, script, similarity,
-         json.dumps(plagiarism) if plagiarism else None,
-         "approved" if plagiarism and plagiarism.get("verdict") == "PASS" else "needs_review")
+         json.dumps(quality) if quality else None,
+         "approved" if quality and quality.get("verdict") == "PASS" else "needs_review")
     )
-    # Update topic with angle info
     conn.execute(
-        "UPDATE topics SET proposed_angle=?, proposed_hook=?, angle_type=? WHERE id=?",
+        "UPDATE topics SET proposed_angle=?, proposed_hook=?, angle_type=?, status='processed' WHERE id=?",
         (angle.get("proposed_angle"), angle.get("proposed_hook"), angle.get("angle_type"), topic_id)
     )
     conn.commit()
     conn.close()
 
-    print(f"\n{'='*60}")
-    print(f"✅ Processing complete for: {topic['title']}")
-    print(f"   Angle: {angle['proposed_angle']}")
-    print(f"   Script: {word_count} words")
-    print(f"   Plagiarism: {plagiarism.get('overall_similarity_percent', '?')}% — {plagiarism.get('verdict', '?')}")
-    print(f"{'='*60}")
+    # Print full report
+    summary = logger.print_report()
+    report_path = logger.save_report()
+    print(f"📄 Log: {report_path}")
 
     return result
 
@@ -315,7 +492,8 @@ def process_topic(topic_id):
 def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
     """Rewrite a script with specific user feedback.
 
-    Uses the existing angle but rewrites the script incorporating feedback.
+    Uses existing angle but rewrites the script incorporating feedback.
+    Called from Telegram bot when user requests a rewrite.
     """
     conn = db.get_connection()
     topic = dict(conn.execute("SELECT * FROM topics WHERE id=?", (topic_id,)).fetchone())
@@ -329,13 +507,12 @@ def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
     # Get existing angle or detect new one
     angle = None
     if "angle" in feedback.lower() or "new angle" in feedback.lower():
-        # User wants new angle — re-detect
         print("   🎯 Detecting new angle...")
-        transcripts = fetch_transcripts(topic["title"])
-        if transcripts:
-            angle = detect_angle(topic["title"], transcripts)
+        research_data = research_topic(topic["title"])
+        if research_data["transcripts"]:
+            logger = PipelineLogger(run_id=topic_id * 1000 + 1)
+            angle = run_angle_detection(topic["title"], research_data, logger)
     else:
-        # Keep existing angle
         angle = {
             "proposed_angle": topic.get("proposed_angle", ""),
             "angle_type": topic.get("angle_type", ""),
@@ -347,7 +524,7 @@ def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
         result["error"] = "Could not determine angle"
         return result
 
-    # Build rewrite prompt with feedback
+    # Build rewrite prompt
     template = _load_prompt("script-writing")
     prompt = (
         template
@@ -358,18 +535,15 @@ def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
         .replace("{differentiators}", "\n".join(f"- {d}" for d in angle.get("key_differentiators", [])))
     )
 
-    # Add feedback block
     prompt += f"\n\nUSER FEEDBACK ON PREVIOUS SCRIPT (MUST address this):\n{feedback}\n"
 
     if old_script_text:
-        prompt += f"\nPREVIOUS SCRIPT (rewrite this, addressing the feedback above):\n{old_script_text[:2000]}\n"
+        prompt += f"\nPREVIOUS SCRIPT (rewrite addressing feedback above):\n{old_script_text[:2000]}\n"
 
-    # Add variety block
     variety_block = _build_variety_block()
     if variety_block:
         prompt += variety_block
 
-    # Generate
     print("   ✍️ Writing new script...")
     script = _call_claude(prompt, config.SONNET_MODEL)
     if script:
@@ -379,16 +553,20 @@ def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
         result["error"] = "Script generation failed"
         return result
 
+    # Quality check
+    quality = score_script(script)
     result["script"] = script
     result["angle"] = angle
+    result["quality"] = quality
     word_count = len(script.split())
-    print(f"   ✅ New script: {word_count} words")
+    print(f"   ✅ New script: {word_count} words | Quality: {quality['overall_score']}/10")
 
     # Store
     conn = db.get_connection()
     conn.execute(
-        "INSERT INTO scripts (topic_id, script_text, status) VALUES (?, ?, 'draft')",
-        (topic_id, script)
+        "INSERT INTO scripts (topic_id, script_text, similarity_score, similarity_report, status) VALUES (?, ?, ?, ?, ?)",
+        (topic_id, script, quality["overall_score"], json.dumps(quality),
+         "approved" if quality["verdict"] == "PASS" else "needs_review")
     )
     if angle.get("proposed_angle"):
         conn.execute(
@@ -402,10 +580,10 @@ def process_topic_with_feedback(topic_id, feedback, old_script_text=None):
 
 
 if __name__ == "__main__":
-    # Test: process the top-scored topic
+    # Process the top-scored topic
     candidates = db.get_top_candidates(1)
     if candidates:
         result = process_topic(candidates[0]["id"])
-        print("\n" + json.dumps(result, indent=2, default=str)[:2000])
+        print("\n" + json.dumps({k: v for k, v in result.items() if k != "script"}, indent=2, default=str)[:2000])
     else:
         print("No candidates found. Run run_pipeline.py first.")

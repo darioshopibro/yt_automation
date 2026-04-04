@@ -13,6 +13,74 @@ bo**Vreme po videu:** 30-60 min
 
 ## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
 
+### ⚡⚡⚡ #0 NAJBITNIJE: Video Review Editor + Self-Improving Skill
+
+**Problem:** Kad video bude generisan, moram da gledam ceo video i ručno objašnjavam šta ne valja. Nema alat za označavanje dobrih/loših delova, nema feedback loop koji poboljšava skill.
+
+**Šta treba — VIDEO REVIEW EDITOR (UI):**
+- [ ] Editor (localhost:3002) dobija novi tab: "Video Review"
+- [ ] Učita Remotion projekat (videos/{project-name}/) i prikaže timeline sa preview-om
+- [ ] Mogu da kliknem na bilo koji frame/segment videa i dodam komentar:
+  - "Ovaj deo je DOBAR" (zeleni marker) — npr. frame 200-350: "odlična animacija, progresivno građenje"
+  - "Ovaj deo je LOŠ" (crveni marker) — npr. frame 500-700: "previše kutija, nema animacije, statično"
+  - "Ovaj deo FALI" (žuti marker) — npr. frame 350-500: "pauza u vizualima, narator priča ali ništa se ne dešava"
+- [ ] Komentari se čuvaju u `videos/{project-name}/review.json`:
+  ```json
+  {
+    "markers": [
+      { "startFrame": 200, "endFrame": 350, "type": "good", "comment": "odlična animacija" },
+      { "startFrame": 500, "endFrame": 700, "type": "bad", "comment": "previše kutija, statično" },
+      { "startFrame": 350, "endFrame": 500, "type": "missing", "comment": "nema vizuala dok narator priča" }
+    ]
+  }
+  ```
+- [ ] Format komentara: slobodan tekst, kapiram šta treba da se promeni
+- [ ] Timeline vizuelno prikazuje markere (zeleno/crveno/žuto) kao na video editoru
+
+**Šta treba — FIX SKILL (automatsko popravljanje):**
+- [ ] Novi skill `video-fixer` ili proširenje `visual-generator` skill-a
+- [ ] Čita `review.json` iz projekta
+- [ ] Za svaki CRVENI marker: regeneriše taj segment koristeći visual-generator skill + komentar kao dodatni kontekst ("korisnik kaže da je previše kutija — napravi sa više animacija i manje statičnog sadržaja")
+- [ ] Za svaki ŽUTI marker (fali vizual): generiše novi vizual za taj frame range
+- [ ] Za svaki ZELENI marker: izvuče taj deo koda i sačuva u `reference/good-examples/` kao pozitivan primer
+- [ ] Pokreće se sa hook-om ili komandom — "popravi video prema review-u"
+- [ ] Može i iz Claude Code sesije: "pročitaj review.json i popravi video"
+
+**Šta treba — SELF-IMPROVING LOOP:**
+- [ ] Zeleni markeri (dobri delovi) se automatski dodaju u `reference/good-examples/` — skill ih čita pre generisanja
+- [ ] Crveni markeri se analiziraju: šta je zajedničko lošim delovima? (previše kutija? malo animacija? statično?) → dodaje se pravilo u `generation-rules.md`
+- [ ] Posle svakog review-a, skill postaje BOLJI jer ima više dobrih primera i više pravila šta ne raditi
+- [ ] Tracking: koliko markera po videu, trend poboljšanja (manje crvenih, više zelenih)
+- [ ] Možda: poređenje dva videa — "ovaj novi video ima 3 crvena vs prošli sa 7 crvenih = napredak"
+
+**Inspiracija — Shopify Theme Research:**
+- Pogledati `shopify-theme-research/` za query/hook pattern
+- Tamo imamo sistem gde se piše feedback u fajl i hook ga čita → sličan mehanizam
+- Review komentari su kao "queries" koje fixer skill obrađuje
+
+**Zašto je ovo #0:**
+- Bez ovoga, svaki video zahteva ručno objašnjavanje šta ne valja
+- Sa ovim, označim 5 stvari u editoru → pokrenem fix → gotovo
+- Skill se sam poboljšava kroz feedback — manje posla svaki sledeći put
+- Dobri delovi postaju reference, loši postaju pravila — sistem uči
+
+### ⚡⚡⚡ #0.5 NAJBITNIJE: Visual Editor za Fullscreen Generated vizuale
+
+**Problem:** Editor (port 3002) radi za stari sticky/node sistem. Fullscreen generated vizuali (.tsx od visual-generator-a) nemaju editor — ne možeš da menjaš elemente, brišeš ih, menjaš ikone, boje itd. Mora se prepraviti ceo editor da radi na ovom novom sistemu.
+
+**Šta treba:**
+- [ ] Editor prepoznaje fullscreen generated komponente (Generated_*.tsx)
+- [ ] Parsira elemente iz generisane komponente (boxovi, kartice, labels, ikone, linije...)
+- [ ] Za svaki element omogući: brisanje, promena ikone, promena boje, promena teksta
+- [ ] Slično kao stari editor za sticky/node — samo adaptirano za fullscreen layout
+- [ ] Live preview — promene se vide odmah u Remotion preview-u
+- [ ] Save — editovana komponenta se sačuva nazad u .tsx
+- [ ] Integracija sa Review Editor — iz review taba klik na segment → otvori visual editor za taj segment
+
+**Zašto:**
+- Bez ovoga moram ručno da editujem .tsx kod kad treba sitna promena (ikona, boja, tekst)
+- Sa ovim: vidim video → označim šta ne valja → otvorim editor → fixujem vizuelno → gotovo
+
 ### ⚡⚡⚡ #1 NAJBITNIJE: Rating Skill — Ocenjivanje vizuala i videa
 
 **Problem:** Svaki put kad kažem "rate" ili "oceni" moram da objašnjavam šta da se ocenjuje i kako. Treba standardizovan skill.

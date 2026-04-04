@@ -1,0 +1,1968 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.5,
+    "similarity_boost": 0.75,
+    "style": 0.0,
+    "use_speaker_boost": true
+  },
+  "duration": 148.979,
+  "wordCount": 391,
+  "words": [
+    {
+      "word": "Every",
+      "start": 0.0,
+      "end": 0.255
+    },
+    {
+      "word": "time",
+      "start": 0.302,
+      "end": 0.499
+    },
+    {
+      "word": "you",
+      "start": 0.534,
+      "end": 0.604
+    },
+    {
+      "word": "use",
+      "start": 0.685,
+      "end": 0.836
+    },
+    {
+      "word": "an",
+      "start": 0.871,
+      "end": 0.929
+    },
+    {
+      "word": "app",
+      "start": 0.964,
+      "end": 1.091
+    },
+    {
+      "word": "that",
+      "start": 1.138,
+      "end": 1.277
+    },
+    {
+      "word": "pulls",
+      "start": 1.335,
+      "end": 1.625
+    },
+    {
+      "word": "data",
+      "start": 1.683,
+      "end": 1.962
+    },
+    {
+      "word": "from",
+      "start": 2.02,
+      "end": 2.148
+    },
+    {
+      "word": "another",
+      "start": 2.194,
+      "end": 2.461
+    },
+    {
+      "word": "service,",
+      "start": 2.496,
+      "end": 2.972
+    },
+    {
+      "word": "there's",
+      "start": 3.146,
+      "end": 3.402
+    },
+    {
+      "word": "an",
+      "start": 3.437,
+      "end": 3.495
+    },
+    {
+      "word": "A",
+      "start": 3.611,
+      "end": 3.727
+    },
+    {
+      "word": "P",
+      "start": 3.843,
+      "end": 3.936
+    },
+    {
+      "word": "I",
+      "start": 4.11,
+      "end": 4.203
+    },
+    {
+      "word": "key",
+      "start": 4.331,
+      "end": 4.609
+    },
+    {
+      "word": "working",
+      "start": 4.818,
+      "end": 5.201
+    },
+    {
+      "word": "behind",
+      "start": 5.259,
+      "end": 5.538
+    },
+    {
+      "word": "the",
+      "start": 5.573,
+      "end": 5.642
+    },
+    {
+      "word": "scenes.",
+      "start": 5.677,
+      "end": 6.188
+    },
+    {
+      "word": "An",
+      "start": 6.885,
+      "end": 7.024
+    },
+    {
+      "word": "A",
+      "start": 7.082,
+      "end": 7.105
+    },
+    {
+      "word": "P",
+      "start": 7.221,
+      "end": 7.314
+    },
+    {
+      "word": "I",
+      "start": 7.465,
+      "end": 7.546
+    },
+    {
+      "word": "key",
+      "start": 7.663,
+      "end": 7.872
+    },
+    {
+      "word": "is",
+      "start": 7.953,
+      "end": 8.104
+    },
+    {
+      "word": "a",
+      "start": 8.15,
+      "end": 8.173
+    },
+    {
+      "word": "secret",
+      "start": 8.29,
+      "end": 8.684
+    },
+    {
+      "word": "password",
+      "start": 8.754,
+      "end": 9.334
+    },
+    {
+      "word": "that",
+      "start": 9.451,
+      "end": 9.625
+    },
+    {
+      "word": "identifies",
+      "start": 9.671,
+      "end": 10.228
+    },
+    {
+      "word": "your",
+      "start": 10.286,
+      "end": 10.449
+    },
+    {
+      "word": "application",
+      "start": 10.495,
+      "end": 11.018
+    },
+    {
+      "word": "to",
+      "start": 11.076,
+      "end": 11.146
+    },
+    {
+      "word": "a",
+      "start": 11.227,
+      "end": 11.25
+    },
+    {
+      "word": "server.",
+      "start": 11.32,
+      "end": 11.831
+    },
+    {
+      "word": "When",
+      "start": 12.643,
+      "end": 12.829
+    },
+    {
+      "word": "you",
+      "start": 12.875,
+      "end": 12.945
+    },
+    {
+      "word": "sign",
+      "start": 13.015,
+      "end": 13.247
+    },
+    {
+      "word": "up",
+      "start": 13.293,
+      "end": 13.386
+    },
+    {
+      "word": "for",
+      "start": 13.433,
+      "end": 13.537
+    },
+    {
+      "word": "a",
+      "start": 13.572,
+      "end": 13.595
+    },
+    {
+      "word": "service",
+      "start": 13.653,
+      "end": 14.002
+    },
+    {
+      "word": "like",
+      "start": 14.048,
+      "end": 14.222
+    },
+    {
+      "word": "Google",
+      "start": 14.28,
+      "end": 14.593
+    },
+    {
+      "word": "Maps",
+      "start": 14.628,
+      "end": 14.942
+    },
+    {
+      "word": "or",
+      "start": 15.151,
+      "end": 15.325
+    },
+    {
+      "word": "open",
+      "start": 15.394,
+      "end": 15.615
+    },
+    {
+      "word": "A",
+      "start": 15.673,
+      "end": 15.743
+    },
+    {
+      "word": "I,",
+      "start": 15.859,
+      "end": 16.277
+    },
+    {
+      "word": "they",
+      "start": 16.555,
+      "end": 16.718
+    },
+    {
+      "word": "give",
+      "start": 16.776,
+      "end": 16.904
+    },
+    {
+      "word": "you",
+      "start": 16.939,
+      "end": 17.02
+    },
+    {
+      "word": "a",
+      "start": 17.089,
+      "end": 17.124
+    },
+    {
+      "word": "unique",
+      "start": 17.24,
+      "end": 17.682
+    },
+    {
+      "word": "string",
+      "start": 17.716,
+      "end": 18.018
+    },
+    {
+      "word": "of",
+      "start": 18.076,
+      "end": 18.123
+    },
+    {
+      "word": "characters.",
+      "start": 18.181,
+      "end": 18.831
+    },
+    {
+      "word": "That",
+      "start": 19.214,
+      "end": 19.423
+    },
+    {
+      "word": "string",
+      "start": 19.481,
+      "end": 19.771
+    },
+    {
+      "word": "is",
+      "start": 19.946,
+      "end": 20.108
+    },
+    {
+      "word": "your",
+      "start": 20.166,
+      "end": 20.317
+    },
+    {
+      "word": "A",
+      "start": 20.41,
+      "end": 20.503
+    },
+    {
+      "word": "P",
+      "start": 20.654,
+      "end": 20.723
+    },
+    {
+      "word": "I",
+      "start": 20.874,
+      "end": 20.99
+    },
+    {
+      "word": "key.\n\nHere's",
+      "start": 21.107,
+      "end": 22.337
+    },
+    {
+      "word": "how",
+      "start": 22.372,
+      "end": 22.477
+    },
+    {
+      "word": "it",
+      "start": 22.523,
+      "end": 22.593
+    },
+    {
+      "word": "works.",
+      "start": 22.627,
+      "end": 23.08
+    },
+    {
+      "word": "Your",
+      "start": 23.521,
+      "end": 23.707
+    },
+    {
+      "word": "app",
+      "start": 23.777,
+      "end": 23.963
+    },
+    {
+      "word": "sends",
+      "start": 24.114,
+      "end": 24.404
+    },
+    {
+      "word": "a",
+      "start": 24.439,
+      "end": 24.462
+    },
+    {
+      "word": "request",
+      "start": 24.531,
+      "end": 24.891
+    },
+    {
+      "word": "to",
+      "start": 24.926,
+      "end": 24.984
+    },
+    {
+      "word": "the",
+      "start": 25.042,
+      "end": 25.112
+    },
+    {
+      "word": "server",
+      "start": 25.182,
+      "end": 25.576
+    },
+    {
+      "word": "with",
+      "start": 25.623,
+      "end": 25.762
+    },
+    {
+      "word": "the",
+      "start": 25.797,
+      "end": 25.867
+    },
+    {
+      "word": "A",
+      "start": 25.936,
+      "end": 26.018
+    },
+    {
+      "word": "P",
+      "start": 26.134,
+      "end": 26.215
+    },
+    {
+      "word": "I",
+      "start": 26.389,
+      "end": 26.505
+    },
+    {
+      "word": "key",
+      "start": 26.621,
+      "end": 26.784
+    },
+    {
+      "word": "attached,",
+      "start": 26.83,
+      "end": 27.399
+    },
+    {
+      "word": "usually",
+      "start": 27.55,
+      "end": 27.968
+    },
+    {
+      "word": "in",
+      "start": 28.014,
+      "end": 28.073
+    },
+    {
+      "word": "a",
+      "start": 28.119,
+      "end": 28.142
+    },
+    {
+      "word": "header.",
+      "start": 28.2,
+      "end": 28.63
+    },
+    {
+      "word": "The",
+      "start": 29.141,
+      "end": 29.257
+    },
+    {
+      "word": "server",
+      "start": 29.338,
+      "end": 29.698
+    },
+    {
+      "word": "receives",
+      "start": 29.756,
+      "end": 30.162
+    },
+    {
+      "word": "the",
+      "start": 30.209,
+      "end": 30.278
+    },
+    {
+      "word": "request,",
+      "start": 30.336,
+      "end": 30.882
+    },
+    {
+      "word": "checks",
+      "start": 31.161,
+      "end": 31.451
+    },
+    {
+      "word": "the",
+      "start": 31.486,
+      "end": 31.555
+    },
+    {
+      "word": "key",
+      "start": 31.602,
+      "end": 31.753
+    },
+    {
+      "word": "against",
+      "start": 31.799,
+      "end": 32.078
+    },
+    {
+      "word": "its",
+      "start": 32.113,
+      "end": 32.229
+    },
+    {
+      "word": "database,",
+      "start": 32.275,
+      "end": 32.914
+    },
+    {
+      "word": "and",
+      "start": 33.065,
+      "end": 33.227
+    },
+    {
+      "word": "asks",
+      "start": 33.297,
+      "end": 33.576
+    },
+    {
+      "word": "three",
+      "start": 33.622,
+      "end": 33.831
+    },
+    {
+      "word": "questions.",
+      "start": 33.866,
+      "end": 34.481
+    },
+    {
+      "word": "Is",
+      "start": 34.69,
+      "end": 34.853
+    },
+    {
+      "word": "this",
+      "start": 34.911,
+      "end": 35.038
+    },
+    {
+      "word": "key",
+      "start": 35.108,
+      "end": 35.259
+    },
+    {
+      "word": "valid?",
+      "start": 35.317,
+      "end": 35.723
+    },
+    {
+      "word": "Is",
+      "start": 35.84,
+      "end": 36.002
+    },
+    {
+      "word": "it",
+      "start": 36.048,
+      "end": 36.118
+    },
+    {
+      "word": "active,",
+      "start": 36.153,
+      "end": 36.571
+    },
+    {
+      "word": "or",
+      "start": 36.78,
+      "end": 36.931
+    },
+    {
+      "word": "has",
+      "start": 36.989,
+      "end": 37.117
+    },
+    {
+      "word": "it",
+      "start": 37.163,
+      "end": 37.221
+    },
+    {
+      "word": "been",
+      "start": 37.256,
+      "end": 37.407
+    },
+    {
+      "word": "revoked?",
+      "start": 37.453,
+      "end": 37.964
+    },
+    {
+      "word": "And",
+      "start": 38.405,
+      "end": 38.568
+    },
+    {
+      "word": "does",
+      "start": 38.638,
+      "end": 38.835
+    },
+    {
+      "word": "this",
+      "start": 38.87,
+      "end": 38.997
+    },
+    {
+      "word": "key",
+      "start": 39.055,
+      "end": 39.218
+    },
+    {
+      "word": "have",
+      "start": 39.288,
+      "end": 39.439
+    },
+    {
+      "word": "permission",
+      "start": 39.473,
+      "end": 39.833
+    },
+    {
+      "word": "to",
+      "start": 39.891,
+      "end": 39.961
+    },
+    {
+      "word": "access",
+      "start": 40.054,
+      "end": 40.437
+    },
+    {
+      "word": "this",
+      "start": 40.483,
+      "end": 40.623
+    },
+    {
+      "word": "specific",
+      "start": 40.669,
+      "end": 41.134
+    },
+    {
+      "word": "endpoint?\n\nIf",
+      "start": 41.192,
+      "end": 42.631
+    },
+    {
+      "word": "all",
+      "start": 42.689,
+      "end": 42.805
+    },
+    {
+      "word": "three",
+      "start": 42.864,
+      "end": 43.072
+    },
+    {
+      "word": "checks",
+      "start": 43.107,
+      "end": 43.339
+    },
+    {
+      "word": "pass,",
+      "start": 43.386,
+      "end": 43.781
+    },
+    {
+      "word": "the",
+      "start": 43.874,
+      "end": 43.99
+    },
+    {
+      "word": "server",
+      "start": 44.071,
+      "end": 44.408
+    },
+    {
+      "word": "processes",
+      "start": 44.466,
+      "end": 44.965
+    },
+    {
+      "word": "your",
+      "start": 45.023,
+      "end": 45.139
+    },
+    {
+      "word": "request",
+      "start": 45.185,
+      "end": 45.557
+    },
+    {
+      "word": "and",
+      "start": 45.801,
+      "end": 45.987
+    },
+    {
+      "word": "sends",
+      "start": 46.056,
+      "end": 46.3
+    },
+    {
+      "word": "back",
+      "start": 46.346,
+      "end": 46.497
+    },
+    {
+      "word": "the",
+      "start": 46.544,
+      "end": 46.613
+    },
+    {
+      "word": "data.",
+      "start": 46.66,
+      "end": 47.148
+    },
+    {
+      "word": "If",
+      "start": 47.844,
+      "end": 47.995
+    },
+    {
+      "word": "any",
+      "start": 48.053,
+      "end": 48.204
+    },
+    {
+      "word": "check",
+      "start": 48.25,
+      "end": 48.459
+    },
+    {
+      "word": "fails,",
+      "start": 48.529,
+      "end": 49.144
+    },
+    {
+      "word": "you",
+      "start": 49.353,
+      "end": 49.435
+    },
+    {
+      "word": "get",
+      "start": 49.504,
+      "end": 49.609
+    },
+    {
+      "word": "a",
+      "start": 49.644,
+      "end": 49.667
+    },
+    {
+      "word": "401",
+      "start": 49.76,
+      "end": 50.271
+    },
+    {
+      "word": "Unauthorized",
+      "start": 50.445,
+      "end": 51.223
+    },
+    {
+      "word": "or",
+      "start": 51.432,
+      "end": 51.583
+    },
+    {
+      "word": "403",
+      "start": 51.699,
+      "end": 52.465
+    },
+    {
+      "word": "Forbidden",
+      "start": 52.581,
+      "end": 52.964
+    },
+    {
+      "word": "error.",
+      "start": 53.022,
+      "end": 53.463
+    },
+    {
+      "word": "The",
+      "start": 53.905,
+      "end": 54.032
+    },
+    {
+      "word": "whole",
+      "start": 54.102,
+      "end": 54.369
+    },
+    {
+      "word": "process",
+      "start": 54.415,
+      "end": 54.833
+    },
+    {
+      "word": "takes",
+      "start": 54.88,
+      "end": 55.112
+    },
+    {
+      "word": "about",
+      "start": 55.135,
+      "end": 55.367
+    },
+    {
+      "word": "5",
+      "start": 55.483,
+      "end": 55.727
+    },
+    {
+      "word": "milliseconds.\n\nBut",
+      "start": 55.82,
+      "end": 57.26
+    },
+    {
+      "word": "A",
+      "start": 57.306,
+      "end": 57.341
+    },
+    {
+      "word": "P",
+      "start": 57.457,
+      "end": 57.55
+    },
+    {
+      "word": "I",
+      "start": 57.701,
+      "end": 57.794
+    },
+    {
+      "word": "keys",
+      "start": 57.91,
+      "end": 58.235
+    },
+    {
+      "word": "have",
+      "start": 58.386,
+      "end": 58.549
+    },
+    {
+      "word": "a",
+      "start": 58.572,
+      "end": 58.595
+    },
+    {
+      "word": "major",
+      "start": 58.665,
+      "end": 58.932
+    },
+    {
+      "word": "problem.",
+      "start": 58.978,
+      "end": 59.466
+    },
+    {
+      "word": "They're",
+      "start": 59.977,
+      "end": 60.197
+    },
+    {
+      "word": "not",
+      "start": 60.22,
+      "end": 60.325
+    },
+    {
+      "word": "secure",
+      "start": 60.383,
+      "end": 60.72
+    },
+    {
+      "word": "for",
+      "start": 60.754,
+      "end": 60.859
+    },
+    {
+      "word": "authentication.",
+      "start": 60.905,
+      "end": 61.799
+    },
+    {
+      "word": "An",
+      "start": 62.078,
+      "end": 62.217
+    },
+    {
+      "word": "A",
+      "start": 62.31,
+      "end": 62.357
+    },
+    {
+      "word": "P",
+      "start": 62.473,
+      "end": 62.542
+    },
+    {
+      "word": "I",
+      "start": 62.717,
+      "end": 62.775
+    },
+    {
+      "word": "key",
+      "start": 62.891,
+      "end": 63.1
+    },
+    {
+      "word": "is",
+      "start": 63.169,
+      "end": 63.32
+    },
+    {
+      "word": "sent",
+      "start": 63.378,
+      "end": 63.599
+    },
+    {
+      "word": "with",
+      "start": 63.634,
+      "end": 63.761
+    },
+    {
+      "word": "every",
+      "start": 63.936,
+      "end": 64.295
+    },
+    {
+      "word": "request,",
+      "start": 64.354,
+      "end": 64.946
+    },
+    {
+      "word": "usually",
+      "start": 65.224,
+      "end": 65.619
+    },
+    {
+      "word": "in",
+      "start": 65.665,
+      "end": 65.735
+    },
+    {
+      "word": "plain",
+      "start": 65.805,
+      "end": 66.049
+    },
+    {
+      "word": "text",
+      "start": 66.107,
+      "end": 66.42
+    },
+    {
+      "word": "in",
+      "start": 66.455,
+      "end": 66.525
+    },
+    {
+      "word": "the",
+      "start": 66.571,
+      "end": 66.641
+    },
+    {
+      "word": "header.",
+      "start": 66.676,
+      "end": 67.07
+    },
+    {
+      "word": "If",
+      "start": 67.674,
+      "end": 67.813
+    },
+    {
+      "word": "someone",
+      "start": 67.871,
+      "end": 68.185
+    },
+    {
+      "word": "intercepts",
+      "start": 68.22,
+      "end": 68.707
+    },
+    {
+      "word": "that",
+      "start": 68.742,
+      "end": 68.87
+    },
+    {
+      "word": "request,",
+      "start": 68.916,
+      "end": 69.45
+    },
+    {
+      "word": "they",
+      "start": 69.775,
+      "end": 69.938
+    },
+    {
+      "word": "have",
+      "start": 69.996,
+      "end": 70.124
+    },
+    {
+      "word": "your",
+      "start": 70.17,
+      "end": 70.275
+    },
+    {
+      "word": "key.",
+      "start": 70.321,
+      "end": 70.681
+    },
+    {
+      "word": "And",
+      "start": 71.064,
+      "end": 71.238
+    },
+    {
+      "word": "unlike",
+      "start": 71.308,
+      "end": 71.633
+    },
+    {
+      "word": "passwords,",
+      "start": 71.679,
+      "end": 72.422
+    },
+    {
+      "word": "A",
+      "start": 72.573,
+      "end": 72.689
+    },
+    {
+      "word": "P",
+      "start": 72.817,
+      "end": 72.898
+    },
+    {
+      "word": "I",
+      "start": 73.073,
+      "end": 73.131
+    },
+    {
+      "word": "keys",
+      "start": 73.247,
+      "end": 73.537
+    },
+    {
+      "word": "don't",
+      "start": 73.653,
+      "end": 73.897
+    },
+    {
+      "word": "expire",
+      "start": 73.932,
+      "end": 74.361
+    },
+    {
+      "word": "by",
+      "start": 74.408,
+      "end": 74.512
+    },
+    {
+      "word": "default.",
+      "start": 74.582,
+      "end": 75.151
+    },
+    {
+      "word": "A",
+      "start": 75.661,
+      "end": 75.743
+    },
+    {
+      "word": "leaked",
+      "start": 75.859,
+      "end": 76.137
+    },
+    {
+      "word": "key",
+      "start": 76.207,
+      "end": 76.497
+    },
+    {
+      "word": "could",
+      "start": 76.672,
+      "end": 76.869
+    },
+    {
+      "word": "be",
+      "start": 76.904,
+      "end": 76.997
+    },
+    {
+      "word": "used",
+      "start": 77.066,
+      "end": 77.298
+    },
+    {
+      "word": "for",
+      "start": 77.345,
+      "end": 77.461
+    },
+    {
+      "word": "months",
+      "start": 77.542,
+      "end": 77.833
+    },
+    {
+      "word": "before",
+      "start": 77.891,
+      "end": 78.192
+    },
+    {
+      "word": "anyone",
+      "start": 78.239,
+      "end": 78.529
+    },
+    {
+      "word": "notices.\n\nThat's",
+      "start": 78.564,
+      "end": 80.015
+    },
+    {
+      "word": "why",
+      "start": 80.062,
+      "end": 80.363
+    },
+    {
+      "word": "modern",
+      "start": 80.526,
+      "end": 80.886
+    },
+    {
+      "word": "A",
+      "start": 80.99,
+      "end": 81.188
+    },
+    {
+      "word": "P",
+      "start": 81.339,
+      "end": 81.443
+    },
+    {
+      "word": "I",
+      "start": 81.652,
+      "end": 81.792
+    },
+    {
+      "word": "s",
+      "start": 81.931,
+      "end": 82.105
+    },
+    {
+      "word": "use",
+      "start": 82.418,
+      "end": 82.709
+    },
+    {
+      "word": "a",
+      "start": 82.79,
+      "end": 82.871
+    },
+    {
+      "word": "layered",
+      "start": 82.987,
+      "end": 83.347
+    },
+    {
+      "word": "approach.",
+      "start": 83.37,
+      "end": 83.963
+    },
+    {
+      "word": "A",
+      "start": 84.543,
+      "end": 84.636
+    },
+    {
+      "word": "P",
+      "start": 84.74,
+      "end": 84.833
+    },
+    {
+      "word": "I",
+      "start": 85.031,
+      "end": 85.193
+    },
+    {
+      "word": "keys",
+      "start": 85.367,
+      "end": 85.692
+    },
+    {
+      "word": "for",
+      "start": 85.739,
+      "end": 85.843
+    },
+    {
+      "word": "identification,",
+      "start": 85.901,
+      "end": 86.807
+    },
+    {
+      "word": "oh-auth",
+      "start": 87.179,
+      "end": 87.562
+    },
+    {
+      "word": "tokens",
+      "start": 87.608,
+      "end": 88.049
+    },
+    {
+      "word": "for",
+      "start": 88.212,
+      "end": 88.386
+    },
+    {
+      "word": "authorization,",
+      "start": 88.444,
+      "end": 89.35
+    },
+    {
+      "word": "and",
+      "start": 89.721,
+      "end": 89.907
+    },
+    {
+      "word": "rate",
+      "start": 90.023,
+      "end": 90.255
+    },
+    {
+      "word": "limiting",
+      "start": 90.302,
+      "end": 90.627
+    },
+    {
+      "word": "to",
+      "start": 90.72,
+      "end": 90.801
+    },
+    {
+      "word": "prevent",
+      "start": 90.882,
+      "end": 91.23
+    },
+    {
+      "word": "abuse.",
+      "start": 91.265,
+      "end": 91.764
+    },
+    {
+      "word": "The",
+      "start": 92.345,
+      "end": 92.484
+    },
+    {
+      "word": "A",
+      "start": 92.566,
+      "end": 92.647
+    },
+    {
+      "word": "P",
+      "start": 92.763,
+      "end": 92.856
+    },
+    {
+      "word": "I",
+      "start": 93.053,
+      "end": 93.204
+    },
+    {
+      "word": "key",
+      "start": 93.343,
+      "end": 93.622
+    },
+    {
+      "word": "says",
+      "start": 93.761,
+      "end": 94.063
+    },
+    {
+      "word": "who",
+      "start": 94.179,
+      "end": 94.377
+    },
+    {
+      "word": "you",
+      "start": 94.458,
+      "end": 94.539
+    },
+    {
+      "word": "are.",
+      "start": 94.632,
+      "end": 94.969
+    },
+    {
+      "word": "The",
+      "start": 95.457,
+      "end": 95.607
+    },
+    {
+      "word": "oh-auth",
+      "start": 95.724,
+      "end": 96.13
+    },
+    {
+      "word": "token",
+      "start": 96.176,
+      "end": 96.501
+    },
+    {
+      "word": "says",
+      "start": 96.571,
+      "end": 96.78
+    },
+    {
+      "word": "what",
+      "start": 96.85,
+      "end": 97.012
+    },
+    {
+      "word": "you're",
+      "start": 97.047,
+      "end": 97.198
+    },
+    {
+      "word": "allowed",
+      "start": 97.221,
+      "end": 97.453
+    },
+    {
+      "word": "to",
+      "start": 97.477,
+      "end": 97.535
+    },
+    {
+      "word": "do.",
+      "start": 97.593,
+      "end": 97.941
+    },
+    {
+      "word": "And",
+      "start": 98.382,
+      "end": 98.556
+    },
+    {
+      "word": "rate",
+      "start": 98.638,
+      "end": 98.847
+    },
+    {
+      "word": "limiting",
+      "start": 98.881,
+      "end": 99.195
+    },
+    {
+      "word": "says",
+      "start": 99.276,
+      "end": 99.578
+    },
+    {
+      "word": "how",
+      "start": 99.822,
+      "end": 100.008
+    },
+    {
+      "word": "much",
+      "start": 100.066,
+      "end": 100.251
+    },
+    {
+      "word": "you",
+      "start": 100.298,
+      "end": 100.379
+    },
+    {
+      "word": "can",
+      "start": 100.426,
+      "end": 100.646
+    },
+    {
+      "word": "do.",
+      "start": 100.716,
+      "end": 101.064
+    },
+    {
+      "word": "Stripe",
+      "start": 101.877,
+      "end": 102.237
+    },
+    {
+      "word": "processes",
+      "start": 102.283,
+      "end": 102.864
+    },
+    {
+      "word": "500",
+      "start": 102.98,
+      "end": 103.525
+    },
+    {
+      "word": "million",
+      "start": 103.583,
+      "end": 103.851
+    },
+    {
+      "word": "A",
+      "start": 103.92,
+      "end": 103.955
+    },
+    {
+      "word": "P",
+      "start": 104.071,
+      "end": 104.164
+    },
+    {
+      "word": "I",
+      "start": 104.675,
+      "end": 104.791
+    },
+    {
+      "word": "requests",
+      "start": 104.907,
+      "end": 105.36
+    },
+    {
+      "word": "per",
+      "start": 105.429,
+      "end": 105.615
+    },
+    {
+      "word": "day",
+      "start": 105.685,
+      "end": 105.975
+    },
+    {
+      "word": "using",
+      "start": 106.3,
+      "end": 106.59
+    },
+    {
+      "word": "exactly",
+      "start": 106.66,
+      "end": 107.136
+    },
+    {
+      "word": "this",
+      "start": 107.183,
+      "end": 107.322
+    },
+    {
+      "word": "pattern.\n\nSo",
+      "start": 107.368,
+      "end": 108.587
+    },
+    {
+      "word": "where",
+      "start": 108.634,
+      "end": 108.831
+    },
+    {
+      "word": "should",
+      "start": 108.866,
+      "end": 109.029
+    },
+    {
+      "word": "you",
+      "start": 109.063,
+      "end": 109.133
+    },
+    {
+      "word": "store",
+      "start": 109.179,
+      "end": 109.458
+    },
+    {
+      "word": "your",
+      "start": 109.505,
+      "end": 109.655
+    },
+    {
+      "word": "A",
+      "start": 109.748,
+      "end": 109.83
+    },
+    {
+      "word": "P",
+      "start": 109.946,
+      "end": 110.027
+    },
+    {
+      "word": "I",
+      "start": 110.201,
+      "end": 110.294
+    },
+    {
+      "word": "key?",
+      "start": 110.41,
+      "end": 110.886
+    },
+    {
+      "word": "Never",
+      "start": 111.327,
+      "end": 111.629
+    },
+    {
+      "word": "in",
+      "start": 111.687,
+      "end": 111.757
+    },
+    {
+      "word": "your",
+      "start": 111.815,
+      "end": 111.908
+    },
+    {
+      "word": "frontend",
+      "start": 111.943,
+      "end": 112.349
+    },
+    {
+      "word": "code.",
+      "start": 112.419,
+      "end": 112.813
+    },
+    {
+      "word": "Never",
+      "start": 113.196,
+      "end": 113.522
+    },
+    {
+      "word": "in",
+      "start": 113.58,
+      "end": 113.649
+    },
+    {
+      "word": "a",
+      "start": 113.707,
+      "end": 113.731
+    },
+    {
+      "word": "git",
+      "start": 113.812,
+      "end": 114.009
+    },
+    {
+      "word": "hub",
+      "start": 114.056,
+      "end": 114.195
+    },
+    {
+      "word": "repository.",
+      "start": 114.253,
+      "end": 115.031
+    },
+    {
+      "word": "Never",
+      "start": 115.542,
+      "end": 115.832
+    },
+    {
+      "word": "hardcoded",
+      "start": 115.89,
+      "end": 116.47
+    },
+    {
+      "word": "in",
+      "start": 116.517,
+      "end": 116.587
+    },
+    {
+      "word": "your",
+      "start": 116.645,
+      "end": 116.749
+    },
+    {
+      "word": "source",
+      "start": 116.796,
+      "end": 117.063
+    },
+    {
+      "word": "files.",
+      "start": 117.097,
+      "end": 117.597
+    },
+    {
+      "word": "Use",
+      "start": 118.2,
+      "end": 118.537
+    },
+    {
+      "word": "environment",
+      "start": 118.572,
+      "end": 119.199
+    },
+    {
+      "word": "variables.",
+      "start": 119.257,
+      "end": 120.0
+    },
+    {
+      "word": "Your",
+      "start": 120.511,
+      "end": 120.685
+    },
+    {
+      "word": "server",
+      "start": 120.755,
+      "end": 121.08
+    },
+    {
+      "word": "reads",
+      "start": 121.138,
+      "end": 121.37
+    },
+    {
+      "word": "the",
+      "start": 121.416,
+      "end": 121.486
+    },
+    {
+      "word": "key",
+      "start": 121.544,
+      "end": 121.741
+    },
+    {
+      "word": "from",
+      "start": 121.811,
+      "end": 121.962
+    },
+    {
+      "word": "a",
+      "start": 122.02,
+      "end": 122.066
+    },
+    {
+      "word": ".environment",
+      "start": 122.101,
+      "end": 122.984
+    },
+    {
+      "word": "file",
+      "start": 123.03,
+      "end": 123.309
+    },
+    {
+      "word": "that's",
+      "start": 123.344,
+      "end": 123.529
+    },
+    {
+      "word": "listed",
+      "start": 123.587,
+      "end": 123.924
+    },
+    {
+      "word": "in",
+      "start": 123.959,
+      "end": 124.052
+    },
+    {
+      "word": ".gitignore.",
+      "start": 124.203,
+      "end": 125.352
+    },
+    {
+      "word": "The",
+      "start": 125.956,
+      "end": 126.095
+    },
+    {
+      "word": "key",
+      "start": 126.165,
+      "end": 126.409
+    },
+    {
+      "word": "never",
+      "start": 126.525,
+      "end": 126.781
+    },
+    {
+      "word": "touches",
+      "start": 126.839,
+      "end": 127.164
+    },
+    {
+      "word": "your",
+      "start": 127.198,
+      "end": 127.291
+    },
+    {
+      "word": "codebase,",
+      "start": 127.338,
+      "end": 127.976
+    },
+    {
+      "word": "never",
+      "start": 128.22,
+      "end": 128.476
+    },
+    {
+      "word": "gets",
+      "start": 128.522,
+      "end": 128.708
+    },
+    {
+      "word": "committed,",
+      "start": 128.754,
+      "end": 129.253
+    },
+    {
+      "word": "never",
+      "start": 129.532,
+      "end": 129.776
+    },
+    {
+      "word": "gets",
+      "start": 129.822,
+      "end": 130.008
+    },
+    {
+      "word": "deployed",
+      "start": 130.055,
+      "end": 130.484
+    },
+    {
+      "word": "to",
+      "start": 130.519,
+      "end": 130.577
+    },
+    {
+      "word": "the",
+      "start": 130.647,
+      "end": 130.716
+    },
+    {
+      "word": "client.\n\nOne",
+      "start": 130.751,
+      "end": 132.284
+    },
+    {
+      "word": "more",
+      "start": 132.318,
+      "end": 132.458
+    },
+    {
+      "word": "thing.",
+      "start": 132.493,
+      "end": 132.876
+    },
+    {
+      "word": "Always",
+      "start": 133.387,
+      "end": 133.909
+    },
+    {
+      "word": "rotate",
+      "start": 134.002,
+      "end": 134.431
+    },
+    {
+      "word": "your",
+      "start": 134.466,
+      "end": 134.571
+    },
+    {
+      "word": "keys.",
+      "start": 134.617,
+      "end": 135.116
+    },
+    {
+      "word": "Most",
+      "start": 135.627,
+      "end": 135.906
+    },
+    {
+      "word": "services",
+      "start": 135.987,
+      "end": 136.545
+    },
+    {
+      "word": "let",
+      "start": 136.661,
+      "end": 136.823
+    },
+    {
+      "word": "you",
+      "start": 136.87,
+      "end": 136.939
+    },
+    {
+      "word": "generate",
+      "start": 136.997,
+      "end": 137.404
+    },
+    {
+      "word": "a",
+      "start": 137.427,
+      "end": 137.45
+    },
+    {
+      "word": "new",
+      "start": 137.52,
+      "end": 137.659
+    },
+    {
+      "word": "key",
+      "start": 137.717,
+      "end": 137.996
+    },
+    {
+      "word": "and",
+      "start": 138.112,
+      "end": 138.309
+    },
+    {
+      "word": "revoke",
+      "start": 138.379,
+      "end": 138.762
+    },
+    {
+      "word": "the",
+      "start": 138.797,
+      "end": 138.878
+    },
+    {
+      "word": "old",
+      "start": 138.925,
+      "end": 139.075
+    },
+    {
+      "word": "one",
+      "start": 139.134,
+      "end": 139.284
+    },
+    {
+      "word": "instantly.",
+      "start": 139.354,
+      "end": 140.086
+    },
+    {
+      "word": "If",
+      "start": 140.596,
+      "end": 140.736
+    },
+    {
+      "word": "you",
+      "start": 140.782,
+      "end": 140.863
+    },
+    {
+      "word": "suspect",
+      "start": 140.921,
+      "end": 141.363
+    },
+    {
+      "word": "a",
+      "start": 141.409,
+      "end": 141.432
+    },
+    {
+      "word": "leak,",
+      "start": 141.502,
+      "end": 141.816
+    },
+    {
+      "word": "rotate",
+      "start": 142.025,
+      "end": 142.454
+    },
+    {
+      "word": "immediately.",
+      "start": 142.478,
+      "end": 143.186
+    },
+    {
+      "word": "It",
+      "start": 143.627,
+      "end": 143.79
+    },
+    {
+      "word": "takes",
+      "start": 143.836,
+      "end": 144.115
+    },
+    {
+      "word": "10",
+      "start": 144.173,
+      "end": 144.428
+    },
+    {
+      "word": "seconds",
+      "start": 144.498,
+      "end": 144.858
+    },
+    {
+      "word": "and",
+      "start": 144.893,
+      "end": 144.962
+    },
+    {
+      "word": "could",
+      "start": 145.009,
+      "end": 145.16
+    },
+    {
+      "word": "save",
+      "start": 145.206,
+      "end": 145.415
+    },
+    {
+      "word": "you",
+      "start": 145.45,
+      "end": 145.531
+    },
+    {
+      "word": "thousands",
+      "start": 145.612,
+      "end": 146.054
+    },
+    {
+      "word": "of",
+      "start": 146.088,
+      "end": 146.146
+    },
+    {
+      "word": "dollars",
+      "start": 146.204,
+      "end": 146.495
+    },
+    {
+      "word": "in",
+      "start": 146.541,
+      "end": 146.622
+    },
+    {
+      "word": "unauthorized",
+      "start": 146.773,
+      "end": 147.482
+    },
+    {
+      "word": "A",
+      "start": 147.598,
+      "end": 147.714
+    },
+    {
+      "word": "P",
+      "start": 147.83,
+      "end": 147.923
+    },
+    {
+      "word": "I",
+      "start": 148.097,
+      "end": 148.19
+    },
+    {
+      "word": "calls.",
+      "start": 148.306,
+      "end": 148.979
+    }
+  ]
+}
