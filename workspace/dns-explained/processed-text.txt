@@ -1,0 +1,11 @@
+Most developers treat D N S like magic. You type a U R L, something happens, and a website appears. But the moment D N S breaks, your entire stack goes down, and you've no idea why.
+
+D N S stands for Domain Name System. Think of it as the phonebook of the internet. When you type google.com into your browser, your computer has no idea what that means. It only understands I P addresses, like 142.250.80.46. D N S translates human-readable names into machine-readable addresses.
+
+Here's how a D N S lookup works. First, your browser checks its own cash. If you visited google.com five minutes ago, the answer's already stored locally. No network request needed. But if the cash is empty, your operating system asks a recursive resolver. This is usually your I S P's D N S server, or a public one like cloud flare's 1.1.1.1.
+
+The recursive resolver doesn't know the answer either. So it starts a chain of questions. First, it asks a root nameserver. There are only 13 root nameserver clusters in the entire world. The root server doesn't know google.com's I P, but it knows who manages the dot-com zone. It sends back a referral to the T L D nameserver.
+
+The T L D nameserver handles all dot-com domains. It also doesn't know google.com's exact I P. But it knows which authoritative nameserver Google uses. So it sends another referral.
+
+Finally, the recursive resolver asks Google's authoritative nameserver. This server has the answer. It responds with the I P address, and the resolver caches it and sends it back to your browser. This entire process takes about 20 to 120 milliseconds.

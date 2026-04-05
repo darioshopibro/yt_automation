@@ -83,27 +83,14 @@ const response = await fetch(
 
 ## SYNC PRAVILA
 
-### Camera Keyframes
-```
-Camera pomera se ~15 frames PRE nego što sekcija počne
-```
-
-```tsx
-const cameraKeyframes = [
-  { frame: 0, x: 230, y: 490, scale: 1.1 },      // CHANNELS @ frame 0
-  { frame: 220, x: 635, y: 490, scale: 1.0 },    // GATEWAY @ frame 235
-];
-// Camera @ 220, sekcija počinje @ 235 = 15 frames anticipation
-```
-
 ### Element Animations
 ```
 Element pojavi se 3-5 frames PRE reči (vizual anticipira audio)
 ```
 
 ```tsx
-<NodeItem label="WhatsApp" opacity={getOpacity(28)} />  // Reč @ frame 31
-<NodeItem label="Telegram" opacity={getOpacity(58)} />  // Reč @ frame 61
+// Frame kad narator kaže "WhatsApp" = 31, element se pojavi na 28
+const whatsappAppear = interpolate(frame, [28, 43], [0, 1], { extrapolateRight: 'clamp' });
 ```
 
 ---

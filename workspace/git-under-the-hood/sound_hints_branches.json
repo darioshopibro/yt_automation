@@ -1,0 +1,24 @@
+{
+  "segment": "Branches",
+  "segmentIndex": 3,
+  "startFrame": 2415,
+  "endFrame": 2982,
+  "frameMode": "global",
+  "events": [
+    { "frame": 2415, "type": "scene_start", "description": "segment opens, title text 'branches get interesting' fades in with slide up" },
+    { "frame": 2432, "type": "element_appear", "description": "'interesting' word glows with blue emphasis" },
+    { "frame": 2471, "type": "element_appear", "description": "misconception folder icon appears with slide up — represents 'copy of code'" },
+    { "frame": 2485, "type": "reveal", "description": "red X mark scales in over folder, crossing out the misconception — dramatic rejection" },
+    { "frame": 2561, "type": "reveal", "description": "branch file card slides in from below — key revelation that branch is just a text file" },
+    { "frame": 2604, "type": "element_appear", "description": "hash text 'a1b2c3d4e5f6...' appears inside the file card" },
+    { "frame": 2638, "type": "transition", "description": "scene 1 crossfades out, scene 2 fades in" },
+    { "frame": 2648, "type": "reveal", "description": "'That's it.' text scales up dramatically with spring animation — emphasis moment" },
+    { "frame": 2689, "type": "transition", "description": "scene 2 crossfades out, scene 3 with branch creation fades in" },
+    { "frame": 2699, "type": "element_appear", "description": "'main' branch file card appears in scene 3 with .git/refs/heads/ header" },
+    { "frame": 2713, "type": "element_appear", "description": "'feature' branch file card slides in next to main — new branch created" },
+    { "frame": 2757, "type": "reveal", "description": "'40 bytes' size labels pop in under both cards with spring scale — emphasizes tiny size" },
+    { "frame": 2849, "type": "element_appear", "description": "HEAD pointer badge appears above main branch card" },
+    { "frame": 2906, "type": "reveal", "description": "HEAD pointer smoothly slides from main card to feature card — visualizes branch switching" },
+    { "frame": 2972, "type": "element_appear", "description": "final glow emphasis on branch files, segment ending" }
+  ]
+}

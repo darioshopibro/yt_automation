@@ -1,0 +1,27 @@
+{
+  "segment": "DNS Lookup - Browser Cache",
+  "segmentIndex": 3,
+  "startFrame": 1110,
+  "endFrame": 1890,
+  "frameMode": "global",
+  "events": [
+    { "frame": 1136, "type": "scene_start", "description": "Title 'How DNS Lookup Works' fades in with slide up" },
+    { "frame": 1228, "type": "element_appear", "description": "Browser window mock scales in with spring animation" },
+    { "frame": 1246, "type": "reveal", "description": "'checks cache' label fades in above arrow zone" },
+    { "frame": 1266, "type": "element_appear", "description": "Cache box appears with spring scale animation" },
+    { "frame": 1281, "type": "element_appear", "description": "Query pulse dot starts traveling from browser to cache" },
+    { "frame": 1318, "type": "reveal", "description": "Cache entry 'google.com -> IP' badge fades in inside cache box" },
+    { "frame": 1418, "type": "element_appear", "description": "Cache HIT: green glow grows on cache box, checkmark pops in" },
+    { "frame": 1430, "type": "reveal", "description": "'Stored Locally' green badge slides up" },
+    { "frame": 1468, "type": "reveal", "description": "'No Network Request Needed' amber badge slides up" },
+    { "frame": 1515, "type": "transition", "description": "Scene 1 crossfades to Scene 2 (cache miss + resolver)" },
+    { "frame": 1545, "type": "scene_start", "description": "Title 'But if the cache is empty...' fades in" },
+    { "frame": 1559, "type": "element_appear", "description": "Empty cache box with red X icon scales in" },
+    { "frame": 1583, "type": "reveal", "description": "'OS asks resolver' label appears above arrow" },
+    { "frame": 1603, "type": "element_appear", "description": "Query pulse travels from empty cache toward resolver" },
+    { "frame": 1621, "type": "element_appear", "description": "Recursive Resolver large box scales in with glow" },
+    { "frame": 1699, "type": "staggered_group", "description": "ISP DNS Server card slides up with icon and label" },
+    { "frame": 1819, "type": "staggered_group", "description": "Cloudflare card slides up with icon and label" },
+    { "frame": 1844, "type": "element_appear", "description": "1.1.1.1 badge pops in with spring scale and orange glow" }
+  ]
+}

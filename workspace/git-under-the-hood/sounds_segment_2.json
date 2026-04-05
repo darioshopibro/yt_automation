@@ -1,0 +1,19 @@
+{
+  "segment": "Three Objects Intro",
+  "segmentIndex": 2,
+  "startFrame": 459,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 451, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — new scene starts" },
+    { "frame": 459, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": ".git folder icon fades in" },
+    { "frame": 475, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before .git folder reveal" },
+    { "frame": 512, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.20, "reason": ".git folder pulses with glow — key reveal" },
+    { "frame": 590, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "section title text fades in" },
+    { "frame": 630, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "build-up before three object types appear" },
+    { "frame": 665, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.18, "reason": "BLOB card pops in — first of three types" },
+    { "frame": 694, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "TREE card pops in — second type" },
+    { "frame": 730, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "COMMIT card pops in — third type" },
+    { "frame": 750, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "connecting gradient line draws between cards" },
+    { "frame": 770, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "BLOB card starts glowing — transition to blob detail" }
+  ]
+}

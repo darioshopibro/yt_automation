@@ -1,0 +1,13 @@
+You use git every day but you've no idea what it's actually doing. When you type git commit, you think you're saving a file. You're not. You're creating a snapshot of your entire project, compressing it, and storing it as an object in a hidden database.
+
+Let me show you what's really happening inside that dot git folder. Everything git does comes down to three types of objects. Blobs, trees, and commits. A blob is just the contents of a file. Not the filename, not the path, just the raw content. Git takes that content, hashes it with SHA-1, and stores it as a compressed object.
+
+A tree is like a directory listing. It maps filenames to blob hashes. So when you've a folder with three files, git creates a tree object that says index.js points to blob abc123, readme.md points to blob def456, and package.json points to blob ghi789.
+
+A commit object ties everything together. It contains a pointer to the root tree, the author info, a timestamp, a commit message, and crucially, a pointer to the parent commit. That parent pointer is what creates the chain. Every commit points back to the one before it. That's your git history.
+
+Now here's where branches get interesting. A branch isn't a copy of your code. It's just a text file containing one commit hash. That's it. When you create a new branch, git creates a forty byte file with a hash in it. When you switch branches, git updates HEAD to point to that branch file.
+
+Merging is where the magic happens. Git walks back through both branch histories to find the common ancestor commit. Then it compares the trees. If both branches changed the same file in the same place, you get a merge conflict. If they changed different files, or different parts of the same file, git automatically combines the changes by doing a three-way merge between the ancestor, yours, and theirs.
+
+Rebasing does something completely different. Instead of creating a merge commit, it replays your commits one by one on top of the other branch. Each replayed commit gets a new hash because its parent changed. The old commits still exist in the object database until garbage collection cleans them up.

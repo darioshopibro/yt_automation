@@ -36,16 +36,27 @@ def premix_segment(sounds_json_path, segment_duration_ms, fps=30):
     loaded = 0
     failed = 0
 
-    # Find minimum frame to detect if frames are global or local
+    # Determine frame mode: explicit "frameMode" field or fallback to heuristic
+    frame_mode = data.get("frameMode", "")
     frames = [s.get("frame", 0) for s in sounds if s.get("type") != "meme"]
     min_frame = min(frames) if frames else 0
-
-    # If min frame > segment_duration in frames, frames are GLOBAL — subtract offset
     segment_frames = int(segment_duration_ms / 1000 * fps)
+
     offset = 0
-    if min_frame > segment_frames:
-        offset = min_frame
-        print(f"    Detected global frames (min={min_frame}), offset={offset}")
+    if frame_mode == "global":
+        # Explicit global — use startFrame from JSON as offset
+        offset = data.get("startFrame", min_frame)
+        print(f"    Frame mode: global (explicit), offset={offset}")
+    elif frame_mode == "local":
+        offset = 0
+        print(f"    Frame mode: local (explicit)")
+    else:
+        # Legacy fallback: heuristic detection for old JSONs without frameMode
+        if min_frame > segment_frames:
+            offset = min_frame
+            print(f"    Frame mode: global (heuristic, min={min_frame}), offset={offset}")
+        else:
+            print(f"    Frame mode: local (heuristic)")
 
     import math
     for s in sounds:

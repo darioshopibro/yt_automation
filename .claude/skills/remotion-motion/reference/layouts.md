@@ -1,6 +1,6 @@
 # Available Layouts (9)
 
-Svaka sekcija MORA imati `layout` property. Template pokazuje primer.
+**NAPOMENA:** Ovi layouti su za ICON FALLBACK unutar fullscreen segmenata — kad vizual nema dovoljno podataka za kompleksnu animaciju. Nisu primarne vizuelne scene.
 
 | Layout | Vizual | Koristi za |
 |--------|--------|------------|

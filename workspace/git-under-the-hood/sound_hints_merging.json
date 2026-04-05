@@ -1,0 +1,30 @@
+{
+  "segment": "Merging",
+  "segmentIndex": 0,
+  "startFrame": 2982,
+  "endFrame": 3790,
+  "frameMode": "global",
+  "events": [
+    { "frame": 2982, "type": "scene_start", "description": "segment opens, 'Merging' title with GitMerge icon fades in" },
+    { "frame": 3038, "type": "element_appear", "description": "'Where the magic happens' subtitle text fades in" },
+    { "frame": 3095, "type": "element_appear", "description": "Branch A commit nodes start appearing right-to-left with spring pop" },
+    { "frame": 3118, "type": "element_appear", "description": "Branch B commit nodes start appearing, both branch lines drawing out" },
+    { "frame": 3178, "type": "reveal", "description": "Common ancestor node GLOWS bright amber — key moment, large pulsing node with 60px glow" },
+    { "frame": 3206, "type": "element_appear", "description": "'COMMON ANCESTOR' label text appears below the glowing node" },
+    { "frame": 3263, "type": "element_appear", "description": "'Then it compares the trees...' text slides up" },
+    { "frame": 3280, "type": "transition", "description": "Scene 1 crossfades to Scene 2 — split view conflict vs auto-merge" },
+    { "frame": 3325, "type": "element_appear", "description": "Conflict side: two file icons (Branch A, Branch B) slide in pointing at same file" },
+    { "frame": 3360, "type": "element_appear", "description": "'same file' label appears, file icons get red glow" },
+    { "frame": 3393, "type": "element_appear", "description": "'same line' label and conflict code block (<<<<<<< markers) appear" },
+    { "frame": 3432, "type": "reveal", "description": "MERGE CONFLICT badge pops in with red warning icon, shakes briefly — dramatic moment" },
+    { "frame": 3493, "type": "element_appear", "description": "Auto-merge side: two different file icons (app.ts, utils.ts) slide in" },
+    { "frame": 3608, "type": "reveal", "description": "AUTO-MERGED success badge pops in green with checkmark" },
+    { "frame": 3650, "type": "transition", "description": "Scene 2 crossfades to Scene 3 — three-way merge visualization" },
+    { "frame": 3694, "type": "element_appear", "description": "'Three-Way Merge' title fades in" },
+    { "frame": 3735, "type": "element_appear", "description": "ANCESTOR source box with tree icon and code placeholder pops in" },
+    { "frame": 3765, "type": "element_appear", "description": "YOURS source box with branch icon pops in" },
+    { "frame": 3790, "type": "element_appear", "description": "THEIRS source box with branch icon pops in" },
+    { "frame": 3800, "type": "element_appear", "description": "Three convergence arrows draw from sources toward center" },
+    { "frame": 3808, "type": "reveal", "description": "MERGE COMMIT result node pops in with green glow — final combined result" }
+  ]
+}

@@ -1,0 +1,9 @@
+Everyone thinks you need post-gres or my S Q L for a real application. They're wrong. S Q lite handles more traffic than most databases you've ever deployed, and it runs on a single file.
+
+S Q lite isn't a toy database. It powers every iPhone, every Android phone, every Mac, every Windows machine. Firefox uses it. Chrome uses it. Your smart T V probably has three copies running right now. It processes more transactions per day than all other databases combined.
+
+Here's why developers are switching back to it. Traditional databases run as a separate server. Your app connects over a network, sends a query, waits for the response. That round trip adds latency. Even on the same machine, you're paying for serialization, network buffers, and connection pools.
+
+S Q lite lives inside your application process. No network hop. No connection pool. No separate server to crash at 3 AM. When your app reads data, it's literally reading a file on disk. Writes go through a write-ahead log that handles concurrent access without locking the entire database.
+
+But the real game changer is deployment. With post-gres, you need a managed database service, connection strings, migration scripts, backup schedules, monitoring dashboards, and someone on-call when it goes down. With S Q lite, you copy one file. That's it. Your entire database is a single file you can email to someone.

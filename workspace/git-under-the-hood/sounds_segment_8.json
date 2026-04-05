@@ -1,0 +1,29 @@
+{
+  "segment": "Rebasing",
+  "segmentIndex": 8,
+  "startFrame": 3790,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 3790, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Rebasing title fades in" },
+    { "frame": 3850, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "main branch line draws in" },
+    { "frame": 3860, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "base commits pop in on main branch" },
+    { "frame": 3870, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "feature branch line draws in below" },
+    { "frame": 3885, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "feature commits pop in staggered" },
+    { "frame": 3962, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "'merge commit' text appears crossed out in red" },
+    { "frame": 3966, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before first commit replay" },
+    { "frame": 4004, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "first commit lifts off and arcs to main" },
+    { "frame": 4029, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "first commit lands on main with glow — new hash" },
+    { "frame": 4038, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "second commit arcs to main" },
+    { "frame": 4063, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "second commit lands on main — new hash" },
+    { "frame": 4070, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "third commit arcs to main" },
+    { "frame": 4095, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "third commit lands on main — new hash" },
+    { "frame": 4150, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before NEW HASH reveal" },
+    { "frame": 4185, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.20, "reason": "NEW HASH label appears — explains identity change" },
+    { "frame": 4233, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "'parent changed' annotation appears" },
+    { "frame": 4293, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "ghost commits pulse — old commits highlighted" },
+    { "frame": 4350, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.07, "reason": "OBJECT DATABASE label appears" },
+    { "frame": 4388, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.10, "reason": "build-up before GC sweep" },
+    { "frame": 4396, "type": "whoosh", "file": "whooshes/wide-whoosh.mp3", "volume": 0.15, "reason": "garbage collection sweep line moves across" },
+    { "frame": 4420, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.18, "reason": "ghost commits fade away — cleanup complete" }
+  ]
+}

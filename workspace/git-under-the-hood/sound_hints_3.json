@@ -1,0 +1,25 @@
+{
+  "segment": "Blobs",
+  "segmentIndex": 3,
+  "startFrame": 779,
+  "endFrame": 1221,
+  "frameMode": "global",
+  "events": [
+    { "frame": 779, "type": "scene_start", "description": "segment opens, 'What is a Blob?' title fades in" },
+    { "frame": 819, "type": "element_appear", "description": "file card with filename, path, and content slides in with spring scale" },
+    { "frame": 889, "type": "element_appear", "description": "filename 'resolver.js' gets red strikethrough line drawn across it, X mark appears" },
+    { "frame": 918, "type": "element_appear", "description": "path 'src/dns/resolver.js' gets red strikethrough line drawn across it, X mark appears" },
+    { "frame": 958, "type": "reveal", "description": "raw content section glows with cyan border and shadow — key moment, content highlighted" },
+    { "frame": 968, "type": "element_appear", "description": "'A blob = just the raw content' label fades in below card" },
+    { "frame": 1000, "type": "transition", "description": "scene 1 crossfades out, scene 2 (pipeline) crossfades in" },
+    { "frame": 1010, "type": "element_appear", "description": "pipeline title 'Git Hashing Pipeline' fades in, content box slides in from left" },
+    { "frame": 1045, "type": "element_appear", "description": "first arrow connector draws in, traveling pulse dot starts moving" },
+    { "frame": 1059, "type": "element_appear", "description": "SHA-1 hash function box pops in with spring scale" },
+    { "frame": 1083, "type": "reveal", "description": "SHA-1 hash value '2e65efe...a3f894' reveals with amber glow — key information" },
+    { "frame": 1120, "type": "element_appear", "description": "second arrow connector draws in toward stored object" },
+    { "frame": 1139, "type": "element_appear", "description": "compressed blob object container slides in from right" },
+    { "frame": 1160, "type": "reveal", "description": "compressed indicator with Package icon pops in with spring — 'Blob Object' label + zlib compressed lines" },
+    { "frame": 1177, "type": "reveal", "description": ".git/objects/2e/65efe... path lights up with blue glow — final destination" },
+    { "frame": 1187, "type": "element_appear", "description": "bottom summary label fades in: 'Content-addressable storage — same content = same hash = same blob'" }
+  ]
+}

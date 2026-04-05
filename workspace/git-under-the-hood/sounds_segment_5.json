@@ -1,0 +1,24 @@
+{
+  "segment": "Commits",
+  "segmentIndex": 5,
+  "startFrame": 1908,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 1900, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Commits" },
+    { "frame": 1909, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "COMMIT OBJECT title fades in" },
+    { "frame": 1923, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "commit card container scales in" },
+    { "frame": 2007, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "tree pointer field row slides in" },
+    { "frame": 2024, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.07, "reason": "author field row slides in" },
+    { "frame": 2054, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.07, "reason": "timestamp field row slides in" },
+    { "frame": 2076, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.07, "reason": "commit message field row slides in" },
+    { "frame": 2070, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before crucially parent pointer reveal" },
+    { "frame": 2110, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.22, "reason": "CRUCIALLY — parent pointer field glows with KEY badge" },
+    { "frame": 2211, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfade to chain view" },
+    { "frame": 2234, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "oldest commit node pops in" },
+    { "frame": 2244, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "middle commit node pops in" },
+    { "frame": 2274, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "newest commit HEAD node pops in with glow" },
+    { "frame": 2291, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "parent pointer arrows draw between commits" },
+    { "frame": 2320, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.10, "reason": "build-up before git history badge" },
+    { "frame": 2356, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "git history label badge glows in" }
+  ]
+}

@@ -1,0 +1,14 @@
+{
+  "segment": "Chain of Questions",
+  "segmentIndex": 4,
+  "startFrame": 1890,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 1882, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment transition — chain of questions begins" },
+    { "frame": 2145, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before 13 root clusters stat" },
+    { "frame": 2185, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.20, "reason": "13 root nameserver clusters stat badge appears — world fact" },
+    { "frame": 2372, "type": "whoosh", "file": "whooshes/lofi-whoosh.mp3", "volume": 0.15, "reason": "crossfade from root scene to TLD nameserver scene" },
+    { "frame": 2722, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "crossfade from TLD scene to authoritative NS scene" },
+    { "frame": 2973, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "final referral badge with purple glow — chain endpoint" }
+  ]
+}

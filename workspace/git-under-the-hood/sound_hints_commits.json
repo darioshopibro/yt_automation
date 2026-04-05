@@ -1,0 +1,22 @@
+{
+  "segment": "Commits",
+  "segmentIndex": 3,
+  "startFrame": 1908,
+  "endFrame": 2415,
+  "frameMode": "global",
+  "events": [
+    { "frame": 1909, "type": "scene_start", "description": "segment opens, COMMIT OBJECT title fades in with icon" },
+    { "frame": 1923, "type": "element_appear", "description": "commit card container scales in, hash header visible" },
+    { "frame": 2007, "type": "element_appear", "description": "tree pointer field row slides up into card" },
+    { "frame": 2024, "type": "element_appear", "description": "author field row slides up into card" },
+    { "frame": 2054, "type": "element_appear", "description": "timestamp field row slides up into card" },
+    { "frame": 2076, "type": "element_appear", "description": "commit message field row slides up into card" },
+    { "frame": 2110, "type": "reveal", "description": "CRUCIALLY moment — parent pointer field appears with intense glow pulse, KEY badge pops in" },
+    { "frame": 2219, "type": "transition", "description": "scene crossfades from commit anatomy to chain view" },
+    { "frame": 2234, "type": "element_appear", "description": "oldest commit node (f1a2b3) pops in on left" },
+    { "frame": 2244, "type": "element_appear", "description": "middle commit node (b4e8a1) pops in" },
+    { "frame": 2274, "type": "element_appear", "description": "newest commit node HEAD (a3f7c2) pops in on right with active glow" },
+    { "frame": 2291, "type": "staggered_group", "description": "parent pointer arrows draw right-to-left between all 3 commits, arrowheads appear" },
+    { "frame": 2356, "type": "reveal", "description": "git history label badge glows in at bottom — final emphasis" }
+  ]
+}

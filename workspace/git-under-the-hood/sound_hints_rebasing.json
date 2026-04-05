@@ -1,0 +1,29 @@
+{
+  "segment": "Rebasing",
+  "segmentIndex": null,
+  "startFrame": 3790,
+  "endFrame": 4480,
+  "frameMode": "global",
+  "events": [
+    { "frame": 3790, "type": "scene_start", "description": "title 'Rebasing' fades in with icon" },
+    { "frame": 3850, "type": "element_appear", "description": "main branch line draws in from left to right" },
+    { "frame": 3860, "type": "staggered_group", "description": "2 base commits pop in on main branch" },
+    { "frame": 3870, "type": "element_appear", "description": "feature branch line draws in below main" },
+    { "frame": 3874, "type": "reveal", "description": "subtitle 'completely different' emphasis text appears" },
+    { "frame": 3885, "type": "staggered_group", "description": "3 feature commits pop in staggered on feature branch" },
+    { "frame": 3962, "type": "element_appear", "description": "'merge commit' text appears crossed out in red" },
+    { "frame": 4004, "type": "element_appear", "description": "first commit lifts off feature branch, arcs upward to main — replay begins" },
+    { "frame": 4029, "type": "element_appear", "description": "first commit lands on main with scale pop and glow — new hash d7e2" },
+    { "frame": 4038, "type": "element_appear", "description": "second commit lifts off feature branch, arcs to main" },
+    { "frame": 4063, "type": "element_appear", "description": "second commit lands on main — new hash e9a5" },
+    { "frame": 4070, "type": "element_appear", "description": "third commit lifts off feature branch, arcs to main" },
+    { "frame": 4095, "type": "element_appear", "description": "third commit lands on main — new hash f1b8" },
+    { "frame": 4185, "type": "reveal", "description": "'NEW HASH' label appears above replayed commits with annotation" },
+    { "frame": 4233, "type": "element_appear", "description": "'parent changed' annotation dot appears below first replayed commit" },
+    { "frame": 4293, "type": "element_appear", "description": "ghost commits on feature branch pulse brighter — old commits highlighted" },
+    { "frame": 4350, "type": "element_appear", "description": "'OBJECT DATABASE' label appears at bottom with explanation text" },
+    { "frame": 4396, "type": "transition", "description": "garbage collection sweep line begins moving across feature branch — red glow" },
+    { "frame": 4407, "type": "element_disappear", "description": "ghost commits start fading out as GC sweep passes over them" },
+    { "frame": 4420, "type": "element_disappear", "description": "feature branch line fades away, old commits fully cleaned up" }
+  ]
+}

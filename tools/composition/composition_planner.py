@@ -1,18 +1,17 @@
-"""Composition Planner — ONE agent plans visuals + sounds + memes TOGETHER.
+"""Composition Planner — DEPRECATED for beat-type decisions.
 
-This is FAZA 2 — after TTS, before generation.
-Plans EVERYTHING as ONE COMPOSITION:
-- Which visual type for each beat (motion_graphics / ai_video / meme)
-- Which sound effect accompanies which visual (whoosh on transition, hit on reveal)
-- Where memes go
-- Where AI video clips go
-- Ducking zones for music
+Beat-type decisions (motion_graphics / ai_video / meme) are now made by
+the remotion-planner skill BEFORE visual generation (see SKILL.md KORAK 3).
 
-Uses Claude CLI to plan — LLM reads transcript + timestamps and decides
-visuals AND sounds together because they are ONE COMPOSITION.
+This module is kept ONLY for:
+- _build_ducking_zones() — used by audio mixer
+- Backward compatibility if called from old scripts
 
-Input: master-plan.json + memes.json (optional)
-Output: master-composition.json with EVERYTHING planned together
+For new videos, beat types come from master-plan.json segments[].beatType
+which the planner writes directly.
+
+OLD: composition_planner → master-composition.json → then generate visuals
+NEW: planner decides beat types → generates visuals → builder assembles
 """
 
 import json

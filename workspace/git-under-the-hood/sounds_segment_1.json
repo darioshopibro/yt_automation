@@ -1,0 +1,10 @@
+{
+  "segment": "The Hook",
+  "segmentIndex": 1,
+  "startFrame": 0,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 0, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "video opens — first visual element appears" },
+    { "frame": 451, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Three Objects Intro" }
+  ]
+}

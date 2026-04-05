@@ -1,0 +1,13 @@
+{
+  "segment": "DNS Lookup - Browser Cache",
+  "segmentIndex": 3,
+  "startFrame": 1110,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 1102, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "segment transition — DNS lookup scene begins" },
+    { "frame": 1378, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before cache HIT reveal" },
+    { "frame": 1418, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.20, "reason": "cache HIT — green glow + checkmark pop on cache box" },
+    { "frame": 1507, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "crossfade to cache miss scene" },
+    { "frame": 1844, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.18, "reason": "1.1.1.1 badge pops in with spring scale and glow" }
+  ]
+}

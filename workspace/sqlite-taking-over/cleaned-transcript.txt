@@ -1,0 +1,9 @@
+Everyone thinks you need Postgres or MySQL for a real application. They're wrong. SQLite handles more traffic than most databases you've ever deployed, and it runs on a single file.
+
+SQLite isn't a toy database. It powers every iPhone, every Android phone, every Mac, every Windows machine. Firefox uses it. Chrome uses it. Your smart TV probably has three copies running right now. It processes more transactions per day than all other databases combined.
+
+Here's why developers are switching back to it. Traditional databases run as a separate server. Your app connects over a network, sends a query, waits for the response. That round trip adds latency. Even on the same machine, you're paying for serialization, network buffers, and connection pools.
+
+SQLite lives inside your application process. No network hop. No connection pool. No separate server to crash at 3 AM. When your app reads data, it's literally reading a file on disk. Writes go through a write-ahead log that handles concurrent access without locking the entire database.
+
+But the real game changer is deployment. With Postgres, you need a managed database service, connection strings, migration scripts, backup schedules, monitoring dashboards, and someone on-call when it goes down. With SQLite, you copy one file. That's it. Your entire database is a single file you can email to someone.

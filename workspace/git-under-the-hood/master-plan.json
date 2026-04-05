@@ -1,0 +1,96 @@
+{
+  "meta": {
+    "title": "How Git Actually Works Under the Hood",
+    "fps": 30,
+    "totalFrames": 4480,
+    "totalDuration": 149.3
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 148.329
+  },
+  "structure": {
+    "segments": [
+      {
+        "id": "segment_1",
+        "step": 1,
+        "title": "The Hook",
+        "beatType": "ai_video",
+        "startFrame": 0,
+        "endFrame": 459,
+        "aiVideoPrompt": "Cinematic close-up of a developer typing 'git commit' in a terminal, dramatic lighting, code reflections in glasses, camera slowly zooms into the .git folder icon on screen, mysterious glowing database structure visible inside",
+        "transcriptSegment": "You use git every day but you've no idea what it's actually doing. When you type git commit, you think you're saving a file. You're not. You're creating a snapshot of your entire project, compressing it, and storing it as an object in a hidden database."
+      },
+      {
+        "id": "segment_2",
+        "step": 2,
+        "title": "Three Objects Intro",
+        "beatType": "motion_graphics",
+        "startFrame": 459,
+        "endFrame": 779,
+        "componentPath": "src/visuals/Generated_ThreeObjectsIntro.tsx",
+        "transcriptSegment": "Let me show you what's really happening inside that dot git folder. Everything git does comes down to three types of objects. Blobs, trees, and commits."
+      },
+      {
+        "id": "segment_3",
+        "step": 3,
+        "title": "Blobs",
+        "beatType": "motion_graphics",
+        "startFrame": 779,
+        "endFrame": 1221,
+        "componentPath": "src/visuals/Generated_Blobs.tsx",
+        "transcriptSegment": "A blob is just the contents of a file. Not the filename, not the path, just the raw content. Git takes that content, hashes it with SHA-1, and stores it as a compressed object."
+      },
+      {
+        "id": "segment_4",
+        "step": 4,
+        "title": "Trees",
+        "beatType": "motion_graphics",
+        "startFrame": 1221,
+        "endFrame": 1908,
+        "componentPath": "src/visuals/Generated_Trees.tsx",
+        "transcriptSegment": "A tree is like a directory listing. It maps filenames to blob hashes. So when you've a folder with three files, git creates a tree object that says index.js points to blob abc123, readme.md points to blob def456, and package.json points to blob ghi789."
+      },
+      {
+        "id": "segment_5",
+        "step": 5,
+        "title": "Commits",
+        "beatType": "motion_graphics",
+        "startFrame": 1908,
+        "endFrame": 2415,
+        "componentPath": "src/visuals/Generated_Commits.tsx",
+        "transcriptSegment": "A commit object ties everything together. It contains a pointer to the root tree, the author info, a timestamp, a commit message, and crucially, a pointer to the parent commit. That parent pointer is what creates the chain. Every commit points back to the one before it. That's your git history."
+      },
+      {
+        "id": "segment_6",
+        "step": 6,
+        "title": "Branches",
+        "beatType": "motion_graphics",
+        "startFrame": 2415,
+        "endFrame": 2982,
+        "componentPath": "src/visuals/Generated_Branches.tsx",
+        "transcriptSegment": "Now here's where branches get interesting. A branch isn't a copy of your code. It's just a text file containing one commit hash. That's it. When you create a new branch, git creates a forty byte file with a hash in it. When you switch branches, git updates HEAD to point to that branch file."
+      },
+      {
+        "id": "segment_7",
+        "step": 7,
+        "title": "Merging",
+        "beatType": "motion_graphics",
+        "startFrame": 2982,
+        "endFrame": 3790,
+        "componentPath": "src/visuals/Generated_Merging.tsx",
+        "transcriptSegment": "Merging is where the magic happens. Git walks back through both branch histories to find the common ancestor commit. Then it compares the trees. If both branches changed the same file in the same place, you get a merge conflict. If they changed different files, or different parts of the same file, git automatically combines the changes by doing a three-way merge between the ancestor, yours, and theirs."
+      },
+      {
+        "id": "segment_8",
+        "step": 8,
+        "title": "Rebasing",
+        "beatType": "motion_graphics",
+        "startFrame": 3790,
+        "endFrame": 4480,
+        "componentPath": "src/visuals/Generated_Rebasing.tsx",
+        "transcriptSegment": "Rebasing does something completely different. Instead of creating a merge commit, it replays your commits one by one on top of the other branch. Each replayed commit gets a new hash because its parent changed. The old commits still exist in the object database until garbage collection cleans them up."
+      }
+    ]
+  }
+}

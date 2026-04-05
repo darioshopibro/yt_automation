@@ -17,7 +17,7 @@
 ```json
 {
   "title": "Kubernetes Architecture",
-  "hierarchyType": "sticky",
+  "hierarchyType": "segment",
   "stickies": [
     {
       "step": 1,
@@ -121,8 +121,8 @@
 - "run kubectl... authenticated... scheduler picks... kubelet starts" → process-steps (sequential tutorial)
 
 **Composition Analysis:**
-- **Shape:** Sticky 1 (timeline=WIDE + stats=WIDE) ✅ isti shape. Sticky 2 (icons-flow=neutral + logo-grid=SQUARE) ✅. Sticky 3 (icons-flow=neutral + process-steps=SQUARE) ✅.
-- **Weight:** Nikad 2 HEAVY u istom sticky-ju ✅ (timeline=MEDIUM, stats=LIGHT, logo-grid=MEDIUM, process-steps=MEDIUM)
+- **Shape:** Segment 1 (timeline=WIDE + stats=WIDE) ✅ isti shape. Segment 2 (icons-flow=neutral + logo-grid=SQUARE) ✅. Segment 3 (icons-flow=neutral + process-steps=SQUARE) ✅.
+- **Weight:** Nikad 2 HEAVY u istom segmentu ✅ (timeline=MEDIUM, stats=LIGHT, logo-grid=MEDIUM, process-steps=MEDIUM)
 - **Density balans:** S1: timeline 4 + stats 2 = razlika 2 ✅. S2: icons 3 + logo-grid 3 = razlika 0 ✅. S3: icons 4 + process-steps 4 = razlika 0 ✅.
 - **Variety:** 5 različitih vizuala (timeline, stats, logo-grid, process-steps, icons) ✅. Nijedan ponovljen ✅.
 - **Direction:** right→right→below (below za drill-down iz Master u Deploy Flow) ✅
@@ -144,7 +144,7 @@
 ```json
 {
   "title": "The Ideal CI/CD Pipeline",
-  "hierarchyType": "sticky",
+  "hierarchyType": "segment",
   "stickies": [
     {
       "step": 1,
@@ -268,7 +268,7 @@
 ```json
 {
   "title": "Microservices vs Monolith",
-  "hierarchyType": "sticky",
+  "hierarchyType": "segment",
   "stickies": [
     {
       "step": 1,

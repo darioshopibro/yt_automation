@@ -146,10 +146,18 @@ def run_full_pipeline(topic_id, auto_approve_images=True):
                     w["startFrame"] = round(w["start"] * fps)
                     w["endFrame"] = round(w["end"] * fps)
 
-                # Simple segmentation: split into ~5 segments based on sentence boundaries
+                # Rough segmentation based on natural pauses in speech (gaps > 0.8s)
+                # Agent will re-segment properly — this is just a starting point
                 segment_boundaries = [0]
-                target_segment_count = 5
-                words_per_segment = max(len(words) // target_segment_count, 10)
+                for i in range(1, len(words)):
+                    gap = words[i].get("start", 0) - words[i-1].get("end", 0)
+                    if gap > 0.8:
+                        segment_boundaries.append(i)
+                # Fallback: if too few boundaries found, split evenly
+                if len(segment_boundaries) < 3:
+                    target_segment_count = max(len(words) // 30, 3)
+                    segment_boundaries = [0]
+                    words_per_segment = max(len(words) // target_segment_count, 10)
 
                 for i in range(1, len(words)):
                     if i % words_per_segment == 0 and i > 0:

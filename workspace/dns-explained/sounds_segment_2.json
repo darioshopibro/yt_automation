@@ -1,0 +1,13 @@
+{
+  "segment": "What is DNS",
+  "segmentIndex": 2,
+  "startFrame": 390,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 382, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — new scene with DNS letters starts" },
+    { "frame": 533, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "phonebook metaphor card slides up — key concept reveal" },
+    { "frame": 562, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "crossfade from acronym scene to browser scene" },
+    { "frame": 789, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before IP address number reveal" },
+    { "frame": 829, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "142.250.80.46 IP number scales in with glow — big reveal" }
+  ]
+}

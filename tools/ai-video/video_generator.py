@@ -184,8 +184,31 @@ def download_file(url, output_path):
     return output_path
 
 
-def generate_clip(prompt, output_dir, clip_name="clip", motion_prompt=None, duration=5):
+def _check_image_quality(img_path, min_size_kb=100):
+    """Quality gate for generated images. Returns (passed, reason)."""
+    if not os.path.exists(img_path):
+        return False, "File does not exist"
+    size_kb = os.path.getsize(img_path) / 1024
+    if size_kb < min_size_kb:
+        return False, f"Image too small ({size_kb:.0f}KB < {min_size_kb}KB) — likely blank or error"
+    return True, "ok"
+
+
+def _check_video_quality(vid_path, min_size_kb=500):
+    """Quality gate for generated videos. Returns (passed, reason)."""
+    if not os.path.exists(vid_path):
+        return False, "File does not exist"
+    size_kb = os.path.getsize(vid_path) / 1024
+    if size_kb < min_size_kb:
+        return False, f"Video too small ({size_kb:.0f}KB < {min_size_kb}KB) — likely corrupt or static"
+    return True, "ok"
+
+
+def generate_clip(prompt, output_dir, clip_name="clip", motion_prompt=None, duration=5, max_retries=2):
     """Full pipeline: prompt → image → video → downloaded file.
+
+    Includes quality gates: retries image/video generation if output is
+    too small (blank/corrupt). Max retries per step controlled by max_retries.
 
     Args:
         prompt: image description
@@ -193,56 +216,78 @@ def generate_clip(prompt, output_dir, clip_name="clip", motion_prompt=None, dura
         clip_name: base filename (without extension)
         motion_prompt: camera/motion description for video
         duration: video length
+        max_retries: max retry attempts per step on quality failure
 
     Returns dict with paths and metadata.
     """
     os.makedirs(output_dir, exist_ok=True)
     result = {"prompt": prompt, "clip_name": clip_name, "steps": []}
 
-    # Step 1: Generate image
-    print(f"  🖼️  Generating image: {prompt[:60]}...")
-    try:
-        image = generate_image(prompt)
-        if not image or not image.get("url"):
-            result["error"] = "Image generation failed"
-            result["steps"].append({"step": "image_gen", "status": "failed"})
-            return result
+    # Step 1: Generate image (with quality gate + retry)
+    image = None
+    img_path = os.path.join(output_dir, f"{clip_name}.png")
 
-        # Download image
-        img_path = os.path.join(output_dir, f"{clip_name}.png")
-        download_file(image["url"], img_path)
-        result["image_path"] = img_path
-        result["image_url"] = image["url"]
-        result["steps"].append({"step": "image_gen", "status": "ok", "path": img_path})
-        print(f"  ✅ Image saved: {img_path}")
-    except Exception as e:
-        result["error"] = f"Image gen: {e}"
-        result["steps"].append({"step": "image_gen", "status": "failed", "error": str(e)})
+    for attempt in range(1, max_retries + 2):
+        print(f"  🖼️  Generating image (attempt {attempt}): {prompt[:60]}...")
+        try:
+            image = generate_image(prompt)
+            if not image or not image.get("url"):
+                result["steps"].append({"step": "image_gen", "status": "failed", "attempt": attempt})
+                continue
+
+            download_file(image["url"], img_path)
+            passed, reason = _check_image_quality(img_path)
+            if passed:
+                result["image_path"] = img_path
+                result["image_url"] = image["url"]
+                result["steps"].append({"step": "image_gen", "status": "ok", "path": img_path, "attempt": attempt})
+                print(f"  ✅ Image saved: {img_path} ({os.path.getsize(img_path)/1024:.0f}KB)")
+                break
+            else:
+                print(f"  ⚠️ Quality check failed: {reason}")
+                result["steps"].append({"step": "image_gen", "status": "quality_fail", "reason": reason, "attempt": attempt})
+                os.remove(img_path)
+                image = None
+        except Exception as e:
+            result["steps"].append({"step": "image_gen", "status": "failed", "error": str(e), "attempt": attempt})
+            image = None
+
+    if not image:
+        result["error"] = "Image generation failed after all retries"
         return result
 
-    # Step 2: Animate to video
-    print(f"  🎬 Animating with Higgsfield ({duration}s)...")
-    try:
-        video = generate_video_from_image(
-            image["url"],
-            prompt=motion_prompt or "subtle cinematic camera movement, slow zoom in",
-            duration=duration,
-        )
-        if not video or not video.get("url"):
-            result["error"] = "Video generation failed"
-            result["steps"].append({"step": "video_gen", "status": "failed"})
-            return result
+    # Step 2: Animate to video (with quality gate + retry)
+    vid_path = os.path.join(output_dir, f"{clip_name}.mp4")
 
-        # Download video
-        vid_path = os.path.join(output_dir, f"{clip_name}.mp4")
-        download_file(video["url"], vid_path)
-        result["video_path"] = vid_path
-        result["video_url"] = video["url"]
-        result["steps"].append({"step": "video_gen", "status": "ok", "path": vid_path})
-        print(f"  ✅ Video saved: {vid_path}")
-    except Exception as e:
-        result["error"] = f"Video gen: {e}"
-        result["steps"].append({"step": "video_gen", "status": "failed", "error": str(e)})
+    for attempt in range(1, max_retries + 2):
+        print(f"  🎬 Animating (attempt {attempt}, {duration}s)...")
+        try:
+            video = generate_video_from_image(
+                image["url"],
+                prompt=motion_prompt or "subtle cinematic camera movement, slow zoom in",
+                duration=duration,
+            )
+            if not video or not video.get("url"):
+                result["steps"].append({"step": "video_gen", "status": "failed", "attempt": attempt})
+                continue
+
+            download_file(video["url"], vid_path)
+            passed, reason = _check_video_quality(vid_path)
+            if passed:
+                result["video_path"] = vid_path
+                result["video_url"] = video["url"]
+                result["steps"].append({"step": "video_gen", "status": "ok", "path": vid_path, "attempt": attempt})
+                print(f"  ✅ Video saved: {vid_path} ({os.path.getsize(vid_path)/1024:.0f}KB)")
+                break
+            else:
+                print(f"  ⚠️ Quality check failed: {reason}")
+                result["steps"].append({"step": "video_gen", "status": "quality_fail", "reason": reason, "attempt": attempt})
+                os.remove(vid_path)
+        except Exception as e:
+            result["steps"].append({"step": "video_gen", "status": "failed", "error": str(e), "attempt": attempt})
+
+    if "video_path" not in result:
+        result["error"] = "Video generation failed after all retries"
         return result
 
     result["status"] = "ok"

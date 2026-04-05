@@ -1,6 +1,6 @@
 # Remotion Builder Skill
 
-Implementira video prema `master-plan.json`. **NE koristi DynamicPipeline/canvas.** Svaki segment je fullscreen Generated_*.tsx komponenta, chain-ovani sa Sequence + voiceover.
+Implementira video prema `master-plan.json`. **NE koristi DynamicPipeline/canvas.** Svaki segment je fullscreen Generated_*.tsx komponenta sa opacity control + voiceover.
 
 **Input:** `master-plan.json` (iz planner-a) + Generated_*.tsx (iz visual-generator skill-a)
 **Output:** Funkcionalan Remotion projekat
@@ -28,6 +28,8 @@ npm install remotion @remotion/cli @phosphor-icons/react react react-dom
 cp workspace/{project-name}/voiceover.mp3 videos/{project-name}/public/
 cp workspace/{project-name}/master-plan.json videos/{project-name}/src/
 ```
+
+**SFX kopiranje:** Ako `videos/{project-name}/public/sfx/` postoji (kreiran od premix_segments.py), dodaj SFX Audio elemente u Root.tsx (vidi KORAK 4).
 
 ### KORAK 3: Generiši vizuale sa visual-generator SKILL-om
 
@@ -145,6 +147,24 @@ const FullVideo: React.FC = () => {
 
 **BEZ OVE LOGIKE VIDEO NE RADI** — segmenti se vide svi odjednom.
 
+**SFX AUDIO:** Ako postoje premixed SFX fajlovi u `public/sfx/`, dodaj ih:
+
+```tsx
+import { Sequence } from "remotion";
+
+// SFX — jedan Audio po segmentu, wraped u Sequence za timing
+{segments.map(({ startFrame, endFrame }, i) => {
+  const sfxFile = `sfx/segment_${i + 1}_sfx.mp3`;
+  return (
+    <Sequence key={`sfx-${i}`} from={startFrame} durationInFrames={endFrame - startFrame}>
+      <Audio src={staticFile(sfxFile)} volume={1} />
+    </Sequence>
+  );
+})}
+```
+
+**NAPOMENA:** Sequence se koristi SAMO za SFX Audio timing — NIKAD za vizuelne komponente. Vizuelne komponente koriste opacity control (gore).
+
 ### KORAK 5: Generiši remotion.config.ts i index.ts
 
 ```ts
@@ -173,7 +193,7 @@ cd videos/{project-name} && npx remotion studio --port 3001
 ❌ ZABRANJENO: dynamic-config.json, camera keyframes, sticky layouts
 ❌ ZABRANJENO: Kopirati template iz templates/ai-video-gen-pipeline
 
-✅ ISPRAVNO: Čist projekat sa Root.tsx → Sequence chain → Generated_*.tsx + voiceover
+✅ ISPRAVNO: Čist projekat sa Root.tsx → opacity control → Generated_*.tsx + voiceover + SFX
 ✅ ISPRAVNO: Svaki segment je fullscreen 1920x1080 komponenta
 ✅ ISPRAVNO: Animacije su u .tsx fajlovima (Visual Generator ih je napravio)
 ```
@@ -185,7 +205,7 @@ cd videos/{project-name} && npx remotion studio --port 3001
 - [ ] `videos/{project-name}/` postoji
 - [ ] `public/voiceover.mp3` postoji
 - [ ] `src/visuals/Generated_*.tsx` za svaki segment
-- [ ] `src/Root.tsx` sa Sequence chain-om
+- [ ] `src/Root.tsx` sa opacity control za segmente + SFX Audio
 - [ ] `npx remotion studio` radi bez errora
 - [ ] Svaki segment renderuje fullscreen animacije
 - [ ] Voiceover se čuje i sinhronizovan je sa vizualima

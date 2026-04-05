@@ -1,0 +1,24 @@
+{
+  "segment": "Blobs",
+  "segmentIndex": 3,
+  "startFrame": 779,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 771, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Blobs" },
+    { "frame": 779, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "title 'What is a Blob?' fades in" },
+    { "frame": 819, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "file card with content slides in" },
+    { "frame": 889, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "red strikethrough crosses out filename — dramatic rejection" },
+    { "frame": 918, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "red strikethrough crosses out path — second rejection" },
+    { "frame": 920, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before raw content reveal" },
+    { "frame": 958, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "raw content glows cyan — key emphasis moment" },
+    { "frame": 992, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfade to pipeline view" },
+    { "frame": 1010, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "pipeline title + content box slides in" },
+    { "frame": 1045, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "arrow connector draws + pulse dot travels" },
+    { "frame": 1059, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "SHA-1 hash function box pops in" },
+    { "frame": 1045, "type": "riser", "file": "risers/short-riser-02.mp3", "volume": 0.12, "reason": "build-up before SHA-1 hash reveal" },
+    { "frame": 1083, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.20, "reason": "SHA-1 hash value reveals with amber glow — key info" },
+    { "frame": 1139, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.12, "reason": "compressed blob object slides in" },
+    { "frame": 1160, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "compressed indicator pops in — blob fully stored" },
+    { "frame": 1177, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": ".git/objects/ path lights up" }
+  ]
+}

@@ -1,0 +1,1878 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.75,
+    "similarity_boost": 0.85,
+    "style": 0.1,
+    "use_speaker_boost": true
+  },
+  "duration": 148.329,
+  "wordCount": 373,
+  "words": [
+    {
+      "word": "You",
+      "start": 0.0,
+      "end": 0.151
+    },
+    {
+      "word": "use",
+      "start": 0.267,
+      "end": 0.43
+    },
+    {
+      "word": "git",
+      "start": 0.476,
+      "end": 0.604
+    },
+    {
+      "word": "every",
+      "start": 0.65,
+      "end": 0.813
+    },
+    {
+      "word": "day",
+      "start": 0.859,
+      "end": 1.033
+    },
+    {
+      "word": "but",
+      "start": 1.091,
+      "end": 1.219
+    },
+    {
+      "word": "you've",
+      "start": 1.254,
+      "end": 1.44
+    },
+    {
+      "word": "no",
+      "start": 1.486,
+      "end": 1.567
+    },
+    {
+      "word": "idea",
+      "start": 1.637,
+      "end": 1.869
+    },
+    {
+      "word": "what",
+      "start": 1.904,
+      "end": 1.997
+    },
+    {
+      "word": "it's",
+      "start": 2.02,
+      "end": 2.136
+    },
+    {
+      "word": "actually",
+      "start": 2.171,
+      "end": 2.485
+    },
+    {
+      "word": "doing.",
+      "start": 2.554,
+      "end": 3.065
+    },
+    {
+      "word": "When",
+      "start": 3.506,
+      "end": 3.669
+    },
+    {
+      "word": "you",
+      "start": 3.704,
+      "end": 3.785
+    },
+    {
+      "word": "type",
+      "start": 3.866,
+      "end": 4.133
+    },
+    {
+      "word": "git",
+      "start": 4.203,
+      "end": 4.365
+    },
+    {
+      "word": "commit,",
+      "start": 4.435,
+      "end": 4.923
+    },
+    {
+      "word": "you",
+      "start": 5.097,
+      "end": 5.19
+    },
+    {
+      "word": "think",
+      "start": 5.248,
+      "end": 5.399
+    },
+    {
+      "word": "you're",
+      "start": 5.433,
+      "end": 5.608
+    },
+    {
+      "word": "saving",
+      "start": 5.666,
+      "end": 6.002
+    },
+    {
+      "word": "a",
+      "start": 6.06,
+      "end": 6.084
+    },
+    {
+      "word": "file.",
+      "start": 6.153,
+      "end": 6.676
+    },
+    {
+      "word": "You're",
+      "start": 7.001,
+      "end": 7.221
+    },
+    {
+      "word": "not.",
+      "start": 7.268,
+      "end": 7.732
+    },
+    {
+      "word": "You're",
+      "start": 8.173,
+      "end": 8.382
+    },
+    {
+      "word": "creating",
+      "start": 8.406,
+      "end": 8.673
+    },
+    {
+      "word": "a",
+      "start": 8.707,
+      "end": 8.731
+    },
+    {
+      "word": "snapshot",
+      "start": 8.812,
+      "end": 9.334
+    },
+    {
+      "word": "of",
+      "start": 9.369,
+      "end": 9.416
+    },
+    {
+      "word": "your",
+      "start": 9.451,
+      "end": 9.555
+    },
+    {
+      "word": "entire",
+      "start": 9.59,
+      "end": 9.938
+    },
+    {
+      "word": "project,",
+      "start": 9.985,
+      "end": 10.577
+    },
+    {
+      "word": "compressing",
+      "start": 10.751,
+      "end": 11.262
+    },
+    {
+      "word": "it,",
+      "start": 11.308,
+      "end": 11.517
+    },
+    {
+      "word": "and",
+      "start": 11.726,
+      "end": 11.877
+    },
+    {
+      "word": "storing",
+      "start": 11.958,
+      "end": 12.353
+    },
+    {
+      "word": "it",
+      "start": 12.399,
+      "end": 12.469
+    },
+    {
+      "word": "as",
+      "start": 12.516,
+      "end": 12.62
+    },
+    {
+      "word": "an",
+      "start": 12.666,
+      "end": 12.725
+    },
+    {
+      "word": "object",
+      "start": 12.795,
+      "end": 13.155
+    },
+    {
+      "word": "in",
+      "start": 13.201,
+      "end": 13.271
+    },
+    {
+      "word": "a",
+      "start": 13.317,
+      "end": 13.34
+    },
+    {
+      "word": "hidden",
+      "start": 13.398,
+      "end": 13.619
+    },
+    {
+      "word": "database.\n\nLet",
+      "start": 13.665,
+      "end": 15.186
+    },
+    {
+      "word": "me",
+      "start": 15.221,
+      "end": 15.291
+    },
+    {
+      "word": "show",
+      "start": 15.326,
+      "end": 15.465
+    },
+    {
+      "word": "you",
+      "start": 15.511,
+      "end": 15.581
+    },
+    {
+      "word": "what's",
+      "start": 15.616,
+      "end": 15.79
+    },
+    {
+      "word": "really",
+      "start": 15.871,
+      "end": 16.08
+    },
+    {
+      "word": "happening",
+      "start": 16.138,
+      "end": 16.475
+    },
+    {
+      "word": "inside",
+      "start": 16.521,
+      "end": 16.847
+    },
+    {
+      "word": "that",
+      "start": 16.881,
+      "end": 17.009
+    },
+    {
+      "word": "dot",
+      "start": 17.067,
+      "end": 17.288
+    },
+    {
+      "word": "git",
+      "start": 17.334,
+      "end": 17.473
+    },
+    {
+      "word": "folder.",
+      "start": 17.52,
+      "end": 18.008
+    },
+    {
+      "word": "Everything",
+      "start": 18.704,
+      "end": 19.122
+    },
+    {
+      "word": "git",
+      "start": 19.169,
+      "end": 19.296
+    },
+    {
+      "word": "does",
+      "start": 19.354,
+      "end": 19.586
+    },
+    {
+      "word": "comes",
+      "start": 19.645,
+      "end": 19.842
+    },
+    {
+      "word": "down",
+      "start": 19.888,
+      "end": 20.074
+    },
+    {
+      "word": "to",
+      "start": 20.121,
+      "end": 20.19
+    },
+    {
+      "word": "three",
+      "start": 20.283,
+      "end": 20.515
+    },
+    {
+      "word": "types",
+      "start": 20.55,
+      "end": 20.817
+    },
+    {
+      "word": "of",
+      "start": 20.852,
+      "end": 20.91
+    },
+    {
+      "word": "objects.",
+      "start": 20.98,
+      "end": 21.572
+    },
+    {
+      "word": "Blobs,",
+      "start": 22.268,
+      "end": 23.069
+    },
+    {
+      "word": "trees,",
+      "start": 23.244,
+      "end": 23.998
+    },
+    {
+      "word": "and",
+      "start": 24.207,
+      "end": 24.381
+    },
+    {
+      "word": "commits.",
+      "start": 24.451,
+      "end": 25.124
+    },
+    {
+      "word": "A",
+      "start": 25.821,
+      "end": 25.902
+    },
+    {
+      "word": "blob",
+      "start": 25.984,
+      "end": 26.378
+    },
+    {
+      "word": "is",
+      "start": 26.703,
+      "end": 26.889
+    },
+    {
+      "word": "just",
+      "start": 26.947,
+      "end": 27.121
+    },
+    {
+      "word": "the",
+      "start": 27.156,
+      "end": 27.226
+    },
+    {
+      "word": "contents",
+      "start": 27.307,
+      "end": 27.818
+    },
+    {
+      "word": "of",
+      "start": 27.864,
+      "end": 27.934
+    },
+    {
+      "word": "a",
+      "start": 27.992,
+      "end": 28.015
+    },
+    {
+      "word": "file.",
+      "start": 28.085,
+      "end": 28.607
+    },
+    {
+      "word": "Not",
+      "start": 29.304,
+      "end": 29.478
+    },
+    {
+      "word": "the",
+      "start": 29.513,
+      "end": 29.583
+    },
+    {
+      "word": "filename,",
+      "start": 29.664,
+      "end": 30.268
+    },
+    {
+      "word": "not",
+      "start": 30.291,
+      "end": 30.442
+    },
+    {
+      "word": "the",
+      "start": 30.477,
+      "end": 30.547
+    },
+    {
+      "word": "path,",
+      "start": 30.605,
+      "end": 31.208
+    },
+    {
+      "word": "just",
+      "start": 31.533,
+      "end": 31.731
+    },
+    {
+      "word": "the",
+      "start": 31.766,
+      "end": 31.835
+    },
+    {
+      "word": "raw",
+      "start": 31.951,
+      "end": 32.195
+    },
+    {
+      "word": "content.",
+      "start": 32.311,
+      "end": 33.008
+    },
+    {
+      "word": "Git",
+      "start": 33.693,
+      "end": 33.89
+    },
+    {
+      "word": "takes",
+      "start": 33.937,
+      "end": 34.181
+    },
+    {
+      "word": "that",
+      "start": 34.215,
+      "end": 34.366
+    },
+    {
+      "word": "content,",
+      "start": 34.424,
+      "end": 35.028
+    },
+    {
+      "word": "hashes",
+      "start": 35.307,
+      "end": 35.69
+    },
+    {
+      "word": "it",
+      "start": 35.76,
+      "end": 35.841
+    },
+    {
+      "word": "with",
+      "start": 35.876,
+      "end": 36.015
+    },
+    {
+      "word": "S",
+      "start": 36.119,
+      "end": 36.328
+    },
+    {
+      "word": "H",
+      "start": 36.444,
+      "end": 36.653
+    },
+    {
+      "word": "A-1,",
+      "start": 36.723,
+      "end": 37.338
+    },
+    {
+      "word": "and",
+      "start": 37.78,
+      "end": 37.931
+    },
+    {
+      "word": "stores",
+      "start": 37.977,
+      "end": 38.325
+    },
+    {
+      "word": "it",
+      "start": 38.372,
+      "end": 38.441
+    },
+    {
+      "word": "as",
+      "start": 38.488,
+      "end": 38.592
+    },
+    {
+      "word": "a",
+      "start": 38.627,
+      "end": 38.65
+    },
+    {
+      "word": "compressed",
+      "start": 38.697,
+      "end": 39.184
+    },
+    {
+      "word": "object.\n\nA",
+      "start": 39.254,
+      "end": 40.612
+    },
+    {
+      "word": "tree",
+      "start": 40.705,
+      "end": 40.984
+    },
+    {
+      "word": "is",
+      "start": 41.007,
+      "end": 41.088
+    },
+    {
+      "word": "like",
+      "start": 41.135,
+      "end": 41.263
+    },
+    {
+      "word": "a",
+      "start": 41.286,
+      "end": 41.309
+    },
+    {
+      "word": "directory",
+      "start": 41.367,
+      "end": 41.866
+    },
+    {
+      "word": "listing.",
+      "start": 41.924,
+      "end": 42.458
+    },
+    {
+      "word": "It",
+      "start": 43.051,
+      "end": 43.19
+    },
+    {
+      "word": "maps",
+      "start": 43.271,
+      "end": 43.608
+    },
+    {
+      "word": "filenames",
+      "start": 43.724,
+      "end": 44.386
+    },
+    {
+      "word": "to",
+      "start": 44.444,
+      "end": 44.513
+    },
+    {
+      "word": "blob",
+      "start": 44.606,
+      "end": 45.013
+    },
+    {
+      "word": "hashes.",
+      "start": 45.082,
+      "end": 45.791
+    },
+    {
+      "word": "So",
+      "start": 46.476,
+      "end": 46.615
+    },
+    {
+      "word": "when",
+      "start": 46.65,
+      "end": 46.754
+    },
+    {
+      "word": "you've",
+      "start": 46.789,
+      "end": 46.963
+    },
+    {
+      "word": "a",
+      "start": 46.986,
+      "end": 47.01
+    },
+    {
+      "word": "folder",
+      "start": 47.079,
+      "end": 47.45
+    },
+    {
+      "word": "with",
+      "start": 47.508,
+      "end": 47.636
+    },
+    {
+      "word": "three",
+      "start": 47.682,
+      "end": 47.891
+    },
+    {
+      "word": "files,",
+      "start": 47.949,
+      "end": 48.553
+    },
+    {
+      "word": "git",
+      "start": 49.052,
+      "end": 49.308
+    },
+    {
+      "word": "creates",
+      "start": 49.389,
+      "end": 49.726
+    },
+    {
+      "word": "a",
+      "start": 49.772,
+      "end": 49.807
+    },
+    {
+      "word": "tree",
+      "start": 49.865,
+      "end": 50.063
+    },
+    {
+      "word": "object",
+      "start": 50.121,
+      "end": 50.388
+    },
+    {
+      "word": "that",
+      "start": 50.411,
+      "end": 50.515
+    },
+    {
+      "word": "says",
+      "start": 50.55,
+      "end": 50.771
+    },
+    {
+      "word": "index.js",
+      "start": 51.107,
+      "end": 52.001
+    },
+    {
+      "word": "points",
+      "start": 52.385,
+      "end": 52.628
+    },
+    {
+      "word": "to",
+      "start": 52.663,
+      "end": 52.733
+    },
+    {
+      "word": "blob",
+      "start": 52.791,
+      "end": 53.128
+    },
+    {
+      "word": "abc123,",
+      "start": 53.232,
+      "end": 54.637
+    },
+    {
+      "word": "readme.md",
+      "start": 55.159,
+      "end": 56.065
+    },
+    {
+      "word": "points",
+      "start": 56.39,
+      "end": 56.634
+    },
+    {
+      "word": "to",
+      "start": 56.669,
+      "end": 56.738
+    },
+    {
+      "word": "blob",
+      "start": 56.785,
+      "end": 57.11
+    },
+    {
+      "word": "def456,",
+      "start": 57.435,
+      "end": 58.666
+    },
+    {
+      "word": "and",
+      "start": 59.107,
+      "end": 59.234
+    },
+    {
+      "word": "package.jason",
+      "start": 59.292,
+      "end": 60.453
+    },
+    {
+      "word": "points",
+      "start": 60.5,
+      "end": 60.686
+    },
+    {
+      "word": "to",
+      "start": 60.732,
+      "end": 60.79
+    },
+    {
+      "word": "blob",
+      "start": 60.848,
+      "end": 61.185
+    },
+    {
+      "word": "ghi789.\n\nA",
+      "start": 61.336,
+      "end": 63.553
+    },
+    {
+      "word": "commit",
+      "start": 63.623,
+      "end": 63.809
+    },
+    {
+      "word": "object",
+      "start": 63.855,
+      "end": 64.087
+    },
+    {
+      "word": "ties",
+      "start": 64.111,
+      "end": 64.343
+    },
+    {
+      "word": "everything",
+      "start": 64.424,
+      "end": 64.784
+    },
+    {
+      "word": "together.",
+      "start": 64.83,
+      "end": 65.248
+    },
+    {
+      "word": "It",
+      "start": 65.771,
+      "end": 65.875
+    },
+    {
+      "word": "contains",
+      "start": 65.922,
+      "end": 66.224
+    },
+    {
+      "word": "a",
+      "start": 66.247,
+      "end": 66.282
+    },
+    {
+      "word": "pointer",
+      "start": 66.351,
+      "end": 66.665
+    },
+    {
+      "word": "to",
+      "start": 66.711,
+      "end": 66.757
+    },
+    {
+      "word": "the",
+      "start": 66.804,
+      "end": 66.862
+    },
+    {
+      "word": "root",
+      "start": 66.897,
+      "end": 67.024
+    },
+    {
+      "word": "tree,",
+      "start": 67.059,
+      "end": 67.28
+    },
+    {
+      "word": "the",
+      "start": 67.326,
+      "end": 67.419
+    },
+    {
+      "word": "author",
+      "start": 67.454,
+      "end": 67.651
+    },
+    {
+      "word": "info,",
+      "start": 67.686,
+      "end": 68.092
+    },
+    {
+      "word": "a",
+      "start": 68.313,
+      "end": 68.383
+    },
+    {
+      "word": "timestamp,",
+      "start": 68.452,
+      "end": 69.021
+    },
+    {
+      "word": "a",
+      "start": 69.068,
+      "end": 69.126
+    },
+    {
+      "word": "commit",
+      "start": 69.195,
+      "end": 69.393
+    },
+    {
+      "word": "message,",
+      "start": 69.428,
+      "end": 69.927
+    },
+    {
+      "word": "and",
+      "start": 70.136,
+      "end": 70.275
+    },
+    {
+      "word": "crucially,",
+      "start": 70.333,
+      "end": 70.844
+    },
+    {
+      "word": "a",
+      "start": 70.995,
+      "end": 71.065
+    },
+    {
+      "word": "pointer",
+      "start": 71.181,
+      "end": 71.506
+    },
+    {
+      "word": "to",
+      "start": 71.552,
+      "end": 71.61
+    },
+    {
+      "word": "the",
+      "start": 71.657,
+      "end": 71.726
+    },
+    {
+      "word": "parent",
+      "start": 71.773,
+      "end": 72.075
+    },
+    {
+      "word": "commit.",
+      "start": 72.121,
+      "end": 72.562
+    },
+    {
+      "word": "That",
+      "start": 73.166,
+      "end": 73.352
+    },
+    {
+      "word": "parent",
+      "start": 73.41,
+      "end": 73.665
+    },
+    {
+      "word": "pointer",
+      "start": 73.712,
+      "end": 74.002
+    },
+    {
+      "word": "is",
+      "start": 74.037,
+      "end": 74.095
+    },
+    {
+      "word": "what",
+      "start": 74.141,
+      "end": 74.257
+    },
+    {
+      "word": "creates",
+      "start": 74.304,
+      "end": 74.582
+    },
+    {
+      "word": "the",
+      "start": 74.629,
+      "end": 74.698
+    },
+    {
+      "word": "chain.",
+      "start": 74.745,
+      "end": 75.186
+    },
+    {
+      "word": "Every",
+      "start": 75.79,
+      "end": 76.057
+    },
+    {
+      "word": "commit",
+      "start": 76.103,
+      "end": 76.312
+    },
+    {
+      "word": "points",
+      "start": 76.37,
+      "end": 76.602
+    },
+    {
+      "word": "back",
+      "start": 76.649,
+      "end": 76.811
+    },
+    {
+      "word": "to",
+      "start": 76.858,
+      "end": 76.904
+    },
+    {
+      "word": "the",
+      "start": 76.951,
+      "end": 77.02
+    },
+    {
+      "word": "one",
+      "start": 77.09,
+      "end": 77.229
+    },
+    {
+      "word": "before",
+      "start": 77.264,
+      "end": 77.566
+    },
+    {
+      "word": "it.",
+      "start": 77.601,
+      "end": 77.81
+    },
+    {
+      "word": "That's",
+      "start": 78.054,
+      "end": 78.309
+    },
+    {
+      "word": "your",
+      "start": 78.344,
+      "end": 78.46
+    },
+    {
+      "word": "git",
+      "start": 78.53,
+      "end": 78.681
+    },
+    {
+      "word": "history.\n\nNow",
+      "start": 78.727,
+      "end": 80.063
+    },
+    {
+      "word": "here's",
+      "start": 80.121,
+      "end": 80.306
+    },
+    {
+      "word": "where",
+      "start": 80.33,
+      "end": 80.469
+    },
+    {
+      "word": "branches",
+      "start": 80.515,
+      "end": 80.899
+    },
+    {
+      "word": "get",
+      "start": 80.945,
+      "end": 81.061
+    },
+    {
+      "word": "interesting.",
+      "start": 81.096,
+      "end": 81.618
+    },
+    {
+      "word": "A",
+      "start": 82.222,
+      "end": 82.303
+    },
+    {
+      "word": "branch",
+      "start": 82.396,
+      "end": 82.756
+    },
+    {
+      "word": "isn't",
+      "start": 82.837,
+      "end": 83.162
+    },
+    {
+      "word": "a",
+      "start": 83.209,
+      "end": 83.232
+    },
+    {
+      "word": "copy",
+      "start": 83.302,
+      "end": 83.639
+    },
+    {
+      "word": "of",
+      "start": 83.685,
+      "end": 83.731
+    },
+    {
+      "word": "your",
+      "start": 83.778,
+      "end": 83.882
+    },
+    {
+      "word": "code.",
+      "start": 83.94,
+      "end": 84.405
+    },
+    {
+      "word": "It's",
+      "start": 84.846,
+      "end": 85.02
+    },
+    {
+      "word": "just",
+      "start": 85.067,
+      "end": 85.252
+    },
+    {
+      "word": "a",
+      "start": 85.299,
+      "end": 85.322
+    },
+    {
+      "word": "text",
+      "start": 85.392,
+      "end": 85.659
+    },
+    {
+      "word": "file",
+      "start": 85.693,
+      "end": 85.937
+    },
+    {
+      "word": "containing",
+      "start": 85.972,
+      "end": 86.378
+    },
+    {
+      "word": "one",
+      "start": 86.495,
+      "end": 86.75
+    },
+    {
+      "word": "commit",
+      "start": 86.808,
+      "end": 87.063
+    },
+    {
+      "word": "hash.",
+      "start": 87.11,
+      "end": 87.586
+    },
+    {
+      "word": "That's",
+      "start": 88.282,
+      "end": 88.608
+    },
+    {
+      "word": "it.",
+      "start": 88.677,
+      "end": 88.956
+    },
+    {
+      "word": "When",
+      "start": 89.652,
+      "end": 89.815
+    },
+    {
+      "word": "you",
+      "start": 89.85,
+      "end": 89.919
+    },
+    {
+      "word": "create",
+      "start": 89.978,
+      "end": 90.221
+    },
+    {
+      "word": "a",
+      "start": 90.245,
+      "end": 90.268
+    },
+    {
+      "word": "new",
+      "start": 90.314,
+      "end": 90.419
+    },
+    {
+      "word": "branch,",
+      "start": 90.465,
+      "end": 90.941
+    },
+    {
+      "word": "git",
+      "start": 91.185,
+      "end": 91.359
+    },
+    {
+      "word": "creates",
+      "start": 91.417,
+      "end": 91.731
+    },
+    {
+      "word": "a",
+      "start": 91.765,
+      "end": 91.8
+    },
+    {
+      "word": "forty",
+      "start": 91.916,
+      "end": 92.253
+    },
+    {
+      "word": "byte",
+      "start": 92.334,
+      "end": 92.567
+    },
+    {
+      "word": "file",
+      "start": 92.613,
+      "end": 92.938
+    },
+    {
+      "word": "with",
+      "start": 92.961,
+      "end": 93.101
+    },
+    {
+      "word": "a",
+      "start": 93.135,
+      "end": 93.17
+    },
+    {
+      "word": "hash",
+      "start": 93.252,
+      "end": 93.542
+    },
+    {
+      "word": "in",
+      "start": 93.588,
+      "end": 93.658
+    },
+    {
+      "word": "it.",
+      "start": 93.716,
+      "end": 93.96
+    },
+    {
+      "word": "When",
+      "start": 94.656,
+      "end": 94.819
+    },
+    {
+      "word": "you",
+      "start": 94.854,
+      "end": 94.923
+    },
+    {
+      "word": "switch",
+      "start": 94.981,
+      "end": 95.225
+    },
+    {
+      "word": "branches,",
+      "start": 95.271,
+      "end": 95.863
+    },
+    {
+      "word": "git",
+      "start": 96.107,
+      "end": 96.293
+    },
+    {
+      "word": "updates",
+      "start": 96.351,
+      "end": 96.781
+    },
+    {
+      "word": "H",
+      "start": 96.897,
+      "end": 97.175
+    },
+    {
+      "word": "E",
+      "start": 97.349,
+      "end": 97.524
+    },
+    {
+      "word": "A",
+      "start": 97.64,
+      "end": 97.756
+    },
+    {
+      "word": "D",
+      "start": 97.872,
+      "end": 97.988
+    },
+    {
+      "word": "to",
+      "start": 98.429,
+      "end": 98.534
+    },
+    {
+      "word": "point",
+      "start": 98.603,
+      "end": 98.778
+    },
+    {
+      "word": "to",
+      "start": 98.812,
+      "end": 98.859
+    },
+    {
+      "word": "that",
+      "start": 98.905,
+      "end": 99.033
+    },
+    {
+      "word": "branch",
+      "start": 99.079,
+      "end": 99.37
+    },
+    {
+      "word": "file.\n\nMerging",
+      "start": 99.404,
+      "end": 100.821
+    },
+    {
+      "word": "is",
+      "start": 100.867,
+      "end": 100.937
+    },
+    {
+      "word": "where",
+      "start": 100.972,
+      "end": 101.1
+    },
+    {
+      "word": "the",
+      "start": 101.134,
+      "end": 101.204
+    },
+    {
+      "word": "magic",
+      "start": 101.274,
+      "end": 101.622
+    },
+    {
+      "word": "happens.",
+      "start": 101.668,
+      "end": 102.261
+    },
+    {
+      "word": "Git",
+      "start": 102.957,
+      "end": 103.143
+    },
+    {
+      "word": "walks",
+      "start": 103.189,
+      "end": 103.433
+    },
+    {
+      "word": "back",
+      "start": 103.48,
+      "end": 103.654
+    },
+    {
+      "word": "through",
+      "start": 103.7,
+      "end": 103.909
+    },
+    {
+      "word": "both",
+      "start": 103.956,
+      "end": 104.165
+    },
+    {
+      "word": "branch",
+      "start": 104.223,
+      "end": 104.513
+    },
+    {
+      "word": "histories",
+      "start": 104.548,
+      "end": 105.012
+    },
+    {
+      "word": "to",
+      "start": 105.453,
+      "end": 105.558
+    },
+    {
+      "word": "find",
+      "start": 105.616,
+      "end": 105.79
+    },
+    {
+      "word": "the",
+      "start": 105.825,
+      "end": 105.894
+    },
+    {
+      "word": "common",
+      "start": 105.952,
+      "end": 106.289
+    },
+    {
+      "word": "ancestor",
+      "start": 106.347,
+      "end": 106.823
+    },
+    {
+      "word": "commit.",
+      "start": 106.881,
+      "end": 107.346
+    },
+    {
+      "word": "Then",
+      "start": 107.949,
+      "end": 108.274
+    },
+    {
+      "word": "it",
+      "start": 108.6,
+      "end": 108.739
+    },
+    {
+      "word": "compares",
+      "start": 108.785,
+      "end": 109.18
+    },
+    {
+      "word": "the",
+      "start": 109.238,
+      "end": 109.308
+    },
+    {
+      "word": "trees.",
+      "start": 109.354,
+      "end": 109.923
+    },
+    {
+      "word": "If",
+      "start": 110.62,
+      "end": 110.771
+    },
+    {
+      "word": "both",
+      "start": 110.852,
+      "end": 111.084
+    },
+    {
+      "word": "branches",
+      "start": 111.131,
+      "end": 111.525
+    },
+    {
+      "word": "changed",
+      "start": 111.583,
+      "end": 111.873
+    },
+    {
+      "word": "the",
+      "start": 111.908,
+      "end": 111.978
+    },
+    {
+      "word": "same",
+      "start": 112.024,
+      "end": 112.268
+    },
+    {
+      "word": "file",
+      "start": 112.326,
+      "end": 112.628
+    },
+    {
+      "word": "in",
+      "start": 112.651,
+      "end": 112.709
+    },
+    {
+      "word": "the",
+      "start": 112.755,
+      "end": 112.825
+    },
+    {
+      "word": "same",
+      "start": 112.86,
+      "end": 113.069
+    },
+    {
+      "word": "place,",
+      "start": 113.104,
+      "end": 113.626
+    },
+    {
+      "word": "you",
+      "start": 114.009,
+      "end": 114.102
+    },
+    {
+      "word": "get",
+      "start": 114.16,
+      "end": 114.265
+    },
+    {
+      "word": "a",
+      "start": 114.3,
+      "end": 114.323
+    },
+    {
+      "word": "merge",
+      "start": 114.404,
+      "end": 114.706
+    },
+    {
+      "word": "conflict.",
+      "start": 114.752,
+      "end": 115.403
+    },
+    {
+      "word": "If",
+      "start": 116.099,
+      "end": 116.227
+    },
+    {
+      "word": "they",
+      "start": 116.273,
+      "end": 116.401
+    },
+    {
+      "word": "changed",
+      "start": 116.459,
+      "end": 116.749
+    },
+    {
+      "word": "different",
+      "start": 116.796,
+      "end": 117.098
+    },
+    {
+      "word": "files,",
+      "start": 117.144,
+      "end": 117.713
+    },
+    {
+      "word": "or",
+      "start": 117.922,
+      "end": 118.05
+    },
+    {
+      "word": "different",
+      "start": 118.108,
+      "end": 118.375
+    },
+    {
+      "word": "parts",
+      "start": 118.421,
+      "end": 118.7
+    },
+    {
+      "word": "of",
+      "start": 118.735,
+      "end": 118.793
+    },
+    {
+      "word": "the",
+      "start": 118.828,
+      "end": 118.897
+    },
+    {
+      "word": "same",
+      "start": 118.932,
+      "end": 119.129
+    },
+    {
+      "word": "file,",
+      "start": 119.176,
+      "end": 119.687
+    },
+    {
+      "word": "git",
+      "start": 120.07,
+      "end": 120.232
+    },
+    {
+      "word": "automatically",
+      "start": 120.29,
+      "end": 120.952
+    },
+    {
+      "word": "combines",
+      "start": 121.01,
+      "end": 121.498
+    },
+    {
+      "word": "the",
+      "start": 121.556,
+      "end": 121.626
+    },
+    {
+      "word": "changes",
+      "start": 121.695,
+      "end": 122.252
+    },
+    {
+      "word": "by",
+      "start": 122.578,
+      "end": 122.728
+    },
+    {
+      "word": "doing",
+      "start": 122.787,
+      "end": 122.995
+    },
+    {
+      "word": "a",
+      "start": 123.042,
+      "end": 123.065
+    },
+    {
+      "word": "three-way",
+      "start": 123.158,
+      "end": 123.611
+    },
+    {
+      "word": "merge",
+      "start": 123.692,
+      "end": 124.017
+    },
+    {
+      "word": "between",
+      "start": 124.064,
+      "end": 124.365
+    },
+    {
+      "word": "the",
+      "start": 124.389,
+      "end": 124.458
+    },
+    {
+      "word": "ancestor,",
+      "start": 124.528,
+      "end": 125.294
+    },
+    {
+      "word": "yours,",
+      "start": 125.503,
+      "end": 126.049
+    },
+    {
+      "word": "and",
+      "start": 126.13,
+      "end": 126.304
+    },
+    {
+      "word": "theirs.\n\nRebasing",
+      "start": 126.362,
+      "end": 128.347
+    },
+    {
+      "word": "does",
+      "start": 128.498,
+      "end": 128.719
+    },
+    {
+      "word": "something",
+      "start": 128.765,
+      "end": 129.102
+    },
+    {
+      "word": "completely",
+      "start": 129.16,
+      "end": 129.706
+    },
+    {
+      "word": "different.",
+      "start": 129.775,
+      "end": 130.31
+    },
+    {
+      "word": "Instead",
+      "start": 131.006,
+      "end": 131.401
+    },
+    {
+      "word": "of",
+      "start": 131.436,
+      "end": 131.494
+    },
+    {
+      "word": "creating",
+      "start": 131.563,
+      "end": 131.888
+    },
+    {
+      "word": "a",
+      "start": 131.935,
+      "end": 131.958
+    },
+    {
+      "word": "merge",
+      "start": 132.074,
+      "end": 132.388
+    },
+    {
+      "word": "commit,",
+      "start": 132.434,
+      "end": 132.864
+    },
+    {
+      "word": "it",
+      "start": 133.305,
+      "end": 133.433
+    },
+    {
+      "word": "replays",
+      "start": 133.491,
+      "end": 133.967
+    },
+    {
+      "word": "your",
+      "start": 134.013,
+      "end": 134.141
+    },
+    {
+      "word": "commits",
+      "start": 134.199,
+      "end": 134.547
+    },
+    {
+      "word": "one",
+      "start": 134.64,
+      "end": 134.907
+    },
+    {
+      "word": "by",
+      "start": 134.953,
+      "end": 135.093
+    },
+    {
+      "word": "one",
+      "start": 135.186,
+      "end": 135.604
+    },
+    {
+      "word": "on",
+      "start": 135.813,
+      "end": 135.987
+    },
+    {
+      "word": "top",
+      "start": 136.045,
+      "end": 136.277
+    },
+    {
+      "word": "of",
+      "start": 136.335,
+      "end": 136.393
+    },
+    {
+      "word": "the",
+      "start": 136.451,
+      "end": 136.521
+    },
+    {
+      "word": "other",
+      "start": 136.579,
+      "end": 136.753
+    },
+    {
+      "word": "branch.",
+      "start": 136.799,
+      "end": 137.31
+    },
+    {
+      "word": "Each",
+      "start": 138.007,
+      "end": 138.262
+    },
+    {
+      "word": "replayed",
+      "start": 138.332,
+      "end": 138.75
+    },
+    {
+      "word": "commit",
+      "start": 138.796,
+      "end": 139.052
+    },
+    {
+      "word": "gets",
+      "start": 139.11,
+      "end": 139.307
+    },
+    {
+      "word": "a",
+      "start": 139.354,
+      "end": 139.389
+    },
+    {
+      "word": "new",
+      "start": 139.505,
+      "end": 139.679
+    },
+    {
+      "word": "hash",
+      "start": 139.748,
+      "end": 140.12
+    },
+    {
+      "word": "because",
+      "start": 140.561,
+      "end": 140.886
+    },
+    {
+      "word": "its",
+      "start": 140.921,
+      "end": 141.037
+    },
+    {
+      "word": "parent",
+      "start": 141.13,
+      "end": 141.502
+    },
+    {
+      "word": "changed.",
+      "start": 141.56,
+      "end": 142.21
+    },
+    {
+      "word": "The",
+      "start": 142.907,
+      "end": 143.046
+    },
+    {
+      "word": "old",
+      "start": 143.116,
+      "end": 143.267
+    },
+    {
+      "word": "commits",
+      "start": 143.325,
+      "end": 143.685
+    },
+    {
+      "word": "still",
+      "start": 144.01,
+      "end": 144.277
+    },
+    {
+      "word": "exist",
+      "start": 144.335,
+      "end": 144.706
+    },
+    {
+      "word": "in",
+      "start": 144.764,
+      "end": 144.834
+    },
+    {
+      "word": "the",
+      "start": 144.88,
+      "end": 144.95
+    },
+    {
+      "word": "object",
+      "start": 145.02,
+      "end": 145.345
+    },
+    {
+      "word": "database",
+      "start": 145.368,
+      "end": 145.972
+    },
+    {
+      "word": "until",
+      "start": 146.146,
+      "end": 146.459
+    },
+    {
+      "word": "garbage",
+      "start": 146.541,
+      "end": 146.889
+    },
+    {
+      "word": "collection",
+      "start": 146.924,
+      "end": 147.284
+    },
+    {
+      "word": "cleans",
+      "start": 147.342,
+      "end": 147.609
+    },
+    {
+      "word": "them",
+      "start": 147.655,
+      "end": 147.771
+    },
+    {
+      "word": "up.",
+      "start": 147.829,
+      "end": 148.329
+    }
+  ]
+}

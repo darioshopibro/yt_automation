@@ -1,0 +1,24 @@
+{
+  "segment": "The Resolution",
+  "segmentIndex": 5,
+  "startFrame": 3000,
+  "endFrame": 3619,
+  "frameMode": "global",
+  "events": [
+    { "frame": 3000, "type": "scene_start", "description": "Scene 1 begins — title 'The Final Query' fades in" },
+    { "frame": 3056, "type": "element_appear", "description": "Recursive resolver node slides in from left" },
+    { "frame": 3099, "type": "transition", "description": "Query dot travels from resolver toward auth nameserver" },
+    { "frame": 3116, "type": "element_appear", "description": "Auth nameserver node slides in from right with 'google.com' label" },
+    { "frame": 3203, "type": "reveal", "description": "Auth nameserver starts glowing — it has the data" },
+    { "frame": 3223, "type": "reveal", "description": "EUREKA moment — pulse ring + scale pop + 'HAS THE ANSWER' badge appears" },
+    { "frame": 3256, "type": "scene_start", "description": "Scene 2 crossfades in — 'IP Address Returns Through The Chain'" },
+    { "frame": 3282, "type": "element_appear", "description": "IP address badge '142.250.80.46' pops in" },
+    { "frame": 3335, "type": "transition", "description": "Data packet dot travels from auth nameserver to resolver" },
+    { "frame": 3352, "type": "element_appear", "description": "'CACHED' badge appears on resolver node" },
+    { "frame": 3391, "type": "transition", "description": "Data packet dot travels from resolver to browser" },
+    { "frame": 3418, "type": "scene_start", "description": "Scene 3 crossfades in — browser celebration with IP received badge" },
+    { "frame": 3477, "type": "element_appear", "description": "'This entire process takes...' text appears" },
+    { "frame": 3521, "type": "reveal", "description": "Timer counter starts counting up from 0ms with progress bar filling" },
+    { "frame": 3567, "type": "reveal", "description": "Final range badge '20-120 milliseconds' pops in with glow — satisfying conclusion" }
+  ]
+}

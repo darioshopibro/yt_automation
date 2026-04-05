@@ -12,7 +12,7 @@ Ovaj fajl je OBAVEZAN za korake 2.5 (shape planning) i 4.5 (composition validati
 
 ```
 Transcript kaže "Step 1: Kling, Step 2: Runway, Step 3: Sora"
-→ 3 sticky-ja: Kling, Runway, Sora
+→ 3 segmenta: Kling, Runway, Sora
 → NE grupiši u "Pipeline / Comparison / Verdict"
 
 Transcript opisuje pipeline u 4 faze
@@ -20,7 +20,7 @@ Transcript opisuje pipeline u 4 faze
 → NE forsiraj tabelu ili listu
 ```
 
-**Sticky = tema/korak iz transcripta, NE apstraktna kategorija.**
+**Segment = tema/korak iz transcripta, NE apstraktna kategorija.**
 
 ### 0.2. Ikone su DEFAULT, vizuali su BONUS
 
@@ -38,7 +38,7 @@ IKONE SU PODRAZUMEVANO. Vizuali samo kad ima PRAVIH podataka.
 ### 0.3. Slobodan broj sekcija — content diktira strukturu
 
 ```
-Sekcije po sticky-ju:
+Sekcije po segmentu:
   NEMA LIMITA — koliko god transcript zahteva (1, 2, 3, 4, 5+)
   Nikad ne dodavaj fake sekciju samo za uniformnost
   Nikad ne merge-uj sekcije samo da bi imao "lep" broj
@@ -47,9 +47,9 @@ Node count po sekciji:
   Preferiraj 2 ili 3 noda
   4 noda OK za flow sa 4 koraka
   1 nod — izbegavaj (nema odnos)
-  Preferiraj isti count unutar sticky-ja ali content > uniformnost
+  Preferiraj isti count unutar segmenta ali content > uniformnost
 
-Sticky height:
+Segment height:
   Preferiraj iste visine ali content je bitniji
   Nikad ne forsiraj strukturu zarad izgleda
 ```
@@ -88,7 +88,7 @@ Transcript: "Stage one is build. Stage two is testing. Stage three is staging. S
 ✅ process-steps vizual: Build → Test → Stage → Deploy  (jasno prikazuje korake)
 ```
 
-### Greška 5: Node count mismatch u sticky-ju
+### Greška 5: Node count mismatch u segmentu
 ```
 ❌ Step 1: [2 noda] + [3 noda] + [2 noda] + [4 noda] — sve različito
 ✅ Step 1: [3 noda] + [3 noda] + [3 noda] + [3 noda] — uniformno
@@ -107,7 +107,7 @@ Popravi: dodaj relevantan nod manjoj sekciji ILI merge noda u većoj
 
 ---
 
-## A. COMPOSITION (Sticky-Level)
+## A. COMPOSITION (Segment-Level)
 
 ### A1. Visual weight limit
 
@@ -116,16 +116,16 @@ Vizuali po "težini":
 - **MEDIUM:** bar-chart, process-steps, timeline, list, logo-grid (250-350px)
 - **LIGHT:** stats (1-2 items), kinetic, pie-chart (200-400px, kompaktni)
 
-**Pravilo:** Max 2 HEAVY vizuala po sticky-ju. Ostatak mora biti MEDIUM/LIGHT ili ikone.
+**Pravilo:** Max 2 HEAVY vizuala po segmentu. Ostatak mora biti MEDIUM/LIGHT ili ikone.
 
 ```
 ✅ code-block + stats         (heavy + light)
 ✅ table + list                (heavy + medium)
 ✅ list + process-steps        (medium + medium)
-❌ code-block + hierarchy + table  (3 heavy = sticky prevelik za kameru)
+❌ code-block + hierarchy + table  (3 heavy = segment prevelik za kameru)
 ```
 
-### A2. Sekcije po sticky-ju — SLOBODAN BROJ
+### A2. Sekcije po segmentu — SLOBODAN BROJ
 
 - **Koliko god transcript zahteva** (1, 2, 3, 4, 5+) — content diktira, ne layout
 - Sekcije UVEK idu linearno (levo → desno), NIKAD grid
@@ -133,7 +133,7 @@ Vizuali po "težini":
 
 ### A3. Vizuali nisu obavezni
 
-Sticky sa SVE ikonama je potpuno validan. Vizuali se koriste SAMO kad sekcija ima konkretne podatke (vidi Rule 0.2).
+Segment sa SVE ikonama je potpuno validan. Vizuali se koriste SAMO kad sekcija ima konkretne podatke (vidi Rule 0.2).
 
 ### A4. Icon proporcija — NEMA limita
 
@@ -141,7 +141,7 @@ Nema minimalnog procenta vizuala. Ako transcript opisuje apstraktne pipeline-ove
 
 ### A5. Visual + icon pairing
 
-Kad sticky ima 1 vizual + 1 icon sekciju:
+Kad segment ima 1 vizual + 1 icon sekciju:
 - Icon sekcija = **kontekst/overview** (apstraktni odnos)
 - Vizual sekcija = **detalj** (konkretni podaci)
 - Redosled zavisi od narativa: ako icon uvodi temu → icon prvi; ako vizual uvodi → vizual prvi
@@ -163,7 +163,7 @@ Dobri parovi:
 
 Loši parovi:
   heavy + heavy:    code-block + hierarchy (oba velika)
-  light + light:    stats(1) + kinetic (oba sićušna, sticky prazan)
+  light + light:    stats(1) + kinetic (oba sićušna, segment prazan)
 ```
 
 ---
@@ -172,7 +172,7 @@ Loši parovi:
 
 ### B1. Shape-first pristup
 
-**UVEK** odluči shape mode za sticky PRE biranja vizuala:
+**UVEK** odluči shape mode za segment PRE biranja vizuala:
 1. Pogledaj koji vizual transcript ZAHTEVA (npr. "history from 2014..." = timeline = wide)
 2. Shape mode = taj vizual's natural shape
 3. Companion sekcija MORA da bude kompatibilna sa tim shape modom
@@ -225,9 +225,9 @@ WIDE + WIDE:
 
 ### B4. Rešavanje shape konflikta
 
-Kad transcript zahteva vizuale sa različitim natural shapes u istom sticky-ju:
+Kad transcript zahteva vizuale sa različitim natural shapes u istom segmentu:
 
-1. **RAZDVOJ** u 2 sticky-ja (svaki sa svojim natural shape), poveži sa direction="right"
+1. **RAZDVOJ** u 2 segmenta (svaki sa svojim natural shape), poveži sa direction="right"
 2. **ZAMENI** minority vizual sa shape-kompatibilnom alternativom (npr. timeline → process-steps za square mode)
 3. **KORISTI IKONE** za minority — icon sekcije su shape-neutral i uvek rade
 
@@ -259,7 +259,7 @@ Icon sekcije (ExplainerLayout) rade u oba shape moda jer su male (56x56 ikone). 
 
 ### C2. Balans između sekcija
 
-Razlika u item count između 2 sekcije u istom sticky-ju: **MAX 2 itema.**
+Razlika u item count između 2 sekcije u istom segmentu: **MAX 2 itema.**
 
 ```
 ✅ list (4 stavke) + process-steps (3 koraka)   → razlika 1
@@ -367,21 +367,21 @@ Ako transcript zahteva treću instancu istog tipa:
 ```
 PRAVILO: Animacija MORA da krene odmah (unutar 0.5 sekundi od početka videa).
 
-Ako prvi sticky NEMA adekvatan vizual ili ikone koje odmah kreću animaciju:
-  → Stavi kinetic u PRVI sticky kao intro/hook
+Ako prvi segment NEMA adekvatan vizual ili ikone koje odmah kreću animaciju:
+  → Stavi kinetic u PRVI segment kao intro/hook
   → Kinetic odmah pokreće animaciju — gledalac vidi motion od frame 1
 
 Kinetic NIJE obavezan za kraj videa. Koristi ga gde ima smisla:
-  - Kao intro/hook (prvi sticky) — kad nema bolji vizual za početak
-  - Kao punchline/finale (zadnji sticky) — kad transcript ima jak završetak
+  - Kao intro/hook (prvi segment) — kad nema bolji vizual za početak
+  - Kao punchline/finale (zadnji segment) — kad transcript ima jak završetak
   - NIKAD oboje u istom videu (max 1 kinetic po videu)
 ```
 
-### E3. Susedni sticky-ji — soft preporuka za raznovrsnost
+### E3. Susedni segmenti — soft preporuka za raznovrsnost
 
-Ako susedni sticky-ji oba imaju vizualne sekcije, poželjno je da budu različiti tipovi. Ali ovo je SOFT preporuka — ako transcript zahteva isti vizual tip u 2 susedna sticky-ja, to je OK.
+Ako susedni segmenti oba imaju vizualne sekcije, poželjno je da budu različiti tipovi. Ali ovo je SOFT preporuka — ako transcript zahteva isti vizual tip u 2 susedna segmenta, to je OK.
 
-**Za icon sekcije: nema limita.** Svi sticky-ji mogu imati icon-flow sekcije.
+**Za icon sekcije: nema limita.** Svi segmenti mogu imati icon-flow sekcije.
 
 ### E4. Diversity targets — SOFT PREPORUKE (ne hard requirements!)
 
@@ -399,7 +399,7 @@ Poželjno ali NE obavezno:
 ### F1. Direction — UVEK "right"
 
 ```
-Svi sticky-ji idu linearno levo → desno. UVEK direction: "right".
+Svi segmenti idu linearno levo → desno. UVEK direction: "right".
 Nema "below", nema grid, nema clockwise.
 Kamera samo panuje u jednom smeru — jednostavno, glatko, profesionalno.
 ```
@@ -411,7 +411,7 @@ Kamera samo panuje u jednom smeru — jednostavno, glatko, profesionalno.
 | `flow` | Default. Sekvencijalna progresija | Step 1 → Step 2 |
 | `bidirectional` | Dvosmerna komunikacija | API ↔ Database |
 | `vs` | Direktno poređenje (trigger group camera zoom-out) | Monolith vs Microservices |
-| `none` | Bez vizuelne veze (zadnji sticky, ili nepovezani) | Conclusion |
+| `none` | Bez vizuelne veze (zadnji segment, ili nepovezani) | Conclusion |
 
 ---
 
@@ -434,7 +434,7 @@ Kamera samo panuje u jednom smeru — jednostavno, glatko, profesionalno.
 | Hierarchy node label | 1-2 reči | "Frontend", "React" |
 | Logo-grid label | 1-2 reči | "Docker", "PostgreSQL" |
 | Section title | 2-3 reči | "Key Metrics", "Deploy Flow" |
-| Sticky title | 1-3 reči | "Overview", "Build & Test" |
+| Segment title | 1-3 reči | "Overview", "Build & Test" |
 
 ### G2. Tehnike kondenzacije (primeni redom)
 
@@ -482,16 +482,16 @@ Samo 2 data pointa?
 
 ```
 8+ stavki za listu?
-  ├─ Mogu se grupisati u 2 kategorije? → 2 liste u istom sticky-ju
+  ├─ Mogu se grupisati u 2 kategorije? → 2 liste u istom segmentu
   ├─ Mogu se rangirati? → top 5 (list numbered), discard rest
   └─ Tehnologije? → logo-grid (do 12 ikona)
 
 8+ koraka za proces?
-  ├─ Mogu se grupisati u faze? → 2 sticky-ja, svaki sa 3-4 koraka
+  ├─ Mogu se grupisati u faze? → 2 segmenta, svaki sa 3-4 koraka
   └─ Mogu se merge-ovati? → Spoji srodne ("install" + "configure" = "Setup")
 
 6+ kriterijuma za poređenje?
-  ├─ Split u 2 tabele kroz 2 sticky-ja
+  ├─ Split u 2 tabele kroz 2 segmenta
   └─ Izaberi top 4-5 najbitnijih kriterijuma
 
 Kod 15+ linija?
@@ -504,14 +504,14 @@ Kod 15+ linija?
 Prioritet tiebreaker:
 1. **Specifičnost** — vizual sa najkonkretnijim prikazom podataka
 2. **Gustina podataka** — vizual koji prenosi NAJVIŠE info iz transcripta
-3. **Shape compatibility** — vizual koji matchuje sticky shape mode
+3. **Shape compatibility** — vizual koji matchuje segment shape mode
 4. **Variety** — vizual koji NIJE već korišćen u videu
 5. **Visual over icons** — ako vizual radi, uvek ga preferiraj nad ikonama
 
 ### H4. Mixed content u segmentu
 
 Kad segment ima više tipova sadržaja (brojevi + poređenje + lista):
-- **Split u više sekcija** u istom sticky-ju, svaka sa odgovarajućim vizualom
+- **Split u više sekcija** u istom segmentu, svaka sa odgovarajućim vizualom
 - NE forsiraj sve u jedan vizual
 
 ```

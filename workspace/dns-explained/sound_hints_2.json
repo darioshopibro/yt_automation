@@ -1,0 +1,31 @@
+{
+  "segment": "What is DNS",
+  "segmentIndex": 2,
+  "startFrame": 390,
+  "endFrame": 1110,
+  "frameMode": "global",
+  "events": [
+    { "frame": 420, "type": "scene_start", "description": "Scene 1 begins — DNS acronym letters start appearing" },
+    { "frame": 425, "type": "element_appear", "description": "Letter D scales in with spring pop" },
+    { "frame": 430, "type": "element_appear", "description": "Letter N scales in" },
+    { "frame": 440, "type": "element_appear", "description": "Letter S scales in" },
+    { "frame": 453, "type": "reveal", "description": "Word 'Domain' fades in under D" },
+    { "frame": 469, "type": "reveal", "description": "Word 'Name' fades in under N" },
+    { "frame": 477, "type": "reveal", "description": "Word 'System' fades in under S" },
+    { "frame": 533, "type": "element_appear", "description": "Phonebook metaphor card slides up with book icon" },
+    { "frame": 557, "type": "reveal", "description": "'of the internet' subtitle appears" },
+    { "frame": 570, "type": "transition", "description": "Crossfade from Scene 1 to Scene 2" },
+    { "frame": 590, "type": "scene_start", "description": "Scene 2 — browser window appears with slide up" },
+    { "frame": 597, "type": "element_appear", "description": "Browser window mock with address bar fades in" },
+    { "frame": 612, "type": "reveal", "description": "Typing 'google.com' into address bar starts" },
+    { "frame": 665, "type": "element_appear", "description": "Computer icon slides in from right" },
+    { "frame": 685, "type": "staggered_group", "description": "Question marks float up from computer — confusion" },
+    { "frame": 773, "type": "element_appear", "description": "'Only understands' warning + IP address block appears" },
+    { "frame": 829, "type": "reveal", "description": "IP number 142.250.80.46 scales in with spring + glow" },
+    { "frame": 900, "type": "transition", "description": "Crossfade from Scene 2 to Scene 3" },
+    { "frame": 1005, "type": "scene_start", "description": "Scene 3 — 'DNS Translates' title with translate icon" },
+    { "frame": 1023, "type": "element_appear", "description": "Human-readable side slides in from left (google.com)" },
+    { "frame": 1063, "type": "element_appear", "description": "Machine-readable side slides in from right (142.250.80.46)" },
+    { "frame": 1073, "type": "reveal", "description": "Center arrow icon fades in, color morphs blue → green" }
+  ]
+}

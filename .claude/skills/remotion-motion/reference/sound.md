@@ -2,28 +2,37 @@
 
 Pravila za zvukove u video projektima.
 
-> **ZAPAMTI:** Zvukovi su deo JEDNE KOMPOZICIJE — planiraju se ZAJEDNO sa vizualima.
-> Sub-agent koji pravi vizual za segment PRAVI i zvukove za taj segment.
+> **ZAPAMTI:** Zvukovi su deo JEDNE KOMPOZICIJE — planiraju se za CEO VIDEO odjednom.
+> Sound Coordinator (KORAK 5.5 u planner-u) čita SVE sound hints i piše SVE zvukove.
 
 ---
 
 ## KO PRAVI ZVUKOVE?
 
-**Sub-agent koji pravi vizual.** On zna šta se pojavljuje na kom frame-u jer je ON to napravio. Zvuk ide SAMO gde se nešto VIZUELNO dešava.
+**Dva koraka:**
 
-Output sub-agenta:
-1. `Generated_*.tsx` — vizual komponenta
-2. `sounds_segment_X.json` — lista zvukova za taj segment
-3. `meme_placement` — ako ima meme, na kom frame-u
+1. **Visual-generator sub-agent** piše `sound_hints_X.json` — opisuje ŠTA se vizuelno dešava na kom frame-u (element pojava, reveal, transition). NE bira zvukove.
+
+2. **Sound Coordinator** (planner KORAK 5.5) čita SVE hints i odlučuje KOJI zvuk ide gde gledajući CELINU videa. Koristi pravila iz ovog fajla.
+
+**Input za Sound Coordinator:**
+- `sound_hints_*.json` — vizuelni eventi po segmentu
+- Ovaj fajl (`sound.md`) — pravila za tipove, volume, density, timing
+
+**Output Sound Coordinator-a:**
+- `sounds_segment_X.json` — finalni zvukovi sa fajl referencama i volume-om
 
 ---
 
 ## DENSITY
 
-- **8-12 SFX po minuti** za fast explainer (Fireship stil)
-- **5-8 SFX po minuti** za deep dive
-- **Min 20 frames gap** između zvukova
-- Kad si u nedoumici — stavi MANJE. Previše zvukova = gore od premalo.
+**NEMA limita na broj zvukova.** Svaka vizuelna promena = zvuk. Koliko promena, toliko zvukova.
+
+Jedina pravila:
+- **Variraj zvukove** — ne koristi isti fajl 3x zaredom
+- **Staggered grupe** (5 ikona redom) = JEDAN click na prvu, ne na svaku
+- Različiti tipovi zvukova MOGU da budu na istom frame-u (npr. whoosh + click = OK)
+- Isti tip na istom frame-u = NE (npr. dva whoosh-a odjednom)
 
 ---
 
@@ -41,7 +50,7 @@ Output sub-agenta:
 - **Timing:** frame-perfect na pojavu elementa
 - **Volume:** 0.18-0.22
 - **Fajlovi:** hits/soft-hit-01.mp3, bass-hit.mp3, punch-hit.mp3, epic-hit.mp3
-- **Max 1 hit na 5 sekundi** — samo za NAJBITNIJE momente
+- Hit ide na svaki reveal — koliko reveal-a, toliko hit-ova
 
 ### 3. RISER (build-up)
 - **Kad:** BEFORE big reveal, pre ključnog momenta
@@ -91,7 +100,6 @@ Frame X:    hit (element appears)
 - ❌ Zvuk BEZ vizualne promene — ako se ništa ne dešava na ekranu, NEMA zvuka
 - ❌ Hit na svaku reč — samo na vizualne pojave
 - ❌ Isti zvuk 3+ puta zaredom
-- ❌ Više od 15 zvukova po 60s — previše je naporno
 - ❌ Click na svaki element u staggered animaciji
 - ❌ Zvuk tokom mirnog objašnjenja bez vizualne promene
 
@@ -99,10 +107,13 @@ Frame X:    hit (element appears)
 
 ## SOUNDS JSON FORMAT
 
-Sub-agent vraća ovo za svoj segment:
+Sound Coordinator piše ovo za svaki segment (`sounds_segment_X.json`):
 ```json
 {
   "segment": "The Withdrawal",
+  "segmentIndex": 1,
+  "startFrame": 0,
+  "frameMode": "global",
   "sounds": [
     {"frame": 50, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "scene 1 starts, IDE appears"},
     {"frame": 185, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "SCREAMING text appears big"},
@@ -112,14 +123,18 @@ Sub-agent vraća ovo za svoj segment:
 }
 ```
 
-**reason MORA da kaže šta se VIZUELNO dešava** — ne šta narrator kaže.
+**OBAVEZNA polja:**
+- `segmentIndex` — redni broj segmenta (1, 2, 3...)
+- `startFrame` — globalni frame gde segment počinje (premix koristi za offset)
+- `frameMode` — UVEK `"global"` (frame-ovi su apsolutni od početka videa)
+- `reason` MORA da kaže šta se VIZUELNO dešava — ne šta narrator kaže
 
 ---
 
 ## IMPLEMENTACIJA
 
 Posle svih sub-agenata, zvukovi se premixuju PO SEGMENTU u `segment_X_sfx.mp3`.
-Root.tsx ima 6 Audio elemenata (po 1 za segment) umesto 67 odvojenih.
+Root.tsx ima po 1 Audio element za svaki segment (koliko segmenata, toliko Audio elemenata).
 Ovo sprečava Remotion Studio crash.
 
 ```tsx

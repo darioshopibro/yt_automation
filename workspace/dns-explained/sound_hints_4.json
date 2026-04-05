@@ -1,0 +1,33 @@
+{
+  "segment": "Chain of Questions",
+  "segmentIndex": 4,
+  "startFrame": 1890,
+  "endFrame": 3000,
+  "frameMode": "global",
+  "events": [
+    { "frame": 1921, "type": "scene_start", "description": "Scene 1 begins — resolver appears with subtle fade in" },
+    { "frame": 1926, "type": "element_appear", "description": "Recursive resolver server node fades in" },
+    { "frame": 2020, "type": "element_appear", "description": "Chain of Questions title appears" },
+    { "frame": 2042, "type": "staggered_group", "description": "Question marks appear one by one" },
+    { "frame": 2103, "type": "element_appear", "description": "Query pulse travels toward root nameserver" },
+    { "frame": 2118, "type": "element_appear", "description": "Root nameserver node appears" },
+    { "frame": 2185, "type": "reveal", "description": "13 clusters stat badge fades in with count" },
+    { "frame": 2251, "type": "element_appear", "description": "Globe icon scales in — world emphasis" },
+    { "frame": 2333, "type": "element_appear", "description": "Root server shakes — doesn't know google.com's IP" },
+    { "frame": 2439, "type": "reveal", "description": "Referral badge appears — knows .com zone" },
+    { "frame": 2507, "type": "element_appear", "description": "Referral badge glows — sending to TLD" },
+    { "frame": 2380, "type": "transition", "description": "Scene 1 crossfades into Scene 2" },
+    { "frame": 2519, "type": "scene_start", "description": "Scene 2 — TLD nameserver title appears" },
+    { "frame": 2524, "type": "element_appear", "description": "Resolver (small) and TLD server node appear" },
+    { "frame": 2544, "type": "element_appear", "description": "Query pulse from resolver to TLD" },
+    { "frame": 2633, "type": "staggered_group", "description": "Domain zone badges appear (.com, .net, .org, .io)" },
+    { "frame": 2743, "type": "element_appear", "description": "TLD server shakes — doesn't know exact IP" },
+    { "frame": 2855, "type": "reveal", "description": "Referral badge — knows Google's authoritative NS" },
+    { "frame": 2730, "type": "transition", "description": "Scene 2 crossfades into Scene 3" },
+    { "frame": 2854, "type": "scene_start", "description": "Scene 3 — Authoritative nameserver title appears" },
+    { "frame": 2740, "type": "staggered_group", "description": "Chain recap — 3 hop tracker lights up sequentially" },
+    { "frame": 2859, "type": "element_appear", "description": "Authoritative nameserver node appears with glow" },
+    { "frame": 2902, "type": "element_appear", "description": "Google NS badge appears with ns1.google.com" },
+    { "frame": 2973, "type": "reveal", "description": "Final referral badge — another referral sent with purple glow" }
+  ]
+}

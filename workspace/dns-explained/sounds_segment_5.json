@@ -1,0 +1,13 @@
+{
+  "segment": "The Resolution",
+  "segmentIndex": 5,
+  "startFrame": 3000,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 2992, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — final resolution scene starts" },
+    { "frame": 3183, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "build-up before eureka moment — server has the answer" },
+    { "frame": 3223, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "EUREKA — pulse ring + scale pop + HAS THE ANSWER badge" },
+    { "frame": 3527, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before final milliseconds reveal" },
+    { "frame": 3567, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.22, "reason": "20-120 milliseconds badge — satisfying video finale" }
+  ]
+}

@@ -1,0 +1,17 @@
+{
+  "segment": "Three Objects Intro",
+  "segmentIndex": 2,
+  "startFrame": 459,
+  "endFrame": 779,
+  "frameMode": "global",
+  "events": [
+    { "frame": 459, "type": "scene_start", "description": ".git folder fades in with scale spring animation" },
+    { "frame": 512, "type": "reveal", "description": ".git folder pulses with expanding glow — 'the hidden database'" },
+    { "frame": 590, "type": "element_appear", "description": "section title 'Three Types of Objects' fades in from below" },
+    { "frame": 665, "type": "element_appear", "description": "BLOB card pops in with spring scale — first object type" },
+    { "frame": 694, "type": "element_appear", "description": "TREE card pops in with spring scale — second object type" },
+    { "frame": 730, "type": "element_appear", "description": "COMMIT card pops in with spring scale — third object type" },
+    { "frame": 750, "type": "element_appear", "description": "connecting gradient line draws between all three cards" },
+    { "frame": 770, "type": "reveal", "description": "BLOB card starts glowing — narrator zooms into blob concept" }
+  ]
+}

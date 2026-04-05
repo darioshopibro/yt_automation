@@ -1,0 +1,29 @@
+{
+  "segment": "Merging",
+  "segmentIndex": 7,
+  "startFrame": 2982,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 2974, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Merging" },
+    { "frame": 2982, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Merging title with GitMerge icon fades in" },
+    { "frame": 3038, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "'Where the magic happens' subtitle appears" },
+    { "frame": 3095, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Branch A commit nodes start appearing" },
+    { "frame": 3118, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Branch B commit nodes appear, branch lines draw" },
+    { "frame": 3140, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.13, "reason": "build-up before common ancestor reveal" },
+    { "frame": 3178, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.22, "reason": "common ancestor node GLOWS bright amber — key reveal" },
+    { "frame": 3206, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "COMMON ANCESTOR label appears" },
+    { "frame": 3263, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.07, "reason": "'compares the trees' text slides up" },
+    { "frame": 3272, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfade to split view" },
+    { "frame": 3325, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "conflict side — file icons slide in" },
+    { "frame": 3393, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "conflict code markers appear" },
+    { "frame": 3395, "type": "riser", "file": "risers/short-riser-03.mp3", "volume": 0.12, "reason": "build-up before MERGE CONFLICT" },
+    { "frame": 3432, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "MERGE CONFLICT badge pops in red — dramatic moment" },
+    { "frame": 3493, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "auto-merge side — different file icons slide in" },
+    { "frame": 3608, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "AUTO-MERGED badge pops in green" },
+    { "frame": 3642, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "scene crossfade to three-way merge" },
+    { "frame": 3694, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Three-Way Merge title fades in" },
+    { "frame": 3735, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "ANCESTOR source box appears" },
+    { "frame": 3765, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "YOURS source box appears" },
+    { "frame": 3782, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment ending — transition to Rebasing" }
+  ]
+}

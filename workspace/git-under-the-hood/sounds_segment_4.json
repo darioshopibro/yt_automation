@@ -1,0 +1,20 @@
+{
+  "segment": "Trees",
+  "segmentIndex": 4,
+  "startFrame": 1221,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 1213, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Trees" },
+    { "frame": 1221, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "tree icon and title fade in" },
+    { "frame": 1241, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "directory listing concept text appears" },
+    { "frame": 1298, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "filenames → blob hashes mapping label appears" },
+    { "frame": 1412, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene transition to tree object detail" },
+    { "frame": 1492, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.18, "reason": "TREE OBJECT header pops in with spring" },
+    { "frame": 1530, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "index.js row slides in from left" },
+    { "frame": 1593, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "blob abc123 hash pops in for index.js" },
+    { "frame": 1651, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "readme.md row slides in" },
+    { "frame": 1720, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "blob def456 hash pops in for readme.md" },
+    { "frame": 1775, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.12, "reason": "package.json row slides in" },
+    { "frame": 1837, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "blob ghi789 hash pops in for package.json" }
+  ]
+}
