@@ -1,0 +1,50 @@
+[
+  {
+    "prompt": "Cinematic close-up, dramatic lighting: git hub just announced they own your private code the moment you use copilot. he, photorealistic, moody atmosphere",
+    "clip_name": "beat_1",
+    "steps": [
+      {
+        "step": "image_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_1.png"
+      },
+      {
+        "step": "video_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_1.mp4"
+      }
+    ],
+    "image_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_1.png",
+    "image_url": "https://v3b.fal.media/files/b/0a94f06f/Bknc1f4unOwW7OXvy0ykM.jpg",
+    "video_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_1.mp4",
+    "video_url": "https://v3b.fal.media/files/b/0a94f083/TPE85An4VyAkfN071Wx7l_output.mp4",
+    "status": "ok",
+    "beat_id": "beat_1",
+    "startFrame": 0,
+    "endFrame": 150
+  },
+  {
+    "prompt": "Dramatic reveal moment: fortune 500 competitor's internal code patterns can influence suggestions for yo, cinematic lighting, shallow depth of field",
+    "clip_name": "beat_21",
+    "steps": [
+      {
+        "step": "image_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_21.png"
+      },
+      {
+        "step": "video_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_21.mp4"
+      }
+    ],
+    "image_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_21.png",
+    "image_url": "https://v3b.fal.media/files/b/0a94f084/nFdcruDGs2uvb52xwNqGM.jpg",
+    "video_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_21.mp4",
+    "video_url": "https://v3b.fal.media/files/b/0a94f097/WrwsQBNSUX-ZKtYOxOPUD_output.mp4",
+    "status": "ok",
+    "beat_id": "beat_21",
+    "startFrame": 4066,
+    "endFrame": 4298
+  }
+]

@@ -1,0 +1,708 @@
+{
+  "meta": {
+    "title": "How LLMs Actually Work",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "totalFrames": 5496,
+    "totalDurationSec": 183.2
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "durationSec": 182.18,
+    "wordCount": 407
+  },
+  "beats": [
+    {
+      "id": "beat_1",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 0,
+      "endFrame": 122,
+      "durationSec": 4.1,
+      "intent": "hook",
+      "visualType": "ai_video",
+      "isSegmentStart": true,
+      "aiVideoPrompt": "Cinematic close-up, dramatic lighting: the way large language models actually work is fascinating. you give it a prompt, photorealistic, moody atmosphere"
+    },
+    {
+      "id": "beat_2",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 122,
+      "endFrame": 265,
+      "durationSec": 4.8,
+      "intent": "joke",
+      "visualType": "meme",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_3",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 265,
+      "endFrame": 681,
+      "durationSec": 13.9,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_WhatLLMsAre.tsx"
+    },
+    {
+      "id": "beat_4",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 681,
+      "endFrame": 776,
+      "durationSec": 3.2,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_WhatLLMsAre.tsx"
+    },
+    {
+      "id": "beat_5",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 776,
+      "endFrame": 844,
+      "durationSec": 2.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_WhatLLMsAre.tsx"
+    },
+    {
+      "id": "beat_6",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 844,
+      "endFrame": 1086,
+      "durationSec": 8.1,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_WhatLLMsAre.tsx"
+    },
+    {
+      "id": "beat_7",
+      "segmentId": "sticky_1",
+      "title": "What LLMs Are",
+      "startFrame": 1086,
+      "endFrame": 1251,
+      "durationSec": 5.5,
+      "intent": "reveal",
+      "visualType": "ai_video",
+      "isSegmentStart": false,
+      "aiVideoPrompt": "Dramatic reveal moment: they process everything in parallel, which is why training on thousands of gpus , cinematic lighting, shallow depth of field"
+    },
+    {
+      "id": "beat_8",
+      "segmentId": "sticky_2",
+      "title": "Training & Tuning",
+      "startFrame": 1536,
+      "endFrame": 1712,
+      "durationSec": 5.9,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_Training&Tuning.tsx"
+    },
+    {
+      "id": "beat_9",
+      "segmentId": "sticky_2",
+      "title": "Training & Tuning",
+      "startFrame": 1712,
+      "endFrame": 1806,
+      "durationSec": 3.1,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Training&Tuning.tsx"
+    },
+    {
+      "id": "beat_10",
+      "segmentId": "sticky_2",
+      "title": "Training & Tuning",
+      "startFrame": 1806,
+      "endFrame": 1965,
+      "durationSec": 5.3,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Training&Tuning.tsx"
+    },
+    {
+      "id": "beat_11",
+      "segmentId": "sticky_2",
+      "title": "Training & Tuning",
+      "startFrame": 1965,
+      "endFrame": 2283,
+      "durationSec": 10.6,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Training&Tuning.tsx"
+    },
+    {
+      "id": "beat_12",
+      "segmentId": "sticky_2",
+      "title": "Training & Tuning",
+      "startFrame": 2283,
+      "endFrame": 2396,
+      "durationSec": 3.8,
+      "intent": "joke",
+      "visualType": "meme",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_13",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 2688,
+      "endFrame": 2807,
+      "durationSec": 4.0,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_Prompting&Cost.tsx"
+    },
+    {
+      "id": "beat_14",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 2807,
+      "endFrame": 2894,
+      "durationSec": 2.9,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Prompting&Cost.tsx"
+    },
+    {
+      "id": "beat_15",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 2894,
+      "endFrame": 2981,
+      "durationSec": 2.9,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Prompting&Cost.tsx"
+    },
+    {
+      "id": "beat_16",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 2981,
+      "endFrame": 3125,
+      "durationSec": 4.8,
+      "intent": "joke",
+      "visualType": "meme",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_17",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 3125,
+      "endFrame": 3322,
+      "durationSec": 6.6,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Prompting&Cost.tsx"
+    },
+    {
+      "id": "beat_18",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 3322,
+      "endFrame": 3454,
+      "durationSec": 4.4,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Prompting&Cost.tsx"
+    },
+    {
+      "id": "beat_19",
+      "segmentId": "sticky_3",
+      "title": "Prompting & Cost",
+      "startFrame": 3454,
+      "endFrame": 3560,
+      "durationSec": 3.5,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Prompting&Cost.tsx"
+    },
+    {
+      "id": "beat_20",
+      "segmentId": "sticky_4",
+      "title": "Latency & RAG",
+      "startFrame": 3823,
+      "endFrame": 3941,
+      "durationSec": 3.9,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_Latency&RAG.tsx"
+    },
+    {
+      "id": "beat_21",
+      "segmentId": "sticky_4",
+      "title": "Latency & RAG",
+      "startFrame": 3941,
+      "endFrame": 4060,
+      "durationSec": 4.0,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Latency&RAG.tsx"
+    },
+    {
+      "id": "beat_22",
+      "segmentId": "sticky_4",
+      "title": "Latency & RAG",
+      "startFrame": 4060,
+      "endFrame": 4196,
+      "durationSec": 4.5,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Latency&RAG.tsx"
+    },
+    {
+      "id": "beat_23",
+      "segmentId": "sticky_4",
+      "title": "Latency & RAG",
+      "startFrame": 4196,
+      "endFrame": 4533,
+      "durationSec": 11.2,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Latency&RAG.tsx"
+    },
+    {
+      "id": "beat_24",
+      "segmentId": "sticky_5",
+      "title": "Agents: Next Frontier",
+      "startFrame": 4858,
+      "endFrame": 4965,
+      "durationSec": 3.6,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_Agents:NextFrontier.tsx"
+    },
+    {
+      "id": "beat_25",
+      "segmentId": "sticky_5",
+      "title": "Agents: Next Frontier",
+      "startFrame": 4965,
+      "endFrame": 5206,
+      "durationSec": 8.0,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Agents:NextFrontier.tsx"
+    },
+    {
+      "id": "beat_26",
+      "segmentId": "sticky_5",
+      "title": "Agents: Next Frontier",
+      "startFrame": 5206,
+      "endFrame": 5344,
+      "durationSec": 4.6,
+      "intent": "cta",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_Agents:NextFrontier.tsx"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "baseVolume": 0.2,
+      "duckedVolume": 0.08,
+      "duckRampFrames": 15,
+      "fadeInEndFrame": 30,
+      "fadeOutStartFrame": 5436
+    },
+    "sfx": [
+      {
+        "frame": 0,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'Token Prediction Engine'"
+      },
+      {
+        "frame": 51,
+        "type": "click",
+        "file": "clicks/tick-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'actually'"
+      },
+      {
+        "frame": 122,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 422,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'Training on Data'"
+      },
+      {
+        "frame": 965,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'Transformer Architecture'"
+      },
+      {
+        "frame": 1491,
+        "type": "riser",
+        "file": "risers/fast-riser.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'Training & Tuning'"
+      },
+      {
+        "frame": 1528,
+        "type": "whoosh",
+        "file": "whooshes/lofi-whoosh.mp3",
+        "volume": 0.25,
+        "reason": "transition \u2192 'Training & Tuning'"
+      },
+      {
+        "frame": 1551,
+        "type": "hit",
+        "file": "hits/punch-hit.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'works.\n\nFine-tuning' in 'Training & Tuning'"
+      },
+      {
+        "frame": 1806,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2126,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'Context Window Growth'"
+      },
+      {
+        "frame": 2442,
+        "type": "click",
+        "file": "clicks/soft-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'million.'"
+      },
+      {
+        "frame": 2643,
+        "type": "riser",
+        "file": "risers/short-riser-02.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'Prompting & Cost'"
+      },
+      {
+        "frame": 2693,
+        "type": "hit",
+        "file": "hits/soft-hit-01.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'losing' in 'Prompting & Cost'"
+      },
+      {
+        "frame": 3233,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'Cost Dropping Fast'"
+      },
+      {
+        "frame": 3397,
+        "type": "click",
+        "file": "clicks/button-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'million'"
+      },
+      {
+        "frame": 3778,
+        "type": "riser",
+        "file": "risers/short-riser-01.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'Latency & RAG'"
+      },
+      {
+        "frame": 3830,
+        "type": "hit",
+        "file": "hits/punch-hit.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'real' in 'Latency & RAG'"
+      },
+      {
+        "frame": 4023,
+        "type": "click",
+        "file": "clicks/tick-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'broken.'"
+      },
+      {
+        "frame": 4288,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'RAG Pipeline'"
+      },
+      {
+        "frame": 4813,
+        "type": "riser",
+        "file": "risers/fast-riser.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'Agents: Next Frontier'"
+      },
+      {
+        "frame": 4862,
+        "type": "hit",
+        "file": "hits/soft-hit-01.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'training' in 'Agents: Next Frontier'"
+      },
+      {
+        "frame": 5333,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.175,
+        "reason": "section: 'Chatbot to Coworker'"
+      }
+    ],
+    "duckingZones": [
+      {
+        "startFrame": 0,
+        "endFrame": 104,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 122,
+        "endFrame": 249,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 265,
+        "endFrame": 665,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 681,
+        "endFrame": 761,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 776,
+        "endFrame": 829,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 844,
+        "endFrame": 1065,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1086,
+        "endFrame": 1227,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1251,
+        "endFrame": 1366,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1381,
+        "endFrame": 1788,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1806,
+        "endFrame": 1945,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1965,
+        "endFrame": 2258,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2283,
+        "endFrame": 2459,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2474,
+        "endFrame": 2786,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2807,
+        "endFrame": 2870,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2894,
+        "endFrame": 2963,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2981,
+        "endFrame": 3104,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3125,
+        "endFrame": 3439,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3454,
+        "endFrame": 3545,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3560,
+        "endFrame": 3647,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3662,
+        "endFrame": 3926,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3941,
+        "endFrame": 4040,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4060,
+        "endFrame": 4178,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4196,
+        "endFrame": 4517,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4533,
+        "endFrame": 4726,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4741,
+        "endFrame": 4949,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4965,
+        "endFrame": 5466,
+        "type": "voiceover_active"
+      }
+    ]
+  },
+  "memes": [
+    {
+      "beatId": "beat_2",
+      "startFrame": 122,
+      "endFrame": 265,
+      "durationFrames": 60,
+      "source": "topic_specific",
+      "name": "AI-sober",
+      "url": "https://i.redd.it/9eqwn50s9gng1.png",
+      "type": "static_image",
+      "position": {
+        "x": "50%",
+        "y": "50%",
+        "scale": 0.8
+      }
+    },
+    {
+      "beatId": "beat_12",
+      "startFrame": 2283,
+      "endFrame": 2396,
+      "durationFrames": 60,
+      "source": "topic_specific",
+      "name": "Why the majority of vibe coded projects fail",
+      "url": "https://i.redd.it/uxpmxlbmawog1.jpeg",
+      "type": "static_image",
+      "position": {
+        "x": "50%",
+        "y": "50%",
+        "scale": 0.8
+      }
+    },
+    {
+      "beatId": "beat_16",
+      "startFrame": 2981,
+      "endFrame": 3125,
+      "durationFrames": 60,
+      "source": "topic_specific",
+      "name": "anotherDayOfSolvedCoding",
+      "url": "https://i.redd.it/iwpfgfqy87rg1.png",
+      "type": "static_image",
+      "position": {
+        "x": "50%",
+        "y": "50%",
+        "scale": 0.8
+      }
+    }
+  ],
+  "aiVideoClips": [],
+  "transitions": [
+    {
+      "atFrame": 1536,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 2688,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 3823,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 4858,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    }
+  ],
+  "sources": {
+    "master_plan": "master-plan.json",
+    "sfx_timeline": "sfx-timeline.json",
+    "visual_plan": "visual-plan.json",
+    "ai_clips": null
+  }
+}

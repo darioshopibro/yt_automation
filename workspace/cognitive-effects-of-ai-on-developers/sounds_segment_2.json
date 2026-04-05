@@ -1,0 +1,22 @@
+{
+  "segment": "The Dopamine Loop",
+  "sounds": [
+    {"frame": 1021, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "Scene 1 opens, brain icon appears"},
+    {"frame": 1165, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Problem indicator pops in"},
+    {"frame": 1210, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.14, "reason": "ChatGPT icon slides in from right"},
+    {"frame": 1275, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "Build-up before dopamine spike bar fills"},
+    {"frame": 1310, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "Dopamine bar reaches peak height"},
+    {"frame": 1562, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Slot machine comparison badge appears with spring pop"},
+    {"frame": 1712, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "Scene crossfade to Meta stats"},
+    {"frame": 1940, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "Build-up before 47 counter animation"},
+    {"frame": 1975, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "47 counter reaches final value — big stat reveal"},
+    {"frame": 2046, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "10-minute timer stat slides in"},
+    {"frame": 2389, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "BEHAVIORAL ADDICTION LOOP badge appears with rotation"},
+    {"frame": 2405, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.14, "reason": "Scene crossfade to tolerance degradation"},
+    {"frame": 2630, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Complex algorithms box appears"},
+    {"frame": 2700, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "Basic syntax box slides up as degradation shown"},
+    {"frame": 2883, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "For loops code snippet pops in with spring scale"},
+    {"frame": 2978, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.10, "reason": "Brain starts dimming and going grayscale"},
+    {"frame": 3130, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.18, "reason": "Calculator metaphor appears with spring pop"}
+  ]
+}

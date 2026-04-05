@@ -1,0 +1,20 @@
+{
+  "segment": "The Craving Trap",
+  "sounds": [
+    {"frame": 3253, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "Brain icon and scene 1 entrance"},
+    {"frame": 3317, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "CRAVING TRIGGERED badge appears"},
+    {"frame": 3575, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.07, "reason": "First excuse bubble pops in"},
+    {"frame": 3712, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.07, "reason": "Third excuse bubble pops in"},
+    {"frame": 3777, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "Build-up before strikethrough and craving reveal"},
+    {"frame": 3785, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.16, "reason": "Strikethrough slashes across all excuses"},
+    {"frame": 3875, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "THE CRAVING IS THE DRIVER big reveal text"},
+    {"frame": 3892, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.14, "reason": "Scene transition to addiction scene"},
+    {"frame": 3972, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Knowing text appears with lock icon"},
+    {"frame": 4055, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Addiction never works that way statement appears"},
+    {"frame": 4092, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "Scene transition to survey stats"},
+    {"frame": 4324, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.14, "reason": "91% bar starts filling"},
+    {"frame": 4365, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "91% number reaches final value"},
+    {"frame": 4434, "type": "whoosh", "file": "whooshes/lofi-whoosh.mp3", "volume": 0.14, "reason": "12% bar appears — dramatic contrast"},
+    {"frame": 4662, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Neurochemical compulsion bottom text reveals"}
+  ]
+}

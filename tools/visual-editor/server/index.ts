@@ -3,6 +3,7 @@ import cors from 'cors';
 import fs from 'fs';
 import path from 'path';
 import { fileURLToPath } from 'url';
+import { execFileSync } from 'child_process';
 
 const __filename = fileURLToPath(import.meta.url);
 const __dirname = path.dirname(__filename);
@@ -1183,6 +1184,154 @@ app.get('/api/improvements/summary', (_req, res) => {
   }
 
   res.json({ projects, totals, categories, allBadMarkers, improvements });
+});
+
+// ============================================================
+// PIPELINE API — Topics, approve/reject, process
+// ============================================================
+
+const PIPELINE_DIR = path.join(BASE_PATH, 'tools', 'content-pipeline');
+
+// GET /api/pipeline/topics — list topics from pipeline DB (using better-sqlite3 directly)
+app.get('/api/pipeline/topics', (_req, res) => {
+  try {
+    const pdb = new Database(path.join(PIPELINE_DIR, 'data', 'pipeline.db'), { readonly: true });
+    pdb.pragma('journal_mode = WAL');
+    const topics = pdb.prepare('SELECT * FROM topics ORDER BY final_score DESC LIMIT 50').all();
+
+    // Also get demand data for each topic
+    const demandStmt = pdb.prepare('SELECT * FROM topic_demand WHERE topic_id = ?');
+    const enriched = topics.map((t: any) => {
+      const demand = demandStmt.get(t.id) as any;
+      return {
+        ...t,
+        demand_signal: demand?.demand_signal || null,
+        has_tutorial_demand: demand?.has_tutorial_demand || false,
+        has_comparison_demand: demand?.has_comparison_demand || false,
+      };
+    });
+
+    pdb.close();
+    res.json({ topics: enriched });
+  } catch (e: any) {
+    res.json({ topics: [], error: e.message });
+  }
+});
+
+// POST /api/pipeline/topic/:id/status — approve/reject/queue
+app.post('/api/pipeline/topic/:id/status', (req, res) => {
+  const id = req.params.id;
+  const { status } = req.body;
+  try {
+    const pdb = new Database(path.join(PIPELINE_DIR, 'data', 'pipeline.db'));
+    pdb.pragma('journal_mode = WAL');
+    const now = new Date().toISOString();
+    if (status === 'approved') {
+      pdb.prepare('UPDATE topics SET status = ?, reviewed_at = ? WHERE id = ?').run(status, now, id);
+    } else {
+      pdb.prepare('UPDATE topics SET status = ? WHERE id = ?').run(status, id);
+    }
+    pdb.close();
+    res.json({ ok: true, id, status });
+  } catch (e: any) {
+    res.status(500).json({ error: e.message });
+  }
+});
+
+// POST /api/pipeline/process/:id - run pipeline in BACKGROUND
+app.post('/api/pipeline/process/:id', (req, res) => {
+  const id = req.params.id;
+
+  // Update status immediately
+  try {
+    const pdb = new Database(path.join(PIPELINE_DIR, 'data', 'pipeline.db'));
+    pdb.pragma('journal_mode = WAL');
+    pdb.prepare('UPDATE topics SET status = ? WHERE id = ?').run('processing', id);
+    pdb.close();
+  } catch {}
+
+  // Respond immediately - don't block server
+  res.json({ ok: true, id, status: 'processing', message: 'Pipeline started. Refresh to check.' });
+
+  // Run in background
+  const cp = require('child_process') as typeof import('child_process');
+  const child = cp.spawn('python3', [
+    '-c',
+    `import sys; sys.path.insert(0, '${PIPELINE_DIR}'); from full_pipeline import run_full_pipeline; run_full_pipeline(${id})`
+  ], { cwd: PIPELINE_DIR, detached: true, stdio: 'ignore' });
+  child.unref();
+});
+
+// POST /api/pipeline/scan - run scan in BACKGROUND
+app.post('/api/pipeline/scan', (_req, res) => {
+  res.json({ ok: true, status: 'scanning', message: 'Scan started. Refresh in ~4 min.' });
+
+  const cp = require('child_process') as typeof import('child_process');
+  const child = cp.spawn('python3', ['run_pipeline.py'], { cwd: PIPELINE_DIR, detached: true, stdio: 'ignore' });
+  child.unref();
+});
+
+// GET /api/composition?project=workspace/how-llms-work
+app.get('/api/composition', (req, res) => {
+  const project = req.query.project as string;
+  if (!project) return res.status(400).json({ error: 'Missing project' });
+
+  const sanitized = project.replace(/\.\./g, '');
+  const compPath = path.join(BASE_PATH, sanitized, 'master-composition.json');
+
+  if (!fs.existsSync(compPath)) {
+    return res.status(404).json({ error: 'master-composition.json not found' });
+  }
+
+  try {
+    const data = JSON.parse(fs.readFileSync(compPath, 'utf-8'));
+    res.json(data);
+  } catch (e) {
+    res.status(500).json({ error: 'Failed to parse composition' });
+  }
+});
+
+// POST /api/regenerate-beat — regenerate a specific beat's visual
+app.post('/api/regenerate-beat', (req, res) => {
+  const { project, beatId, count } = req.body;
+  try {
+    // Find the composition to get beat info
+    let compPath = '';
+    for (const prefix of ['videos/', 'workspace/']) {
+      const p = path.join(BASE_PATH, prefix, project, 'master-composition.json');
+      if (fs.existsSync(p)) { compPath = p; break; }
+    }
+    if (!compPath) {
+      return res.json({ beatId, variants: [], status: 'no composition found' });
+    }
+
+    const comp = JSON.parse(fs.readFileSync(compPath, 'utf-8'));
+    const beat = (comp.beats || []).find((b: any) => b.id === beatId);
+    if (!beat) {
+      return res.json({ beatId, variants: [], status: 'beat not found' });
+    }
+
+    // For ai_video beats: regenerate image + video
+    if (beat.visualType === 'ai_video' && beat.aiVideoPrompt) {
+      const prompt = beat.aiVideoPrompt;
+      const clipsDir = path.join(path.dirname(compPath), 'ai-clips');
+      const cmd = `cd "${BASE_PATH}" && python3 tools/ai-video/video_generator.py single "${prompt.replace(/"/g, '\\"')}" "${clipsDir}"`;
+      const result = execFileSync('bash', ['-c', cmd], { timeout: 300000, encoding: 'utf-8' }) as string;
+      res.json({ beatId, status: 'regenerated', output: result.substring(0, 500) });
+    } else {
+      // For motion_graphics: would need to call visual-generator skill (Claude agent)
+      res.json({ beatId, status: 'motion_graphics regeneration requires Claude agent — use Review tab markers instead' });
+    }
+  } catch (e: any) {
+    res.json({ beatId, status: 'error', error: e.message?.substring(0, 200) });
+  }
+});
+
+// POST /api/select-variant — placeholder
+app.post('/api/select-variant', (req, res) => {
+  const { project, beatId, variantIndex } = req.body;
+  // TODO: swap selected variant into composition
+  res.json({ beatId, selected: variantIndex, status: 'ok' });
 });
 
 app.listen(PORT, () => {

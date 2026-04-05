@@ -1,0 +1,3743 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.75,
+    "similarity_boost": 0.85,
+    "style": 0.1,
+    "use_speaker_boost": true
+  },
+  "duration": 353.872,
+  "wordCount": 746,
+  "words": [
+    {
+      "word": "Companies",
+      "start": 0.0,
+      "end": 0.406
+    },
+    {
+      "word": "pay",
+      "start": 0.453,
+      "end": 0.58
+    },
+    {
+      "word": "reverse",
+      "start": 0.639,
+      "end": 0.952
+    },
+    {
+      "word": "engineers",
+      "start": 0.987,
+      "end": 1.463
+    },
+    {
+      "word": "three",
+      "start": 1.788,
+      "end": 2.009
+    },
+    {
+      "word": "hundred",
+      "start": 2.043,
+      "end": 2.264
+    },
+    {
+      "word": "thousand",
+      "start": 2.299,
+      "end": 2.601
+    },
+    {
+      "word": "dollars",
+      "start": 2.647,
+      "end": 2.937
+    },
+    {
+      "word": "a",
+      "start": 2.972,
+      "end": 2.995
+    },
+    {
+      "word": "year",
+      "start": 3.065,
+      "end": 3.379
+    },
+    {
+      "word": "to",
+      "start": 3.704,
+      "end": 3.82
+    },
+    {
+      "word": "legally",
+      "start": 3.936,
+      "end": 4.307
+    },
+    {
+      "word": "tear",
+      "start": 4.365,
+      "end": 4.574
+    },
+    {
+      "word": "apart",
+      "start": 4.609,
+      "end": 4.865
+    },
+    {
+      "word": "competitor",
+      "start": 4.923,
+      "end": 5.445
+    },
+    {
+      "word": "software",
+      "start": 5.503,
+      "end": 6.107
+    },
+    {
+      "word": "and",
+      "start": 6.258,
+      "end": 6.513
+    },
+    {
+      "word": "steal",
+      "start": 6.583,
+      "end": 6.861
+    },
+    {
+      "word": "their",
+      "start": 6.908,
+      "end": 7.059
+    },
+    {
+      "word": "secrets.",
+      "start": 7.105,
+      "end": 7.721
+    },
+    {
+      "word": "Sounds",
+      "start": 8.417,
+      "end": 8.719
+    },
+    {
+      "word": "like",
+      "start": 8.754,
+      "end": 8.893
+    },
+    {
+      "word": "corporate",
+      "start": 8.951,
+      "end": 9.358
+    },
+    {
+      "word": "espionage?",
+      "start": 9.404,
+      "end": 10.217
+    },
+    {
+      "word": "There's",
+      "start": 10.82,
+      "end": 11.099
+    },
+    {
+      "word": "one",
+      "start": 11.169,
+      "end": 11.32
+    },
+    {
+      "word": "legal",
+      "start": 11.378,
+      "end": 11.645
+    },
+    {
+      "word": "loophole",
+      "start": 11.691,
+      "end": 12.098
+    },
+    {
+      "word": "that",
+      "start": 12.132,
+      "end": 12.249
+    },
+    {
+      "word": "makes",
+      "start": 12.283,
+      "end": 12.457
+    },
+    {
+      "word": "this",
+      "start": 12.492,
+      "end": 12.632
+    },
+    {
+      "word": "completely",
+      "start": 12.701,
+      "end": 13.189
+    },
+    {
+      "word": "legitimate",
+      "start": 13.259,
+      "end": 13.92
+    },
+    {
+      "word": "and",
+      "start": 14.129,
+      "end": 14.385
+    },
+    {
+      "word": "turns",
+      "start": 14.431,
+      "end": 14.687
+    },
+    {
+      "word": "it",
+      "start": 14.733,
+      "end": 14.803
+    },
+    {
+      "word": "into",
+      "start": 14.838,
+      "end": 14.989
+    },
+    {
+      "word": "a",
+      "start": 15.058,
+      "end": 15.093
+    },
+    {
+      "word": "ten",
+      "start": 15.163,
+      "end": 15.395
+    },
+    {
+      "word": "billion",
+      "start": 15.465,
+      "end": 15.778
+    },
+    {
+      "word": "dollar",
+      "start": 15.824,
+      "end": 16.08
+    },
+    {
+      "word": "industry.\n\nThis",
+      "start": 16.138,
+      "end": 17.578
+    },
+    {
+      "word": "isn't",
+      "start": 17.636,
+      "end": 17.879
+    },
+    {
+      "word": "some",
+      "start": 17.926,
+      "end": 18.1
+    },
+    {
+      "word": "underground",
+      "start": 18.17,
+      "end": 18.669
+    },
+    {
+      "word": "hacking",
+      "start": 18.727,
+      "end": 19.04
+    },
+    {
+      "word": "ring.",
+      "start": 19.098,
+      "end": 19.4
+    },
+    {
+      "word": "Microsoft",
+      "start": 20.097,
+      "end": 20.677
+    },
+    {
+      "word": "employs",
+      "start": 20.712,
+      "end": 21.049
+    },
+    {
+      "word": "entire",
+      "start": 21.107,
+      "end": 21.479
+    },
+    {
+      "word": "teams",
+      "start": 21.525,
+      "end": 22.001
+    },
+    {
+      "word": "to",
+      "start": 22.326,
+      "end": 22.442
+    },
+    {
+      "word": "dissect",
+      "start": 22.512,
+      "end": 22.93
+    },
+    {
+      "word": "Linux",
+      "start": 22.999,
+      "end": 23.278
+    },
+    {
+      "word": "kernel",
+      "start": 23.348,
+      "end": 23.65
+    },
+    {
+      "word": "code.",
+      "start": 23.708,
+      "end": 24.126
+    },
+    {
+      "word": "Apple",
+      "start": 24.729,
+      "end": 25.066
+    },
+    {
+      "word": "reverse",
+      "start": 25.112,
+      "end": 25.449
+    },
+    {
+      "word": "engineered",
+      "start": 25.496,
+      "end": 25.902
+    },
+    {
+      "word": "Windows",
+      "start": 25.96,
+      "end": 26.297
+    },
+    {
+      "word": "file",
+      "start": 26.355,
+      "end": 26.622
+    },
+    {
+      "word": "systems",
+      "start": 26.657,
+      "end": 27.133
+    },
+    {
+      "word": "to",
+      "start": 27.458,
+      "end": 27.562
+    },
+    {
+      "word": "make",
+      "start": 27.62,
+      "end": 27.771
+    },
+    {
+      "word": "Mac",
+      "start": 27.829,
+      "end": 28.061
+    },
+    {
+      "word": "compatible.",
+      "start": 28.131,
+      "end": 28.862
+    },
+    {
+      "word": "Google",
+      "start": 29.559,
+      "end": 29.93
+    },
+    {
+      "word": "built",
+      "start": 29.965,
+      "end": 30.151
+    },
+    {
+      "word": "Google",
+      "start": 30.221,
+      "end": 30.523
+    },
+    {
+      "word": "Docs",
+      "start": 30.557,
+      "end": 30.975
+    },
+    {
+      "word": "by",
+      "start": 31.3,
+      "end": 31.451
+    },
+    {
+      "word": "reverse",
+      "start": 31.521,
+      "end": 31.869
+    },
+    {
+      "word": "engineering",
+      "start": 31.916,
+      "end": 32.427
+    },
+    {
+      "word": "Microsoft",
+      "start": 32.752,
+      "end": 33.46
+    },
+    {
+      "word": "Office",
+      "start": 33.541,
+      "end": 33.889
+    },
+    {
+      "word": "file",
+      "start": 33.924,
+      "end": 34.18
+    },
+    {
+      "word": "formats",
+      "start": 34.215,
+      "end": 34.679
+    },
+    {
+      "word": "byte",
+      "start": 34.888,
+      "end": 35.329
+    },
+    {
+      "word": "by",
+      "start": 35.445,
+      "end": 35.631
+    },
+    {
+      "word": "byte.",
+      "start": 35.712,
+      "end": 36.188
+    },
+    {
+      "word": "Amazon",
+      "start": 36.885,
+      "end": 37.338
+    },
+    {
+      "word": "cloned",
+      "start": 37.396,
+      "end": 37.709
+    },
+    {
+      "word": "Walmart's",
+      "start": 37.744,
+      "end": 38.174
+    },
+    {
+      "word": "inventory",
+      "start": 38.243,
+      "end": 38.719
+    },
+    {
+      "word": "management",
+      "start": 38.789,
+      "end": 39.218
+    },
+    {
+      "word": "systems",
+      "start": 39.265,
+      "end": 39.729
+    },
+    {
+      "word": "to",
+      "start": 40.112,
+      "end": 40.229
+    },
+    {
+      "word": "build",
+      "start": 40.298,
+      "end": 40.519
+    },
+    {
+      "word": "their",
+      "start": 40.554,
+      "end": 40.681
+    },
+    {
+      "word": "logistics",
+      "start": 40.739,
+      "end": 41.285
+    },
+    {
+      "word": "empire.",
+      "start": 41.331,
+      "end": 41.9
+    },
+    {
+      "word": "All",
+      "start": 42.504,
+      "end": 42.794
+    },
+    {
+      "word": "completely",
+      "start": 42.876,
+      "end": 43.352
+    },
+    {
+      "word": "legal.\n\nBut",
+      "start": 43.421,
+      "end": 44.64
+    },
+    {
+      "word": "here's",
+      "start": 44.687,
+      "end": 44.873
+    },
+    {
+      "word": "where",
+      "start": 44.896,
+      "end": 45.012
+    },
+    {
+      "word": "it",
+      "start": 45.047,
+      "end": 45.093
+    },
+    {
+      "word": "gets",
+      "start": 45.128,
+      "end": 45.291
+    },
+    {
+      "word": "dangerous.",
+      "start": 45.349,
+      "end": 45.999
+    },
+    {
+      "word": "One",
+      "start": 46.603,
+      "end": 46.835
+    },
+    {
+      "word": "wrong",
+      "start": 46.858,
+      "end": 47.056
+    },
+    {
+      "word": "move",
+      "start": 47.125,
+      "end": 47.369
+    },
+    {
+      "word": "and",
+      "start": 47.404,
+      "end": 47.474
+    },
+    {
+      "word": "you're",
+      "start": 47.508,
+      "end": 47.648
+    },
+    {
+      "word": "facing",
+      "start": 47.671,
+      "end": 47.973
+    },
+    {
+      "word": "twenty",
+      "start": 48.031,
+      "end": 48.286
+    },
+    {
+      "word": "years",
+      "start": 48.321,
+      "end": 48.53
+    },
+    {
+      "word": "in",
+      "start": 48.576,
+      "end": 48.646
+    },
+    {
+      "word": "federal",
+      "start": 48.704,
+      "end": 48.983
+    },
+    {
+      "word": "prison",
+      "start": 49.029,
+      "end": 49.308
+    },
+    {
+      "word": "for",
+      "start": 49.366,
+      "end": 49.47
+    },
+    {
+      "word": "trade",
+      "start": 49.517,
+      "end": 49.772
+    },
+    {
+      "word": "secret",
+      "start": 49.807,
+      "end": 50.109
+    },
+    {
+      "word": "theft.",
+      "start": 50.144,
+      "end": 50.643
+    },
+    {
+      "word": "The",
+      "start": 51.34,
+      "end": 51.456
+    },
+    {
+      "word": "difference",
+      "start": 51.514,
+      "end": 51.827
+    },
+    {
+      "word": "between",
+      "start": 51.862,
+      "end": 52.176
+    },
+    {
+      "word": "a",
+      "start": 52.21,
+      "end": 52.234
+    },
+    {
+      "word": "six",
+      "start": 52.327,
+      "end": 52.57
+    },
+    {
+      "word": "figure",
+      "start": 52.64,
+      "end": 52.93
+    },
+    {
+      "word": "salary",
+      "start": 52.977,
+      "end": 53.395
+    },
+    {
+      "word": "and",
+      "start": 53.72,
+      "end": 53.975
+    },
+    {
+      "word": "a",
+      "start": 54.033,
+      "end": 54.056
+    },
+    {
+      "word": "federal",
+      "start": 54.172,
+      "end": 54.509
+    },
+    {
+      "word": "conviction",
+      "start": 54.567,
+      "end": 55.09
+    },
+    {
+      "word": "comes",
+      "start": 55.693,
+      "end": 55.96
+    },
+    {
+      "word": "down",
+      "start": 56.007,
+      "end": 56.204
+    },
+    {
+      "word": "to",
+      "start": 56.251,
+      "end": 56.32
+    },
+    {
+      "word": "three",
+      "start": 56.436,
+      "end": 56.692
+    },
+    {
+      "word": "magic",
+      "start": 56.75,
+      "end": 57.052
+    },
+    {
+      "word": "words",
+      "start": 57.11,
+      "end": 57.539
+    },
+    {
+      "word": "that",
+      "start": 57.981,
+      "end": 58.166
+    },
+    {
+      "word": "unlock",
+      "start": 58.236,
+      "end": 58.561
+    },
+    {
+      "word": "complete",
+      "start": 58.619,
+      "end": 59.269
+    },
+    {
+      "word": "legal",
+      "start": 59.443,
+      "end": 59.745
+    },
+    {
+      "word": "immunity.\n\nThink",
+      "start": 59.791,
+      "end": 61.359
+    },
+    {
+      "word": "of",
+      "start": 61.417,
+      "end": 61.475
+    },
+    {
+      "word": "reverse",
+      "start": 61.568,
+      "end": 61.962
+    },
+    {
+      "word": "engineering",
+      "start": 62.02,
+      "end": 62.578
+    },
+    {
+      "word": "like",
+      "start": 62.636,
+      "end": 62.787
+    },
+    {
+      "word": "performing",
+      "start": 62.833,
+      "end": 63.309
+    },
+    {
+      "word": "surgery",
+      "start": 63.39,
+      "end": 63.878
+    },
+    {
+      "word": "on",
+      "start": 64.122,
+      "end": 64.284
+    },
+    {
+      "word": "a",
+      "start": 64.331,
+      "end": 64.354
+    },
+    {
+      "word": "locked",
+      "start": 64.47,
+      "end": 64.842
+    },
+    {
+      "word": "treasure",
+      "start": 64.9,
+      "end": 65.283
+    },
+    {
+      "word": "chest.",
+      "start": 65.318,
+      "end": 65.817
+    },
+    {
+      "word": "You",
+      "start": 66.421,
+      "end": 66.537
+    },
+    {
+      "word": "can't",
+      "start": 66.583,
+      "end": 66.769
+    },
+    {
+      "word": "break",
+      "start": 66.804,
+      "end": 67.001
+    },
+    {
+      "word": "the",
+      "start": 67.059,
+      "end": 67.129
+    },
+    {
+      "word": "lock,",
+      "start": 67.187,
+      "end": 67.616
+    },
+    {
+      "word": "but",
+      "start": 67.86,
+      "end": 68.011
+    },
+    {
+      "word": "you",
+      "start": 68.046,
+      "end": 68.116
+    },
+    {
+      "word": "can",
+      "start": 68.162,
+      "end": 68.278
+    },
+    {
+      "word": "carefully",
+      "start": 68.336,
+      "end": 68.731
+    },
+    {
+      "word": "study",
+      "start": 68.789,
+      "end": 69.091
+    },
+    {
+      "word": "how",
+      "start": 69.149,
+      "end": 69.254
+    },
+    {
+      "word": "the",
+      "start": 69.3,
+      "end": 69.37
+    },
+    {
+      "word": "mechanism",
+      "start": 69.451,
+      "end": 69.915
+    },
+    {
+      "word": "works",
+      "start": 69.962,
+      "end": 70.298
+    },
+    {
+      "word": "from",
+      "start": 70.507,
+      "end": 70.705
+    },
+    {
+      "word": "the",
+      "start": 70.751,
+      "end": 70.821
+    },
+    {
+      "word": "outside.",
+      "start": 70.879,
+      "end": 71.529
+    },
+    {
+      "word": "The",
+      "start": 72.226,
+      "end": 72.353
+    },
+    {
+      "word": "treasure",
+      "start": 72.4,
+      "end": 72.702
+    },
+    {
+      "word": "inside",
+      "start": 72.725,
+      "end": 73.178
+    },
+    {
+      "word": "is",
+      "start": 73.212,
+      "end": 73.305
+    },
+    {
+      "word": "the",
+      "start": 73.375,
+      "end": 73.445
+    },
+    {
+      "word": "source",
+      "start": 73.514,
+      "end": 73.851
+    },
+    {
+      "word": "code,",
+      "start": 73.897,
+      "end": 74.362
+    },
+    {
+      "word": "algorithms,",
+      "start": 74.745,
+      "end": 75.65
+    },
+    {
+      "word": "and",
+      "start": 75.801,
+      "end": 75.975
+    },
+    {
+      "word": "trade",
+      "start": 76.034,
+      "end": 76.324
+    },
+    {
+      "word": "secrets",
+      "start": 76.37,
+      "end": 76.811
+    },
+    {
+      "word": "worth",
+      "start": 77.136,
+      "end": 77.403
+    },
+    {
+      "word": "billions.",
+      "start": 77.52,
+      "end": 78.286
+    },
+    {
+      "word": "Companies",
+      "start": 78.89,
+      "end": 79.342
+    },
+    {
+      "word": "need",
+      "start": 79.389,
+      "end": 79.551
+    },
+    {
+      "word": "to",
+      "start": 79.586,
+      "end": 79.633
+    },
+    {
+      "word": "know",
+      "start": 79.679,
+      "end": 79.807
+    },
+    {
+      "word": "how",
+      "start": 79.865,
+      "end": 79.969
+    },
+    {
+      "word": "competitor",
+      "start": 80.039,
+      "end": 80.608
+    },
+    {
+      "word": "systems",
+      "start": 80.666,
+      "end": 81.072
+    },
+    {
+      "word": "work",
+      "start": 81.13,
+      "end": 81.386
+    },
+    {
+      "word": "to",
+      "start": 81.897,
+      "end": 82.024
+    },
+    {
+      "word": "build",
+      "start": 82.094,
+      "end": 82.314
+    },
+    {
+      "word": "compatible",
+      "start": 82.384,
+      "end": 82.976
+    },
+    {
+      "word": "products,",
+      "start": 83.011,
+      "end": 83.661
+    },
+    {
+      "word": "find",
+      "start": 84.172,
+      "end": 84.486
+    },
+    {
+      "word": "security",
+      "start": 84.555,
+      "end": 85.031
+    },
+    {
+      "word": "vulnerabilities,",
+      "start": 85.101,
+      "end": 86.053
+    },
+    {
+      "word": "and",
+      "start": 86.436,
+      "end": 86.587
+    },
+    {
+      "word": "ensure",
+      "start": 86.645,
+      "end": 87.005
+    },
+    {
+      "word": "compliance",
+      "start": 87.051,
+      "end": 87.643
+    },
+    {
+      "word": "with",
+      "start": 87.667,
+      "end": 87.818
+    },
+    {
+      "word": "industry",
+      "start": 87.934,
+      "end": 88.433
+    },
+    {
+      "word": "standards.\n\nThe",
+      "start": 88.503,
+      "end": 90.105
+    },
+    {
+      "word": "legal",
+      "start": 90.174,
+      "end": 90.453
+    },
+    {
+      "word": "protection",
+      "start": 90.511,
+      "end": 90.987
+    },
+    {
+      "word": "comes",
+      "start": 91.057,
+      "end": 91.289
+    },
+    {
+      "word": "from",
+      "start": 91.335,
+      "end": 91.498
+    },
+    {
+      "word": "fair",
+      "start": 91.614,
+      "end": 91.939
+    },
+    {
+      "word": "use",
+      "start": 92.032,
+      "end": 92.287
+    },
+    {
+      "word": "doctrine.",
+      "start": 92.345,
+      "end": 92.972
+    },
+    {
+      "word": "As",
+      "start": 93.576,
+      "end": 93.738
+    },
+    {
+      "word": "long",
+      "start": 93.808,
+      "end": 93.994
+    },
+    {
+      "word": "as",
+      "start": 94.029,
+      "end": 94.087
+    },
+    {
+      "word": "you're",
+      "start": 94.133,
+      "end": 94.296
+    },
+    {
+      "word": "reverse",
+      "start": 94.331,
+      "end": 94.69
+    },
+    {
+      "word": "engineering",
+      "start": 94.737,
+      "end": 95.225
+    },
+    {
+      "word": "for",
+      "start": 95.283,
+      "end": 95.399
+    },
+    {
+      "word": "interoperability,",
+      "start": 95.457,
+      "end": 96.548
+    },
+    {
+      "word": "security",
+      "start": 96.873,
+      "end": 97.349
+    },
+    {
+      "word": "research,",
+      "start": 97.419,
+      "end": 97.906
+    },
+    {
+      "word": "or",
+      "start": 97.953,
+      "end": 98.081
+    },
+    {
+      "word": "personal",
+      "start": 98.162,
+      "end": 98.568
+    },
+    {
+      "word": "use,",
+      "start": 98.638,
+      "end": 99.079
+    },
+    {
+      "word": "it's",
+      "start": 99.52,
+      "end": 99.694
+    },
+    {
+      "word": "protected",
+      "start": 99.741,
+      "end": 100.182
+    },
+    {
+      "word": "as",
+      "start": 100.228,
+      "end": 100.321
+    },
+    {
+      "word": "free",
+      "start": 100.437,
+      "end": 100.693
+    },
+    {
+      "word": "speech",
+      "start": 100.728,
+      "end": 101.122
+    },
+    {
+      "word": "under",
+      "start": 101.297,
+      "end": 101.506
+    },
+    {
+      "word": "the",
+      "start": 101.552,
+      "end": 101.622
+    },
+    {
+      "word": "First",
+      "start": 101.691,
+      "end": 101.958
+    },
+    {
+      "word": "Amendment.",
+      "start": 102.005,
+      "end": 102.574
+    },
+    {
+      "word": "Those",
+      "start": 103.27,
+      "end": 103.549
+    },
+    {
+      "word": "three",
+      "start": 103.595,
+      "end": 103.828
+    },
+    {
+      "word": "magic",
+      "start": 103.886,
+      "end": 104.176
+    },
+    {
+      "word": "words",
+      "start": 104.222,
+      "end": 104.536
+    },
+    {
+      "word": "are",
+      "start": 104.582,
+      "end": 104.93
+    },
+    {
+      "word": "\"interoperability",
+      "start": 105.081,
+      "end": 106.381
+    },
+    {
+      "word": "research",
+      "start": 106.497,
+      "end": 106.974
+    },
+    {
+      "word": "purposes.\"",
+      "start": 107.043,
+      "end": 107.809
+    },
+    {
+      "word": "Write",
+      "start": 108.251,
+      "end": 108.471
+    },
+    {
+      "word": "that",
+      "start": 108.494,
+      "end": 108.611
+    },
+    {
+      "word": "in",
+      "start": 108.669,
+      "end": 108.738
+    },
+    {
+      "word": "your",
+      "start": 108.785,
+      "end": 108.889
+    },
+    {
+      "word": "documentation",
+      "start": 108.936,
+      "end": 109.69
+    },
+    {
+      "word": "and",
+      "start": 109.748,
+      "end": 109.876
+    },
+    {
+      "word": "you're",
+      "start": 109.922,
+      "end": 110.097
+    },
+    {
+      "word": "covered.\n\nSecurity",
+      "start": 110.131,
+      "end": 111.676
+    },
+    {
+      "word": "researchers",
+      "start": 111.745,
+      "end": 112.326
+    },
+    {
+      "word": "earn",
+      "start": 112.651,
+      "end": 112.86
+    },
+    {
+      "word": "five",
+      "start": 112.941,
+      "end": 113.231
+    },
+    {
+      "word": "hundred",
+      "start": 113.255,
+      "end": 113.475
+    },
+    {
+      "word": "thousand",
+      "start": 113.522,
+      "end": 113.87
+    },
+    {
+      "word": "dollars",
+      "start": 113.916,
+      "end": 114.23
+    },
+    {
+      "word": "annually",
+      "start": 114.311,
+      "end": 114.903
+    },
+    {
+      "word": "finding",
+      "start": 115.344,
+      "end": 115.716
+    },
+    {
+      "word": "vulnerabilities",
+      "start": 115.785,
+      "end": 116.517
+    },
+    {
+      "word": "in",
+      "start": 116.563,
+      "end": 116.633
+    },
+    {
+      "word": "competitor",
+      "start": 116.703,
+      "end": 117.19
+    },
+    {
+      "word": "software",
+      "start": 117.248,
+      "end": 117.852
+    },
+    {
+      "word": "completely",
+      "start": 118.026,
+      "end": 118.583
+    },
+    {
+      "word": "legally.",
+      "start": 118.665,
+      "end": 119.257
+    },
+    {
+      "word": "They",
+      "start": 119.861,
+      "end": 120.012
+    },
+    {
+      "word": "buy",
+      "start": 120.081,
+      "end": 120.244
+    },
+    {
+      "word": "the",
+      "start": 120.302,
+      "end": 120.372
+    },
+    {
+      "word": "product,",
+      "start": 120.418,
+      "end": 120.964
+    },
+    {
+      "word": "analyze",
+      "start": 121.208,
+      "end": 121.707
+    },
+    {
+      "word": "it",
+      "start": 121.742,
+      "end": 121.811
+    },
+    {
+      "word": "in",
+      "start": 121.858,
+      "end": 121.939
+    },
+    {
+      "word": "isolated",
+      "start": 122.055,
+      "end": 122.589
+    },
+    {
+      "word": "environments,",
+      "start": 122.647,
+      "end": 123.367
+    },
+    {
+      "word": "and",
+      "start": 123.576,
+      "end": 123.727
+    },
+    {
+      "word": "publish",
+      "start": 123.797,
+      "end": 124.11
+    },
+    {
+      "word": "their",
+      "start": 124.145,
+      "end": 124.273
+    },
+    {
+      "word": "findings.",
+      "start": 124.319,
+      "end": 124.923
+    },
+    {
+      "word": "HackerOne",
+      "start": 125.619,
+      "end": 126.107
+    },
+    {
+      "word": "paid",
+      "start": 126.142,
+      "end": 126.316
+    },
+    {
+      "word": "out",
+      "start": 126.351,
+      "end": 126.467
+    },
+    {
+      "word": "forty",
+      "start": 126.548,
+      "end": 126.838
+    },
+    {
+      "word": "four",
+      "start": 126.92,
+      "end": 127.106
+    },
+    {
+      "word": "million",
+      "start": 127.164,
+      "end": 127.431
+    },
+    {
+      "word": "dollars",
+      "start": 127.477,
+      "end": 127.883
+    },
+    {
+      "word": "in",
+      "start": 127.999,
+      "end": 128.15
+    },
+    {
+      "word": "bug",
+      "start": 128.267,
+      "end": 128.487
+    },
+    {
+      "word": "bounties",
+      "start": 128.545,
+      "end": 128.917
+    },
+    {
+      "word": "last",
+      "start": 128.963,
+      "end": 129.184
+    },
+    {
+      "word": "year.",
+      "start": 129.23,
+      "end": 129.555
+    },
+    {
+      "word": "Most",
+      "start": 130.252,
+      "end": 130.519
+    },
+    {
+      "word": "came",
+      "start": 130.565,
+      "end": 130.739
+    },
+    {
+      "word": "from",
+      "start": 130.763,
+      "end": 130.89
+    },
+    {
+      "word": "reverse",
+      "start": 130.96,
+      "end": 131.32
+    },
+    {
+      "word": "engineering",
+      "start": 131.378,
+      "end": 131.819
+    },
+    {
+      "word": "commercial",
+      "start": 131.866,
+      "end": 132.237
+    },
+    {
+      "word": "software",
+      "start": 132.295,
+      "end": 132.887
+    },
+    {
+      "word": "to",
+      "start": 133.038,
+      "end": 133.143
+    },
+    {
+      "word": "find",
+      "start": 133.201,
+      "end": 133.387
+    },
+    {
+      "word": "exploits.\n\nCompliance",
+      "start": 133.445,
+      "end": 135.268
+    },
+    {
+      "word": "teams",
+      "start": 135.291,
+      "end": 135.558
+    },
+    {
+      "word": "at",
+      "start": 135.605,
+      "end": 135.674
+    },
+    {
+      "word": "Fortune",
+      "start": 135.732,
+      "end": 136.081
+    },
+    {
+      "word": "500",
+      "start": 136.127,
+      "end": 136.626
+    },
+    {
+      "word": "companies",
+      "start": 136.696,
+      "end": 137.195
+    },
+    {
+      "word": "spend",
+      "start": 137.52,
+      "end": 137.776
+    },
+    {
+      "word": "over",
+      "start": 137.834,
+      "end": 138.019
+    },
+    {
+      "word": "two",
+      "start": 138.089,
+      "end": 138.298
+    },
+    {
+      "word": "million",
+      "start": 138.379,
+      "end": 138.693
+    },
+    {
+      "word": "dollars",
+      "start": 138.739,
+      "end": 139.146
+    },
+    {
+      "word": "annually",
+      "start": 139.238,
+      "end": 139.889
+    },
+    {
+      "word": "ensuring",
+      "start": 140.214,
+      "end": 140.783
+    },
+    {
+      "word": "their",
+      "start": 140.829,
+      "end": 140.98
+    },
+    {
+      "word": "products",
+      "start": 141.026,
+      "end": 141.386
+    },
+    {
+      "word": "work",
+      "start": 141.444,
+      "end": 141.665
+    },
+    {
+      "word": "with",
+      "start": 141.711,
+      "end": 141.862
+    },
+    {
+      "word": "every",
+      "start": 141.978,
+      "end": 142.35
+    },
+    {
+      "word": "major",
+      "start": 142.42,
+      "end": 142.756
+    },
+    {
+      "word": "platform.",
+      "start": 142.803,
+      "end": 143.464
+    },
+    {
+      "word": "They",
+      "start": 144.161,
+      "end": 144.324
+    },
+    {
+      "word": "reverse",
+      "start": 144.393,
+      "end": 144.753
+    },
+    {
+      "word": "engineer",
+      "start": 144.811,
+      "end": 145.252
+    },
+    {
+      "word": "A",
+      "start": 145.369,
+      "end": 145.485
+    },
+    {
+      "word": "P",
+      "start": 145.601,
+      "end": 145.694
+    },
+    {
+      "word": "I",
+      "start": 145.868,
+      "end": 145.984
+    },
+    {
+      "word": "s,",
+      "start": 146.1,
+      "end": 146.553
+    },
+    {
+      "word": "file",
+      "start": 146.878,
+      "end": 147.238
+    },
+    {
+      "word": "formats,",
+      "start": 147.284,
+      "end": 148.004
+    },
+    {
+      "word": "and",
+      "start": 148.178,
+      "end": 148.341
+    },
+    {
+      "word": "network",
+      "start": 148.457,
+      "end": 148.84
+    },
+    {
+      "word": "protocols",
+      "start": 148.91,
+      "end": 149.536
+    },
+    {
+      "word": "to",
+      "start": 149.745,
+      "end": 149.873
+    },
+    {
+      "word": "guarantee",
+      "start": 149.989,
+      "end": 150.581
+    },
+    {
+      "word": "compatibility.",
+      "start": 150.651,
+      "end": 151.719
+    },
+    {
+      "word": "When",
+      "start": 152.532,
+      "end": 152.729
+    },
+    {
+      "word": "Oracle",
+      "start": 152.81,
+      "end": 153.228
+    },
+    {
+      "word": "sued",
+      "start": 153.275,
+      "end": 153.553
+    },
+    {
+      "word": "Google",
+      "start": 153.611,
+      "end": 153.983
+    },
+    {
+      "word": "for",
+      "start": 154.029,
+      "end": 154.169
+    },
+    {
+      "word": "reverse",
+      "start": 154.238,
+      "end": 154.575
+    },
+    {
+      "word": "engineering",
+      "start": 154.61,
+      "end": 155.132
+    },
+    {
+      "word": "Java",
+      "start": 155.504,
+      "end": 155.945
+    },
+    {
+      "word": "A",
+      "start": 156.061,
+      "end": 156.131
+    },
+    {
+      "word": "P",
+      "start": 156.282,
+      "end": 156.363
+    },
+    {
+      "word": "I",
+      "start": 156.537,
+      "end": 156.653
+    },
+    {
+      "word": "s,",
+      "start": 156.769,
+      "end": 157.257
+    },
+    {
+      "word": "Google",
+      "start": 157.768,
+      "end": 158.139
+    },
+    {
+      "word": "won",
+      "start": 158.174,
+      "end": 158.395
+    },
+    {
+      "word": "because",
+      "start": 158.464,
+      "end": 158.755
+    },
+    {
+      "word": "courts",
+      "start": 158.801,
+      "end": 159.138
+    },
+    {
+      "word": "ruled",
+      "start": 159.207,
+      "end": 159.521
+    },
+    {
+      "word": "A",
+      "start": 159.637,
+      "end": 159.73
+    },
+    {
+      "word": "P",
+      "start": 159.881,
+      "end": 159.997
+    },
+    {
+      "word": "I",
+      "start": 160.171,
+      "end": 160.287
+    },
+    {
+      "word": "reverse",
+      "start": 160.438,
+      "end": 160.856
+    },
+    {
+      "word": "engineering",
+      "start": 160.914,
+      "end": 161.413
+    },
+    {
+      "word": "for",
+      "start": 161.471,
+      "end": 161.576
+    },
+    {
+      "word": "interoperability",
+      "start": 161.634,
+      "end": 162.528
+    },
+    {
+      "word": "is",
+      "start": 162.911,
+      "end": 163.108
+    },
+    {
+      "word": "fair",
+      "start": 163.225,
+      "end": 163.526
+    },
+    {
+      "word": "use.\n\nThe",
+      "start": 163.608,
+      "end": 164.885
+    },
+    {
+      "word": "process",
+      "start": 164.943,
+      "end": 165.361
+    },
+    {
+      "word": "works",
+      "start": 165.407,
+      "end": 165.663
+    },
+    {
+      "word": "like",
+      "start": 165.697,
+      "end": 165.883
+    },
+    {
+      "word": "archaeological",
+      "start": 165.941,
+      "end": 166.789
+    },
+    {
+      "word": "excavation.",
+      "start": 166.858,
+      "end": 167.671
+    },
+    {
+      "word": "You",
+      "start": 168.368,
+      "end": 168.495
+    },
+    {
+      "word": "start",
+      "start": 168.565,
+      "end": 168.785
+    },
+    {
+      "word": "with",
+      "start": 168.82,
+      "end": 168.948
+    },
+    {
+      "word": "artifacts",
+      "start": 169.029,
+      "end": 169.61
+    },
+    {
+      "word": "on",
+      "start": 169.656,
+      "end": 169.737
+    },
+    {
+      "word": "the",
+      "start": 169.772,
+      "end": 169.842
+    },
+    {
+      "word": "surface",
+      "start": 169.888,
+      "end": 170.469
+    },
+    {
+      "word": "and",
+      "start": 170.678,
+      "end": 170.933
+    },
+    {
+      "word": "slowly",
+      "start": 171.015,
+      "end": 171.421
+    },
+    {
+      "word": "dig",
+      "start": 171.479,
+      "end": 171.63
+    },
+    {
+      "word": "deeper.",
+      "start": 171.688,
+      "end": 172.164
+    },
+    {
+      "word": "First,",
+      "start": 172.861,
+      "end": 173.464
+    },
+    {
+      "word": "you",
+      "start": 173.673,
+      "end": 173.778
+    },
+    {
+      "word": "analyze",
+      "start": 173.847,
+      "end": 174.254
+    },
+    {
+      "word": "network",
+      "start": 174.312,
+      "end": 174.614
+    },
+    {
+      "word": "traffic",
+      "start": 174.672,
+      "end": 175.066
+    },
+    {
+      "word": "with",
+      "start": 175.113,
+      "end": 175.252
+    },
+    {
+      "word": "tools",
+      "start": 175.299,
+      "end": 175.635
+    },
+    {
+      "word": "like",
+      "start": 175.682,
+      "end": 175.821
+    },
+    {
+      "word": "Wireshark",
+      "start": 175.879,
+      "end": 176.564
+    },
+    {
+      "word": "to",
+      "start": 177.005,
+      "end": 177.121
+    },
+    {
+      "word": "see",
+      "start": 177.179,
+      "end": 177.284
+    },
+    {
+      "word": "how",
+      "start": 177.319,
+      "end": 177.388
+    },
+    {
+      "word": "the",
+      "start": 177.423,
+      "end": 177.493
+    },
+    {
+      "word": "application",
+      "start": 177.528,
+      "end": 178.027
+    },
+    {
+      "word": "communicates.",
+      "start": 178.073,
+      "end": 178.851
+    },
+    {
+      "word": "Then",
+      "start": 179.455,
+      "end": 179.676
+    },
+    {
+      "word": "you",
+      "start": 179.745,
+      "end": 179.815
+    },
+    {
+      "word": "use",
+      "start": 179.885,
+      "end": 180.07
+    },
+    {
+      "word": "disassemblers",
+      "start": 180.117,
+      "end": 180.837
+    },
+    {
+      "word": "like",
+      "start": 180.883,
+      "end": 181.022
+    },
+    {
+      "word": "Ghidra",
+      "start": 181.08,
+      "end": 181.51
+    },
+    {
+      "word": "to",
+      "start": 181.893,
+      "end": 182.009
+    },
+    {
+      "word": "convert",
+      "start": 182.079,
+      "end": 182.404
+    },
+    {
+      "word": "machine",
+      "start": 182.45,
+      "end": 182.81
+    },
+    {
+      "word": "code",
+      "start": 182.857,
+      "end": 183.112
+    },
+    {
+      "word": "back",
+      "start": 183.159,
+      "end": 183.379
+    },
+    {
+      "word": "into",
+      "start": 183.426,
+      "end": 183.6
+    },
+    {
+      "word": "readable",
+      "start": 183.716,
+      "end": 184.134
+    },
+    {
+      "word": "assembly.",
+      "start": 184.169,
+      "end": 184.772
+    },
+    {
+      "word": "Finally,",
+      "start": 185.469,
+      "end": 186.073
+    },
+    {
+      "word": "you",
+      "start": 186.317,
+      "end": 186.409
+    },
+    {
+      "word": "use",
+      "start": 186.491,
+      "end": 186.676
+    },
+    {
+      "word": "debuggers",
+      "start": 186.735,
+      "end": 187.385
+    },
+    {
+      "word": "to",
+      "start": 187.768,
+      "end": 187.872
+    },
+    {
+      "word": "watch",
+      "start": 187.93,
+      "end": 188.116
+    },
+    {
+      "word": "the",
+      "start": 188.163,
+      "end": 188.232
+    },
+    {
+      "word": "program",
+      "start": 188.29,
+      "end": 188.673
+    },
+    {
+      "word": "execute",
+      "start": 188.755,
+      "end": 189.254
+    },
+    {
+      "word": "step",
+      "start": 189.3,
+      "end": 189.556
+    },
+    {
+      "word": "by",
+      "start": 189.614,
+      "end": 189.73
+    },
+    {
+      "word": "step.\n\nBut",
+      "start": 189.8,
+      "end": 191.1
+    },
+    {
+      "word": "the",
+      "start": 191.135,
+      "end": 191.204
+    },
+    {
+      "word": "legal",
+      "start": 191.274,
+      "end": 191.529
+    },
+    {
+      "word": "boundaries",
+      "start": 191.576,
+      "end": 192.005
+    },
+    {
+      "word": "are",
+      "start": 192.052,
+      "end": 192.168
+    },
+    {
+      "word": "razor",
+      "start": 192.284,
+      "end": 192.69
+    },
+    {
+      "word": "thin.",
+      "start": 192.772,
+      "end": 193.306
+    },
+    {
+      "word": "If",
+      "start": 194.002,
+      "end": 194.118
+    },
+    {
+      "word": "you",
+      "start": 194.165,
+      "end": 194.246
+    },
+    {
+      "word": "sign",
+      "start": 194.316,
+      "end": 194.513
+    },
+    {
+      "word": "a",
+      "start": 194.548,
+      "end": 194.571
+    },
+    {
+      "word": "license",
+      "start": 194.641,
+      "end": 195.07
+    },
+    {
+      "word": "agreement",
+      "start": 195.105,
+      "end": 195.512
+    },
+    {
+      "word": "prohibiting",
+      "start": 195.57,
+      "end": 196.069
+    },
+    {
+      "word": "reverse",
+      "start": 196.139,
+      "end": 196.487
+    },
+    {
+      "word": "engineering,",
+      "start": 196.522,
+      "end": 197.242
+    },
+    {
+      "word": "you're",
+      "start": 197.625,
+      "end": 197.822
+    },
+    {
+      "word": "bound",
+      "start": 197.892,
+      "end": 198.24
+    },
+    {
+      "word": "by",
+      "start": 198.298,
+      "end": 198.403
+    },
+    {
+      "word": "contract",
+      "start": 198.495,
+      "end": 199.053
+    },
+    {
+      "word": "law.",
+      "start": 199.111,
+      "end": 199.505
+    },
+    {
+      "word": "If",
+      "start": 200.109,
+      "end": 200.237
+    },
+    {
+      "word": "you",
+      "start": 200.272,
+      "end": 200.353
+    },
+    {
+      "word": "access",
+      "start": 200.446,
+      "end": 200.829
+    },
+    {
+      "word": "source",
+      "start": 200.899,
+      "end": 201.224
+    },
+    {
+      "word": "code",
+      "start": 201.27,
+      "end": 201.572
+    },
+    {
+      "word": "through",
+      "start": 201.607,
+      "end": 201.839
+    },
+    {
+      "word": "unauthorized",
+      "start": 201.897,
+      "end": 202.536
+    },
+    {
+      "word": "means,",
+      "start": 202.594,
+      "end": 203.186
+    },
+    {
+      "word": "that's",
+      "start": 203.36,
+      "end": 203.616
+    },
+    {
+      "word": "computer",
+      "start": 203.685,
+      "end": 204.15
+    },
+    {
+      "word": "fraud.",
+      "start": 204.208,
+      "end": 204.695
+    },
+    {
+      "word": "If",
+      "start": 205.299,
+      "end": 205.427
+    },
+    {
+      "word": "you",
+      "start": 205.473,
+      "end": 205.554
+    },
+    {
+      "word": "use",
+      "start": 205.636,
+      "end": 205.81
+    },
+    {
+      "word": "reverse",
+      "start": 205.868,
+      "end": 206.216
+    },
+    {
+      "word": "engineered",
+      "start": 206.263,
+      "end": 206.657
+    },
+    {
+      "word": "information",
+      "start": 206.692,
+      "end": 207.168
+    },
+    {
+      "word": "to",
+      "start": 207.226,
+      "end": 207.296
+    },
+    {
+      "word": "build",
+      "start": 207.354,
+      "end": 207.528
+    },
+    {
+      "word": "competing",
+      "start": 207.586,
+      "end": 208.016
+    },
+    {
+      "word": "products",
+      "start": 208.062,
+      "end": 208.422
+    },
+    {
+      "word": "for",
+      "start": 208.457,
+      "end": 208.561
+    },
+    {
+      "word": "commercial",
+      "start": 208.619,
+      "end": 208.979
+    },
+    {
+      "word": "sale,",
+      "start": 209.037,
+      "end": 209.513
+    },
+    {
+      "word": "that's",
+      "start": 209.838,
+      "end": 210.106
+    },
+    {
+      "word": "trade",
+      "start": 210.175,
+      "end": 210.477
+    },
+    {
+      "word": "secret",
+      "start": 210.523,
+      "end": 210.86
+    },
+    {
+      "word": "theft.",
+      "start": 210.907,
+      "end": 211.476
+    },
+    {
+      "word": "The",
+      "start": 212.079,
+      "end": 212.219
+    },
+    {
+      "word": "D",
+      "start": 212.288,
+      "end": 212.369
+    },
+    {
+      "word": "M",
+      "start": 212.486,
+      "end": 212.602
+    },
+    {
+      "word": "C",
+      "start": 212.683,
+      "end": 212.753
+    },
+    {
+      "word": "A",
+      "start": 212.927,
+      "end": 213.043
+    },
+    {
+      "word": "makes",
+      "start": 213.159,
+      "end": 213.38
+    },
+    {
+      "word": "circumventing",
+      "start": 213.438,
+      "end": 214.099
+    },
+    {
+      "word": "copy",
+      "start": 214.157,
+      "end": 214.436
+    },
+    {
+      "word": "protection",
+      "start": 214.494,
+      "end": 214.947
+    },
+    {
+      "word": "illegal",
+      "start": 215.017,
+      "end": 215.493
+    },
+    {
+      "word": "even",
+      "start": 215.585,
+      "end": 215.841
+    },
+    {
+      "word": "for",
+      "start": 215.899,
+      "end": 216.015
+    },
+    {
+      "word": "research.\n\nThe",
+      "start": 216.085,
+      "end": 217.478
+    },
+    {
+      "word": "key",
+      "start": 217.559,
+      "end": 217.791
+    },
+    {
+      "word": "is",
+      "start": 217.849,
+      "end": 217.954
+    },
+    {
+      "word": "clean",
+      "start": 218.07,
+      "end": 218.407
+    },
+    {
+      "word": "room",
+      "start": 218.476,
+      "end": 218.685
+    },
+    {
+      "word": "design.",
+      "start": 218.755,
+      "end": 219.405
+    },
+    {
+      "word": "One",
+      "start": 220.102,
+      "end": 220.346
+    },
+    {
+      "word": "team",
+      "start": 220.38,
+      "end": 220.589
+    },
+    {
+      "word": "reverse",
+      "start": 220.659,
+      "end": 221.019
+    },
+    {
+      "word": "engineers",
+      "start": 221.065,
+      "end": 221.518
+    },
+    {
+      "word": "the",
+      "start": 221.565,
+      "end": 221.634
+    },
+    {
+      "word": "target",
+      "start": 221.692,
+      "end": 222.052
+    },
+    {
+      "word": "system",
+      "start": 222.099,
+      "end": 222.447
+    },
+    {
+      "word": "and",
+      "start": 222.888,
+      "end": 223.085
+    },
+    {
+      "word": "documents",
+      "start": 223.178,
+      "end": 223.689
+    },
+    {
+      "word": "how",
+      "start": 223.724,
+      "end": 223.84
+    },
+    {
+      "word": "it",
+      "start": 223.898,
+      "end": 223.968
+    },
+    {
+      "word": "works.",
+      "start": 224.014,
+      "end": 224.548
+    },
+    {
+      "word": "A",
+      "start": 225.245,
+      "end": 225.326
+    },
+    {
+      "word": "completely",
+      "start": 225.407,
+      "end": 225.883
+    },
+    {
+      "word": "separate",
+      "start": 225.953,
+      "end": 226.336
+    },
+    {
+      "word": "team",
+      "start": 226.359,
+      "end": 226.673
+    },
+    {
+      "word": "reads",
+      "start": 227.114,
+      "end": 227.381
+    },
+    {
+      "word": "only",
+      "start": 227.462,
+      "end": 227.776
+    },
+    {
+      "word": "the",
+      "start": 227.834,
+      "end": 227.904
+    },
+    {
+      "word": "documentation",
+      "start": 227.985,
+      "end": 228.89
+    },
+    {
+      "word": "and",
+      "start": 229.332,
+      "end": 229.541
+    },
+    {
+      "word": "builds",
+      "start": 229.61,
+      "end": 229.889
+    },
+    {
+      "word": "a",
+      "start": 229.924,
+      "end": 229.959
+    },
+    {
+      "word": "compatible",
+      "start": 230.028,
+      "end": 230.632
+    },
+    {
+      "word": "system",
+      "start": 230.667,
+      "end": 231.004
+    },
+    {
+      "word": "from",
+      "start": 231.062,
+      "end": 231.201
+    },
+    {
+      "word": "scratch.",
+      "start": 231.271,
+      "end": 231.898
+    },
+    {
+      "word": "This",
+      "start": 232.594,
+      "end": 232.792
+    },
+    {
+      "word": "proved",
+      "start": 232.873,
+      "end": 233.163
+    },
+    {
+      "word": "Google",
+      "start": 233.233,
+      "end": 233.604
+    },
+    {
+      "word": "didn't",
+      "start": 233.639,
+      "end": 233.883
+    },
+    {
+      "word": "copy",
+      "start": 233.93,
+      "end": 234.266
+    },
+    {
+      "word": "Oracle's",
+      "start": 234.348,
+      "end": 234.754
+    },
+    {
+      "word": "Java",
+      "start": 234.835,
+      "end": 235.149
+    },
+    {
+      "word": "code,",
+      "start": 235.195,
+      "end": 235.601
+    },
+    {
+      "word": "just",
+      "start": 235.985,
+      "end": 236.182
+    },
+    {
+      "word": "the",
+      "start": 236.217,
+      "end": 236.286
+    },
+    {
+      "word": "public",
+      "start": 236.333,
+      "end": 236.646
+    },
+    {
+      "word": "A",
+      "start": 236.716,
+      "end": 236.786
+    },
+    {
+      "word": "P",
+      "start": 236.902,
+      "end": 236.983
+    },
+    {
+      "word": "I",
+      "start": 237.157,
+      "end": 237.273
+    },
+    {
+      "word": "specifications.\n\nMajor",
+      "start": 237.389,
+      "end": 239.456
+    },
+    {
+      "word": "tech",
+      "start": 239.502,
+      "end": 239.665
+    },
+    {
+      "word": "companies",
+      "start": 239.711,
+      "end": 240.118
+    },
+    {
+      "word": "now",
+      "start": 240.176,
+      "end": 240.315
+    },
+    {
+      "word": "hire",
+      "start": 240.385,
+      "end": 240.675
+    },
+    {
+      "word": "reverse",
+      "start": 240.733,
+      "end": 241.093
+    },
+    {
+      "word": "engineering",
+      "start": 241.151,
+      "end": 241.581
+    },
+    {
+      "word": "specialists",
+      "start": 241.627,
+      "end": 242.196
+    },
+    {
+      "word": "as",
+      "start": 242.521,
+      "end": 242.695
+    },
+    {
+      "word": "fast",
+      "start": 242.811,
+      "end": 243.159
+    },
+    {
+      "word": "as",
+      "start": 243.218,
+      "end": 243.299
+    },
+    {
+      "word": "they",
+      "start": 243.345,
+      "end": 243.461
+    },
+    {
+      "word": "can",
+      "start": 243.496,
+      "end": 243.612
+    },
+    {
+      "word": "find",
+      "start": 243.67,
+      "end": 243.891
+    },
+    {
+      "word": "them.",
+      "start": 243.937,
+      "end": 244.216
+    },
+    {
+      "word": "Netflix",
+      "start": 245.029,
+      "end": 245.505
+    },
+    {
+      "word": "reverse",
+      "start": 245.574,
+      "end": 245.923
+    },
+    {
+      "word": "engineered",
+      "start": 245.981,
+      "end": 246.445
+    },
+    {
+      "word": "video",
+      "start": 246.503,
+      "end": 246.828
+    },
+    {
+      "word": "codecs",
+      "start": 246.898,
+      "end": 247.374
+    },
+    {
+      "word": "to",
+      "start": 247.699,
+      "end": 247.815
+    },
+    {
+      "word": "build",
+      "start": 247.896,
+      "end": 248.117
+    },
+    {
+      "word": "their",
+      "start": 248.152,
+      "end": 248.291
+    },
+    {
+      "word": "streaming",
+      "start": 248.337,
+      "end": 248.697
+    },
+    {
+      "word": "platform.",
+      "start": 248.744,
+      "end": 249.371
+    },
+    {
+      "word": "Spotify",
+      "start": 250.067,
+      "end": 250.671
+    },
+    {
+      "word": "dissected",
+      "start": 250.741,
+      "end": 251.275
+    },
+    {
+      "word": "audio",
+      "start": 251.344,
+      "end": 251.681
+    },
+    {
+      "word": "compression",
+      "start": 251.739,
+      "end": 252.18
+    },
+    {
+      "word": "algorithms",
+      "start": 252.238,
+      "end": 252.807
+    },
+    {
+      "word": "to",
+      "start": 253.016,
+      "end": 253.121
+    },
+    {
+      "word": "optimize",
+      "start": 253.19,
+      "end": 253.701
+    },
+    {
+      "word": "their",
+      "start": 253.736,
+      "end": 253.887
+    },
+    {
+      "word": "service.",
+      "start": 253.933,
+      "end": 254.491
+    },
+    {
+      "word": "Tesla",
+      "start": 255.094,
+      "end": 255.652
+    },
+    {
+      "word": "reverse",
+      "start": 256.035,
+      "end": 256.429
+    },
+    {
+      "word": "engineered",
+      "start": 256.487,
+      "end": 256.952
+    },
+    {
+      "word": "automotive",
+      "start": 257.022,
+      "end": 257.544
+    },
+    {
+      "word": "control",
+      "start": 257.579,
+      "end": 257.95
+    },
+    {
+      "word": "systems",
+      "start": 258.008,
+      "end": 258.484
+    },
+    {
+      "word": "to",
+      "start": 258.926,
+      "end": 259.042
+    },
+    {
+      "word": "build",
+      "start": 259.111,
+      "end": 259.378
+    },
+    {
+      "word": "autonomous",
+      "start": 259.448,
+      "end": 260.063
+    },
+    {
+      "word": "driving",
+      "start": 260.121,
+      "end": 260.493
+    },
+    {
+      "word": "features.",
+      "start": 260.551,
+      "end": 261.19
+    },
+    {
+      "word": "The",
+      "start": 261.886,
+      "end": 262.002
+    },
+    {
+      "word": "global",
+      "start": 262.06,
+      "end": 262.455
+    },
+    {
+      "word": "reverse",
+      "start": 262.513,
+      "end": 262.85
+    },
+    {
+      "word": "engineering",
+      "start": 262.896,
+      "end": 263.326
+    },
+    {
+      "word": "software",
+      "start": 263.396,
+      "end": 263.825
+    },
+    {
+      "word": "market",
+      "start": 263.848,
+      "end": 264.197
+    },
+    {
+      "word": "hit",
+      "start": 264.638,
+      "end": 264.835
+    },
+    {
+      "word": "twelve",
+      "start": 264.882,
+      "end": 265.23
+    },
+    {
+      "word": "billion",
+      "start": 265.276,
+      "end": 265.59
+    },
+    {
+      "word": "dollars",
+      "start": 265.636,
+      "end": 265.985
+    },
+    {
+      "word": "in",
+      "start": 266.031,
+      "end": 266.101
+    },
+    {
+      "word": "2023",
+      "start": 266.17,
+      "end": 266.867
+    },
+    {
+      "word": "and",
+      "start": 267.308,
+      "end": 267.506
+    },
+    {
+      "word": "grows",
+      "start": 267.564,
+      "end": 267.819
+    },
+    {
+      "word": "twenty",
+      "start": 267.877,
+      "end": 268.144
+    },
+    {
+      "word": "percent",
+      "start": 268.202,
+      "end": 268.516
+    },
+    {
+      "word": "annually.\n\nCareer",
+      "start": 268.574,
+      "end": 270.164
+    },
+    {
+      "word": "paths",
+      "start": 270.222,
+      "end": 270.536
+    },
+    {
+      "word": "range",
+      "start": 270.629,
+      "end": 270.907
+    },
+    {
+      "word": "from",
+      "start": 270.942,
+      "end": 271.093
+    },
+    {
+      "word": "malware",
+      "start": 271.163,
+      "end": 271.581
+    },
+    {
+      "word": "analysis",
+      "start": 271.604,
+      "end": 272.161
+    },
+    {
+      "word": "at",
+      "start": 272.231,
+      "end": 272.324
+    },
+    {
+      "word": "cybersecurity",
+      "start": 272.393,
+      "end": 273.125
+    },
+    {
+      "word": "firms",
+      "start": 273.183,
+      "end": 273.566
+    },
+    {
+      "word": "to",
+      "start": 274.007,
+      "end": 274.135
+    },
+    {
+      "word": "compatibility",
+      "start": 274.228,
+      "end": 274.994
+    },
+    {
+      "word": "engineering",
+      "start": 275.052,
+      "end": 275.528
+    },
+    {
+      "word": "at",
+      "start": 275.575,
+      "end": 275.656
+    },
+    {
+      "word": "software",
+      "start": 275.714,
+      "end": 276.167
+    },
+    {
+      "word": "companies.",
+      "start": 276.201,
+      "end": 276.828
+    },
+    {
+      "word": "Entry",
+      "start": 277.525,
+      "end": 277.873
+    },
+    {
+      "word": "level",
+      "start": 277.92,
+      "end": 278.14
+    },
+    {
+      "word": "positions",
+      "start": 278.187,
+      "end": 278.663
+    },
+    {
+      "word": "start",
+      "start": 278.709,
+      "end": 278.918
+    },
+    {
+      "word": "at",
+      "start": 278.953,
+      "end": 279.011
+    },
+    {
+      "word": "one",
+      "start": 279.092,
+      "end": 279.255
+    },
+    {
+      "word": "hundred",
+      "start": 279.278,
+      "end": 279.522
+    },
+    {
+      "word": "thousand",
+      "start": 279.557,
+      "end": 279.905
+    },
+    {
+      "word": "dollars.",
+      "start": 279.952,
+      "end": 280.52
+    },
+    {
+      "word": "Senior",
+      "start": 281.031,
+      "end": 281.391
+    },
+    {
+      "word": "specialists",
+      "start": 281.426,
+      "end": 282.018
+    },
+    {
+      "word": "earn",
+      "start": 282.134,
+      "end": 282.401
+    },
+    {
+      "word": "four",
+      "start": 282.726,
+      "end": 282.982
+    },
+    {
+      "word": "hundred",
+      "start": 283.028,
+      "end": 283.284
+    },
+    {
+      "word": "thousand",
+      "start": 283.33,
+      "end": 283.702
+    },
+    {
+      "word": "plus",
+      "start": 283.76,
+      "end": 284.003
+    },
+    {
+      "word": "equity.",
+      "start": 284.085,
+      "end": 284.665
+    },
+    {
+      "word": "The",
+      "start": 285.362,
+      "end": 285.478
+    },
+    {
+      "word": "most",
+      "start": 285.536,
+      "end": 285.745
+    },
+    {
+      "word": "in-demand",
+      "start": 285.815,
+      "end": 286.233
+    },
+    {
+      "word": "skills",
+      "start": 286.279,
+      "end": 286.604
+    },
+    {
+      "word": "are",
+      "start": 286.651,
+      "end": 286.778
+    },
+    {
+      "word": "assembly",
+      "start": 286.825,
+      "end": 287.266
+    },
+    {
+      "word": "language,",
+      "start": 287.324,
+      "end": 287.893
+    },
+    {
+      "word": "cryptography,",
+      "start": 288.044,
+      "end": 289.042
+    },
+    {
+      "word": "and",
+      "start": 289.17,
+      "end": 289.321
+    },
+    {
+      "word": "protocol",
+      "start": 289.402,
+      "end": 289.878
+    },
+    {
+      "word": "analysis.\n\nStart",
+      "start": 289.936,
+      "end": 291.678
+    },
+    {
+      "word": "legally",
+      "start": 291.771,
+      "end": 292.189
+    },
+    {
+      "word": "with",
+      "start": 292.235,
+      "end": 292.374
+    },
+    {
+      "word": "open",
+      "start": 292.456,
+      "end": 292.734
+    },
+    {
+      "word": "source",
+      "start": 292.804,
+      "end": 293.106
+    },
+    {
+      "word": "tools.",
+      "start": 293.141,
+      "end": 293.791
+    },
+    {
+      "word": "Ghidra",
+      "start": 294.395,
+      "end": 294.789
+    },
+    {
+      "word": "is",
+      "start": 294.847,
+      "end": 294.94
+    },
+    {
+      "word": "the",
+      "start": 294.987,
+      "end": 295.068
+    },
+    {
+      "word": "N",
+      "start": 295.184,
+      "end": 295.358
+    },
+    {
+      "word": "S",
+      "start": 295.474,
+      "end": 295.509
+    },
+    {
+      "word": "A's",
+      "start": 295.625,
+      "end": 295.799
+    },
+    {
+      "word": "professional",
+      "start": 295.857,
+      "end": 296.368
+    },
+    {
+      "word": "disassembler",
+      "start": 296.426,
+      "end": 297.088
+    },
+    {
+      "word": "released",
+      "start": 297.413,
+      "end": 297.75
+    },
+    {
+      "word": "to",
+      "start": 297.773,
+      "end": 297.831
+    },
+    {
+      "word": "the",
+      "start": 297.889,
+      "end": 297.959
+    },
+    {
+      "word": "public.",
+      "start": 297.994,
+      "end": 298.493
+    },
+    {
+      "word": "I",
+      "start": 299.189,
+      "end": 299.306
+    },
+    {
+      "word": "D",
+      "start": 299.456,
+      "end": 299.538
+    },
+    {
+      "word": "A",
+      "start": 299.654,
+      "end": 299.7
+    },
+    {
+      "word": "Free",
+      "start": 299.816,
+      "end": 300.223
+    },
+    {
+      "word": "handles",
+      "start": 300.432,
+      "end": 300.78
+    },
+    {
+      "word": "most",
+      "start": 300.873,
+      "end": 301.152
+    },
+    {
+      "word": "file",
+      "start": 301.21,
+      "end": 301.465
+    },
+    {
+      "word": "formats.",
+      "start": 301.5,
+      "end": 302.162
+    },
+    {
+      "word": "Wireshark",
+      "start": 302.765,
+      "end": 303.346
+    },
+    {
+      "word": "captures",
+      "start": 303.392,
+      "end": 303.787
+    },
+    {
+      "word": "network",
+      "start": 303.845,
+      "end": 304.147
+    },
+    {
+      "word": "traffic.",
+      "start": 304.193,
+      "end": 304.785
+    },
+    {
+      "word": "Cheat",
+      "start": 305.389,
+      "end": 305.668
+    },
+    {
+      "word": "Engine",
+      "start": 305.726,
+      "end": 306.016
+    },
+    {
+      "word": "analyzes",
+      "start": 306.063,
+      "end": 306.631
+    },
+    {
+      "word": "running",
+      "start": 306.748,
+      "end": 307.015
+    },
+    {
+      "word": "processes.",
+      "start": 307.073,
+      "end": 307.909
+    },
+    {
+      "word": "All",
+      "start": 308.605,
+      "end": 308.826
+    },
+    {
+      "word": "completely",
+      "start": 308.895,
+      "end": 309.348
+    },
+    {
+      "word": "legal",
+      "start": 309.429,
+      "end": 309.72
+    },
+    {
+      "word": "when",
+      "start": 309.766,
+      "end": 309.882
+    },
+    {
+      "word": "used",
+      "start": 309.94,
+      "end": 310.126
+    },
+    {
+      "word": "on",
+      "start": 310.172,
+      "end": 310.242
+    },
+    {
+      "word": "software",
+      "start": 310.311,
+      "end": 310.741
+    },
+    {
+      "word": "you",
+      "start": 310.776,
+      "end": 310.857
+    },
+    {
+      "word": "own",
+      "start": 310.927,
+      "end": 311.171
+    },
+    {
+      "word": "or",
+      "start": 311.496,
+      "end": 311.647
+    },
+    {
+      "word": "have",
+      "start": 311.705,
+      "end": 311.832
+    },
+    {
+      "word": "permission",
+      "start": 311.867,
+      "end": 312.25
+    },
+    {
+      "word": "to",
+      "start": 312.297,
+      "end": 312.343
+    },
+    {
+      "word": "analyze.\n\nDocument",
+      "start": 312.401,
+      "end": 314.178
+    },
+    {
+      "word": "everything.",
+      "start": 314.236,
+      "end": 314.839
+    },
+    {
+      "word": "Keep",
+      "start": 315.536,
+      "end": 315.768
+    },
+    {
+      "word": "detailed",
+      "start": 315.849,
+      "end": 316.325
+    },
+    {
+      "word": "logs",
+      "start": 316.395,
+      "end": 316.79
+    },
+    {
+      "word": "of",
+      "start": 316.836,
+      "end": 316.906
+    },
+    {
+      "word": "your",
+      "start": 316.952,
+      "end": 317.068
+    },
+    {
+      "word": "research",
+      "start": 317.115,
+      "end": 317.475
+    },
+    {
+      "word": "purpose,",
+      "start": 317.521,
+      "end": 318.102
+    },
+    {
+      "word": "methods,",
+      "start": 318.311,
+      "end": 318.74
+    },
+    {
+      "word": "and",
+      "start": 318.764,
+      "end": 318.845
+    },
+    {
+      "word": "findings.",
+      "start": 318.914,
+      "end": 319.576
+    },
+    {
+      "word": "This",
+      "start": 320.18,
+      "end": 320.377
+    },
+    {
+      "word": "protects",
+      "start": 320.435,
+      "end": 320.76
+    },
+    {
+      "word": "you",
+      "start": 320.784,
+      "end": 320.865
+    },
+    {
+      "word": "legally",
+      "start": 320.935,
+      "end": 321.329
+    },
+    {
+      "word": "and",
+      "start": 321.376,
+      "end": 321.55
+    },
+    {
+      "word": "makes",
+      "start": 321.875,
+      "end": 322.107
+    },
+    {
+      "word": "your",
+      "start": 322.142,
+      "end": 322.27
+    },
+    {
+      "word": "work",
+      "start": 322.316,
+      "end": 322.502
+    },
+    {
+      "word": "reproducible.",
+      "start": 322.572,
+      "end": 323.408
+    },
+    {
+      "word": "Join",
+      "start": 324.104,
+      "end": 324.371
+    },
+    {
+      "word": "communities",
+      "start": 324.441,
+      "end": 324.94
+    },
+    {
+      "word": "like",
+      "start": 324.986,
+      "end": 325.126
+    },
+    {
+      "word": "the",
+      "start": 325.161,
+      "end": 325.23
+    },
+    {
+      "word": "REcon",
+      "start": 325.346,
+      "end": 325.787
+    },
+    {
+      "word": "conference",
+      "start": 325.869,
+      "end": 326.438
+    },
+    {
+      "word": "and",
+      "start": 326.472,
+      "end": 326.67
+    },
+    {
+      "word": "Reverse",
+      "start": 326.995,
+      "end": 327.366
+    },
+    {
+      "word": "Engineering",
+      "start": 327.413,
+      "end": 327.97
+    },
+    {
+      "word": "subreddit",
+      "start": 328.121,
+      "end": 328.794
+    },
+    {
+      "word": "to",
+      "start": 329.236,
+      "end": 329.363
+    },
+    {
+      "word": "learn",
+      "start": 329.433,
+      "end": 329.63
+    },
+    {
+      "word": "from",
+      "start": 329.677,
+      "end": 329.816
+    },
+    {
+      "word": "professionals.\n\nThe",
+      "start": 329.886,
+      "end": 331.592
+    },
+    {
+      "word": "reverse",
+      "start": 331.65,
+      "end": 331.964
+    },
+    {
+      "word": "engineering",
+      "start": 331.999,
+      "end": 332.475
+    },
+    {
+      "word": "industry",
+      "start": 332.533,
+      "end": 332.986
+    },
+    {
+      "word": "proves",
+      "start": 333.369,
+      "end": 333.74
+    },
+    {
+      "word": "that",
+      "start": 333.787,
+      "end": 334.054
+    },
+    {
+      "word": "with",
+      "start": 334.437,
+      "end": 334.623
+    },
+    {
+      "word": "the",
+      "start": 334.657,
+      "end": 334.727
+    },
+    {
+      "word": "right",
+      "start": 334.808,
+      "end": 335.029
+    },
+    {
+      "word": "legal",
+      "start": 335.099,
+      "end": 335.389
+    },
+    {
+      "word": "framework,",
+      "start": 335.459,
+      "end": 336.085
+    },
+    {
+      "word": "competitive",
+      "start": 336.527,
+      "end": 337.084
+    },
+    {
+      "word": "intelligence",
+      "start": 337.119,
+      "end": 337.699
+    },
+    {
+      "word": "becomes",
+      "start": 337.746,
+      "end": 338.094
+    },
+    {
+      "word": "collaborative",
+      "start": 338.164,
+      "end": 338.791
+    },
+    {
+      "word": "innovation.",
+      "start": 338.825,
+      "end": 339.51
+    },
+    {
+      "word": "Companies",
+      "start": 340.207,
+      "end": 340.695
+    },
+    {
+      "word": "that",
+      "start": 340.729,
+      "end": 340.857
+    },
+    {
+      "word": "embrace",
+      "start": 340.903,
+      "end": 341.368
+    },
+    {
+      "word": "transparency",
+      "start": 341.402,
+      "end": 342.389
+    },
+    {
+      "word": "and",
+      "start": 342.471,
+      "end": 342.575
+    },
+    {
+      "word": "interoperability",
+      "start": 342.691,
+      "end": 343.736
+    },
+    {
+      "word": "win.",
+      "start": 343.829,
+      "end": 344.351
+    },
+    {
+      "word": "Those",
+      "start": 345.048,
+      "end": 345.362
+    },
+    {
+      "word": "that",
+      "start": 345.396,
+      "end": 345.512
+    },
+    {
+      "word": "rely",
+      "start": 345.559,
+      "end": 345.814
+    },
+    {
+      "word": "on",
+      "start": 345.884,
+      "end": 345.954
+    },
+    {
+      "word": "security",
+      "start": 346.012,
+      "end": 346.488
+    },
+    {
+      "word": "through",
+      "start": 346.534,
+      "end": 346.731
+    },
+    {
+      "word": "obscurity",
+      "start": 346.766,
+      "end": 347.37
+    },
+    {
+      "word": "get",
+      "start": 347.811,
+      "end": 347.985
+    },
+    {
+      "word": "disrupted",
+      "start": 348.032,
+      "end": 348.577
+    },
+    {
+      "word": "by",
+      "start": 348.624,
+      "end": 348.728
+    },
+    {
+      "word": "teams",
+      "start": 348.81,
+      "end": 349.344
+    },
+    {
+      "word": "who",
+      "start": 349.785,
+      "end": 349.971
+    },
+    {
+      "word": "legally",
+      "start": 350.087,
+      "end": 350.493
+    },
+    {
+      "word": "figure",
+      "start": 350.563,
+      "end": 350.83
+    },
+    {
+      "word": "out",
+      "start": 350.853,
+      "end": 350.958
+    },
+    {
+      "word": "their",
+      "start": 350.992,
+      "end": 351.143
+    },
+    {
+      "word": "secrets",
+      "start": 351.201,
+      "end": 351.654
+    },
+    {
+      "word": "and",
+      "start": 351.979,
+      "end": 352.246
+    },
+    {
+      "word": "build",
+      "start": 352.339,
+      "end": 352.664
+    },
+    {
+      "word": "something",
+      "start": 352.722,
+      "end": 353.071
+    },
+    {
+      "word": "better.",
+      "start": 353.152,
+      "end": 353.872
+    }
+  ]
+}

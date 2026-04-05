@@ -7,6 +7,7 @@ import ReviewPage from './ReviewPage';
 import ResearchDashboard from './ResearchDashboard';
 import GeneratedEditor from './GeneratedEditor';
 import ImprovementsPage from './ImprovementsPage';
+import CompositionPage from './CompositionPage';
 import VisualSettingsPanel from './editors/VisualSettingsPanel';
 import { getColorSchemeForSection } from './types';
 
@@ -30,7 +31,7 @@ export default function App() {
   const [toasts, setToasts] = useState<Toast[]>([]);
   const [projects, setProjects] = useState<string[]>([]);
   const [dirty, setDirty] = useState(false);
-  const [activeTab, setActiveTab] = useState<'editor' | 'review' | 'visual' | 'research' | 'improvements'>('review');
+  const [activeTab, setActiveTab] = useState<'editor' | 'review' | 'visual' | 'research' | 'improvements' | 'composition'>('review');
 
   const [showPreview, setShowPreview] = useState(false);
   const [previewPort, setPreviewPort] = useState('3001');
@@ -46,6 +47,16 @@ export default function App() {
   }, []);
 
   useEffect(() => { listProjects().then(setProjects).catch(() => {}); }, []);
+
+  // Listen for "edit segment" events from ReviewPage
+  useEffect(() => {
+    const handler = (e: CustomEvent) => {
+      setActiveTab('visual');
+      // GeneratedEditor will pick up the segment from the event detail
+    };
+    window.addEventListener('editSegment' as any, handler);
+    return () => window.removeEventListener('editSegment' as any, handler);
+  }, []);
 
   const handleLoad = useCallback(async (proj?: string) => {
     const p = proj || project;
@@ -121,7 +132,7 @@ export default function App() {
   });
 
   return (
-    <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', background: (activeTab === 'review' || activeTab === 'visual' || activeTab === 'improvements') ? '#fafafa' : '#030305', overflow: 'hidden' }}>
+    <div style={{ width: '100vw', height: '100vh', display: 'flex', flexDirection: 'column', background: (activeTab === 'review' || activeTab === 'visual' || activeTab === 'improvements' || activeTab === 'composition') ? '#fafafa' : '#030305', overflow: 'hidden' }}>
 
       {/* Top bar */}
       <div style={{
@@ -136,6 +147,7 @@ export default function App() {
         <button onClick={() => setActiveTab('visual')} style={tabStyle('visual')}>Visual</button>
         <button onClick={() => setActiveTab('research')} style={tabStyle('research')}>Research</button>
         <button onClick={() => setActiveTab('improvements')} style={tabStyle('improvements')}>Improvements</button>
+        <button onClick={() => setActiveTab('composition')} style={tabStyle('composition')}>Composition</button>
 
         <div style={{ width: 1, height: 20, background: '#e5e7eb', margin: '0 12px' }} />
 
@@ -191,6 +203,10 @@ export default function App() {
       ) : activeTab === 'improvements' ? (
         <div style={{ flex: 1, overflow: 'hidden' }}>
           <ImprovementsPage />
+        </div>
+      ) : activeTab === 'composition' ? (
+        <div style={{ flex: 1, overflow: 'auto', background: '#f8f9fb' }}>
+          <CompositionPage />
         </div>
       ) : (
         <div style={{ flex: showPreview ? `0 0 ${100 - previewHeight}%` : '1 1 auto', display: 'flex', overflow: 'hidden', background: '#030305' }}>

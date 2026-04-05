@@ -1,0 +1,321 @@
+{
+  "total_sfx": 44,
+  "sfx_types": {
+    "click": 4,
+    "whoosh": 30,
+    "riser": 5,
+    "hit": 5
+  },
+  "unique_files_used": 11,
+  "library_dir": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../sound-design/library",
+  "timeline": [
+    {
+      "frame": 168,
+      "type": "click",
+      "file": "clicks/soft-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'actually'"
+    },
+    {
+      "frame": 488,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 648,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 764,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 936,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1086,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1161,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1316,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1397,
+      "type": "click",
+      "file": "clicks/button-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'critical'"
+    },
+    {
+      "frame": 1438,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1520,
+      "type": "whoosh",
+      "file": "whooshes/lofi-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1595,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 1668,
+      "type": "riser",
+      "file": "risers/fast-riser.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'use Copilot, they might get'"
+    },
+    {
+      "frame": 1713,
+      "type": "hit",
+      "file": "hits/punch-hit.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'use' in 'use Copilot, they might get'"
+    },
+    {
+      "frame": 1833,
+      "type": "click",
+      "file": "clicks/button-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'secret'"
+    },
+    {
+      "frame": 1933,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2060,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2339,
+      "type": "whoosh",
+      "file": "whooshes/lofi-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2418,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2526,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2828,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2912,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 3083,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 3249,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 3482,
+      "type": "riser",
+      "file": "risers/short-riser-02.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'like hiring a translator for'"
+    },
+    {
+      "frame": 3527,
+      "type": "hit",
+      "file": "hits/soft-hit-01.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'like' in 'like hiring a translator for'"
+    },
+    {
+      "frame": 4066,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 4298,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 4547,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 4727,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 4802,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 4943,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 5002,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 5134,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 5214,
+      "type": "riser",
+      "file": "risers/short-riser-01.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'on your own infrastructure. These'"
+    },
+    {
+      "frame": 5259,
+      "type": "hit",
+      "file": "hits/punch-hit.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'on' in 'on your own infrastructure. These'"
+    },
+    {
+      "frame": 5316,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 5407,
+      "type": "whoosh",
+      "file": "whooshes/lofi-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 5477,
+      "type": "whoosh",
+      "file": "whooshes/thin-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 6697,
+      "type": "click",
+      "file": "clicks/soft-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'solution'"
+    },
+    {
+      "frame": 7005,
+      "type": "riser",
+      "file": "risers/fast-riser.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'themselves restrict Copilot usage in'"
+    },
+    {
+      "frame": 7050,
+      "type": "hit",
+      "file": "hits/soft-hit-01.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'themselves' in 'themselves restrict Copilot usage in'"
+    },
+    {
+      "frame": 8781,
+      "type": "riser",
+      "file": "risers/short-riser-02.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'your intellectual property.'"
+    },
+    {
+      "frame": 8826,
+      "type": "hit",
+      "file": "hits/punch-hit.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'your' in 'your intellectual property.'"
+    }
+  ]
+}

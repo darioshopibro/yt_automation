@@ -36,7 +36,7 @@ Router samo segmentira transcript na logičke celine. Tipično 3-6 segmenata za 
 
 ```
 Koristi: remotion-planner skill
-Input: Transcript tekst + visual-structure.json
+Input: Transcript tekst + visual-structure.json + memes.json (ako postoji) + AI clips info (ako postoji)
 Output: master-plan.json + voiceover.mp3 + timestamps.json + Generated_*.tsx
 ```
 
@@ -44,8 +44,37 @@ Planner radi:
 1. Čisti transcript
 2. Generiše voiceover + word timestamps (ElevenLabs)
 3. Mapira timestamps na segmente
-4. **Za SVAKI segment pokreni `visual-generator` skill** — skill piše .tsx
-5. Generiše master-plan.json
+4. **Čita memes.json** (ako postoji u workspace/) — odlučuje gde idu meme overlays
+5. **Čita AI clips** (ako postoje u workspace/ai-clips/) — odlučuje gde idu AI video klipovi (hook, reveals)
+6. **Za SVAKI segment pokreni `visual-generator` skill** — skill piše .tsx
+7. Generiše master-plan.json (sa memes i AI clips pozicijama)
+
+### KORAK 2.5: ZVUKOVI (rade SUB-AGENTI zajedno sa vizualima)
+
+**NEMA odvojenog sound designer koraka.**
+Svaki sub-agent koji pravi vizual za segment PRAVI i zvukove za taj segment.
+
+Kad pokrećeš visual-generator za segment, dodaj u prompt:
+- "Pročitaj `reference/sound.md` za pravila"
+- "Pored .tsx fajla, napravi i `sounds_segment_X.json` sa zvukovima"
+- "Zvuk ide SAMO gde se nešto VIZUELNO dešava"
+
+Posle svih sub-agenata, pokreni premix:
+
+```bash
+cd /Users/dario61/Desktop/YT\ automation && python3 tools/sound-design/premix_segments.py workspace/{project-name} videos/{project-name}
+```
+
+Ovo čita sounds_segment_*.json i pravi `public/sfx/segment_X_sfx.mp3` za svaki segment.
+
+Pa u Root.tsx dodaj za svaki segment:
+```tsx
+<Sequence from={startFrame} durationInFrames={endFrame - startFrame}>
+  <Audio src={staticFile("sfx/segment_X_sfx.mp3")} volume={1} />
+</Sequence>
+```
+
+**PRAVILO:** Zvuk MORA da prati vizual. Ako se ništa ne menja na ekranu — NEMA zvuka.
 
 ### KORAK 3: Pokreni BUILDER
 

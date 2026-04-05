@@ -22,9 +22,9 @@ ELEVENLABS_API_KEY = "sk_05502b179071a5af73848098c52b3b556ac144e89fe35998"
 VOICE_ID = "iP95p4xoKVk53GoZ742B"  # Chris - American, Casual
 
 VOICE_SETTINGS = {
-    "stability": 0.50,
-    "similarity_boost": 0.75,
-    "style": 0.0,
+    "stability": 0.75,
+    "similarity_boost": 0.85,
+    "style": 0.1,
     "use_speaker_boost": True
 }
 

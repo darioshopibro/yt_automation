@@ -1,0 +1,51 @@
+{
+  "run_id": 48000,
+  "total_steps": 5,
+  "ok": 5,
+  "failed": 0,
+  "partial": 0,
+  "total_duration_s": 116.8,
+  "overall_status": "ok",
+  "steps": [
+    {
+      "step": "research",
+      "status": "ok",
+      "duration_ms": 11284,
+      "items_in": 0,
+      "items_out": 7,
+      "errors": []
+    },
+    {
+      "step": "angle_detection",
+      "status": "ok",
+      "duration_ms": 42909,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "outline",
+      "status": "ok",
+      "duration_ms": 21015,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "script_writing",
+      "status": "ok",
+      "duration_ms": 41558,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "quality_check",
+      "status": "ok",
+      "duration_ms": 1,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    }
+  ]
+}

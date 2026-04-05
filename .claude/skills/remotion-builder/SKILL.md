@@ -106,6 +106,19 @@ const FullVideo: React.FC = () => {
   return (
     <AbsoluteFill style={{ background: "#0f0f1a" }}>
       <Audio src={staticFile("voiceover.mp3")} />
+
+      {/* AI video clips (hook, reveals) — ako postoje u public/clips/ */}
+      {aiClips && aiClips.map(({ src, startFrame: sf, endFrame: ef }, i) => {
+        if (frame < sf - 1 || frame > ef + 1) return null;
+        const fadeIn = interpolate(frame, [sf, sf + 15], [0, 1], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        const fadeOut = interpolate(frame, [ef - 15, ef], [1, 0], { extrapolateLeft: "clamp", extrapolateRight: "clamp" });
+        return (
+          <div key={`clip-${i}`} style={{ position: "absolute", top: 0, left: 0, width: 1920, height: 1080, opacity: fadeIn * fadeOut, zIndex: 10 }}>
+            <Video src={staticFile(src)} style={{ width: "100%", height: "100%" }} />
+          </div>
+        );
+      })}
+
       {segments.map(({ Component, startFrame, endFrame }, i) => {
         // Ne renderuj ako nije aktivan
         if (frame < startFrame - 1 || frame > endFrame + 1) return null;

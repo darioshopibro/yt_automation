@@ -1,0 +1,21 @@
+{
+  "run_id": 390000,
+  "total_steps": 1,
+  "ok": 0,
+  "failed": 1,
+  "partial": 0,
+  "total_duration_s": 73.3,
+  "overall_status": "failed",
+  "steps": [
+    {
+      "step": "content_processing",
+      "status": "failed",
+      "duration_ms": 73316,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": [
+        "Angle detection failed"
+      ]
+    }
+  ]
+}

@@ -12,7 +12,17 @@ Komponenta je FULLSCREEN (1920x1080). Zauzima ceo ekran. Animacija prati govor �
 - fps (default 30)
 - startFrame — frame od kog počinje ovaj segment u celom videu
 
-**Output:** Nova .tsx datoteka u `videos/{project-name}/src/visuals/Generated_{name}.tsx`
+**Output:**
+1. Nova .tsx datoteka u `videos/{project-name}/src/visuals/Generated_{name}.tsx`
+2. Sound JSON u `workspace/{project-name}/sounds_segment_X.json` — zvukovi za ovaj segment
+
+**Pročitaj `remotion-motion/reference/sound.md`** za sound pravila.
+Za svaku vizuelnu promenu (element pojava, scene change, reveal) — dodaj zvuk u JSON.
+Zvuk ide SAMO gde se nešto VIZUELNO dešava. Bez vizualne promene = bez zvuka.
+
+**Meme placement:** Ako planner kaže da ovaj segment ima meme — vrati i meme info u sounds JSON:
+`{"type": "meme", "frame": X, "name": "This Is Fine", "duration_frames": 45}`
+Builder će ga renderovati kao overlay.
 
 ---
 

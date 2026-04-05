@@ -1,0 +1,1165 @@
+{
+  "meta": {
+    "title": "GitHub Copilot AI Assistant",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "totalFrames": 8906,
+    "totalDurationSec": 296.9
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "durationSec": 295.9,
+    "wordCount": 658
+  },
+  "beats": [
+    {
+      "id": "beat_1",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 0,
+      "endFrame": 150,
+      "durationSec": 5.0,
+      "intent": "hook",
+      "visualType": "ai_video",
+      "isSegmentStart": true,
+      "aiVideoPrompt": "Cinematic close-up, dramatic lighting: git hub just announced they own your private code the moment you use copilot. he, photorealistic, moody atmosphere"
+    },
+    {
+      "id": "beat_2",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 150,
+      "endFrame": 488,
+      "durationSec": 11.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_3",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 488,
+      "endFrame": 648,
+      "durationSec": 5.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_4",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 648,
+      "endFrame": 764,
+      "durationSec": 3.9,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_5",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 764,
+      "endFrame": 936,
+      "durationSec": 5.7,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_6",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 936,
+      "endFrame": 1086,
+      "durationSec": 5.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_7",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 1086,
+      "endFrame": 1161,
+      "durationSec": 2.5,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_8",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 1161,
+      "endFrame": 1316,
+      "durationSec": 5.2,
+      "intent": "explanation",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_9",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 1316,
+      "endFrame": 1438,
+      "durationSec": 4.1,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_10",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 1438,
+      "endFrame": 1520,
+      "durationSec": 2.7,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_11",
+      "segmentId": "sticky_1",
+      "title": "git hub just announced they",
+      "startFrame": 1520,
+      "endFrame": 1595,
+      "durationSec": 2.5,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_githubjustannouncedthey.tsx"
+    },
+    {
+      "id": "beat_12",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 1713,
+      "endFrame": 1933,
+      "durationSec": 7.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_13",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 1933,
+      "endFrame": 2060,
+      "durationSec": 4.2,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_14",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 2060,
+      "endFrame": 2339,
+      "durationSec": 9.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_15",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 2339,
+      "endFrame": 2418,
+      "durationSec": 2.6,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_16",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 2418,
+      "endFrame": 2526,
+      "durationSec": 3.6,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_17",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 2526,
+      "endFrame": 2828,
+      "durationSec": 10.1,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_18",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 2828,
+      "endFrame": 2912,
+      "durationSec": 2.8,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_19",
+      "segmentId": "sticky_2",
+      "title": "use Copilot, they might get",
+      "startFrame": 2912,
+      "endFrame": 3083,
+      "durationSec": 5.7,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_useCopilot,theymightget.tsx"
+    },
+    {
+      "id": "beat_20",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 3527,
+      "endFrame": 4066,
+      "durationSec": 18.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_21",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 4066,
+      "endFrame": 4298,
+      "durationSec": 7.7,
+      "intent": "reveal",
+      "visualType": "ai_video",
+      "isSegmentStart": false,
+      "aiVideoPrompt": "Dramatic reveal moment: fortune 500 competitor's internal code patterns can influence suggestions for yo, cinematic lighting, shallow depth of field"
+    },
+    {
+      "id": "beat_22",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 4298,
+      "endFrame": 4547,
+      "durationSec": 8.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_23",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 4547,
+      "endFrame": 4727,
+      "durationSec": 6.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_24",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 4727,
+      "endFrame": 4802,
+      "durationSec": 2.5,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_25",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 4802,
+      "endFrame": 4943,
+      "durationSec": 4.7,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_26",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 4943,
+      "endFrame": 5002,
+      "durationSec": 2.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_27",
+      "segmentId": "sticky_3",
+      "title": "like hiring a translator for",
+      "startFrame": 5002,
+      "endFrame": 5134,
+      "durationSec": 4.4,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_likehiringatranslatorfor.tsx"
+    },
+    {
+      "id": "beat_28",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5259,
+      "endFrame": 5316,
+      "durationSec": 1.9,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_29",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5316,
+      "endFrame": 5407,
+      "durationSec": 3.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_30",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5407,
+      "endFrame": 5477,
+      "durationSec": 2.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_31",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5477,
+      "endFrame": 5722,
+      "durationSec": 8.2,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_32",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5722,
+      "endFrame": 5824,
+      "durationSec": 3.4,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_33",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5824,
+      "endFrame": 5937,
+      "durationSec": 3.8,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_34",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 5937,
+      "endFrame": 6090,
+      "durationSec": 5.1,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_35",
+      "segmentId": "sticky_4",
+      "title": "on your own infrastructure. These",
+      "startFrame": 6090,
+      "endFrame": 6378,
+      "durationSec": 9.6,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_onyourowninfrastructure.These.tsx"
+    },
+    {
+      "id": "beat_36",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 7050,
+      "endFrame": 7197,
+      "durationSec": 4.9,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_37",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 7197,
+      "endFrame": 7296,
+      "durationSec": 3.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_38",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 7296,
+      "endFrame": 7617,
+      "durationSec": 10.7,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_39",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 7617,
+      "endFrame": 7767,
+      "durationSec": 5.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_40",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 7767,
+      "endFrame": 7881,
+      "durationSec": 3.8,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_41",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 7881,
+      "endFrame": 8102,
+      "durationSec": 7.4,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_42",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 8102,
+      "endFrame": 8203,
+      "durationSec": 3.4,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_43",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 8203,
+      "endFrame": 8303,
+      "durationSec": 3.3,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_44",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 8303,
+      "endFrame": 8423,
+      "durationSec": 4.0,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_45",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 8423,
+      "endFrame": 8713,
+      "durationSec": 9.7,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_46",
+      "segmentId": "sticky_5",
+      "title": "themselves restrict Copilot usage in",
+      "startFrame": 8713,
+      "endFrame": 8768,
+      "durationSec": 1.8,
+      "intent": "setup",
+      "visualType": "motion_graphics",
+      "isSegmentStart": false,
+      "component": "src/visuals/Generated_themselvesrestrictCopilotusagein.tsx"
+    },
+    {
+      "id": "beat_47",
+      "segmentId": "sticky_6",
+      "title": "your intellectual property.",
+      "startFrame": 8826,
+      "endFrame": 8906,
+      "durationSec": 2.7,
+      "intent": "cta",
+      "visualType": "motion_graphics",
+      "isSegmentStart": true,
+      "component": "src/visuals/Generated_yourintellectualproperty..tsx"
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "baseVolume": 0.2,
+      "duckedVolume": 0.08,
+      "duckRampFrames": 15,
+      "fadeInEndFrame": 30,
+      "fadeOutStartFrame": 8846
+    },
+    "sfx": [
+      {
+        "frame": 168,
+        "type": "click",
+        "file": "clicks/soft-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'actually'"
+      },
+      {
+        "frame": 488,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 648,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 764,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 936,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1086,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1161,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1316,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1397,
+        "type": "click",
+        "file": "clicks/button-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'critical'"
+      },
+      {
+        "frame": 1438,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1520,
+        "type": "whoosh",
+        "file": "whooshes/lofi-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1595,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 1668,
+        "type": "riser",
+        "file": "risers/fast-riser.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'use Copilot, they might get'"
+      },
+      {
+        "frame": 1713,
+        "type": "hit",
+        "file": "hits/punch-hit.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'use' in 'use Copilot, they might get'"
+      },
+      {
+        "frame": 1833,
+        "type": "click",
+        "file": "clicks/button-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'secret'"
+      },
+      {
+        "frame": 1933,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2060,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2339,
+        "type": "whoosh",
+        "file": "whooshes/lofi-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2418,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2526,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2828,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 2912,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 3083,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 3249,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 3482,
+        "type": "riser",
+        "file": "risers/short-riser-02.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'like hiring a translator for'"
+      },
+      {
+        "frame": 3527,
+        "type": "hit",
+        "file": "hits/soft-hit-01.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'like' in 'like hiring a translator for'"
+      },
+      {
+        "frame": 4066,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 4298,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 4547,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 4727,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 4802,
+        "type": "whoosh",
+        "file": "whooshes/soft-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 4943,
+        "type": "whoosh",
+        "file": "whooshes/airy-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 5002,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 5134,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 5214,
+        "type": "riser",
+        "file": "risers/short-riser-01.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'on your own infrastructure. These'"
+      },
+      {
+        "frame": 5259,
+        "type": "hit",
+        "file": "hits/punch-hit.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'on' in 'on your own infrastructure. These'"
+      },
+      {
+        "frame": 5316,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 5407,
+        "type": "whoosh",
+        "file": "whooshes/lofi-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 5477,
+        "type": "whoosh",
+        "file": "whooshes/thin-whoosh.mp3",
+        "volume": 0.15,
+        "reason": "sentence boundary (density fill)"
+      },
+      {
+        "frame": 6697,
+        "type": "click",
+        "file": "clicks/soft-click.mp3",
+        "volume": 0.15,
+        "reason": "keyword: 'solution'"
+      },
+      {
+        "frame": 7005,
+        "type": "riser",
+        "file": "risers/fast-riser.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'themselves restrict Copilot usage in'"
+      },
+      {
+        "frame": 7050,
+        "type": "hit",
+        "file": "hits/soft-hit-01.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'themselves' in 'themselves restrict Copilot usage in'"
+      },
+      {
+        "frame": 8781,
+        "type": "riser",
+        "file": "risers/short-riser-02.mp3",
+        "volume": 0.2,
+        "reason": "build-up before 'your intellectual property.'"
+      },
+      {
+        "frame": 8826,
+        "type": "hit",
+        "file": "hits/punch-hit.mp3",
+        "volume": 0.35,
+        "reason": "reveal: 'your' in 'your intellectual property.'"
+      }
+    ],
+    "duckingZones": [
+      {
+        "startFrame": 0,
+        "endFrame": 132,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 150,
+        "endFrame": 467,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 488,
+        "endFrame": 743,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 764,
+        "endFrame": 1062,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1086,
+        "endFrame": 1295,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1316,
+        "endFrame": 1496,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1520,
+        "endFrame": 1580,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1595,
+        "endFrame": 1665,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1680,
+        "endFrame": 1912,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1933,
+        "endFrame": 2039,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2060,
+        "endFrame": 2315,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2339,
+        "endFrame": 2505,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2526,
+        "endFrame": 2894,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2912,
+        "endFrame": 3228,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3249,
+        "endFrame": 3499,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3520,
+        "endFrame": 4045,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4066,
+        "endFrame": 4277,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4298,
+        "endFrame": 4529,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4547,
+        "endFrame": 4707,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4727,
+        "endFrame": 4922,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4943,
+        "endFrame": 4987,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5002,
+        "endFrame": 5298,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5316,
+        "endFrame": 5389,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5407,
+        "endFrame": 5701,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5722,
+        "endFrame": 5913,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5937,
+        "endFrame": 6061,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6090,
+        "endFrame": 6360,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6378,
+        "endFrame": 6531,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6552,
+        "endFrame": 6789,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6813,
+        "endFrame": 7011,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7032,
+        "endFrame": 7176,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7197,
+        "endFrame": 7278,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7296,
+        "endFrame": 7596,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7617,
+        "endFrame": 7749,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7767,
+        "endFrame": 8081,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8102,
+        "endFrame": 8182,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8203,
+        "endFrame": 8282,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8303,
+        "endFrame": 8402,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8423,
+        "endFrame": 8695,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8713,
+        "endFrame": 8876,
+        "type": "voiceover_active"
+      }
+    ]
+  },
+  "memes": [],
+  "aiVideoClips": [
+    {
+      "beatId": "beat_1",
+      "startFrame": 0,
+      "endFrame": 150,
+      "videoPath": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_1.mp4",
+      "imagePath": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_1.png",
+      "prompt": "Cinematic close-up, dramatic lighting: git hub just announced they own your private code the moment you use copilot. he, photorealistic, moody atmosphere"
+    },
+    {
+      "beatId": "beat_21",
+      "startFrame": 4066,
+      "endFrame": 4298,
+      "videoPath": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_21.mp4",
+      "imagePath": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/github-copilot-ai-assistant/ai-clips/beat_21.png",
+      "prompt": "Dramatic reveal moment: fortune 500 competitor's internal code patterns can influence suggestions for yo, cinematic lighting, shallow depth of field"
+    }
+  ],
+  "transitions": [
+    {
+      "atFrame": 1713,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 3527,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 5259,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 7050,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    },
+    {
+      "atFrame": 8826,
+      "type": "crossfade",
+      "durationFrames": 15,
+      "fromBeat": "",
+      "toBeat": ""
+    }
+  ],
+  "sources": {
+    "master_plan": "master-plan.json",
+    "sfx_timeline": "sfx-timeline.json",
+    "visual_plan": "visual-plan.json",
+    "ai_clips": "ai-clips/ai_clips_results.json"
+  }
+}

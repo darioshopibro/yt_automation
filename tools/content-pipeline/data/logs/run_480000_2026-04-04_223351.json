@@ -1,0 +1,77 @@
+{
+  "run_id": 480000,
+  "total_steps": 8,
+  "ok": 7,
+  "failed": 1,
+  "partial": 0,
+  "total_duration_s": 1161.4,
+  "overall_status": "partial",
+  "steps": [
+    {
+      "step": "content_processing",
+      "status": "ok",
+      "duration_ms": 116784,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "voiceover_generation",
+      "status": "ok",
+      "duration_ms": 58956,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "meme_research",
+      "status": "ok",
+      "duration_ms": 2048,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "composition",
+      "status": "ok",
+      "duration_ms": 157041,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "ai_video_generation",
+      "status": "ok",
+      "duration_ms": 646573,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "visual_generation",
+      "status": "failed",
+      "duration_ms": 120014,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": [
+        "Command '['claude', '-p', 'Generate a fullscreen 1920x1080 Remotion visual component for this video segment.\\n\\nSegment: \"Two Million Dollar Platform\"\\nTranscript: \"over two million dollars annually ensuring their products work with every major platform. They reverse engineer A P I s, file formats, and network protocols to guarantee compatibility. When Oracle sued Google for reverse engineering Java A P I s, Google won because courts ruled A P\"\\nVisual description from planner: \"Animated $2M figure with platform logos (Windows, Mac, Linux, mobile) flowing around it\"\\nStart frame: 4135, End frame: 4800, FPS: 30\\n\\nUse the visual-generator skill rules. Output a complete .tsx file with:\\n- useCurrentFrame() for animation\\n- interpolate() and spring() for motion\\n- Dark theme (#0f0f1a background)\\n- Elements that appear as the narrator says the words (sync to timestamps)\\n\\nWrite ONLY the .tsx code, no explanation.', '--model', 'claude-sonnet-4-20250514', '--output-format', 'text']' timed out after 120 seconds"
+      ]
+    },
+    {
+      "step": "audio_mix",
+      "status": "ok",
+      "duration_ms": 30870,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "final_concat",
+      "status": "ok",
+      "duration_ms": 29081,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    }
+  ]
+}

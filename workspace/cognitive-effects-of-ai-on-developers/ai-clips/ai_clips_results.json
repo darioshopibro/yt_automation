@@ -1,0 +1,24 @@
+[
+  {
+    "prompt": "Cinematic close-up, dramatic lighting, Cognitive Effects of AI on Developers, photorealistic, moody atmosphere",
+    "clip_name": "hook",
+    "steps": [
+      {
+        "step": "image_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/cognitive-effects-of-ai-on-developers/ai-clips/hook.png"
+      },
+      {
+        "step": "video_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/cognitive-effects-of-ai-on-developers/ai-clips/hook.mp4"
+      }
+    ],
+    "image_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/cognitive-effects-of-ai-on-developers/ai-clips/hook.png",
+    "image_url": "https://v3b.fal.media/files/b/0a94f2ef/qud0qy37NxJqVskHfcrm6.jpg",
+    "video_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/cognitive-effects-of-ai-on-developers/ai-clips/hook.mp4",
+    "video_url": "https://v3b.fal.media/files/b/0a94f303/UyUfryMAhSv-SxjawK5Gz_output.mp4",
+    "status": "ok",
+    "beat_id": "hook"
+  }
+]

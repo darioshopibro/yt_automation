@@ -1,0 +1,1347 @@
+{
+  "step": 2,
+  "title": "The Dopamine Loop",
+  "startFrame": 1029,
+  "endFrame": 3216,
+  "componentPath": "src/visuals/Generated_TheDopamineLoop.tsx",
+  "transcriptSegment": "Here's what's actually going on inside your head. Every time you hit a coding problem and immediately reach for chat G P T, your brain releases a small hit of dopamine. Not when you solve the problem, but the moment you decide to ask for help. It's the same neurochemical pathway that makes slot machines so addictive. The anticipation of the reward, not the reward itself.\n\nMeta's internal research team found that their own engineers were using A I assistance for an average of forty-seven coding tasks per day. That's once every ten minutes during an eight-hour workday. Each query triggers that same dopamine hit, training your brain to crave the next fix. You've essentially turned your development workflow into a behavioral addiction loop.\n\nThe problem gets worse because your tolerance builds over time. What started as using A I for complex algorithms now extends to basic syntax. Developers at Google reported asking chat G P T how to write for loops in languages they've been using for years. Your brain stops bothering to remember information it knows will be instantly available. It's like having a calculator for addition permanently attached to your hand.",
+  "timestamps": [
+    {
+      "word": "happening.\n\nHere's",
+      "start": 34.285,
+      "end": 35.713,
+      "startFrame": 1029,
+      "endFrame": 1071
+    },
+    {
+      "word": "what's",
+      "start": 35.736,
+      "end": 35.91,
+      "startFrame": 1072,
+      "endFrame": 1077
+    },
+    {
+      "word": "actually",
+      "start": 35.98,
+      "end": 36.363,
+      "startFrame": 1079,
+      "endFrame": 1091
+    },
+    {
+      "word": "going",
+      "start": 36.41,
+      "end": 36.595,
+      "startFrame": 1092,
+      "endFrame": 1098
+    },
+    {
+      "word": "on",
+      "start": 36.653,
+      "end": 36.735,
+      "startFrame": 1100,
+      "endFrame": 1102
+    },
+    {
+      "word": "inside",
+      "start": 36.781,
+      "end": 37.036,
+      "startFrame": 1103,
+      "endFrame": 1111
+    },
+    {
+      "word": "your",
+      "start": 37.06,
+      "end": 37.153,
+      "startFrame": 1112,
+      "endFrame": 1115
+    },
+    {
+      "word": "head.",
+      "start": 37.199,
+      "end": 37.524,
+      "startFrame": 1116,
+      "endFrame": 1126
+    },
+    {
+      "word": "Every",
+      "start": 38.221,
+      "end": 38.453,
+      "startFrame": 1147,
+      "endFrame": 1154
+    },
+    {
+      "word": "time",
+      "start": 38.499,
+      "end": 38.673,
+      "startFrame": 1155,
+      "endFrame": 1160
+    },
+    {
+      "word": "you",
+      "start": 38.697,
+      "end": 38.766,
+      "startFrame": 1161,
+      "endFrame": 1163
+    },
+    {
+      "word": "hit",
+      "start": 38.824,
+      "end": 38.929,
+      "startFrame": 1165,
+      "endFrame": 1168
+    },
+    {
+      "word": "a",
+      "start": 38.964,
+      "end": 38.987,
+      "startFrame": 1169,
+      "endFrame": 1170
+    },
+    {
+      "word": "coding",
+      "start": 39.033,
+      "end": 39.312,
+      "startFrame": 1171,
+      "endFrame": 1179
+    },
+    {
+      "word": "problem",
+      "start": 39.358,
+      "end": 39.719,
+      "startFrame": 1181,
+      "endFrame": 1192
+    },
+    {
+      "word": "and",
+      "start": 39.765,
+      "end": 39.858,
+      "startFrame": 1193,
+      "endFrame": 1196
+    },
+    {
+      "word": "immediately",
+      "start": 39.928,
+      "end": 40.334,
+      "startFrame": 1198,
+      "endFrame": 1210
+    },
+    {
+      "word": "reach",
+      "start": 40.392,
+      "end": 40.555,
+      "startFrame": 1212,
+      "endFrame": 1217
+    },
+    {
+      "word": "for",
+      "start": 40.601,
+      "end": 40.706,
+      "startFrame": 1218,
+      "endFrame": 1221
+    },
+    {
+      "word": "chat",
+      "start": 40.775,
+      "end": 41.031,
+      "startFrame": 1223,
+      "endFrame": 1231
+    },
+    {
+      "word": "G",
+      "start": 41.089,
+      "end": 41.205,
+      "startFrame": 1233,
+      "endFrame": 1236
+    },
+    {
+      "word": "P",
+      "start": 41.321,
+      "end": 41.402,
+      "startFrame": 1240,
+      "endFrame": 1242
+    },
+    {
+      "word": "T,",
+      "start": 41.553,
+      "end": 41.994,
+      "startFrame": 1247,
+      "endFrame": 1260
+    },
+    {
+      "word": "your",
+      "start": 42.378,
+      "end": 42.517,
+      "startFrame": 1271,
+      "endFrame": 1276
+    },
+    {
+      "word": "brain",
+      "start": 42.563,
+      "end": 42.784,
+      "startFrame": 1277,
+      "endFrame": 1284
+    },
+    {
+      "word": "releases",
+      "start": 42.83,
+      "end": 43.225,
+      "startFrame": 1285,
+      "endFrame": 1297
+    },
+    {
+      "word": "a",
+      "start": 43.283,
+      "end": 43.318,
+      "startFrame": 1298,
+      "endFrame": 1300
+    },
+    {
+      "word": "small",
+      "start": 43.388,
+      "end": 43.689,
+      "startFrame": 1302,
+      "endFrame": 1311
+    },
+    {
+      "word": "hit",
+      "start": 43.747,
+      "end": 43.875,
+      "startFrame": 1312,
+      "endFrame": 1316
+    },
+    {
+      "word": "of",
+      "start": 43.91,
+      "end": 43.968,
+      "startFrame": 1317,
+      "endFrame": 1319
+    },
+    {
+      "word": "dopamine.",
+      "start": 44.015,
+      "end": 44.583,
+      "startFrame": 1320,
+      "endFrame": 1337
+    },
+    {
+      "word": "Not",
+      "start": 45.28,
+      "end": 45.431,
+      "startFrame": 1358,
+      "endFrame": 1363
+    },
+    {
+      "word": "when",
+      "start": 45.454,
+      "end": 45.559,
+      "startFrame": 1364,
+      "endFrame": 1367
+    },
+    {
+      "word": "you",
+      "start": 45.593,
+      "end": 45.663,
+      "startFrame": 1368,
+      "endFrame": 1370
+    },
+    {
+      "word": "solve",
+      "start": 45.733,
+      "end": 45.977,
+      "startFrame": 1372,
+      "endFrame": 1379
+    },
+    {
+      "word": "the",
+      "start": 46.011,
+      "end": 46.081,
+      "startFrame": 1380,
+      "endFrame": 1382
+    },
+    {
+      "word": "problem,",
+      "start": 46.116,
+      "end": 46.615,
+      "startFrame": 1383,
+      "endFrame": 1398
+    },
+    {
+      "word": "but",
+      "start": 46.859,
+      "end": 46.998,
+      "startFrame": 1406,
+      "endFrame": 1410
+    },
+    {
+      "word": "the",
+      "start": 47.033,
+      "end": 47.103,
+      "startFrame": 1411,
+      "endFrame": 1413
+    },
+    {
+      "word": "moment",
+      "start": 47.184,
+      "end": 47.451,
+      "startFrame": 1416,
+      "endFrame": 1424
+    },
+    {
+      "word": "you",
+      "start": 47.486,
+      "end": 47.556,
+      "startFrame": 1425,
+      "endFrame": 1427
+    },
+    {
+      "word": "decide",
+      "start": 47.625,
+      "end": 47.927,
+      "startFrame": 1429,
+      "endFrame": 1438
+    },
+    {
+      "word": "to",
+      "start": 47.95,
+      "end": 47.997,
+      "startFrame": 1438,
+      "endFrame": 1440
+    },
+    {
+      "word": "ask",
+      "start": 48.055,
+      "end": 48.241,
+      "startFrame": 1442,
+      "endFrame": 1447
+    },
+    {
+      "word": "for",
+      "start": 48.299,
+      "end": 48.391,
+      "startFrame": 1449,
+      "endFrame": 1452
+    },
+    {
+      "word": "help.",
+      "start": 48.45,
+      "end": 48.879,
+      "startFrame": 1454,
+      "endFrame": 1466
+    },
+    {
+      "word": "It's",
+      "start": 49.483,
+      "end": 49.68,
+      "startFrame": 1484,
+      "endFrame": 1490
+    },
+    {
+      "word": "the",
+      "start": 49.727,
+      "end": 49.796,
+      "startFrame": 1492,
+      "endFrame": 1494
+    },
+    {
+      "word": "same",
+      "start": 49.854,
+      "end": 50.133,
+      "startFrame": 1496,
+      "endFrame": 1504
+    },
+    {
+      "word": "neurochemical",
+      "start": 50.203,
+      "end": 50.841,
+      "startFrame": 1506,
+      "endFrame": 1525
+    },
+    {
+      "word": "pathway",
+      "start": 50.899,
+      "end": 51.387,
+      "startFrame": 1527,
+      "endFrame": 1542
+    },
+    {
+      "word": "that",
+      "start": 51.712,
+      "end": 51.874,
+      "startFrame": 1551,
+      "endFrame": 1556
+    },
+    {
+      "word": "makes",
+      "start": 51.909,
+      "end": 52.095,
+      "startFrame": 1557,
+      "endFrame": 1563
+    },
+    {
+      "word": "slot",
+      "start": 52.13,
+      "end": 52.385,
+      "startFrame": 1564,
+      "endFrame": 1572
+    },
+    {
+      "word": "machines",
+      "start": 52.432,
+      "end": 52.78,
+      "startFrame": 1573,
+      "endFrame": 1583
+    },
+    {
+      "word": "so",
+      "start": 52.826,
+      "end": 52.978,
+      "startFrame": 1585,
+      "endFrame": 1589
+    },
+    {
+      "word": "addictive.",
+      "start": 53.036,
+      "end": 53.663,
+      "startFrame": 1591,
+      "endFrame": 1610
+    },
+    {
+      "word": "The",
+      "start": 54.267,
+      "end": 54.394,
+      "startFrame": 1628,
+      "endFrame": 1632
+    },
+    {
+      "word": "anticipation",
+      "start": 54.441,
+      "end": 55.161,
+      "startFrame": 1633,
+      "endFrame": 1655
+    },
+    {
+      "word": "of",
+      "start": 55.207,
+      "end": 55.265,
+      "startFrame": 1656,
+      "endFrame": 1658
+    },
+    {
+      "word": "the",
+      "start": 55.311,
+      "end": 55.381,
+      "startFrame": 1659,
+      "endFrame": 1661
+    },
+    {
+      "word": "reward,",
+      "start": 55.451,
+      "end": 56.089,
+      "startFrame": 1664,
+      "endFrame": 1683
+    },
+    {
+      "word": "not",
+      "start": 56.368,
+      "end": 56.542,
+      "startFrame": 1691,
+      "endFrame": 1696
+    },
+    {
+      "word": "the",
+      "start": 56.577,
+      "end": 56.647,
+      "startFrame": 1697,
+      "endFrame": 1699
+    },
+    {
+      "word": "reward",
+      "start": 56.705,
+      "end": 56.995,
+      "startFrame": 1701,
+      "endFrame": 1710
+    },
+    {
+      "word": "itself.\n\nMeta's",
+      "start": 57.03,
+      "end": 58.678,
+      "startFrame": 1711,
+      "endFrame": 1760
+    },
+    {
+      "word": "internal",
+      "start": 58.736,
+      "end": 59.096,
+      "startFrame": 1762,
+      "endFrame": 1773
+    },
+    {
+      "word": "research",
+      "start": 59.154,
+      "end": 59.526,
+      "startFrame": 1775,
+      "endFrame": 1786
+    },
+    {
+      "word": "team",
+      "start": 59.572,
+      "end": 59.839,
+      "startFrame": 1787,
+      "endFrame": 1795
+    },
+    {
+      "word": "found",
+      "start": 60.281,
+      "end": 60.513,
+      "startFrame": 1808,
+      "endFrame": 1815
+    },
+    {
+      "word": "that",
+      "start": 60.548,
+      "end": 60.652,
+      "startFrame": 1816,
+      "endFrame": 1820
+    },
+    {
+      "word": "their",
+      "start": 60.675,
+      "end": 60.826,
+      "startFrame": 1820,
+      "endFrame": 1825
+    },
+    {
+      "word": "own",
+      "start": 60.884,
+      "end": 61.058,
+      "startFrame": 1827,
+      "endFrame": 1832
+    },
+    {
+      "word": "engineers",
+      "start": 61.105,
+      "end": 61.662,
+      "startFrame": 1833,
+      "endFrame": 1850
+    },
+    {
+      "word": "were",
+      "start": 61.906,
+      "end": 62.08,
+      "startFrame": 1857,
+      "endFrame": 1862
+    },
+    {
+      "word": "using",
+      "start": 62.138,
+      "end": 62.394,
+      "startFrame": 1864,
+      "endFrame": 1872
+    },
+    {
+      "word": "A",
+      "start": 62.51,
+      "end": 62.661,
+      "startFrame": 1875,
+      "endFrame": 1880
+    },
+    {
+      "word": "I",
+      "start": 62.812,
+      "end": 62.928,
+      "startFrame": 1884,
+      "endFrame": 1888
+    },
+    {
+      "word": "assistance",
+      "start": 63.044,
+      "end": 63.81,
+      "startFrame": 1891,
+      "endFrame": 1914
+    },
+    {
+      "word": "for",
+      "start": 63.961,
+      "end": 64.123,
+      "startFrame": 1919,
+      "endFrame": 1924
+    },
+    {
+      "word": "an",
+      "start": 64.158,
+      "end": 64.216,
+      "startFrame": 1925,
+      "endFrame": 1926
+    },
+    {
+      "word": "average",
+      "start": 64.274,
+      "end": 64.611,
+      "startFrame": 1928,
+      "endFrame": 1938
+    },
+    {
+      "word": "of",
+      "start": 64.646,
+      "end": 64.704,
+      "startFrame": 1939,
+      "endFrame": 1941
+    },
+    {
+      "word": "forty-seven",
+      "start": 64.82,
+      "end": 65.551,
+      "startFrame": 1945,
+      "endFrame": 1967
+    },
+    {
+      "word": "coding",
+      "start": 65.633,
+      "end": 65.958,
+      "startFrame": 1969,
+      "endFrame": 1979
+    },
+    {
+      "word": "tasks",
+      "start": 66.016,
+      "end": 66.492,
+      "startFrame": 1980,
+      "endFrame": 1995
+    },
+    {
+      "word": "per",
+      "start": 66.573,
+      "end": 66.736,
+      "startFrame": 1997,
+      "endFrame": 2002
+    },
+    {
+      "word": "day.",
+      "start": 66.794,
+      "end": 67.258,
+      "startFrame": 2004,
+      "endFrame": 2018
+    },
+    {
+      "word": "That's",
+      "start": 67.955,
+      "end": 68.21,
+      "startFrame": 2039,
+      "endFrame": 2046
+    },
+    {
+      "word": "once",
+      "start": 68.268,
+      "end": 68.477,
+      "startFrame": 2048,
+      "endFrame": 2054
+    },
+    {
+      "word": "every",
+      "start": 68.524,
+      "end": 68.767,
+      "startFrame": 2056,
+      "endFrame": 2063
+    },
+    {
+      "word": "ten",
+      "start": 68.825,
+      "end": 69.0,
+      "startFrame": 2065,
+      "endFrame": 2070
+    },
+    {
+      "word": "minutes",
+      "start": 69.046,
+      "end": 69.383,
+      "startFrame": 2071,
+      "endFrame": 2081
+    },
+    {
+      "word": "during",
+      "start": 69.662,
+      "end": 69.94,
+      "startFrame": 2090,
+      "endFrame": 2098
+    },
+    {
+      "word": "an",
+      "start": 69.987,
+      "end": 70.045,
+      "startFrame": 2100,
+      "endFrame": 2101
+    },
+    {
+      "word": "eight-hour",
+      "start": 70.126,
+      "end": 70.544,
+      "startFrame": 2104,
+      "endFrame": 2116
+    },
+    {
+      "word": "workday.",
+      "start": 70.614,
+      "end": 71.217,
+      "startFrame": 2118,
+      "endFrame": 2137
+    },
+    {
+      "word": "Each",
+      "start": 71.914,
+      "end": 72.1,
+      "startFrame": 2157,
+      "endFrame": 2163
+    },
+    {
+      "word": "query",
+      "start": 72.146,
+      "end": 72.367,
+      "startFrame": 2164,
+      "endFrame": 2171
+    },
+    {
+      "word": "triggers",
+      "start": 72.413,
+      "end": 72.703,
+      "startFrame": 2172,
+      "endFrame": 2181
+    },
+    {
+      "word": "that",
+      "start": 72.738,
+      "end": 72.866,
+      "startFrame": 2182,
+      "endFrame": 2186
+    },
+    {
+      "word": "same",
+      "start": 72.947,
+      "end": 73.237,
+      "startFrame": 2188,
+      "endFrame": 2197
+    },
+    {
+      "word": "dopamine",
+      "start": 73.284,
+      "end": 73.702,
+      "startFrame": 2199,
+      "endFrame": 2211
+    },
+    {
+      "word": "hit,",
+      "start": 73.725,
+      "end": 74.097,
+      "startFrame": 2212,
+      "endFrame": 2223
+    },
+    {
+      "word": "training",
+      "start": 74.422,
+      "end": 74.758,
+      "startFrame": 2233,
+      "endFrame": 2243
+    },
+    {
+      "word": "your",
+      "start": 74.805,
+      "end": 74.909,
+      "startFrame": 2244,
+      "endFrame": 2247
+    },
+    {
+      "word": "brain",
+      "start": 74.956,
+      "end": 75.188,
+      "startFrame": 2249,
+      "endFrame": 2256
+    },
+    {
+      "word": "to",
+      "start": 75.246,
+      "end": 75.304,
+      "startFrame": 2257,
+      "endFrame": 2259
+    },
+    {
+      "word": "crave",
+      "start": 75.385,
+      "end": 75.641,
+      "startFrame": 2262,
+      "endFrame": 2269
+    },
+    {
+      "word": "the",
+      "start": 75.676,
+      "end": 75.745,
+      "startFrame": 2270,
+      "endFrame": 2272
+    },
+    {
+      "word": "next",
+      "start": 75.815,
+      "end": 76.047,
+      "startFrame": 2274,
+      "endFrame": 2281
+    },
+    {
+      "word": "fix.",
+      "start": 76.117,
+      "end": 76.639,
+      "startFrame": 2284,
+      "endFrame": 2299
+    },
+    {
+      "word": "You've",
+      "start": 77.336,
+      "end": 77.556,
+      "startFrame": 2320,
+      "endFrame": 2327
+    },
+    {
+      "word": "essentially",
+      "start": 77.591,
+      "end": 77.963,
+      "startFrame": 2328,
+      "endFrame": 2339
+    },
+    {
+      "word": "turned",
+      "start": 78.009,
+      "end": 78.265,
+      "startFrame": 2340,
+      "endFrame": 2348
+    },
+    {
+      "word": "your",
+      "start": 78.299,
+      "end": 78.416,
+      "startFrame": 2349,
+      "endFrame": 2352
+    },
+    {
+      "word": "development",
+      "start": 78.474,
+      "end": 78.892,
+      "startFrame": 2354,
+      "endFrame": 2367
+    },
+    {
+      "word": "workflow",
+      "start": 78.926,
+      "end": 79.309,
+      "startFrame": 2368,
+      "endFrame": 2379
+    },
+    {
+      "word": "into",
+      "start": 79.356,
+      "end": 79.518,
+      "startFrame": 2381,
+      "endFrame": 2386
+    },
+    {
+      "word": "a",
+      "start": 79.6,
+      "end": 79.635,
+      "startFrame": 2388,
+      "endFrame": 2389
+    },
+    {
+      "word": "behavioral",
+      "start": 79.704,
+      "end": 80.261,
+      "startFrame": 2391,
+      "endFrame": 2408
+    },
+    {
+      "word": "addiction",
+      "start": 80.308,
+      "end": 80.679,
+      "startFrame": 2409,
+      "endFrame": 2420
+    },
+    {
+      "word": "loop.\n\nThe",
+      "start": 80.738,
+      "end": 81.817,
+      "startFrame": 2422,
+      "endFrame": 2455
+    },
+    {
+      "word": "problem",
+      "start": 81.864,
+      "end": 82.166,
+      "startFrame": 2456,
+      "endFrame": 2465
+    },
+    {
+      "word": "gets",
+      "start": 82.212,
+      "end": 82.363,
+      "startFrame": 2466,
+      "endFrame": 2471
+    },
+    {
+      "word": "worse",
+      "start": 82.421,
+      "end": 82.723,
+      "startFrame": 2473,
+      "endFrame": 2482
+    },
+    {
+      "word": "because",
+      "start": 82.769,
+      "end": 83.199,
+      "startFrame": 2483,
+      "endFrame": 2496
+    },
+    {
+      "word": "your",
+      "start": 83.373,
+      "end": 83.535,
+      "startFrame": 2501,
+      "endFrame": 2506
+    },
+    {
+      "word": "tolerance",
+      "start": 83.593,
+      "end": 84.116,
+      "startFrame": 2508,
+      "endFrame": 2523
+    },
+    {
+      "word": "builds",
+      "start": 84.174,
+      "end": 84.487,
+      "startFrame": 2525,
+      "endFrame": 2535
+    },
+    {
+      "word": "over",
+      "start": 84.534,
+      "end": 84.696,
+      "startFrame": 2536,
+      "endFrame": 2541
+    },
+    {
+      "word": "time.",
+      "start": 84.754,
+      "end": 85.196,
+      "startFrame": 2543,
+      "endFrame": 2556
+    },
+    {
+      "word": "What",
+      "start": 85.892,
+      "end": 86.066,
+      "startFrame": 2577,
+      "endFrame": 2582
+    },
+    {
+      "word": "started",
+      "start": 86.113,
+      "end": 86.461,
+      "startFrame": 2583,
+      "endFrame": 2594
+    },
+    {
+      "word": "as",
+      "start": 86.508,
+      "end": 86.589,
+      "startFrame": 2595,
+      "endFrame": 2598
+    },
+    {
+      "word": "using",
+      "start": 86.67,
+      "end": 86.937,
+      "startFrame": 2600,
+      "endFrame": 2608
+    },
+    {
+      "word": "A",
+      "start": 87.053,
+      "end": 87.169,
+      "startFrame": 2612,
+      "endFrame": 2615
+    },
+    {
+      "word": "I",
+      "start": 87.378,
+      "end": 87.413,
+      "startFrame": 2621,
+      "endFrame": 2622
+    },
+    {
+      "word": "for",
+      "start": 87.564,
+      "end": 87.68,
+      "startFrame": 2627,
+      "endFrame": 2630
+    },
+    {
+      "word": "complex",
+      "start": 87.738,
+      "end": 88.156,
+      "startFrame": 2632,
+      "endFrame": 2645
+    },
+    {
+      "word": "algorithms",
+      "start": 88.226,
+      "end": 88.806,
+      "startFrame": 2647,
+      "endFrame": 2664
+    },
+    {
+      "word": "now",
+      "start": 89.248,
+      "end": 89.457,
+      "startFrame": 2677,
+      "endFrame": 2684
+    },
+    {
+      "word": "extends",
+      "start": 89.526,
+      "end": 89.874,
+      "startFrame": 2686,
+      "endFrame": 2696
+    },
+    {
+      "word": "to",
+      "start": 89.921,
+      "end": 89.991,
+      "startFrame": 2698,
+      "endFrame": 2700
+    },
+    {
+      "word": "basic",
+      "start": 90.107,
+      "end": 90.513,
+      "startFrame": 2703,
+      "endFrame": 2715
+    },
+    {
+      "word": "syntax.",
+      "start": 90.571,
+      "end": 91.337,
+      "startFrame": 2717,
+      "endFrame": 2740
+    },
+    {
+      "word": "Developers",
+      "start": 92.034,
+      "end": 92.556,
+      "startFrame": 2761,
+      "endFrame": 2777
+    },
+    {
+      "word": "at",
+      "start": 92.603,
+      "end": 92.661,
+      "startFrame": 2778,
+      "endFrame": 2780
+    },
+    {
+      "word": "Google",
+      "start": 92.719,
+      "end": 93.032,
+      "startFrame": 2782,
+      "endFrame": 2791
+    },
+    {
+      "word": "reported",
+      "start": 93.067,
+      "end": 93.439,
+      "startFrame": 2792,
+      "endFrame": 2803
+    },
+    {
+      "word": "asking",
+      "start": 93.485,
+      "end": 93.775,
+      "startFrame": 2805,
+      "endFrame": 2813
+    },
+    {
+      "word": "chat",
+      "start": 93.845,
+      "end": 94.17,
+      "startFrame": 2815,
+      "endFrame": 2825
+    },
+    {
+      "word": "G",
+      "start": 94.263,
+      "end": 94.414,
+      "startFrame": 2828,
+      "endFrame": 2832
+    },
+    {
+      "word": "P",
+      "start": 94.565,
+      "end": 94.658,
+      "startFrame": 2837,
+      "endFrame": 2840
+    },
+    {
+      "word": "T",
+      "start": 94.809,
+      "end": 94.96,
+      "startFrame": 2844,
+      "endFrame": 2849
+    },
+    {
+      "word": "how",
+      "start": 95.563,
+      "end": 95.691,
+      "startFrame": 2867,
+      "endFrame": 2871
+    },
+    {
+      "word": "to",
+      "start": 95.726,
+      "end": 95.772,
+      "startFrame": 2872,
+      "endFrame": 2873
+    },
+    {
+      "word": "write",
+      "start": 95.807,
+      "end": 95.958,
+      "startFrame": 2874,
+      "endFrame": 2879
+    },
+    {
+      "word": "for",
+      "start": 95.993,
+      "end": 96.097,
+      "startFrame": 2880,
+      "endFrame": 2883
+    },
+    {
+      "word": "loops",
+      "start": 96.155,
+      "end": 96.411,
+      "startFrame": 2885,
+      "endFrame": 2892
+    },
+    {
+      "word": "in",
+      "start": 96.446,
+      "end": 96.515,
+      "startFrame": 2893,
+      "endFrame": 2895
+    },
+    {
+      "word": "languages",
+      "start": 96.585,
+      "end": 97.003,
+      "startFrame": 2898,
+      "endFrame": 2910
+    },
+    {
+      "word": "they've",
+      "start": 97.038,
+      "end": 97.224,
+      "startFrame": 2911,
+      "endFrame": 2917
+    },
+    {
+      "word": "been",
+      "start": 97.247,
+      "end": 97.363,
+      "startFrame": 2917,
+      "endFrame": 2921
+    },
+    {
+      "word": "using",
+      "start": 97.421,
+      "end": 97.653,
+      "startFrame": 2923,
+      "endFrame": 2930
+    },
+    {
+      "word": "for",
+      "start": 97.711,
+      "end": 97.816,
+      "startFrame": 2931,
+      "endFrame": 2934
+    },
+    {
+      "word": "years.",
+      "start": 97.874,
+      "end": 98.42,
+      "startFrame": 2936,
+      "endFrame": 2953
+    },
+    {
+      "word": "Your",
+      "start": 99.116,
+      "end": 99.29,
+      "startFrame": 2973,
+      "endFrame": 2979
+    },
+    {
+      "word": "brain",
+      "start": 99.337,
+      "end": 99.569,
+      "startFrame": 2980,
+      "endFrame": 2987
+    },
+    {
+      "word": "stops",
+      "start": 99.627,
+      "end": 99.929,
+      "startFrame": 2989,
+      "endFrame": 2998
+    },
+    {
+      "word": "bothering",
+      "start": 99.999,
+      "end": 100.405,
+      "startFrame": 3000,
+      "endFrame": 3012
+    },
+    {
+      "word": "to",
+      "start": 100.451,
+      "end": 100.509,
+      "startFrame": 3014,
+      "endFrame": 3015
+    },
+    {
+      "word": "remember",
+      "start": 100.579,
+      "end": 100.893,
+      "startFrame": 3017,
+      "endFrame": 3027
+    },
+    {
+      "word": "information",
+      "start": 100.939,
+      "end": 101.392,
+      "startFrame": 3028,
+      "endFrame": 3042
+    },
+    {
+      "word": "it",
+      "start": 101.438,
+      "end": 101.52,
+      "startFrame": 3043,
+      "endFrame": 3046
+    },
+    {
+      "word": "knows",
+      "start": 101.589,
+      "end": 101.914,
+      "startFrame": 3048,
+      "endFrame": 3057
+    },
+    {
+      "word": "will",
+      "start": 101.949,
+      "end": 102.077,
+      "startFrame": 3058,
+      "endFrame": 3062
+    },
+    {
+      "word": "be",
+      "start": 102.123,
+      "end": 102.181,
+      "startFrame": 3064,
+      "endFrame": 3065
+    },
+    {
+      "word": "instantly",
+      "start": 102.239,
+      "end": 102.669,
+      "startFrame": 3067,
+      "endFrame": 3080
+    },
+    {
+      "word": "available.",
+      "start": 102.704,
+      "end": 103.261,
+      "startFrame": 3081,
+      "endFrame": 3098
+    },
+    {
+      "word": "It's",
+      "start": 103.644,
+      "end": 103.818,
+      "startFrame": 3109,
+      "endFrame": 3115
+    },
+    {
+      "word": "like",
+      "start": 103.853,
+      "end": 103.981,
+      "startFrame": 3116,
+      "endFrame": 3119
+    },
+    {
+      "word": "having",
+      "start": 104.016,
+      "end": 104.225,
+      "startFrame": 3120,
+      "endFrame": 3127
+    },
+    {
+      "word": "a",
+      "start": 104.271,
+      "end": 104.306,
+      "startFrame": 3128,
+      "endFrame": 3129
+    },
+    {
+      "word": "calculator",
+      "start": 104.387,
+      "end": 104.968,
+      "startFrame": 3132,
+      "endFrame": 3149
+    },
+    {
+      "word": "for",
+      "start": 105.026,
+      "end": 105.153,
+      "startFrame": 3151,
+      "endFrame": 3155
+    },
+    {
+      "word": "addition",
+      "start": 105.212,
+      "end": 105.664,
+      "startFrame": 3156,
+      "endFrame": 3170
+    },
+    {
+      "word": "permanently",
+      "start": 105.989,
+      "end": 106.523,
+      "startFrame": 3180,
+      "endFrame": 3196
+    },
+    {
+      "word": "attached",
+      "start": 106.57,
+      "end": 106.93,
+      "startFrame": 3197,
+      "endFrame": 3208
+    },
+    {
+      "word": "to",
+      "start": 106.953,
+      "end": 106.999,
+      "startFrame": 3209,
+      "endFrame": 3210
+    },
+    {
+      "word": "your",
+      "start": 107.058,
+      "end": 107.174,
+      "startFrame": 3212,
+      "endFrame": 3215
+    }
+  ]
+}

@@ -1,0 +1,634 @@
+{
+  "topic": "AI coding dopamine addiction",
+  "timestamp": "2026-04-04T18:55:34.675558",
+  "evergreen_templates": [
+    {
+      "id": "181913649",
+      "name": "Drake Hotline Bling",
+      "url": "https://i.imgflip.com/30b1gx.jpg",
+      "width": 1200,
+      "height": 1200,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "87743020",
+      "name": "Two Buttons",
+      "url": "https://i.imgflip.com/1g8my4.jpg",
+      "width": 600,
+      "height": 908,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "112126428",
+      "name": "Distracted Boyfriend",
+      "url": "https://i.imgflip.com/1ur9b0.jpg",
+      "width": 1200,
+      "height": 800,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "217743513",
+      "name": "UNO Draw 25 Cards",
+      "url": "https://i.imgflip.com/3lmzyx.jpg",
+      "width": 500,
+      "height": 494,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "222403160",
+      "name": "Bernie I Am Once Again Asking For Your Support",
+      "url": "https://i.imgflip.com/3oevdk.jpg",
+      "width": 750,
+      "height": 750,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "124822590",
+      "name": "Left Exit 12 Off Ramp",
+      "url": "https://i.imgflip.com/22bdq6.jpg",
+      "width": 804,
+      "height": 767,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "252600902",
+      "name": "Always Has Been",
+      "url": "https://i.imgflip.com/46e43q.png",
+      "width": 960,
+      "height": 540,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "322841258",
+      "name": "Anakin Padme 4 Panel",
+      "url": "https://i.imgflip.com/5c7lwq.png",
+      "width": 768,
+      "height": 768,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "131087935",
+      "name": "Running Away Balloon",
+      "url": "https://i.imgflip.com/261o3j.jpg",
+      "width": 761,
+      "height": 1024,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "131940431",
+      "name": "Gru's Plan",
+      "url": "https://i.imgflip.com/26jxvz.jpg",
+      "width": 700,
+      "height": 449,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "135256802",
+      "name": "Epic Handshake",
+      "url": "https://i.imgflip.com/28j0te.jpg",
+      "width": 900,
+      "height": 645,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "80707627",
+      "name": "Sad Pablo Escobar",
+      "url": "https://i.imgflip.com/1c1uej.jpg",
+      "width": 720,
+      "height": 709,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "97984",
+      "name": "Disaster Girl",
+      "url": "https://i.imgflip.com/23ls.jpg",
+      "width": 500,
+      "height": 375,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "91538330",
+      "name": "X, X Everywhere",
+      "url": "https://i.imgflip.com/1ihzfe.jpg",
+      "width": 2118,
+      "height": 1440,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "4087833",
+      "name": "Waiting Skeleton",
+      "url": "https://i.imgflip.com/2fm6x.jpg",
+      "width": 298,
+      "height": 403,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "102156234",
+      "name": "Mocking Spongebob",
+      "url": "https://i.imgflip.com/1otk96.jpg",
+      "width": 502,
+      "height": 353,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "438680",
+      "name": "Batman Slapping Robin",
+      "url": "https://i.imgflip.com/9ehk.jpg",
+      "width": 400,
+      "height": 387,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "129242436",
+      "name": "Change My Mind",
+      "url": "https://i.imgflip.com/24y43o.jpg",
+      "width": 482,
+      "height": 361,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "188390779",
+      "name": "Woman Yelling At Cat",
+      "url": "https://i.imgflip.com/345v97.jpg",
+      "width": 680,
+      "height": 438,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "309868304",
+      "name": "Trade Offer",
+      "url": "https://i.imgflip.com/54hjww.jpg",
+      "width": 607,
+      "height": 794,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "124055727",
+      "name": "Y'all Got Any More Of That",
+      "url": "https://i.imgflip.com/21uy0f.jpg",
+      "width": 600,
+      "height": 471,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "247375501",
+      "name": "Buff Doge vs. Cheems",
+      "url": "https://i.imgflip.com/43a45p.png",
+      "width": 937,
+      "height": 720,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "93895088",
+      "name": "Expanding Brain",
+      "url": "https://i.imgflip.com/1jwhww.jpg",
+      "width": 857,
+      "height": 1202,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "178591752",
+      "name": "Tuxedo Winnie The Pooh",
+      "url": "https://i.imgflip.com/2ybua0.png",
+      "width": 800,
+      "height": 582,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "55311130",
+      "name": "This Is Fine",
+      "url": "https://i.imgflip.com/wxica.jpg",
+      "width": 580,
+      "height": 282,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "61579",
+      "name": "One Does Not Simply",
+      "url": "https://i.imgflip.com/1bij.jpg",
+      "width": 568,
+      "height": 335,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "79132341",
+      "name": "Bike Fall",
+      "url": "https://i.imgflip.com/1b42wl.jpg",
+      "width": 500,
+      "height": 680,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "100777631",
+      "name": "Is This A Pigeon",
+      "url": "https://i.imgflip.com/1o00in.jpg",
+      "width": 1587,
+      "height": 1425,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "101470",
+      "name": "Ancient Aliens",
+      "url": "https://i.imgflip.com/26am.jpg",
+      "width": 500,
+      "height": 437,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    },
+    {
+      "id": "252758727",
+      "name": "Mother Ignoring Kid Drowning In A Pool",
+      "url": "https://i.imgflip.com/46hhvr.jpg",
+      "width": 782,
+      "height": 1032,
+      "source": "imgflip",
+      "type": "static_template",
+      "evergreen": true
+    }
+  ],
+  "trending_programmer": [
+    {
+      "title": "whatIsTheName",
+      "url": "https://i.redd.it/qic6mpa2z3tg1.jpeg",
+      "score": 20535,
+      "comments": 355,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc0mme/whatisthename/"
+    },
+    {
+      "title": "theExperience",
+      "url": "https://i.redd.it/wgg4mwunoxsg1.jpeg",
+      "score": 10716,
+      "comments": 58,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sb7kki/theexperience/"
+    },
+    {
+      "title": "iDontCareJustDontBeSneakyAboutIt",
+      "url": "https://i.redd.it/2928sivo20tg1.jpeg",
+      "score": 4686,
+      "comments": 198,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sbhyo7/idontcarejustdontbesneakyaboutit/"
+    },
+    {
+      "title": "vibecodersArentRealDevs",
+      "url": "https://i.redd.it/kqhttlenq2tg1.jpeg",
+      "score": 3947,
+      "comments": 198,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sbvo42/vibecodersarentrealdevs/"
+    },
+    {
+      "title": "whoMadeThis",
+      "url": "https://i.redd.it/b7zlv084d6tg1.jpeg",
+      "score": 1722,
+      "comments": 30,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc95n5/whomadethis/"
+    },
+    {
+      "title": "whichOneOfYouFuckCreatedThisCaptcha",
+      "url": "https://i.redd.it/eswjo7n7n1tg1.jpeg",
+      "score": 1434,
+      "comments": 65,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sbqh2m/whichoneofyoufuckcreatedthiscaptcha/"
+    },
+    {
+      "title": "agingAsAProgrammerSucks",
+      "url": "https://i.redd.it/aww5jl4r25tg1.jpeg",
+      "score": 1326,
+      "comments": 28,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc4ghb/agingasaprogrammersucks/"
+    },
+    {
+      "title": "canYouMakeTheButtonBounce",
+      "url": "https://i.redd.it/tm39wunt17tg1.jpeg",
+      "score": 658,
+      "comments": 20,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1scchrh/canyoumakethebuttonbounce/"
+    },
+    {
+      "title": "savedYouSomeTokensBoss",
+      "url": "https://i.redd.it/7lmwhex631tg1.png",
+      "score": 620,
+      "comments": 21,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sbnqvf/savedyousometokensboss/"
+    },
+    {
+      "title": "canSomeonePleaseMakeProgrammingGoodAgain",
+      "url": "https://i.redd.it/n1zznnmx83tg1.png",
+      "score": 580,
+      "comments": 73,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sbxs91/cansomeonepleasemakeprogramminggoodagain/"
+    },
+    {
+      "title": "thanosAltman",
+      "url": "https://i.redd.it/xg7nwz3f97tg1.png",
+      "score": 432,
+      "comments": 8,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1scdna4/thanosaltman/"
+    },
+    {
+      "title": "programmersThenVsNow",
+      "url": "https://i.redd.it/z6zl3k6l05tg1.png",
+      "score": 237,
+      "comments": 27,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc47w7/programmersthenvsnow/"
+    },
+    {
+      "title": "techLeadReviewedItAlready",
+      "url": "https://i.redd.it/urq85gfk94tg1.jpeg",
+      "score": 215,
+      "comments": 15,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc1vuh/techleadrevieweditalready/"
+    },
+    {
+      "title": "backWhenWeUsedToHaveChildrensBooksForMachineCode",
+      "url": "https://i.redd.it/9ivwrs3li6tg1.png",
+      "score": 37,
+      "comments": 9,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc9w9o/backwhenweusedtohavechildrensbooksformachinecode/"
+    },
+    {
+      "title": "copyPastedFromChatGptButItWorks",
+      "url": "https://i.redd.it/8n2pkmux36tg1.jpeg",
+      "score": 36,
+      "comments": 4,
+      "subreddit": "ProgrammerHumor",
+      "source": "reddit",
+      "type": "trending_image",
+      "evergreen": false,
+      "permalink": "https://reddit.com/r/ProgrammerHumor/comments/1sc81qv/copypastedfromchatgptbutitworks/"
+    }
+  ],
+  "topic_specific": [
+    {
+      "title": "AI-sober",
+      "url": "https://i.redd.it/9eqwn50s9gng1.png",
+      "score": 15658,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    },
+    {
+      "title": "Why the majority of vibe coded projects fail",
+      "url": "https://i.redd.it/uxpmxlbmawog1.jpeg",
+      "score": 8150,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    },
+    {
+      "title": "anotherDayOfSolvedCoding",
+      "url": "https://i.redd.it/iwpfgfqy87rg1.png",
+      "score": 6843,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    },
+    {
+      "title": "**in official messaging** (it's believed the focus would be to protect trust in government messaging)",
+      "url": "https://i.redd.it/ffub648hcmsg1.gif",
+      "score": 6089,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    },
+    {
+      "title": "theTiming",
+      "url": "https://i.redd.it/6xoikwx2obog1.jpeg",
+      "score": 5016,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    },
+    {
+      "title": "In the Toronto Star today. LOL",
+      "url": "https://i.redd.it/erega1sv71pg1.jpeg",
+      "score": 4893,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    },
+    {
+      "title": "[B42] Living Hordes Beta SOLO ONLY",
+      "url": "https://i.redd.it/zu9zibndf6rg1.png",
+      "score": 4736,
+      "source": "reddit_search",
+      "type": "topic_meme",
+      "topic": "AI coding dopamine addiction",
+      "evergreen": false
+    }
+  ],
+  "tech_evergreen_suggestions": [
+    {
+      "name": "Drake Hotline Bling",
+      "usage": "X bad \u2192 Y good comparison",
+      "emotion": "preference"
+    },
+    {
+      "name": "Distracted Boyfriend",
+      "usage": "choosing new tech over old",
+      "emotion": "temptation"
+    },
+    {
+      "name": "This Is Fine",
+      "usage": "production is on fire",
+      "emotion": "denial"
+    },
+    {
+      "name": "Anakin Padme",
+      "usage": "unexpected consequence, 'right?'",
+      "emotion": "dread"
+    },
+    {
+      "name": "Galaxy Brain",
+      "usage": "increasingly absurd solutions",
+      "emotion": "escalation"
+    },
+    {
+      "name": "Two Buttons",
+      "usage": "impossible choice between options",
+      "emotion": "dilemma"
+    },
+    {
+      "name": "Change My Mind",
+      "usage": "controversial opinion",
+      "emotion": "challenge"
+    },
+    {
+      "name": "Expanding Brain",
+      "usage": "levels of sophistication",
+      "emotion": "escalation"
+    },
+    {
+      "name": "Surprised Pikachu",
+      "usage": "obvious outcome that surprises",
+      "emotion": "shock"
+    },
+    {
+      "name": "Is This a Pigeon",
+      "usage": "misidentifying something",
+      "emotion": "confusion"
+    },
+    {
+      "name": "Stonks",
+      "usage": "questionable success",
+      "emotion": "ironic_success"
+    },
+    {
+      "name": "Panik Kalm Panik",
+      "usage": "rollercoaster of realizations",
+      "emotion": "anxiety"
+    },
+    {
+      "name": "Always Has Been",
+      "usage": "revealing hidden truth",
+      "emotion": "revelation"
+    },
+    {
+      "name": "Monkey Puppet",
+      "usage": "awkward realization",
+      "emotion": "discomfort"
+    },
+    {
+      "name": "Trade Offer",
+      "usage": "give X get Y deal",
+      "emotion": "negotiation"
+    }
+  ],
+  "step_log": [
+    {
+      "step": "imgflip_templates",
+      "status": "ok",
+      "count": 30
+    },
+    {
+      "step": "reddit_programmer_humor",
+      "status": "ok",
+      "count": 15
+    },
+    {
+      "step": "reddit_topic_search",
+      "status": "ok",
+      "count": 7,
+      "topic": "AI coding dopamine addiction"
+    }
+  ],
+  "total_memes": 52
+}

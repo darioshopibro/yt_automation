@@ -1,0 +1,710 @@
+{
+  "step": 1,
+  "title": "The Withdrawal",
+  "startFrame": 0,
+  "endFrame": 1028,
+  "componentPath": "src/visuals/Generated_TheWithdrawal.tsx",
+  "transcriptSegment": "I just spent 30 minutes debugging a simple C S S issue without A I, and my brain literally felt like it was screaming for help. Every few seconds, my fingers would twitch toward the chat G P T tab. My heart rate actually increased. I started sweating over a flexbox problem that should take two minutes to solve.\n\nThis isn't productivity anxiety or imposter syndrome. This is literal dopamine withdrawal, and it's happening to millions of developers right now. Your brain has been hijacked by artificial intelligence, and the scary part is that most of us don't even realize it's happening.",
+  "timestamps": [
+    {
+      "word": "I",
+      "start": 0.0,
+      "end": 0.081,
+      "startFrame": 0,
+      "endFrame": 2
+    },
+    {
+      "word": "just",
+      "start": 0.163,
+      "end": 0.279,
+      "startFrame": 5,
+      "endFrame": 8
+    },
+    {
+      "word": "spent",
+      "start": 0.302,
+      "end": 0.488,
+      "startFrame": 9,
+      "endFrame": 15
+    },
+    {
+      "word": "30",
+      "start": 0.534,
+      "end": 0.755,
+      "startFrame": 16,
+      "endFrame": 23
+    },
+    {
+      "word": "minutes",
+      "start": 0.801,
+      "end": 1.045,
+      "startFrame": 24,
+      "endFrame": 31
+    },
+    {
+      "word": "debugging",
+      "start": 1.115,
+      "end": 1.625,
+      "startFrame": 33,
+      "endFrame": 49
+    },
+    {
+      "word": "a",
+      "start": 1.683,
+      "end": 1.718,
+      "startFrame": 50,
+      "endFrame": 52
+    },
+    {
+      "word": "simple",
+      "start": 1.788,
+      "end": 2.125,
+      "startFrame": 54,
+      "endFrame": 64
+    },
+    {
+      "word": "C",
+      "start": 2.171,
+      "end": 2.287,
+      "startFrame": 65,
+      "endFrame": 69
+    },
+    {
+      "word": "S",
+      "start": 2.496,
+      "end": 2.531,
+      "startFrame": 75,
+      "endFrame": 76
+    },
+    {
+      "word": "S",
+      "start": 2.589,
+      "end": 2.705,
+      "startFrame": 78,
+      "endFrame": 81
+    },
+    {
+      "word": "issue",
+      "start": 2.775,
+      "end": 3.181,
+      "startFrame": 83,
+      "endFrame": 95
+    },
+    {
+      "word": "without",
+      "start": 3.355,
+      "end": 3.692,
+      "startFrame": 101,
+      "endFrame": 111
+    },
+    {
+      "word": "A",
+      "start": 3.75,
+      "end": 3.785,
+      "startFrame": 112,
+      "endFrame": 114
+    },
+    {
+      "word": "I,",
+      "start": 3.901,
+      "end": 4.319,
+      "startFrame": 117,
+      "endFrame": 130
+    },
+    {
+      "word": "and",
+      "start": 4.644,
+      "end": 4.772,
+      "startFrame": 139,
+      "endFrame": 143
+    },
+    {
+      "word": "my",
+      "start": 4.818,
+      "end": 4.888,
+      "startFrame": 145,
+      "endFrame": 147
+    },
+    {
+      "word": "brain",
+      "start": 4.957,
+      "end": 5.19,
+      "startFrame": 149,
+      "endFrame": 156
+    },
+    {
+      "word": "literally",
+      "start": 5.259,
+      "end": 5.55,
+      "startFrame": 158,
+      "endFrame": 166
+    },
+    {
+      "word": "felt",
+      "start": 5.596,
+      "end": 5.759,
+      "startFrame": 168,
+      "endFrame": 173
+    },
+    {
+      "word": "like",
+      "start": 5.793,
+      "end": 5.898,
+      "startFrame": 174,
+      "endFrame": 177
+    },
+    {
+      "word": "it",
+      "start": 5.921,
+      "end": 5.968,
+      "startFrame": 178,
+      "endFrame": 179
+    },
+    {
+      "word": "was",
+      "start": 6.002,
+      "end": 6.084,
+      "startFrame": 180,
+      "endFrame": 183
+    },
+    {
+      "word": "screaming",
+      "start": 6.153,
+      "end": 6.606,
+      "startFrame": 185,
+      "endFrame": 198
+    },
+    {
+      "word": "for",
+      "start": 6.664,
+      "end": 6.769,
+      "startFrame": 200,
+      "endFrame": 203
+    },
+    {
+      "word": "help.",
+      "start": 6.827,
+      "end": 7.221,
+      "startFrame": 205,
+      "endFrame": 217
+    },
+    {
+      "word": "Every",
+      "start": 7.825,
+      "end": 8.104,
+      "startFrame": 235,
+      "endFrame": 243
+    },
+    {
+      "word": "few",
+      "start": 8.162,
+      "end": 8.313,
+      "startFrame": 245,
+      "endFrame": 249
+    },
+    {
+      "word": "seconds,",
+      "start": 8.371,
+      "end": 8.754,
+      "startFrame": 251,
+      "endFrame": 263
+    },
+    {
+      "word": "my",
+      "start": 8.789,
+      "end": 8.87,
+      "startFrame": 264,
+      "endFrame": 266
+    },
+    {
+      "word": "fingers",
+      "start": 8.951,
+      "end": 9.253,
+      "startFrame": 269,
+      "endFrame": 278
+    },
+    {
+      "word": "would",
+      "start": 9.288,
+      "end": 9.439,
+      "startFrame": 279,
+      "endFrame": 283
+    },
+    {
+      "word": "twitch",
+      "start": 9.462,
+      "end": 9.741,
+      "startFrame": 284,
+      "endFrame": 292
+    },
+    {
+      "word": "toward",
+      "start": 9.787,
+      "end": 10.031,
+      "startFrame": 294,
+      "endFrame": 301
+    },
+    {
+      "word": "the",
+      "start": 10.066,
+      "end": 10.136,
+      "startFrame": 302,
+      "endFrame": 304
+    },
+    {
+      "word": "chat",
+      "start": 10.194,
+      "end": 10.461,
+      "startFrame": 306,
+      "endFrame": 314
+    },
+    {
+      "word": "G",
+      "start": 10.53,
+      "end": 10.646,
+      "startFrame": 316,
+      "endFrame": 319
+    },
+    {
+      "word": "P",
+      "start": 10.774,
+      "end": 10.89,
+      "startFrame": 323,
+      "endFrame": 327
+    },
+    {
+      "word": "T",
+      "start": 11.041,
+      "end": 11.157,
+      "startFrame": 331,
+      "endFrame": 335
+    },
+    {
+      "word": "tab.",
+      "start": 11.308,
+      "end": 11.796,
+      "startFrame": 339,
+      "endFrame": 354
+    },
+    {
+      "word": "My",
+      "start": 12.492,
+      "end": 12.608,
+      "startFrame": 375,
+      "endFrame": 378
+    },
+    {
+      "word": "heart",
+      "start": 12.678,
+      "end": 12.841,
+      "startFrame": 380,
+      "endFrame": 385
+    },
+    {
+      "word": "rate",
+      "start": 12.887,
+      "end": 13.05,
+      "startFrame": 387,
+      "endFrame": 392
+    },
+    {
+      "word": "actually",
+      "start": 13.096,
+      "end": 13.433,
+      "startFrame": 393,
+      "endFrame": 403
+    },
+    {
+      "word": "increased.",
+      "start": 13.468,
+      "end": 14.072,
+      "startFrame": 404,
+      "endFrame": 422
+    },
+    {
+      "word": "I",
+      "start": 14.768,
+      "end": 14.815,
+      "startFrame": 443,
+      "endFrame": 444
+    },
+    {
+      "word": "started",
+      "start": 14.908,
+      "end": 15.175,
+      "startFrame": 447,
+      "endFrame": 455
+    },
+    {
+      "word": "sweating",
+      "start": 15.233,
+      "end": 15.569,
+      "startFrame": 457,
+      "endFrame": 467
+    },
+    {
+      "word": "over",
+      "start": 15.616,
+      "end": 15.802,
+      "startFrame": 468,
+      "endFrame": 474
+    },
+    {
+      "word": "a",
+      "start": 15.848,
+      "end": 15.871,
+      "startFrame": 475,
+      "endFrame": 476
+    },
+    {
+      "word": "flexbox",
+      "start": 15.929,
+      "end": 16.44,
+      "startFrame": 478,
+      "endFrame": 493
+    },
+    {
+      "word": "problem",
+      "start": 16.487,
+      "end": 16.812,
+      "startFrame": 495,
+      "endFrame": 504
+    },
+    {
+      "word": "that",
+      "start": 16.847,
+      "end": 16.951,
+      "startFrame": 505,
+      "endFrame": 509
+    },
+    {
+      "word": "should",
+      "start": 16.974,
+      "end": 17.137,
+      "startFrame": 509,
+      "endFrame": 514
+    },
+    {
+      "word": "take",
+      "start": 17.16,
+      "end": 17.334,
+      "startFrame": 515,
+      "endFrame": 520
+    },
+    {
+      "word": "two",
+      "start": 17.369,
+      "end": 17.532,
+      "startFrame": 521,
+      "endFrame": 526
+    },
+    {
+      "word": "minutes",
+      "start": 17.59,
+      "end": 17.845,
+      "startFrame": 528,
+      "endFrame": 535
+    },
+    {
+      "word": "to",
+      "start": 17.891,
+      "end": 17.961,
+      "startFrame": 537,
+      "endFrame": 539
+    },
+    {
+      "word": "solve.\n\nThis",
+      "start": 18.031,
+      "end": 19.424,
+      "startFrame": 541,
+      "endFrame": 583
+    },
+    {
+      "word": "isn't",
+      "start": 19.482,
+      "end": 19.714,
+      "startFrame": 584,
+      "endFrame": 591
+    },
+    {
+      "word": "productivity",
+      "start": 19.761,
+      "end": 20.318,
+      "startFrame": 593,
+      "endFrame": 610
+    },
+    {
+      "word": "anxiety",
+      "start": 20.376,
+      "end": 20.852,
+      "startFrame": 611,
+      "endFrame": 626
+    },
+    {
+      "word": "or",
+      "start": 20.898,
+      "end": 20.968,
+      "startFrame": 627,
+      "endFrame": 629
+    },
+    {
+      "word": "imposter",
+      "start": 21.015,
+      "end": 21.456,
+      "startFrame": 630,
+      "endFrame": 644
+    },
+    {
+      "word": "syndrome.",
+      "start": 21.514,
+      "end": 22.025,
+      "startFrame": 645,
+      "endFrame": 661
+    },
+    {
+      "word": "This",
+      "start": 22.721,
+      "end": 22.907,
+      "startFrame": 682,
+      "endFrame": 687
+    },
+    {
+      "word": "is",
+      "start": 22.965,
+      "end": 23.058,
+      "startFrame": 689,
+      "endFrame": 692
+    },
+    {
+      "word": "literal",
+      "start": 23.174,
+      "end": 23.499,
+      "startFrame": 695,
+      "endFrame": 705
+    },
+    {
+      "word": "dopamine",
+      "start": 23.615,
+      "end": 24.138,
+      "startFrame": 708,
+      "endFrame": 724
+    },
+    {
+      "word": "withdrawal,",
+      "start": 24.161,
+      "end": 24.939,
+      "startFrame": 725,
+      "endFrame": 748
+    },
+    {
+      "word": "and",
+      "start": 25.264,
+      "end": 25.391,
+      "startFrame": 758,
+      "endFrame": 762
+    },
+    {
+      "word": "it's",
+      "start": 25.426,
+      "end": 25.542,
+      "startFrame": 763,
+      "endFrame": 766
+    },
+    {
+      "word": "happening",
+      "start": 25.589,
+      "end": 25.891,
+      "startFrame": 768,
+      "endFrame": 777
+    },
+    {
+      "word": "to",
+      "start": 25.937,
+      "end": 26.007,
+      "startFrame": 778,
+      "endFrame": 780
+    },
+    {
+      "word": "millions",
+      "start": 26.123,
+      "end": 26.529,
+      "startFrame": 784,
+      "endFrame": 796
+    },
+    {
+      "word": "of",
+      "start": 26.564,
+      "end": 26.622,
+      "startFrame": 797,
+      "endFrame": 799
+    },
+    {
+      "word": "developers",
+      "start": 26.68,
+      "end": 27.168,
+      "startFrame": 800,
+      "endFrame": 815
+    },
+    {
+      "word": "right",
+      "start": 27.203,
+      "end": 27.342,
+      "startFrame": 816,
+      "endFrame": 820
+    },
+    {
+      "word": "now.",
+      "start": 27.377,
+      "end": 27.679,
+      "startFrame": 821,
+      "endFrame": 830
+    },
+    {
+      "word": "Your",
+      "start": 28.492,
+      "end": 28.666,
+      "startFrame": 855,
+      "endFrame": 860
+    },
+    {
+      "word": "brain",
+      "start": 28.712,
+      "end": 28.933,
+      "startFrame": 861,
+      "endFrame": 868
+    },
+    {
+      "word": "has",
+      "start": 28.979,
+      "end": 29.06,
+      "startFrame": 869,
+      "endFrame": 872
+    },
+    {
+      "word": "been",
+      "start": 29.107,
+      "end": 29.246,
+      "startFrame": 873,
+      "endFrame": 877
+    },
+    {
+      "word": "hijacked",
+      "start": 29.304,
+      "end": 29.85,
+      "startFrame": 879,
+      "endFrame": 896
+    },
+    {
+      "word": "by",
+      "start": 29.885,
+      "end": 29.978,
+      "startFrame": 897,
+      "endFrame": 899
+    },
+    {
+      "word": "artificial",
+      "start": 30.024,
+      "end": 30.465,
+      "startFrame": 901,
+      "endFrame": 914
+    },
+    {
+      "word": "intelligence,",
+      "start": 30.5,
+      "end": 31.243,
+      "startFrame": 915,
+      "endFrame": 937
+    },
+    {
+      "word": "and",
+      "start": 31.626,
+      "end": 31.766,
+      "startFrame": 949,
+      "endFrame": 953
+    },
+    {
+      "word": "the",
+      "start": 31.8,
+      "end": 31.87,
+      "startFrame": 954,
+      "endFrame": 956
+    },
+    {
+      "word": "scary",
+      "start": 31.905,
+      "end": 32.184,
+      "startFrame": 957,
+      "endFrame": 966
+    },
+    {
+      "word": "part",
+      "start": 32.242,
+      "end": 32.52,
+      "startFrame": 967,
+      "endFrame": 976
+    },
+    {
+      "word": "is",
+      "start": 32.59,
+      "end": 32.741,
+      "startFrame": 978,
+      "endFrame": 982
+    },
+    {
+      "word": "that",
+      "start": 32.776,
+      "end": 32.88,
+      "startFrame": 983,
+      "endFrame": 986
+    },
+    {
+      "word": "most",
+      "start": 32.95,
+      "end": 33.147,
+      "startFrame": 989,
+      "endFrame": 994
+    },
+    {
+      "word": "of",
+      "start": 33.182,
+      "end": 33.228,
+      "startFrame": 995,
+      "endFrame": 997
+    },
+    {
+      "word": "us",
+      "start": 33.275,
+      "end": 33.345,
+      "startFrame": 998,
+      "endFrame": 1000
+    },
+    {
+      "word": "don't",
+      "start": 33.391,
+      "end": 33.542,
+      "startFrame": 1002,
+      "endFrame": 1006
+    },
+    {
+      "word": "even",
+      "start": 33.577,
+      "end": 33.728,
+      "startFrame": 1007,
+      "endFrame": 1012
+    },
+    {
+      "word": "realize",
+      "start": 33.786,
+      "end": 34.099,
+      "startFrame": 1014,
+      "endFrame": 1023
+    },
+    {
+      "word": "it's",
+      "start": 34.134,
+      "end": 34.25,
+      "startFrame": 1024,
+      "endFrame": 1028
+    }
+  ]
+}

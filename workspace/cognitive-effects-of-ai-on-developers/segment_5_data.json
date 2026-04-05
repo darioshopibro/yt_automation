@@ -1,0 +1,654 @@
+{
+  "step": 5,
+  "title": "Real-World Proof",
+  "startFrame": 6943,
+  "endFrame": 8257,
+  "componentPath": "src/visuals/Generated_RealWorldProof.tsx",
+  "transcriptSegment": "Basecamp implemented this system company-wide after their C T O noticed their junior developers couldn't debug simple issues without assistance. They started with mandatory ten-minute thinking periods before any A I use. Within three months, their bug resolution time actually improved, and developers reported feeling more confident tackling new challenges.\n\nThe key is that you're not fighting willpower against addiction. You're redirecting the same reward system that got you hooked in the first place. Your brain starts finding satisfaction in the thinking process again instead of just the instant gratification of getting answers.",
+  "timestamps": [
+    {
+      "word": "instead.\n\nBasecamp",
+      "start": 231.423,
+      "end": 233.246,
+      "startFrame": 6943,
+      "endFrame": 6997
+    },
+    {
+      "word": "implemented",
+      "start": 233.304,
+      "end": 233.861,
+      "startFrame": 6999,
+      "endFrame": 7016
+    },
+    {
+      "word": "this",
+      "start": 233.896,
+      "end": 234.024,
+      "startFrame": 7017,
+      "endFrame": 7021
+    },
+    {
+      "word": "system",
+      "start": 234.07,
+      "end": 234.418,
+      "startFrame": 7022,
+      "endFrame": 7033
+    },
+    {
+      "word": "company-wide",
+      "start": 234.511,
+      "end": 235.405,
+      "startFrame": 7035,
+      "endFrame": 7062
+    },
+    {
+      "word": "after",
+      "start": 235.73,
+      "end": 236.032,
+      "startFrame": 7072,
+      "endFrame": 7081
+    },
+    {
+      "word": "their",
+      "start": 236.079,
+      "end": 236.23,
+      "startFrame": 7082,
+      "endFrame": 7087
+    },
+    {
+      "word": "C",
+      "start": 236.288,
+      "end": 236.404,
+      "startFrame": 7089,
+      "endFrame": 7092
+    },
+    {
+      "word": "T",
+      "start": 236.555,
+      "end": 236.671,
+      "startFrame": 7097,
+      "endFrame": 7100
+    },
+    {
+      "word": "O",
+      "start": 236.822,
+      "end": 237.031,
+      "startFrame": 7105,
+      "endFrame": 7111
+    },
+    {
+      "word": "noticed",
+      "start": 237.472,
+      "end": 237.867,
+      "startFrame": 7124,
+      "endFrame": 7136
+    },
+    {
+      "word": "their",
+      "start": 237.902,
+      "end": 238.076,
+      "startFrame": 7137,
+      "endFrame": 7142
+    },
+    {
+      "word": "junior",
+      "start": 238.157,
+      "end": 238.494,
+      "startFrame": 7145,
+      "endFrame": 7155
+    },
+    {
+      "word": "developers",
+      "start": 238.54,
+      "end": 239.109,
+      "startFrame": 7156,
+      "endFrame": 7173
+    },
+    {
+      "word": "couldn't",
+      "start": 239.434,
+      "end": 239.748,
+      "startFrame": 7183,
+      "endFrame": 7192
+    },
+    {
+      "word": "debug",
+      "start": 239.806,
+      "end": 240.189,
+      "startFrame": 7194,
+      "endFrame": 7206
+    },
+    {
+      "word": "simple",
+      "start": 240.258,
+      "end": 240.595,
+      "startFrame": 7208,
+      "endFrame": 7218
+    },
+    {
+      "word": "issues",
+      "start": 240.63,
+      "end": 240.967,
+      "startFrame": 7219,
+      "endFrame": 7229
+    },
+    {
+      "word": "without",
+      "start": 241.002,
+      "end": 241.28,
+      "startFrame": 7230,
+      "endFrame": 7238
+    },
+    {
+      "word": "assistance.",
+      "start": 241.315,
+      "end": 242.07,
+      "startFrame": 7239,
+      "endFrame": 7262
+    },
+    {
+      "word": "They",
+      "start": 242.673,
+      "end": 242.848,
+      "startFrame": 7280,
+      "endFrame": 7285
+    },
+    {
+      "word": "started",
+      "start": 242.906,
+      "end": 243.289,
+      "startFrame": 7287,
+      "endFrame": 7299
+    },
+    {
+      "word": "with",
+      "start": 243.335,
+      "end": 243.486,
+      "startFrame": 7300,
+      "endFrame": 7305
+    },
+    {
+      "word": "mandatory",
+      "start": 243.579,
+      "end": 244.252,
+      "startFrame": 7307,
+      "endFrame": 7328
+    },
+    {
+      "word": "ten-minute",
+      "start": 244.322,
+      "end": 244.821,
+      "startFrame": 7330,
+      "endFrame": 7345
+    },
+    {
+      "word": "thinking",
+      "start": 244.856,
+      "end": 245.193,
+      "startFrame": 7346,
+      "endFrame": 7356
+    },
+    {
+      "word": "periods",
+      "start": 245.262,
+      "end": 245.727,
+      "startFrame": 7358,
+      "endFrame": 7372
+    },
+    {
+      "word": "before",
+      "start": 246.052,
+      "end": 246.447,
+      "startFrame": 7382,
+      "endFrame": 7393
+    },
+    {
+      "word": "any",
+      "start": 246.493,
+      "end": 246.667,
+      "startFrame": 7395,
+      "endFrame": 7400
+    },
+    {
+      "word": "A",
+      "start": 246.783,
+      "end": 246.934,
+      "startFrame": 7403,
+      "endFrame": 7408
+    },
+    {
+      "word": "I",
+      "start": 247.085,
+      "end": 247.166,
+      "startFrame": 7413,
+      "endFrame": 7415
+    },
+    {
+      "word": "use.",
+      "start": 247.341,
+      "end": 247.886,
+      "startFrame": 7420,
+      "endFrame": 7437
+    },
+    {
+      "word": "Within",
+      "start": 248.583,
+      "end": 248.896,
+      "startFrame": 7457,
+      "endFrame": 7467
+    },
+    {
+      "word": "three",
+      "start": 248.954,
+      "end": 249.175,
+      "startFrame": 7469,
+      "endFrame": 7475
+    },
+    {
+      "word": "months,",
+      "start": 249.221,
+      "end": 249.709,
+      "startFrame": 7477,
+      "endFrame": 7491
+    },
+    {
+      "word": "their",
+      "start": 249.918,
+      "end": 250.115,
+      "startFrame": 7498,
+      "endFrame": 7503
+    },
+    {
+      "word": "bug",
+      "start": 250.185,
+      "end": 250.406,
+      "startFrame": 7506,
+      "endFrame": 7512
+    },
+    {
+      "word": "resolution",
+      "start": 250.475,
+      "end": 250.998,
+      "startFrame": 7514,
+      "endFrame": 7530
+    },
+    {
+      "word": "time",
+      "start": 251.056,
+      "end": 251.462,
+      "startFrame": 7532,
+      "endFrame": 7544
+    },
+    {
+      "word": "actually",
+      "start": 251.671,
+      "end": 252.205,
+      "startFrame": 7550,
+      "endFrame": 7566
+    },
+    {
+      "word": "improved,",
+      "start": 252.252,
+      "end": 252.925,
+      "startFrame": 7568,
+      "endFrame": 7588
+    },
+    {
+      "word": "and",
+      "start": 253.366,
+      "end": 253.517,
+      "startFrame": 7601,
+      "endFrame": 7606
+    },
+    {
+      "word": "developers",
+      "start": 253.575,
+      "end": 254.074,
+      "startFrame": 7607,
+      "endFrame": 7622
+    },
+    {
+      "word": "reported",
+      "start": 254.133,
+      "end": 254.562,
+      "startFrame": 7624,
+      "endFrame": 7637
+    },
+    {
+      "word": "feeling",
+      "start": 254.62,
+      "end": 254.922,
+      "startFrame": 7639,
+      "endFrame": 7648
+    },
+    {
+      "word": "more",
+      "start": 254.98,
+      "end": 255.131,
+      "startFrame": 7649,
+      "endFrame": 7654
+    },
+    {
+      "word": "confident",
+      "start": 255.189,
+      "end": 255.7,
+      "startFrame": 7656,
+      "endFrame": 7671
+    },
+    {
+      "word": "tackling",
+      "start": 255.746,
+      "end": 256.153,
+      "startFrame": 7672,
+      "endFrame": 7685
+    },
+    {
+      "word": "new",
+      "start": 256.222,
+      "end": 256.338,
+      "startFrame": 7687,
+      "endFrame": 7690
+    },
+    {
+      "word": "challenges.\n\nThe",
+      "start": 256.396,
+      "end": 257.964,
+      "startFrame": 7692,
+      "endFrame": 7739
+    },
+    {
+      "word": "key",
+      "start": 258.022,
+      "end": 258.231,
+      "startFrame": 7741,
+      "endFrame": 7747
+    },
+    {
+      "word": "is",
+      "start": 258.266,
+      "end": 258.359,
+      "startFrame": 7748,
+      "endFrame": 7751
+    },
+    {
+      "word": "that",
+      "start": 258.417,
+      "end": 258.544,
+      "startFrame": 7753,
+      "endFrame": 7756
+    },
+    {
+      "word": "you're",
+      "start": 258.591,
+      "end": 258.765,
+      "startFrame": 7758,
+      "endFrame": 7763
+    },
+    {
+      "word": "not",
+      "start": 258.8,
+      "end": 258.927,
+      "startFrame": 7764,
+      "endFrame": 7768
+    },
+    {
+      "word": "fighting",
+      "start": 258.997,
+      "end": 259.334,
+      "startFrame": 7770,
+      "endFrame": 7780
+    },
+    {
+      "word": "willpower",
+      "start": 259.403,
+      "end": 259.949,
+      "startFrame": 7782,
+      "endFrame": 7798
+    },
+    {
+      "word": "against",
+      "start": 260.007,
+      "end": 260.321,
+      "startFrame": 7800,
+      "endFrame": 7810
+    },
+    {
+      "word": "addiction.",
+      "start": 260.379,
+      "end": 261.029,
+      "startFrame": 7811,
+      "endFrame": 7831
+    },
+    {
+      "word": "You're",
+      "start": 261.725,
+      "end": 261.958,
+      "startFrame": 7852,
+      "endFrame": 7859
+    },
+    {
+      "word": "redirecting",
+      "start": 262.004,
+      "end": 262.608,
+      "startFrame": 7860,
+      "endFrame": 7878
+    },
+    {
+      "word": "the",
+      "start": 262.666,
+      "end": 262.747,
+      "startFrame": 7880,
+      "endFrame": 7882
+    },
+    {
+      "word": "same",
+      "start": 262.817,
+      "end": 263.095,
+      "startFrame": 7885,
+      "endFrame": 7893
+    },
+    {
+      "word": "reward",
+      "start": 263.142,
+      "end": 263.525,
+      "startFrame": 7894,
+      "endFrame": 7906
+    },
+    {
+      "word": "system",
+      "start": 263.571,
+      "end": 263.955,
+      "startFrame": 7907,
+      "endFrame": 7919
+    },
+    {
+      "word": "that",
+      "start": 264.28,
+      "end": 264.465,
+      "startFrame": 7928,
+      "endFrame": 7934
+    },
+    {
+      "word": "got",
+      "start": 264.512,
+      "end": 264.663,
+      "startFrame": 7935,
+      "endFrame": 7940
+    },
+    {
+      "word": "you",
+      "start": 264.709,
+      "end": 264.79,
+      "startFrame": 7941,
+      "endFrame": 7944
+    },
+    {
+      "word": "hooked",
+      "start": 264.86,
+      "end": 265.092,
+      "startFrame": 7946,
+      "endFrame": 7953
+    },
+    {
+      "word": "in",
+      "start": 265.127,
+      "end": 265.185,
+      "startFrame": 7954,
+      "endFrame": 7956
+    },
+    {
+      "word": "the",
+      "start": 265.22,
+      "end": 265.29,
+      "startFrame": 7957,
+      "endFrame": 7959
+    },
+    {
+      "word": "first",
+      "start": 265.348,
+      "end": 265.603,
+      "startFrame": 7960,
+      "endFrame": 7968
+    },
+    {
+      "word": "place.",
+      "start": 265.65,
+      "end": 266.172,
+      "startFrame": 7969,
+      "endFrame": 7985
+    },
+    {
+      "word": "Your",
+      "start": 266.869,
+      "end": 267.055,
+      "startFrame": 8006,
+      "endFrame": 8012
+    },
+    {
+      "word": "brain",
+      "start": 267.101,
+      "end": 267.368,
+      "startFrame": 8013,
+      "endFrame": 8021
+    },
+    {
+      "word": "starts",
+      "start": 267.438,
+      "end": 267.705,
+      "startFrame": 8023,
+      "endFrame": 8031
+    },
+    {
+      "word": "finding",
+      "start": 267.763,
+      "end": 268.088,
+      "startFrame": 8033,
+      "endFrame": 8043
+    },
+    {
+      "word": "satisfaction",
+      "start": 268.158,
+      "end": 268.878,
+      "startFrame": 8045,
+      "endFrame": 8066
+    },
+    {
+      "word": "in",
+      "start": 268.936,
+      "end": 269.017,
+      "startFrame": 8068,
+      "endFrame": 8071
+    },
+    {
+      "word": "the",
+      "start": 269.075,
+      "end": 269.145,
+      "startFrame": 8072,
+      "endFrame": 8074
+    },
+    {
+      "word": "thinking",
+      "start": 269.226,
+      "end": 269.563,
+      "startFrame": 8077,
+      "endFrame": 8087
+    },
+    {
+      "word": "process",
+      "start": 269.621,
+      "end": 270.039,
+      "startFrame": 8089,
+      "endFrame": 8101
+    },
+    {
+      "word": "again",
+      "start": 270.073,
+      "end": 270.364,
+      "startFrame": 8102,
+      "endFrame": 8111
+    },
+    {
+      "word": "instead",
+      "start": 270.805,
+      "end": 271.223,
+      "startFrame": 8124,
+      "endFrame": 8137
+    },
+    {
+      "word": "of",
+      "start": 271.258,
+      "end": 271.316,
+      "startFrame": 8138,
+      "endFrame": 8139
+    },
+    {
+      "word": "just",
+      "start": 271.397,
+      "end": 271.618,
+      "startFrame": 8142,
+      "endFrame": 8149
+    },
+    {
+      "word": "the",
+      "start": 271.664,
+      "end": 271.768,
+      "startFrame": 8150,
+      "endFrame": 8153
+    },
+    {
+      "word": "instant",
+      "start": 271.919,
+      "end": 272.407,
+      "startFrame": 8158,
+      "endFrame": 8172
+    },
+    {
+      "word": "gratification",
+      "start": 272.465,
+      "end": 273.22,
+      "startFrame": 8174,
+      "endFrame": 8197
+    },
+    {
+      "word": "of",
+      "start": 273.266,
+      "end": 273.324,
+      "startFrame": 8198,
+      "endFrame": 8200
+    },
+    {
+      "word": "getting",
+      "start": 273.382,
+      "end": 273.614,
+      "startFrame": 8201,
+      "endFrame": 8208
+    },
+    {
+      "word": "answers.\n\nThis",
+      "start": 273.673,
+      "end": 275.205,
+      "startFrame": 8210,
+      "endFrame": 8256
+    }
+  ]
+}

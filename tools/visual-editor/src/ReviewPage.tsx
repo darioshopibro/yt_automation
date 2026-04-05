@@ -112,6 +112,210 @@ function useDynamicComposition(project: string, segments: SegmentInfo[]) {
   return { Comp, loading, error };
 }
 
+// ---- Unified Segment + Beat Panel ----
+const VICONS: Record<string, string> = {
+  ai_video: '🎬', motion_graphics: '📊', meme: '😂',
+  text_callout: '📝', b_roll: '🎥', sfx_only: '🔊',
+};
+
+function UnifiedSegmentPanel({ project, segments, currentFrame, fps, markers, onSeek, onMarkSegment, segStatus, currentSegment }: {
+  project: string;
+  segments: SegmentInfo[];
+  currentFrame: number;
+  fps: number;
+  markers: Marker[];
+  onSeek: (f: number) => void;
+  onMarkSegment: (seg: SegmentInfo, type: MarkerType) => void;
+  segStatus: (seg: SegmentInfo) => MarkerType | null;
+  currentSegment: SegmentInfo | null;
+}) {
+  const [comp, setComp] = useState<any>(null);
+  const [expanded, setExpanded] = useState<Set<string>>(new Set());
+  const [regenerating, setRegenerating] = useState<string | null>(null);
+  const [mixPlaying, setMixPlaying] = useState(false);
+  const mixRef = useRef<HTMLAudioElement>(null);
+
+  // Load composition
+  useEffect(() => {
+    if (!project) { setComp(null); return; }
+    const tryFetch = async () => {
+      for (const prefix of ['videos/', 'workspace/', '']) {
+        try {
+          const r = await fetch(`/api/composition?project=${prefix}${project}`);
+          if (r.ok) { setComp(await r.json()); return; }
+        } catch {}
+      }
+      setComp(null);
+    };
+    tryFetch();
+  }, [project]);
+
+  const toggleExpand = (id: string) => {
+    setExpanded(prev => {
+      const n = new Set(prev);
+      if (n.has(id)) n.delete(id); else n.add(id);
+      return n;
+    });
+  };
+
+  // Auto-expand current segment
+  useEffect(() => {
+    if (currentSegment) {
+      setExpanded(prev => new Set(prev).add(currentSegment.id));
+    }
+  }, [currentSegment?.id]);
+
+  const beats = comp?.beats || [];
+  const sfxList = comp?.audio?.sfx || [];
+  const memesList = comp?.memes || [];
+
+  const getBeatsForSegment = (seg: SegmentInfo) =>
+    beats.filter((b: any) => b.segmentId === seg.id ||
+      (b.startFrame >= seg.startFrame && b.startFrame < (seg.endFrame || Infinity)));
+
+  const getBeatStatus = (beat: any): MarkerType | null => {
+    const ov = markers.filter(m => m.startFrame < beat.endFrame && m.endFrame > beat.startFrame);
+    return ov.length > 0 ? ov[ov.length - 1].type : null;
+  };
+
+  const handleRegenBeat = async (beatId: string) => {
+    setRegenerating(beatId);
+    try {
+      await fetch('/api/regenerate-beat', {
+        method: 'POST',
+        headers: { 'Content-Type': 'application/json' },
+        body: JSON.stringify({ project, beatId, count: 3 }),
+      });
+    } catch {}
+    setRegenerating(null);
+  };
+
+  const markBeatRange = (beat: any, type: MarkerType) => {
+    // Create a marker covering the beat's frame range
+    const fakeSeg = { id: beat.id, title: beat.id, file: '', startFrame: beat.startFrame, endFrame: beat.endFrame, componentName: '', exists: true } as SegmentInfo;
+    onMarkSegment(fakeSeg, type);
+  };
+
+  const toggleMix = () => {
+    if (!mixRef.current) return;
+    if (mixPlaying) mixRef.current.pause();
+    else mixRef.current.play();
+    setMixPlaying(!mixPlaying);
+  };
+
+  return (
+    <div style={{ borderTop: `1px solid ${C.border}`, flex: 1, overflow: 'auto', minHeight: 0 }}>
+      {/* Header with Mix button */}
+      <div style={{ padding: '6px 12px', fontSize: 10, fontWeight: 600, color: C.textDim, textTransform: 'uppercase', letterSpacing: '0.05em', display: 'flex', justifyContent: 'space-between', alignItems: 'center', borderBottom: `1px solid ${C.border}` }}>
+        <span>Segments {comp ? `· ${beats.length} beats` : ''}</span>
+        {comp && (
+          <button onClick={toggleMix} style={{ background: C.accent, color: '#fff', border: 'none', borderRadius: 4, padding: '2px 8px', fontSize: 9, cursor: 'pointer' }}>
+            {mixPlaying ? '⏸' : '▶'} Mix
+          </button>
+        )}
+      </div>
+      {comp && <audio ref={mixRef} src={`/api/audio?project=videos/${project}&file=mixed_audio.mp3`} onEnded={() => setMixPlaying(false)} />}
+
+      {segments.map((seg, i) => {
+        const st = segStatus(seg);
+        const isActive = currentSegment?.id === seg.id;
+        const isExpanded = expanded.has(seg.id);
+        const segBeats = getBeatsForSegment(seg);
+
+        return (
+          <div key={seg.id}>
+            {/* Segment row */}
+            <div style={{
+              padding: '5px 12px', cursor: 'pointer',
+              background: isActive ? C.accentLight : 'transparent',
+              display: 'flex', alignItems: 'center', gap: 4,
+              borderBottom: `1px solid ${C.border}`,
+            }}>
+              {/* Expand arrow */}
+              {segBeats.length > 0 && (
+                <span onClick={() => toggleExpand(seg.id)} style={{ fontSize: 8, color: C.textDim, cursor: 'pointer', width: 10 }}>
+                  {isExpanded ? '▼' : '▶'}
+                </span>
+              )}
+              {segBeats.length === 0 && <span style={{ width: 10 }} />}
+
+              <span onClick={() => onSeek(seg.startFrame)} style={{ fontSize: 9, color: C.textDim, width: 12 }}>{i + 1}</span>
+              <span onClick={() => onSeek(seg.startFrame)} style={{ fontSize: 10, color: C.text, flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                {seg.title}
+              </span>
+              {st && <div style={{ width: 6, height: 6, borderRadius: '50%', background: MC[st].color }} />}
+              <div style={{ display: 'flex', gap: 1 }}>
+                {(['good', 'bad', 'missing'] as MarkerType[]).map(t => (
+                  <button key={t} onClick={e => { e.stopPropagation(); onMarkSegment(seg, t); }}
+                    style={{ ...tinyBtn, color: MC[t].color, width: 16, height: 16 }}>
+                    {t === 'good' ? <CheckCircle size={8} weight="bold" /> : t === 'bad' ? <XCircle size={8} weight="bold" /> : <Warning size={8} weight="bold" />}
+                  </button>
+                ))}
+              </div>
+            </div>
+
+            {/* Expanded beats */}
+            {isExpanded && segBeats.map((beat: any) => {
+              const beatSt = getBeatStatus(beat);
+              const isBeatActive = currentFrame >= beat.startFrame && currentFrame < beat.endFrame;
+              const beatMeme = memesList.find((m: any) => m.beatId === beat.id);
+              const beatSfx = sfxList.filter((s: any) => s.frame >= beat.startFrame && s.frame < beat.endFrame);
+
+              return (
+                <div key={beat.id} style={{
+                  padding: '3px 12px 3px 32px', display: 'flex', alignItems: 'center', gap: 4,
+                  background: isBeatActive ? '#eef2ff' : 'transparent', fontSize: 10, cursor: 'pointer',
+                  borderLeft: `2px solid ${isBeatActive ? C.accent : 'transparent'}`,
+                }}>
+                  <span>{VICONS[beat.visualType] || '❓'}</span>
+                  <span onClick={() => onSeek(beat.startFrame)} style={{ flex: 1, color: C.text, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>
+                    {beat.id} <span style={{ color: C.textDim }}>{beat.durationSec}s</span>
+                    {beatMeme && <span style={{ marginLeft: 4 }}>😂</span>}
+                    {beatSfx.length > 0 && <span style={{ marginLeft: 2, color: C.textDim }}>🔊{beatSfx.length}</span>}
+                  </span>
+
+                  {/* Beat status dot */}
+                  {beatSt && <div style={{ width: 5, height: 5, borderRadius: '50%', background: MC[beatSt].color }} />}
+
+                  {/* Beat good/bad/missing */}
+                  <div style={{ display: 'flex', gap: 1 }}>
+                    {(['good', 'bad', 'missing'] as MarkerType[]).map(t => (
+                      <button key={t} onClick={e => { e.stopPropagation(); markBeatRange(beat, t); }}
+                        style={{ ...tinyBtn, color: MC[t].color, width: 14, height: 14 }}>
+                        {t === 'good' ? <CheckCircle size={7} weight="bold" /> : t === 'bad' ? <XCircle size={7} weight="bold" /> : <Warning size={7} weight="bold" />}
+                      </button>
+                    ))}
+                  </div>
+
+                  {/* Edit visual */}
+                  {beat.visualType === 'motion_graphics' && (
+                    <button onClick={e => {
+                      e.stopPropagation();
+                      window.dispatchEvent(new CustomEvent('editSegment', { detail: { segmentId: beat.segmentId, beatId: beat.id, file: beat.component } }));
+                    }}
+                      title="Edit in Visual tab"
+                      style={{ ...tinyBtn, color: C.accent, width: 16, height: 16 }}>
+                      ✏️
+                    </button>
+                  )}
+
+                  {/* Regen */}
+                  <button onClick={e => { e.stopPropagation(); handleRegenBeat(beat.id); }}
+                    disabled={regenerating === beat.id}
+                    style={{ ...tinyBtn, color: C.textDim, width: 16, height: 16, opacity: regenerating === beat.id ? 0.4 : 1 }}>
+                    {regenerating === beat.id ? <ArrowClockwise size={7} weight="bold" style={{ animation: 'spin 1s linear infinite' }} /> : <ArrowClockwise size={7} />}
+                  </button>
+                </div>
+              );
+            })}
+          </div>
+        );
+      })}
+    </div>
+  );
+}
+
+
 export default function ReviewPage() {
   const [projects, setProjects] = useState<string[]>([]);
   const [project, setProject] = useState('');
@@ -537,35 +741,18 @@ export default function ReviewPage() {
             })}
           </div>
 
-          {/* Segments list (compact) */}
-          <div style={{ borderTop: `1px solid ${C.border}`, maxHeight: '40%', overflow: 'auto' }}>
-            <div style={{ padding: '6px 12px', fontSize: 10, fontWeight: 600, color: C.textDim, textTransform: 'uppercase', letterSpacing: '0.05em' }}>
-              Segments
-            </div>
-            {segments.map((seg, i) => {
-              const st = segStatus(seg);
-              const isActive = currentSegment?.id === seg.id;
-              return (
-                <div key={seg.id} onClick={() => seekToFrame(seg.startFrame)} style={{
-                  padding: '4px 12px', cursor: 'pointer',
-                  background: isActive ? C.accentLight : 'transparent',
-                  display: 'flex', alignItems: 'center', gap: 4,
-                }}>
-                  <span style={{ fontSize: 9, color: C.textDim, width: 12 }}>{i + 1}</span>
-                  <span style={{ fontSize: 10, color: C.text, flex: 1, overflow: 'hidden', textOverflow: 'ellipsis', whiteSpace: 'nowrap' }}>{seg.title}</span>
-                  {st && <div style={{ width: 6, height: 6, borderRadius: '50%', background: MC[st].color }} />}
-                  <div style={{ display: 'flex', gap: 1 }}>
-                    {(['good', 'bad', 'missing'] as MarkerType[]).map(t => (
-                      <button key={t} onClick={e => { e.stopPropagation(); markSegment(seg, t); }}
-                        style={{ ...tinyBtn, color: MC[t].color, width: 16, height: 16 }}>
-                        {t === 'good' ? <CheckCircle size={8} weight="bold" /> : t === 'bad' ? <XCircle size={8} weight="bold" /> : <Warning size={8} weight="bold" />}
-                      </button>
-                    ))}
-                  </div>
-                </div>
-              );
-            })}
-          </div>
+          {/* Unified Segments + Beats (collapsible) */}
+          <UnifiedSegmentPanel
+            project={project}
+            segments={segments}
+            currentFrame={currentFrame}
+            fps={fps}
+            markers={markers}
+            onSeek={seekToFrame}
+            onMarkSegment={markSegment}
+            segStatus={segStatus}
+            currentSegment={currentSegment || null}
+          />
         </div>
       </div>
 

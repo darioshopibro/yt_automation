@@ -1,0 +1,22 @@
+{
+  "segment": "Take Back Control",
+  "sounds": [
+    {"frame": 8250, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "Scene 1 starts — balance scale visual appears"},
+    {"frame": 8400, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Scales icon pops in at center"},
+    {"frame": 8580, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.14, "reason": "Warning badges section slides in — AI fails"},
+    {"frame": 8780, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Problem-solving muscles badge pops in with spring"},
+    {"frame": 8850, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "Scene 2 crossfade — Who Thrives comparison"},
+    {"frame": 9028, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "Prompt Engineer card slides in"},
+    {"frame": 9130, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Independent Thinker card appears with glow"},
+    {"frame": 9260, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.12, "reason": "Outsourced reasoning section slides in"},
+    {"frame": 9390, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.16, "reason": "Scene 3 crossfade — Take Action section"},
+    {"frame": 9418, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "DELETE AI SHORTCUTS red banner springs in — big emphasis"},
+    {"frame": 9583, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "10-minute timer circle appears"},
+    {"frame": 9762, "type": "whoosh", "file": "whooshes/lofi-whoosh.mp3", "volume": 0.14, "reason": "Resistance section fades in"},
+    {"frame": 9800, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "Build-up before proof reveal"},
+    {"frame": 9842, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "Resistance = PROOF badge springs in — key insight"},
+    {"frame": 10050, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "CHOOSING vs COMPELLED section appears"},
+    {"frame": 10200, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "Build Friction bar starts filling"},
+    {"frame": 10355, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Final glow pulse on friction bar — segment climax"}
+  ]
+}

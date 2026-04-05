@@ -1,0 +1,25 @@
+{
+  "segment": "The Friction Ladder",
+  "sounds": [
+    {"frame": 4974, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "Scene 1 starts, title 'The Friction Ladder' appears"},
+    {"frame": 5128, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "TRIGGER circle pops in with spring animation"},
+    {"frame": 5160, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "REWARD circle pops in"},
+    {"frame": 5273, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.07, "reason": "Ban AI badge appears with X"},
+    {"frame": 5324, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Increasing resistance badge appears with checkmark"},
+    {"frame": 5392, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "Scene transition: concept fades out, timer practice fades in"},
+    {"frame": 5588, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.18, "reason": "5-minute timer circle pops in with spring scale"},
+    {"frame": 5666, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Think through the problem step appears"},
+    {"frame": 5840, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.20, "reason": "Solve it yourself step pops in with spring — key moment"},
+    {"frame": 6144, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.07, "reason": "Accomplishment badge appears"},
+    {"frame": 6182, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "Scene transition: timer fades out, ladder rungs scene fades in"},
+    {"frame": 6223, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "First rung (5 min) appears"},
+    {"frame": 6311, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "Second rung (15 min) appears"},
+    {"frame": 6387, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Third rung (30 min) appears"},
+    {"frame": 6483, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Fourth rung (60 min full hour) appears — climax of ladder"},
+    {"frame": 6560, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "No AI assistance success badge appears"},
+    {"frame": 6610, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "Scene transition: ladder fades out, brain rewiring scene fades in"},
+    {"frame": 6638, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "Build-up before brain rewiring reveal"},
+    {"frame": 6645, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.20, "reason": "Brain icon + LITERALLY REWIRES title pop in — biggest reveal"},
+    {"frame": 6913, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "Problem-solving pathway lights up with spring scale — final payoff"}
+  ]
+}

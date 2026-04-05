@@ -1,0 +1,59 @@
+{
+  "run_id": 390000,
+  "total_steps": 6,
+  "ok": 6,
+  "failed": 0,
+  "partial": 0,
+  "total_duration_s": 278.8,
+  "overall_status": "ok",
+  "steps": [
+    {
+      "step": "content_processing",
+      "status": "ok",
+      "duration_ms": 0,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "voiceover_generation",
+      "status": "ok",
+      "duration_ms": 56326,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "meme_research",
+      "status": "ok",
+      "duration_ms": 1746,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "ai_video_generation",
+      "status": "ok",
+      "duration_ms": 200611,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "visual_sound_build",
+      "status": "ok",
+      "duration_ms": 0,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    },
+    {
+      "step": "audio_mix",
+      "status": "ok",
+      "duration_ms": 20099,
+      "items_in": 0,
+      "items_out": 0,
+      "errors": []
+    }
+  ]
+}

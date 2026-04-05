@@ -1,0 +1,74 @@
+[
+  {
+    "prompt": "Cinematic dark office, mysterious hacker in hoodie at multiple glowing monitors displaying scrolling code, dramatic blue lighting, corporate espionage atmosphere, high contrast, professional cinematography",
+    "clip_name": "beat_1",
+    "steps": [
+      {
+        "step": "image_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_1.png"
+      },
+      {
+        "step": "video_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_1.mp4"
+      }
+    ],
+    "image_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_1.png",
+    "image_url": "https://v3b.fal.media/files/b/0a94f1d8/_EbmsKGjvFDbJNiumYhr6.jpg",
+    "video_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_1.mp4",
+    "video_url": "https://v3b.fal.media/files/b/0a94f1ec/bCPXlN0VkfqjChiqT9YEG_output.mp4",
+    "status": "ok",
+    "beat_id": "beat_1",
+    "startFrame": 0,
+    "endFrame": 600
+  },
+  {
+    "prompt": "Macro cinematic shot of hands carefully examining intricate mechanical lock mechanism, dramatic lighting, shallow depth of field, brass and steel textures, studying without breaking",
+    "clip_name": "beat_5",
+    "steps": [
+      {
+        "step": "image_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_5.png"
+      },
+      {
+        "step": "video_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_5.mp4"
+      }
+    ],
+    "image_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_5.png",
+    "image_url": "https://v3b.fal.media/files/b/0a94f1ed/cEeTKNezXVyt94Iw-qOvW.jpg",
+    "video_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_5.mp4",
+    "video_url": "https://v3b.fal.media/files/b/0a94f202/P0aojvAkPzvoyJlUfMQhx_output.mp4",
+    "status": "ok",
+    "beat_id": "beat_5",
+    "startFrame": 2004,
+    "endFrame": 2700
+  },
+  {
+    "prompt": "Professional workstation with Ghidra disassembler interface on screen, clean office environment, NSA logo visible, high-tech government facility aesthetic, crisp lighting, detailed UI elements",
+    "clip_name": "beat_17",
+    "steps": [
+      {
+        "step": "image_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_17.png"
+      },
+      {
+        "step": "video_gen",
+        "status": "ok",
+        "path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_17.mp4"
+      }
+    ],
+    "image_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_17.png",
+    "image_url": "https://v3b.fal.media/files/b/0a94f202/Y7JNU8CfeUGpi6uz-phG5.jpg",
+    "video_path": "/Users/dario61/Desktop/YT automation/tools/content-pipeline/../../workspace/reverse-engineering-and-security-analysis/ai-clips/beat_17.mp4",
+    "video_url": "https://v3b.fal.media/files/b/0a94f218/feNRF2rpooshhYts6cbdb_output.mp4",
+    "status": "ok",
+    "beat_id": "beat_17",
+    "startFrame": 10300,
+    "endFrame": 10595
+  }
+]

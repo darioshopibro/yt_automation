@@ -234,6 +234,13 @@ def _build_detail(topic_id):
     content_row.append({"text": "🔍 Research", "callback_data": f"research_{topic_id}"})
     buttons.append(content_row)
 
+    # Composition + memes row (available after processing)
+    if script:
+        buttons.append([
+            {"text": "🎬 Composition", "callback_data": f"comp_{topic_id}"},
+            {"text": "😂 Memes", "callback_data": f"memes_{topic_id}"},
+        ])
+
     buttons.append([{"text": "◀️ Back to List", "callback_data": "page_0"}])
 
     return "\n".join(lines), {"inline_keyboard": buttons}
@@ -385,6 +392,147 @@ def _build_research(topic_id):
     return "\n".join(lines), {"inline_keyboard": buttons}
 
 
+def _build_composition(topic_id):
+    """Build composition view — shows beats, SFX, memes, audio info."""
+    conn = db.get_connection()
+    topic = conn.execute("SELECT * FROM topics WHERE id=?", (topic_id,)).fetchone()
+    conn.close()
+    if not topic:
+        return "Not found.", {"inline_keyboard": [[{"text": "◀️ Back", "callback_data": "page_0"}]]}
+
+    topic = dict(topic)
+    slug = topic["slug"]
+
+    # Try to find composition in workspace
+    comp_path = os.path.join(os.path.dirname(__file__), "..", "..", "workspace", slug, "master-composition.json")
+    if not os.path.exists(comp_path):
+        return (
+            f"🎬 <b>Composition: {topic['title']}</b>\n\n"
+            f"No composition yet. Process the topic first.",
+            {"inline_keyboard": [
+                [{"text": "🎯 Process", "callback_data": f"process_{topic_id}"}],
+                [{"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}],
+            ]}
+        )
+
+    try:
+        with open(comp_path) as f:
+            comp = json.load(f)
+    except Exception:
+        return "❌ Failed to load composition.", {"inline_keyboard": [[{"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}]]}
+
+    beats = comp.get("beats", [])
+    sfx = comp.get("audio", {}).get("sfx", [])
+    memes = comp.get("memes", [])
+    clips = comp.get("aiVideoClips", [])
+    transitions = comp.get("transitions", [])
+    meta = comp.get("meta", {})
+
+    icons = {"ai_video": "🎬", "motion_graphics": "📊", "meme": "😂", "text_callout": "📝"}
+
+    lines = [
+        f"🎬 <b>{meta.get('title', topic['title'])}</b>\n",
+        f"⏱ {meta.get('totalDurationSec', '?')}s | {len(beats)} beats | {len(sfx)} SFX",
+        f"😂 {len(memes)} memes | 🎬 {len(clips)} AI clips | ↔ {len(transitions)} transitions\n",
+    ]
+
+    # SFX breakdown
+    sfx_types = {}
+    for s in sfx:
+        sfx_types[s["type"]] = sfx_types.get(s["type"], 0) + 1
+    if sfx_types:
+        lines.append(f"<b>🔊 SFX:</b> {', '.join(f'{t}:{c}' for t, c in sfx_types.items())}")
+
+    # Beat summary per segment
+    current_seg = None
+    for b in beats:
+        if b.get("isSegmentStart") or b.get("title") != current_seg:
+            current_seg = b.get("title", "")
+            lines.append(f"\n<b>── {current_seg} ──</b>")
+
+        icon = icons.get(b.get("visualType", ""), "❓")
+        dur = b.get("durationSec", "?")
+        intent = b.get("intent", "")
+        extra = ""
+        meme = next((m for m in memes if m.get("beatId") == b.get("id")), None)
+        if meme:
+            extra = f" 😂 {meme.get('name', '')[:20]}"
+
+        lines.append(f"  {icon} {dur}s {intent}{extra}")
+
+    buttons = [
+        [{"text": "📝 Script", "callback_data": f"script_{topic_id}"}, {"text": "😂 Memes", "callback_data": f"memes_{topic_id}"}],
+        [{"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}],
+    ]
+
+    return "\n".join(lines), {"inline_keyboard": buttons}
+
+
+def _build_memes_preview(topic_id):
+    """Build memes preview — shows memes selected for this topic."""
+    conn = db.get_connection()
+    topic = conn.execute("SELECT * FROM topics WHERE id=?", (topic_id,)).fetchone()
+    conn.close()
+    if not topic:
+        return "Not found.", {"inline_keyboard": [[{"text": "◀️ Back", "callback_data": "page_0"}]]}
+
+    topic = dict(topic)
+    slug = topic["slug"]
+
+    # Check composition for memes
+    comp_path = os.path.join(os.path.dirname(__file__), "..", "..", "workspace", slug, "master-composition.json")
+    memes = []
+    if os.path.exists(comp_path):
+        try:
+            with open(comp_path) as f:
+                comp = json.load(f)
+            memes = comp.get("memes", [])
+        except Exception:
+            pass
+
+    # Also check standalone memes file
+    memes_path = os.path.join(os.path.dirname(__file__), "..", "..", f"memes_{slug[:20]}.json")
+    topic_memes = []
+    if os.path.exists(memes_path):
+        try:
+            with open(memes_path) as f:
+                data = json.load(f)
+            topic_memes = data.get("topic_specific", [])[:5]
+        except Exception:
+            pass
+
+    lines = [f"😂 <b>Memes: {topic['title']}</b>\n"]
+
+    if memes:
+        lines.append(f"<b>In composition ({len(memes)}):</b>")
+        for m in memes:
+            name = m.get("name", m.get("title", "?"))
+            url = m.get("url", "")
+            lines.append(f"  • {name}")
+            if url:
+                lines.append(f"    <a href=\"{url}\">Preview ↗</a>")
+
+    if topic_memes:
+        lines.append(f"\n<b>Topic-specific from Reddit ({len(topic_memes)}):</b>")
+        for m in topic_memes:
+            title = m.get("title", "?")[:50]
+            score = m.get("score", 0)
+            url = m.get("url", "")
+            lines.append(f"  • [{score:,} pts] {title}")
+            if url:
+                lines.append(f"    <a href=\"{url}\">View ↗</a>")
+
+    if not memes and not topic_memes:
+        lines.append("No memes found. Run composition first.")
+
+    buttons = [
+        [{"text": "🎬 Composition", "callback_data": f"comp_{topic_id}"}],
+        [{"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}],
+    ]
+
+    return "\n".join(lines), {"inline_keyboard": buttons}
+
+
 # ==========================================
 # Callback Handler — ALWAYS edits existing message
 # ==========================================
@@ -464,9 +612,9 @@ def _handle_callback(chat_id, message_id, data, callback_id):
         conn = db.get_connection()
         t = conn.execute("SELECT title FROM topics WHERE id=?", (topic_id,)).fetchone()["title"]
         conn.close()
-        edit_message(chat_id, message_id, f"🎯 <b>Processing:</b> {t}\n⏳ Fetching transcripts → angle → script... (2-3 min)", {"inline_keyboard": []})
-        from content_processor import process_topic
-        result = process_topic(topic_id)
+        edit_message(chat_id, message_id, f"🎯 <b>Full Pipeline:</b> {t}\n⏳ Script → SFX → Visual Plan → AI Video → Mix → Concat... (5-10 min)", {"inline_keyboard": []})
+        from full_pipeline import run_full_pipeline
+        result = run_full_pipeline(topic_id)
         if result.get("error"):
             edit_message(chat_id, message_id, f"❌ <b>Error:</b> {result['error']}",
                          {"inline_keyboard": [[{"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}]]})
@@ -485,6 +633,7 @@ def _handle_callback(chat_id, message_id, data, callback_id):
             )
             buttons = [
                 [{"text": "📝 Script", "callback_data": f"script_{topic_id}"}, {"text": "✏️ Rewrite", "callback_data": f"rewrite_{topic_id}"}],
+                [{"text": "🎬 Composition", "callback_data": f"comp_{topic_id}"}, {"text": "😂 Memes", "callback_data": f"memes_{topic_id}"}],
                 [{"text": "✅ Approve", "callback_data": f"approve_{topic_id}"}, {"text": "◀️ Back", "callback_data": f"detail_{topic_id}"}],
             ]
             edit_message(chat_id, message_id, text, {"inline_keyboard": buttons})
@@ -544,6 +693,14 @@ def _handle_callback(chat_id, message_id, data, callback_id):
         feedback = feedback_map.get(action, "Improve the script overall.")
 
         _do_rewrite_with_feedback(chat_id, message_id, topic_id, feedback)
+
+    elif action == "comp":
+        text, markup = _build_composition(topic_id)
+        edit_message(chat_id, message_id, text, markup)
+
+    elif action == "memes":
+        text, markup = _build_memes_preview(topic_id)
+        edit_message(chat_id, message_id, text, markup)
 
     elif action == "research":
         edit_message(chat_id, message_id, "🔍 <b>Researching...</b>", {"inline_keyboard": []})

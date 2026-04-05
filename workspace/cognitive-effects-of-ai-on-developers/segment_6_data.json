@@ -1,0 +1,1186 @@
+{
+  "step": 6,
+  "title": "Take Back Control",
+  "startFrame": 8258,
+  "endFrame": 10415,
+  "componentPath": "src/visuals/Generated_TakeBackControl.tsx",
+  "transcriptSegment": "This isn't about becoming an A I purist or rejecting helpful tools. It's about maintaining the cognitive flexibility that makes you valuable as a developer. When A I inevitably fails or hallucinates or gives you deprecated solutions, you need those problem-solving muscles to still work.\n\nThe developers who will thrive in an A I-dominated future aren't the ones who can prompt engineer the best. They're the ones who can still think through problems independently when they need to. They're the ones whose brains haven't completely outsourced reasoning to external systems.\n\nDelete your A I shortcuts right now. Not permanently, just for today. Set a ten-minute timer and tackle your next coding problem without reaching for assistance. Your brain will resist this change, but that resistance is exactly the proof that you need to do it.\n\nThe goal isn't to eliminate A I from your workflow. It's to make sure you're choosing to use it, instead of being compelled to use it. Start building that friction today, before your problem-solving ability completely atrophies.",
+  "timestamps": [
+    {
+      "word": "isn't",
+      "start": 275.263,
+      "end": 275.507,
+      "startFrame": 8258,
+      "endFrame": 8265
+    },
+    {
+      "word": "about",
+      "start": 275.542,
+      "end": 275.751,
+      "startFrame": 8266,
+      "endFrame": 8273
+    },
+    {
+      "word": "becoming",
+      "start": 275.797,
+      "end": 276.157,
+      "startFrame": 8274,
+      "endFrame": 8285
+    },
+    {
+      "word": "an",
+      "start": 276.203,
+      "end": 276.262,
+      "startFrame": 8286,
+      "endFrame": 8288
+    },
+    {
+      "word": "A",
+      "start": 276.378,
+      "end": 276.494,
+      "startFrame": 8291,
+      "endFrame": 8295
+    },
+    {
+      "word": "I",
+      "start": 276.61,
+      "end": 276.656,
+      "startFrame": 8298,
+      "endFrame": 8300
+    },
+    {
+      "word": "purist",
+      "start": 276.772,
+      "end": 277.295,
+      "startFrame": 8303,
+      "endFrame": 8319
+    },
+    {
+      "word": "or",
+      "start": 277.736,
+      "end": 277.933,
+      "startFrame": 8332,
+      "endFrame": 8338
+    },
+    {
+      "word": "rejecting",
+      "start": 278.003,
+      "end": 278.467,
+      "startFrame": 8340,
+      "endFrame": 8354
+    },
+    {
+      "word": "helpful",
+      "start": 278.537,
+      "end": 278.851,
+      "startFrame": 8356,
+      "endFrame": 8366
+    },
+    {
+      "word": "tools.",
+      "start": 278.909,
+      "end": 279.501,
+      "startFrame": 8367,
+      "endFrame": 8385
+    },
+    {
+      "word": "It's",
+      "start": 279.942,
+      "end": 280.139,
+      "startFrame": 8398,
+      "endFrame": 8404
+    },
+    {
+      "word": "about",
+      "start": 280.174,
+      "end": 280.395,
+      "startFrame": 8405,
+      "endFrame": 8412
+    },
+    {
+      "word": "maintaining",
+      "start": 280.464,
+      "end": 281.103,
+      "startFrame": 8414,
+      "endFrame": 8433
+    },
+    {
+      "word": "the",
+      "start": 281.173,
+      "end": 281.254,
+      "startFrame": 8435,
+      "endFrame": 8438
+    },
+    {
+      "word": "cognitive",
+      "start": 281.347,
+      "end": 281.985,
+      "startFrame": 8440,
+      "endFrame": 8460
+    },
+    {
+      "word": "flexibility",
+      "start": 282.032,
+      "end": 282.821,
+      "startFrame": 8461,
+      "endFrame": 8485
+    },
+    {
+      "word": "that",
+      "start": 283.262,
+      "end": 283.448,
+      "startFrame": 8498,
+      "endFrame": 8503
+    },
+    {
+      "word": "makes",
+      "start": 283.506,
+      "end": 283.715,
+      "startFrame": 8505,
+      "endFrame": 8511
+    },
+    {
+      "word": "you",
+      "start": 283.762,
+      "end": 283.854,
+      "startFrame": 8513,
+      "endFrame": 8516
+    },
+    {
+      "word": "valuable",
+      "start": 283.971,
+      "end": 284.493,
+      "startFrame": 8519,
+      "endFrame": 8535
+    },
+    {
+      "word": "as",
+      "start": 284.516,
+      "end": 284.598,
+      "startFrame": 8535,
+      "endFrame": 8538
+    },
+    {
+      "word": "a",
+      "start": 284.656,
+      "end": 284.69,
+      "startFrame": 8540,
+      "endFrame": 8541
+    },
+    {
+      "word": "developer.",
+      "start": 284.748,
+      "end": 285.41,
+      "startFrame": 8542,
+      "endFrame": 8562
+    },
+    {
+      "word": "When",
+      "start": 286.107,
+      "end": 286.304,
+      "startFrame": 8583,
+      "endFrame": 8589
+    },
+    {
+      "word": "A",
+      "start": 286.374,
+      "end": 286.49,
+      "startFrame": 8591,
+      "endFrame": 8595
+    },
+    {
+      "word": "I",
+      "start": 286.606,
+      "end": 286.652,
+      "startFrame": 8598,
+      "endFrame": 8600
+    },
+    {
+      "word": "inevitably",
+      "start": 286.78,
+      "end": 287.384,
+      "startFrame": 8603,
+      "endFrame": 8622
+    },
+    {
+      "word": "fails",
+      "start": 287.477,
+      "end": 288.046,
+      "startFrame": 8624,
+      "endFrame": 8641
+    },
+    {
+      "word": "or",
+      "start": 288.162,
+      "end": 288.324,
+      "startFrame": 8645,
+      "endFrame": 8650
+    },
+    {
+      "word": "hallucinates",
+      "start": 288.394,
+      "end": 289.067,
+      "startFrame": 8652,
+      "endFrame": 8672
+    },
+    {
+      "word": "or",
+      "start": 289.125,
+      "end": 289.276,
+      "startFrame": 8674,
+      "endFrame": 8678
+    },
+    {
+      "word": "gives",
+      "start": 289.659,
+      "end": 289.892,
+      "startFrame": 8690,
+      "endFrame": 8697
+    },
+    {
+      "word": "you",
+      "start": 289.926,
+      "end": 290.008,
+      "startFrame": 8698,
+      "endFrame": 8700
+    },
+    {
+      "word": "deprecated",
+      "start": 290.124,
+      "end": 290.762,
+      "startFrame": 8704,
+      "endFrame": 8723
+    },
+    {
+      "word": "solutions,",
+      "start": 290.809,
+      "end": 291.61,
+      "startFrame": 8724,
+      "endFrame": 8748
+    },
+    {
+      "word": "you",
+      "start": 292.121,
+      "end": 292.225,
+      "startFrame": 8764,
+      "endFrame": 8767
+    },
+    {
+      "word": "need",
+      "start": 292.283,
+      "end": 292.469,
+      "startFrame": 8768,
+      "endFrame": 8774
+    },
+    {
+      "word": "those",
+      "start": 292.504,
+      "end": 292.713,
+      "startFrame": 8775,
+      "endFrame": 8781
+    },
+    {
+      "word": "problem-solving",
+      "start": 292.783,
+      "end": 293.607,
+      "startFrame": 8783,
+      "endFrame": 8808
+    },
+    {
+      "word": "muscles",
+      "start": 293.665,
+      "end": 294.048,
+      "startFrame": 8810,
+      "endFrame": 8821
+    },
+    {
+      "word": "to",
+      "start": 294.118,
+      "end": 294.222,
+      "startFrame": 8824,
+      "endFrame": 8827
+    },
+    {
+      "word": "still",
+      "start": 294.292,
+      "end": 294.559,
+      "startFrame": 8829,
+      "endFrame": 8837
+    },
+    {
+      "word": "work.\n\nThe",
+      "start": 294.617,
+      "end": 295.859,
+      "startFrame": 8839,
+      "endFrame": 8876
+    },
+    {
+      "word": "developers",
+      "start": 295.929,
+      "end": 296.486,
+      "startFrame": 8878,
+      "endFrame": 8895
+    },
+    {
+      "word": "who",
+      "start": 296.521,
+      "end": 296.625,
+      "startFrame": 8896,
+      "endFrame": 8899
+    },
+    {
+      "word": "will",
+      "start": 296.672,
+      "end": 296.823,
+      "startFrame": 8900,
+      "endFrame": 8905
+    },
+    {
+      "word": "thrive",
+      "start": 296.881,
+      "end": 297.368,
+      "startFrame": 8906,
+      "endFrame": 8921
+    },
+    {
+      "word": "in",
+      "start": 297.415,
+      "end": 297.485,
+      "startFrame": 8922,
+      "endFrame": 8925
+    },
+    {
+      "word": "an",
+      "start": 297.554,
+      "end": 297.624,
+      "startFrame": 8927,
+      "endFrame": 8929
+    },
+    {
+      "word": "A",
+      "start": 297.74,
+      "end": 297.914,
+      "startFrame": 8932,
+      "endFrame": 8937
+    },
+    {
+      "word": "I-dominated",
+      "start": 298.042,
+      "end": 298.936,
+      "startFrame": 8941,
+      "endFrame": 8968
+    },
+    {
+      "word": "future",
+      "start": 298.994,
+      "end": 299.528,
+      "startFrame": 8970,
+      "endFrame": 8986
+    },
+    {
+      "word": "aren't",
+      "start": 299.969,
+      "end": 300.306,
+      "startFrame": 8999,
+      "endFrame": 9009
+    },
+    {
+      "word": "the",
+      "start": 300.352,
+      "end": 300.422,
+      "startFrame": 9011,
+      "endFrame": 9013
+    },
+    {
+      "word": "ones",
+      "start": 300.503,
+      "end": 300.689,
+      "startFrame": 9015,
+      "endFrame": 9021
+    },
+    {
+      "word": "who",
+      "start": 300.712,
+      "end": 300.805,
+      "startFrame": 9021,
+      "endFrame": 9024
+    },
+    {
+      "word": "can",
+      "start": 300.852,
+      "end": 300.968,
+      "startFrame": 9026,
+      "endFrame": 9029
+    },
+    {
+      "word": "prompt",
+      "start": 301.037,
+      "end": 301.363,
+      "startFrame": 9031,
+      "endFrame": 9041
+    },
+    {
+      "word": "engineer",
+      "start": 301.432,
+      "end": 301.873,
+      "startFrame": 9043,
+      "endFrame": 9056
+    },
+    {
+      "word": "the",
+      "start": 301.931,
+      "end": 302.001,
+      "startFrame": 9058,
+      "endFrame": 9060
+    },
+    {
+      "word": "best.",
+      "start": 302.048,
+      "end": 302.616,
+      "startFrame": 9061,
+      "endFrame": 9078
+    },
+    {
+      "word": "They're",
+      "start": 303.22,
+      "end": 303.51,
+      "startFrame": 9097,
+      "endFrame": 9105
+    },
+    {
+      "word": "the",
+      "start": 303.545,
+      "end": 303.615,
+      "startFrame": 9106,
+      "endFrame": 9108
+    },
+    {
+      "word": "ones",
+      "start": 303.685,
+      "end": 303.847,
+      "startFrame": 9111,
+      "endFrame": 9115
+    },
+    {
+      "word": "who",
+      "start": 303.87,
+      "end": 303.975,
+      "startFrame": 9116,
+      "endFrame": 9119
+    },
+    {
+      "word": "can",
+      "start": 304.021,
+      "end": 304.137,
+      "startFrame": 9121,
+      "endFrame": 9124
+    },
+    {
+      "word": "still",
+      "start": 304.195,
+      "end": 304.416,
+      "startFrame": 9126,
+      "endFrame": 9132
+    },
+    {
+      "word": "think",
+      "start": 304.474,
+      "end": 304.648,
+      "startFrame": 9134,
+      "endFrame": 9139
+    },
+    {
+      "word": "through",
+      "start": 304.706,
+      "end": 304.927,
+      "startFrame": 9141,
+      "endFrame": 9148
+    },
+    {
+      "word": "problems",
+      "start": 304.973,
+      "end": 305.414,
+      "startFrame": 9149,
+      "endFrame": 9162
+    },
+    {
+      "word": "independently",
+      "start": 305.496,
+      "end": 306.285,
+      "startFrame": 9165,
+      "endFrame": 9189
+    },
+    {
+      "word": "when",
+      "start": 306.332,
+      "end": 306.459,
+      "startFrame": 9190,
+      "endFrame": 9194
+    },
+    {
+      "word": "they",
+      "start": 306.483,
+      "end": 306.587,
+      "startFrame": 9194,
+      "endFrame": 9198
+    },
+    {
+      "word": "need",
+      "start": 306.633,
+      "end": 306.808,
+      "startFrame": 9199,
+      "endFrame": 9204
+    },
+    {
+      "word": "to.",
+      "start": 306.854,
+      "end": 307.191,
+      "startFrame": 9206,
+      "endFrame": 9216
+    },
+    {
+      "word": "They're",
+      "start": 307.887,
+      "end": 308.178,
+      "startFrame": 9237,
+      "endFrame": 9245
+    },
+    {
+      "word": "the",
+      "start": 308.212,
+      "end": 308.282,
+      "startFrame": 9246,
+      "endFrame": 9248
+    },
+    {
+      "word": "ones",
+      "start": 308.363,
+      "end": 308.549,
+      "startFrame": 9251,
+      "endFrame": 9256
+    },
+    {
+      "word": "whose",
+      "start": 308.584,
+      "end": 308.781,
+      "startFrame": 9258,
+      "endFrame": 9263
+    },
+    {
+      "word": "brains",
+      "start": 308.828,
+      "end": 309.188,
+      "startFrame": 9265,
+      "endFrame": 9276
+    },
+    {
+      "word": "haven't",
+      "start": 309.246,
+      "end": 309.49,
+      "startFrame": 9277,
+      "endFrame": 9285
+    },
+    {
+      "word": "completely",
+      "start": 309.536,
+      "end": 310.082,
+      "startFrame": 9286,
+      "endFrame": 9302
+    },
+    {
+      "word": "outsourced",
+      "start": 310.175,
+      "end": 310.801,
+      "startFrame": 9305,
+      "endFrame": 9324
+    },
+    {
+      "word": "reasoning",
+      "start": 310.917,
+      "end": 311.37,
+      "startFrame": 9328,
+      "endFrame": 9341
+    },
+    {
+      "word": "to",
+      "start": 311.428,
+      "end": 311.498,
+      "startFrame": 9343,
+      "endFrame": 9345
+    },
+    {
+      "word": "external",
+      "start": 311.579,
+      "end": 312.032,
+      "startFrame": 9347,
+      "endFrame": 9361
+    },
+    {
+      "word": "systems.\n\nDelete",
+      "start": 312.09,
+      "end": 314.04,
+      "startFrame": 9363,
+      "endFrame": 9421
+    },
+    {
+      "word": "your",
+      "start": 314.075,
+      "end": 314.191,
+      "startFrame": 9422,
+      "endFrame": 9426
+    },
+    {
+      "word": "A",
+      "start": 314.261,
+      "end": 314.377,
+      "startFrame": 9428,
+      "endFrame": 9431
+    },
+    {
+      "word": "I",
+      "start": 314.493,
+      "end": 314.54,
+      "startFrame": 9435,
+      "endFrame": 9436
+    },
+    {
+      "word": "shortcuts",
+      "start": 314.656,
+      "end": 315.167,
+      "startFrame": 9440,
+      "endFrame": 9455
+    },
+    {
+      "word": "right",
+      "start": 315.259,
+      "end": 315.457,
+      "startFrame": 9458,
+      "endFrame": 9464
+    },
+    {
+      "word": "now.",
+      "start": 315.503,
+      "end": 315.886,
+      "startFrame": 9465,
+      "endFrame": 9477
+    },
+    {
+      "word": "Not",
+      "start": 316.583,
+      "end": 316.792,
+      "startFrame": 9497,
+      "endFrame": 9504
+    },
+    {
+      "word": "permanently,",
+      "start": 316.85,
+      "end": 317.535,
+      "startFrame": 9506,
+      "endFrame": 9526
+    },
+    {
+      "word": "just",
+      "start": 317.709,
+      "end": 317.941,
+      "startFrame": 9531,
+      "endFrame": 9538
+    },
+    {
+      "word": "for",
+      "start": 317.988,
+      "end": 318.092,
+      "startFrame": 9540,
+      "endFrame": 9543
+    },
+    {
+      "word": "today.",
+      "start": 318.162,
+      "end": 318.708,
+      "startFrame": 9545,
+      "endFrame": 9561
+    },
+    {
+      "word": "Set",
+      "start": 319.52,
+      "end": 319.741,
+      "startFrame": 9586,
+      "endFrame": 9592
+    },
+    {
+      "word": "a",
+      "start": 319.787,
+      "end": 319.811,
+      "startFrame": 9594,
+      "endFrame": 9594
+    },
+    {
+      "word": "ten-minute",
+      "start": 319.88,
+      "end": 320.356,
+      "startFrame": 9596,
+      "endFrame": 9611
+    },
+    {
+      "word": "timer",
+      "start": 320.379,
+      "end": 320.751,
+      "startFrame": 9611,
+      "endFrame": 9623
+    },
+    {
+      "word": "and",
+      "start": 321.03,
+      "end": 321.285,
+      "startFrame": 9631,
+      "endFrame": 9639
+    },
+    {
+      "word": "tackle",
+      "start": 321.343,
+      "end": 321.703,
+      "startFrame": 9640,
+      "endFrame": 9651
+    },
+    {
+      "word": "your",
+      "start": 321.738,
+      "end": 321.854,
+      "startFrame": 9652,
+      "endFrame": 9656
+    },
+    {
+      "word": "next",
+      "start": 321.924,
+      "end": 322.144,
+      "startFrame": 9658,
+      "endFrame": 9664
+    },
+    {
+      "word": "coding",
+      "start": 322.202,
+      "end": 322.492,
+      "startFrame": 9666,
+      "endFrame": 9675
+    },
+    {
+      "word": "problem",
+      "start": 322.539,
+      "end": 322.922,
+      "startFrame": 9676,
+      "endFrame": 9688
+    },
+    {
+      "word": "without",
+      "start": 323.247,
+      "end": 323.584,
+      "startFrame": 9697,
+      "endFrame": 9708
+    },
+    {
+      "word": "reaching",
+      "start": 323.63,
+      "end": 323.909,
+      "startFrame": 9709,
+      "endFrame": 9717
+    },
+    {
+      "word": "for",
+      "start": 323.967,
+      "end": 324.071,
+      "startFrame": 9719,
+      "endFrame": 9722
+    },
+    {
+      "word": "assistance.",
+      "start": 324.118,
+      "end": 324.814,
+      "startFrame": 9724,
+      "endFrame": 9744
+    },
+    {
+      "word": "Your",
+      "start": 325.511,
+      "end": 325.697,
+      "startFrame": 9765,
+      "endFrame": 9771
+    },
+    {
+      "word": "brain",
+      "start": 325.755,
+      "end": 325.999,
+      "startFrame": 9773,
+      "endFrame": 9780
+    },
+    {
+      "word": "will",
+      "start": 326.034,
+      "end": 326.196,
+      "startFrame": 9781,
+      "endFrame": 9786
+    },
+    {
+      "word": "resist",
+      "start": 326.254,
+      "end": 326.66,
+      "startFrame": 9788,
+      "endFrame": 9800
+    },
+    {
+      "word": "this",
+      "start": 326.707,
+      "end": 326.858,
+      "startFrame": 9801,
+      "endFrame": 9806
+    },
+    {
+      "word": "change,",
+      "start": 326.927,
+      "end": 327.461,
+      "startFrame": 9808,
+      "endFrame": 9824
+    },
+    {
+      "word": "but",
+      "start": 327.786,
+      "end": 327.937,
+      "startFrame": 9834,
+      "endFrame": 9838
+    },
+    {
+      "word": "that",
+      "start": 327.972,
+      "end": 328.1,
+      "startFrame": 9839,
+      "endFrame": 9843
+    },
+    {
+      "word": "resistance",
+      "start": 328.158,
+      "end": 328.692,
+      "startFrame": 9845,
+      "endFrame": 9861
+    },
+    {
+      "word": "is",
+      "start": 328.738,
+      "end": 328.843,
+      "startFrame": 9862,
+      "endFrame": 9865
+    },
+    {
+      "word": "exactly",
+      "start": 328.924,
+      "end": 329.528,
+      "startFrame": 9868,
+      "endFrame": 9886
+    },
+    {
+      "word": "the",
+      "start": 329.586,
+      "end": 329.655,
+      "startFrame": 9888,
+      "endFrame": 9890
+    },
+    {
+      "word": "proof",
+      "start": 329.737,
+      "end": 330.015,
+      "startFrame": 9892,
+      "endFrame": 9900
+    },
+    {
+      "word": "that",
+      "start": 330.073,
+      "end": 330.201,
+      "startFrame": 9902,
+      "endFrame": 9906
+    },
+    {
+      "word": "you",
+      "start": 330.247,
+      "end": 330.329,
+      "startFrame": 9907,
+      "endFrame": 9910
+    },
+    {
+      "word": "need",
+      "start": 330.387,
+      "end": 330.561,
+      "startFrame": 9912,
+      "endFrame": 9917
+    },
+    {
+      "word": "to",
+      "start": 330.596,
+      "end": 330.642,
+      "startFrame": 9918,
+      "endFrame": 9919
+    },
+    {
+      "word": "do",
+      "start": 330.712,
+      "end": 330.828,
+      "startFrame": 9921,
+      "endFrame": 9925
+    },
+    {
+      "word": "it.\n\nThe",
+      "start": 330.909,
+      "end": 331.873,
+      "startFrame": 9927,
+      "endFrame": 9956
+    },
+    {
+      "word": "goal",
+      "start": 331.931,
+      "end": 332.151,
+      "startFrame": 9958,
+      "endFrame": 9965
+    },
+    {
+      "word": "isn't",
+      "start": 332.221,
+      "end": 332.465,
+      "startFrame": 9967,
+      "endFrame": 9974
+    },
+    {
+      "word": "to",
+      "start": 332.5,
+      "end": 332.569,
+      "startFrame": 9975,
+      "endFrame": 9977
+    },
+    {
+      "word": "eliminate",
+      "start": 332.639,
+      "end": 333.103,
+      "startFrame": 9979,
+      "endFrame": 9993
+    },
+    {
+      "word": "A",
+      "start": 333.173,
+      "end": 333.301,
+      "startFrame": 9995,
+      "endFrame": 9999
+    },
+    {
+      "word": "I",
+      "start": 333.475,
+      "end": 333.591,
+      "startFrame": 10004,
+      "endFrame": 10008
+    },
+    {
+      "word": "from",
+      "start": 333.742,
+      "end": 333.893,
+      "startFrame": 10012,
+      "endFrame": 10017
+    },
+    {
+      "word": "your",
+      "start": 333.951,
+      "end": 334.067,
+      "startFrame": 10019,
+      "endFrame": 10022
+    },
+    {
+      "word": "workflow.",
+      "start": 334.114,
+      "end": 334.752,
+      "startFrame": 10023,
+      "endFrame": 10043
+    },
+    {
+      "word": "It's",
+      "start": 335.193,
+      "end": 335.379,
+      "startFrame": 10056,
+      "endFrame": 10061
+    },
+    {
+      "word": "to",
+      "start": 335.425,
+      "end": 335.472,
+      "startFrame": 10063,
+      "endFrame": 10064
+    },
+    {
+      "word": "make",
+      "start": 335.53,
+      "end": 335.681,
+      "startFrame": 10066,
+      "endFrame": 10070
+    },
+    {
+      "word": "sure",
+      "start": 335.716,
+      "end": 335.902,
+      "startFrame": 10071,
+      "endFrame": 10077
+    },
+    {
+      "word": "you're",
+      "start": 335.936,
+      "end": 336.11,
+      "startFrame": 10078,
+      "endFrame": 10083
+    },
+    {
+      "word": "choosing",
+      "start": 336.145,
+      "end": 336.575,
+      "startFrame": 10084,
+      "endFrame": 10097
+    },
+    {
+      "word": "to",
+      "start": 336.633,
+      "end": 336.703,
+      "startFrame": 10099,
+      "endFrame": 10101
+    },
+    {
+      "word": "use",
+      "start": 336.795,
+      "end": 337.028,
+      "startFrame": 10104,
+      "endFrame": 10111
+    },
+    {
+      "word": "it,",
+      "start": 337.074,
+      "end": 337.306,
+      "startFrame": 10112,
+      "endFrame": 10119
+    },
+    {
+      "word": "instead",
+      "start": 337.631,
+      "end": 337.991,
+      "startFrame": 10129,
+      "endFrame": 10140
+    },
+    {
+      "word": "of",
+      "start": 338.026,
+      "end": 338.073,
+      "startFrame": 10141,
+      "endFrame": 10142
+    },
+    {
+      "word": "being",
+      "start": 338.131,
+      "end": 338.293,
+      "startFrame": 10144,
+      "endFrame": 10149
+    },
+    {
+      "word": "compelled",
+      "start": 338.34,
+      "end": 338.792,
+      "startFrame": 10150,
+      "endFrame": 10164
+    },
+    {
+      "word": "to",
+      "start": 338.827,
+      "end": 338.885,
+      "startFrame": 10165,
+      "endFrame": 10167
+    },
+    {
+      "word": "use",
+      "start": 338.967,
+      "end": 339.187,
+      "startFrame": 10169,
+      "endFrame": 10176
+    },
+    {
+      "word": "it.",
+      "start": 339.234,
+      "end": 339.466,
+      "startFrame": 10177,
+      "endFrame": 10184
+    },
+    {
+      "word": "Start",
+      "start": 340.162,
+      "end": 340.453,
+      "startFrame": 10205,
+      "endFrame": 10214
+    },
+    {
+      "word": "building",
+      "start": 340.511,
+      "end": 340.871,
+      "startFrame": 10215,
+      "endFrame": 10226
+    },
+    {
+      "word": "that",
+      "start": 340.929,
+      "end": 341.08,
+      "startFrame": 10228,
+      "endFrame": 10232
+    },
+    {
+      "word": "friction",
+      "start": 341.149,
+      "end": 341.509,
+      "startFrame": 10234,
+      "endFrame": 10245
+    },
+    {
+      "word": "today,",
+      "start": 341.567,
+      "end": 342.206,
+      "startFrame": 10247,
+      "endFrame": 10266
+    },
+    {
+      "word": "before",
+      "start": 342.531,
+      "end": 342.821,
+      "startFrame": 10276,
+      "endFrame": 10285
+    },
+    {
+      "word": "your",
+      "start": 342.856,
+      "end": 342.984,
+      "startFrame": 10286,
+      "endFrame": 10290
+    },
+    {
+      "word": "problem-solving",
+      "start": 343.042,
+      "end": 343.785,
+      "startFrame": 10291,
+      "endFrame": 10314
+    },
+    {
+      "word": "ability",
+      "start": 343.831,
+      "end": 344.249,
+      "startFrame": 10315,
+      "endFrame": 10327
+    },
+    {
+      "word": "completely",
+      "start": 344.458,
+      "end": 345.085,
+      "startFrame": 10334,
+      "endFrame": 10353
+    },
+    {
+      "word": "atrophies.",
+      "start": 345.166,
+      "end": 346.165,
+      "startFrame": 10355,
+      "endFrame": 10385
+    }
+  ]
+}

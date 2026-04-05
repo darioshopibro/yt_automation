@@ -1,0 +1,885 @@
+{
+  "step": 3,
+  "title": "The Craving Trap",
+  "startFrame": 3217,
+  "endFrame": 4770,
+  "componentPath": "src/visuals/Generated_TheCravingTrap.tsx",
+  "transcriptSegment": "Every coding challenge now triggers an immediate craving to just ask the A I. You'll be staring at a perfectly solvable bug, and your brain starts generating excuses. \"It'll be faster this way.\" \"I can learn from the A I's approach.\" \"I'm being efficient with my time.\" But efficiency isn't the real driver here. The craving is.\n\nThe most insidious part is that knowing you're addicted doesn't help you stop. Addiction never works that way. In 2023, git hub surveyed developers who recognized their over-dependence on Copilot. Ninety-one percent said they wanted to reduce their usage. Only twelve percent actually managed to do it for more than a week. The knowledge that something is bad for you doesn't override the neurochemical compulsion to keep doing it.",
+  "timestamps": [
+    {
+      "word": "hand.\n\nEvery",
+      "start": 107.22,
+      "end": 108.636,
+      "startFrame": 3217,
+      "endFrame": 3259
+    },
+    {
+      "word": "coding",
+      "start": 108.695,
+      "end": 108.985,
+      "startFrame": 3261,
+      "endFrame": 3270
+    },
+    {
+      "word": "challenge",
+      "start": 109.031,
+      "end": 109.438,
+      "startFrame": 3271,
+      "endFrame": 3283
+    },
+    {
+      "word": "now",
+      "start": 109.484,
+      "end": 109.6,
+      "startFrame": 3285,
+      "endFrame": 3288
+    },
+    {
+      "word": "triggers",
+      "start": 109.658,
+      "end": 109.972,
+      "startFrame": 3290,
+      "endFrame": 3299
+    },
+    {
+      "word": "an",
+      "start": 110.018,
+      "end": 110.076,
+      "startFrame": 3301,
+      "endFrame": 3302
+    },
+    {
+      "word": "immediate",
+      "start": 110.111,
+      "end": 110.529,
+      "startFrame": 3303,
+      "endFrame": 3316
+    },
+    {
+      "word": "craving",
+      "start": 110.564,
+      "end": 110.935,
+      "startFrame": 3317,
+      "endFrame": 3328
+    },
+    {
+      "word": "to",
+      "start": 110.993,
+      "end": 111.063,
+      "startFrame": 3330,
+      "endFrame": 3332
+    },
+    {
+      "word": "just",
+      "start": 111.133,
+      "end": 111.307,
+      "startFrame": 3334,
+      "endFrame": 3339
+    },
+    {
+      "word": "ask",
+      "start": 111.377,
+      "end": 111.678,
+      "startFrame": 3341,
+      "endFrame": 3350
+    },
+    {
+      "word": "the",
+      "start": 111.748,
+      "end": 111.853,
+      "startFrame": 3352,
+      "endFrame": 3356
+    },
+    {
+      "word": "A",
+      "start": 111.934,
+      "end": 112.05,
+      "startFrame": 3358,
+      "endFrame": 3362
+    },
+    {
+      "word": "I.",
+      "start": 112.166,
+      "end": 112.584,
+      "startFrame": 3365,
+      "endFrame": 3378
+    },
+    {
+      "word": "You'll",
+      "start": 113.281,
+      "end": 113.501,
+      "startFrame": 3398,
+      "endFrame": 3405
+    },
+    {
+      "word": "be",
+      "start": 113.536,
+      "end": 113.606,
+      "startFrame": 3406,
+      "endFrame": 3408
+    },
+    {
+      "word": "staring",
+      "start": 113.64,
+      "end": 114.0,
+      "startFrame": 3409,
+      "endFrame": 3420
+    },
+    {
+      "word": "at",
+      "start": 114.047,
+      "end": 114.105,
+      "startFrame": 3421,
+      "endFrame": 3423
+    },
+    {
+      "word": "a",
+      "start": 114.151,
+      "end": 114.175,
+      "startFrame": 3425,
+      "endFrame": 3425
+    },
+    {
+      "word": "perfectly",
+      "start": 114.244,
+      "end": 114.685,
+      "startFrame": 3427,
+      "endFrame": 3441
+    },
+    {
+      "word": "solvable",
+      "start": 114.743,
+      "end": 115.243,
+      "startFrame": 3442,
+      "endFrame": 3457
+    },
+    {
+      "word": "bug,",
+      "start": 115.289,
+      "end": 115.742,
+      "startFrame": 3459,
+      "endFrame": 3472
+    },
+    {
+      "word": "and",
+      "start": 116.125,
+      "end": 116.264,
+      "startFrame": 3484,
+      "endFrame": 3488
+    },
+    {
+      "word": "your",
+      "start": 116.299,
+      "end": 116.415,
+      "startFrame": 3489,
+      "endFrame": 3492
+    },
+    {
+      "word": "brain",
+      "start": 116.462,
+      "end": 116.717,
+      "startFrame": 3494,
+      "endFrame": 3502
+    },
+    {
+      "word": "starts",
+      "start": 116.787,
+      "end": 117.042,
+      "startFrame": 3504,
+      "endFrame": 3511
+    },
+    {
+      "word": "generating",
+      "start": 117.123,
+      "end": 117.611,
+      "startFrame": 3514,
+      "endFrame": 3528
+    },
+    {
+      "word": "excuses.",
+      "start": 117.681,
+      "end": 118.482,
+      "startFrame": 3530,
+      "endFrame": 3554
+    },
+    {
+      "word": "\"It'll",
+      "start": 119.178,
+      "end": 119.48,
+      "startFrame": 3575,
+      "endFrame": 3584
+    },
+    {
+      "word": "be",
+      "start": 119.515,
+      "end": 119.585,
+      "startFrame": 3585,
+      "endFrame": 3588
+    },
+    {
+      "word": "faster",
+      "start": 119.62,
+      "end": 119.991,
+      "startFrame": 3589,
+      "endFrame": 3600
+    },
+    {
+      "word": "this",
+      "start": 120.049,
+      "end": 120.188,
+      "startFrame": 3601,
+      "endFrame": 3606
+    },
+    {
+      "word": "way.\"",
+      "start": 120.258,
+      "end": 120.63,
+      "startFrame": 3608,
+      "endFrame": 3619
+    },
+    {
+      "word": "\"I",
+      "start": 121.233,
+      "end": 121.373,
+      "startFrame": 3637,
+      "endFrame": 3641
+    },
+    {
+      "word": "can",
+      "start": 121.454,
+      "end": 121.57,
+      "startFrame": 3644,
+      "endFrame": 3647
+    },
+    {
+      "word": "learn",
+      "start": 121.617,
+      "end": 121.802,
+      "startFrame": 3649,
+      "endFrame": 3654
+    },
+    {
+      "word": "from",
+      "start": 121.849,
+      "end": 121.976,
+      "startFrame": 3655,
+      "endFrame": 3659
+    },
+    {
+      "word": "the",
+      "start": 122.011,
+      "end": 122.081,
+      "startFrame": 3660,
+      "endFrame": 3662
+    },
+    {
+      "word": "A",
+      "start": 122.151,
+      "end": 122.267,
+      "startFrame": 3665,
+      "endFrame": 3668
+    },
+    {
+      "word": "I's",
+      "start": 122.441,
+      "end": 122.592,
+      "startFrame": 3673,
+      "endFrame": 3678
+    },
+    {
+      "word": "approach.\"",
+      "start": 122.627,
+      "end": 123.207,
+      "startFrame": 3679,
+      "endFrame": 3696
+    },
+    {
+      "word": "\"I'm",
+      "start": 123.718,
+      "end": 123.95,
+      "startFrame": 3712,
+      "endFrame": 3718
+    },
+    {
+      "word": "being",
+      "start": 123.997,
+      "end": 124.159,
+      "startFrame": 3720,
+      "endFrame": 3725
+    },
+    {
+      "word": "efficient",
+      "start": 124.206,
+      "end": 124.612,
+      "startFrame": 3726,
+      "endFrame": 3738
+    },
+    {
+      "word": "with",
+      "start": 124.647,
+      "end": 124.774,
+      "startFrame": 3739,
+      "endFrame": 3743
+    },
+    {
+      "word": "my",
+      "start": 124.821,
+      "end": 124.914,
+      "startFrame": 3745,
+      "endFrame": 3747
+    },
+    {
+      "word": "time.\"",
+      "start": 124.983,
+      "end": 125.483,
+      "startFrame": 3749,
+      "endFrame": 3764
+    },
+    {
+      "word": "But",
+      "start": 126.179,
+      "end": 126.33,
+      "startFrame": 3785,
+      "endFrame": 3790
+    },
+    {
+      "word": "efficiency",
+      "start": 126.365,
+      "end": 126.98,
+      "startFrame": 3791,
+      "endFrame": 3809
+    },
+    {
+      "word": "isn't",
+      "start": 127.038,
+      "end": 127.293,
+      "startFrame": 3811,
+      "endFrame": 3819
+    },
+    {
+      "word": "the",
+      "start": 127.34,
+      "end": 127.421,
+      "startFrame": 3820,
+      "endFrame": 3823
+    },
+    {
+      "word": "real",
+      "start": 127.537,
+      "end": 127.781,
+      "startFrame": 3826,
+      "endFrame": 3833
+    },
+    {
+      "word": "driver",
+      "start": 127.839,
+      "end": 128.211,
+      "startFrame": 3835,
+      "endFrame": 3846
+    },
+    {
+      "word": "here.",
+      "start": 128.28,
+      "end": 128.605,
+      "startFrame": 3848,
+      "endFrame": 3858
+    },
+    {
+      "word": "The",
+      "start": 128.989,
+      "end": 129.105,
+      "startFrame": 3870,
+      "endFrame": 3873
+    },
+    {
+      "word": "craving",
+      "start": 129.163,
+      "end": 129.523,
+      "startFrame": 3875,
+      "endFrame": 3886
+    },
+    {
+      "word": "is.\n\nThe",
+      "start": 129.592,
+      "end": 130.707,
+      "startFrame": 3888,
+      "endFrame": 3921
+    },
+    {
+      "word": "most",
+      "start": 130.753,
+      "end": 130.927,
+      "startFrame": 3923,
+      "endFrame": 3928
+    },
+    {
+      "word": "insidious",
+      "start": 130.974,
+      "end": 131.427,
+      "startFrame": 3929,
+      "endFrame": 3943
+    },
+    {
+      "word": "part",
+      "start": 131.485,
+      "end": 131.775,
+      "startFrame": 3945,
+      "endFrame": 3953
+    },
+    {
+      "word": "is",
+      "start": 132.019,
+      "end": 132.181,
+      "startFrame": 3961,
+      "endFrame": 3965
+    },
+    {
+      "word": "that",
+      "start": 132.228,
+      "end": 132.355,
+      "startFrame": 3967,
+      "endFrame": 3971
+    },
+    {
+      "word": "knowing",
+      "start": 132.413,
+      "end": 132.657,
+      "startFrame": 3972,
+      "endFrame": 3980
+    },
+    {
+      "word": "you're",
+      "start": 132.692,
+      "end": 132.843,
+      "startFrame": 3981,
+      "endFrame": 3985
+    },
+    {
+      "word": "addicted",
+      "start": 132.866,
+      "end": 133.307,
+      "startFrame": 3986,
+      "endFrame": 3999
+    },
+    {
+      "word": "doesn't",
+      "start": 133.354,
+      "end": 133.598,
+      "startFrame": 4001,
+      "endFrame": 4008
+    },
+    {
+      "word": "help",
+      "start": 133.633,
+      "end": 133.772,
+      "startFrame": 4009,
+      "endFrame": 4013
+    },
+    {
+      "word": "you",
+      "start": 133.83,
+      "end": 133.911,
+      "startFrame": 4015,
+      "endFrame": 4017
+    },
+    {
+      "word": "stop.",
+      "start": 133.992,
+      "end": 134.573,
+      "startFrame": 4020,
+      "endFrame": 4037
+    },
+    {
+      "word": "Addiction",
+      "start": 135.177,
+      "end": 135.699,
+      "startFrame": 4055,
+      "endFrame": 4071
+    },
+    {
+      "word": "never",
+      "start": 135.769,
+      "end": 135.989,
+      "startFrame": 4073,
+      "endFrame": 4080
+    },
+    {
+      "word": "works",
+      "start": 136.047,
+      "end": 136.291,
+      "startFrame": 4081,
+      "endFrame": 4089
+    },
+    {
+      "word": "that",
+      "start": 136.326,
+      "end": 136.477,
+      "startFrame": 4090,
+      "endFrame": 4094
+    },
+    {
+      "word": "way.",
+      "start": 136.535,
+      "end": 136.907,
+      "startFrame": 4096,
+      "endFrame": 4107
+    },
+    {
+      "word": "In",
+      "start": 137.51,
+      "end": 137.65,
+      "startFrame": 4125,
+      "endFrame": 4130
+    },
+    {
+      "word": "2023,",
+      "start": 137.731,
+      "end": 138.718,
+      "startFrame": 4132,
+      "endFrame": 4162
+    },
+    {
+      "word": "git",
+      "start": 139.043,
+      "end": 139.205,
+      "startFrame": 4171,
+      "endFrame": 4176
+    },
+    {
+      "word": "hub",
+      "start": 139.252,
+      "end": 139.379,
+      "startFrame": 4178,
+      "endFrame": 4181
+    },
+    {
+      "word": "surveyed",
+      "start": 139.449,
+      "end": 139.786,
+      "startFrame": 4183,
+      "endFrame": 4194
+    },
+    {
+      "word": "developers",
+      "start": 139.821,
+      "end": 140.436,
+      "startFrame": 4195,
+      "endFrame": 4213
+    },
+    {
+      "word": "who",
+      "start": 140.819,
+      "end": 140.982,
+      "startFrame": 4225,
+      "endFrame": 4229
+    },
+    {
+      "word": "recognized",
+      "start": 141.051,
+      "end": 141.667,
+      "startFrame": 4232,
+      "endFrame": 4250
+    },
+    {
+      "word": "their",
+      "start": 141.69,
+      "end": 141.841,
+      "startFrame": 4251,
+      "endFrame": 4255
+    },
+    {
+      "word": "over-dependence",
+      "start": 141.899,
+      "end": 142.654,
+      "startFrame": 4257,
+      "endFrame": 4280
+    },
+    {
+      "word": "on",
+      "start": 142.7,
+      "end": 142.781,
+      "startFrame": 4281,
+      "endFrame": 4283
+    },
+    {
+      "word": "Copilot.",
+      "start": 142.839,
+      "end": 143.524,
+      "startFrame": 4285,
+      "endFrame": 4306
+    },
+    {
+      "word": "Ninety-one",
+      "start": 144.128,
+      "end": 144.65,
+      "startFrame": 4324,
+      "endFrame": 4340
+    },
+    {
+      "word": "percent",
+      "start": 144.697,
+      "end": 145.045,
+      "startFrame": 4341,
+      "endFrame": 4351
+    },
+    {
+      "word": "said",
+      "start": 145.103,
+      "end": 145.266,
+      "startFrame": 4353,
+      "endFrame": 4358
+    },
+    {
+      "word": "they",
+      "start": 145.301,
+      "end": 145.405,
+      "startFrame": 4359,
+      "endFrame": 4362
+    },
+    {
+      "word": "wanted",
+      "start": 145.452,
+      "end": 145.695,
+      "startFrame": 4364,
+      "endFrame": 4371
+    },
+    {
+      "word": "to",
+      "start": 145.73,
+      "end": 145.8,
+      "startFrame": 4372,
+      "endFrame": 4374
+    },
+    {
+      "word": "reduce",
+      "start": 145.881,
+      "end": 146.229,
+      "startFrame": 4376,
+      "endFrame": 4387
+    },
+    {
+      "word": "their",
+      "start": 146.253,
+      "end": 146.404,
+      "startFrame": 4388,
+      "endFrame": 4392
+    },
+    {
+      "word": "usage.",
+      "start": 146.473,
+      "end": 147.089,
+      "startFrame": 4394,
+      "endFrame": 4413
+    },
+    {
+      "word": "Only",
+      "start": 147.785,
+      "end": 148.041,
+      "startFrame": 4434,
+      "endFrame": 4441
+    },
+    {
+      "word": "twelve",
+      "start": 148.099,
+      "end": 148.412,
+      "startFrame": 4443,
+      "endFrame": 4452
+    },
+    {
+      "word": "percent",
+      "start": 148.447,
+      "end": 148.772,
+      "startFrame": 4453,
+      "endFrame": 4463
+    },
+    {
+      "word": "actually",
+      "start": 148.83,
+      "end": 149.178,
+      "startFrame": 4465,
+      "endFrame": 4475
+    },
+    {
+      "word": "managed",
+      "start": 149.248,
+      "end": 149.62,
+      "startFrame": 4477,
+      "endFrame": 4489
+    },
+    {
+      "word": "to",
+      "start": 149.654,
+      "end": 149.712,
+      "startFrame": 4490,
+      "endFrame": 4491
+    },
+    {
+      "word": "do",
+      "start": 149.77,
+      "end": 149.852,
+      "startFrame": 4493,
+      "endFrame": 4496
+    },
+    {
+      "word": "it",
+      "start": 149.921,
+      "end": 149.991,
+      "startFrame": 4498,
+      "endFrame": 4500
+    },
+    {
+      "word": "for",
+      "start": 150.026,
+      "end": 150.13,
+      "startFrame": 4501,
+      "endFrame": 4504
+    },
+    {
+      "word": "more",
+      "start": 150.177,
+      "end": 150.305,
+      "startFrame": 4505,
+      "endFrame": 4509
+    },
+    {
+      "word": "than",
+      "start": 150.339,
+      "end": 150.455,
+      "startFrame": 4510,
+      "endFrame": 4514
+    },
+    {
+      "word": "a",
+      "start": 150.479,
+      "end": 150.513,
+      "startFrame": 4514,
+      "endFrame": 4515
+    },
+    {
+      "word": "week.",
+      "start": 150.572,
+      "end": 151.013,
+      "startFrame": 4517,
+      "endFrame": 4530
+    },
+    {
+      "word": "The",
+      "start": 151.709,
+      "end": 151.849,
+      "startFrame": 4551,
+      "endFrame": 4555
+    },
+    {
+      "word": "knowledge",
+      "start": 151.907,
+      "end": 152.278,
+      "startFrame": 4557,
+      "endFrame": 4568
+    },
+    {
+      "word": "that",
+      "start": 152.313,
+      "end": 152.452,
+      "startFrame": 4569,
+      "endFrame": 4574
+    },
+    {
+      "word": "something",
+      "start": 152.534,
+      "end": 152.882,
+      "startFrame": 4576,
+      "endFrame": 4586
+    },
+    {
+      "word": "is",
+      "start": 152.94,
+      "end": 153.021,
+      "startFrame": 4588,
+      "endFrame": 4591
+    },
+    {
+      "word": "bad",
+      "start": 153.103,
+      "end": 153.37,
+      "startFrame": 4593,
+      "endFrame": 4601
+    },
+    {
+      "word": "for",
+      "start": 153.439,
+      "end": 153.544,
+      "startFrame": 4603,
+      "endFrame": 4606
+    },
+    {
+      "word": "you",
+      "start": 153.602,
+      "end": 153.741,
+      "startFrame": 4608,
+      "endFrame": 4612
+    },
+    {
+      "word": "doesn't",
+      "start": 154.124,
+      "end": 154.554,
+      "startFrame": 4624,
+      "endFrame": 4637
+    },
+    {
+      "word": "override",
+      "start": 154.623,
+      "end": 155.192,
+      "startFrame": 4639,
+      "endFrame": 4656
+    },
+    {
+      "word": "the",
+      "start": 155.227,
+      "end": 155.297,
+      "startFrame": 4657,
+      "endFrame": 4659
+    },
+    {
+      "word": "neurochemical",
+      "start": 155.39,
+      "end": 156.145,
+      "startFrame": 4662,
+      "endFrame": 4684
+    },
+    {
+      "word": "compulsion",
+      "start": 156.226,
+      "end": 156.83,
+      "startFrame": 4687,
+      "endFrame": 4705
+    },
+    {
+      "word": "to",
+      "start": 157.155,
+      "end": 157.271,
+      "startFrame": 4715,
+      "endFrame": 4718
+    },
+    {
+      "word": "keep",
+      "start": 157.34,
+      "end": 157.538,
+      "startFrame": 4720,
+      "endFrame": 4726
+    },
+    {
+      "word": "doing",
+      "start": 157.607,
+      "end": 157.863,
+      "startFrame": 4728,
+      "endFrame": 4736
+    },
+    {
+      "word": "it.\n\nBut",
+      "start": 157.921,
+      "end": 159.001,
+      "startFrame": 4738,
+      "endFrame": 4770
+    }
+  ]
+}

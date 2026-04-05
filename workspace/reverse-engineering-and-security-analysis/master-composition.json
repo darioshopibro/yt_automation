@@ -1,0 +1,1011 @@
+{
+  "meta": {
+    "title": "Reverse Engineering and Security Analysis",
+    "fps": 30,
+    "width": 1920,
+    "height": 1080,
+    "totalFrames": 10646,
+    "totalDurationSec": 354.9
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "durationSec": 353.9,
+    "wordCount": 746
+  },
+  "beats": [
+    {
+      "id": "beat_1",
+      "segmentIndex": 0,
+      "title": "Corporate Espionage Hook",
+      "startFrame": 0,
+      "endFrame": 600,
+      "durationSec": 20.0,
+      "visualType": "ai_video",
+      "visualDescription": "Dramatic office scene with hooded figure at multiple monitors showing code",
+      "aiVideoPrompt": "Cinematic dark office, mysterious hacker in hoodie at multiple glowing monitors displaying scrolling code, dramatic blue lighting, corporate espionage atmosphere, high contrast, professional cinematography",
+      "isSegmentStart": true
+    },
+    {
+      "id": "beat_2",
+      "segmentIndex": 0,
+      "title": "Salary Graphics",
+      "startFrame": 600,
+      "endFrame": 1200,
+      "durationSec": 20.0,
+      "visualType": "motion_graphics",
+      "visualDescription": "Animated salary figure $300k with corporate logos and money flow animations",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_3",
+      "segmentIndex": 0,
+      "title": "Software Secrets",
+      "startFrame": 1200,
+      "endFrame": 1800,
+      "durationSec": 20.0,
+      "visualType": "motion_graphics",
+      "visualDescription": "Animated flowchart showing software being torn apart with secret algorithms revealed",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_4",
+      "segmentIndex": 0,
+      "title": "Legal Loophole",
+      "startFrame": 1800,
+      "endFrame": 2004,
+      "durationSec": 6.8,
+      "visualType": "motion_graphics",
+      "visualDescription": "Legal document with highlighted loophole text and $10B industry visualization",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_5",
+      "segmentIndex": 1,
+      "title": "Lock Mechanism Analogy",
+      "startFrame": 2004,
+      "endFrame": 2700,
+      "durationSec": 23.2,
+      "visualType": "ai_video",
+      "visualDescription": "Close-up of hands examining a complex mechanical lock from the outside",
+      "aiVideoPrompt": "Macro cinematic shot of hands carefully examining intricate mechanical lock mechanism, dramatic lighting, shallow depth of field, brass and steel textures, studying without breaking",
+      "isSegmentStart": true
+    },
+    {
+      "id": "beat_6",
+      "segmentIndex": 1,
+      "title": "Source Code Treasure",
+      "startFrame": 2700,
+      "endFrame": 3400,
+      "durationSec": 23.3,
+      "visualType": "motion_graphics",
+      "visualDescription": "Treasure chest opening to reveal flowing source code, algorithms, and trade secrets worth billions",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_7",
+      "segmentIndex": 1,
+      "title": "Compatibility Needs",
+      "startFrame": 3400,
+      "endFrame": 4135,
+      "durationSec": 24.5,
+      "visualType": "motion_graphics",
+      "visualDescription": "Network diagram showing companies connecting to multiple platforms and systems",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_8",
+      "segmentIndex": 2,
+      "title": "Two Million Dollar Platform",
+      "startFrame": 4135,
+      "endFrame": 4800,
+      "durationSec": 22.2,
+      "visualType": "motion_graphics",
+      "visualDescription": "Animated $2M figure with platform logos (Windows, Mac, Linux, mobile) flowing around it",
+      "aiVideoPrompt": "",
+      "isSegmentStart": true
+    },
+    {
+      "id": "beat_9",
+      "segmentIndex": 2,
+      "title": "APIs and Protocols",
+      "startFrame": 4800,
+      "endFrame": 5500,
+      "durationSec": 23.3,
+      "visualType": "motion_graphics",
+      "visualDescription": "Technical diagram showing APIs, file formats, and network protocols with data flow animations",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_10",
+      "segmentIndex": 2,
+      "title": "Oracle vs Google Case",
+      "startFrame": 5500,
+      "endFrame": 6217,
+      "durationSec": 23.9,
+      "visualType": "meme",
+      "visualDescription": "Surprised Pikachu reaction to Oracle losing the Java API lawsuit",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_11",
+      "segmentIndex": 3,
+      "title": "Trade Secret Theft Warning",
+      "startFrame": 6217,
+      "endFrame": 6900,
+      "durationSec": 22.8,
+      "visualType": "motion_graphics",
+      "visualDescription": "Warning signs and red alerts around competitive products with legal symbols",
+      "aiVideoPrompt": "",
+      "isSegmentStart": true
+    },
+    {
+      "id": "beat_12",
+      "segmentIndex": 3,
+      "title": "DMCA Restrictions",
+      "startFrame": 6900,
+      "endFrame": 7600,
+      "durationSec": 23.3,
+      "visualType": "motion_graphics",
+      "visualDescription": "DMCA logo with copyright protection symbols and blocked research paths",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_13",
+      "segmentIndex": 3,
+      "title": "Clean Room Design",
+      "startFrame": 7600,
+      "endFrame": 8361,
+      "durationSec": 25.4,
+      "visualType": "motion_graphics",
+      "visualDescription": "Split-screen showing Team 1 reverse engineering and Team 2 reading documentation separately",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_14",
+      "segmentIndex": 4,
+      "title": "Starting Salary",
+      "startFrame": 8361,
+      "endFrame": 9000,
+      "durationSec": 21.3,
+      "visualType": "motion_graphics",
+      "visualDescription": "Animated $100k figure with entry-level position indicators and career progression arrows",
+      "aiVideoPrompt": "",
+      "isSegmentStart": true
+    },
+    {
+      "id": "beat_15",
+      "segmentIndex": 4,
+      "title": "Senior Specialist Salary",
+      "startFrame": 9000,
+      "endFrame": 9700,
+      "durationSec": 23.3,
+      "visualType": "motion_graphics",
+      "visualDescription": "Animated $400k+ figure with equity symbols and senior level indicators",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_16",
+      "segmentIndex": 4,
+      "title": "Required Skills",
+      "startFrame": 9700,
+      "endFrame": 10300,
+      "durationSec": 20.0,
+      "visualType": "motion_graphics",
+      "visualDescription": "Skill badges floating in: Assembly Language, Cryptography, Protocol Analysis with code snippets",
+      "aiVideoPrompt": "",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_17",
+      "segmentIndex": 4,
+      "title": "Professional Tools",
+      "startFrame": 10300,
+      "endFrame": 10595,
+      "durationSec": 9.8,
+      "visualType": "ai_video",
+      "visualDescription": "Close-up of Ghidra interface running on a professional workstation with NSA branding visible",
+      "aiVideoPrompt": "Professional workstation with Ghidra disassembler interface on screen, clean office environment, NSA logo visible, high-tech government facility aesthetic, crisp lighting, detailed UI elements",
+      "isSegmentStart": false
+    },
+    {
+      "id": "beat_18",
+      "segmentIndex": 5,
+      "title": "Finale",
+      "startFrame": 10595,
+      "endFrame": 10646,
+      "durationSec": 1.7,
+      "visualType": "meme",
+      "visualDescription": "This Is Fine meme - everything is chaotic but concludes with 'better'",
+      "aiVideoPrompt": "",
+      "isSegmentStart": true
+    }
+  ],
+  "audio": {
+    "music": {
+      "file": null,
+      "baseVolume": 0.2,
+      "duckedVolume": 0.08,
+      "duckRampFrames": 15,
+      "fadeInEndFrame": 30,
+      "fadeOutStartFrame": 10586
+    },
+    "sfx": [
+      {
+        "frame": 0,
+        "type": "riser_tension",
+        "volume": 0.25,
+        "reason": "building suspense for hook",
+        "file": "risers/tension-riser.mp3"
+      },
+      {
+        "frame": 180,
+        "type": "hit_punch",
+        "volume": 0.4,
+        "reason": "$300k salary reveal impact",
+        "file": "hits/punch-hit.mp3"
+      },
+      {
+        "frame": 360,
+        "type": "whoosh_medium",
+        "volume": 0.2,
+        "reason": "transition to secrets concept",
+        "file": "whooshes/medium-whoosh.mp3"
+      },
+      {
+        "frame": 540,
+        "type": "hit_soft",
+        "volume": 0.3,
+        "reason": "espionage emphasis",
+        "file": "hits/soft-hit-01.mp3"
+      },
+      {
+        "frame": 595,
+        "type": "whoosh_digital",
+        "volume": 0.25,
+        "reason": "scene transition to graphics",
+        "file": "whooshes/digital-whoosh.mp3"
+      },
+      {
+        "frame": 780,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "money graphic appears",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 960,
+        "type": "hit_bass",
+        "volume": 0.35,
+        "reason": "big salary number impact",
+        "file": "hits/bass-hit.mp3"
+      },
+      {
+        "frame": 1195,
+        "type": "whoosh_fast",
+        "volume": 0.25,
+        "reason": "transition to hacking visual",
+        "file": "whooshes/fast-whoosh.mp3"
+      },
+      {
+        "frame": 1380,
+        "type": "click_tick",
+        "volume": 0.15,
+        "reason": "secrets appearing one by one",
+        "file": "clicks/tick-click.mp3"
+      },
+      {
+        "frame": 1560,
+        "type": "hit_punch",
+        "volume": 0.35,
+        "reason": "steal emphasis",
+        "file": "hits/punch-hit.mp3"
+      },
+      {
+        "frame": 1795,
+        "type": "whoosh_soft",
+        "volume": 0.2,
+        "reason": "transition to legal concept",
+        "file": "whooshes/soft-whoosh.mp3"
+      },
+      {
+        "frame": 1920,
+        "type": "hit_epic",
+        "volume": 0.4,
+        "reason": "legal loophole reveal",
+        "file": "hits/epic-hit.mp3"
+      },
+      {
+        "frame": 1999,
+        "type": "whoosh_medium",
+        "volume": 0.25,
+        "reason": "segment transition",
+        "file": "whooshes/medium-whoosh.mp3"
+      },
+      {
+        "frame": 2180,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "lock mechanism focus",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 2400,
+        "type": "whoosh_airy",
+        "volume": 0.2,
+        "reason": "studying motion",
+        "file": "whooshes/airy-whoosh.mp3"
+      },
+      {
+        "frame": 2580,
+        "type": "hit_soft",
+        "volume": 0.25,
+        "reason": "understanding moment",
+        "file": "hits/soft-hit-01.mp3"
+      },
+      {
+        "frame": 2695,
+        "type": "whoosh_digital",
+        "volume": 0.25,
+        "reason": "transition to treasure concept",
+        "file": "whooshes/digital-whoosh.mp3"
+      },
+      {
+        "frame": 2880,
+        "type": "riser_short",
+        "volume": 0.2,
+        "reason": "building to billions reveal",
+        "file": "risers/short-riser-01.mp3"
+      },
+      {
+        "frame": 2920,
+        "type": "hit_epic",
+        "volume": 0.4,
+        "reason": "billions impact",
+        "file": "hits/epic-hit.mp3"
+      },
+      {
+        "frame": 3200,
+        "type": "click_button",
+        "volume": 0.15,
+        "reason": "source code elements appearing",
+        "file": "clicks/button-click.mp3"
+      },
+      {
+        "frame": 3395,
+        "type": "whoosh_fast",
+        "volume": 0.25,
+        "reason": "transition to compatibility",
+        "file": "whooshes/fast-whoosh.mp3"
+      },
+      {
+        "frame": 3600,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "companies appearing",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 3800,
+        "type": "whoosh_lofi",
+        "volume": 0.2,
+        "reason": "systems connecting",
+        "file": "whooshes/lofi-whoosh.mp3"
+      },
+      {
+        "frame": 4000,
+        "type": "hit_soft",
+        "volume": 0.25,
+        "reason": "compatibility emphasis",
+        "file": "hits/soft-hit-01.mp3"
+      },
+      {
+        "frame": 4130,
+        "type": "whoosh_medium",
+        "volume": 0.25,
+        "reason": "segment transition",
+        "file": "whooshes/medium-whoosh.mp3"
+      },
+      {
+        "frame": 4300,
+        "type": "riser_fast",
+        "volume": 0.2,
+        "reason": "building to big number",
+        "file": "risers/fast-riser.mp3"
+      },
+      {
+        "frame": 4350,
+        "type": "hit_punch",
+        "volume": 0.4,
+        "reason": "$2M reveal impact",
+        "file": "hits/punch-hit.mp3"
+      },
+      {
+        "frame": 4600,
+        "type": "click_tick",
+        "volume": 0.15,
+        "reason": "platforms appearing",
+        "file": "clicks/tick-click.mp3"
+      },
+      {
+        "frame": 4795,
+        "type": "whoosh_digital",
+        "volume": 0.25,
+        "reason": "transition to technical content",
+        "file": "whooshes/digital-whoosh.mp3"
+      },
+      {
+        "frame": 4980,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "API elements appearing",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 5200,
+        "type": "whoosh_airy",
+        "volume": 0.2,
+        "reason": "protocols flowing",
+        "file": "whooshes/airy-whoosh.mp3"
+      },
+      {
+        "frame": 5380,
+        "type": "hit_soft",
+        "volume": 0.25,
+        "reason": "guarantee emphasis",
+        "file": "hits/soft-hit-01.mp3"
+      },
+      {
+        "frame": 5495,
+        "type": "whoosh_fast",
+        "volume": 0.25,
+        "reason": "transition to meme",
+        "file": "whooshes/fast-whoosh.mp3"
+      },
+      {
+        "frame": 5700,
+        "type": "hit_bass",
+        "volume": 0.35,
+        "reason": "court case impact",
+        "file": "hits/bass-hit.mp3"
+      },
+      {
+        "frame": 5900,
+        "type": "click_button",
+        "volume": 0.15,
+        "reason": "ruling appears",
+        "file": "clicks/button-click.mp3"
+      },
+      {
+        "frame": 6212,
+        "type": "whoosh_medium",
+        "volume": 0.25,
+        "reason": "segment transition",
+        "file": "whooshes/medium-whoosh.mp3"
+      },
+      {
+        "frame": 6400,
+        "type": "riser_tension",
+        "volume": 0.2,
+        "reason": "building to warning",
+        "file": "risers/tension-riser.mp3"
+      },
+      {
+        "frame": 6450,
+        "type": "hit_epic",
+        "volume": 0.4,
+        "reason": "theft warning impact",
+        "file": "hits/epic-hit.mp3"
+      },
+      {
+        "frame": 6700,
+        "type": "whoosh_soft",
+        "volume": 0.2,
+        "reason": "warning spreading",
+        "file": "whooshes/soft-whoosh.mp3"
+      },
+      {
+        "frame": 6895,
+        "type": "whoosh_digital",
+        "volume": 0.25,
+        "reason": "transition to DMCA topic",
+        "file": "whooshes/digital-whoosh.mp3"
+      },
+      {
+        "frame": 7100,
+        "type": "hit_punch",
+        "volume": 0.35,
+        "reason": "DMCA emphasis",
+        "file": "hits/punch-hit.mp3"
+      },
+      {
+        "frame": 7300,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "legal elements appearing",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 7480,
+        "type": "hit_soft",
+        "volume": 0.25,
+        "reason": "research restriction",
+        "file": "hits/soft-hit-01.mp3"
+      },
+      {
+        "frame": 7595,
+        "type": "whoosh_fast",
+        "volume": 0.25,
+        "reason": "transition to clean room process",
+        "file": "whooshes/fast-whoosh.mp3"
+      },
+      {
+        "frame": 7800,
+        "type": "click_tick",
+        "volume": 0.15,
+        "reason": "team 1 appears",
+        "file": "clicks/tick-click.mp3"
+      },
+      {
+        "frame": 8000,
+        "type": "whoosh_airy",
+        "volume": 0.2,
+        "reason": "documentation flow",
+        "file": "whooshes/airy-whoosh.mp3"
+      },
+      {
+        "frame": 8200,
+        "type": "click_button",
+        "volume": 0.15,
+        "reason": "team 2 appears",
+        "file": "clicks/button-click.mp3"
+      },
+      {
+        "frame": 8356,
+        "type": "whoosh_medium",
+        "volume": 0.25,
+        "reason": "segment transition",
+        "file": "whooshes/medium-whoosh.mp3"
+      },
+      {
+        "frame": 8540,
+        "type": "hit_bass",
+        "volume": 0.35,
+        "reason": "$100k starting salary impact",
+        "file": "hits/bass-hit.mp3"
+      },
+      {
+        "frame": 8760,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "entry level visual",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 8995,
+        "type": "whoosh_digital",
+        "volume": 0.25,
+        "reason": "transition to senior salaries",
+        "file": "whooshes/digital-whoosh.mp3"
+      },
+      {
+        "frame": 9180,
+        "type": "riser_fast",
+        "volume": 0.2,
+        "reason": "building to big salary number",
+        "file": "risers/fast-riser.mp3"
+      },
+      {
+        "frame": 9220,
+        "type": "hit_epic",
+        "volume": 0.4,
+        "reason": "$400k+ impact",
+        "file": "hits/epic-hit.mp3"
+      },
+      {
+        "frame": 9500,
+        "type": "click_button",
+        "volume": 0.15,
+        "reason": "equity visual appears",
+        "file": "clicks/button-click.mp3"
+      },
+      {
+        "frame": 9695,
+        "type": "whoosh_fast",
+        "volume": 0.25,
+        "reason": "transition to skills section",
+        "file": "whooshes/fast-whoosh.mp3"
+      },
+      {
+        "frame": 9880,
+        "type": "click_soft",
+        "volume": 0.15,
+        "reason": "assembly language skill appears",
+        "file": "clicks/soft-click.mp3"
+      },
+      {
+        "frame": 10080,
+        "type": "click_tick",
+        "volume": 0.15,
+        "reason": "cryptography skill appears",
+        "file": "clicks/tick-click.mp3"
+      },
+      {
+        "frame": 10180,
+        "type": "hit_soft",
+        "volume": 0.25,
+        "reason": "protocol analysis emphasis",
+        "file": "hits/soft-hit-01.mp3"
+      },
+      {
+        "frame": 10295,
+        "type": "whoosh_airy",
+        "volume": 0.25,
+        "reason": "transition to tools section",
+        "file": "whooshes/airy-whoosh.mp3"
+      },
+      {
+        "frame": 10450,
+        "type": "hit_punch",
+        "volume": 0.35,
+        "reason": "Ghidra tool reveal",
+        "file": "hits/punch-hit.mp3"
+      },
+      {
+        "frame": 10550,
+        "type": "click_button",
+        "volume": 0.15,
+        "reason": "NSA connection emphasis",
+        "file": "clicks/button-click.mp3"
+      },
+      {
+        "frame": 10590,
+        "type": "whoosh_lofi",
+        "volume": 0.2,
+        "reason": "final transition to conclusion",
+        "file": "whooshes/lofi-whoosh.mp3"
+      },
+      {
+        "frame": 10620,
+        "type": "hit_soft",
+        "volume": 0.3,
+        "reason": "final word impact",
+        "file": "hits/soft-hit-01.mp3"
+      }
+    ],
+    "duckingZones": [
+      {
+        "startFrame": 0,
+        "endFrame": 232,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 253,
+        "endFrame": 307,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 325,
+        "endFrame": 582,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 603,
+        "endFrame": 724,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 742,
+        "endFrame": 866,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 887,
+        "endFrame": 1086,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1107,
+        "endFrame": 1257,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1275,
+        "endFrame": 1380,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1398,
+        "endFrame": 1519,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1540,
+        "endFrame": 1653,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1671,
+        "endFrame": 1975,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 1993,
+        "endFrame": 2146,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2167,
+        "endFrame": 2349,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2367,
+        "endFrame": 2442,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2457,
+        "endFrame": 2510,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2525,
+        "endFrame": 2789,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 2807,
+        "endFrame": 3077,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3098,
+        "endFrame": 3578,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3596,
+        "endFrame": 3748,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3769,
+        "endFrame": 3887,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 3908,
+        "endFrame": 4304,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4325,
+        "endFrame": 4552,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4576,
+        "endFrame": 4718,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 4733,
+        "endFrame": 5030,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5051,
+        "endFrame": 5165,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5186,
+        "endFrame": 5366,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5384,
+        "endFrame": 5543,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5564,
+        "endFrame": 5799,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 5820,
+        "endFrame": 5985,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6003,
+        "endFrame": 6141,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6159,
+        "endFrame": 6344,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6362,
+        "endFrame": 6582,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6603,
+        "endFrame": 6736,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6757,
+        "endFrame": 6957,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 6978,
+        "endFrame": 7326,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7351,
+        "endFrame": 7481,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7502,
+        "endFrame": 7635,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7653,
+        "endFrame": 7836,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 7857,
+        "endFrame": 8305,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8326,
+        "endFrame": 8416,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8431,
+        "endFrame": 8540,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8561,
+        "endFrame": 8814,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8832,
+        "endFrame": 8955,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 8976,
+        "endFrame": 9065,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 9083,
+        "endFrame": 9144,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 9162,
+        "endFrame": 9237,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 9258,
+        "endFrame": 9445,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 9466,
+        "endFrame": 9587,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 9605,
+        "endFrame": 9702,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 9723,
+        "endFrame": 10185,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 10206,
+        "endFrame": 10331,
+        "type": "voiceover_active"
+      },
+      {
+        "startFrame": 10351,
+        "endFrame": 10616,
+        "type": "voiceover_active"
+      }
+    ]
+  },
+  "memes": [
+    {
+      "beatIndex": 9,
+      "startFrame": 5500,
+      "endFrame": 5560,
+      "name": "Surprised Pikachu",
+      "reason": "shocking legal outcome that Oracle lost"
+    },
+    {
+      "beatIndex": 17,
+      "startFrame": 10595,
+      "endFrame": 10646,
+      "name": "This Is Fine",
+      "reason": "ironic contrast - complex security field but ends simply with 'better'"
+    }
+  ],
+  "aiVideoClips": [
+    {
+      "beatIndex": 0,
+      "startFrame": 0,
+      "endFrame": 600,
+      "prompt": "Cinematic dark office, mysterious hacker in hoodie at multiple glowing monitors displaying scrolling code, dramatic blue lighting, corporate espionage atmosphere, high contrast, professional cinematography"
+    },
+    {
+      "beatIndex": 4,
+      "startFrame": 2004,
+      "endFrame": 2700,
+      "prompt": "Macro cinematic shot of hands carefully examining intricate mechanical lock mechanism, dramatic lighting, shallow depth of field, brass and steel textures, studying without breaking"
+    },
+    {
+      "beatIndex": 16,
+      "startFrame": 10300,
+      "endFrame": 10595,
+      "prompt": "Professional workstation with Ghidra disassembler interface on screen, clean office environment, NSA logo visible, high-tech government facility aesthetic, crisp lighting, detailed UI elements"
+    }
+  ],
+  "transitions": [
+    {
+      "atFrame": 2004,
+      "type": "crossfade",
+      "durationFrames": 15
+    },
+    {
+      "atFrame": 4135,
+      "type": "crossfade",
+      "durationFrames": 15
+    },
+    {
+      "atFrame": 6217,
+      "type": "crossfade",
+      "durationFrames": 15
+    },
+    {
+      "atFrame": 8361,
+      "type": "crossfade",
+      "durationFrames": 15
+    },
+    {
+      "atFrame": 10595,
+      "type": "crossfade",
+      "durationFrames": 15
+    }
+  ]
+}

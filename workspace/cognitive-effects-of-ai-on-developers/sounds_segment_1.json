@@ -1,0 +1,22 @@
+{
+  "segment": "The Withdrawal",
+  "sounds": [
+    {"frame": 0, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.14, "reason": "IDE panel slides in at segment start"},
+    {"frame": 33, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "CSS line 4 highlights red (debugging)"},
+    {"frame": 149, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Brain icon appears with red glow — screaming for help"},
+    {"frame": 269, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "ChatGPT tab symptom card appears"},
+    {"frame": 375, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.07, "reason": "Heart rate monitor card appears"},
+    {"frame": 457, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.07, "reason": "Sweating symptom card appears"},
+    {"frame": 532, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.14, "reason": "Scene 1 fades out, crossfade to scene 2"},
+    {"frame": 583, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Productivity Anxiety label appears before strikethrough"},
+    {"frame": 630, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "Imposter Syndrome label appears before strikethrough"},
+    {"frame": 670, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "Build-up before big DOPAMINE WITHDRAWAL reveal"},
+    {"frame": 682, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "DOPAMINE WITHDRAWAL text pops in large with glow"},
+    {"frame": 708, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.14, "reason": "Dopamine meter bar appears and starts depleting"},
+    {"frame": 768, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Millions of developers badge slides in"},
+    {"frame": 812, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "Scene 2 fades out, crossfade to scene 3"},
+    {"frame": 855, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "Brain circle appears center stage with AI tendrils"},
+    {"frame": 901, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "AI tendril bars radiate outward from brain"},
+    {"frame": 949, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.07, "reason": "Scary part text fades in at bottom"}
+  ]
+}

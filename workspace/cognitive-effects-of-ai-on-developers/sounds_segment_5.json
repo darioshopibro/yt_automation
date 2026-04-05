@@ -1,0 +1,16 @@
+{
+  "segment": "Real-World Proof",
+  "sounds": [
+    {"frame": 6935, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.15, "reason": "Scene 1 starts, Basecamp title slides in"},
+    {"frame": 7030, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Company badge icon pops in with spring scale"},
+    {"frame": 7085, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "Problem card (CTO noticed) slides up into view"},
+    {"frame": 7300, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Timer visual appears — the solution reveal with spring animation"},
+    {"frame": 7449, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "Build-up before results scene reveal"},
+    {"frame": 7457, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "Scene 2 crossfade — results title appears"},
+    {"frame": 7550, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "Bug resolution bar animates showing improvement"},
+    {"frame": 7670, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Success badge pops in with spring scale"},
+    {"frame": 7832, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "Scene 3 crossfade — reward redirect scene starts"},
+    {"frame": 7940, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "Redirect arrow slides in between two paths"},
+    {"frame": 8155, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.18, "reason": "Strike-through line crosses out Instant Gratification text"}
+  ]
+}

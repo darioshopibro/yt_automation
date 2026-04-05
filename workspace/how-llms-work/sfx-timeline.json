@@ -1,0 +1,167 @@
+{
+  "total_sfx": 22,
+  "sfx_types": {
+    "whoosh": 10,
+    "click": 4,
+    "riser": 4,
+    "hit": 4
+  },
+  "unique_files_used": 11,
+  "library_dir": "/Users/dario61/Desktop/YT automation/tools/sound-design/library",
+  "timeline": [
+    {
+      "frame": 0,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'Token Prediction Engine'"
+    },
+    {
+      "frame": 51,
+      "type": "click",
+      "file": "clicks/tick-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'actually'"
+    },
+    {
+      "frame": 122,
+      "type": "whoosh",
+      "file": "whooshes/airy-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 422,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'Training on Data'"
+    },
+    {
+      "frame": 965,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'Transformer Architecture'"
+    },
+    {
+      "frame": 1491,
+      "type": "riser",
+      "file": "risers/fast-riser.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'Training & Tuning'"
+    },
+    {
+      "frame": 1528,
+      "type": "whoosh",
+      "file": "whooshes/lofi-whoosh.mp3",
+      "volume": 0.25,
+      "reason": "transition \u2192 'Training & Tuning'"
+    },
+    {
+      "frame": 1551,
+      "type": "hit",
+      "file": "hits/punch-hit.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'works.\n\nFine-tuning' in 'Training & Tuning'"
+    },
+    {
+      "frame": 1806,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.15,
+      "reason": "sentence boundary (density fill)"
+    },
+    {
+      "frame": 2126,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'Context Window Growth'"
+    },
+    {
+      "frame": 2442,
+      "type": "click",
+      "file": "clicks/soft-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'million.'"
+    },
+    {
+      "frame": 2643,
+      "type": "riser",
+      "file": "risers/short-riser-02.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'Prompting & Cost'"
+    },
+    {
+      "frame": 2693,
+      "type": "hit",
+      "file": "hits/soft-hit-01.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'losing' in 'Prompting & Cost'"
+    },
+    {
+      "frame": 3233,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'Cost Dropping Fast'"
+    },
+    {
+      "frame": 3397,
+      "type": "click",
+      "file": "clicks/button-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'million'"
+    },
+    {
+      "frame": 3778,
+      "type": "riser",
+      "file": "risers/short-riser-01.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'Latency & RAG'"
+    },
+    {
+      "frame": 3830,
+      "type": "hit",
+      "file": "hits/punch-hit.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'real' in 'Latency & RAG'"
+    },
+    {
+      "frame": 4023,
+      "type": "click",
+      "file": "clicks/tick-click.mp3",
+      "volume": 0.15,
+      "reason": "keyword: 'broken.'"
+    },
+    {
+      "frame": 4288,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'RAG Pipeline'"
+    },
+    {
+      "frame": 4813,
+      "type": "riser",
+      "file": "risers/fast-riser.mp3",
+      "volume": 0.2,
+      "reason": "build-up before 'Agents: Next Frontier'"
+    },
+    {
+      "frame": 4862,
+      "type": "hit",
+      "file": "hits/soft-hit-01.mp3",
+      "volume": 0.35,
+      "reason": "reveal: 'training' in 'Agents: Next Frontier'"
+    },
+    {
+      "frame": 5333,
+      "type": "whoosh",
+      "file": "whooshes/soft-whoosh.mp3",
+      "volume": 0.175,
+      "reason": "section: 'Chatbot to Coworker'"
+    }
+  ]
+}

@@ -1,0 +1,4679 @@
+{
+  "meta": {
+    "title": "GitHub Copilot AI Assistant",
+    "fps": 30,
+    "totalFrames": 8906,
+    "totalDuration": 295.9,
+    "hierarchyType": "sticky"
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 295.9,
+    "words": [
+      {
+        "word": "git",
+        "start": 0.0,
+        "end": 0.232,
+        "startFrame": 0,
+        "endFrame": 7
+      },
+      {
+        "word": "hub",
+        "start": 0.279,
+        "end": 0.441,
+        "startFrame": 8,
+        "endFrame": 13
+      },
+      {
+        "word": "just",
+        "start": 0.511,
+        "end": 0.673,
+        "startFrame": 15,
+        "endFrame": 20
+      },
+      {
+        "word": "announced",
+        "start": 0.708,
+        "end": 1.033,
+        "startFrame": 21,
+        "endFrame": 31
+      },
+      {
+        "word": "they",
+        "start": 1.057,
+        "end": 1.173,
+        "startFrame": 32,
+        "endFrame": 35
+      },
+      {
+        "word": "own",
+        "start": 1.242,
+        "end": 1.416,
+        "startFrame": 37,
+        "endFrame": 42
+      },
+      {
+        "word": "your",
+        "start": 1.463,
+        "end": 1.579,
+        "startFrame": 44,
+        "endFrame": 47
+      },
+      {
+        "word": "private",
+        "start": 1.637,
+        "end": 1.985,
+        "startFrame": 49,
+        "endFrame": 60
+      },
+      {
+        "word": "code",
+        "start": 2.032,
+        "end": 2.496,
+        "startFrame": 61,
+        "endFrame": 75
+      },
+      {
+        "word": "the",
+        "start": 2.705,
+        "end": 2.844,
+        "startFrame": 81,
+        "endFrame": 85
+      },
+      {
+        "word": "moment",
+        "start": 2.937,
+        "end": 3.286,
+        "startFrame": 88,
+        "endFrame": 99
+      },
+      {
+        "word": "you",
+        "start": 3.332,
+        "end": 3.413,
+        "startFrame": 100,
+        "endFrame": 102
+      },
+      {
+        "word": "use",
+        "start": 3.495,
+        "end": 3.68,
+        "startFrame": 105,
+        "endFrame": 110
+      },
+      {
+        "word": "Copilot.",
+        "start": 3.715,
+        "end": 4.412,
+        "startFrame": 111,
+        "endFrame": 132
+      },
+      {
+        "word": "Here's",
+        "start": 5.016,
+        "end": 5.259,
+        "startFrame": 150,
+        "endFrame": 158
+      },
+      {
+        "word": "what",
+        "start": 5.283,
+        "end": 5.375,
+        "startFrame": 158,
+        "endFrame": 161
+      },
+      {
+        "word": "that",
+        "start": 5.41,
+        "end": 5.538,
+        "startFrame": 162,
+        "endFrame": 166
+      },
+      {
+        "word": "actually",
+        "start": 5.596,
+        "end": 5.944,
+        "startFrame": 168,
+        "endFrame": 178
+      },
+      {
+        "word": "means",
+        "start": 6.002,
+        "end": 6.246,
+        "startFrame": 180,
+        "endFrame": 187
+      },
+      {
+        "word": "for",
+        "start": 6.304,
+        "end": 6.397,
+        "startFrame": 189,
+        "endFrame": 192
+      },
+      {
+        "word": "your",
+        "start": 6.444,
+        "end": 6.56,
+        "startFrame": 193,
+        "endFrame": 197
+      },
+      {
+        "word": "startup.\n\nIn",
+        "start": 6.594,
+        "end": 7.988,
+        "startFrame": 198,
+        "endFrame": 240
+      },
+      {
+        "word": "April",
+        "start": 8.057,
+        "end": 8.371,
+        "startFrame": 242,
+        "endFrame": 251
+      },
+      {
+        "word": "2024,",
+        "start": 8.44,
+        "end": 9.462,
+        "startFrame": 253,
+        "endFrame": 284
+      },
+      {
+        "word": "git",
+        "start": 9.845,
+        "end": 10.054,
+        "startFrame": 295,
+        "endFrame": 302
+      },
+      {
+        "word": "hub",
+        "start": 10.101,
+        "end": 10.252,
+        "startFrame": 303,
+        "endFrame": 308
+      },
+      {
+        "word": "quietly",
+        "start": 10.333,
+        "end": 10.762,
+        "startFrame": 310,
+        "endFrame": 323
+      },
+      {
+        "word": "updated",
+        "start": 10.82,
+        "end": 11.238,
+        "startFrame": 325,
+        "endFrame": 337
+      },
+      {
+        "word": "their",
+        "start": 11.273,
+        "end": 11.424,
+        "startFrame": 338,
+        "endFrame": 343
+      },
+      {
+        "word": "terms",
+        "start": 11.471,
+        "end": 11.749,
+        "startFrame": 344,
+        "endFrame": 352
+      },
+      {
+        "word": "of",
+        "start": 11.784,
+        "end": 11.854,
+        "startFrame": 354,
+        "endFrame": 356
+      },
+      {
+        "word": "service",
+        "start": 11.923,
+        "end": 12.539,
+        "startFrame": 358,
+        "endFrame": 376
+      },
+      {
+        "word": "with",
+        "start": 12.69,
+        "end": 12.875,
+        "startFrame": 381,
+        "endFrame": 386
+      },
+      {
+        "word": "a",
+        "start": 12.922,
+        "end": 12.957,
+        "startFrame": 388,
+        "endFrame": 389
+      },
+      {
+        "word": "single",
+        "start": 13.05,
+        "end": 13.398,
+        "startFrame": 392,
+        "endFrame": 402
+      },
+      {
+        "word": "paragraph",
+        "start": 13.444,
+        "end": 14.013,
+        "startFrame": 403,
+        "endFrame": 420
+      },
+      {
+        "word": "that",
+        "start": 14.222,
+        "end": 14.42,
+        "startFrame": 427,
+        "endFrame": 433
+      },
+      {
+        "word": "changed",
+        "start": 14.478,
+        "end": 14.838,
+        "startFrame": 434,
+        "endFrame": 445
+      },
+      {
+        "word": "everything.",
+        "start": 14.954,
+        "end": 15.581,
+        "startFrame": 449,
+        "endFrame": 467
+      },
+      {
+        "word": "All",
+        "start": 16.277,
+        "end": 16.544,
+        "startFrame": 488,
+        "endFrame": 496
+      },
+      {
+        "word": "interactions",
+        "start": 16.614,
+        "end": 17.229,
+        "startFrame": 498,
+        "endFrame": 517
+      },
+      {
+        "word": "with",
+        "start": 17.264,
+        "end": 17.392,
+        "startFrame": 518,
+        "endFrame": 522
+      },
+      {
+        "word": "Copilot,",
+        "start": 17.438,
+        "end": 18.1,
+        "startFrame": 523,
+        "endFrame": 543
+      },
+      {
+        "word": "including",
+        "start": 18.274,
+        "end": 18.716,
+        "startFrame": 548,
+        "endFrame": 561
+      },
+      {
+        "word": "your",
+        "start": 18.762,
+        "end": 18.878,
+        "startFrame": 563,
+        "endFrame": 566
+      },
+      {
+        "word": "prompts",
+        "start": 18.936,
+        "end": 19.308,
+        "startFrame": 568,
+        "endFrame": 579
+      },
+      {
+        "word": "and",
+        "start": 19.343,
+        "end": 19.412,
+        "startFrame": 580,
+        "endFrame": 582
+      },
+      {
+        "word": "the",
+        "start": 19.447,
+        "end": 19.517,
+        "startFrame": 583,
+        "endFrame": 586
+      },
+      {
+        "word": "code",
+        "start": 19.586,
+        "end": 19.865,
+        "startFrame": 588,
+        "endFrame": 596
+      },
+      {
+        "word": "suggestions",
+        "start": 19.9,
+        "end": 20.434,
+        "startFrame": 597,
+        "endFrame": 613
+      },
+      {
+        "word": "you",
+        "start": 20.469,
+        "end": 20.55,
+        "startFrame": 614,
+        "endFrame": 616
+      },
+      {
+        "word": "accept,",
+        "start": 20.596,
+        "end": 21.165,
+        "startFrame": 618,
+        "endFrame": 635
+      },
+      {
+        "word": "now",
+        "start": 21.606,
+        "end": 21.769,
+        "startFrame": 648,
+        "endFrame": 653
+      },
+      {
+        "word": "become",
+        "start": 21.839,
+        "end": 22.129,
+        "startFrame": 655,
+        "endFrame": 664
+      },
+      {
+        "word": "training",
+        "start": 22.164,
+        "end": 22.524,
+        "startFrame": 665,
+        "endFrame": 676
+      },
+      {
+        "word": "data",
+        "start": 22.582,
+        "end": 22.895,
+        "startFrame": 677,
+        "endFrame": 687
+      },
+      {
+        "word": "for",
+        "start": 23.104,
+        "end": 23.267,
+        "startFrame": 693,
+        "endFrame": 698
+      },
+      {
+        "word": "their",
+        "start": 23.313,
+        "end": 23.464,
+        "startFrame": 699,
+        "endFrame": 704
+      },
+      {
+        "word": "A",
+        "start": 23.58,
+        "end": 23.754,
+        "startFrame": 707,
+        "endFrame": 713
+      },
+      {
+        "word": "I",
+        "start": 23.905,
+        "end": 24.021,
+        "startFrame": 717,
+        "endFrame": 721
+      },
+      {
+        "word": "models.",
+        "start": 24.137,
+        "end": 24.764,
+        "startFrame": 724,
+        "endFrame": 743
+      },
+      {
+        "word": "Your",
+        "start": 25.461,
+        "end": 25.635,
+        "startFrame": 764,
+        "endFrame": 769
+      },
+      {
+        "word": "private",
+        "start": 25.693,
+        "end": 26.041,
+        "startFrame": 771,
+        "endFrame": 781
+      },
+      {
+        "word": "repositories,",
+        "start": 26.076,
+        "end": 27.179,
+        "startFrame": 782,
+        "endFrame": 815
+      },
+      {
+        "word": "your",
+        "start": 27.388,
+        "end": 27.528,
+        "startFrame": 822,
+        "endFrame": 826
+      },
+      {
+        "word": "proprietary",
+        "start": 27.574,
+        "end": 28.247,
+        "startFrame": 827,
+        "endFrame": 847
+      },
+      {
+        "word": "algorithms,",
+        "start": 28.317,
+        "end": 29.188,
+        "startFrame": 850,
+        "endFrame": 876
+      },
+      {
+        "word": "your",
+        "start": 29.466,
+        "end": 29.606,
+        "startFrame": 884,
+        "endFrame": 888
+      },
+      {
+        "word": "competitive",
+        "start": 29.664,
+        "end": 30.221,
+        "startFrame": 890,
+        "endFrame": 907
+      },
+      {
+        "word": "edge",
+        "start": 30.267,
+        "end": 30.616,
+        "startFrame": 908,
+        "endFrame": 918
+      },
+      {
+        "word": "-",
+        "start": 30.732,
+        "end": 30.755,
+        "startFrame": 922,
+        "endFrame": 923
+      },
+      {
+        "word": "all",
+        "start": 31.196,
+        "end": 31.487,
+        "startFrame": 936,
+        "endFrame": 945
+      },
+      {
+        "word": "fair",
+        "start": 31.58,
+        "end": 31.835,
+        "startFrame": 947,
+        "endFrame": 955
+      },
+      {
+        "word": "game.\n\nHere's",
+        "start": 31.905,
+        "end": 33.402,
+        "startFrame": 957,
+        "endFrame": 1002
+      },
+      {
+        "word": "why",
+        "start": 33.449,
+        "end": 33.576,
+        "startFrame": 1003,
+        "endFrame": 1007
+      },
+      {
+        "word": "this",
+        "start": 33.635,
+        "end": 33.774,
+        "startFrame": 1009,
+        "endFrame": 1013
+      },
+      {
+        "word": "matters",
+        "start": 33.855,
+        "end": 34.261,
+        "startFrame": 1016,
+        "endFrame": 1028
+      },
+      {
+        "word": "more",
+        "start": 34.436,
+        "end": 34.645,
+        "startFrame": 1033,
+        "endFrame": 1039
+      },
+      {
+        "word": "than",
+        "start": 34.668,
+        "end": 34.784,
+        "startFrame": 1040,
+        "endFrame": 1044
+      },
+      {
+        "word": "you",
+        "start": 34.819,
+        "end": 34.9,
+        "startFrame": 1045,
+        "endFrame": 1047
+      },
+      {
+        "word": "think.",
+        "start": 34.958,
+        "end": 35.399,
+        "startFrame": 1049,
+        "endFrame": 1062
+      },
+      {
+        "word": "Let's",
+        "start": 36.212,
+        "end": 36.433,
+        "startFrame": 1086,
+        "endFrame": 1093
+      },
+      {
+        "word": "say",
+        "start": 36.467,
+        "end": 36.618,
+        "startFrame": 1094,
+        "endFrame": 1099
+      },
+      {
+        "word": "you're",
+        "start": 36.653,
+        "end": 36.827,
+        "startFrame": 1100,
+        "endFrame": 1105
+      },
+      {
+        "word": "building",
+        "start": 36.862,
+        "end": 37.164,
+        "startFrame": 1106,
+        "endFrame": 1115
+      },
+      {
+        "word": "a",
+        "start": 37.21,
+        "end": 37.234,
+        "startFrame": 1116,
+        "endFrame": 1117
+      },
+      {
+        "word": "fintech",
+        "start": 37.326,
+        "end": 37.768,
+        "startFrame": 1120,
+        "endFrame": 1133
+      },
+      {
+        "word": "startup",
+        "start": 37.837,
+        "end": 38.255,
+        "startFrame": 1135,
+        "endFrame": 1148
+      },
+      {
+        "word": "with",
+        "start": 38.696,
+        "end": 38.882,
+        "startFrame": 1161,
+        "endFrame": 1166
+      },
+      {
+        "word": "a",
+        "start": 38.929,
+        "end": 38.964,
+        "startFrame": 1168,
+        "endFrame": 1169
+      },
+      {
+        "word": "proprietary",
+        "start": 39.022,
+        "end": 39.73,
+        "startFrame": 1171,
+        "endFrame": 1192
+      },
+      {
+        "word": "trading",
+        "start": 39.788,
+        "end": 40.113,
+        "startFrame": 1194,
+        "endFrame": 1203
+      },
+      {
+        "word": "algorithm",
+        "start": 40.171,
+        "end": 40.659,
+        "startFrame": 1205,
+        "endFrame": 1220
+      },
+      {
+        "word": "that",
+        "start": 40.937,
+        "end": 41.111,
+        "startFrame": 1228,
+        "endFrame": 1233
+      },
+      {
+        "word": "gives",
+        "start": 41.158,
+        "end": 41.332,
+        "startFrame": 1235,
+        "endFrame": 1240
+      },
+      {
+        "word": "you",
+        "start": 41.378,
+        "end": 41.46,
+        "startFrame": 1241,
+        "endFrame": 1244
+      },
+      {
+        "word": "an",
+        "start": 41.529,
+        "end": 41.587,
+        "startFrame": 1246,
+        "endFrame": 1248
+      },
+      {
+        "word": "edge",
+        "start": 41.703,
+        "end": 42.04,
+        "startFrame": 1251,
+        "endFrame": 1261
+      },
+      {
+        "word": "over",
+        "start": 42.087,
+        "end": 42.296,
+        "startFrame": 1263,
+        "endFrame": 1269
+      },
+      {
+        "word": "competitors.",
+        "start": 42.354,
+        "end": 43.155,
+        "startFrame": 1271,
+        "endFrame": 1295
+      },
+      {
+        "word": "You",
+        "start": 43.851,
+        "end": 43.991,
+        "startFrame": 1316,
+        "endFrame": 1320
+      },
+      {
+        "word": "use",
+        "start": 44.107,
+        "end": 44.304,
+        "startFrame": 1323,
+        "endFrame": 1329
+      },
+      {
+        "word": "Copilot",
+        "start": 44.351,
+        "end": 45.07,
+        "startFrame": 1331,
+        "endFrame": 1352
+      },
+      {
+        "word": "to",
+        "start": 45.314,
+        "end": 45.43,
+        "startFrame": 1359,
+        "endFrame": 1363
+      },
+      {
+        "word": "help",
+        "start": 45.5,
+        "end": 45.674,
+        "startFrame": 1365,
+        "endFrame": 1370
+      },
+      {
+        "word": "optimize",
+        "start": 45.767,
+        "end": 46.394,
+        "startFrame": 1373,
+        "endFrame": 1392
+      },
+      {
+        "word": "a",
+        "start": 46.429,
+        "end": 46.464,
+        "startFrame": 1393,
+        "endFrame": 1394
+      },
+      {
+        "word": "critical",
+        "start": 46.556,
+        "end": 46.962,
+        "startFrame": 1397,
+        "endFrame": 1409
+      },
+      {
+        "word": "function",
+        "start": 47.032,
+        "end": 47.496,
+        "startFrame": 1411,
+        "endFrame": 1425
+      },
+      {
+        "word": "that",
+        "start": 47.938,
+        "end": 48.123,
+        "startFrame": 1438,
+        "endFrame": 1444
+      },
+      {
+        "word": "processes",
+        "start": 48.193,
+        "end": 48.878,
+        "startFrame": 1446,
+        "endFrame": 1466
+      },
+      {
+        "word": "market",
+        "start": 48.994,
+        "end": 49.342,
+        "startFrame": 1470,
+        "endFrame": 1480
+      },
+      {
+        "word": "data.",
+        "start": 49.389,
+        "end": 49.865,
+        "startFrame": 1482,
+        "endFrame": 1496
+      },
+      {
+        "word": "git",
+        "start": 50.678,
+        "end": 50.863,
+        "startFrame": 1520,
+        "endFrame": 1526
+      },
+      {
+        "word": "hub",
+        "start": 50.91,
+        "end": 51.072,
+        "startFrame": 1527,
+        "endFrame": 1532
+      },
+      {
+        "word": "now",
+        "start": 51.142,
+        "end": 51.281,
+        "startFrame": 1534,
+        "endFrame": 1538
+      },
+      {
+        "word": "owns",
+        "start": 51.374,
+        "end": 51.676,
+        "startFrame": 1541,
+        "endFrame": 1550
+      },
+      {
+        "word": "that",
+        "start": 51.723,
+        "end": 51.85,
+        "startFrame": 1552,
+        "endFrame": 1556
+      },
+      {
+        "word": "interaction.",
+        "start": 51.897,
+        "end": 52.651,
+        "startFrame": 1557,
+        "endFrame": 1580
+      },
+      {
+        "word": "They",
+        "start": 53.162,
+        "end": 53.325,
+        "startFrame": 1595,
+        "endFrame": 1600
+      },
+      {
+        "word": "can",
+        "start": 53.36,
+        "end": 53.476,
+        "startFrame": 1601,
+        "endFrame": 1604
+      },
+      {
+        "word": "train",
+        "start": 53.522,
+        "end": 53.743,
+        "startFrame": 1606,
+        "endFrame": 1612
+      },
+      {
+        "word": "future",
+        "start": 53.836,
+        "end": 54.219,
+        "startFrame": 1615,
+        "endFrame": 1627
+      },
+      {
+        "word": "models",
+        "start": 54.265,
+        "end": 54.59,
+        "startFrame": 1628,
+        "endFrame": 1638
+      },
+      {
+        "word": "on",
+        "start": 54.637,
+        "end": 54.706,
+        "startFrame": 1639,
+        "endFrame": 1641
+      },
+      {
+        "word": "your",
+        "start": 54.753,
+        "end": 54.869,
+        "startFrame": 1643,
+        "endFrame": 1646
+      },
+      {
+        "word": "logic,",
+        "start": 54.927,
+        "end": 55.484,
+        "startFrame": 1648,
+        "endFrame": 1665
+      },
+      {
+        "word": "and",
+        "start": 55.995,
+        "end": 56.134,
+        "startFrame": 1680,
+        "endFrame": 1684
+      },
+      {
+        "word": "when",
+        "start": 56.169,
+        "end": 56.285,
+        "startFrame": 1685,
+        "endFrame": 1689
+      },
+      {
+        "word": "your",
+        "start": 56.32,
+        "end": 56.425,
+        "startFrame": 1690,
+        "endFrame": 1693
+      },
+      {
+        "word": "competitors",
+        "start": 56.471,
+        "end": 57.028,
+        "startFrame": 1694,
+        "endFrame": 1711
+      },
+      {
+        "word": "use",
+        "start": 57.098,
+        "end": 57.284,
+        "startFrame": 1713,
+        "endFrame": 1719
+      },
+      {
+        "word": "Copilot,",
+        "start": 57.342,
+        "end": 58.108,
+        "startFrame": 1720,
+        "endFrame": 1743
+      },
+      {
+        "word": "they",
+        "start": 58.433,
+        "end": 58.584,
+        "startFrame": 1753,
+        "endFrame": 1758
+      },
+      {
+        "word": "might",
+        "start": 58.619,
+        "end": 58.77,
+        "startFrame": 1759,
+        "endFrame": 1763
+      },
+      {
+        "word": "get",
+        "start": 58.805,
+        "end": 58.932,
+        "startFrame": 1764,
+        "endFrame": 1768
+      },
+      {
+        "word": "suggestions",
+        "start": 58.979,
+        "end": 59.629,
+        "startFrame": 1769,
+        "endFrame": 1789
+      },
+      {
+        "word": "eerily",
+        "start": 59.803,
+        "end": 60.267,
+        "startFrame": 1794,
+        "endFrame": 1808
+      },
+      {
+        "word": "similar",
+        "start": 60.349,
+        "end": 60.743,
+        "startFrame": 1810,
+        "endFrame": 1822
+      },
+      {
+        "word": "to",
+        "start": 60.802,
+        "end": 60.86,
+        "startFrame": 1824,
+        "endFrame": 1826
+      },
+      {
+        "word": "your",
+        "start": 60.929,
+        "end": 61.045,
+        "startFrame": 1828,
+        "endFrame": 1831
+      },
+      {
+        "word": "secret",
+        "start": 61.103,
+        "end": 61.417,
+        "startFrame": 1833,
+        "endFrame": 1843
+      },
+      {
+        "word": "sauce.\n\nIt",
+        "start": 61.463,
+        "end": 62.88,
+        "startFrame": 1844,
+        "endFrame": 1886
+      },
+      {
+        "word": "gets",
+        "start": 62.938,
+        "end": 63.124,
+        "startFrame": 1888,
+        "endFrame": 1894
+      },
+      {
+        "word": "worse.",
+        "start": 63.182,
+        "end": 63.728,
+        "startFrame": 1895,
+        "endFrame": 1912
+      },
+      {
+        "word": "Most",
+        "start": 64.424,
+        "end": 64.726,
+        "startFrame": 1933,
+        "endFrame": 1942
+      },
+      {
+        "word": "startups",
+        "start": 64.772,
+        "end": 65.179,
+        "startFrame": 1943,
+        "endFrame": 1955
+      },
+      {
+        "word": "have",
+        "start": 65.214,
+        "end": 65.341,
+        "startFrame": 1956,
+        "endFrame": 1960
+      },
+      {
+        "word": "intellectual",
+        "start": 65.411,
+        "end": 66.003,
+        "startFrame": 1962,
+        "endFrame": 1980
+      },
+      {
+        "word": "property",
+        "start": 66.073,
+        "end": 66.421,
+        "startFrame": 1982,
+        "endFrame": 1993
+      },
+      {
+        "word": "agreements",
+        "start": 66.456,
+        "end": 66.874,
+        "startFrame": 1994,
+        "endFrame": 2006
+      },
+      {
+        "word": "with",
+        "start": 66.909,
+        "end": 67.036,
+        "startFrame": 2007,
+        "endFrame": 2011
+      },
+      {
+        "word": "their",
+        "start": 67.071,
+        "end": 67.211,
+        "startFrame": 2012,
+        "endFrame": 2016
+      },
+      {
+        "word": "investors.",
+        "start": 67.257,
+        "end": 67.977,
+        "startFrame": 2018,
+        "endFrame": 2039
+      },
+      {
+        "word": "These",
+        "start": 68.673,
+        "end": 68.929,
+        "startFrame": 2060,
+        "endFrame": 2068
+      },
+      {
+        "word": "contracts",
+        "start": 68.975,
+        "end": 69.474,
+        "startFrame": 2069,
+        "endFrame": 2084
+      },
+      {
+        "word": "explicitly",
+        "start": 69.521,
+        "end": 70.218,
+        "startFrame": 2086,
+        "endFrame": 2107
+      },
+      {
+        "word": "state",
+        "start": 70.264,
+        "end": 70.763,
+        "startFrame": 2108,
+        "endFrame": 2123
+      },
+      {
+        "word": "that",
+        "start": 70.937,
+        "end": 71.123,
+        "startFrame": 2128,
+        "endFrame": 2134
+      },
+      {
+        "word": "proprietary",
+        "start": 71.181,
+        "end": 71.889,
+        "startFrame": 2135,
+        "endFrame": 2157
+      },
+      {
+        "word": "code",
+        "start": 71.959,
+        "end": 72.319,
+        "startFrame": 2159,
+        "endFrame": 2170
+      },
+      {
+        "word": "and",
+        "start": 72.354,
+        "end": 72.447,
+        "startFrame": 2171,
+        "endFrame": 2173
+      },
+      {
+        "word": "algorithms",
+        "start": 72.528,
+        "end": 73.19,
+        "startFrame": 2176,
+        "endFrame": 2196
+      },
+      {
+        "word": "remain",
+        "start": 73.573,
+        "end": 73.863,
+        "startFrame": 2207,
+        "endFrame": 2216
+      },
+      {
+        "word": "confidential",
+        "start": 73.933,
+        "end": 74.606,
+        "startFrame": 2218,
+        "endFrame": 2238
+      },
+      {
+        "word": "and",
+        "start": 74.885,
+        "end": 75.175,
+        "startFrame": 2247,
+        "endFrame": 2255
+      },
+      {
+        "word": "cannot",
+        "start": 75.245,
+        "end": 75.535,
+        "startFrame": 2257,
+        "endFrame": 2266
+      },
+      {
+        "word": "be",
+        "start": 75.581,
+        "end": 75.674,
+        "startFrame": 2267,
+        "endFrame": 2270
+      },
+      {
+        "word": "shared",
+        "start": 75.721,
+        "end": 76.023,
+        "startFrame": 2272,
+        "endFrame": 2281
+      },
+      {
+        "word": "with",
+        "start": 76.046,
+        "end": 76.173,
+        "startFrame": 2281,
+        "endFrame": 2285
+      },
+      {
+        "word": "third",
+        "start": 76.231,
+        "end": 76.487,
+        "startFrame": 2287,
+        "endFrame": 2295
+      },
+      {
+        "word": "parties.",
+        "start": 76.545,
+        "end": 77.16,
+        "startFrame": 2296,
+        "endFrame": 2315
+      },
+      {
+        "word": "By",
+        "start": 77.973,
+        "end": 78.112,
+        "startFrame": 2339,
+        "endFrame": 2343
+      },
+      {
+        "word": "using",
+        "start": 78.182,
+        "end": 78.426,
+        "startFrame": 2345,
+        "endFrame": 2353
+      },
+      {
+        "word": "Copilot",
+        "start": 78.484,
+        "end": 79.03,
+        "startFrame": 2355,
+        "endFrame": 2371
+      },
+      {
+        "word": "on",
+        "start": 79.076,
+        "end": 79.146,
+        "startFrame": 2372,
+        "endFrame": 2374
+      },
+      {
+        "word": "sensitive",
+        "start": 79.227,
+        "end": 79.692,
+        "startFrame": 2377,
+        "endFrame": 2391
+      },
+      {
+        "word": "code,",
+        "start": 79.726,
+        "end": 80.156,
+        "startFrame": 2392,
+        "endFrame": 2405
+      },
+      {
+        "word": "you",
+        "start": 80.597,
+        "end": 80.702,
+        "startFrame": 2418,
+        "endFrame": 2421
+      },
+      {
+        "word": "might",
+        "start": 80.748,
+        "end": 80.911,
+        "startFrame": 2422,
+        "endFrame": 2427
+      },
+      {
+        "word": "be",
+        "start": 80.945,
+        "end": 81.038,
+        "startFrame": 2428,
+        "endFrame": 2431
+      },
+      {
+        "word": "violating",
+        "start": 81.108,
+        "end": 81.677,
+        "startFrame": 2433,
+        "endFrame": 2450
+      },
+      {
+        "word": "these",
+        "start": 81.723,
+        "end": 81.886,
+        "startFrame": 2452,
+        "endFrame": 2457
+      },
+      {
+        "word": "agreements",
+        "start": 81.921,
+        "end": 82.362,
+        "startFrame": 2458,
+        "endFrame": 2471
+      },
+      {
+        "word": "without",
+        "start": 82.408,
+        "end": 82.664,
+        "startFrame": 2472,
+        "endFrame": 2480
+      },
+      {
+        "word": "even",
+        "start": 82.699,
+        "end": 82.873,
+        "startFrame": 2481,
+        "endFrame": 2486
+      },
+      {
+        "word": "knowing",
+        "start": 82.919,
+        "end": 83.209,
+        "startFrame": 2488,
+        "endFrame": 2496
+      },
+      {
+        "word": "it.",
+        "start": 83.267,
+        "end": 83.511,
+        "startFrame": 2498,
+        "endFrame": 2505
+      },
+      {
+        "word": "One",
+        "start": 84.208,
+        "end": 84.428,
+        "startFrame": 2526,
+        "endFrame": 2533
+      },
+      {
+        "word": "leaked",
+        "start": 84.475,
+        "end": 84.695,
+        "startFrame": 2534,
+        "endFrame": 2541
+      },
+      {
+        "word": "algorithm",
+        "start": 84.754,
+        "end": 85.183,
+        "startFrame": 2543,
+        "endFrame": 2555
+      },
+      {
+        "word": "could",
+        "start": 85.241,
+        "end": 85.415,
+        "startFrame": 2557,
+        "endFrame": 2562
+      },
+      {
+        "word": "tank",
+        "start": 85.45,
+        "end": 85.74,
+        "startFrame": 2564,
+        "endFrame": 2572
+      },
+      {
+        "word": "your",
+        "start": 85.798,
+        "end": 85.915,
+        "startFrame": 2574,
+        "endFrame": 2577
+      },
+      {
+        "word": "next",
+        "start": 85.961,
+        "end": 86.158,
+        "startFrame": 2579,
+        "endFrame": 2585
+      },
+      {
+        "word": "funding",
+        "start": 86.205,
+        "end": 86.541,
+        "startFrame": 2586,
+        "endFrame": 2596
+      },
+      {
+        "word": "round.\n\nBut",
+        "start": 86.6,
+        "end": 87.83,
+        "startFrame": 2598,
+        "endFrame": 2635
+      },
+      {
+        "word": "there's",
+        "start": 87.865,
+        "end": 88.086,
+        "startFrame": 2636,
+        "endFrame": 2643
+      },
+      {
+        "word": "a",
+        "start": 88.12,
+        "end": 88.144,
+        "startFrame": 2644,
+        "endFrame": 2644
+      },
+      {
+        "word": "way",
+        "start": 88.202,
+        "end": 88.306,
+        "startFrame": 2646,
+        "endFrame": 2649
+      },
+      {
+        "word": "to",
+        "start": 88.353,
+        "end": 88.411,
+        "startFrame": 2651,
+        "endFrame": 2652
+      },
+      {
+        "word": "protect",
+        "start": 88.469,
+        "end": 88.782,
+        "startFrame": 2654,
+        "endFrame": 2663
+      },
+      {
+        "word": "your",
+        "start": 88.817,
+        "end": 88.933,
+        "startFrame": 2665,
+        "endFrame": 2668
+      },
+      {
+        "word": "codebase,",
+        "start": 89.003,
+        "end": 89.815,
+        "startFrame": 2670,
+        "endFrame": 2694
+      },
+      {
+        "word": "and",
+        "start": 90.141,
+        "end": 90.303,
+        "startFrame": 2704,
+        "endFrame": 2709
+      },
+      {
+        "word": "most",
+        "start": 90.384,
+        "end": 90.651,
+        "startFrame": 2712,
+        "endFrame": 2720
+      },
+      {
+        "word": "developers",
+        "start": 90.698,
+        "end": 91.197,
+        "startFrame": 2721,
+        "endFrame": 2736
+      },
+      {
+        "word": "don't",
+        "start": 91.267,
+        "end": 91.487,
+        "startFrame": 2738,
+        "endFrame": 2745
+      },
+      {
+        "word": "know",
+        "start": 91.522,
+        "end": 91.65,
+        "startFrame": 2746,
+        "endFrame": 2750
+      },
+      {
+        "word": "it",
+        "start": 91.708,
+        "end": 91.778,
+        "startFrame": 2751,
+        "endFrame": 2753
+      },
+      {
+        "word": "exists.\n\ngit",
+        "start": 91.812,
+        "end": 93.519,
+        "startFrame": 2754,
+        "endFrame": 2806
+      },
+      {
+        "word": "hub",
+        "start": 93.565,
+        "end": 93.809,
+        "startFrame": 2807,
+        "endFrame": 2814
+      },
+      {
+        "word": "doesn't",
+        "start": 94.25,
+        "end": 94.575,
+        "startFrame": 2828,
+        "endFrame": 2837
+      },
+      {
+        "word": "just",
+        "start": 94.622,
+        "end": 94.796,
+        "startFrame": 2839,
+        "endFrame": 2844
+      },
+      {
+        "word": "capture",
+        "start": 94.854,
+        "end": 95.284,
+        "startFrame": 2846,
+        "endFrame": 2859
+      },
+      {
+        "word": "the",
+        "start": 95.318,
+        "end": 95.388,
+        "startFrame": 2860,
+        "endFrame": 2862
+      },
+      {
+        "word": "code",
+        "start": 95.469,
+        "end": 95.818,
+        "startFrame": 2864,
+        "endFrame": 2875
+      },
+      {
+        "word": "you",
+        "start": 95.853,
+        "end": 95.945,
+        "startFrame": 2876,
+        "endFrame": 2878
+      },
+      {
+        "word": "write.",
+        "start": 96.003,
+        "end": 96.468,
+        "startFrame": 2880,
+        "endFrame": 2894
+      },
+      {
+        "word": "They",
+        "start": 97.072,
+        "end": 97.234,
+        "startFrame": 2912,
+        "endFrame": 2917
+      },
+      {
+        "word": "capture",
+        "start": 97.292,
+        "end": 97.699,
+        "startFrame": 2919,
+        "endFrame": 2931
+      },
+      {
+        "word": "your",
+        "start": 97.745,
+        "end": 97.873,
+        "startFrame": 2932,
+        "endFrame": 2936
+      },
+      {
+        "word": "prompts,",
+        "start": 97.942,
+        "end": 98.639,
+        "startFrame": 2938,
+        "endFrame": 2959
+      },
+      {
+        "word": "the",
+        "start": 98.848,
+        "end": 98.964,
+        "startFrame": 2965,
+        "endFrame": 2969
+      },
+      {
+        "word": "suggestions",
+        "start": 99.01,
+        "end": 99.579,
+        "startFrame": 2970,
+        "endFrame": 2987
+      },
+      {
+        "word": "you",
+        "start": 99.626,
+        "end": 99.707,
+        "startFrame": 2989,
+        "endFrame": 2991
+      },
+      {
+        "word": "accept,",
+        "start": 99.765,
+        "end": 100.38,
+        "startFrame": 2993,
+        "endFrame": 3011
+      },
+      {
+        "word": "the",
+        "start": 100.659,
+        "end": 100.775,
+        "startFrame": 3020,
+        "endFrame": 3023
+      },
+      {
+        "word": "suggestions",
+        "start": 100.822,
+        "end": 101.391,
+        "startFrame": 3025,
+        "endFrame": 3042
+      },
+      {
+        "word": "you",
+        "start": 101.449,
+        "end": 101.53,
+        "startFrame": 3043,
+        "endFrame": 3046
+      },
+      {
+        "word": "reject,",
+        "start": 101.611,
+        "end": 102.319,
+        "startFrame": 3048,
+        "endFrame": 3070
+      },
+      {
+        "word": "and",
+        "start": 102.76,
+        "end": 102.911,
+        "startFrame": 3083,
+        "endFrame": 3087
+      },
+      {
+        "word": "most",
+        "start": 102.969,
+        "end": 103.167,
+        "startFrame": 3089,
+        "endFrame": 3095
+      },
+      {
+        "word": "importantly,",
+        "start": 103.213,
+        "end": 103.968,
+        "startFrame": 3096,
+        "endFrame": 3119
+      },
+      {
+        "word": "the",
+        "start": 104.293,
+        "end": 104.409,
+        "startFrame": 3129,
+        "endFrame": 3132
+      },
+      {
+        "word": "surrounding",
+        "start": 104.467,
+        "end": 105.024,
+        "startFrame": 3134,
+        "endFrame": 3151
+      },
+      {
+        "word": "context",
+        "start": 105.141,
+        "end": 105.744,
+        "startFrame": 3154,
+        "endFrame": 3172
+      },
+      {
+        "word": "from",
+        "start": 105.779,
+        "end": 105.918,
+        "startFrame": 3173,
+        "endFrame": 3178
+      },
+      {
+        "word": "your",
+        "start": 105.976,
+        "end": 106.093,
+        "startFrame": 3179,
+        "endFrame": 3183
+      },
+      {
+        "word": "private",
+        "start": 106.162,
+        "end": 106.58,
+        "startFrame": 3185,
+        "endFrame": 3197
+      },
+      {
+        "word": "repositories.",
+        "start": 106.615,
+        "end": 107.602,
+        "startFrame": 3198,
+        "endFrame": 3228
+      },
+      {
+        "word": "When",
+        "start": 108.298,
+        "end": 108.473,
+        "startFrame": 3249,
+        "endFrame": 3254
+      },
+      {
+        "word": "you",
+        "start": 108.507,
+        "end": 108.577,
+        "startFrame": 3255,
+        "endFrame": 3257
+      },
+      {
+        "word": "ask",
+        "start": 108.647,
+        "end": 108.832,
+        "startFrame": 3259,
+        "endFrame": 3265
+      },
+      {
+        "word": "Copilot",
+        "start": 108.89,
+        "end": 109.471,
+        "startFrame": 3267,
+        "endFrame": 3284
+      },
+      {
+        "word": "to",
+        "start": 109.506,
+        "end": 109.575,
+        "startFrame": 3285,
+        "endFrame": 3287
+      },
+      {
+        "word": "optimize",
+        "start": 109.691,
+        "end": 110.295,
+        "startFrame": 3291,
+        "endFrame": 3309
+      },
+      {
+        "word": "a",
+        "start": 110.33,
+        "end": 110.365,
+        "startFrame": 3310,
+        "endFrame": 3311
+      },
+      {
+        "word": "function,",
+        "start": 110.446,
+        "end": 111.003,
+        "startFrame": 3313,
+        "endFrame": 3330
+      },
+      {
+        "word": "it",
+        "start": 111.328,
+        "end": 111.456,
+        "startFrame": 3340,
+        "endFrame": 3344
+      },
+      {
+        "word": "sees",
+        "start": 111.514,
+        "end": 111.758,
+        "startFrame": 3345,
+        "endFrame": 3353
+      },
+      {
+        "word": "your",
+        "start": 111.804,
+        "end": 111.932,
+        "startFrame": 3354,
+        "endFrame": 3358
+      },
+      {
+        "word": "entire",
+        "start": 111.979,
+        "end": 112.455,
+        "startFrame": 3359,
+        "endFrame": 3374
+      },
+      {
+        "word": "file,",
+        "start": 112.524,
+        "end": 113.14,
+        "startFrame": 3376,
+        "endFrame": 3394
+      },
+      {
+        "word": "your",
+        "start": 113.314,
+        "end": 113.476,
+        "startFrame": 3399,
+        "endFrame": 3404
+      },
+      {
+        "word": "imports,",
+        "start": 113.546,
+        "end": 114.312,
+        "startFrame": 3406,
+        "endFrame": 3429
+      },
+      {
+        "word": "your",
+        "start": 114.486,
+        "end": 114.637,
+        "startFrame": 3435,
+        "endFrame": 3439
+      },
+      {
+        "word": "variable",
+        "start": 114.707,
+        "end": 115.171,
+        "startFrame": 3441,
+        "endFrame": 3455
+      },
+      {
+        "word": "names,",
+        "start": 115.229,
+        "end": 115.682,
+        "startFrame": 3457,
+        "endFrame": 3470
+      },
+      {
+        "word": "your",
+        "start": 115.705,
+        "end": 115.833,
+        "startFrame": 3471,
+        "endFrame": 3475
+      },
+      {
+        "word": "comments.",
+        "start": 115.891,
+        "end": 116.646,
+        "startFrame": 3477,
+        "endFrame": 3499
+      },
+      {
+        "word": "It's",
+        "start": 117.342,
+        "end": 117.528,
+        "startFrame": 3520,
+        "endFrame": 3526
+      },
+      {
+        "word": "like",
+        "start": 117.563,
+        "end": 117.702,
+        "startFrame": 3527,
+        "endFrame": 3531
+      },
+      {
+        "word": "hiring",
+        "start": 117.737,
+        "end": 118.062,
+        "startFrame": 3532,
+        "endFrame": 3542
+      },
+      {
+        "word": "a",
+        "start": 118.109,
+        "end": 118.143,
+        "startFrame": 3543,
+        "endFrame": 3544
+      },
+      {
+        "word": "translator",
+        "start": 118.213,
+        "end": 118.863,
+        "startFrame": 3546,
+        "endFrame": 3566
+      },
+      {
+        "word": "for",
+        "start": 119.107,
+        "end": 119.27,
+        "startFrame": 3573,
+        "endFrame": 3578
+      },
+      {
+        "word": "a",
+        "start": 119.316,
+        "end": 119.339,
+        "startFrame": 3579,
+        "endFrame": 3580
+      },
+      {
+        "word": "confidential",
+        "start": 119.409,
+        "end": 120.106,
+        "startFrame": 3582,
+        "endFrame": 3603
+      },
+      {
+        "word": "document",
+        "start": 120.175,
+        "end": 120.698,
+        "startFrame": 3605,
+        "endFrame": 3621
+      },
+      {
+        "word": "who",
+        "start": 121.081,
+        "end": 121.255,
+        "startFrame": 3632,
+        "endFrame": 3638
+      },
+      {
+        "word": "memorizes",
+        "start": 121.371,
+        "end": 122.01,
+        "startFrame": 3641,
+        "endFrame": 3660
+      },
+      {
+        "word": "everything",
+        "start": 122.126,
+        "end": 122.787,
+        "startFrame": 3664,
+        "endFrame": 3684
+      },
+      {
+        "word": "and",
+        "start": 123.113,
+        "end": 123.38,
+        "startFrame": 3693,
+        "endFrame": 3701
+      },
+      {
+        "word": "later",
+        "start": 123.496,
+        "end": 123.821,
+        "startFrame": 3705,
+        "endFrame": 3715
+      },
+      {
+        "word": "uses",
+        "start": 123.902,
+        "end": 124.25,
+        "startFrame": 3717,
+        "endFrame": 3728
+      },
+      {
+        "word": "those",
+        "start": 124.297,
+        "end": 124.494,
+        "startFrame": 3729,
+        "endFrame": 3735
+      },
+      {
+        "word": "memories",
+        "start": 124.564,
+        "end": 125.005,
+        "startFrame": 3737,
+        "endFrame": 3750
+      },
+      {
+        "word": "to",
+        "start": 125.249,
+        "end": 125.353,
+        "startFrame": 3757,
+        "endFrame": 3761
+      },
+      {
+        "word": "help",
+        "start": 125.435,
+        "end": 125.608,
+        "startFrame": 3763,
+        "endFrame": 3768
+      },
+      {
+        "word": "your",
+        "start": 125.655,
+        "end": 125.759,
+        "startFrame": 3770,
+        "endFrame": 3773
+      },
+      {
+        "word": "competitors",
+        "start": 125.817,
+        "end": 126.491,
+        "startFrame": 3775,
+        "endFrame": 3795
+      },
+      {
+        "word": "write",
+        "start": 126.735,
+        "end": 127.071,
+        "startFrame": 3802,
+        "endFrame": 3812
+      },
+      {
+        "word": "similar",
+        "start": 127.129,
+        "end": 127.547,
+        "startFrame": 3814,
+        "endFrame": 3826
+      },
+      {
+        "word": "documents.\n\nThe",
+        "start": 127.605,
+        "end": 129.196,
+        "startFrame": 3828,
+        "endFrame": 3876
+      },
+      {
+        "word": "real",
+        "start": 129.254,
+        "end": 129.417,
+        "startFrame": 3878,
+        "endFrame": 3883
+      },
+      {
+        "word": "kicker",
+        "start": 129.475,
+        "end": 129.788,
+        "startFrame": 3884,
+        "endFrame": 3894
+      },
+      {
+        "word": "is",
+        "start": 129.858,
+        "end": 129.939,
+        "startFrame": 3896,
+        "endFrame": 3898
+      },
+      {
+        "word": "that",
+        "start": 129.985,
+        "end": 130.113,
+        "startFrame": 3900,
+        "endFrame": 3903
+      },
+      {
+        "word": "this",
+        "start": 130.16,
+        "end": 130.299,
+        "startFrame": 3905,
+        "endFrame": 3909
+      },
+      {
+        "word": "training",
+        "start": 130.357,
+        "end": 130.694,
+        "startFrame": 3911,
+        "endFrame": 3921
+      },
+      {
+        "word": "happens",
+        "start": 130.763,
+        "end": 131.088,
+        "startFrame": 3923,
+        "endFrame": 3933
+      },
+      {
+        "word": "across",
+        "start": 131.135,
+        "end": 131.506,
+        "startFrame": 3934,
+        "endFrame": 3945
+      },
+      {
+        "word": "all",
+        "start": 131.576,
+        "end": 131.855,
+        "startFrame": 3947,
+        "endFrame": 3956
+      },
+      {
+        "word": "git",
+        "start": 131.947,
+        "end": 132.11,
+        "startFrame": 3958,
+        "endFrame": 3963
+      },
+      {
+        "word": "hub",
+        "start": 132.156,
+        "end": 132.296,
+        "startFrame": 3965,
+        "endFrame": 3969
+      },
+      {
+        "word": "repositories,",
+        "start": 132.365,
+        "end": 133.271,
+        "startFrame": 3971,
+        "endFrame": 3998
+      },
+      {
+        "word": "even",
+        "start": 133.596,
+        "end": 133.852,
+        "startFrame": 4008,
+        "endFrame": 4016
+      },
+      {
+        "word": "enterprise",
+        "start": 133.91,
+        "end": 134.374,
+        "startFrame": 4017,
+        "endFrame": 4031
+      },
+      {
+        "word": "ones.",
+        "start": 134.42,
+        "end": 134.827,
+        "startFrame": 4033,
+        "endFrame": 4045
+      },
+      {
+        "word": "Your",
+        "start": 135.523,
+        "end": 135.698,
+        "startFrame": 4066,
+        "endFrame": 4071
+      },
+      {
+        "word": "Fortune",
+        "start": 135.756,
+        "end": 136.127,
+        "startFrame": 4073,
+        "endFrame": 4084
+      },
+      {
+        "word": "500",
+        "start": 136.185,
+        "end": 136.661,
+        "startFrame": 4086,
+        "endFrame": 4100
+      },
+      {
+        "word": "competitor's",
+        "start": 136.731,
+        "end": 137.311,
+        "startFrame": 4102,
+        "endFrame": 4119
+      },
+      {
+        "word": "internal",
+        "start": 137.393,
+        "end": 137.915,
+        "startFrame": 4122,
+        "endFrame": 4137
+      },
+      {
+        "word": "code",
+        "start": 137.985,
+        "end": 138.228,
+        "startFrame": 4140,
+        "endFrame": 4147
+      },
+      {
+        "word": "patterns",
+        "start": 138.263,
+        "end": 138.763,
+        "startFrame": 4148,
+        "endFrame": 4163
+      },
+      {
+        "word": "can",
+        "start": 139.146,
+        "end": 139.32,
+        "startFrame": 4174,
+        "endFrame": 4180
+      },
+      {
+        "word": "influence",
+        "start": 139.378,
+        "end": 139.819,
+        "startFrame": 4181,
+        "endFrame": 4195
+      },
+      {
+        "word": "suggestions",
+        "start": 139.842,
+        "end": 140.458,
+        "startFrame": 4195,
+        "endFrame": 4214
+      },
+      {
+        "word": "for",
+        "start": 140.504,
+        "end": 140.609,
+        "startFrame": 4215,
+        "endFrame": 4218
+      },
+      {
+        "word": "your",
+        "start": 140.655,
+        "end": 140.76,
+        "startFrame": 4220,
+        "endFrame": 4223
+      },
+      {
+        "word": "startup,",
+        "start": 140.795,
+        "end": 141.363,
+        "startFrame": 4224,
+        "endFrame": 4241
+      },
+      {
+        "word": "and",
+        "start": 141.572,
+        "end": 141.781,
+        "startFrame": 4247,
+        "endFrame": 4253
+      },
+      {
+        "word": "vice",
+        "start": 141.851,
+        "end": 142.06,
+        "startFrame": 4256,
+        "endFrame": 4262
+      },
+      {
+        "word": "versa.",
+        "start": 142.095,
+        "end": 142.583,
+        "startFrame": 4263,
+        "endFrame": 4277
+      },
+      {
+        "word": "git",
+        "start": 143.279,
+        "end": 143.442,
+        "startFrame": 4298,
+        "endFrame": 4303
+      },
+      {
+        "word": "hub",
+        "start": 143.488,
+        "end": 143.593,
+        "startFrame": 4305,
+        "endFrame": 4308
+      },
+      {
+        "word": "has",
+        "start": 143.627,
+        "end": 143.709,
+        "startFrame": 4309,
+        "endFrame": 4311
+      },
+      {
+        "word": "created",
+        "start": 143.755,
+        "end": 143.999,
+        "startFrame": 4313,
+        "endFrame": 4320
+      },
+      {
+        "word": "the",
+        "start": 144.022,
+        "end": 144.092,
+        "startFrame": 4321,
+        "endFrame": 4323
+      },
+      {
+        "word": "world's",
+        "start": 144.127,
+        "end": 144.394,
+        "startFrame": 4324,
+        "endFrame": 4332
+      },
+      {
+        "word": "largest",
+        "start": 144.51,
+        "end": 144.928,
+        "startFrame": 4335,
+        "endFrame": 4348
+      },
+      {
+        "word": "code-sharing",
+        "start": 144.986,
+        "end": 145.508,
+        "startFrame": 4350,
+        "endFrame": 4365
+      },
+      {
+        "word": "network,",
+        "start": 145.555,
+        "end": 146.042,
+        "startFrame": 4367,
+        "endFrame": 4381
+      },
+      {
+        "word": "except",
+        "start": 146.286,
+        "end": 146.611,
+        "startFrame": 4389,
+        "endFrame": 4398
+      },
+      {
+        "word": "nobody",
+        "start": 146.681,
+        "end": 147.006,
+        "startFrame": 4400,
+        "endFrame": 4410
+      },
+      {
+        "word": "explicitly",
+        "start": 147.052,
+        "end": 147.726,
+        "startFrame": 4412,
+        "endFrame": 4432
+      },
+      {
+        "word": "agreed",
+        "start": 147.772,
+        "end": 148.028,
+        "startFrame": 4433,
+        "endFrame": 4441
+      },
+      {
+        "word": "to",
+        "start": 148.051,
+        "end": 148.097,
+        "startFrame": 4442,
+        "endFrame": 4443
+      },
+      {
+        "word": "share.\n\nHere",
+        "start": 148.144,
+        "end": 149.363,
+        "startFrame": 4444,
+        "endFrame": 4481
+      },
+      {
+        "word": "are",
+        "start": 149.386,
+        "end": 149.502,
+        "startFrame": 4482,
+        "endFrame": 4485
+      },
+      {
+        "word": "three",
+        "start": 149.56,
+        "end": 149.781,
+        "startFrame": 4487,
+        "endFrame": 4493
+      },
+      {
+        "word": "ways",
+        "start": 149.816,
+        "end": 150.013,
+        "startFrame": 4494,
+        "endFrame": 4500
+      },
+      {
+        "word": "to",
+        "start": 150.059,
+        "end": 150.106,
+        "startFrame": 4502,
+        "endFrame": 4503
+      },
+      {
+        "word": "protect",
+        "start": 150.164,
+        "end": 150.466,
+        "startFrame": 4505,
+        "endFrame": 4514
+      },
+      {
+        "word": "yourself.",
+        "start": 150.501,
+        "end": 150.977,
+        "startFrame": 4515,
+        "endFrame": 4529
+      },
+      {
+        "word": "First,",
+        "start": 151.58,
+        "end": 152.103,
+        "startFrame": 4547,
+        "endFrame": 4563
+      },
+      {
+        "word": "if",
+        "start": 152.126,
+        "end": 152.242,
+        "startFrame": 4564,
+        "endFrame": 4567
+      },
+      {
+        "word": "you're",
+        "start": 152.277,
+        "end": 152.451,
+        "startFrame": 4568,
+        "endFrame": 4574
+      },
+      {
+        "word": "paying",
+        "start": 152.486,
+        "end": 152.753,
+        "startFrame": 4575,
+        "endFrame": 4583
+      },
+      {
+        "word": "for",
+        "start": 152.811,
+        "end": 152.915,
+        "startFrame": 4584,
+        "endFrame": 4587
+      },
+      {
+        "word": "git",
+        "start": 152.985,
+        "end": 153.124,
+        "startFrame": 4590,
+        "endFrame": 4594
+      },
+      {
+        "word": "hub",
+        "start": 153.171,
+        "end": 153.299,
+        "startFrame": 4595,
+        "endFrame": 4599
+      },
+      {
+        "word": "Enterprise,",
+        "start": 153.357,
+        "end": 154.042,
+        "startFrame": 4601,
+        "endFrame": 4621
+      },
+      {
+        "word": "you",
+        "start": 154.285,
+        "end": 154.367,
+        "startFrame": 4629,
+        "endFrame": 4631
+      },
+      {
+        "word": "can",
+        "start": 154.413,
+        "end": 154.506,
+        "startFrame": 4632,
+        "endFrame": 4635
+      },
+      {
+        "word": "opt",
+        "start": 154.553,
+        "end": 154.715,
+        "startFrame": 4637,
+        "endFrame": 4641
+      },
+      {
+        "word": "out",
+        "start": 154.75,
+        "end": 154.855,
+        "startFrame": 4642,
+        "endFrame": 4646
+      },
+      {
+        "word": "of",
+        "start": 154.889,
+        "end": 154.947,
+        "startFrame": 4647,
+        "endFrame": 4648
+      },
+      {
+        "word": "training",
+        "start": 155.04,
+        "end": 155.412,
+        "startFrame": 4651,
+        "endFrame": 4662
+      },
+      {
+        "word": "data",
+        "start": 155.47,
+        "end": 155.679,
+        "startFrame": 4664,
+        "endFrame": 4670
+      },
+      {
+        "word": "collection",
+        "start": 155.737,
+        "end": 156.097,
+        "startFrame": 4672,
+        "endFrame": 4683
+      },
+      {
+        "word": "entirely.",
+        "start": 156.143,
+        "end": 156.886,
+        "startFrame": 4684,
+        "endFrame": 4707
+      },
+      {
+        "word": "Navigate",
+        "start": 157.583,
+        "end": 158.094,
+        "startFrame": 4727,
+        "endFrame": 4743
+      },
+      {
+        "word": "to",
+        "start": 158.129,
+        "end": 158.187,
+        "startFrame": 4744,
+        "endFrame": 4746
+      },
+      {
+        "word": "your",
+        "start": 158.245,
+        "end": 158.361,
+        "startFrame": 4747,
+        "endFrame": 4751
+      },
+      {
+        "word": "organization",
+        "start": 158.407,
+        "end": 159.011,
+        "startFrame": 4752,
+        "endFrame": 4770
+      },
+      {
+        "word": "settings,",
+        "start": 159.081,
+        "end": 159.638,
+        "startFrame": 4772,
+        "endFrame": 4789
+      },
+      {
+        "word": "find",
+        "start": 160.079,
+        "end": 160.311,
+        "startFrame": 4802,
+        "endFrame": 4809
+      },
+      {
+        "word": "the",
+        "start": 160.346,
+        "end": 160.416,
+        "startFrame": 4810,
+        "endFrame": 4812
+      },
+      {
+        "word": "Copilot",
+        "start": 160.474,
+        "end": 161.008,
+        "startFrame": 4814,
+        "endFrame": 4830
+      },
+      {
+        "word": "section,",
+        "start": 161.054,
+        "end": 161.577,
+        "startFrame": 4832,
+        "endFrame": 4847
+      },
+      {
+        "word": "and",
+        "start": 161.96,
+        "end": 162.111,
+        "startFrame": 4859,
+        "endFrame": 4863
+      },
+      {
+        "word": "disable",
+        "start": 162.169,
+        "end": 162.622,
+        "startFrame": 4865,
+        "endFrame": 4879
+      },
+      {
+        "word": "data",
+        "start": 162.68,
+        "end": 162.924,
+        "startFrame": 4880,
+        "endFrame": 4888
+      },
+      {
+        "word": "collection",
+        "start": 162.982,
+        "end": 163.365,
+        "startFrame": 4889,
+        "endFrame": 4901
+      },
+      {
+        "word": "for",
+        "start": 163.423,
+        "end": 163.527,
+        "startFrame": 4903,
+        "endFrame": 4906
+      },
+      {
+        "word": "training.",
+        "start": 163.574,
+        "end": 164.061,
+        "startFrame": 4907,
+        "endFrame": 4922
+      },
+      {
+        "word": "This",
+        "start": 164.758,
+        "end": 164.932,
+        "startFrame": 4943,
+        "endFrame": 4948
+      },
+      {
+        "word": "should",
+        "start": 164.967,
+        "end": 165.129,
+        "startFrame": 4949,
+        "endFrame": 4954
+      },
+      {
+        "word": "have",
+        "start": 165.153,
+        "end": 165.246,
+        "startFrame": 4955,
+        "endFrame": 4957
+      },
+      {
+        "word": "been",
+        "start": 165.269,
+        "end": 165.396,
+        "startFrame": 4958,
+        "endFrame": 4962
+      },
+      {
+        "word": "the",
+        "start": 165.42,
+        "end": 165.489,
+        "startFrame": 4963,
+        "endFrame": 4965
+      },
+      {
+        "word": "default,",
+        "start": 165.571,
+        "end": 166.232,
+        "startFrame": 4967,
+        "endFrame": 4987
+      },
+      {
+        "word": "but",
+        "start": 166.743,
+        "end": 166.906,
+        "startFrame": 5002,
+        "endFrame": 5007
+      },
+      {
+        "word": "git",
+        "start": 166.964,
+        "end": 167.103,
+        "startFrame": 5009,
+        "endFrame": 5013
+      },
+      {
+        "word": "hub",
+        "start": 167.15,
+        "end": 167.277,
+        "startFrame": 5014,
+        "endFrame": 5018
+      },
+      {
+        "word": "buried",
+        "start": 167.347,
+        "end": 167.695,
+        "startFrame": 5020,
+        "endFrame": 5031
+      },
+      {
+        "word": "it",
+        "start": 167.73,
+        "end": 167.8,
+        "startFrame": 5032,
+        "endFrame": 5034
+      },
+      {
+        "word": "in",
+        "start": 167.858,
+        "end": 167.939,
+        "startFrame": 5036,
+        "endFrame": 5038
+      },
+      {
+        "word": "enterprise",
+        "start": 168.055,
+        "end": 168.566,
+        "startFrame": 5042,
+        "endFrame": 5057
+      },
+      {
+        "word": "settings.\n\nSecond,",
+        "start": 168.601,
+        "end": 170.679,
+        "startFrame": 5058,
+        "endFrame": 5120
+      },
+      {
+        "word": "consider",
+        "start": 171.12,
+        "end": 171.526,
+        "startFrame": 5134,
+        "endFrame": 5146
+      },
+      {
+        "word": "local",
+        "start": 171.608,
+        "end": 171.875,
+        "startFrame": 5148,
+        "endFrame": 5156
+      },
+      {
+        "word": "alternatives",
+        "start": 171.921,
+        "end": 172.525,
+        "startFrame": 5158,
+        "endFrame": 5176
+      },
+      {
+        "word": "like",
+        "start": 172.571,
+        "end": 172.734,
+        "startFrame": 5177,
+        "endFrame": 5182
+      },
+      {
+        "word": "Code",
+        "start": 172.792,
+        "end": 173.082,
+        "startFrame": 5184,
+        "endFrame": 5192
+      },
+      {
+        "word": "Llama",
+        "start": 173.117,
+        "end": 173.488,
+        "startFrame": 5194,
+        "endFrame": 5205
+      },
+      {
+        "word": "or",
+        "start": 173.547,
+        "end": 173.663,
+        "startFrame": 5206,
+        "endFrame": 5210
+      },
+      {
+        "word": "StarCoder",
+        "start": 173.744,
+        "end": 174.429,
+        "startFrame": 5212,
+        "endFrame": 5233
+      },
+      {
+        "word": "that",
+        "start": 174.87,
+        "end": 175.044,
+        "startFrame": 5246,
+        "endFrame": 5251
+      },
+      {
+        "word": "run",
+        "start": 175.102,
+        "end": 175.253,
+        "startFrame": 5253,
+        "endFrame": 5258
+      },
+      {
+        "word": "on",
+        "start": 175.3,
+        "end": 175.358,
+        "startFrame": 5259,
+        "endFrame": 5261
+      },
+      {
+        "word": "your",
+        "start": 175.392,
+        "end": 175.509,
+        "startFrame": 5262,
+        "endFrame": 5265
+      },
+      {
+        "word": "own",
+        "start": 175.567,
+        "end": 175.741,
+        "startFrame": 5267,
+        "endFrame": 5272
+      },
+      {
+        "word": "infrastructure.",
+        "start": 175.787,
+        "end": 176.612,
+        "startFrame": 5274,
+        "endFrame": 5298
+      },
+      {
+        "word": "These",
+        "start": 177.215,
+        "end": 177.482,
+        "startFrame": 5316,
+        "endFrame": 5324
+      },
+      {
+        "word": "models",
+        "start": 177.54,
+        "end": 177.854,
+        "startFrame": 5326,
+        "endFrame": 5336
+      },
+      {
+        "word": "won't",
+        "start": 177.912,
+        "end": 178.121,
+        "startFrame": 5337,
+        "endFrame": 5344
+      },
+      {
+        "word": "phone",
+        "start": 178.179,
+        "end": 178.469,
+        "startFrame": 5345,
+        "endFrame": 5354
+      },
+      {
+        "word": "home",
+        "start": 178.516,
+        "end": 178.794,
+        "startFrame": 5355,
+        "endFrame": 5364
+      },
+      {
+        "word": "with",
+        "start": 178.829,
+        "end": 178.957,
+        "startFrame": 5365,
+        "endFrame": 5369
+      },
+      {
+        "word": "your",
+        "start": 179.003,
+        "end": 179.108,
+        "startFrame": 5370,
+        "endFrame": 5373
+      },
+      {
+        "word": "code.",
+        "start": 179.166,
+        "end": 179.63,
+        "startFrame": 5375,
+        "endFrame": 5389
+      },
+      {
+        "word": "They're",
+        "start": 180.234,
+        "end": 180.478,
+        "startFrame": 5407,
+        "endFrame": 5414
+      },
+      {
+        "word": "not",
+        "start": 180.501,
+        "end": 180.594,
+        "startFrame": 5415,
+        "endFrame": 5418
+      },
+      {
+        "word": "as",
+        "start": 180.64,
+        "end": 180.71,
+        "startFrame": 5419,
+        "endFrame": 5421
+      },
+      {
+        "word": "polished",
+        "start": 180.803,
+        "end": 181.232,
+        "startFrame": 5424,
+        "endFrame": 5437
+      },
+      {
+        "word": "as",
+        "start": 181.267,
+        "end": 181.348,
+        "startFrame": 5438,
+        "endFrame": 5440
+      },
+      {
+        "word": "Copilot,",
+        "start": 181.418,
+        "end": 182.126,
+        "startFrame": 5443,
+        "endFrame": 5464
+      },
+      {
+        "word": "but",
+        "start": 182.567,
+        "end": 182.718,
+        "startFrame": 5477,
+        "endFrame": 5482
+      },
+      {
+        "word": "they",
+        "start": 182.753,
+        "end": 182.869,
+        "startFrame": 5483,
+        "endFrame": 5486
+      },
+      {
+        "word": "keep",
+        "start": 182.927,
+        "end": 183.102,
+        "startFrame": 5488,
+        "endFrame": 5493
+      },
+      {
+        "word": "your",
+        "start": 183.148,
+        "end": 183.264,
+        "startFrame": 5494,
+        "endFrame": 5498
+      },
+      {
+        "word": "intellectual",
+        "start": 183.322,
+        "end": 183.868,
+        "startFrame": 5500,
+        "endFrame": 5516
+      },
+      {
+        "word": "property",
+        "start": 183.926,
+        "end": 184.297,
+        "startFrame": 5518,
+        "endFrame": 5529
+      },
+      {
+        "word": "where",
+        "start": 184.344,
+        "end": 184.506,
+        "startFrame": 5530,
+        "endFrame": 5535
+      },
+      {
+        "word": "it",
+        "start": 184.541,
+        "end": 184.599,
+        "startFrame": 5536,
+        "endFrame": 5538
+      },
+      {
+        "word": "belongs",
+        "start": 184.634,
+        "end": 185.215,
+        "startFrame": 5539,
+        "endFrame": 5556
+      },
+      {
+        "word": "-",
+        "start": 185.424,
+        "end": 185.447,
+        "startFrame": 5563,
+        "endFrame": 5563
+      },
+      {
+        "word": "with",
+        "start": 185.621,
+        "end": 185.842,
+        "startFrame": 5569,
+        "endFrame": 5575
+      },
+      {
+        "word": "you.\n\nThird,",
+        "start": 185.9,
+        "end": 187.955,
+        "startFrame": 5577,
+        "endFrame": 5639
+      },
+      {
+        "word": "implement",
+        "start": 188.28,
+        "end": 188.779,
+        "startFrame": 5648,
+        "endFrame": 5663
+      },
+      {
+        "word": "code",
+        "start": 188.849,
+        "end": 189.208,
+        "startFrame": 5665,
+        "endFrame": 5676
+      },
+      {
+        "word": "isolation.",
+        "start": 189.266,
+        "end": 190.033,
+        "startFrame": 5678,
+        "endFrame": 5701
+      },
+      {
+        "word": "Create",
+        "start": 190.729,
+        "end": 191.112,
+        "startFrame": 5722,
+        "endFrame": 5733
+      },
+      {
+        "word": "separate",
+        "start": 191.159,
+        "end": 191.507,
+        "startFrame": 5735,
+        "endFrame": 5745
+      },
+      {
+        "word": "repositories",
+        "start": 191.542,
+        "end": 192.378,
+        "startFrame": 5746,
+        "endFrame": 5771
+      },
+      {
+        "word": "for",
+        "start": 192.424,
+        "end": 192.529,
+        "startFrame": 5773,
+        "endFrame": 5776
+      },
+      {
+        "word": "sensitive",
+        "start": 192.599,
+        "end": 193.051,
+        "startFrame": 5778,
+        "endFrame": 5792
+      },
+      {
+        "word": "algorithms",
+        "start": 193.086,
+        "end": 193.678,
+        "startFrame": 5793,
+        "endFrame": 5810
+      },
+      {
+        "word": "and",
+        "start": 194.119,
+        "end": 194.352,
+        "startFrame": 5824,
+        "endFrame": 5831
+      },
+      {
+        "word": "disable",
+        "start": 194.41,
+        "end": 194.862,
+        "startFrame": 5832,
+        "endFrame": 5846
+      },
+      {
+        "word": "Copilot",
+        "start": 194.909,
+        "end": 195.443,
+        "startFrame": 5847,
+        "endFrame": 5863
+      },
+      {
+        "word": "entirely",
+        "start": 195.513,
+        "end": 196.105,
+        "startFrame": 5865,
+        "endFrame": 5883
+      },
+      {
+        "word": "in",
+        "start": 196.151,
+        "end": 196.209,
+        "startFrame": 5885,
+        "endFrame": 5886
+      },
+      {
+        "word": "those",
+        "start": 196.244,
+        "end": 196.418,
+        "startFrame": 5887,
+        "endFrame": 5893
+      },
+      {
+        "word": "repos.",
+        "start": 196.465,
+        "end": 197.092,
+        "startFrame": 5894,
+        "endFrame": 5913
+      },
+      {
+        "word": "Use",
+        "start": 197.904,
+        "end": 198.136,
+        "startFrame": 5937,
+        "endFrame": 5944
+      },
+      {
+        "word": "a",
+        "start": 198.171,
+        "end": 198.195,
+        "startFrame": 5945,
+        "endFrame": 5946
+      },
+      {
+        "word": "simple",
+        "start": 198.276,
+        "end": 198.612,
+        "startFrame": 5948,
+        "endFrame": 5958
+      },
+      {
+        "word": "gitignore",
+        "start": 198.682,
+        "end": 199.193,
+        "startFrame": 5960,
+        "endFrame": 5976
+      },
+      {
+        "word": "rule",
+        "start": 199.239,
+        "end": 199.704,
+        "startFrame": 5977,
+        "endFrame": 5991
+      },
+      {
+        "word": "to",
+        "start": 199.855,
+        "end": 199.982,
+        "startFrame": 5996,
+        "endFrame": 5999
+      },
+      {
+        "word": "exclude",
+        "start": 200.052,
+        "end": 200.54,
+        "startFrame": 6002,
+        "endFrame": 6016
+      },
+      {
+        "word": "Copilot",
+        "start": 200.586,
+        "end": 201.166,
+        "startFrame": 6018,
+        "endFrame": 6035
+      },
+      {
+        "word": "suggestions.",
+        "start": 201.213,
+        "end": 202.049,
+        "startFrame": 6036,
+        "endFrame": 6061
+      },
+      {
+        "word": "Keep",
+        "start": 203.001,
+        "end": 203.233,
+        "startFrame": 6090,
+        "endFrame": 6097
+      },
+      {
+        "word": "your",
+        "start": 203.279,
+        "end": 203.396,
+        "startFrame": 6098,
+        "endFrame": 6102
+      },
+      {
+        "word": "competitive",
+        "start": 203.454,
+        "end": 204.034,
+        "startFrame": 6104,
+        "endFrame": 6121
+      },
+      {
+        "word": "moat",
+        "start": 204.092,
+        "end": 204.29,
+        "startFrame": 6123,
+        "endFrame": 6129
+      },
+      {
+        "word": "code",
+        "start": 204.371,
+        "end": 204.812,
+        "startFrame": 6131,
+        "endFrame": 6144
+      },
+      {
+        "word": "in",
+        "start": 204.986,
+        "end": 205.125,
+        "startFrame": 6150,
+        "endFrame": 6154
+      },
+      {
+        "word": "environments",
+        "start": 205.195,
+        "end": 205.787,
+        "startFrame": 6156,
+        "endFrame": 6174
+      },
+      {
+        "word": "where",
+        "start": 205.834,
+        "end": 206.019,
+        "startFrame": 6175,
+        "endFrame": 6181
+      },
+      {
+        "word": "A",
+        "start": 206.089,
+        "end": 206.24,
+        "startFrame": 6183,
+        "endFrame": 6187
+      },
+      {
+        "word": "I",
+        "start": 206.391,
+        "end": 206.507,
+        "startFrame": 6192,
+        "endFrame": 6195
+      },
+      {
+        "word": "assistants",
+        "start": 206.623,
+        "end": 207.122,
+        "startFrame": 6199,
+        "endFrame": 6214
+      },
+      {
+        "word": "can't",
+        "start": 207.192,
+        "end": 207.447,
+        "startFrame": 6216,
+        "endFrame": 6223
+      },
+      {
+        "word": "see",
+        "start": 207.505,
+        "end": 207.691,
+        "startFrame": 6225,
+        "endFrame": 6231
+      },
+      {
+        "word": "it.\n\nThe",
+        "start": 207.738,
+        "end": 208.864,
+        "startFrame": 6232,
+        "endFrame": 6266
+      },
+      {
+        "word": "subscription",
+        "start": 208.922,
+        "end": 209.456,
+        "startFrame": 6268,
+        "endFrame": 6284
+      },
+      {
+        "word": "fee",
+        "start": 209.526,
+        "end": 209.7,
+        "startFrame": 6286,
+        "endFrame": 6291
+      },
+      {
+        "word": "for",
+        "start": 209.735,
+        "end": 209.839,
+        "startFrame": 6292,
+        "endFrame": 6295
+      },
+      {
+        "word": "Copilot",
+        "start": 209.897,
+        "end": 210.42,
+        "startFrame": 6297,
+        "endFrame": 6313
+      },
+      {
+        "word": "is",
+        "start": 210.478,
+        "end": 210.605,
+        "startFrame": 6314,
+        "endFrame": 6318
+      },
+      {
+        "word": "ten",
+        "start": 210.675,
+        "end": 210.896,
+        "startFrame": 6320,
+        "endFrame": 6327
+      },
+      {
+        "word": "dollars",
+        "start": 210.954,
+        "end": 211.302,
+        "startFrame": 6329,
+        "endFrame": 6339
+      },
+      {
+        "word": "per",
+        "start": 211.372,
+        "end": 211.511,
+        "startFrame": 6341,
+        "endFrame": 6345
+      },
+      {
+        "word": "month.",
+        "start": 211.557,
+        "end": 212.01,
+        "startFrame": 6347,
+        "endFrame": 6360
+      },
+      {
+        "word": "The",
+        "start": 212.614,
+        "end": 212.73,
+        "startFrame": 6378,
+        "endFrame": 6382
+      },
+      {
+        "word": "real",
+        "start": 212.8,
+        "end": 212.974,
+        "startFrame": 6384,
+        "endFrame": 6389
+      },
+      {
+        "word": "cost",
+        "start": 213.043,
+        "end": 213.369,
+        "startFrame": 6391,
+        "endFrame": 6401
+      },
+      {
+        "word": "is",
+        "start": 213.427,
+        "end": 213.508,
+        "startFrame": 6403,
+        "endFrame": 6405
+      },
+      {
+        "word": "potentially",
+        "start": 213.566,
+        "end": 214.03,
+        "startFrame": 6407,
+        "endFrame": 6421
+      },
+      {
+        "word": "giving",
+        "start": 214.077,
+        "end": 214.309,
+        "startFrame": 6422,
+        "endFrame": 6429
+      },
+      {
+        "word": "away",
+        "start": 214.355,
+        "end": 214.541,
+        "startFrame": 6431,
+        "endFrame": 6436
+      },
+      {
+        "word": "the",
+        "start": 214.588,
+        "end": 214.657,
+        "startFrame": 6438,
+        "endFrame": 6440
+      },
+      {
+        "word": "intellectual",
+        "start": 214.727,
+        "end": 215.273,
+        "startFrame": 6442,
+        "endFrame": 6458
+      },
+      {
+        "word": "property",
+        "start": 215.331,
+        "end": 215.749,
+        "startFrame": 6460,
+        "endFrame": 6472
+      },
+      {
+        "word": "that",
+        "start": 216.074,
+        "end": 216.236,
+        "startFrame": 6482,
+        "endFrame": 6487
+      },
+      {
+        "word": "makes",
+        "start": 216.283,
+        "end": 216.457,
+        "startFrame": 6488,
+        "endFrame": 6494
+      },
+      {
+        "word": "your",
+        "start": 216.492,
+        "end": 216.596,
+        "startFrame": 6495,
+        "endFrame": 6498
+      },
+      {
+        "word": "company",
+        "start": 216.654,
+        "end": 216.979,
+        "startFrame": 6500,
+        "endFrame": 6509
+      },
+      {
+        "word": "valuable.",
+        "start": 217.049,
+        "end": 217.711,
+        "startFrame": 6511,
+        "endFrame": 6531
+      },
+      {
+        "word": "Every",
+        "start": 218.407,
+        "end": 218.709,
+        "startFrame": 6552,
+        "endFrame": 6561
+      },
+      {
+        "word": "startup",
+        "start": 218.767,
+        "end": 219.127,
+        "startFrame": 6563,
+        "endFrame": 6574
+      },
+      {
+        "word": "has",
+        "start": 219.174,
+        "end": 219.278,
+        "startFrame": 6575,
+        "endFrame": 6578
+      },
+      {
+        "word": "that",
+        "start": 219.324,
+        "end": 219.452,
+        "startFrame": 6580,
+        "endFrame": 6584
+      },
+      {
+        "word": "one",
+        "start": 219.533,
+        "end": 219.789,
+        "startFrame": 6586,
+        "endFrame": 6594
+      },
+      {
+        "word": "algorithm,",
+        "start": 219.847,
+        "end": 220.544,
+        "startFrame": 6595,
+        "endFrame": 6616
+      },
+      {
+        "word": "that",
+        "start": 220.694,
+        "end": 220.857,
+        "startFrame": 6621,
+        "endFrame": 6626
+      },
+      {
+        "word": "one",
+        "start": 220.927,
+        "end": 221.101,
+        "startFrame": 6628,
+        "endFrame": 6633
+      },
+      {
+        "word": "optimization,",
+        "start": 221.147,
+        "end": 222.169,
+        "startFrame": 6634,
+        "endFrame": 6665
+      },
+      {
+        "word": "that",
+        "start": 222.343,
+        "end": 222.506,
+        "startFrame": 6670,
+        "endFrame": 6675
+      },
+      {
+        "word": "one",
+        "start": 222.564,
+        "end": 222.749,
+        "startFrame": 6677,
+        "endFrame": 6682
+      },
+      {
+        "word": "clever",
+        "start": 222.819,
+        "end": 223.167,
+        "startFrame": 6685,
+        "endFrame": 6695
+      },
+      {
+        "word": "solution",
+        "start": 223.225,
+        "end": 223.771,
+        "startFrame": 6697,
+        "endFrame": 6713
+      },
+      {
+        "word": "that",
+        "start": 224.05,
+        "end": 224.235,
+        "startFrame": 6722,
+        "endFrame": 6727
+      },
+      {
+        "word": "differentiates",
+        "start": 224.294,
+        "end": 225.013,
+        "startFrame": 6729,
+        "endFrame": 6750
+      },
+      {
+        "word": "them",
+        "start": 225.048,
+        "end": 225.188,
+        "startFrame": 6751,
+        "endFrame": 6756
+      },
+      {
+        "word": "from",
+        "start": 225.234,
+        "end": 225.362,
+        "startFrame": 6757,
+        "endFrame": 6761
+      },
+      {
+        "word": "the",
+        "start": 225.396,
+        "end": 225.466,
+        "startFrame": 6762,
+        "endFrame": 6764
+      },
+      {
+        "word": "competition.",
+        "start": 225.501,
+        "end": 226.29,
+        "startFrame": 6765,
+        "endFrame": 6789
+      },
+      {
+        "word": "git",
+        "start": 227.103,
+        "end": 227.289,
+        "startFrame": 6813,
+        "endFrame": 6819
+      },
+      {
+        "word": "hub",
+        "start": 227.335,
+        "end": 227.463,
+        "startFrame": 6820,
+        "endFrame": 6824
+      },
+      {
+        "word": "is",
+        "start": 227.509,
+        "end": 227.591,
+        "startFrame": 6825,
+        "endFrame": 6828
+      },
+      {
+        "word": "betting",
+        "start": 227.672,
+        "end": 227.939,
+        "startFrame": 6830,
+        "endFrame": 6838
+      },
+      {
+        "word": "you'll",
+        "start": 227.997,
+        "end": 228.194,
+        "startFrame": 6840,
+        "endFrame": 6846
+      },
+      {
+        "word": "trade",
+        "start": 228.241,
+        "end": 228.52,
+        "startFrame": 6847,
+        "endFrame": 6856
+      },
+      {
+        "word": "that",
+        "start": 228.554,
+        "end": 228.67,
+        "startFrame": 6857,
+        "endFrame": 6860
+      },
+      {
+        "word": "competitive",
+        "start": 228.729,
+        "end": 229.239,
+        "startFrame": 6862,
+        "endFrame": 6877
+      },
+      {
+        "word": "advantage",
+        "start": 229.263,
+        "end": 229.739,
+        "startFrame": 6878,
+        "endFrame": 6892
+      },
+      {
+        "word": "for",
+        "start": 229.773,
+        "end": 229.878,
+        "startFrame": 6893,
+        "endFrame": 6896
+      },
+      {
+        "word": "coding",
+        "start": 229.948,
+        "end": 230.25,
+        "startFrame": 6898,
+        "endFrame": 6908
+      },
+      {
+        "word": "convenience.\n\nMajor",
+        "start": 230.284,
+        "end": 231.991,
+        "startFrame": 6909,
+        "endFrame": 6960
+      },
+      {
+        "word": "enterprises",
+        "start": 232.037,
+        "end": 232.572,
+        "startFrame": 6961,
+        "endFrame": 6977
+      },
+      {
+        "word": "are",
+        "start": 232.618,
+        "end": 232.711,
+        "startFrame": 6979,
+        "endFrame": 6981
+      },
+      {
+        "word": "starting",
+        "start": 232.734,
+        "end": 233.001,
+        "startFrame": 6982,
+        "endFrame": 6990
+      },
+      {
+        "word": "to",
+        "start": 233.036,
+        "end": 233.082,
+        "startFrame": 6991,
+        "endFrame": 6992
+      },
+      {
+        "word": "wake",
+        "start": 233.129,
+        "end": 233.326,
+        "startFrame": 6994,
+        "endFrame": 7000
+      },
+      {
+        "word": "up.",
+        "start": 233.373,
+        "end": 233.698,
+        "startFrame": 7001,
+        "endFrame": 7011
+      },
+      {
+        "word": "Microsoft",
+        "start": 234.394,
+        "end": 234.975,
+        "startFrame": 7032,
+        "endFrame": 7049
+      },
+      {
+        "word": "themselves",
+        "start": 234.998,
+        "end": 235.578,
+        "startFrame": 7050,
+        "endFrame": 7067
+      },
+      {
+        "word": "restrict",
+        "start": 235.66,
+        "end": 236.101,
+        "startFrame": 7070,
+        "endFrame": 7083
+      },
+      {
+        "word": "Copilot",
+        "start": 236.182,
+        "end": 236.751,
+        "startFrame": 7085,
+        "endFrame": 7103
+      },
+      {
+        "word": "usage",
+        "start": 236.809,
+        "end": 237.32,
+        "startFrame": 7104,
+        "endFrame": 7120
+      },
+      {
+        "word": "in",
+        "start": 237.494,
+        "end": 237.668,
+        "startFrame": 7125,
+        "endFrame": 7130
+      },
+      {
+        "word": "certain",
+        "start": 237.761,
+        "end": 238.086,
+        "startFrame": 7133,
+        "endFrame": 7143
+      },
+      {
+        "word": "internal",
+        "start": 238.133,
+        "end": 238.527,
+        "startFrame": 7144,
+        "endFrame": 7156
+      },
+      {
+        "word": "teams.",
+        "start": 238.585,
+        "end": 239.189,
+        "startFrame": 7158,
+        "endFrame": 7176
+      },
+      {
+        "word": "Google",
+        "start": 239.886,
+        "end": 240.246,
+        "startFrame": 7197,
+        "endFrame": 7207
+      },
+      {
+        "word": "has",
+        "start": 240.269,
+        "end": 240.385,
+        "startFrame": 7208,
+        "endFrame": 7212
+      },
+      {
+        "word": "similar",
+        "start": 240.443,
+        "end": 240.768,
+        "startFrame": 7213,
+        "endFrame": 7223
+      },
+      {
+        "word": "policies",
+        "start": 240.826,
+        "end": 241.291,
+        "startFrame": 7225,
+        "endFrame": 7239
+      },
+      {
+        "word": "for",
+        "start": 241.337,
+        "end": 241.442,
+        "startFrame": 7240,
+        "endFrame": 7243
+      },
+      {
+        "word": "sensitive",
+        "start": 241.5,
+        "end": 241.906,
+        "startFrame": 7245,
+        "endFrame": 7257
+      },
+      {
+        "word": "projects.",
+        "start": 241.929,
+        "end": 242.591,
+        "startFrame": 7258,
+        "endFrame": 7278
+      },
+      {
+        "word": "If",
+        "start": 243.195,
+        "end": 243.322,
+        "startFrame": 7296,
+        "endFrame": 7300
+      },
+      {
+        "word": "the",
+        "start": 243.369,
+        "end": 243.438,
+        "startFrame": 7301,
+        "endFrame": 7303
+      },
+      {
+        "word": "companies",
+        "start": 243.485,
+        "end": 243.856,
+        "startFrame": 7305,
+        "endFrame": 7316
+      },
+      {
+        "word": "building",
+        "start": 243.914,
+        "end": 244.251,
+        "startFrame": 7317,
+        "endFrame": 7328
+      },
+      {
+        "word": "these",
+        "start": 244.298,
+        "end": 244.472,
+        "startFrame": 7329,
+        "endFrame": 7334
+      },
+      {
+        "word": "tools",
+        "start": 244.507,
+        "end": 244.913,
+        "startFrame": 7335,
+        "endFrame": 7347
+      },
+      {
+        "word": "won't",
+        "start": 245.238,
+        "end": 245.493,
+        "startFrame": 7357,
+        "endFrame": 7365
+      },
+      {
+        "word": "use",
+        "start": 245.563,
+        "end": 245.83,
+        "startFrame": 7367,
+        "endFrame": 7375
+      },
+      {
+        "word": "them",
+        "start": 245.865,
+        "end": 245.992,
+        "startFrame": 7376,
+        "endFrame": 7380
+      },
+      {
+        "word": "on",
+        "start": 246.05,
+        "end": 246.12,
+        "startFrame": 7382,
+        "endFrame": 7384
+      },
+      {
+        "word": "their",
+        "start": 246.155,
+        "end": 246.294,
+        "startFrame": 7385,
+        "endFrame": 7389
+      },
+      {
+        "word": "own",
+        "start": 246.352,
+        "end": 246.55,
+        "startFrame": 7391,
+        "endFrame": 7396
+      },
+      {
+        "word": "crown",
+        "start": 246.619,
+        "end": 246.898,
+        "startFrame": 7399,
+        "endFrame": 7407
+      },
+      {
+        "word": "jewels,",
+        "start": 246.968,
+        "end": 247.548,
+        "startFrame": 7409,
+        "endFrame": 7426
+      },
+      {
+        "word": "why",
+        "start": 247.827,
+        "end": 248.094,
+        "startFrame": 7435,
+        "endFrame": 7443
+      },
+      {
+        "word": "are",
+        "start": 248.164,
+        "end": 248.314,
+        "startFrame": 7445,
+        "endFrame": 7449
+      },
+      {
+        "word": "you?\n\nThe",
+        "start": 248.372,
+        "end": 249.545,
+        "startFrame": 7451,
+        "endFrame": 7486
+      },
+      {
+        "word": "productivity",
+        "start": 249.603,
+        "end": 250.195,
+        "startFrame": 7488,
+        "endFrame": 7506
+      },
+      {
+        "word": "gains",
+        "start": 250.265,
+        "end": 250.671,
+        "startFrame": 7508,
+        "endFrame": 7520
+      },
+      {
+        "word": "from",
+        "start": 250.729,
+        "end": 250.892,
+        "startFrame": 7522,
+        "endFrame": 7527
+      },
+      {
+        "word": "A",
+        "start": 250.973,
+        "end": 251.089,
+        "startFrame": 7529,
+        "endFrame": 7533
+      },
+      {
+        "word": "I",
+        "start": 251.205,
+        "end": 251.263,
+        "startFrame": 7536,
+        "endFrame": 7538
+      },
+      {
+        "word": "coding",
+        "start": 251.379,
+        "end": 251.705,
+        "startFrame": 7541,
+        "endFrame": 7551
+      },
+      {
+        "word": "assistants",
+        "start": 251.751,
+        "end": 252.297,
+        "startFrame": 7553,
+        "endFrame": 7569
+      },
+      {
+        "word": "are",
+        "start": 252.413,
+        "end": 252.645,
+        "startFrame": 7572,
+        "endFrame": 7579
+      },
+      {
+        "word": "real.",
+        "start": 252.703,
+        "end": 253.214,
+        "startFrame": 7581,
+        "endFrame": 7596
+      },
+      {
+        "word": "But",
+        "start": 253.91,
+        "end": 254.073,
+        "startFrame": 7617,
+        "endFrame": 7622
+      },
+      {
+        "word": "so",
+        "start": 254.131,
+        "end": 254.282,
+        "startFrame": 7624,
+        "endFrame": 7628
+      },
+      {
+        "word": "is",
+        "start": 254.363,
+        "end": 254.456,
+        "startFrame": 7631,
+        "endFrame": 7634
+      },
+      {
+        "word": "the",
+        "start": 254.503,
+        "end": 254.572,
+        "startFrame": 7635,
+        "endFrame": 7637
+      },
+      {
+        "word": "risk",
+        "start": 254.642,
+        "end": 254.862,
+        "startFrame": 7639,
+        "endFrame": 7646
+      },
+      {
+        "word": "of",
+        "start": 254.921,
+        "end": 254.979,
+        "startFrame": 7648,
+        "endFrame": 7649
+      },
+      {
+        "word": "accidentally",
+        "start": 255.095,
+        "end": 255.896,
+        "startFrame": 7653,
+        "endFrame": 7677
+      },
+      {
+        "word": "open-sourcing",
+        "start": 255.977,
+        "end": 256.813,
+        "startFrame": 7679,
+        "endFrame": 7704
+      },
+      {
+        "word": "your",
+        "start": 256.859,
+        "end": 256.964,
+        "startFrame": 7706,
+        "endFrame": 7709
+      },
+      {
+        "word": "competitive",
+        "start": 257.022,
+        "end": 257.579,
+        "startFrame": 7711,
+        "endFrame": 7727
+      },
+      {
+        "word": "advantage.",
+        "start": 257.602,
+        "end": 258.311,
+        "startFrame": 7728,
+        "endFrame": 7749
+      },
+      {
+        "word": "The",
+        "start": 258.914,
+        "end": 259.03,
+        "startFrame": 7767,
+        "endFrame": 7771
+      },
+      {
+        "word": "choice",
+        "start": 259.088,
+        "end": 259.356,
+        "startFrame": 7773,
+        "endFrame": 7781
+      },
+      {
+        "word": "isn't",
+        "start": 259.39,
+        "end": 259.623,
+        "startFrame": 7782,
+        "endFrame": 7789
+      },
+      {
+        "word": "between",
+        "start": 259.657,
+        "end": 259.982,
+        "startFrame": 7790,
+        "endFrame": 7799
+      },
+      {
+        "word": "using",
+        "start": 260.052,
+        "end": 260.331,
+        "startFrame": 7802,
+        "endFrame": 7810
+      },
+      {
+        "word": "A",
+        "start": 260.4,
+        "end": 260.517,
+        "startFrame": 7812,
+        "endFrame": 7816
+      },
+      {
+        "word": "I",
+        "start": 260.667,
+        "end": 260.748,
+        "startFrame": 7820,
+        "endFrame": 7822
+      },
+      {
+        "word": "or",
+        "start": 260.864,
+        "end": 260.969,
+        "startFrame": 7826,
+        "endFrame": 7829
+      },
+      {
+        "word": "not",
+        "start": 261.05,
+        "end": 261.282,
+        "startFrame": 7832,
+        "endFrame": 7838
+      },
+      {
+        "word": "using",
+        "start": 261.352,
+        "end": 261.631,
+        "startFrame": 7841,
+        "endFrame": 7849
+      },
+      {
+        "word": "A",
+        "start": 261.7,
+        "end": 261.816,
+        "startFrame": 7851,
+        "endFrame": 7854
+      },
+      {
+        "word": "I.",
+        "start": 261.909,
+        "end": 262.246,
+        "startFrame": 7857,
+        "endFrame": 7867
+      },
+      {
+        "word": "It's",
+        "start": 262.687,
+        "end": 262.873,
+        "startFrame": 7881,
+        "endFrame": 7886
+      },
+      {
+        "word": "between",
+        "start": 262.919,
+        "end": 263.244,
+        "startFrame": 7888,
+        "endFrame": 7897
+      },
+      {
+        "word": "using",
+        "start": 263.314,
+        "end": 263.581,
+        "startFrame": 7899,
+        "endFrame": 7907
+      },
+      {
+        "word": "A",
+        "start": 263.651,
+        "end": 263.767,
+        "startFrame": 7910,
+        "endFrame": 7913
+      },
+      {
+        "word": "I",
+        "start": 263.883,
+        "end": 263.929,
+        "startFrame": 7916,
+        "endFrame": 7918
+      },
+      {
+        "word": "carefully",
+        "start": 264.046,
+        "end": 264.603,
+        "startFrame": 7921,
+        "endFrame": 7938
+      },
+      {
+        "word": "or",
+        "start": 264.881,
+        "end": 265.044,
+        "startFrame": 7946,
+        "endFrame": 7951
+      },
+      {
+        "word": "using",
+        "start": 265.125,
+        "end": 265.404,
+        "startFrame": 7954,
+        "endFrame": 7962
+      },
+      {
+        "word": "A",
+        "start": 265.474,
+        "end": 265.59,
+        "startFrame": 7964,
+        "endFrame": 7968
+      },
+      {
+        "word": "I",
+        "start": 265.706,
+        "end": 265.752,
+        "startFrame": 7971,
+        "endFrame": 7973
+      },
+      {
+        "word": "carelessly.\n\nAudit",
+        "start": 265.88,
+        "end": 267.656,
+        "startFrame": 7976,
+        "endFrame": 8030
+      },
+      {
+        "word": "your",
+        "start": 267.703,
+        "end": 267.819,
+        "startFrame": 8031,
+        "endFrame": 8035
+      },
+      {
+        "word": "Copilot",
+        "start": 267.877,
+        "end": 268.411,
+        "startFrame": 8036,
+        "endFrame": 8052
+      },
+      {
+        "word": "usage",
+        "start": 268.469,
+        "end": 268.806,
+        "startFrame": 8054,
+        "endFrame": 8064
+      },
+      {
+        "word": "today.",
+        "start": 268.852,
+        "end": 269.363,
+        "startFrame": 8066,
+        "endFrame": 8081
+      },
+      {
+        "word": "Check",
+        "start": 270.059,
+        "end": 270.303,
+        "startFrame": 8102,
+        "endFrame": 8109
+      },
+      {
+        "word": "which",
+        "start": 270.35,
+        "end": 270.501,
+        "startFrame": 8111,
+        "endFrame": 8115
+      },
+      {
+        "word": "repositories",
+        "start": 270.559,
+        "end": 271.36,
+        "startFrame": 8117,
+        "endFrame": 8141
+      },
+      {
+        "word": "have",
+        "start": 271.406,
+        "end": 271.534,
+        "startFrame": 8142,
+        "endFrame": 8146
+      },
+      {
+        "word": "Copilot",
+        "start": 271.58,
+        "end": 272.138,
+        "startFrame": 8147,
+        "endFrame": 8164
+      },
+      {
+        "word": "enabled.",
+        "start": 272.184,
+        "end": 272.741,
+        "startFrame": 8166,
+        "endFrame": 8182
+      },
+      {
+        "word": "Review",
+        "start": 273.438,
+        "end": 273.751,
+        "startFrame": 8203,
+        "endFrame": 8213
+      },
+      {
+        "word": "your",
+        "start": 273.798,
+        "end": 273.914,
+        "startFrame": 8214,
+        "endFrame": 8217
+      },
+      {
+        "word": "organization's",
+        "start": 273.96,
+        "end": 274.715,
+        "startFrame": 8219,
+        "endFrame": 8241
+      },
+      {
+        "word": "data",
+        "start": 274.808,
+        "end": 275.075,
+        "startFrame": 8244,
+        "endFrame": 8252
+      },
+      {
+        "word": "sharing",
+        "start": 275.121,
+        "end": 275.412,
+        "startFrame": 8254,
+        "endFrame": 8262
+      },
+      {
+        "word": "settings.",
+        "start": 275.47,
+        "end": 276.062,
+        "startFrame": 8264,
+        "endFrame": 8282
+      },
+      {
+        "word": "Enable",
+        "start": 276.758,
+        "end": 277.188,
+        "startFrame": 8303,
+        "endFrame": 8316
+      },
+      {
+        "word": "enterprise",
+        "start": 277.246,
+        "end": 277.757,
+        "startFrame": 8317,
+        "endFrame": 8333
+      },
+      {
+        "word": "data",
+        "start": 277.803,
+        "end": 278.023,
+        "startFrame": 8334,
+        "endFrame": 8341
+      },
+      {
+        "word": "protection",
+        "start": 278.081,
+        "end": 278.639,
+        "startFrame": 8342,
+        "endFrame": 8359
+      },
+      {
+        "word": "if",
+        "start": 278.883,
+        "end": 279.022,
+        "startFrame": 8366,
+        "endFrame": 8371
+      },
+      {
+        "word": "you're",
+        "start": 279.057,
+        "end": 279.231,
+        "startFrame": 8372,
+        "endFrame": 8377
+      },
+      {
+        "word": "paying",
+        "start": 279.254,
+        "end": 279.544,
+        "startFrame": 8378,
+        "endFrame": 8386
+      },
+      {
+        "word": "for",
+        "start": 279.614,
+        "end": 279.777,
+        "startFrame": 8388,
+        "endFrame": 8393
+      },
+      {
+        "word": "it.",
+        "start": 279.846,
+        "end": 280.067,
+        "startFrame": 8395,
+        "endFrame": 8402
+      },
+      {
+        "word": "Your",
+        "start": 280.763,
+        "end": 280.926,
+        "startFrame": 8423,
+        "endFrame": 8428
+      },
+      {
+        "word": "future",
+        "start": 280.972,
+        "end": 281.263,
+        "startFrame": 8429,
+        "endFrame": 8438
+      },
+      {
+        "word": "self",
+        "start": 281.297,
+        "end": 281.495,
+        "startFrame": 8439,
+        "endFrame": 8445
+      },
+      {
+        "word": "will",
+        "start": 281.53,
+        "end": 281.681,
+        "startFrame": 8446,
+        "endFrame": 8450
+      },
+      {
+        "word": "thank",
+        "start": 281.739,
+        "end": 281.982,
+        "startFrame": 8452,
+        "endFrame": 8459
+      },
+      {
+        "word": "you",
+        "start": 282.052,
+        "end": 282.145,
+        "startFrame": 8462,
+        "endFrame": 8464
+      },
+      {
+        "word": "when",
+        "start": 282.191,
+        "end": 282.319,
+        "startFrame": 8466,
+        "endFrame": 8470
+      },
+      {
+        "word": "your",
+        "start": 282.354,
+        "end": 282.47,
+        "startFrame": 8471,
+        "endFrame": 8474
+      },
+      {
+        "word": "competitors",
+        "start": 282.517,
+        "end": 283.143,
+        "startFrame": 8476,
+        "endFrame": 8494
+      },
+      {
+        "word": "can't",
+        "start": 283.527,
+        "end": 283.794,
+        "startFrame": 8506,
+        "endFrame": 8514
+      },
+      {
+        "word": "mysteriously",
+        "start": 283.852,
+        "end": 284.618,
+        "startFrame": 8516,
+        "endFrame": 8539
+      },
+      {
+        "word": "replicate",
+        "start": 284.711,
+        "end": 285.222,
+        "startFrame": 8541,
+        "endFrame": 8557
+      },
+      {
+        "word": "your",
+        "start": 285.256,
+        "end": 285.373,
+        "startFrame": 8558,
+        "endFrame": 8561
+      },
+      {
+        "word": "algorithms.\n\nThe",
+        "start": 285.431,
+        "end": 287.056,
+        "startFrame": 8563,
+        "endFrame": 8612
+      },
+      {
+        "word": "age",
+        "start": 287.137,
+        "end": 287.416,
+        "startFrame": 8614,
+        "endFrame": 8622
+      },
+      {
+        "word": "of",
+        "start": 287.451,
+        "end": 287.52,
+        "startFrame": 8624,
+        "endFrame": 8626
+      },
+      {
+        "word": "free",
+        "start": 287.602,
+        "end": 287.845,
+        "startFrame": 8628,
+        "endFrame": 8635
+      },
+      {
+        "word": "A",
+        "start": 287.904,
+        "end": 287.985,
+        "startFrame": 8637,
+        "endFrame": 8640
+      },
+      {
+        "word": "I",
+        "start": 288.101,
+        "end": 288.136,
+        "startFrame": 8643,
+        "endFrame": 8644
+      },
+      {
+        "word": "assistance",
+        "start": 288.252,
+        "end": 288.902,
+        "startFrame": 8648,
+        "endFrame": 8667
+      },
+      {
+        "word": "is",
+        "start": 289.03,
+        "end": 289.227,
+        "startFrame": 8671,
+        "endFrame": 8677
+      },
+      {
+        "word": "over.",
+        "start": 289.297,
+        "end": 289.819,
+        "startFrame": 8679,
+        "endFrame": 8695
+      },
+      {
+        "word": "Everything",
+        "start": 290.423,
+        "end": 290.911,
+        "startFrame": 8713,
+        "endFrame": 8727
+      },
+      {
+        "word": "has",
+        "start": 290.969,
+        "end": 291.096,
+        "startFrame": 8729,
+        "endFrame": 8733
+      },
+      {
+        "word": "a",
+        "start": 291.143,
+        "end": 291.178,
+        "startFrame": 8734,
+        "endFrame": 8735
+      },
+      {
+        "word": "price,",
+        "start": 291.236,
+        "end": 291.828,
+        "startFrame": 8737,
+        "endFrame": 8755
+      },
+      {
+        "word": "and",
+        "start": 292.269,
+        "end": 292.42,
+        "startFrame": 8768,
+        "endFrame": 8773
+      },
+      {
+        "word": "sometimes",
+        "start": 292.478,
+        "end": 293.012,
+        "startFrame": 8774,
+        "endFrame": 8790
+      },
+      {
+        "word": "that",
+        "start": 293.453,
+        "end": 293.662,
+        "startFrame": 8804,
+        "endFrame": 8810
+      },
+      {
+        "word": "price",
+        "start": 293.732,
+        "end": 294.01,
+        "startFrame": 8812,
+        "endFrame": 8820
+      },
+      {
+        "word": "is",
+        "start": 294.045,
+        "end": 294.126,
+        "startFrame": 8821,
+        "endFrame": 8824
+      },
+      {
+        "word": "your",
+        "start": 294.185,
+        "end": 294.301,
+        "startFrame": 8826,
+        "endFrame": 8829
+      },
+      {
+        "word": "intellectual",
+        "start": 294.37,
+        "end": 295.009,
+        "startFrame": 8831,
+        "endFrame": 8850
+      },
+      {
+        "word": "property.",
+        "start": 295.067,
+        "end": 295.868,
+        "startFrame": 8852,
+        "endFrame": 8876
+      }
+    ]
+  },
+  "structure": {
+    "stickies": [
+      {
+        "id": "sticky_1",
+        "step": 1,
+        "title": "git hub just announced they",
+        "startFrame": 0,
+        "sections": []
+      },
+      {
+        "id": "sticky_2",
+        "step": 2,
+        "title": "use Copilot, they might get",
+        "startFrame": 1713,
+        "sections": []
+      },
+      {
+        "id": "sticky_3",
+        "step": 3,
+        "title": "like hiring a translator for",
+        "startFrame": 3527,
+        "sections": []
+      },
+      {
+        "id": "sticky_4",
+        "step": 4,
+        "title": "on your own infrastructure. These",
+        "startFrame": 5259,
+        "sections": []
+      },
+      {
+        "id": "sticky_5",
+        "step": 5,
+        "title": "themselves restrict Copilot usage in",
+        "startFrame": 7050,
+        "sections": []
+      },
+      {
+        "id": "sticky_6",
+        "step": 6,
+        "title": "your intellectual property.",
+        "startFrame": 8826,
+        "sections": []
+      }
+    ]
+  },
+  "camera": {
+    "initialPosition": {
+      "x": 960,
+      "y": 540,
+      "scale": 0.7
+    },
+    "keyframes": []
+  },
+  "sounds": {
+    "points": [],
+    "totalCount": 0
+  }
+}

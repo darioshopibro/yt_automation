@@ -13,6 +13,80 @@ bo**Vreme po videu:** 30-60 min
 
 ## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
 
+### ⚡⚡⚡⚡ #1 NAJBITNIJE: Multi-Variant Generation + Editor za Biranje
+
+**Problem:** Trenutno se generiše JEDNA verzija vizuala/videa i ili prihvatam ili odbacujem. Nema izbora, nema poređenja. Trebam moći da vidim više varijanti i izaberem najbolju.
+
+**Šta treba — MULTI-VARIANT GENERATION:**
+- [ ] Kad se generiše vizual (visual-generator), generiši 3-5 varijanti istog vizuala
+- [ ] Svaka varijanta koristi drugačiji stil/layout/pristup (npr. razlike u boji, rasporedu, animaciji, tipografiji)
+- [ ] Varijante se čuvaju u `videos/{project-name}/variants/` kao zasebni fajlovi
+- [ ] Isto važi za cele segmente videa — više opcija za isti deo
+
+**Šta treba — VARIANT EDITOR (UI):**
+- [ ] Editor prikazuje varijante uporedo (side-by-side ili carousel)
+- [ ] Mogu da izaberem "ova varijanta za ovaj segment" — mix & match
+- [ ] Finalni video se sklapa od izabranih varijanti
+- [ ] Opciono: "regeneriši ovu varijantu sa ovim feedback-om" za fine-tuning
+
+**Zašto je ovo #1:**
+- Kvalitet = mogućnost izbora. Profesionalni editori uvek rade sa više opcija
+- Smanjuje vreme iteracije — umesto "generiši → ne valja → objasni šta → generiši opet", prosto izabereš bolju
+- Radi zajedno sa Video Review Editor-om (#0) — review markeri mogu da triggeruju multi-variant regeneraciju
+
+---
+
+### ⚡⚡⚡ #0.5 YouTube Guidelines Audit — Da li nas mogu sjebati za monetizaciju?
+
+**Problem:** Pre nego što uložimo vreme u ceo pipeline, moramo proveriti da li naš format (AI-generisani vizuali, TTS voiceover, automatizovan content) uopšte može da prođe YouTube monetizaciju. Nema smisla praviti 100 videa pa da nas demonetizuju.
+
+**Šta treba:**
+- [ ] Pročitati YouTube Partner Program guidelines — šta kažu o AI-generated content
+- [ ] Proveriti YouTube "Repetitious content" i "Reused content" politike — da li naš format upada
+- [ ] Proveriti pravila za AI voiceover (TTS) — da li YT razlikuje od pravog glasa
+- [ ] Proveriti da li AI vizuali (Remotion motion graphics, infografike) upadaju u "low quality" kategoriju
+- [ ] Pogledati primere kanala koji rade slično (ByteMonk, Fireship, ColdFusion) — da li su monetizovani
+- [ ] Identifikovati rizike i šta moramo dodati/promeniti da budemo safe (npr. face cam, originalni komentar, editing effort)
+- [ ] Napisati zaključak: šta smemo, šta ne smemo, šta je siva zona
+
+**Output:** `docs/YT-MONETIZATION-GUIDELINES-AUDIT.md` sa jasnim pravilima šta radimo a šta izbegavamo
+
+**Status:** DONE — vidi [YT-MONETIZATION-GUIDELINES-AUDIT.md](docs/YT-MONETIZATION-GUIDELINES-AUDIT.md)
+
+**Pipeline score: 6.5/10 — treba 3 fixa da bude 8.5/10:**
+
+- [ ] **FIX 1: Voice Clone** — Zameni generic "Chris" ElevenLabs voice sa kloniranim MOJIM glasom (5 min snimak). Faceless + generic AI voice + AI script = trifecta za demonetizaciju. Moj glas rešava to.
+- [ ] **FIX 2: Human Touch u Scriptu** — Dodaj korak u pipeline (Telegram step) gde JA dodajem 2-3 rečenice svog mišljenja pre generisanja finalnog scripta. Ubaci u `prompts/script-writing.md` sekciju "my take".
+- [ ] **FIX 3: AI Disclosure** — Dodaj u render pipeline automatski YouTube "synthetic content" label. Obavezno od jula 2025.
+
+---
+
+### ⚡⚡⚡ #0.4 Telegram → YT Content Repurposing Pipeline
+
+**Problem:** Vidim dobar post na TikToku, IG-u, Twitter-u — npr. "This guy made Claude Code talk like a caveman to save 7% tokens" — i to je samo kratka objava. Ali to može biti odličan YT video ako dodamo kontekst, analizu, naš komentar, vizuale.
+
+**Kako radi:**
+- [ ] Pošaljem link ili tekst na Telegram bota (već imamo TG agenta)
+- [ ] Agent prepoznaje source (TT/IG/Twitter/Reddit post, članak, tweet...)
+- [ ] Agent izvuče core ideju iz objave
+- [ ] Agent sam smisli kako da to proširi u YT video:
+  - Dodaje kontekst: zašto je ovo bitno, kako radi, šta je pozadina
+  - Dodaje naš komentar/ugao: šta mislimo, zašto je ovo korisno/glupo/genijalno
+  - Dodaje related info: šta još može uz ovo, alternativni pristupi
+  - Strukturira u segmente pogodne za video (hook → objašnjenje → primer → zaključak)
+- [ ] Output: gotov plan za video koji prolazi kroz naš pipeline (planner → builder)
+
+**Primeri:**
+- Input: "This guy made Claude Code talk like a caveman to save 7% tokens"
+- Output: YT video "5 Crazy Prompt Tricks That Save You Money on AI" — caveman trick + još 4 slična + objašnjenje zašto radi + vizuali
+
+**Ključno:**
+- Agent MORA dodati originalnu vrednost — ne samo prepričavanje tuđeg posta
+- Agent odlučuje da li je tema vredna videa ili nije (ne pravimo video od svega)
+- Može grupisati više sličnih postova u jedan video (compilation stil)
+
+---
+
 ### ⚡⚡⚡ #0 NAJBITNIJE: Video Review Editor + Self-Improving Skill
 
 **Problem:** Kad video bude generisan, moram da gledam ceo video i ručno objašnjavam šta ne valja. Nema alat za označavanje dobrih/loših delova, nema feedback loop koji poboljšava skill.
@@ -628,3 +702,34 @@ transitions, animations, text-animations, 3d, lottie, light-leaks, captions, sub
 - [AI-VIDEO-TOOLS-RESEARCH.md](AI-VIDEO-TOOLS-RESEARCH.md) - Research svih tools
 - [VIDEO-QUALITY-RULES.md](VIDEO-QUALITY-RULES.md) - Anti-AI-slop pravila
 - [YT-MONETIZATION-STRATEGY.md](YT-MONETIZATION-STRATEGY.md) - CPM strategija
+
+---
+
+### 🔧 V2 Pipeline Improvements (za poboljšanje)
+
+**Urađeno u V2 sesiji:**
+- [x] Content discovery: 9 izvora + demand (YT+Google+Bing) + TikTok + velocity + outlier detection
+- [x] Content processing: parallel research + outline step + quality scorer
+- [x] TTS: Chris voice sa Fireship settings (stability 0.75, style 0.1)
+- [x] SFX: 30 zvukova iz library-a + placer sa density rules
+- [x] Meme researcher: Reddit + Imgflip + evergreen suggestions
+- [x] Visual planner: beat-level decisions, meme rotation, ai_video/motion_graphics
+- [x] AI video: Flux image → Minimax video via fal.ai ($0.31/clip)
+- [x] Audio mixer: ducking + LUFS normalization
+- [x] Composition planner: spaja sve u master-composition.json
+- [x] Editor: Composition tab (Pipeline Dashboard) + Review unified segments+beats
+- [x] Full pipeline: one-click from topic to final_video.mp4
+
+**Za poboljšanje (V3):**
+- [ ] **Topic clustering kvalitet** — LLM daje generic teme ("Docker Container Technology"). Prompt treba biti specifičniji ("Docker CVE-2026-1234 Supply Chain Attack" ne "Docker"). Trenutna ocena: 5/10
+- [ ] **Sorting/filtering u editoru** — filter generičnih tema, sort by multiple criteria
+- [ ] **End-to-end test** — full pipeline netestiran od Scan Now do final_video.mp4
+- [ ] **Scan progress** — editor ne prikazuje progress tokom scan-a (4 min čekanja bez feedback-a)
+- [ ] **Meme quality filter** — meme researcher ne zna da filtrira loše/irelevantne meme-ove
+- [ ] **Background music** — Suno AI integracija za custom lo-fi tech beats
+- [ ] **AI host opcija** — HeyGen za talking head intro (per video type)
+- [ ] **Image approval UI** — editor review za AI-generisane slike pre video generisanja
+- [ ] **Freesound MCP** — kad dobiješ API key, 600K+ zvukova za agenta
+- [ ] **KRITIČNO: Async process** — editor Process dugme blokira server (execFileSync). Treba spawn child process + polling za status. Server se ruši ako pipeline traje >30s
+- [ ] **Tranzicije između delova videa** — crossfade između AI video hook-a i prvog Remotion vizuala, između segmenata, između meme overlay-a i vizuala. Sad je hard cut. Treba razmisliti: koji tip tranzicije (crossfade, whoosh+cut, dissolve), koliko traje, da li treba zvuk
+- [ ] **Root.tsx i index.ts** — builder ponekad napravi Root.tsx pre nego što su vizuali gotovi. Proveriti da builder čeka da svi Generated_*.tsx postoje pre nego što generiše Root.tsx

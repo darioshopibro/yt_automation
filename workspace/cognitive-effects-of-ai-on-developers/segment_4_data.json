@@ -1,0 +1,1165 @@
+{
+  "step": 4,
+  "title": "The Friction Ladder",
+  "startFrame": 4771,
+  "endFrame": 6942,
+  "componentPath": "src/visuals/Generated_TheFrictionLadder.tsx",
+  "transcriptSegment": "But neuroscientists studying digital addiction found one technique that actually breaks this cycle. It's called the Friction Ladder, and it works by deliberately adding delay between the trigger and the reward. Instead of banning A I completely, which always fails, you create increasing levels of resistance.\n\nHere's how it works in practice. When you hit a coding problem, you don't immediately reach for A I. You set a five-minute timer and force yourself to think through the problem first. Just five minutes. Most of the time, you'll solve it yourself before the timer goes off. When you do need to use A I after the timer, you get the solution plus a small sense of accomplishment for trying first.\n\nAfter a week of five-minute delays, you increase it to fifteen minutes. Then thirty minutes. Eventually, you're doing full hour-long coding sessions without any A I assistance. Your brain literally rewires itself during this process. The dopamine pathways that were firing for A I anticipation start firing for problem-solving instead.",
+  "timestamps": [
+    {
+      "word": "neuroscientists",
+      "start": 159.047,
+      "end": 159.964,
+      "startFrame": 4771,
+      "endFrame": 4799
+    },
+    {
+      "word": "studying",
+      "start": 160.115,
+      "end": 160.498,
+      "startFrame": 4803,
+      "endFrame": 4815
+    },
+    {
+      "word": "digital",
+      "start": 160.568,
+      "end": 160.928,
+      "startFrame": 4817,
+      "endFrame": 4828
+    },
+    {
+      "word": "addiction",
+      "start": 160.974,
+      "end": 161.45,
+      "startFrame": 4829,
+      "endFrame": 4844
+    },
+    {
+      "word": "found",
+      "start": 161.891,
+      "end": 162.135,
+      "startFrame": 4857,
+      "endFrame": 4864
+    },
+    {
+      "word": "one",
+      "start": 162.228,
+      "end": 162.426,
+      "startFrame": 4867,
+      "endFrame": 4873
+    },
+    {
+      "word": "technique",
+      "start": 162.472,
+      "end": 162.925,
+      "startFrame": 4874,
+      "endFrame": 4888
+    },
+    {
+      "word": "that",
+      "start": 162.948,
+      "end": 163.076,
+      "startFrame": 4888,
+      "endFrame": 4892
+    },
+    {
+      "word": "actually",
+      "start": 163.122,
+      "end": 163.528,
+      "startFrame": 4894,
+      "endFrame": 4906
+    },
+    {
+      "word": "breaks",
+      "start": 163.621,
+      "end": 163.993,
+      "startFrame": 4909,
+      "endFrame": 4920
+    },
+    {
+      "word": "this",
+      "start": 164.039,
+      "end": 164.179,
+      "startFrame": 4921,
+      "endFrame": 4925
+    },
+    {
+      "word": "cycle.",
+      "start": 164.225,
+      "end": 164.736,
+      "startFrame": 4927,
+      "endFrame": 4942
+    },
+    {
+      "word": "It's",
+      "start": 165.433,
+      "end": 165.618,
+      "startFrame": 4963,
+      "endFrame": 4969
+    },
+    {
+      "word": "called",
+      "start": 165.653,
+      "end": 165.874,
+      "startFrame": 4970,
+      "endFrame": 4976
+    },
+    {
+      "word": "the",
+      "start": 165.897,
+      "end": 165.967,
+      "startFrame": 4977,
+      "endFrame": 4979
+    },
+    {
+      "word": "Friction",
+      "start": 166.083,
+      "end": 166.524,
+      "startFrame": 4982,
+      "endFrame": 4996
+    },
+    {
+      "word": "Ladder,",
+      "start": 166.594,
+      "end": 167.093,
+      "startFrame": 4998,
+      "endFrame": 5013
+    },
+    {
+      "word": "and",
+      "start": 167.534,
+      "end": 167.673,
+      "startFrame": 5026,
+      "endFrame": 5030
+    },
+    {
+      "word": "it",
+      "start": 167.72,
+      "end": 167.778,
+      "startFrame": 5032,
+      "endFrame": 5033
+    },
+    {
+      "word": "works",
+      "start": 167.824,
+      "end": 168.091,
+      "startFrame": 5035,
+      "endFrame": 5043
+    },
+    {
+      "word": "by",
+      "start": 168.149,
+      "end": 168.277,
+      "startFrame": 5044,
+      "endFrame": 5048
+    },
+    {
+      "word": "deliberately",
+      "start": 168.393,
+      "end": 169.09,
+      "startFrame": 5052,
+      "endFrame": 5073
+    },
+    {
+      "word": "adding",
+      "start": 169.159,
+      "end": 169.484,
+      "startFrame": 5075,
+      "endFrame": 5085
+    },
+    {
+      "word": "delay",
+      "start": 169.566,
+      "end": 170.065,
+      "startFrame": 5087,
+      "endFrame": 5102
+    },
+    {
+      "word": "between",
+      "start": 170.506,
+      "end": 170.866,
+      "startFrame": 5115,
+      "endFrame": 5126
+    },
+    {
+      "word": "the",
+      "start": 170.901,
+      "end": 170.97,
+      "startFrame": 5127,
+      "endFrame": 5129
+    },
+    {
+      "word": "trigger",
+      "start": 171.028,
+      "end": 171.446,
+      "startFrame": 5131,
+      "endFrame": 5143
+    },
+    {
+      "word": "and",
+      "start": 171.655,
+      "end": 171.888,
+      "startFrame": 5150,
+      "endFrame": 5157
+    },
+    {
+      "word": "the",
+      "start": 171.946,
+      "end": 172.015,
+      "startFrame": 5158,
+      "endFrame": 5160
+    },
+    {
+      "word": "reward.",
+      "start": 172.085,
+      "end": 172.828,
+      "startFrame": 5163,
+      "endFrame": 5185
+    },
+    {
+      "word": "Instead",
+      "start": 173.432,
+      "end": 173.884,
+      "startFrame": 5203,
+      "endFrame": 5217
+    },
+    {
+      "word": "of",
+      "start": 173.919,
+      "end": 173.977,
+      "startFrame": 5218,
+      "endFrame": 5219
+    },
+    {
+      "word": "banning",
+      "start": 174.047,
+      "end": 174.384,
+      "startFrame": 5221,
+      "endFrame": 5232
+    },
+    {
+      "word": "A",
+      "start": 174.453,
+      "end": 174.511,
+      "startFrame": 5234,
+      "endFrame": 5235
+    },
+    {
+      "word": "I",
+      "start": 174.639,
+      "end": 174.686,
+      "startFrame": 5239,
+      "endFrame": 5241
+    },
+    {
+      "word": "completely,",
+      "start": 174.802,
+      "end": 175.51,
+      "startFrame": 5244,
+      "endFrame": 5265
+    },
+    {
+      "word": "which",
+      "start": 175.626,
+      "end": 175.823,
+      "startFrame": 5269,
+      "endFrame": 5275
+    },
+    {
+      "word": "always",
+      "start": 175.881,
+      "end": 176.137,
+      "startFrame": 5276,
+      "endFrame": 5284
+    },
+    {
+      "word": "fails,",
+      "start": 176.183,
+      "end": 176.706,
+      "startFrame": 5285,
+      "endFrame": 5301
+    },
+    {
+      "word": "you",
+      "start": 177.031,
+      "end": 177.135,
+      "startFrame": 5311,
+      "endFrame": 5314
+    },
+    {
+      "word": "create",
+      "start": 177.216,
+      "end": 177.507,
+      "startFrame": 5316,
+      "endFrame": 5325
+    },
+    {
+      "word": "increasing",
+      "start": 177.553,
+      "end": 178.18,
+      "startFrame": 5327,
+      "endFrame": 5345
+    },
+    {
+      "word": "levels",
+      "start": 178.25,
+      "end": 178.528,
+      "startFrame": 5348,
+      "endFrame": 5356
+    },
+    {
+      "word": "of",
+      "start": 178.575,
+      "end": 178.633,
+      "startFrame": 5357,
+      "endFrame": 5359
+    },
+    {
+      "word": "resistance.\n\nHere's",
+      "start": 178.691,
+      "end": 180.177,
+      "startFrame": 5361,
+      "endFrame": 5405
+    },
+    {
+      "word": "how",
+      "start": 180.212,
+      "end": 180.293,
+      "startFrame": 5406,
+      "endFrame": 5409
+    },
+    {
+      "word": "it",
+      "start": 180.34,
+      "end": 180.409,
+      "startFrame": 5410,
+      "endFrame": 5412
+    },
+    {
+      "word": "works",
+      "start": 180.444,
+      "end": 180.665,
+      "startFrame": 5413,
+      "endFrame": 5420
+    },
+    {
+      "word": "in",
+      "start": 180.711,
+      "end": 180.758,
+      "startFrame": 5421,
+      "endFrame": 5423
+    },
+    {
+      "word": "practice.",
+      "start": 180.804,
+      "end": 181.419,
+      "startFrame": 5424,
+      "endFrame": 5443
+    },
+    {
+      "word": "When",
+      "start": 181.93,
+      "end": 182.093,
+      "startFrame": 5458,
+      "endFrame": 5463
+    },
+    {
+      "word": "you",
+      "start": 182.128,
+      "end": 182.197,
+      "startFrame": 5464,
+      "endFrame": 5466
+    },
+    {
+      "word": "hit",
+      "start": 182.255,
+      "end": 182.371,
+      "startFrame": 5468,
+      "endFrame": 5471
+    },
+    {
+      "word": "a",
+      "start": 182.406,
+      "end": 182.429,
+      "startFrame": 5472,
+      "endFrame": 5473
+    },
+    {
+      "word": "coding",
+      "start": 182.487,
+      "end": 182.801,
+      "startFrame": 5475,
+      "endFrame": 5484
+    },
+    {
+      "word": "problem,",
+      "start": 182.847,
+      "end": 183.37,
+      "startFrame": 5485,
+      "endFrame": 5501
+    },
+    {
+      "word": "you",
+      "start": 183.695,
+      "end": 183.788,
+      "startFrame": 5511,
+      "endFrame": 5514
+    },
+    {
+      "word": "don't",
+      "start": 183.823,
+      "end": 183.985,
+      "startFrame": 5515,
+      "endFrame": 5520
+    },
+    {
+      "word": "immediately",
+      "start": 184.008,
+      "end": 184.473,
+      "startFrame": 5520,
+      "endFrame": 5534
+    },
+    {
+      "word": "reach",
+      "start": 184.554,
+      "end": 184.751,
+      "startFrame": 5537,
+      "endFrame": 5543
+    },
+    {
+      "word": "for",
+      "start": 184.798,
+      "end": 184.902,
+      "startFrame": 5544,
+      "endFrame": 5547
+    },
+    {
+      "word": "A",
+      "start": 184.972,
+      "end": 185.053,
+      "startFrame": 5549,
+      "endFrame": 5552
+    },
+    {
+      "word": "I.",
+      "start": 185.134,
+      "end": 185.483,
+      "startFrame": 5554,
+      "endFrame": 5564
+    },
+    {
+      "word": "You",
+      "start": 185.924,
+      "end": 186.052,
+      "startFrame": 5578,
+      "endFrame": 5582
+    },
+    {
+      "word": "set",
+      "start": 186.122,
+      "end": 186.261,
+      "startFrame": 5584,
+      "endFrame": 5588
+    },
+    {
+      "word": "a",
+      "start": 186.307,
+      "end": 186.331,
+      "startFrame": 5589,
+      "endFrame": 5590
+    },
+    {
+      "word": "five-minute",
+      "start": 186.447,
+      "end": 187.039,
+      "startFrame": 5593,
+      "endFrame": 5611
+    },
+    {
+      "word": "timer",
+      "start": 187.062,
+      "end": 187.445,
+      "startFrame": 5612,
+      "endFrame": 5623
+    },
+    {
+      "word": "and",
+      "start": 187.689,
+      "end": 187.956,
+      "startFrame": 5631,
+      "endFrame": 5639
+    },
+    {
+      "word": "force",
+      "start": 188.084,
+      "end": 188.42,
+      "startFrame": 5643,
+      "endFrame": 5653
+    },
+    {
+      "word": "yourself",
+      "start": 188.455,
+      "end": 188.792,
+      "startFrame": 5654,
+      "endFrame": 5664
+    },
+    {
+      "word": "to",
+      "start": 188.838,
+      "end": 188.908,
+      "startFrame": 5665,
+      "endFrame": 5667
+    },
+    {
+      "word": "think",
+      "start": 188.978,
+      "end": 189.175,
+      "startFrame": 5669,
+      "endFrame": 5675
+    },
+    {
+      "word": "through",
+      "start": 189.221,
+      "end": 189.43,
+      "startFrame": 5677,
+      "endFrame": 5683
+    },
+    {
+      "word": "the",
+      "start": 189.454,
+      "end": 189.523,
+      "startFrame": 5684,
+      "endFrame": 5686
+    },
+    {
+      "word": "problem",
+      "start": 189.593,
+      "end": 190.046,
+      "startFrame": 5688,
+      "endFrame": 5701
+    },
+    {
+      "word": "first.",
+      "start": 190.127,
+      "end": 190.696,
+      "startFrame": 5704,
+      "endFrame": 5721
+    },
+    {
+      "word": "Just",
+      "start": 191.392,
+      "end": 191.648,
+      "startFrame": 5742,
+      "endFrame": 5749
+    },
+    {
+      "word": "five",
+      "start": 191.729,
+      "end": 192.008,
+      "startFrame": 5752,
+      "endFrame": 5760
+    },
+    {
+      "word": "minutes.",
+      "start": 192.043,
+      "end": 192.577,
+      "startFrame": 5761,
+      "endFrame": 5777
+    },
+    {
+      "word": "Most",
+      "start": 193.273,
+      "end": 193.552,
+      "startFrame": 5798,
+      "endFrame": 5807
+    },
+    {
+      "word": "of",
+      "start": 193.598,
+      "end": 193.656,
+      "startFrame": 5808,
+      "endFrame": 5810
+    },
+    {
+      "word": "the",
+      "start": 193.703,
+      "end": 193.773,
+      "startFrame": 5811,
+      "endFrame": 5813
+    },
+    {
+      "word": "time,",
+      "start": 193.819,
+      "end": 194.249,
+      "startFrame": 5815,
+      "endFrame": 5827
+    },
+    {
+      "word": "you'll",
+      "start": 194.492,
+      "end": 194.713,
+      "startFrame": 5835,
+      "endFrame": 5841
+    },
+    {
+      "word": "solve",
+      "start": 194.771,
+      "end": 195.038,
+      "startFrame": 5843,
+      "endFrame": 5851
+    },
+    {
+      "word": "it",
+      "start": 195.073,
+      "end": 195.131,
+      "startFrame": 5852,
+      "endFrame": 5854
+    },
+    {
+      "word": "yourself",
+      "start": 195.166,
+      "end": 195.619,
+      "startFrame": 5855,
+      "endFrame": 5869
+    },
+    {
+      "word": "before",
+      "start": 195.897,
+      "end": 196.338,
+      "startFrame": 5877,
+      "endFrame": 5890
+    },
+    {
+      "word": "the",
+      "start": 196.385,
+      "end": 196.454,
+      "startFrame": 5892,
+      "endFrame": 5894
+    },
+    {
+      "word": "timer",
+      "start": 196.501,
+      "end": 196.791,
+      "startFrame": 5895,
+      "endFrame": 5904
+    },
+    {
+      "word": "goes",
+      "start": 196.849,
+      "end": 197.023,
+      "startFrame": 5905,
+      "endFrame": 5911
+    },
+    {
+      "word": "off.",
+      "start": 197.093,
+      "end": 197.511,
+      "startFrame": 5913,
+      "endFrame": 5925
+    },
+    {
+      "word": "When",
+      "start": 198.208,
+      "end": 198.382,
+      "startFrame": 5946,
+      "endFrame": 5951
+    },
+    {
+      "word": "you",
+      "start": 198.417,
+      "end": 198.486,
+      "startFrame": 5953,
+      "endFrame": 5955
+    },
+    {
+      "word": "do",
+      "start": 198.567,
+      "end": 198.672,
+      "startFrame": 5957,
+      "endFrame": 5960
+    },
+    {
+      "word": "need",
+      "start": 198.753,
+      "end": 198.927,
+      "startFrame": 5963,
+      "endFrame": 5968
+    },
+    {
+      "word": "to",
+      "start": 198.974,
+      "end": 199.032,
+      "startFrame": 5969,
+      "endFrame": 5971
+    },
+    {
+      "word": "use",
+      "start": 199.113,
+      "end": 199.357,
+      "startFrame": 5973,
+      "endFrame": 5981
+    },
+    {
+      "word": "A",
+      "start": 199.473,
+      "end": 199.647,
+      "startFrame": 5984,
+      "endFrame": 5989
+    },
+    {
+      "word": "I",
+      "start": 199.821,
+      "end": 199.903,
+      "startFrame": 5995,
+      "endFrame": 5997
+    },
+    {
+      "word": "after",
+      "start": 200.112,
+      "end": 200.564,
+      "startFrame": 6003,
+      "endFrame": 6017
+    },
+    {
+      "word": "the",
+      "start": 200.634,
+      "end": 200.704,
+      "startFrame": 6019,
+      "endFrame": 6021
+    },
+    {
+      "word": "timer,",
+      "start": 200.75,
+      "end": 201.307,
+      "startFrame": 6022,
+      "endFrame": 6039
+    },
+    {
+      "word": "you",
+      "start": 201.749,
+      "end": 201.853,
+      "startFrame": 6052,
+      "endFrame": 6056
+    },
+    {
+      "word": "get",
+      "start": 201.934,
+      "end": 202.062,
+      "startFrame": 6058,
+      "endFrame": 6062
+    },
+    {
+      "word": "the",
+      "start": 202.097,
+      "end": 202.166,
+      "startFrame": 6063,
+      "endFrame": 6065
+    },
+    {
+      "word": "solution",
+      "start": 202.224,
+      "end": 202.77,
+      "startFrame": 6067,
+      "endFrame": 6083
+    },
+    {
+      "word": "plus",
+      "start": 203.153,
+      "end": 203.583,
+      "startFrame": 6095,
+      "endFrame": 6107
+    },
+    {
+      "word": "a",
+      "start": 203.861,
+      "end": 203.977,
+      "startFrame": 6116,
+      "endFrame": 6119
+    },
+    {
+      "word": "small",
+      "start": 204.093,
+      "end": 204.419,
+      "startFrame": 6123,
+      "endFrame": 6133
+    },
+    {
+      "word": "sense",
+      "start": 204.488,
+      "end": 204.744,
+      "startFrame": 6135,
+      "endFrame": 6142
+    },
+    {
+      "word": "of",
+      "start": 204.778,
+      "end": 204.848,
+      "startFrame": 6143,
+      "endFrame": 6145
+    },
+    {
+      "word": "accomplishment",
+      "start": 204.895,
+      "end": 205.522,
+      "startFrame": 6147,
+      "endFrame": 6166
+    },
+    {
+      "word": "for",
+      "start": 205.556,
+      "end": 205.661,
+      "startFrame": 6167,
+      "endFrame": 6170
+    },
+    {
+      "word": "trying",
+      "start": 205.707,
+      "end": 205.986,
+      "startFrame": 6171,
+      "endFrame": 6180
+    },
+    {
+      "word": "first.\n\nAfter",
+      "start": 206.056,
+      "end": 207.542,
+      "startFrame": 6182,
+      "endFrame": 6226
+    },
+    {
+      "word": "a",
+      "start": 207.588,
+      "end": 207.623,
+      "startFrame": 6228,
+      "endFrame": 6229
+    },
+    {
+      "word": "week",
+      "start": 207.681,
+      "end": 207.878,
+      "startFrame": 6230,
+      "endFrame": 6236
+    },
+    {
+      "word": "of",
+      "start": 207.936,
+      "end": 207.994,
+      "startFrame": 6238,
+      "endFrame": 6240
+    },
+    {
+      "word": "five-minute",
+      "start": 208.064,
+      "end": 208.598,
+      "startFrame": 6242,
+      "endFrame": 6258
+    },
+    {
+      "word": "delays,",
+      "start": 208.621,
+      "end": 209.213,
+      "startFrame": 6259,
+      "endFrame": 6276
+    },
+    {
+      "word": "you",
+      "start": 209.539,
+      "end": 209.655,
+      "startFrame": 6286,
+      "endFrame": 6290
+    },
+    {
+      "word": "increase",
+      "start": 209.724,
+      "end": 210.107,
+      "startFrame": 6292,
+      "endFrame": 6303
+    },
+    {
+      "word": "it",
+      "start": 210.154,
+      "end": 210.224,
+      "startFrame": 6305,
+      "endFrame": 6307
+    },
+    {
+      "word": "to",
+      "start": 210.27,
+      "end": 210.363,
+      "startFrame": 6308,
+      "endFrame": 6311
+    },
+    {
+      "word": "fifteen",
+      "start": 210.479,
+      "end": 210.943,
+      "startFrame": 6314,
+      "endFrame": 6328
+    },
+    {
+      "word": "minutes.",
+      "start": 211.001,
+      "end": 211.582,
+      "startFrame": 6330,
+      "endFrame": 6347
+    },
+    {
+      "word": "Then",
+      "start": 212.186,
+      "end": 212.557,
+      "startFrame": 6366,
+      "endFrame": 6377
+    },
+    {
+      "word": "thirty",
+      "start": 212.998,
+      "end": 213.37,
+      "startFrame": 6390,
+      "endFrame": 6401
+    },
+    {
+      "word": "minutes.",
+      "start": 213.428,
+      "end": 214.055,
+      "startFrame": 6403,
+      "endFrame": 6422
+    },
+    {
+      "word": "Eventually,",
+      "start": 214.751,
+      "end": 215.46,
+      "startFrame": 6443,
+      "endFrame": 6464
+    },
+    {
+      "word": "you're",
+      "start": 215.669,
+      "end": 215.866,
+      "startFrame": 6470,
+      "endFrame": 6476
+    },
+    {
+      "word": "doing",
+      "start": 215.889,
+      "end": 216.098,
+      "startFrame": 6477,
+      "endFrame": 6483
+    },
+    {
+      "word": "full",
+      "start": 216.214,
+      "end": 216.586,
+      "startFrame": 6486,
+      "endFrame": 6498
+    },
+    {
+      "word": "hour-long",
+      "start": 216.702,
+      "end": 217.329,
+      "startFrame": 6501,
+      "endFrame": 6520
+    },
+    {
+      "word": "coding",
+      "start": 217.445,
+      "end": 217.84,
+      "startFrame": 6523,
+      "endFrame": 6535
+    },
+    {
+      "word": "sessions",
+      "start": 217.921,
+      "end": 218.432,
+      "startFrame": 6538,
+      "endFrame": 6553
+    },
+    {
+      "word": "without",
+      "start": 218.757,
+      "end": 219.14,
+      "startFrame": 6563,
+      "endFrame": 6574
+    },
+    {
+      "word": "any",
+      "start": 219.186,
+      "end": 219.361,
+      "startFrame": 6576,
+      "endFrame": 6581
+    },
+    {
+      "word": "A",
+      "start": 219.477,
+      "end": 219.604,
+      "startFrame": 6584,
+      "endFrame": 6588
+    },
+    {
+      "word": "I",
+      "start": 219.813,
+      "end": 219.836,
+      "startFrame": 6594,
+      "endFrame": 6595
+    },
+    {
+      "word": "assistance.",
+      "start": 219.952,
+      "end": 220.73,
+      "startFrame": 6599,
+      "endFrame": 6622
+    },
+    {
+      "word": "Your",
+      "start": 221.334,
+      "end": 221.543,
+      "startFrame": 6640,
+      "endFrame": 6646
+    },
+    {
+      "word": "brain",
+      "start": 221.601,
+      "end": 221.88,
+      "startFrame": 6648,
+      "endFrame": 6656
+    },
+    {
+      "word": "literally",
+      "start": 222.03,
+      "end": 222.53,
+      "startFrame": 6661,
+      "endFrame": 6676
+    },
+    {
+      "word": "rewires",
+      "start": 222.646,
+      "end": 223.366,
+      "startFrame": 6679,
+      "endFrame": 6701
+    },
+    {
+      "word": "itself",
+      "start": 223.424,
+      "end": 223.818,
+      "startFrame": 6703,
+      "endFrame": 6715
+    },
+    {
+      "word": "during",
+      "start": 223.876,
+      "end": 224.097,
+      "startFrame": 6716,
+      "endFrame": 6723
+    },
+    {
+      "word": "this",
+      "start": 224.132,
+      "end": 224.26,
+      "startFrame": 6724,
+      "endFrame": 6728
+    },
+    {
+      "word": "process.",
+      "start": 224.318,
+      "end": 225.084,
+      "startFrame": 6730,
+      "endFrame": 6753
+    },
+    {
+      "word": "The",
+      "start": 225.781,
+      "end": 225.897,
+      "startFrame": 6773,
+      "endFrame": 6777
+    },
+    {
+      "word": "dopamine",
+      "start": 225.955,
+      "end": 226.442,
+      "startFrame": 6779,
+      "endFrame": 6793
+    },
+    {
+      "word": "pathways",
+      "start": 226.477,
+      "end": 227.011,
+      "startFrame": 6794,
+      "endFrame": 6810
+    },
+    {
+      "word": "that",
+      "start": 227.046,
+      "end": 227.15,
+      "startFrame": 6811,
+      "endFrame": 6814
+    },
+    {
+      "word": "were",
+      "start": 227.185,
+      "end": 227.313,
+      "startFrame": 6816,
+      "endFrame": 6819
+    },
+    {
+      "word": "firing",
+      "start": 227.348,
+      "end": 227.731,
+      "startFrame": 6820,
+      "endFrame": 6832
+    },
+    {
+      "word": "for",
+      "start": 227.789,
+      "end": 227.905,
+      "startFrame": 6834,
+      "endFrame": 6837
+    },
+    {
+      "word": "A",
+      "start": 227.975,
+      "end": 228.091,
+      "startFrame": 6839,
+      "endFrame": 6843
+    },
+    {
+      "word": "I",
+      "start": 228.207,
+      "end": 228.253,
+      "startFrame": 6846,
+      "endFrame": 6848
+    },
+    {
+      "word": "anticipation",
+      "start": 228.37,
+      "end": 229.182,
+      "startFrame": 6851,
+      "endFrame": 6875
+    },
+    {
+      "word": "start",
+      "start": 229.623,
+      "end": 229.925,
+      "startFrame": 6889,
+      "endFrame": 6898
+    },
+    {
+      "word": "firing",
+      "start": 229.983,
+      "end": 230.355,
+      "startFrame": 6899,
+      "endFrame": 6911
+    },
+    {
+      "word": "for",
+      "start": 230.413,
+      "end": 230.517,
+      "startFrame": 6912,
+      "endFrame": 6916
+    },
+    {
+      "word": "problem-solving",
+      "start": 230.587,
+      "end": 231.377,
+      "startFrame": 6918,
+      "endFrame": 6941
+    }
+  ]
+}
