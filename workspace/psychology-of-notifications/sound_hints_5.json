@@ -1,0 +1,32 @@
+{
+  "segment": "The Attention Cost",
+  "segmentIndex": 5,
+  "startFrame": 1992,
+  "endFrame": 2689,
+  "frameMode": "global",
+  "events": [
+    { "frame": 2010, "type": "scene_start", "description": "title 'The Attention Cost' fades in with brain icon" },
+    { "frame": 2051, "type": "reveal", "description": "'STAGGERING' text scales up with red emphasis glow" },
+    { "frame": 2094, "type": "element_appear", "description": "research source badge 'UC Irvine' slides in" },
+    { "frame": 2172, "type": "reveal", "description": "big timer circle appears, minutes start counting up from 0 to 23" },
+    { "frame": 2217, "type": "element_appear", "description": "seconds portion of timer counts from 0 to 15, completing 23:15" },
+    { "frame": 2273, "type": "element_appear", "description": "'to fully refocus' label appears below timer" },
+    { "frame": 2300, "type": "element_appear", "description": "'after each interruption' sublabel fades in" },
+    { "frame": 2333, "type": "transition", "description": "scene 1 crossfades out, scene 2 crossfades in — workday fragmentation" },
+    { "frame": 2363, "type": "element_appear", "description": "'10 Notifications Per Workday' label with bell icon slides in" },
+    { "frame": 2373, "type": "element_appear", "description": "8-hour workday progress bar appears with hour labels" },
+    { "frame": 2388, "type": "staggered_group", "description": "10 red notification slices cut through the workday bar one by one, each spreading a red fragmented zone" },
+    { "frame": 2460, "type": "reveal", "description": "'~4 HOURS' stat scales up dramatically in red — key shocking number" },
+    { "frame": 2486, "type": "element_appear", "description": "'fragmented attention — gone' label with warning icon, bar shifts to red tint" },
+    { "frame": 2511, "type": "transition", "description": "scene 2 crossfades out, scene 3 crossfades in — the punchline" },
+    { "frame": 2541, "type": "element_appear", "description": "'You're not getting' setup text appears" },
+    { "frame": 2548, "type": "element_appear", "description": "big '10' number appears" },
+    { "frame": 2561, "type": "reveal", "description": "red strikethrough line slashes through '10', number dims — crossed out" },
+    { "frame": 2615, "type": "element_appear", "description": "'You're getting' text fades in above the big numbers" },
+    { "frame": 2620, "type": "reveal", "description": "'60' scales up HUGE in red with dramatic glow — biggest visual moment" },
+    { "frame": 2638, "type": "reveal", "description": "'80' scales up next to 60 with dash separator — '60-80' punchline complete, pulsing glow" },
+    { "frame": 2643, "type": "element_appear", "description": "'NOTIFICATIONS PER DAY' label with bell icon appears below numbers" },
+    { "frame": 2620, "type": "staggered_group", "description": "6 subtle bell icons float around the big numbers for atmosphere" },
+    { "frame": 2670, "type": "element_disappear", "description": "entire segment fades out toward end" }
+  ]
+}

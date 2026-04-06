@@ -1,0 +1,25 @@
+{
+  "segment": "Under The Hood",
+  "segmentIndex": 2,
+  "startFrame": 473,
+  "endFrame": 1345,
+  "frameMode": "global",
+  "events": [
+    { "frame": 473, "type": "scene_start", "description": "segment opens, 'Under The Hood' title fades in on dark background" },
+    { "frame": 496, "type": "element_appear", "description": "VS Code icon scales in with spring animation" },
+    { "frame": 520, "type": "element_appear", "description": "extension puzzle piece badge pops in on VS Code icon" },
+    { "frame": 570, "type": "reveal", "description": "Install button click with expanding pulse ring" },
+    { "frame": 620, "type": "element_appear", "description": "glowing data pulse dot travels from VS Code to Node.js" },
+    { "frame": 657, "type": "reveal", "description": "Node.js process bubble spawns with spring scale-in" },
+    { "frame": 780, "type": "reveal", "description": "red warning badge appears: 'ALMOST NO SANDBOXING' with shield slash icon" },
+    { "frame": 830, "type": "transition", "description": "scene crossfades from spawn view to threat vectors view" },
+    { "frame": 894, "type": "element_appear", "description": "file access threat icon slides in from left with red glow" },
+    { "frame": 965, "type": "element_appear", "description": "shell commands threat icon slides up with amber glow" },
+    { "frame": 1022, "type": "element_appear", "description": "network requests threat icon slides in from right with purple glow" },
+    { "frame": 1095, "type": "reveal", "description": "fake permission dialog mockup appears — then gets crossed out with red strikethrough" },
+    { "frame": 1160, "type": "transition", "description": "scene transitions to final full access reveal" },
+    { "frame": 1200, "type": "staggered_group", "description": "4 access type badges (File System, Shell, Network, Data) pop in staggered" },
+    { "frame": 1279, "type": "reveal", "description": "large FULL ACCESS stamp scales in with dramatic glow, lock-open icon" },
+    { "frame": 1340, "type": "element_disappear", "description": "segment ending, elements remain on screen" }
+  ]
+}

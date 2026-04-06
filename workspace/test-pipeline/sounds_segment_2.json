@@ -1,0 +1,28 @@
+{
+  "segment": "Under The Hood",
+  "segmentIndex": 2,
+  "startFrame": 473,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 465, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — new scene starts" },
+    { "frame": 496, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "VS Code icon scales in" },
+    { "frame": 520, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "extension puzzle badge pops in" },
+    { "frame": 562, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before install click" },
+    { "frame": 570, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "Install button click with expanding pulse" },
+    { "frame": 620, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "data pulse dot travels from VS Code to Node.js" },
+    { "frame": 657, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "Node.js process bubble spawns — key reveal" },
+    { "frame": 740, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before sandboxing warning" },
+    { "frame": 780, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "NO SANDBOXING warning badge appears — danger reveal" },
+    { "frame": 822, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfade to threat vectors" },
+    { "frame": 894, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "file access threat icon slides in" },
+    { "frame": 965, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "shell commands threat icon slides in" },
+    { "frame": 1022, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "network requests threat icon slides in" },
+    { "frame": 1055, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "build-up before permission dialog reveal" },
+    { "frame": 1095, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "permission dialog appears then gets crossed out" },
+    { "frame": 1152, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "scene transitions to full access reveal" },
+    { "frame": 1200, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.06, "reason": "first of 4 staggered access badges pops in" },
+    { "frame": 1239, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.14, "reason": "build-up before FULL ACCESS stamp" },
+    { "frame": 1279, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "FULL ACCESS stamp scales in — dramatic climax of segment" },
+    { "frame": 1337, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Code Exfiltration" }
+  ]
+}

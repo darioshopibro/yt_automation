@@ -1,0 +1,27 @@
+{
+  "segment": "Dopamine & The Red Badge",
+  "segmentIndex": 4,
+  "startFrame": 1275,
+  "endFrame": 1992,
+  "frameMode": "global",
+  "events": [
+    { "frame": 1290, "type": "scene_start", "description": "segment opens, notification bell icon fades in with spring scale" },
+    { "frame": 1304, "type": "element_appear", "description": "notification pulse ring expands outward from bell" },
+    { "frame": 1343, "type": "element_appear", "description": "brain icon slides in from right side" },
+    { "frame": 1388, "type": "reveal", "description": "dopamine burst — 8 particles explode outward from brain, dopamine label pops in" },
+    { "frame": 1493, "type": "element_appear", "description": "anticipation insight text fades in below — key message" },
+    { "frame": 1537, "type": "transition", "description": "scene 1 crossfades out, scene 2 (red badge) crossfades in" },
+    { "frame": 1547, "type": "scene_start", "description": "app icon with chat bubble fades in center-left" },
+    { "frame": 1553, "type": "reveal", "description": "red notification badge pops onto app icon corner with spring bounce, starts pulsing" },
+    { "frame": 1673, "type": "element_appear", "description": "open loop arc draws clockwise — incomplete circle in red" },
+    { "frame": 1683, "type": "element_appear", "description": "open loop label and lock-open icon appear in center" },
+    { "frame": 1724, "type": "element_appear", "description": "unresolved tension badge fades in with growing red glow" },
+    { "frame": 1802, "type": "reveal", "description": "arc completes to full circle, color shifts red to green — loop closes, satisfaction moment" },
+    { "frame": 1838, "type": "transition", "description": "scene 2 crossfades out, scene 3 (Zeigarnik) crossfades in" },
+    { "frame": 1868, "type": "scene_start", "description": "Zeigarnik Effect title scales in with spring animation" },
+    { "frame": 1886, "type": "element_appear", "description": "subtitle fades in below title" },
+    { "frame": 1935, "type": "element_appear", "description": "brain with spinning orbit ring appears — obsession visual" },
+    { "frame": 1963, "type": "staggered_group", "description": "4 task items appear staggered — 2 complete (green check), 2 incomplete (red empty)" },
+    { "frame": 1982, "type": "reveal", "description": "incomplete tasks glow red with UNFINISHED badges, brain obsession glow intensifies" }
+  ]
+}

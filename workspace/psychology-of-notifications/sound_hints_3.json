@@ -1,0 +1,21 @@
+{
+  "segment": "The Randomness Creates Compulsion",
+  "segmentIndex": 3,
+  "startFrame": 963,
+  "endFrame": 1275,
+  "frameMode": "global",
+  "events": [
+    { "frame": 963, "type": "scene_start", "description": "segment opens, 'Variable Reward Schedule' subtitle fades in" },
+    { "frame": 984, "type": "element_appear", "description": "'All Boring' column slides up from below — first scenario" },
+    { "frame": 998, "type": "staggered_group", "description": "4 gray dim notification badges pop in staggered inside boring column" },
+    { "frame": 1052, "type": "element_appear", "description": "'Turn them off' result label appears with X icon in boring column" },
+    { "frame": 1096, "type": "element_appear", "description": "'All Exciting' column slides up — second scenario with gold badges" },
+    { "frame": 1106, "type": "staggered_group", "description": "4 bright amber notification badges pop in staggered with glow" },
+    { "frame": 1175, "type": "element_appear", "description": "'Check calmly' result label appears with neutral face icon" },
+    { "frame": 1204, "type": "transition", "description": "columns 1 and 2 dim to 45% opacity as focus shifts to column 3" },
+    { "frame": 1219, "type": "element_appear", "description": "'Random Mix' column slides up with red border glow — the addictive one" },
+    { "frame": 1214, "type": "staggered_group", "description": "4 mixed badges (gray + amber + red) pop in with unpredictable pulsing" },
+    { "frame": 1250, "type": "element_appear", "description": "'Can't stop checking' warning result appears in red column" },
+    { "frame": 1255, "type": "reveal", "description": "'COMPULSION' text scales up dramatically with red glow — punchline moment" }
+  ]
+}

@@ -1,0 +1,28 @@
+{
+  "segment": "Variable Reward Scheduling",
+  "segmentIndex": 2,
+  "startFrame": 474,
+  "endFrame": 963,
+  "frameMode": "global",
+  "events": [
+    { "frame": 474, "type": "scene_start", "description": "segment opens, background fades in softly" },
+    { "frame": 504, "type": "element_appear", "description": "bell icon shakes in with notification dot — on 'Notifications'" },
+    { "frame": 521, "type": "element_appear", "description": "'exploits a mechanism' text flashes red with lightning icons" },
+    { "frame": 536, "type": "element_appear", "description": "brain icon + 'psychological mechanism' slides up" },
+    { "frame": 596, "type": "reveal", "description": "big 'Variable Reward Scheduling' concept name scales up — key reveal moment" },
+    { "frame": 627, "type": "element_appear", "description": "underline draws across concept name, subtitle appears below" },
+    { "frame": 675, "type": "transition", "description": "scene crossfades from concept intro to slot machine visual" },
+    { "frame": 704, "type": "element_appear", "description": "slot machine body springs into view — on 'slot'" },
+    { "frame": 713, "type": "element_appear", "description": "'The Slot Machine Effect' title slides in — on 'machines'" },
+    { "frame": 723, "type": "element_appear", "description": "three reel windows start spinning with blur effect" },
+    { "frame": 775, "type": "reveal", "description": "first reel locks in with spring pop — on 'buzz', outcomes start revealing" },
+    { "frame": 787, "type": "element_appear", "description": "second reel locks in (staggered 12 frames)" },
+    { "frame": 799, "type": "element_appear", "description": "third reel locks in" },
+    { "frame": 803, "type": "element_appear", "description": "'Something exciting' label glows green — on 'exciting'" },
+    { "frame": 839, "type": "element_appear", "description": "'Completely worthless' label appears dim grey — on 'worthless'" },
+    { "frame": 855, "type": "transition", "description": "scene crossfades to conclusion — unpredictability visual" },
+    { "frame": 884, "type": "reveal", "description": "big 'Unpredictability' word scales up with orbiting question marks — key concept" },
+    { "frame": 914, "type": "element_appear", "description": "gradient arrow connector draws from unpredictability toward addictive" },
+    { "frame": 940, "type": "reveal", "description": "'ADDICTIVE' slams in large red text with warning icons, brain pulses red — climactic moment" }
+  ]
+}

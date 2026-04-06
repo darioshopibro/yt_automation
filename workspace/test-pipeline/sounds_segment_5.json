@@ -1,0 +1,22 @@
+{
+  "segment": "Persistence Beyond Uninstall",
+  "segmentIndex": 5,
+  "startFrame": 2638,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 2630, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment transition — new scene starts" },
+    { "frame": 2634, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before 'persist' reveal" },
+    { "frame": 2674, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "'persist beyond uninstall' text pulses red" },
+    { "frame": 2702, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "extension puzzle piece icon scales in" },
+    { "frame": 2765, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "WRITING TO SYSTEM action badge appears" },
+    { "frame": 2797, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "shell profile card slides up with planted payload" },
+    { "frame": 2830, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.12, "reason": "git hooks card slides up with payload dot" },
+    { "frame": 2868, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.12, "reason": "startup scripts card slides up with payload dot" },
+    { "frame": 2910, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.14, "reason": "build-up before uninstall moment" },
+    { "frame": 2950, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "extension shrinks and disappears — uninstall animation" },
+    { "frame": 2975, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "'Extension Removed' label with trash icon appears" },
+    { "frame": 2956, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.14, "reason": "build-up before payload danger reveal" },
+    { "frame": 2996, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "all payloads turn red and pulse — PAYLOAD STAYS BEHIND warning" },
+    { "frame": 3058, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Marketplace Reality" }
+  ]
+}

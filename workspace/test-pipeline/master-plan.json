@@ -1,0 +1,3020 @@
+{
+  "meta": {
+    "title": "VS Code Extensions Security",
+    "fps": 30,
+    "totalFrames": 4928,
+    "totalDuration": 163.28
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 163.28,
+    "words": [
+      {
+        "word": "Every",
+        "start": 0.0,
+        "end": 0.267,
+        "startFrame": 0,
+        "endFrame": 8
+      },
+      {
+        "word": "developer",
+        "start": 0.313,
+        "end": 0.743,
+        "startFrame": 9,
+        "endFrame": 22
+      },
+      {
+        "word": "mass-installs",
+        "start": 0.836,
+        "end": 1.672,
+        "startFrame": 25,
+        "endFrame": 50
+      },
+      {
+        "word": "V",
+        "start": 1.765,
+        "end": 1.881,
+        "startFrame": 53,
+        "endFrame": 56
+      },
+      {
+        "word": "S",
+        "start": 2.032,
+        "end": 2.148,
+        "startFrame": 61,
+        "endFrame": 64
+      },
+      {
+        "word": "Code",
+        "start": 2.241,
+        "end": 2.473,
+        "startFrame": 67,
+        "endFrame": 74
+      },
+      {
+        "word": "extensions",
+        "start": 2.508,
+        "end": 3.158,
+        "startFrame": 75,
+        "endFrame": 95
+      },
+      {
+        "word": "without",
+        "start": 3.483,
+        "end": 3.773,
+        "startFrame": 104,
+        "endFrame": 113
+      },
+      {
+        "word": "reading",
+        "start": 3.831,
+        "end": 4.063,
+        "startFrame": 115,
+        "endFrame": 122
+      },
+      {
+        "word": "what",
+        "start": 4.098,
+        "end": 4.203,
+        "startFrame": 123,
+        "endFrame": 126
+      },
+      {
+        "word": "they",
+        "start": 4.238,
+        "end": 4.354,
+        "startFrame": 127,
+        "endFrame": 131
+      },
+      {
+        "word": "actually",
+        "start": 4.4,
+        "end": 4.76,
+        "startFrame": 132,
+        "endFrame": 143
+      },
+      {
+        "word": "do.",
+        "start": 4.83,
+        "end": 5.224,
+        "startFrame": 145,
+        "endFrame": 157
+      },
+      {
+        "word": "Some",
+        "start": 5.921,
+        "end": 6.13,
+        "startFrame": 178,
+        "endFrame": 184
+      },
+      {
+        "word": "of",
+        "start": 6.165,
+        "end": 6.211,
+        "startFrame": 185,
+        "endFrame": 186
+      },
+      {
+        "word": "those",
+        "start": 6.246,
+        "end": 6.42,
+        "startFrame": 187,
+        "endFrame": 193
+      },
+      {
+        "word": "extensions",
+        "start": 6.455,
+        "end": 7.047,
+        "startFrame": 194,
+        "endFrame": 211
+      },
+      {
+        "word": "have",
+        "start": 7.256,
+        "end": 7.43,
+        "startFrame": 218,
+        "endFrame": 223
+      },
+      {
+        "word": "full",
+        "start": 7.488,
+        "end": 7.721,
+        "startFrame": 225,
+        "endFrame": 232
+      },
+      {
+        "word": "access",
+        "start": 7.79,
+        "end": 8.162,
+        "startFrame": 234,
+        "endFrame": 245
+      },
+      {
+        "word": "to",
+        "start": 8.208,
+        "end": 8.266,
+        "startFrame": 246,
+        "endFrame": 248
+      },
+      {
+        "word": "your",
+        "start": 8.348,
+        "end": 8.464,
+        "startFrame": 250,
+        "endFrame": 254
+      },
+      {
+        "word": "file",
+        "start": 8.522,
+        "end": 8.8,
+        "startFrame": 256,
+        "endFrame": 264
+      },
+      {
+        "word": "system,",
+        "start": 8.835,
+        "end": 9.3,
+        "startFrame": 265,
+        "endFrame": 279
+      },
+      {
+        "word": "your",
+        "start": 9.509,
+        "end": 9.648,
+        "startFrame": 285,
+        "endFrame": 289
+      },
+      {
+        "word": "terminal,",
+        "start": 9.706,
+        "end": 10.321,
+        "startFrame": 291,
+        "endFrame": 310
+      },
+      {
+        "word": "and",
+        "start": 10.472,
+        "end": 10.623,
+        "startFrame": 314,
+        "endFrame": 319
+      },
+      {
+        "word": "your",
+        "start": 10.67,
+        "end": 10.774,
+        "startFrame": 320,
+        "endFrame": 323
+      },
+      {
+        "word": "clipboard.",
+        "start": 10.82,
+        "end": 11.413,
+        "startFrame": 325,
+        "endFrame": 342
+      },
+      {
+        "word": "You're",
+        "start": 11.923,
+        "end": 12.132,
+        "startFrame": 358,
+        "endFrame": 364
+      },
+      {
+        "word": "giving",
+        "start": 12.156,
+        "end": 12.353,
+        "startFrame": 365,
+        "endFrame": 371
+      },
+      {
+        "word": "a",
+        "start": 12.399,
+        "end": 12.423,
+        "startFrame": 372,
+        "endFrame": 373
+      },
+      {
+        "word": "stranger",
+        "start": 12.481,
+        "end": 12.875,
+        "startFrame": 374,
+        "endFrame": 386
+      },
+      {
+        "word": "the",
+        "start": 12.945,
+        "end": 13.015,
+        "startFrame": 388,
+        "endFrame": 390
+      },
+      {
+        "word": "keys",
+        "start": 13.096,
+        "end": 13.421,
+        "startFrame": 393,
+        "endFrame": 403
+      },
+      {
+        "word": "to",
+        "start": 13.479,
+        "end": 13.549,
+        "startFrame": 404,
+        "endFrame": 406
+      },
+      {
+        "word": "your",
+        "start": 13.63,
+        "end": 13.746,
+        "startFrame": 409,
+        "endFrame": 412
+      },
+      {
+        "word": "entire",
+        "start": 13.792,
+        "end": 14.199,
+        "startFrame": 414,
+        "endFrame": 426
+      },
+      {
+        "word": "machine.\n\nLet's",
+        "start": 14.234,
+        "end": 15.72,
+        "startFrame": 427,
+        "endFrame": 472
+      },
+      {
+        "word": "break",
+        "start": 15.778,
+        "end": 15.998,
+        "startFrame": 473,
+        "endFrame": 480
+      },
+      {
+        "word": "down",
+        "start": 16.056,
+        "end": 16.3,
+        "startFrame": 482,
+        "endFrame": 489
+      },
+      {
+        "word": "how",
+        "start": 16.358,
+        "end": 16.463,
+        "startFrame": 491,
+        "endFrame": 494
+      },
+      {
+        "word": "V",
+        "start": 16.544,
+        "end": 16.614,
+        "startFrame": 496,
+        "endFrame": 498
+      },
+      {
+        "word": "S",
+        "start": 16.788,
+        "end": 16.811,
+        "startFrame": 504,
+        "endFrame": 504
+      },
+      {
+        "word": "Code",
+        "start": 16.892,
+        "end": 17.078,
+        "startFrame": 507,
+        "endFrame": 512
+      },
+      {
+        "word": "extensions",
+        "start": 17.101,
+        "end": 17.659,
+        "startFrame": 513,
+        "endFrame": 530
+      },
+      {
+        "word": "work",
+        "start": 17.717,
+        "end": 17.926,
+        "startFrame": 532,
+        "endFrame": 538
+      },
+      {
+        "word": "under",
+        "start": 17.984,
+        "end": 18.135,
+        "startFrame": 540,
+        "endFrame": 544
+      },
+      {
+        "word": "the",
+        "start": 18.169,
+        "end": 18.239,
+        "startFrame": 545,
+        "endFrame": 547
+      },
+      {
+        "word": "hood.",
+        "start": 18.286,
+        "end": 18.703,
+        "startFrame": 549,
+        "endFrame": 561
+      },
+      {
+        "word": "When",
+        "start": 19.307,
+        "end": 19.47,
+        "startFrame": 579,
+        "endFrame": 584
+      },
+      {
+        "word": "you",
+        "start": 19.505,
+        "end": 19.574,
+        "startFrame": 585,
+        "endFrame": 587
+      },
+      {
+        "word": "install",
+        "start": 19.632,
+        "end": 19.946,
+        "startFrame": 589,
+        "endFrame": 598
+      },
+      {
+        "word": "an",
+        "start": 19.992,
+        "end": 20.039,
+        "startFrame": 600,
+        "endFrame": 601
+      },
+      {
+        "word": "extension,",
+        "start": 20.085,
+        "end": 20.7,
+        "startFrame": 603,
+        "endFrame": 621
+      },
+      {
+        "word": "it",
+        "start": 20.909,
+        "end": 21.025,
+        "startFrame": 627,
+        "endFrame": 631
+      },
+      {
+        "word": "runs",
+        "start": 21.072,
+        "end": 21.281,
+        "startFrame": 632,
+        "endFrame": 638
+      },
+      {
+        "word": "inside",
+        "start": 21.339,
+        "end": 21.734,
+        "startFrame": 640,
+        "endFrame": 652
+      },
+      {
+        "word": "a",
+        "start": 21.768,
+        "end": 21.803,
+        "startFrame": 653,
+        "endFrame": 654
+      },
+      {
+        "word": "node",
+        "start": 21.919,
+        "end": 22.279,
+        "startFrame": 658,
+        "endFrame": 668
+      },
+      {
+        "word": "J",
+        "start": 22.453,
+        "end": 22.697,
+        "startFrame": 674,
+        "endFrame": 681
+      },
+      {
+        "word": "S",
+        "start": 22.813,
+        "end": 22.906,
+        "startFrame": 684,
+        "endFrame": 687
+      },
+      {
+        "word": "process",
+        "start": 22.999,
+        "end": 23.649,
+        "startFrame": 690,
+        "endFrame": 709
+      },
+      {
+        "word": "that",
+        "start": 23.974,
+        "end": 24.16,
+        "startFrame": 719,
+        "endFrame": 725
+      },
+      {
+        "word": "V",
+        "start": 24.218,
+        "end": 24.299,
+        "startFrame": 727,
+        "endFrame": 729
+      },
+      {
+        "word": "S",
+        "start": 24.474,
+        "end": 24.497,
+        "startFrame": 734,
+        "endFrame": 735
+      },
+      {
+        "word": "Code",
+        "start": 24.59,
+        "end": 24.857,
+        "startFrame": 738,
+        "endFrame": 746
+      },
+      {
+        "word": "spawns",
+        "start": 24.903,
+        "end": 25.344,
+        "startFrame": 747,
+        "endFrame": 760
+      },
+      {
+        "word": "for",
+        "start": 25.402,
+        "end": 25.565,
+        "startFrame": 762,
+        "endFrame": 767
+      },
+      {
+        "word": "it.",
+        "start": 25.623,
+        "end": 25.855,
+        "startFrame": 769,
+        "endFrame": 776
+      },
+      {
+        "word": "This",
+        "start": 26.552,
+        "end": 26.749,
+        "startFrame": 797,
+        "endFrame": 802
+      },
+      {
+        "word": "process",
+        "start": 26.819,
+        "end": 27.248,
+        "startFrame": 805,
+        "endFrame": 817
+      },
+      {
+        "word": "has",
+        "start": 27.295,
+        "end": 27.434,
+        "startFrame": 819,
+        "endFrame": 823
+      },
+      {
+        "word": "almost",
+        "start": 27.492,
+        "end": 27.794,
+        "startFrame": 825,
+        "endFrame": 834
+      },
+      {
+        "word": "no",
+        "start": 27.864,
+        "end": 28.015,
+        "startFrame": 836,
+        "endFrame": 840
+      },
+      {
+        "word": "sandboxing.",
+        "start": 28.096,
+        "end": 28.967,
+        "startFrame": 843,
+        "endFrame": 869
+      },
+      {
+        "word": "It",
+        "start": 29.478,
+        "end": 29.605,
+        "startFrame": 884,
+        "endFrame": 888
+      },
+      {
+        "word": "can",
+        "start": 29.64,
+        "end": 29.745,
+        "startFrame": 889,
+        "endFrame": 892
+      },
+      {
+        "word": "read",
+        "start": 29.803,
+        "end": 29.954,
+        "startFrame": 894,
+        "endFrame": 899
+      },
+      {
+        "word": "any",
+        "start": 30.0,
+        "end": 30.139,
+        "startFrame": 900,
+        "endFrame": 904
+      },
+      {
+        "word": "file",
+        "start": 30.209,
+        "end": 30.522,
+        "startFrame": 906,
+        "endFrame": 916
+      },
+      {
+        "word": "on",
+        "start": 30.545,
+        "end": 30.615,
+        "startFrame": 916,
+        "endFrame": 918
+      },
+      {
+        "word": "your",
+        "start": 30.661,
+        "end": 30.766,
+        "startFrame": 920,
+        "endFrame": 923
+      },
+      {
+        "word": "disk,",
+        "start": 30.812,
+        "end": 31.3,
+        "startFrame": 924,
+        "endFrame": 939
+      },
+      {
+        "word": "execute",
+        "start": 31.625,
+        "end": 32.148,
+        "startFrame": 949,
+        "endFrame": 964
+      },
+      {
+        "word": "shell",
+        "start": 32.182,
+        "end": 32.391,
+        "startFrame": 965,
+        "endFrame": 972
+      },
+      {
+        "word": "commands,",
+        "start": 32.449,
+        "end": 33.007,
+        "startFrame": 973,
+        "endFrame": 990
+      },
+      {
+        "word": "and",
+        "start": 33.204,
+        "end": 33.367,
+        "startFrame": 996,
+        "endFrame": 1001
+      },
+      {
+        "word": "make",
+        "start": 33.425,
+        "end": 33.576,
+        "startFrame": 1003,
+        "endFrame": 1007
+      },
+      {
+        "word": "network",
+        "start": 33.657,
+        "end": 34.017,
+        "startFrame": 1010,
+        "endFrame": 1021
+      },
+      {
+        "word": "requests",
+        "start": 34.086,
+        "end": 34.667,
+        "startFrame": 1023,
+        "endFrame": 1040
+      },
+      {
+        "word": "to",
+        "start": 34.899,
+        "end": 35.027,
+        "startFrame": 1047,
+        "endFrame": 1051
+      },
+      {
+        "word": "any",
+        "start": 35.12,
+        "end": 35.317,
+        "startFrame": 1054,
+        "endFrame": 1060
+      },
+      {
+        "word": "server.",
+        "start": 35.398,
+        "end": 35.932,
+        "startFrame": 1062,
+        "endFrame": 1078
+      },
+      {
+        "word": "There's",
+        "start": 36.524,
+        "end": 36.792,
+        "startFrame": 1096,
+        "endFrame": 1104
+      },
+      {
+        "word": "no",
+        "start": 36.85,
+        "end": 36.954,
+        "startFrame": 1106,
+        "endFrame": 1109
+      },
+      {
+        "word": "permission",
+        "start": 37.024,
+        "end": 37.442,
+        "startFrame": 1111,
+        "endFrame": 1123
+      },
+      {
+        "word": "popup,",
+        "start": 37.5,
+        "end": 38.057,
+        "startFrame": 1125,
+        "endFrame": 1142
+      },
+      {
+        "word": "no",
+        "start": 38.37,
+        "end": 38.556,
+        "startFrame": 1151,
+        "endFrame": 1157
+      },
+      {
+        "word": "confirmation",
+        "start": 38.661,
+        "end": 39.392,
+        "startFrame": 1160,
+        "endFrame": 1182
+      },
+      {
+        "word": "dialog.",
+        "start": 39.462,
+        "end": 40.089,
+        "startFrame": 1184,
+        "endFrame": 1203
+      },
+      {
+        "word": "You",
+        "start": 40.588,
+        "end": 40.739,
+        "startFrame": 1218,
+        "endFrame": 1222
+      },
+      {
+        "word": "click",
+        "start": 40.82,
+        "end": 41.064,
+        "startFrame": 1225,
+        "endFrame": 1232
+      },
+      {
+        "word": "install,",
+        "start": 41.122,
+        "end": 41.807,
+        "startFrame": 1234,
+        "endFrame": 1254
+      },
+      {
+        "word": "and",
+        "start": 42.086,
+        "end": 42.225,
+        "startFrame": 1263,
+        "endFrame": 1267
+      },
+      {
+        "word": "it",
+        "start": 42.283,
+        "end": 42.353,
+        "startFrame": 1268,
+        "endFrame": 1271
+      },
+      {
+        "word": "has",
+        "start": 42.399,
+        "end": 42.55,
+        "startFrame": 1272,
+        "endFrame": 1276
+      },
+      {
+        "word": "full",
+        "start": 42.666,
+        "end": 42.991,
+        "startFrame": 1280,
+        "endFrame": 1290
+      },
+      {
+        "word": "access.\n\nHere's",
+        "start": 43.107,
+        "end": 44.826,
+        "startFrame": 1293,
+        "endFrame": 1345
+      },
+      {
+        "word": "the",
+        "start": 44.884,
+        "end": 44.988,
+        "startFrame": 1347,
+        "endFrame": 1350
+      },
+      {
+        "word": "scary",
+        "start": 45.046,
+        "end": 45.383,
+        "startFrame": 1351,
+        "endFrame": 1361
+      },
+      {
+        "word": "part.",
+        "start": 45.441,
+        "end": 45.836,
+        "startFrame": 1363,
+        "endFrame": 1375
+      },
+      {
+        "word": "A",
+        "start": 46.416,
+        "end": 46.497,
+        "startFrame": 1392,
+        "endFrame": 1395
+      },
+      {
+        "word": "malicious",
+        "start": 46.59,
+        "end": 47.043,
+        "startFrame": 1398,
+        "endFrame": 1411
+      },
+      {
+        "word": "extension",
+        "start": 47.101,
+        "end": 47.635,
+        "startFrame": 1413,
+        "endFrame": 1429
+      },
+      {
+        "word": "can",
+        "start": 47.902,
+        "end": 48.065,
+        "startFrame": 1437,
+        "endFrame": 1442
+      },
+      {
+        "word": "do",
+        "start": 48.123,
+        "end": 48.228,
+        "startFrame": 1444,
+        "endFrame": 1447
+      },
+      {
+        "word": "three",
+        "start": 48.344,
+        "end": 48.622,
+        "startFrame": 1450,
+        "endFrame": 1459
+      },
+      {
+        "word": "things",
+        "start": 48.68,
+        "end": 49.063,
+        "startFrame": 1460,
+        "endFrame": 1472
+      },
+      {
+        "word": "without",
+        "start": 49.377,
+        "end": 49.737,
+        "startFrame": 1481,
+        "endFrame": 1492
+      },
+      {
+        "word": "you",
+        "start": 49.772,
+        "end": 49.853,
+        "startFrame": 1493,
+        "endFrame": 1496
+      },
+      {
+        "word": "ever",
+        "start": 49.911,
+        "end": 50.074,
+        "startFrame": 1497,
+        "endFrame": 1502
+      },
+      {
+        "word": "noticing.",
+        "start": 50.132,
+        "end": 50.677,
+        "startFrame": 1504,
+        "endFrame": 1520
+      },
+      {
+        "word": "First,",
+        "start": 51.374,
+        "end": 51.908,
+        "startFrame": 1541,
+        "endFrame": 1557
+      },
+      {
+        "word": "it",
+        "start": 52.117,
+        "end": 52.233,
+        "startFrame": 1564,
+        "endFrame": 1567
+      },
+      {
+        "word": "can",
+        "start": 52.268,
+        "end": 52.384,
+        "startFrame": 1568,
+        "endFrame": 1572
+      },
+      {
+        "word": "exfiltrate",
+        "start": 52.454,
+        "end": 53.173,
+        "startFrame": 1574,
+        "endFrame": 1595
+      },
+      {
+        "word": "your",
+        "start": 53.208,
+        "end": 53.324,
+        "startFrame": 1596,
+        "endFrame": 1600
+      },
+      {
+        "word": "code.",
+        "start": 53.382,
+        "end": 53.882,
+        "startFrame": 1601,
+        "endFrame": 1616
+      },
+      {
+        "word": "Every",
+        "start": 54.485,
+        "end": 54.776,
+        "startFrame": 1635,
+        "endFrame": 1643
+      },
+      {
+        "word": "file",
+        "start": 54.857,
+        "end": 55.182,
+        "startFrame": 1646,
+        "endFrame": 1655
+      },
+      {
+        "word": "you",
+        "start": 55.228,
+        "end": 55.31,
+        "startFrame": 1657,
+        "endFrame": 1659
+      },
+      {
+        "word": "open,",
+        "start": 55.391,
+        "end": 55.762,
+        "startFrame": 1662,
+        "endFrame": 1673
+      },
+      {
+        "word": "every",
+        "start": 55.913,
+        "end": 56.204,
+        "startFrame": 1677,
+        "endFrame": 1686
+      },
+      {
+        "word": "keystroke",
+        "start": 56.273,
+        "end": 56.807,
+        "startFrame": 1688,
+        "endFrame": 1704
+      },
+      {
+        "word": "you",
+        "start": 56.831,
+        "end": 56.912,
+        "startFrame": 1705,
+        "endFrame": 1707
+      },
+      {
+        "word": "type,",
+        "start": 56.981,
+        "end": 57.434,
+        "startFrame": 1709,
+        "endFrame": 1723
+      },
+      {
+        "word": "can",
+        "start": 57.817,
+        "end": 57.968,
+        "startFrame": 1735,
+        "endFrame": 1739
+      },
+      {
+        "word": "be",
+        "start": 58.015,
+        "end": 58.108,
+        "startFrame": 1740,
+        "endFrame": 1743
+      },
+      {
+        "word": "silently",
+        "start": 58.166,
+        "end": 58.711,
+        "startFrame": 1745,
+        "endFrame": 1761
+      },
+      {
+        "word": "sent",
+        "start": 58.769,
+        "end": 58.99,
+        "startFrame": 1763,
+        "endFrame": 1770
+      },
+      {
+        "word": "to",
+        "start": 59.025,
+        "end": 59.094,
+        "startFrame": 1771,
+        "endFrame": 1773
+      },
+      {
+        "word": "a",
+        "start": 59.164,
+        "end": 59.199,
+        "startFrame": 1775,
+        "endFrame": 1776
+      },
+      {
+        "word": "remote",
+        "start": 59.28,
+        "end": 59.617,
+        "startFrame": 1778,
+        "endFrame": 1789
+      },
+      {
+        "word": "server.",
+        "start": 59.663,
+        "end": 60.174,
+        "startFrame": 1790,
+        "endFrame": 1805
+      },
+      {
+        "word": "Your",
+        "start": 60.871,
+        "end": 61.045,
+        "startFrame": 1826,
+        "endFrame": 1831
+      },
+      {
+        "word": "proprietary",
+        "start": 61.103,
+        "end": 61.776,
+        "startFrame": 1833,
+        "endFrame": 1853
+      },
+      {
+        "word": "code,",
+        "start": 61.846,
+        "end": 62.322,
+        "startFrame": 1855,
+        "endFrame": 1870
+      },
+      {
+        "word": "your",
+        "start": 62.763,
+        "end": 62.926,
+        "startFrame": 1883,
+        "endFrame": 1888
+      },
+      {
+        "word": "A",
+        "start": 63.007,
+        "end": 63.065,
+        "startFrame": 1890,
+        "endFrame": 1892
+      },
+      {
+        "word": "P",
+        "start": 63.181,
+        "end": 63.262,
+        "startFrame": 1895,
+        "endFrame": 1898
+      },
+      {
+        "word": "I",
+        "start": 63.413,
+        "end": 63.471,
+        "startFrame": 1902,
+        "endFrame": 1904
+      },
+      {
+        "word": "keys,",
+        "start": 63.588,
+        "end": 64.133,
+        "startFrame": 1908,
+        "endFrame": 1924
+      },
+      {
+        "word": "your",
+        "start": 64.516,
+        "end": 64.679,
+        "startFrame": 1935,
+        "endFrame": 1940
+      },
+      {
+        "word": "environment",
+        "start": 64.725,
+        "end": 65.283,
+        "startFrame": 1942,
+        "endFrame": 1958
+      },
+      {
+        "word": "variables,",
+        "start": 65.329,
+        "end": 66.003,
+        "startFrame": 1960,
+        "endFrame": 1980
+      },
+      {
+        "word": "all",
+        "start": 66.119,
+        "end": 66.374,
+        "startFrame": 1984,
+        "endFrame": 1991
+      },
+      {
+        "word": "of",
+        "start": 66.432,
+        "end": 66.49,
+        "startFrame": 1993,
+        "endFrame": 1995
+      },
+      {
+        "word": "it.\n\nSecond,",
+        "start": 66.548,
+        "end": 68.197,
+        "startFrame": 1996,
+        "endFrame": 2046
+      },
+      {
+        "word": "it",
+        "start": 68.58,
+        "end": 68.719,
+        "startFrame": 2057,
+        "endFrame": 2062
+      },
+      {
+        "word": "can",
+        "start": 68.766,
+        "end": 68.882,
+        "startFrame": 2063,
+        "endFrame": 2066
+      },
+      {
+        "word": "inject",
+        "start": 68.94,
+        "end": 69.346,
+        "startFrame": 2068,
+        "endFrame": 2080
+      },
+      {
+        "word": "code",
+        "start": 69.462,
+        "end": 69.88,
+        "startFrame": 2084,
+        "endFrame": 2096
+      },
+      {
+        "word": "into",
+        "start": 69.938,
+        "end": 70.171,
+        "startFrame": 2098,
+        "endFrame": 2105
+      },
+      {
+        "word": "your",
+        "start": 70.24,
+        "end": 70.356,
+        "startFrame": 2107,
+        "endFrame": 2111
+      },
+      {
+        "word": "projects.",
+        "start": 70.403,
+        "end": 71.134,
+        "startFrame": 2112,
+        "endFrame": 2134
+      },
+      {
+        "word": "Imagine",
+        "start": 71.773,
+        "end": 72.307,
+        "startFrame": 2153,
+        "endFrame": 2169
+      },
+      {
+        "word": "an",
+        "start": 72.353,
+        "end": 72.458,
+        "startFrame": 2171,
+        "endFrame": 2174
+      },
+      {
+        "word": "extension",
+        "start": 72.504,
+        "end": 73.015,
+        "startFrame": 2175,
+        "endFrame": 2190
+      },
+      {
+        "word": "that",
+        "start": 73.062,
+        "end": 73.178,
+        "startFrame": 2192,
+        "endFrame": 2195
+      },
+      {
+        "word": "quietly",
+        "start": 73.236,
+        "end": 73.63,
+        "startFrame": 2197,
+        "endFrame": 2209
+      },
+      {
+        "word": "modifies",
+        "start": 73.712,
+        "end": 74.199,
+        "startFrame": 2211,
+        "endFrame": 2226
+      },
+      {
+        "word": "your",
+        "start": 74.246,
+        "end": 74.35,
+        "startFrame": 2227,
+        "endFrame": 2230
+      },
+      {
+        "word": "package.jason",
+        "start": 74.397,
+        "end": 76.08,
+        "startFrame": 2232,
+        "endFrame": 2282
+      },
+      {
+        "word": "to",
+        "start": 76.486,
+        "end": 76.603,
+        "startFrame": 2295,
+        "endFrame": 2298
+      },
+      {
+        "word": "add",
+        "start": 76.684,
+        "end": 76.904,
+        "startFrame": 2301,
+        "endFrame": 2307
+      },
+      {
+        "word": "a",
+        "start": 76.928,
+        "end": 76.951,
+        "startFrame": 2308,
+        "endFrame": 2309
+      },
+      {
+        "word": "dependency",
+        "start": 77.021,
+        "end": 77.764,
+        "startFrame": 2311,
+        "endFrame": 2333
+      },
+      {
+        "word": "that",
+        "start": 78.065,
+        "end": 78.24,
+        "startFrame": 2342,
+        "endFrame": 2347
+      },
+      {
+        "word": "looks",
+        "start": 78.263,
+        "end": 78.46,
+        "startFrame": 2348,
+        "endFrame": 2354
+      },
+      {
+        "word": "legitimate",
+        "start": 78.541,
+        "end": 79.25,
+        "startFrame": 2356,
+        "endFrame": 2378
+      },
+      {
+        "word": "but",
+        "start": 79.47,
+        "end": 79.644,
+        "startFrame": 2384,
+        "endFrame": 2389
+      },
+      {
+        "word": "contains",
+        "start": 79.691,
+        "end": 80.109,
+        "startFrame": 2391,
+        "endFrame": 2403
+      },
+      {
+        "word": "a",
+        "start": 80.155,
+        "end": 80.19,
+        "startFrame": 2405,
+        "endFrame": 2406
+      },
+      {
+        "word": "backdoor.",
+        "start": 80.295,
+        "end": 81.014,
+        "startFrame": 2409,
+        "endFrame": 2430
+      },
+      {
+        "word": "You'd",
+        "start": 81.664,
+        "end": 81.897,
+        "startFrame": 2450,
+        "endFrame": 2457
+      },
+      {
+        "word": "never",
+        "start": 81.978,
+        "end": 82.21,
+        "startFrame": 2459,
+        "endFrame": 2466
+      },
+      {
+        "word": "notice",
+        "start": 82.291,
+        "end": 82.64,
+        "startFrame": 2469,
+        "endFrame": 2479
+      },
+      {
+        "word": "because",
+        "start": 82.675,
+        "end": 83.011,
+        "startFrame": 2480,
+        "endFrame": 2490
+      },
+      {
+        "word": "the",
+        "start": 83.058,
+        "end": 83.15,
+        "startFrame": 2492,
+        "endFrame": 2494
+      },
+      {
+        "word": "diff",
+        "start": 83.255,
+        "end": 83.684,
+        "startFrame": 2498,
+        "endFrame": 2511
+      },
+      {
+        "word": "looks",
+        "start": 84.091,
+        "end": 84.311,
+        "startFrame": 2523,
+        "endFrame": 2529
+      },
+      {
+        "word": "like",
+        "start": 84.358,
+        "end": 84.509,
+        "startFrame": 2531,
+        "endFrame": 2535
+      },
+      {
+        "word": "a",
+        "start": 84.544,
+        "end": 84.578,
+        "startFrame": 2536,
+        "endFrame": 2537
+      },
+      {
+        "word": "normal",
+        "start": 84.695,
+        "end": 85.078,
+        "startFrame": 2541,
+        "endFrame": 2552
+      },
+      {
+        "word": "dependency",
+        "start": 85.136,
+        "end": 85.728,
+        "startFrame": 2554,
+        "endFrame": 2572
+      },
+      {
+        "word": "update.\n\nThird,",
+        "start": 85.786,
+        "end": 87.574,
+        "startFrame": 2574,
+        "endFrame": 2627
+      },
+      {
+        "word": "it",
+        "start": 87.957,
+        "end": 88.073,
+        "startFrame": 2639,
+        "endFrame": 2642
+      },
+      {
+        "word": "can",
+        "start": 88.12,
+        "end": 88.236,
+        "startFrame": 2644,
+        "endFrame": 2647
+      },
+      {
+        "word": "persist",
+        "start": 88.305,
+        "end": 88.828,
+        "startFrame": 2649,
+        "endFrame": 2665
+      },
+      {
+        "word": "beyond",
+        "start": 89.153,
+        "end": 89.803,
+        "startFrame": 2675,
+        "endFrame": 2694
+      },
+      {
+        "word": "uninstall.",
+        "start": 90.082,
+        "end": 91.115,
+        "startFrame": 2702,
+        "endFrame": 2733
+      },
+      {
+        "word": "Some",
+        "start": 91.928,
+        "end": 92.16,
+        "startFrame": 2758,
+        "endFrame": 2765
+      },
+      {
+        "word": "extensions",
+        "start": 92.195,
+        "end": 92.705,
+        "startFrame": 2766,
+        "endFrame": 2781
+      },
+      {
+        "word": "write",
+        "start": 92.74,
+        "end": 92.938,
+        "startFrame": 2782,
+        "endFrame": 2788
+      },
+      {
+        "word": "to",
+        "start": 92.961,
+        "end": 93.019,
+        "startFrame": 2789,
+        "endFrame": 2791
+      },
+      {
+        "word": "your",
+        "start": 93.077,
+        "end": 93.193,
+        "startFrame": 2792,
+        "endFrame": 2796
+      },
+      {
+        "word": "shell",
+        "start": 93.24,
+        "end": 93.437,
+        "startFrame": 2797,
+        "endFrame": 2803
+      },
+      {
+        "word": "profile,",
+        "start": 93.495,
+        "end": 94.041,
+        "startFrame": 2805,
+        "endFrame": 2821
+      },
+      {
+        "word": "your",
+        "start": 94.157,
+        "end": 94.296,
+        "startFrame": 2825,
+        "endFrame": 2829
+      },
+      {
+        "word": "git",
+        "start": 94.354,
+        "end": 94.505,
+        "startFrame": 2831,
+        "endFrame": 2835
+      },
+      {
+        "word": "hooks,",
+        "start": 94.551,
+        "end": 95.039,
+        "startFrame": 2837,
+        "endFrame": 2851
+      },
+      {
+        "word": "or",
+        "start": 95.248,
+        "end": 95.376,
+        "startFrame": 2857,
+        "endFrame": 2861
+      },
+      {
+        "word": "your",
+        "start": 95.434,
+        "end": 95.55,
+        "startFrame": 2863,
+        "endFrame": 2866
+      },
+      {
+        "word": "system",
+        "start": 95.608,
+        "end": 95.933,
+        "startFrame": 2868,
+        "endFrame": 2878
+      },
+      {
+        "word": "startup",
+        "start": 96.003,
+        "end": 96.328,
+        "startFrame": 2880,
+        "endFrame": 2890
+      },
+      {
+        "word": "scripts.",
+        "start": 96.374,
+        "end": 96.908,
+        "startFrame": 2891,
+        "endFrame": 2907
+      },
+      {
+        "word": "Even",
+        "start": 97.605,
+        "end": 97.86,
+        "startFrame": 2928,
+        "endFrame": 2936
+      },
+      {
+        "word": "after",
+        "start": 97.907,
+        "end": 98.127,
+        "startFrame": 2937,
+        "endFrame": 2944
+      },
+      {
+        "word": "you",
+        "start": 98.174,
+        "end": 98.243,
+        "startFrame": 2945,
+        "endFrame": 2947
+      },
+      {
+        "word": "remove",
+        "start": 98.336,
+        "end": 98.661,
+        "startFrame": 2950,
+        "endFrame": 2960
+      },
+      {
+        "word": "the",
+        "start": 98.696,
+        "end": 98.766,
+        "startFrame": 2961,
+        "endFrame": 2963
+      },
+      {
+        "word": "extension,",
+        "start": 98.812,
+        "end": 99.474,
+        "startFrame": 2964,
+        "endFrame": 2984
+      },
+      {
+        "word": "the",
+        "start": 99.683,
+        "end": 99.799,
+        "startFrame": 2990,
+        "endFrame": 2994
+      },
+      {
+        "word": "payload",
+        "start": 99.88,
+        "end": 100.356,
+        "startFrame": 2996,
+        "endFrame": 3011
+      },
+      {
+        "word": "stays",
+        "start": 100.414,
+        "end": 100.681,
+        "startFrame": 3012,
+        "endFrame": 3020
+      },
+      {
+        "word": "behind.\n\nThe",
+        "start": 100.739,
+        "end": 102.167,
+        "startFrame": 3022,
+        "endFrame": 3065
+      },
+      {
+        "word": "V",
+        "start": 102.237,
+        "end": 102.353,
+        "startFrame": 3067,
+        "endFrame": 3071
+      },
+      {
+        "word": "S",
+        "start": 102.527,
+        "end": 102.643,
+        "startFrame": 3076,
+        "endFrame": 3079
+      },
+      {
+        "word": "Code",
+        "start": 102.736,
+        "end": 102.991,
+        "startFrame": 3082,
+        "endFrame": 3090
+      },
+      {
+        "word": "marketplace",
+        "start": 103.038,
+        "end": 103.793,
+        "startFrame": 3091,
+        "endFrame": 3114
+      },
+      {
+        "word": "has",
+        "start": 103.967,
+        "end": 104.129,
+        "startFrame": 3119,
+        "endFrame": 3124
+      },
+      {
+        "word": "over",
+        "start": 104.187,
+        "end": 104.35,
+        "startFrame": 3126,
+        "endFrame": 3130
+      },
+      {
+        "word": "forty",
+        "start": 104.466,
+        "end": 104.814,
+        "startFrame": 3134,
+        "endFrame": 3144
+      },
+      {
+        "word": "thousand",
+        "start": 104.93,
+        "end": 105.406,
+        "startFrame": 3148,
+        "endFrame": 3162
+      },
+      {
+        "word": "extensions.",
+        "start": 105.453,
+        "end": 106.265,
+        "startFrame": 3164,
+        "endFrame": 3188
+      },
+      {
+        "word": "Microsoft",
+        "start": 106.962,
+        "end": 107.566,
+        "startFrame": 3209,
+        "endFrame": 3227
+      },
+      {
+        "word": "reviews",
+        "start": 107.624,
+        "end": 107.949,
+        "startFrame": 3229,
+        "endFrame": 3238
+      },
+      {
+        "word": "the",
+        "start": 107.995,
+        "end": 108.065,
+        "startFrame": 3240,
+        "endFrame": 3242
+      },
+      {
+        "word": "most",
+        "start": 108.1,
+        "end": 108.262,
+        "startFrame": 3243,
+        "endFrame": 3248
+      },
+      {
+        "word": "popular",
+        "start": 108.32,
+        "end": 108.738,
+        "startFrame": 3250,
+        "endFrame": 3262
+      },
+      {
+        "word": "ones,",
+        "start": 108.796,
+        "end": 109.191,
+        "startFrame": 3264,
+        "endFrame": 3276
+      },
+      {
+        "word": "but",
+        "start": 109.632,
+        "end": 109.772,
+        "startFrame": 3289,
+        "endFrame": 3293
+      },
+      {
+        "word": "the",
+        "start": 109.807,
+        "end": 109.876,
+        "startFrame": 3294,
+        "endFrame": 3296
+      },
+      {
+        "word": "long",
+        "start": 109.946,
+        "end": 110.19,
+        "startFrame": 3298,
+        "endFrame": 3306
+      },
+      {
+        "word": "tail",
+        "start": 110.248,
+        "end": 110.48,
+        "startFrame": 3307,
+        "endFrame": 3314
+      },
+      {
+        "word": "is",
+        "start": 110.538,
+        "end": 110.619,
+        "startFrame": 3316,
+        "endFrame": 3319
+      },
+      {
+        "word": "essentially",
+        "start": 110.689,
+        "end": 111.165,
+        "startFrame": 3321,
+        "endFrame": 3335
+      },
+      {
+        "word": "unmoderated.",
+        "start": 111.246,
+        "end": 112.198,
+        "startFrame": 3337,
+        "endFrame": 3366
+      },
+      {
+        "word": "Last",
+        "start": 112.895,
+        "end": 113.208,
+        "startFrame": 3387,
+        "endFrame": 3396
+      },
+      {
+        "word": "year,",
+        "start": 113.266,
+        "end": 113.661,
+        "startFrame": 3398,
+        "endFrame": 3410
+      },
+      {
+        "word": "researchers",
+        "start": 114.044,
+        "end": 114.555,
+        "startFrame": 3421,
+        "endFrame": 3437
+      },
+      {
+        "word": "found",
+        "start": 114.613,
+        "end": 114.834,
+        "startFrame": 3438,
+        "endFrame": 3445
+      },
+      {
+        "word": "eighteen",
+        "start": 114.95,
+        "end": 115.368,
+        "startFrame": 3448,
+        "endFrame": 3461
+      },
+      {
+        "word": "extensions",
+        "start": 115.414,
+        "end": 116.076,
+        "startFrame": 3462,
+        "endFrame": 3482
+      },
+      {
+        "word": "with",
+        "start": 116.459,
+        "end": 116.633,
+        "startFrame": 3494,
+        "endFrame": 3499
+      },
+      {
+        "word": "over",
+        "start": 116.68,
+        "end": 116.854,
+        "startFrame": 3500,
+        "endFrame": 3506
+      },
+      {
+        "word": "seven",
+        "start": 116.935,
+        "end": 117.284,
+        "startFrame": 3508,
+        "endFrame": 3519
+      },
+      {
+        "word": "million",
+        "start": 117.353,
+        "end": 117.667,
+        "startFrame": 3521,
+        "endFrame": 3530
+      },
+      {
+        "word": "combined",
+        "start": 117.737,
+        "end": 118.224,
+        "startFrame": 3532,
+        "endFrame": 3547
+      },
+      {
+        "word": "installs",
+        "start": 118.271,
+        "end": 118.851,
+        "startFrame": 3548,
+        "endFrame": 3566
+      },
+      {
+        "word": "that",
+        "start": 119.292,
+        "end": 119.455,
+        "startFrame": 3579,
+        "endFrame": 3584
+      },
+      {
+        "word": "were",
+        "start": 119.49,
+        "end": 119.629,
+        "startFrame": 3585,
+        "endFrame": 3589
+      },
+      {
+        "word": "secretly",
+        "start": 119.699,
+        "end": 120.163,
+        "startFrame": 3591,
+        "endFrame": 3605
+      },
+      {
+        "word": "mining",
+        "start": 120.221,
+        "end": 120.523,
+        "startFrame": 3607,
+        "endFrame": 3616
+      },
+      {
+        "word": "cryptocurrency.\n\nSo",
+        "start": 120.569,
+        "end": 122.439,
+        "startFrame": 3617,
+        "endFrame": 3673
+      },
+      {
+        "word": "what",
+        "start": 122.613,
+        "end": 122.799,
+        "startFrame": 3678,
+        "endFrame": 3684
+      },
+      {
+        "word": "should",
+        "start": 122.833,
+        "end": 123.008,
+        "startFrame": 3685,
+        "endFrame": 3690
+      },
+      {
+        "word": "you",
+        "start": 123.042,
+        "end": 123.112,
+        "startFrame": 3691,
+        "endFrame": 3693
+      },
+      {
+        "word": "do?",
+        "start": 123.17,
+        "end": 123.553,
+        "startFrame": 3695,
+        "endFrame": 3707
+      },
+      {
+        "word": "Check",
+        "start": 124.668,
+        "end": 124.877,
+        "startFrame": 3740,
+        "endFrame": 3746
+      },
+      {
+        "word": "three",
+        "start": 124.935,
+        "end": 125.132,
+        "startFrame": 3748,
+        "endFrame": 3754
+      },
+      {
+        "word": "things",
+        "start": 125.179,
+        "end": 125.411,
+        "startFrame": 3755,
+        "endFrame": 3762
+      },
+      {
+        "word": "before",
+        "start": 125.457,
+        "end": 125.701,
+        "startFrame": 3764,
+        "endFrame": 3771
+      },
+      {
+        "word": "installing",
+        "start": 125.736,
+        "end": 126.177,
+        "startFrame": 3772,
+        "endFrame": 3785
+      },
+      {
+        "word": "any",
+        "start": 126.224,
+        "end": 126.363,
+        "startFrame": 3787,
+        "endFrame": 3791
+      },
+      {
+        "word": "extension.",
+        "start": 126.409,
+        "end": 127.025,
+        "startFrame": 3792,
+        "endFrame": 3811
+      },
+      {
+        "word": "One,",
+        "start": 127.837,
+        "end": 128.302,
+        "startFrame": 3835,
+        "endFrame": 3849
+      },
+      {
+        "word": "look",
+        "start": 128.546,
+        "end": 128.72,
+        "startFrame": 3856,
+        "endFrame": 3862
+      },
+      {
+        "word": "at",
+        "start": 128.754,
+        "end": 128.801,
+        "startFrame": 3863,
+        "endFrame": 3864
+      },
+      {
+        "word": "the",
+        "start": 128.836,
+        "end": 128.905,
+        "startFrame": 3865,
+        "endFrame": 3867
+      },
+      {
+        "word": "publisher.",
+        "start": 128.94,
+        "end": 129.544,
+        "startFrame": 3868,
+        "endFrame": 3886
+      },
+      {
+        "word": "Verified",
+        "start": 130.241,
+        "end": 130.74,
+        "startFrame": 3907,
+        "endFrame": 3922
+      },
+      {
+        "word": "publishers",
+        "start": 130.786,
+        "end": 131.251,
+        "startFrame": 3924,
+        "endFrame": 3938
+      },
+      {
+        "word": "have",
+        "start": 131.297,
+        "end": 131.425,
+        "startFrame": 3939,
+        "endFrame": 3943
+      },
+      {
+        "word": "a",
+        "start": 131.448,
+        "end": 131.483,
+        "startFrame": 3943,
+        "endFrame": 3944
+      },
+      {
+        "word": "blue",
+        "start": 131.529,
+        "end": 131.75,
+        "startFrame": 3946,
+        "endFrame": 3952
+      },
+      {
+        "word": "checkmark.",
+        "start": 131.785,
+        "end": 132.412,
+        "startFrame": 3954,
+        "endFrame": 3972
+      },
+      {
+        "word": "Two,",
+        "start": 133.108,
+        "end": 133.677,
+        "startFrame": 3993,
+        "endFrame": 4010
+      },
+      {
+        "word": "check",
+        "start": 134.06,
+        "end": 134.281,
+        "startFrame": 4022,
+        "endFrame": 4028
+      },
+      {
+        "word": "the",
+        "start": 134.339,
+        "end": 134.408,
+        "startFrame": 4030,
+        "endFrame": 4032
+      },
+      {
+        "word": "source",
+        "start": 134.501,
+        "end": 134.838,
+        "startFrame": 4035,
+        "endFrame": 4045
+      },
+      {
+        "word": "code.",
+        "start": 134.884,
+        "end": 135.291,
+        "startFrame": 4047,
+        "endFrame": 4059
+      },
+      {
+        "word": "Every",
+        "start": 135.801,
+        "end": 136.08,
+        "startFrame": 4074,
+        "endFrame": 4082
+      },
+      {
+        "word": "extension",
+        "start": 136.126,
+        "end": 136.603,
+        "startFrame": 4084,
+        "endFrame": 4098
+      },
+      {
+        "word": "links",
+        "start": 136.672,
+        "end": 136.881,
+        "startFrame": 4100,
+        "endFrame": 4106
+      },
+      {
+        "word": "to",
+        "start": 136.928,
+        "end": 136.997,
+        "startFrame": 4108,
+        "endFrame": 4110
+      },
+      {
+        "word": "its",
+        "start": 137.067,
+        "end": 137.183,
+        "startFrame": 4112,
+        "endFrame": 4115
+      },
+      {
+        "word": "git",
+        "start": 137.253,
+        "end": 137.613,
+        "startFrame": 4118,
+        "endFrame": 4128
+      },
+      {
+        "word": "hub",
+        "start": 137.671,
+        "end": 137.88,
+        "startFrame": 4130,
+        "endFrame": 4136
+      },
+      {
+        "word": "repo.",
+        "start": 137.996,
+        "end": 138.646,
+        "startFrame": 4140,
+        "endFrame": 4159
+      },
+      {
+        "word": "If",
+        "start": 139.25,
+        "end": 139.377,
+        "startFrame": 4178,
+        "endFrame": 4181
+      },
+      {
+        "word": "there's",
+        "start": 139.412,
+        "end": 139.609,
+        "startFrame": 4182,
+        "endFrame": 4188
+      },
+      {
+        "word": "no",
+        "start": 139.656,
+        "end": 139.76,
+        "startFrame": 4190,
+        "endFrame": 4193
+      },
+      {
+        "word": "repo,",
+        "start": 139.877,
+        "end": 140.434,
+        "startFrame": 4196,
+        "endFrame": 4213
+      },
+      {
+        "word": "that's",
+        "start": 140.608,
+        "end": 140.852,
+        "startFrame": 4218,
+        "endFrame": 4226
+      },
+      {
+        "word": "a",
+        "start": 140.887,
+        "end": 140.921,
+        "startFrame": 4227,
+        "endFrame": 4228
+      },
+      {
+        "word": "red",
+        "start": 140.979,
+        "end": 141.119,
+        "startFrame": 4229,
+        "endFrame": 4234
+      },
+      {
+        "word": "flag.",
+        "start": 141.165,
+        "end": 141.676,
+        "startFrame": 4235,
+        "endFrame": 4250
+      },
+      {
+        "word": "Three,",
+        "start": 142.373,
+        "end": 142.965,
+        "startFrame": 4271,
+        "endFrame": 4289
+      },
+      {
+        "word": "review",
+        "start": 143.406,
+        "end": 143.731,
+        "startFrame": 4302,
+        "endFrame": 4312
+      },
+      {
+        "word": "the",
+        "start": 143.789,
+        "end": 143.859,
+        "startFrame": 4314,
+        "endFrame": 4316
+      },
+      {
+        "word": "permissions",
+        "start": 143.928,
+        "end": 144.474,
+        "startFrame": 4318,
+        "endFrame": 4334
+      },
+      {
+        "word": "in",
+        "start": 144.532,
+        "end": 144.602,
+        "startFrame": 4336,
+        "endFrame": 4338
+      },
+      {
+        "word": "the",
+        "start": 144.648,
+        "end": 144.718,
+        "startFrame": 4339,
+        "endFrame": 4342
+      },
+      {
+        "word": "package.jason",
+        "start": 144.764,
+        "end": 146.204,
+        "startFrame": 4343,
+        "endFrame": 4386
+      },
+      {
+        "word": "manifest.",
+        "start": 146.262,
+        "end": 147.017,
+        "startFrame": 4388,
+        "endFrame": 4411
+      },
+      {
+        "word": "If",
+        "start": 147.713,
+        "end": 147.853,
+        "startFrame": 4431,
+        "endFrame": 4436
+      },
+      {
+        "word": "a",
+        "start": 147.911,
+        "end": 147.934,
+        "startFrame": 4437,
+        "endFrame": 4438
+      },
+      {
+        "word": "color",
+        "start": 148.003,
+        "end": 148.282,
+        "startFrame": 4440,
+        "endFrame": 4448
+      },
+      {
+        "word": "theme",
+        "start": 148.34,
+        "end": 148.549,
+        "startFrame": 4450,
+        "endFrame": 4456
+      },
+      {
+        "word": "extension",
+        "start": 148.584,
+        "end": 149.072,
+        "startFrame": 4458,
+        "endFrame": 4472
+      },
+      {
+        "word": "is",
+        "start": 149.13,
+        "end": 149.223,
+        "startFrame": 4474,
+        "endFrame": 4477
+      },
+      {
+        "word": "requesting",
+        "start": 149.315,
+        "end": 149.826,
+        "startFrame": 4479,
+        "endFrame": 4495
+      },
+      {
+        "word": "terminal",
+        "start": 149.896,
+        "end": 150.279,
+        "startFrame": 4497,
+        "endFrame": 4508
+      },
+      {
+        "word": "access,",
+        "start": 150.337,
+        "end": 151.022,
+        "startFrame": 4510,
+        "endFrame": 4531
+      },
+      {
+        "word": "something",
+        "start": 151.626,
+        "end": 151.997,
+        "startFrame": 4549,
+        "endFrame": 4560
+      },
+      {
+        "word": "is",
+        "start": 152.055,
+        "end": 152.148,
+        "startFrame": 4562,
+        "endFrame": 4564
+      },
+      {
+        "word": "very",
+        "start": 152.241,
+        "end": 152.532,
+        "startFrame": 4567,
+        "endFrame": 4576
+      },
+      {
+        "word": "wrong.\n\nThe",
+        "start": 152.601,
+        "end": 153.971,
+        "startFrame": 4578,
+        "endFrame": 4619
+      },
+      {
+        "word": "tools",
+        "start": 154.029,
+        "end": 154.331,
+        "startFrame": 4621,
+        "endFrame": 4630
+      },
+      {
+        "word": "you",
+        "start": 154.378,
+        "end": 154.447,
+        "startFrame": 4631,
+        "endFrame": 4633
+      },
+      {
+        "word": "use",
+        "start": 154.54,
+        "end": 154.726,
+        "startFrame": 4636,
+        "endFrame": 4642
+      },
+      {
+        "word": "to",
+        "start": 154.761,
+        "end": 154.83,
+        "startFrame": 4643,
+        "endFrame": 4645
+      },
+      {
+        "word": "write",
+        "start": 154.888,
+        "end": 155.097,
+        "startFrame": 4647,
+        "endFrame": 4653
+      },
+      {
+        "word": "code",
+        "start": 155.144,
+        "end": 155.655,
+        "startFrame": 4654,
+        "endFrame": 4670
+      },
+      {
+        "word": "shouldn't",
+        "start": 155.829,
+        "end": 156.212,
+        "startFrame": 4675,
+        "endFrame": 4686
+      },
+      {
+        "word": "be",
+        "start": 156.247,
+        "end": 156.34,
+        "startFrame": 4687,
+        "endFrame": 4690
+      },
+      {
+        "word": "the",
+        "start": 156.386,
+        "end": 156.456,
+        "startFrame": 4692,
+        "endFrame": 4694
+      },
+      {
+        "word": "ones",
+        "start": 156.525,
+        "end": 156.723,
+        "startFrame": 4696,
+        "endFrame": 4702
+      },
+      {
+        "word": "that",
+        "start": 156.758,
+        "end": 156.885,
+        "startFrame": 4703,
+        "endFrame": 4707
+      },
+      {
+        "word": "compromise",
+        "start": 156.943,
+        "end": 157.512,
+        "startFrame": 4708,
+        "endFrame": 4725
+      },
+      {
+        "word": "it.",
+        "start": 157.559,
+        "end": 157.802,
+        "startFrame": 4727,
+        "endFrame": 4734
+      },
+      {
+        "word": "A",
+        "start": 158.499,
+        "end": 158.58,
+        "startFrame": 4755,
+        "endFrame": 4757
+      },
+      {
+        "word": "five",
+        "start": 158.696,
+        "end": 158.963,
+        "startFrame": 4761,
+        "endFrame": 4769
+      },
+      {
+        "word": "second",
+        "start": 158.998,
+        "end": 159.254,
+        "startFrame": 4770,
+        "endFrame": 4778
+      },
+      {
+        "word": "check",
+        "start": 159.3,
+        "end": 159.509,
+        "startFrame": 4779,
+        "endFrame": 4785
+      },
+      {
+        "word": "before",
+        "start": 159.567,
+        "end": 159.834,
+        "startFrame": 4787,
+        "endFrame": 4795
+      },
+      {
+        "word": "clicking",
+        "start": 159.869,
+        "end": 160.171,
+        "startFrame": 4796,
+        "endFrame": 4805
+      },
+      {
+        "word": "install",
+        "start": 160.217,
+        "end": 160.693,
+        "startFrame": 4807,
+        "endFrame": 4821
+      },
+      {
+        "word": "can",
+        "start": 161.018,
+        "end": 161.204,
+        "startFrame": 4831,
+        "endFrame": 4836
+      },
+      {
+        "word": "save",
+        "start": 161.274,
+        "end": 161.529,
+        "startFrame": 4838,
+        "endFrame": 4846
+      },
+      {
+        "word": "you",
+        "start": 161.564,
+        "end": 161.645,
+        "startFrame": 4847,
+        "endFrame": 4849
+      },
+      {
+        "word": "from",
+        "start": 161.703,
+        "end": 161.843,
+        "startFrame": 4851,
+        "endFrame": 4855
+      },
+      {
+        "word": "a",
+        "start": 161.901,
+        "end": 161.924,
+        "startFrame": 4857,
+        "endFrame": 4858
+      },
+      {
+        "word": "very",
+        "start": 162.017,
+        "end": 162.296,
+        "startFrame": 4861,
+        "endFrame": 4869
+      },
+      {
+        "word": "bad",
+        "start": 162.365,
+        "end": 162.586,
+        "startFrame": 4871,
+        "endFrame": 4878
+      },
+      {
+        "word": "day.",
+        "start": 162.644,
+        "end": 163.282,
+        "startFrame": 4879,
+        "endFrame": 4898
+      }
+    ]
+  },
+  "structure": {
+    "segments": [
+      {
+        "id": "segment_1",
+        "step": 1,
+        "title": "The Hook",
+        "beatType": "ai_video",
+        "startFrame": 0,
+        "endFrame": 472,
+        "transcriptSegment": "Every developer mass-installs VS Code extensions without reading what they actually do. Some of those extensions have full access to your file system, your terminal, and your clipboard. You're giving a stranger the keys to your entire machine.",
+        "timestamps": [
+          {
+            "word": "Every",
+            "start": 0.0,
+            "startFrame": 0
+          },
+          {
+            "word": "developer",
+            "start": 0.313,
+            "startFrame": 9
+          },
+          {
+            "word": "mass-installs",
+            "start": 0.836,
+            "startFrame": 25
+          },
+          {
+            "word": "V",
+            "start": 1.765,
+            "startFrame": 53
+          },
+          {
+            "word": "S",
+            "start": 2.032,
+            "startFrame": 61
+          },
+          {
+            "word": "Code",
+            "start": 2.241,
+            "startFrame": 67
+          },
+          {
+            "word": "extensions",
+            "start": 2.508,
+            "startFrame": 75
+          },
+          {
+            "word": "without",
+            "start": 3.483,
+            "startFrame": 104
+          },
+          {
+            "word": "reading",
+            "start": 3.831,
+            "startFrame": 115
+          },
+          {
+            "word": "what",
+            "start": 4.098,
+            "startFrame": 123
+          }
+        ],
+        "aiVideoPrompt": "Close-up of a developer installing VS Code extensions carelessly, clicking Install buttons rapidly. Camera slowly zooms into the screen showing extension permissions. Dark, moody lighting with blue monitor glow reflecting off their face. The extensions panel fills with suspicious icons. Cinematic, unsettling atmosphere."
+      },
+      {
+        "id": "segment_2",
+        "step": 2,
+        "title": "Under The Hood",
+        "beatType": "motion_graphics",
+        "startFrame": 473,
+        "endFrame": 1345,
+        "transcriptSegment": "Let's break down how VS Code extensions work under the hood. When you install an extension, it runs inside a Node.js process that VS Code spawns for it. This process has almost no sandboxing. It can read any file on your disk, execute shell commands, and make network requests to any server. There's no permission popup, no confirmation dialog. You click install, and it has full access.",
+        "timestamps": [
+          {
+            "word": "machine.\n\nLet's",
+            "start": 14.234,
+            "startFrame": 427
+          },
+          {
+            "word": "break",
+            "start": 15.778,
+            "startFrame": 473
+          },
+          {
+            "word": "down",
+            "start": 16.056,
+            "startFrame": 482
+          },
+          {
+            "word": "how",
+            "start": 16.358,
+            "startFrame": 491
+          },
+          {
+            "word": "V",
+            "start": 16.544,
+            "startFrame": 496
+          },
+          {
+            "word": "S",
+            "start": 16.788,
+            "startFrame": 504
+          },
+          {
+            "word": "Code",
+            "start": 16.892,
+            "startFrame": 507
+          },
+          {
+            "word": "extensions",
+            "start": 17.101,
+            "startFrame": 513
+          },
+          {
+            "word": "work",
+            "start": 17.717,
+            "startFrame": 532
+          },
+          {
+            "word": "under",
+            "start": 17.984,
+            "startFrame": 540
+          }
+        ],
+        "componentPath": "src/visuals/Generated_UnderTheHood.tsx"
+      },
+      {
+        "id": "segment_3",
+        "step": 3,
+        "title": "Code Exfiltration",
+        "beatType": "motion_graphics",
+        "startFrame": 1346,
+        "endFrame": 2056,
+        "transcriptSegment": "Here's the scary part. A malicious extension can do three things without you ever noticing. First, it can exfiltrate your code. Every file you open, every keystroke you type, can be silently sent to a remote server. Your proprietary code, your API keys, your environment variables, all of it.",
+        "timestamps": [
+          {
+            "word": "access.\n\nHere's",
+            "start": 43.107,
+            "startFrame": 1293
+          },
+          {
+            "word": "the",
+            "start": 44.884,
+            "startFrame": 1347
+          },
+          {
+            "word": "scary",
+            "start": 45.046,
+            "startFrame": 1351
+          },
+          {
+            "word": "part.",
+            "start": 45.441,
+            "startFrame": 1363
+          },
+          {
+            "word": "A",
+            "start": 46.416,
+            "startFrame": 1392
+          },
+          {
+            "word": "malicious",
+            "start": 46.59,
+            "startFrame": 1398
+          },
+          {
+            "word": "extension",
+            "start": 47.101,
+            "startFrame": 1413
+          },
+          {
+            "word": "can",
+            "start": 47.902,
+            "startFrame": 1437
+          },
+          {
+            "word": "do",
+            "start": 48.123,
+            "startFrame": 1444
+          },
+          {
+            "word": "three",
+            "start": 48.344,
+            "startFrame": 1450
+          }
+        ],
+        "componentPath": "src/visuals/Generated_CodeExfiltration.tsx"
+      },
+      {
+        "id": "segment_4",
+        "step": 4,
+        "title": "Code Injection",
+        "beatType": "motion_graphics",
+        "startFrame": 2057,
+        "endFrame": 2637,
+        "transcriptSegment": "Second, it can inject code into your projects. Imagine an extension that quietly modifies your package.json to add a dependency that looks legitimate but contains a backdoor. You'd never notice because the diff looks like a normal dependency update.",
+        "timestamps": [
+          {
+            "word": "it.\n\nSecond,",
+            "start": 66.548,
+            "startFrame": 1996
+          },
+          {
+            "word": "it",
+            "start": 68.58,
+            "startFrame": 2057
+          },
+          {
+            "word": "can",
+            "start": 68.766,
+            "startFrame": 2063
+          },
+          {
+            "word": "inject",
+            "start": 68.94,
+            "startFrame": 2068
+          },
+          {
+            "word": "code",
+            "start": 69.462,
+            "startFrame": 2084
+          },
+          {
+            "word": "into",
+            "start": 69.938,
+            "startFrame": 2098
+          },
+          {
+            "word": "your",
+            "start": 70.24,
+            "startFrame": 2107
+          },
+          {
+            "word": "projects.",
+            "start": 70.403,
+            "startFrame": 2112
+          },
+          {
+            "word": "Imagine",
+            "start": 71.773,
+            "startFrame": 2153
+          },
+          {
+            "word": "an",
+            "start": 72.353,
+            "startFrame": 2171
+          }
+        ],
+        "componentPath": "src/visuals/Generated_CodeInjection.tsx"
+      },
+      {
+        "id": "segment_5",
+        "step": 5,
+        "title": "Persistence Beyond Uninstall",
+        "beatType": "motion_graphics",
+        "startFrame": 2638,
+        "endFrame": 3066,
+        "transcriptSegment": "Third, it can persist beyond uninstall. Some extensions write to your shell profile, your git hooks, or your system startup scripts. Even after you remove the extension, the payload stays behind.",
+        "timestamps": [
+          {
+            "word": "update.\n\nThird,",
+            "start": 85.786,
+            "startFrame": 2574
+          },
+          {
+            "word": "it",
+            "start": 87.957,
+            "startFrame": 2639
+          },
+          {
+            "word": "can",
+            "start": 88.12,
+            "startFrame": 2644
+          },
+          {
+            "word": "persist",
+            "start": 88.305,
+            "startFrame": 2649
+          },
+          {
+            "word": "beyond",
+            "start": 89.153,
+            "startFrame": 2675
+          },
+          {
+            "word": "uninstall.",
+            "start": 90.082,
+            "startFrame": 2702
+          },
+          {
+            "word": "Some",
+            "start": 91.928,
+            "startFrame": 2758
+          },
+          {
+            "word": "extensions",
+            "start": 92.195,
+            "startFrame": 2766
+          },
+          {
+            "word": "write",
+            "start": 92.74,
+            "startFrame": 2782
+          },
+          {
+            "word": "to",
+            "start": 92.961,
+            "startFrame": 2789
+          }
+        ],
+        "componentPath": "src/visuals/Generated_Persistence.tsx"
+      },
+      {
+        "id": "segment_6",
+        "step": 6,
+        "title": "Marketplace Reality",
+        "beatType": "motion_graphics",
+        "startFrame": 3067,
+        "endFrame": 3677,
+        "transcriptSegment": "The VS Code marketplace has over forty thousand extensions. Microsoft reviews the most popular ones, but the long tail is essentially unmoderated. Last year, researchers found eighteen extensions with over seven million combined installs that were secretly mining cryptocurrency.",
+        "timestamps": [
+          {
+            "word": "behind.\n\nThe",
+            "start": 100.739,
+            "startFrame": 3022
+          },
+          {
+            "word": "V",
+            "start": 102.237,
+            "startFrame": 3067
+          },
+          {
+            "word": "S",
+            "start": 102.527,
+            "startFrame": 3076
+          },
+          {
+            "word": "Code",
+            "start": 102.736,
+            "startFrame": 3082
+          },
+          {
+            "word": "marketplace",
+            "start": 103.038,
+            "startFrame": 3091
+          },
+          {
+            "word": "has",
+            "start": 103.967,
+            "startFrame": 3119
+          },
+          {
+            "word": "over",
+            "start": 104.187,
+            "startFrame": 3126
+          },
+          {
+            "word": "forty",
+            "start": 104.466,
+            "startFrame": 3134
+          },
+          {
+            "word": "thousand",
+            "start": 104.93,
+            "startFrame": 3148
+          },
+          {
+            "word": "extensions.",
+            "start": 105.453,
+            "startFrame": 3164
+          }
+        ],
+        "componentPath": "src/visuals/Generated_MarketplaceReality.tsx"
+      },
+      {
+        "id": "segment_7",
+        "step": 7,
+        "title": "Three Safety Checks",
+        "beatType": "motion_graphics",
+        "startFrame": 3678,
+        "endFrame": 4619,
+        "transcriptSegment": "So what should you do? Check three things before installing any extension. One, look at the publisher. Verified publishers have a blue checkmark. Two, check the source code. Every extension links to its GitHub repo. If there's no repo, that's a red flag. Three, review the permissions in the package.json manifest. If a color theme extension is requesting terminal access, something is very wrong.",
+        "timestamps": [
+          {
+            "word": "cryptocurrency.\n\nSo",
+            "start": 120.569,
+            "startFrame": 3617
+          },
+          {
+            "word": "what",
+            "start": 122.613,
+            "startFrame": 3678
+          },
+          {
+            "word": "should",
+            "start": 122.833,
+            "startFrame": 3685
+          },
+          {
+            "word": "you",
+            "start": 123.042,
+            "startFrame": 3691
+          },
+          {
+            "word": "do?",
+            "start": 123.17,
+            "startFrame": 3695
+          },
+          {
+            "word": "Check",
+            "start": 124.668,
+            "startFrame": 3740
+          },
+          {
+            "word": "three",
+            "start": 124.935,
+            "startFrame": 3748
+          },
+          {
+            "word": "things",
+            "start": 125.179,
+            "startFrame": 3755
+          },
+          {
+            "word": "before",
+            "start": 125.457,
+            "startFrame": 3764
+          },
+          {
+            "word": "installing",
+            "start": 125.736,
+            "startFrame": 3772
+          }
+        ],
+        "componentPath": "src/visuals/Generated_SafetyChecks.tsx"
+      },
+      {
+        "id": "segment_8",
+        "step": 8,
+        "title": "The Closing",
+        "beatType": "ai_video",
+        "startFrame": 4620,
+        "endFrame": 4929,
+        "transcriptSegment": "The tools you use to write code shouldn't be the ones that compromise it. A five second check before clicking install can save you from a very bad day.",
+        "timestamps": [
+          {
+            "word": "wrong.\n\nThe",
+            "start": 152.601,
+            "startFrame": 4578
+          },
+          {
+            "word": "tools",
+            "start": 154.029,
+            "startFrame": 4621
+          },
+          {
+            "word": "you",
+            "start": 154.378,
+            "startFrame": 4631
+          },
+          {
+            "word": "use",
+            "start": 154.54,
+            "startFrame": 4636
+          },
+          {
+            "word": "to",
+            "start": 154.761,
+            "startFrame": 4643
+          },
+          {
+            "word": "write",
+            "start": 154.888,
+            "startFrame": 4647
+          },
+          {
+            "word": "code",
+            "start": 155.144,
+            "startFrame": 4654
+          },
+          {
+            "word": "shouldn't",
+            "start": 155.829,
+            "startFrame": 4675
+          },
+          {
+            "word": "be",
+            "start": 156.247,
+            "startFrame": 4687
+          },
+          {
+            "word": "the",
+            "start": 156.386,
+            "startFrame": 4692
+          }
+        ],
+        "aiVideoPrompt": "Wide shot of a developer pausing before clicking Install on a VS Code extension. They examine the extension details carefully \u2014 checking publisher, source code link, permissions. Calm, deliberate. The screen shows a suspicious extension with no repository. They close the tab and move on. Clean, bright lighting. Empowering tone."
+      }
+    ]
+  }
+}

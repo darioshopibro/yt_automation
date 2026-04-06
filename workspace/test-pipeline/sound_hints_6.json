@@ -1,0 +1,23 @@
+{
+  "segment": "Marketplace Reality",
+  "segmentIndex": 6,
+  "startFrame": 3067,
+  "endFrame": 3677,
+  "frameMode": "global",
+  "events": [
+    { "frame": 3067, "type": "scene_start", "description": "segment opens, dark background with subtle grid pattern" },
+    { "frame": 3070, "type": "element_appear", "description": "VS Code icon + marketplace title slides in from below" },
+    { "frame": 3147, "type": "reveal", "description": "big 40,000 number counts up from zero — key stat" },
+    { "frame": 3225, "type": "element_appear", "description": "green shield badge appears — Microsoft reviews label" },
+    { "frame": 3246, "type": "element_appear", "description": "green reviewed bar section grows in proportional bar" },
+    { "frame": 3295, "type": "element_appear", "description": "massive red long tail section expands across bar" },
+    { "frame": 3337, "type": "reveal", "description": "UNMODERATED warning badge pulses red with glow" },
+    { "frame": 3400, "type": "transition", "description": "scene crossfades from marketplace overview to discovery" },
+    { "frame": 3435, "type": "element_appear", "description": "magnifying glass + researchers discovered header slides in" },
+    { "frame": 3432, "type": "staggered_group", "description": "36 extension tiles appear in rapid stagger across grid" },
+    { "frame": 3459, "type": "reveal", "description": "18 tiles turn red one by one with bug icons — malicious reveal" },
+    { "frame": 3462, "type": "reveal", "description": "big 18 number scales up in red — malicious extension count" },
+    { "frame": 3517, "type": "reveal", "description": "7M installs counter animates up with download icon — shocking stat" },
+    { "frame": 3603, "type": "reveal", "description": "crypto mining badge appears with bitcoin + pickaxe icons, pulsing glow" }
+  ]
+}

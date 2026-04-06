@@ -1,0 +1,26 @@
+{
+  "segment": "Marketplace Reality",
+  "segmentIndex": 6,
+  "startFrame": 3067,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 3059, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — new scene starts" },
+    { "frame": 3070, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "VS Code icon + marketplace title slides in" },
+    { "frame": 3107, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before 40K stat counter" },
+    { "frame": 3147, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "40,000 number counts up — key stat reveal" },
+    { "frame": 3225, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Microsoft reviews green shield badge appears" },
+    { "frame": 3246, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "green reviewed bar section grows in" },
+    { "frame": 3295, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "massive red long tail section expands across bar" },
+    { "frame": 3297, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before UNMODERATED reveal" },
+    { "frame": 3337, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "UNMODERATED warning badge pulses red" },
+    { "frame": 3392, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfades to discovery grid" },
+    { "frame": 3432, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.06, "reason": "first of 36 extension tiles appears — staggered group" },
+    { "frame": 3419, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.14, "reason": "build-up before malicious reveal — 18 tiles turning red" },
+    { "frame": 3459, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "18 tiles turn red with bug icons — shocking reveal" },
+    { "frame": 3477, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before 7M installs stat" },
+    { "frame": 3517, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "7,000,000 installs counter animates up" },
+    { "frame": 3563, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before crypto mining reveal" },
+    { "frame": 3603, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "crypto mining badge with bitcoin+pickaxe icons appears" },
+    { "frame": 3669, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Safety Checks" }
+  ]
+}

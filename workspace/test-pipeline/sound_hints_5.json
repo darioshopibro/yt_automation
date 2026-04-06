@@ -1,0 +1,22 @@
+{
+  "segment": "Persistence Beyond Uninstall",
+  "segmentIndex": 5,
+  "startFrame": 2638,
+  "endFrame": 3066,
+  "frameMode": "global",
+  "events": [
+    { "frame": 2638, "type": "scene_start", "description": "segment opens, title text fades in with subtitle" },
+    { "frame": 2674, "type": "reveal", "description": "'persist beyond uninstall' text pulses with red danger glow" },
+    { "frame": 2702, "type": "element_appear", "description": "extension puzzle-piece icon scales in with blue glow" },
+    { "frame": 2765, "type": "element_appear", "description": "'WRITING TO SYSTEM' action badge appears below extension" },
+    { "frame": 2787, "type": "element_appear", "description": "travel dot animates down toward shell profile card" },
+    { "frame": 2797, "type": "element_appear", "description": "shell profile target card slides up with .bashrc label and payload dot planted" },
+    { "frame": 2820, "type": "element_appear", "description": "travel dot animates toward git hooks card" },
+    { "frame": 2830, "type": "element_appear", "description": "git hooks target card slides up with .git/hooks label and payload dot planted" },
+    { "frame": 2858, "type": "element_appear", "description": "travel dot animates toward startup scripts card" },
+    { "frame": 2868, "type": "element_appear", "description": "startup scripts target card slides up with autostart label and payload dot planted" },
+    { "frame": 2950, "type": "element_disappear", "description": "extension icon shrinks, grayscales, and fades out — uninstall animation" },
+    { "frame": 2975, "type": "element_appear", "description": "'Extension Removed' label with trash icon appears where extension was" },
+    { "frame": 2996, "type": "reveal", "description": "all 3 payload dots turn red and pulse — danger state activated, warning banner slides in with 'payload stays behind' text" }
+  ]
+}

@@ -1,0 +1,32 @@
+{
+  "segment": "Code Exfiltration",
+  "segmentIndex": 3,
+  "startFrame": 1346,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 1338, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — ominous scene starts" },
+    { "frame": 1350, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "shield warning icon fades in" },
+    { "frame": 1323, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.14, "reason": "build-up before SCARY PART slam" },
+    { "frame": 1363, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "THE SCARY PART text slams in — big dramatic moment" },
+    { "frame": 1397, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "malicious extension card slides up" },
+    { "frame": 1460, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "'3 THINGS' counter badge pops in" },
+    { "frame": 1512, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfades to exfiltration view" },
+    { "frame": 1530, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "code editor panel slides in from left" },
+    { "frame": 1550, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "remote server cloud icon fades in" },
+    { "frame": 1533, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before exfiltration reveal" },
+    { "frame": 1573, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "EXFILTRATE YOUR CODE label appears — data stream begins" },
+    { "frame": 1645, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "file icon badge appears — every file you open" },
+    { "frame": 1688, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "keyboard icon badge appears — every keystroke" },
+    { "frame": 1704, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "build-up before silently sent reveal" },
+    { "frame": 1744, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "SILENTLY SENT label appears — data stream intensifies" },
+    { "frame": 1778, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "REMOTE SERVER label revealed under server icon" },
+    { "frame": 1792, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "scene transitions to sensitive data exposure" },
+    { "frame": 1805, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "YOUR DATA EXPOSED header slides in" },
+    { "frame": 1830, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "proprietary code card appears with STOLEN badge" },
+    { "frame": 1855, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before API keys reveal" },
+    { "frame": 1895, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "API keys card exposed — COMPROMISED badge" },
+    { "frame": 1941, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "environment variables card exposed — COMPROMISED badge" },
+    { "frame": 1970, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "bottom warning bar: all of it exfiltrated" },
+    { "frame": 2049, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Code Injection" }
+  ]
+}

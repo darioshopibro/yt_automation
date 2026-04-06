@@ -1,0 +1,154 @@
+{
+  "meta": {
+    "title": "The Psychology of Notifications",
+    "fps": 30,
+    "totalFrames": 2689,
+    "totalDuration": 88.61
+  },
+  "voiceover": {
+    "file": "voiceover.mp3",
+    "duration": 88.608
+  },
+  "structure": {
+    "segments": [
+      {
+        "id": "segment_1",
+        "step": 1,
+        "title": "The Hook - Phone Hijack",
+        "beatType": "ai_video",
+        "startFrame": 0,
+        "endFrame": 474,
+        "aiVideoPrompt": "Close-up of a smartphone screen lighting up with multiple notifications cascading down, each one causing a subtle ripple effect in the user's dilated pupils reflected in the glass. Shallow depth of field, dramatic side lighting, dark moody atmosphere. The phone screen casts blue light across the person's face showing a mix of anxiety and compulsion.",
+        "transcriptSegment": "Your phone buzzed fourteen times before lunch today. Each one hijacked your attention for an average of twenty three minutes. Not because the notification was important, but because your brain can't tell the difference between a text from your mom and a spam email until after it interrupts you.",
+        "timestamps": [
+          { "word": "Your", "start": 0.0, "startFrame": 0 },
+          { "word": "phone", "start": 0.255, "startFrame": 8 },
+          { "word": "buzzed", "start": 0.511, "startFrame": 15 },
+          { "word": "fourteen", "start": 0.801, "startFrame": 24 },
+          { "word": "hijacked", "start": 3.471, "startFrame": 104 },
+          { "word": "attention", "start": 4.029, "startFrame": 121 },
+          { "word": "twenty", "start": 5.271, "startFrame": 158 },
+          { "word": "three", "start": 5.608, "startFrame": 168 },
+          { "word": "minutes", "start": 5.84, "startFrame": 175 },
+          { "word": "notification", "start": 7.709, "startFrame": 231 },
+          { "word": "important", "start": 8.452, "startFrame": 254 },
+          { "word": "brain", "start": 10.066, "startFrame": 302 },
+          { "word": "difference", "start": 10.937, "startFrame": 328 },
+          { "word": "text", "start": 11.749, "startFrame": 352 },
+          { "word": "mom", "start": 12.341, "startFrame": 370 },
+          { "word": "spam", "start": 13.305, "startFrame": 399 },
+          { "word": "email", "start": 13.804, "startFrame": 414 },
+          { "word": "interrupts", "start": 15.046, "startFrame": 451 }
+        ]
+      },
+      {
+        "id": "segment_2",
+        "step": 2,
+        "title": "Variable Reward Scheduling",
+        "beatType": "motion_graphics",
+        "startFrame": 474,
+        "endFrame": 963,
+        "componentPath": "src/visuals/Generated_VariableRewardScheduling.tsx",
+        "transcriptSegment": "Notifications exploit a psychological mechanism called variable reward scheduling. It's the same principle behind slot machines. You never know if the next buzz will be something exciting or completely worthless. That unpredictability is what makes it addictive.",
+        "timestamps": [
+          { "word": "Notifications", "start": 16.8, "startFrame": 504 },
+          { "word": "exploit", "start": 17.357, "startFrame": 521 },
+          { "word": "psychological", "start": 17.868, "startFrame": 536 },
+          { "word": "variable", "start": 19.876, "startFrame": 596 },
+          { "word": "reward", "start": 20.468, "startFrame": 614 },
+          { "word": "scheduling", "start": 20.886, "startFrame": 627 },
+          { "word": "slot", "start": 23.464, "startFrame": 704 },
+          { "word": "machines", "start": 23.754, "startFrame": 713 },
+          { "word": "buzz", "start": 25.832, "startFrame": 775 },
+          { "word": "exciting", "start": 26.772, "startFrame": 803 },
+          { "word": "worthless", "start": 27.968, "startFrame": 839 },
+          { "word": "unpredictability", "start": 29.454, "startFrame": 884 },
+          { "word": "addictive", "start": 31.347, "startFrame": 940 }
+        ]
+      },
+      {
+        "id": "segment_3",
+        "step": 3,
+        "title": "The Randomness Creates Compulsion",
+        "beatType": "motion_graphics",
+        "startFrame": 963,
+        "endFrame": 1275,
+        "componentPath": "src/visuals/Generated_SlotMachineComparison.tsx",
+        "transcriptSegment": "If every notification were boring, you'd turn them off. If every one were exciting, you'd check eagerly but calmly. The randomness creates compulsion.",
+        "timestamps": [
+          { "word": "If", "start": 32.786, "startFrame": 984 },
+          { "word": "notification", "start": 33.251, "startFrame": 998 },
+          { "word": "boring", "start": 34.121, "startFrame": 1024 },
+          { "word": "turn", "start": 35.074, "startFrame": 1052 },
+          { "word": "off", "start": 35.515, "startFrame": 1065 },
+          { "word": "exciting", "start": 37.198, "startFrame": 1116 },
+          { "word": "eagerly", "start": 38.533, "startFrame": 1156 },
+          { "word": "calmly", "start": 39.172, "startFrame": 1175 },
+          { "word": "randomness", "start": 40.623, "startFrame": 1219 },
+          { "word": "compulsion", "start": 41.842, "startFrame": 1255 }
+        ]
+      },
+      {
+        "id": "segment_4",
+        "step": 4,
+        "title": "Dopamine & The Red Badge",
+        "beatType": "motion_graphics",
+        "startFrame": 1275,
+        "endFrame": 1992,
+        "componentPath": "src/visuals/Generated_DopamineRedBadge.tsx",
+        "transcriptSegment": "When a notification arrives, your brain releases a small hit of dopamine. Not because of the content, but because of the anticipation. The red badge on your app icon is doing the same thing. It creates an open loop in your mind, an unresolved tension that can only be closed by tapping it. This is called the Zeigarnik effect. Your brain obsesses over incomplete tasks.",
+        "timestamps": [
+          { "word": "notification", "start": 43.479, "startFrame": 1304 },
+          { "word": "arrives", "start": 44.06, "startFrame": 1322 },
+          { "word": "brain", "start": 44.768, "startFrame": 1343 },
+          { "word": "dopamine", "start": 46.254, "startFrame": 1388 },
+          { "word": "anticipation", "start": 49.772, "startFrame": 1493 },
+          { "word": "red", "start": 51.583, "startFrame": 1547 },
+          { "word": "badge", "start": 51.769, "startFrame": 1553 },
+          { "word": "app", "start": 52.326, "startFrame": 1570 },
+          { "word": "icon", "start": 52.593, "startFrame": 1578 },
+          { "word": "open", "start": 55.763, "startFrame": 1673 },
+          { "word": "loop", "start": 56.1, "startFrame": 1683 },
+          { "word": "tension", "start": 58.073, "startFrame": 1742 },
+          { "word": "tapping", "start": 60.07, "startFrame": 1802 },
+          { "word": "Zeigarnik", "start": 62.265, "startFrame": 1868 },
+          { "word": "effect", "start": 62.868, "startFrame": 1886 },
+          { "word": "obsesses", "start": 64.505, "startFrame": 1935 },
+          { "word": "incomplete", "start": 65.423, "startFrame": 1963 },
+          { "word": "tasks", "start": 66.073, "startFrame": 1982 }
+        ]
+      },
+      {
+        "id": "segment_5",
+        "step": 5,
+        "title": "The Attention Cost",
+        "beatType": "motion_graphics",
+        "startFrame": 1992,
+        "endFrame": 2689,
+        "componentPath": "src/visuals/Generated_AttentionCost.tsx",
+        "transcriptSegment": "The attention cost is staggering. Research from UC Irvine found that it takes an average of twenty three minutes and fifteen seconds to fully refocus after an interruption. If you get just ten notifications during a work day, that's nearly four hours of fragmented attention. You're not getting ten notifications. You're getting sixty to eighty.",
+        "timestamps": [
+          { "word": "attention", "start": 67.419, "startFrame": 2023 },
+          { "word": "cost", "start": 67.849, "startFrame": 2035 },
+          { "word": "staggering", "start": 68.371, "startFrame": 2051 },
+          { "word": "UC", "start": 70.368, "startFrame": 2111 },
+          { "word": "Irvine", "start": 70.67, "startFrame": 2120 },
+          { "word": "twenty", "start": 72.737, "startFrame": 2182 },
+          { "word": "three", "start": 73.085, "startFrame": 2193 },
+          { "word": "minutes", "start": 73.34, "startFrame": 2200 },
+          { "word": "fifteen", "start": 73.886, "startFrame": 2217 },
+          { "word": "seconds", "start": 74.385, "startFrame": 2232 },
+          { "word": "refocus", "start": 75.767, "startFrame": 2273 },
+          { "word": "interruption", "start": 76.661, "startFrame": 2300 },
+          { "word": "ten", "start": 78.762, "startFrame": 2363 },
+          { "word": "notifications", "start": 79.111, "startFrame": 2373 },
+          { "word": "four", "start": 82.001, "startFrame": 2460 },
+          { "word": "hours", "start": 82.361, "startFrame": 2471 },
+          { "word": "fragmented", "start": 82.872, "startFrame": 2486 },
+          { "word": "sixty", "start": 87.343, "startFrame": 2620 },
+          { "word": "eighty", "start": 87.935, "startFrame": 2638 }
+        ]
+      }
+    ]
+  }
+}

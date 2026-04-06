@@ -1,0 +1,15 @@
+Every developer mass-installs VS Code extensions without reading what they actually do. Some of those extensions have full access to your file system, your terminal, and your clipboard. You're basically giving a stranger the keys to your entire machine.
+
+Let's break down how VS Code extensions actually work under the hood. When you install an extension, it runs inside a Node.js process that VS Code spawns for it. This process has almost no sandboxing. It can read any file on your disk, execute shell commands, and make network requests to any server. There's no permission popup, no confirmation dialog. You click install, and it has full access.
+
+Here's the scary part. A malicious extension can do three things without you ever noticing. First, it can exfiltrate your code. Every file you open, every keystroke you type, can be silently sent to a remote server. Your proprietary code, your API keys, your environment variables, all of it.
+
+Second, it can inject code into your projects. Imagine an extension that quietly modifies your package.json to add a dependency that looks legitimate but contains a backdoor. You'd never notice because the diff looks like a normal dependency update.
+
+Third, it can persist beyond uninstall. Some extensions write to your shell profile, your git hooks, or your system startup scripts. Even after you remove the extension, the payload stays behind.
+
+The VS Code marketplace has over forty thousand extensions. Microsoft reviews the most popular ones, but the long tail is essentially unmoderated. Last year, researchers found eighteen extensions with over seven million combined installs that were secretly mining cryptocurrency.
+
+So what should you actually do? Check three things before installing any extension. One, look at the publisher. Verified publishers have a blue checkmark. Two, check the source code. Every extension links to its GitHub repo. If there's no repo, that's a red flag. Three, review the permissions in the package.json manifest. If a color theme extension is requesting terminal access, something is very wrong.
+
+The tools you use to write code shouldn't be the ones that compromise it. A five second check before clicking install can save you from a very bad day.

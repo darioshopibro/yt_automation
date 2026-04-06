@@ -1,0 +1,1148 @@
+{
+  "model": "eleven_multilingual_v2",
+  "voice_settings": {
+    "stability": 0.75,
+    "similarity_boost": 0.85,
+    "style": 0.1,
+    "use_speaker_boost": true
+  },
+  "duration": 88.608,
+  "wordCount": 227,
+  "words": [
+    {
+      "word": "Your",
+      "start": 0.0,
+      "end": 0.209
+    },
+    {
+      "word": "phone",
+      "start": 0.255,
+      "end": 0.476
+    },
+    {
+      "word": "buzzed",
+      "start": 0.511,
+      "end": 0.743
+    },
+    {
+      "word": "fourteen",
+      "start": 0.801,
+      "end": 1.196
+    },
+    {
+      "word": "times",
+      "start": 1.242,
+      "end": 1.533
+    },
+    {
+      "word": "before",
+      "start": 1.579,
+      "end": 1.834
+    },
+    {
+      "word": "lunch",
+      "start": 1.869,
+      "end": 2.067
+    },
+    {
+      "word": "today.",
+      "start": 2.113,
+      "end": 2.577
+    },
+    {
+      "word": "Each",
+      "start": 3.088,
+      "end": 3.274
+    },
+    {
+      "word": "one",
+      "start": 3.32,
+      "end": 3.437
+    },
+    {
+      "word": "hijacked",
+      "start": 3.471,
+      "end": 3.866
+    },
+    {
+      "word": "your",
+      "start": 3.889,
+      "end": 3.994
+    },
+    {
+      "word": "attention",
+      "start": 4.029,
+      "end": 4.423
+    },
+    {
+      "word": "for",
+      "start": 4.493,
+      "end": 4.632
+    },
+    {
+      "word": "an",
+      "start": 4.679,
+      "end": 4.737
+    },
+    {
+      "word": "average",
+      "start": 4.807,
+      "end": 5.132
+    },
+    {
+      "word": "of",
+      "start": 5.155,
+      "end": 5.213
+    },
+    {
+      "word": "twenty",
+      "start": 5.271,
+      "end": 5.561
+    },
+    {
+      "word": "three",
+      "start": 5.608,
+      "end": 5.805
+    },
+    {
+      "word": "minutes.",
+      "start": 5.84,
+      "end": 6.432
+    },
+    {
+      "word": "Not",
+      "start": 7.129,
+      "end": 7.291
+    },
+    {
+      "word": "because",
+      "start": 7.338,
+      "end": 7.57
+    },
+    {
+      "word": "the",
+      "start": 7.593,
+      "end": 7.663
+    },
+    {
+      "word": "notification",
+      "start": 7.709,
+      "end": 8.266
+    },
+    {
+      "word": "was",
+      "start": 8.301,
+      "end": 8.406
+    },
+    {
+      "word": "important,",
+      "start": 8.452,
+      "end": 9.021
+    },
+    {
+      "word": "but",
+      "start": 9.462,
+      "end": 9.613
+    },
+    {
+      "word": "because",
+      "start": 9.648,
+      "end": 9.88
+    },
+    {
+      "word": "your",
+      "start": 9.903,
+      "end": 10.019
+    },
+    {
+      "word": "brain",
+      "start": 10.066,
+      "end": 10.321
+    },
+    {
+      "word": "can't",
+      "start": 10.391,
+      "end": 10.588
+    },
+    {
+      "word": "tell",
+      "start": 10.612,
+      "end": 10.751
+    },
+    {
+      "word": "the",
+      "start": 10.797,
+      "end": 10.867
+    },
+    {
+      "word": "difference",
+      "start": 10.937,
+      "end": 11.297
+    },
+    {
+      "word": "between",
+      "start": 11.331,
+      "end": 11.633
+    },
+    {
+      "word": "a",
+      "start": 11.668,
+      "end": 11.691
+    },
+    {
+      "word": "text",
+      "start": 11.749,
+      "end": 12.016
+    },
+    {
+      "word": "from",
+      "start": 12.039,
+      "end": 12.155
+    },
+    {
+      "word": "your",
+      "start": 12.202,
+      "end": 12.306
+    },
+    {
+      "word": "mom",
+      "start": 12.341,
+      "end": 12.62
+    },
+    {
+      "word": "and",
+      "start": 12.898,
+      "end": 13.154
+    },
+    {
+      "word": "a",
+      "start": 13.212,
+      "end": 13.235
+    },
+    {
+      "word": "spam",
+      "start": 13.305,
+      "end": 13.734
+    },
+    {
+      "word": "email",
+      "start": 13.804,
+      "end": 14.118
+    },
+    {
+      "word": "until",
+      "start": 14.21,
+      "end": 14.477
+    },
+    {
+      "word": "after",
+      "start": 14.535,
+      "end": 14.861
+    },
+    {
+      "word": "it",
+      "start": 14.919,
+      "end": 14.988
+    },
+    {
+      "word": "interrupts",
+      "start": 15.046,
+      "end": 15.499
+    },
+    {
+      "word": "you.\n\nNotifications",
+      "start": 15.546,
+      "end": 17.299
+    },
+    {
+      "word": "exploit",
+      "start": 17.357,
+      "end": 17.717
+    },
+    {
+      "word": "a",
+      "start": 17.763,
+      "end": 17.798
+    },
+    {
+      "word": "psychological",
+      "start": 17.868,
+      "end": 18.541
+    },
+    {
+      "word": "mechanism",
+      "start": 18.599,
+      "end": 19.075
+    },
+    {
+      "word": "called",
+      "start": 19.516,
+      "end": 19.795
+    },
+    {
+      "word": "variable",
+      "start": 19.876,
+      "end": 20.41
+    },
+    {
+      "word": "reward",
+      "start": 20.468,
+      "end": 20.84
+    },
+    {
+      "word": "scheduling.",
+      "start": 20.886,
+      "end": 21.478
+    },
+    {
+      "word": "It's",
+      "start": 22.175,
+      "end": 22.372
+    },
+    {
+      "word": "the",
+      "start": 22.419,
+      "end": 22.488
+    },
+    {
+      "word": "same",
+      "start": 22.535,
+      "end": 22.721
+    },
+    {
+      "word": "principle",
+      "start": 22.755,
+      "end": 23.115
+    },
+    {
+      "word": "behind",
+      "start": 23.15,
+      "end": 23.406
+    },
+    {
+      "word": "slot",
+      "start": 23.464,
+      "end": 23.707
+    },
+    {
+      "word": "machines.",
+      "start": 23.754,
+      "end": 24.334
+    },
+    {
+      "word": "You",
+      "start": 24.775,
+      "end": 24.903
+    },
+    {
+      "word": "never",
+      "start": 24.961,
+      "end": 25.124
+    },
+    {
+      "word": "know",
+      "start": 25.159,
+      "end": 25.286
+    },
+    {
+      "word": "if",
+      "start": 25.333,
+      "end": 25.402
+    },
+    {
+      "word": "the",
+      "start": 25.449,
+      "end": 25.519
+    },
+    {
+      "word": "next",
+      "start": 25.577,
+      "end": 25.774
+    },
+    {
+      "word": "buzz",
+      "start": 25.832,
+      "end": 26.099
+    },
+    {
+      "word": "will",
+      "start": 26.145,
+      "end": 26.273
+    },
+    {
+      "word": "be",
+      "start": 26.32,
+      "end": 26.389
+    },
+    {
+      "word": "something",
+      "start": 26.424,
+      "end": 26.714
+    },
+    {
+      "word": "exciting",
+      "start": 26.772,
+      "end": 27.272
+    },
+    {
+      "word": "or",
+      "start": 27.33,
+      "end": 27.411
+    },
+    {
+      "word": "completely",
+      "start": 27.469,
+      "end": 27.91
+    },
+    {
+      "word": "worthless.",
+      "start": 27.968,
+      "end": 28.688
+    },
+    {
+      "word": "That",
+      "start": 29.199,
+      "end": 29.385
+    },
+    {
+      "word": "unpredictability",
+      "start": 29.454,
+      "end": 30.383
+    },
+    {
+      "word": "is",
+      "start": 30.662,
+      "end": 30.813
+    },
+    {
+      "word": "what",
+      "start": 30.847,
+      "end": 30.952
+    },
+    {
+      "word": "makes",
+      "start": 30.998,
+      "end": 31.184
+    },
+    {
+      "word": "it",
+      "start": 31.231,
+      "end": 31.3
+    },
+    {
+      "word": "addictive.",
+      "start": 31.347,
+      "end": 32.09
+    },
+    {
+      "word": "If",
+      "start": 32.786,
+      "end": 32.926
+    },
+    {
+      "word": "every",
+      "start": 32.995,
+      "end": 33.204
+    },
+    {
+      "word": "notification",
+      "start": 33.251,
+      "end": 33.889
+    },
+    {
+      "word": "were",
+      "start": 33.936,
+      "end": 34.075
+    },
+    {
+      "word": "boring,",
+      "start": 34.121,
+      "end": 34.656
+    },
+    {
+      "word": "you'd",
+      "start": 34.83,
+      "end": 35.039
+    },
+    {
+      "word": "turn",
+      "start": 35.074,
+      "end": 35.294
+    },
+    {
+      "word": "them",
+      "start": 35.341,
+      "end": 35.457
+    },
+    {
+      "word": "off.",
+      "start": 35.515,
+      "end": 35.921
+    },
+    {
+      "word": "If",
+      "start": 36.525,
+      "end": 36.664
+    },
+    {
+      "word": "every",
+      "start": 36.722,
+      "end": 36.885
+    },
+    {
+      "word": "one",
+      "start": 36.919,
+      "end": 37.024
+    },
+    {
+      "word": "were",
+      "start": 37.047,
+      "end": 37.163
+    },
+    {
+      "word": "exciting,",
+      "start": 37.198,
+      "end": 37.744
+    },
+    {
+      "word": "you'd",
+      "start": 37.953,
+      "end": 38.139
+    },
+    {
+      "word": "check",
+      "start": 38.173,
+      "end": 38.417
+    },
+    {
+      "word": "eagerly",
+      "start": 38.533,
+      "end": 38.94
+    },
+    {
+      "word": "but",
+      "start": 38.998,
+      "end": 39.114
+    },
+    {
+      "word": "calmly.",
+      "start": 39.172,
+      "end": 39.799
+    },
+    {
+      "word": "The",
+      "start": 40.402,
+      "end": 40.542
+    },
+    {
+      "word": "randomness",
+      "start": 40.623,
+      "end": 41.273
+    },
+    {
+      "word": "creates",
+      "start": 41.448,
+      "end": 41.784
+    },
+    {
+      "word": "compulsion.\n\nWhen",
+      "start": 41.842,
+      "end": 43.375
+    },
+    {
+      "word": "a",
+      "start": 43.41,
+      "end": 43.433
+    },
+    {
+      "word": "notification",
+      "start": 43.479,
+      "end": 44.037
+    },
+    {
+      "word": "arrives,",
+      "start": 44.06,
+      "end": 44.466
+    },
+    {
+      "word": "your",
+      "start": 44.582,
+      "end": 44.722
+    },
+    {
+      "word": "brain",
+      "start": 44.768,
+      "end": 44.989
+    },
+    {
+      "word": "releases",
+      "start": 45.035,
+      "end": 45.453
+    },
+    {
+      "word": "a",
+      "start": 45.511,
+      "end": 45.546
+    },
+    {
+      "word": "small",
+      "start": 45.616,
+      "end": 45.929
+    },
+    {
+      "word": "hit",
+      "start": 45.987,
+      "end": 46.115
+    },
+    {
+      "word": "of",
+      "start": 46.15,
+      "end": 46.196
+    },
+    {
+      "word": "dopamine.",
+      "start": 46.254,
+      "end": 46.835
+    },
+    {
+      "word": "Not",
+      "start": 47.531,
+      "end": 47.705
+    },
+    {
+      "word": "because",
+      "start": 47.752,
+      "end": 48.007
+    },
+    {
+      "word": "of",
+      "start": 48.042,
+      "end": 48.088
+    },
+    {
+      "word": "the",
+      "start": 48.123,
+      "end": 48.193
+    },
+    {
+      "word": "content,",
+      "start": 48.239,
+      "end": 48.878
+    },
+    {
+      "word": "but",
+      "start": 49.087,
+      "end": 49.238
+    },
+    {
+      "word": "because",
+      "start": 49.273,
+      "end": 49.54
+    },
+    {
+      "word": "of",
+      "start": 49.563,
+      "end": 49.609
+    },
+    {
+      "word": "the",
+      "start": 49.656,
+      "end": 49.725
+    },
+    {
+      "word": "anticipation.",
+      "start": 49.772,
+      "end": 50.701
+    },
+    {
+      "word": "The",
+      "start": 51.397,
+      "end": 51.513
+    },
+    {
+      "word": "red",
+      "start": 51.583,
+      "end": 51.722
+    },
+    {
+      "word": "badge",
+      "start": 51.769,
+      "end": 52.036
+    },
+    {
+      "word": "on",
+      "start": 52.059,
+      "end": 52.117
+    },
+    {
+      "word": "your",
+      "start": 52.164,
+      "end": 52.268
+    },
+    {
+      "word": "app",
+      "start": 52.326,
+      "end": 52.523
+    },
+    {
+      "word": "icon",
+      "start": 52.593,
+      "end": 52.93
+    },
+    {
+      "word": "is",
+      "start": 53.104,
+      "end": 53.29
+    },
+    {
+      "word": "doing",
+      "start": 53.359,
+      "end": 53.557
+    },
+    {
+      "word": "the",
+      "start": 53.592,
+      "end": 53.661
+    },
+    {
+      "word": "same",
+      "start": 53.719,
+      "end": 53.975
+    },
+    {
+      "word": "thing.",
+      "start": 54.021,
+      "end": 54.451
+    },
+    {
+      "word": "It",
+      "start": 55.147,
+      "end": 55.275
+    },
+    {
+      "word": "creates",
+      "start": 55.322,
+      "end": 55.601
+    },
+    {
+      "word": "an",
+      "start": 55.624,
+      "end": 55.682
+    },
+    {
+      "word": "open",
+      "start": 55.763,
+      "end": 56.042
+    },
+    {
+      "word": "loop",
+      "start": 56.1,
+      "end": 56.286
+    },
+    {
+      "word": "in",
+      "start": 56.344,
+      "end": 56.402
+    },
+    {
+      "word": "your",
+      "start": 56.448,
+      "end": 56.553
+    },
+    {
+      "word": "mind,",
+      "start": 56.599,
+      "end": 57.063
+    },
+    {
+      "word": "an",
+      "start": 57.214,
+      "end": 57.354
+    },
+    {
+      "word": "unresolved",
+      "start": 57.47,
+      "end": 58.05
+    },
+    {
+      "word": "tension",
+      "start": 58.073,
+      "end": 58.515
+    },
+    {
+      "word": "that",
+      "start": 58.793,
+      "end": 58.956
+    },
+    {
+      "word": "can",
+      "start": 58.991,
+      "end": 59.084
+    },
+    {
+      "word": "only",
+      "start": 59.13,
+      "end": 59.292
+    },
+    {
+      "word": "be",
+      "start": 59.339,
+      "end": 59.42
+    },
+    {
+      "word": "closed",
+      "start": 59.467,
+      "end": 59.792
+    },
+    {
+      "word": "by",
+      "start": 59.838,
+      "end": 59.954
+    },
+    {
+      "word": "tapping",
+      "start": 60.07,
+      "end": 60.5
+    },
+    {
+      "word": "it.",
+      "start": 60.558,
+      "end": 60.802
+    },
+    {
+      "word": "This",
+      "start": 61.406,
+      "end": 61.603
+    },
+    {
+      "word": "is",
+      "start": 61.661,
+      "end": 61.742
+    },
+    {
+      "word": "called",
+      "start": 61.8,
+      "end": 62.067
+    },
+    {
+      "word": "the",
+      "start": 62.102,
+      "end": 62.183
+    },
+    {
+      "word": "Zeigarnik",
+      "start": 62.265,
+      "end": 62.81
+    },
+    {
+      "word": "effect.",
+      "start": 62.868,
+      "end": 63.402
+    },
+    {
+      "word": "Your",
+      "start": 64.006,
+      "end": 64.18
+    },
+    {
+      "word": "brain",
+      "start": 64.227,
+      "end": 64.459
+    },
+    {
+      "word": "obsesses",
+      "start": 64.505,
+      "end": 65.074
+    },
+    {
+      "word": "over",
+      "start": 65.132,
+      "end": 65.306
+    },
+    {
+      "word": "incomplete",
+      "start": 65.423,
+      "end": 66.038
+    },
+    {
+      "word": "tasks.\n\nThe",
+      "start": 66.073,
+      "end": 67.373
+    },
+    {
+      "word": "attention",
+      "start": 67.419,
+      "end": 67.779
+    },
+    {
+      "word": "cost",
+      "start": 67.849,
+      "end": 68.163
+    },
+    {
+      "word": "is",
+      "start": 68.221,
+      "end": 68.302
+    },
+    {
+      "word": "staggering.",
+      "start": 68.371,
+      "end": 69.091
+    },
+    {
+      "word": "Research",
+      "start": 69.788,
+      "end": 70.136
+    },
+    {
+      "word": "from",
+      "start": 70.171,
+      "end": 70.287
+    },
+    {
+      "word": "U",
+      "start": 70.368,
+      "end": 70.438
+    },
+    {
+      "word": "C",
+      "start": 70.496,
+      "end": 70.554
+    },
+    {
+      "word": "Irvine",
+      "start": 70.67,
+      "end": 71.007
+    },
+    {
+      "word": "found",
+      "start": 71.053,
+      "end": 71.367
+    },
+    {
+      "word": "that",
+      "start": 71.611,
+      "end": 71.785
+    },
+    {
+      "word": "it",
+      "start": 71.82,
+      "end": 71.878
+    },
+    {
+      "word": "takes",
+      "start": 71.901,
+      "end": 72.11
+    },
+    {
+      "word": "an",
+      "start": 72.145,
+      "end": 72.203
+    },
+    {
+      "word": "average",
+      "start": 72.261,
+      "end": 72.574
+    },
+    {
+      "word": "of",
+      "start": 72.609,
+      "end": 72.667
+    },
+    {
+      "word": "twenty",
+      "start": 72.737,
+      "end": 73.027
+    },
+    {
+      "word": "three",
+      "start": 73.085,
+      "end": 73.306
+    },
+    {
+      "word": "minutes",
+      "start": 73.34,
+      "end": 73.631
+    },
+    {
+      "word": "and",
+      "start": 73.677,
+      "end": 73.77
+    },
+    {
+      "word": "fifteen",
+      "start": 73.886,
+      "end": 74.316
+    },
+    {
+      "word": "seconds",
+      "start": 74.385,
+      "end": 74.838
+    },
+    {
+      "word": "to",
+      "start": 75.221,
+      "end": 75.337
+    },
+    {
+      "word": "fully",
+      "start": 75.419,
+      "end": 75.697
+    },
+    {
+      "word": "refocus",
+      "start": 75.767,
+      "end": 76.278
+    },
+    {
+      "word": "after",
+      "start": 76.324,
+      "end": 76.533
+    },
+    {
+      "word": "an",
+      "start": 76.568,
+      "end": 76.626
+    },
+    {
+      "word": "interruption.",
+      "start": 76.661,
+      "end": 77.334
+    },
+    {
+      "word": "If",
+      "start": 78.031,
+      "end": 78.159
+    },
+    {
+      "word": "you",
+      "start": 78.193,
+      "end": 78.263
+    },
+    {
+      "word": "get",
+      "start": 78.344,
+      "end": 78.46
+    },
+    {
+      "word": "just",
+      "start": 78.518,
+      "end": 78.704
+    },
+    {
+      "word": "ten",
+      "start": 78.762,
+      "end": 79.041
+    },
+    {
+      "word": "notifications",
+      "start": 79.111,
+      "end": 79.877
+    },
+    {
+      "word": "during",
+      "start": 79.935,
+      "end": 80.167
+    },
+    {
+      "word": "a",
+      "start": 80.214,
+      "end": 80.237
+    },
+    {
+      "word": "work",
+      "start": 80.295,
+      "end": 80.481
+    },
+    {
+      "word": "day,",
+      "start": 80.539,
+      "end": 80.922
+    },
+    {
+      "word": "that's",
+      "start": 81.305,
+      "end": 81.549
+    },
+    {
+      "word": "nearly",
+      "start": 81.607,
+      "end": 81.885
+    },
+    {
+      "word": "four",
+      "start": 82.001,
+      "end": 82.303
+    },
+    {
+      "word": "hours",
+      "start": 82.361,
+      "end": 82.675
+    },
+    {
+      "word": "of",
+      "start": 82.733,
+      "end": 82.791
+    },
+    {
+      "word": "fragmented",
+      "start": 82.872,
+      "end": 83.453
+    },
+    {
+      "word": "attention.",
+      "start": 83.488,
+      "end": 84.08
+    },
+    {
+      "word": "You're",
+      "start": 84.684,
+      "end": 84.904
+    },
+    {
+      "word": "not",
+      "start": 84.939,
+      "end": 85.032
+    },
+    {
+      "word": "getting",
+      "start": 85.079,
+      "end": 85.299
+    },
+    {
+      "word": "ten",
+      "start": 85.369,
+      "end": 85.543
+    },
+    {
+      "word": "notifications.",
+      "start": 85.601,
+      "end": 86.541
+    },
+    {
+      "word": "You're",
+      "start": 86.82,
+      "end": 87.029
+    },
+    {
+      "word": "getting",
+      "start": 87.052,
+      "end": 87.261
+    },
+    {
+      "word": "sixty",
+      "start": 87.343,
+      "end": 87.726
+    },
+    {
+      "word": "to",
+      "start": 87.784,
+      "end": 87.853
+    },
+    {
+      "word": "eighty.",
+      "start": 87.935,
+      "end": 88.608
+    }
+  ]
+}

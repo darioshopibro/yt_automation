@@ -1,0 +1,25 @@
+{
+  "segment": "Code Injection",
+  "segmentIndex": 4,
+  "startFrame": 2057,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 2049, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.15, "reason": "segment transition — new scene starts" },
+    { "frame": 2068, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "syringe icon pops in — inject code" },
+    { "frame": 2107, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "project folder icon slides in" },
+    { "frame": 2175, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "extension puzzle icon pops in with pulse ring" },
+    { "frame": 2211, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "package.json file panel slides up" },
+    { "frame": 2231, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "package.json header glows amber" },
+    { "frame": 2270, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before malicious line injection" },
+    { "frame": 2310, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "malicious dependency line types in — key injection moment" },
+    { "frame": 2335, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "red glow appears on injected line revealing backdoor" },
+    { "frame": 2362, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "scene crossfades to diff view" },
+    { "frame": 2384, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "diff panel slides up showing green +1 line" },
+    { "frame": 2368, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "build-up before backdoor reveal scan" },
+    { "frame": 2408, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "red scanning line reveals backdoor — green turns red" },
+    { "frame": 2497, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "'the diff looks normal' badge with eye-slash icon" },
+    { "frame": 2500, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.12, "reason": "build-up before final backdoor warning" },
+    { "frame": 2540, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "CONTAINS A BACKDOOR warning badge pops in — segment climax" },
+    { "frame": 2630, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Persistence" }
+  ]
+}

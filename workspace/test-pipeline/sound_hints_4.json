@@ -1,0 +1,22 @@
+{
+  "segment": "Code Injection",
+  "segmentIndex": 4,
+  "startFrame": 2057,
+  "endFrame": 2637,
+  "frameMode": "global",
+  "events": [
+    { "frame": 2057, "type": "scene_start", "description": "segment opens, 'Code Injection' title fades in with red accent line" },
+    { "frame": 2068, "type": "element_appear", "description": "syringe icon pops in with spring scale — 'inject code'" },
+    { "frame": 2107, "type": "element_appear", "description": "project folder icon slides in from right — 'your projects'" },
+    { "frame": 2175, "type": "element_appear", "description": "VS Code extension puzzle icon pops in with pulse ring — malicious extension" },
+    { "frame": 2211, "type": "element_appear", "description": "package.json file panel slides up, code lines appear staggered — 'quietly modifies'" },
+    { "frame": 2231, "type": "reveal", "description": "package.json header glows amber — file name highlighted" },
+    { "frame": 2310, "type": "reveal", "description": "malicious dependency line types in character by character with cursor — key injection moment" },
+    { "frame": 2335, "type": "element_appear", "description": "red glow appears on injected line, left border turns red — backdoor hint" },
+    { "frame": 2370, "type": "transition", "description": "scene crossfades from injection view to diff view" },
+    { "frame": 2384, "type": "element_appear", "description": "diff panel slides up showing +1 green line — looks legitimate" },
+    { "frame": 2408, "type": "reveal", "description": "red scanning line sweeps down diff, green line turns red — backdoor revealed" },
+    { "frame": 2497, "type": "element_appear", "description": "'The diff looks like a normal update' badge appears with eye-slash icon" },
+    { "frame": 2540, "type": "reveal", "description": "'Contains a backdoor' red warning badge pops in with spring — final danger reveal" }
+  ]
+}

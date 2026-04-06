@@ -1,0 +1,30 @@
+{
+  "segment": "Code Exfiltration",
+  "segmentIndex": 3,
+  "startFrame": 1346,
+  "endFrame": 2056,
+  "frameMode": "global",
+  "events": [
+    { "frame": 1346, "type": "scene_start", "description": "ominous dark background pulse begins, red vignette edges" },
+    { "frame": 1350, "type": "element_appear", "description": "shield warning icon fades in with red glow" },
+    { "frame": 1360, "type": "reveal", "description": "'THE SCARY PART' text slams in with spring scale — dramatic moment" },
+    { "frame": 1394, "type": "element_appear", "description": "malicious extension card slides up with puzzle icon, pulsing red glow" },
+    { "frame": 1457, "type": "element_appear", "description": "number '3' badge pops in with spring scale — three things counter" },
+    { "frame": 1520, "type": "transition", "description": "scene 1 fades out, scene 2 crossfades in — exfiltration view with code editor" },
+    { "frame": 1530, "type": "element_appear", "description": "code editor mockup panel slides in from left with placeholder code lines" },
+    { "frame": 1550, "type": "element_appear", "description": "remote server cloud icon fades in on right side" },
+    { "frame": 1570, "type": "reveal", "description": "'EXFILTRATING CODE' label appears — data theft begins" },
+    { "frame": 1580, "type": "staggered_group", "description": "10 data particles start flowing from editor to server — red and amber dots with glow trails" },
+    { "frame": 1573, "type": "element_appear", "description": "code lines in editor progressively highlight red as they are 'stolen'" },
+    { "frame": 1642, "type": "element_appear", "description": "file icon badge pops in — 'Every file you open'" },
+    { "frame": 1685, "type": "element_appear", "description": "keyboard icon badge pops in — 'Every keystroke you type'" },
+    { "frame": 1741, "type": "element_appear", "description": "'SILENTLY SENT' label fades in — data stream intensifies" },
+    { "frame": 1775, "type": "reveal", "description": "'REMOTE SERVER' label appears under server icon — attacker destination revealed" },
+    { "frame": 1800, "type": "transition", "description": "scene 2 fades out, scene 3 crossfades in — sensitive data exposure" },
+    { "frame": 1805, "type": "element_appear", "description": "'YOUR DATA — EXPOSED' warning header slides in" },
+    { "frame": 1830, "type": "element_appear", "description": "proprietary code card fades in with code placeholder lines and 'STOLEN' badge" },
+    { "frame": 1892, "type": "reveal", "description": "API keys card appears with fake key values — danger glow pulses, 'COMPROMISED' badge" },
+    { "frame": 1938, "type": "reveal", "description": "environment variables card appears with DATABASE_URL and AWS_SECRET — danger glow, 'COMPROMISED' badge" },
+    { "frame": 1970, "type": "element_appear", "description": "bottom warning bar fades in — 'All of it — exfiltrated silently' with pulsing red glow" }
+  ]
+}

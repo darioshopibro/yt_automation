@@ -18,39 +18,7 @@ Komponenta je FULLSCREEN (1920x1080). Zauzima ceo ekran. Animacija prati govor �
 
 **Sound hints — OBAVEZNO.** Za SVAKU vizuelnu promenu (element pojava, scene change, reveal, text pop-in) zapiši hint u JSON. Ti NE biraš zvukove — samo opisuješ šta se dešava vizuelno. Sound Coordinator (poseban korak posle tebe) će odlučiti koji zvuk ide gde.
 
-**sound_hints_X.json format:**
-```json
-{
-  "segment": "How Docker Works",
-  "segmentIndex": 2,
-  "startFrame": 150,
-  "endFrame": 900,
-  "frameMode": "global",
-  "events": [
-    { "frame": 150, "type": "scene_start", "description": "segment opens, title text fades in" },
-    { "frame": 200, "type": "element_appear", "description": "Docker logo slides in from left" },
-    { "frame": 350, "type": "element_appear", "description": "3 container boxes pop in staggered" },
-    { "frame": 500, "type": "reveal", "description": "big stat number ' 60%' scales up — key info" },
-    { "frame": 700, "type": "transition", "description": "scene crossfades to comparison view" },
-    { "frame": 850, "type": "element_disappear", "description": "elements fade out, segment ending" }
-  ]
-}
-```
-
-**Event types:**
-- `scene_start` — početak segmenta, prvi elementi se pojavljuju
-- `element_appear` — nov element se pojavljuje (slide-in, fade-in, pop)
-- `reveal` — BITAN momenat — ključna informacija, šokantan podatak, veliki broj
-- `transition` — promena scene unutar segmenta
-- `element_disappear` — elementi nestaju (fade-out, slide-out)
-- `staggered_group` — više elemenata u nizu (npr. 5 ikona redom) — zapiši JEDNOM, ne za svaki
-
-**Pravila:**
-- `frame` je UVEK GLOBALNI frame (apsolutni od početka videa)
-- `frameMode` je UVEK `"global"`
-- `description` mora opisati ŠTA se vizuelno dešava, ne šta narator kaže
-- Zapiši SVE vizuelne promene — bolje previše hints nego premalo
-- NE biraj zvukove, NE piši volume, NE referenciraj .mp3 fajlove
+**Pročitaj:** `reference/sound-hints-format.md` — JSON format, event types, pravila, i 🔊 SOUND komentari za .tsx
 
 ---
 
@@ -156,23 +124,7 @@ Ako timestamp niz dolazi kao prop ili se čita iz fajla, definiši ga na vrhu ko
 
 **Komponenta MORA pratiti pravila iz `reference/generation-rules.md`.**
 
-**🔊 SOUND KOMENTARI — OBAVEZNO:**
-Na SVAKI `interpolate()` ili `spring()` koji pokreće vizuelnu promenu, dodaj komentar:
-
-```tsx
-// 🔊 SOUND: element_appear @ frame 200 — arrow draws from domain to IP
-const arrowProgress = interpolate(frame, [200, 230], [0, 1], { extrapolateRight: 'clamp' });
-
-// 🔊 SOUND: reveal @ frame 350 — IP address pops in big
-const ipScale = interpolate(frame, [350, 365], [0, 1], { extrapolateRight: 'clamp' });
-
-// 🔊 SOUND: transition @ frame 500 — scene wipes to resolver diagram
-const sceneOpacity = interpolate(frame, [500, 515], [0, 1], { extrapolateRight: 'clamp' });
-```
-
-**Format:** `// 🔊 SOUND: {event_type} @ frame {N} — {šta se vizuelno dešava}`
-
-Sound Coordinator čita ove komentare iz .tsx fajlova kao backup za sound_hints JSON. Ovo osigurava da SVAKA animacija ima zvuk — ne može da se promaši.
+**🔊 SOUND KOMENTARI + HINTS — OBAVEZNO.** Pročitaj `reference/sound-hints-format.md` za format i pravila.
 
 ### KORAK 5: Sacuvaj fajlove
 
@@ -204,6 +156,7 @@ Reci: "Pokreni `npx remotion studio` da vidis preview. Ako ne valja — reci sta
 ## REFERENCE
 
 - `reference/generation-rules.md` — layout, animacije, dizajn sistem, anti-patterns
+- `reference/sound-hints-format.md` — sound hints JSON format, event types, 🔊 komentari
 - `reference/good-examples/` — 6 DOBRIH komponenti (9+/10). PROČITAJ BAR 2 PRE PISANJA KODA. Ovi fajlovi su standard kvaliteta.
 - `.claude/skills/visual-proposer/reference/component-skeleton.md` — dizajn sistem (boje, fontovi, spacing)
 - `.claude/skills/remotion-motion/reference/remotion-coding-rules.md` — Remotion API pravila

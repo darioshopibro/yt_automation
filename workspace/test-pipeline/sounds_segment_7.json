@@ -1,0 +1,27 @@
+{
+  "segment": "Three Safety Checks",
+  "segmentIndex": 7,
+  "startFrame": 3678,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 3670, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "segment transition — positive section starts" },
+    { "frame": 3678, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "shield icon + title fades in" },
+    { "frame": 3748, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "'Check three things' subtitle pops in" },
+    { "frame": 3830, "type": "whoosh", "file": "whooshes/soft-whoosh.mp3", "volume": 0.12, "reason": "Check 1 card slides in from below" },
+    { "frame": 3860, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "publisher name row with MS avatar appears" },
+    { "frame": 3905, "type": "riser", "file": "risers/short-riser-01.mp3", "volume": 0.10, "reason": "build-up before checkmark reveal" },
+    { "frame": 3945, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "blue checkmark seal pops in with spring — verification moment" },
+    { "frame": 3988, "type": "whoosh", "file": "whooshes/medium-whoosh.mp3", "volume": 0.12, "reason": "Check 2 card slides in, Check 1 dims" },
+    { "frame": 4112, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "GitHub repo link row appears in green" },
+    { "frame": 4156, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.12, "reason": "build-up before red flag warning" },
+    { "frame": 4196, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "red flag warning — No repository danger" },
+    { "frame": 4266, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.12, "reason": "Check 3 card slides in, Check 2 dims" },
+    { "frame": 4342, "type": "click", "file": "clicks/tick-click.mp3", "volume": 0.08, "reason": "package.json manifest code block appears" },
+    { "frame": 4440, "type": "click", "file": "clicks/button-click.mp3", "volume": 0.08, "reason": "Color Theme Extension permission row fades in" },
+    { "frame": 4456, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.14, "reason": "build-up before terminal access danger" },
+    { "frame": 4496, "type": "hit", "file": "hits/punch-hit.mp3", "volume": 0.20, "reason": "Terminal Access danger row pops in red — suspicious permission" },
+    { "frame": 4508, "type": "riser", "file": "risers/fast-riser.mp3", "volume": 0.14, "reason": "build-up before 'something is very wrong' climax" },
+    { "frame": 4548, "type": "hit", "file": "hits/epic-hit.mp3", "volume": 0.22, "reason": "'Something is very wrong' warning banner scales in — segment climax" },
+    { "frame": 4612, "type": "whoosh", "file": "whooshes/fast-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to closing" }
+  ]
+}

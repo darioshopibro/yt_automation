@@ -1,0 +1,12 @@
+{
+  "segment": "The Closing",
+  "segmentIndex": 8,
+  "startFrame": 4620,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 4612, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "segment transition — closing scene starts" },
+    { "frame": 4680, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.10, "reason": "subtle build-up before final message" },
+    { "frame": 4726, "type": "hit", "file": "hits/soft-hit-01.mp3", "volume": 0.18, "reason": "'compromise' word emphasis — final takeaway" },
+    { "frame": 4830, "type": "click", "file": "clicks/soft-click.mp3", "volume": 0.08, "reason": "call to action element appears — 5 second check" }
+  ]
+}

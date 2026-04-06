@@ -1,0 +1,12 @@
+{
+  "segment": "The Hook",
+  "segmentIndex": 1,
+  "startFrame": 0,
+  "frameMode": "global",
+  "sounds": [
+    { "frame": 0, "type": "whoosh", "file": "whooshes/airy-whoosh.mp3", "volume": 0.15, "reason": "video opens — first visual appears" },
+    { "frame": 200, "type": "riser", "file": "risers/tension-riser.mp3", "volume": 0.12, "reason": "build-up before dramatic 'keys to your machine' moment" },
+    { "frame": 240, "type": "hit", "file": "hits/bass-hit.mp3", "volume": 0.20, "reason": "dramatic emphasis on 'stranger has your keys'" },
+    { "frame": 465, "type": "whoosh", "file": "whooshes/digital-whoosh.mp3", "volume": 0.15, "reason": "segment boundary — transition to Under The Hood" }
+  ]
+}

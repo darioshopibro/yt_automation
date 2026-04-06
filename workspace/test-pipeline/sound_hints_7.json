@@ -1,0 +1,22 @@
+{
+  "segment": "Three Safety Checks",
+  "segmentIndex": 7,
+  "startFrame": 3678,
+  "endFrame": 4619,
+  "frameMode": "global",
+  "events": [
+    { "frame": 3678, "type": "scene_start", "description": "segment opens, shield icon and title text fade in with upward slide" },
+    { "frame": 3748, "type": "element_appear", "description": "subtitle 'Before installing any extension' slides up" },
+    { "frame": 3830, "type": "element_appear", "description": "Check 1 card slides in — publisher verification, number badge pops with spring" },
+    { "frame": 3860, "type": "element_appear", "description": "publisher name row with 'MS' avatar appears inside Check 1" },
+    { "frame": 3945, "type": "reveal", "description": "blue checkmark seal pops in with spring scale — key verification moment" },
+    { "frame": 3988, "type": "element_appear", "description": "Check 2 card slides in — source code check, Check 1 dims and gets completed checkmark" },
+    { "frame": 4112, "type": "element_appear", "description": "GitHub repo link row appears in green — good state" },
+    { "frame": 4196, "type": "reveal", "description": "red flag warning pops in with spring and pulsing glow — 'No repository' danger indicator" },
+    { "frame": 4266, "type": "element_appear", "description": "Check 3 card slides in — permissions audit, Check 2 dims and completes" },
+    { "frame": 4342, "type": "element_appear", "description": "package.json manifest code block with file icon appears" },
+    { "frame": 4440, "type": "element_appear", "description": "Color Theme Extension permission row fades in" },
+    { "frame": 4496, "type": "reveal", "description": "Terminal Access danger row pops in with red glow — suspicious permission highlighted" },
+    { "frame": 4548, "type": "reveal", "description": "large warning banner scales in — 'Something is very wrong' with pulsing red glow, dramatic reveal" }
+  ]
+}

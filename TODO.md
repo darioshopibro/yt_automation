@@ -11,7 +11,60 @@ bo**Vreme po videu:** 30-60 min
 
 ---
 
-## TODO — Redosled: 1 → 2 → 3 → 4 → 5 → 6
+## TODO — Redosled: 0 → 1 → 2 → 3 → 4 → 5 → 6
+
+### ⚡⚡⚡⚡⚡ #0 NAJBITNIJE: Sound Design + Animacija Usklađenost
+
+**Problem:** Sound Coordinator koristi previše raisera. Raiseri su na skoro svakom segmentu — a segmenti su kratki, pa nema smisla. Raiser treba SAMO za hook ili kad je nešto APSOLUTNO VELIKO (bas bas bas onoooo). Ne u svakom segmentu.
+
+**Problem 2:** Na početku nekih segmenata nema uopšte soundova — kao da efekata nema, pa odjednom krenu od sredine. Nekonzistentno. Kad scena krene, zvuk mora da bude tu od prvog frame-a tog segmenta.
+
+**Problem 3:** Animacije i sound nisu dovoljno usklađeni. Vizuali (izletanje elemenata, pojava, slide-in) se prave nezavisno od toga kakvi će soundovi biti. Sound se dodaje posle kao afterthought. Treba da budu usklađeniji — da animacije i sound rade zajedno, ne odvojeno.
+
+**Zlatna sredina potrebna:** Animacije MORAJU da prate govor (timestamps) — to je core princip i ne sme se menjati. ALI u okviru tog timinga, animacije treba da se dizajniraju sa svešću o tome kakav sound će ići uz njih. Npr. ako element izleće brzo — to je whoosh. Ako se polako gradi — to nije hit nego gradual rise. Animacija i sound treba da pričaju istu priču.
+
+**Šta treba uraditi:**
+
+1. **Raiser pravila — strožija:**
+   - [ ] Raiser SAMO za: hook segment, veliki reveal (šokantan stat, dramatičan preokret)
+   - [ ] NE za svaki segment — segmenti su kratki, raiser gubi efekat kad je svuda
+   - [ ] Max 2-3 raisera po celom videu, ne po segmentu
+
+2. **Početak segmenta — obavezno zvuk:**
+   - [ ] Svaki segment MORA imati sound na prvom frame-u (whoosh, transition, ili click)
+   - [ ] NE sme da bude tišina na početku pa da zvuci krenu od sredine
+   - [ ] Sound Coordinator da proveri: "da li prvi event u svakom segmentu počinje na startFrame?"
+
+3. **Animacija-Sound usklađenost — KLJUČNA PROMENA:**
+   - [ ] Visual generator kad pravi animacije, treba da razmišlja o TIPU pokreta (brz slide = whoosh, pop-in = click, gradual build = nema hit)
+   - [ ] Sound hints da budu precizniji — ne samo "element appears" nego "element SLIDES in fast from left over 12 frames" ili "element FADES in slowly over 30 frames"
+   - [ ] Sound Coordinator da čita TIP animacije iz hints-a i bira zvuk koji odgovara pokretu
+   - [ ] Cilj: gledalac oseti da su animacija i zvuk JEDNA stvar, ne dva odvojena layer-a
+   
+   **Kako rešiti (zlatna sredina):**
+   Core princip ostaje — animacije prate govor (timestamps). To se NE menja.
+   ALI: visual-generator kad bira KAKO da animira (slide vs fade vs pop vs scale),
+   treba da bira tip pokreta SVESTAN toga kakav sound će taj pokret zahtevati.
+   
+   Konkretno — sound_hints format treba da uključi MOTION DESCRIPTOR:
+   - `"motion": "slide-in-left-fast"` → Sound Coordinator zna: whoosh
+   - `"motion": "fade-in-slow"` → Sound Coordinator zna: ništa ili soft ambient
+   - `"motion": "pop-scale-up"` → Sound Coordinator zna: click ili hit
+   - `"motion": "draw-path"` → Sound Coordinator zna: soft whoosh
+   - `"motion": "wipe-transition"` → Sound Coordinator zna: transition whoosh
+   
+   Ovako Sound Coordinator ne mora da nagađa šta se dešava — tačno zna TIP
+   pokreta i bira zvuk koji se UKLAPA u taj pokret. Rezultat: animacija i sound
+   deluju kao jedna stvar, ne dva odvojena layer-a.
+   
+   Trenutno hints kažu "element_appear" i Sound Coordinator baca raiser jer ne
+   zna šta drugo. Sa motion descriptor-om, zna tačno šta se dešava i bira pravi zvuk.
+
+4. **Konzistentnost kroz ceo video:**
+   - [ ] Svaki segment mora imati sličnu "gustinu" zvukova — ne 0 efekata pa odjednom 10
+   - [ ] Provera: koliko sounds po segmentu? Ako jedan ima 1 a drugi 8 — nešto nije u redu
+
+---
 
 ### ⚡⚡⚡⚡ #1 NAJBITNIJE: Multi-Variant Generation + Editor za Biranje
 
